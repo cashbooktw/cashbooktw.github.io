@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "current": "2026-09-22",
-  "updated_at": "2026-09-22T16:33:21+08:00",
+  "updated_at": "2026-09-22T17:22:16+08:00",
   "editions": [
     {
       "date": "2026-09-22",
       "path": "data/editions/2026-09-22.json",
-      "story_count": 11,
+      "story_count": 13,
       "is_demo": false
     }
   ]
