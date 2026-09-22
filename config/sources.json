@@ -1,6 +1,32 @@
 {
-  "facebook_pages": [],
+  "facebook_pages": [
+    {
+      "name": "Will Fans",
+      "url": "https://www.facebook.com/will.fans/"
+    }
+  ],
   "rss_feeds": [],
   "news_search_queries": [],
-  "web_pages": []
+  "web_pages": [
+    {
+      "name": "Reuters Artificial Intelligence",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/"
+    },
+    {
+      "name": "Codex Resets",
+      "url": "https://codex-resets.com/"
+    },
+    {
+      "name": "Latent Space",
+      "url": "https://www.latent.space/"
+    },
+    {
+      "name": "Local News - Hsinchu City",
+      "url": "https://localnews.tw/hsinchuCity/"
+    },
+    {
+      "name": "Local News - Hsinchu County",
+      "url": "https://localnews.tw/hsinchuCounty"
+    }
+  ]
 }
