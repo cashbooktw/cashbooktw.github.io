@@ -1,32 +1,70 @@
 {
-  "facebook_pages": [
-    {
-      "name": "Will Fans",
-      "url": "https://www.facebook.com/will.fans/"
-    }
-  ],
+  "facebook_pages": [],
   "rss_feeds": [],
   "news_search_queries": [],
   "web_pages": [
     {
-      "name": "Reuters Artificial Intelligence",
-      "url": "https://www.reuters.com/technology/artificial-intelligence/"
-    },
-    {
       "name": "Codex Resets",
-      "url": "https://codex-resets.com/"
+      "url": "https://codex-resets.com/",
+      "rules": [
+        "只處理本次更新時間範圍內可驗證的新內容",
+        "最多挑選 1 篇；若沒有符合條件的新內容則不產生"
+      ]
     },
     {
-      "name": "Latent Space",
-      "url": "https://www.latent.space/"
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "rules": [
+        "只處理本次更新時間範圍內可驗證的新內容",
+        "最多挑選 1 篇；若同時有多篇，以對 AI 產業、模型、產品或重大技術發展最具代表性的內容為主"
+      ]
+    },
+    {
+      "name": "Ars Technica AI",
+      "url": "https://arstechnica.com/ai/",
+      "rules": [
+        "只處理本次更新時間範圍內可驗證的新內容",
+        "最多挑選 1 篇；若同時有多篇，以對 AI 技術、模型、安全或重要產品變化最具代表性的內容為主"
+      ]
+    },
+    {
+      "name": "Interconnects",
+      "url": "https://www.interconnects.ai/",
+      "rules": [
+        "只處理本次更新時間範圍內可公開讀取且可驗證的新內容",
+        "遇到付費牆或需登入才能取得完整內容時跳過，不繞過限制",
+        "最多挑選 1 篇；若同時有多篇，以 AI 模型、訓練、研究或產業趨勢最具代表性的內容為主"
+      ]
+    },
+    {
+      "name": "The Decoder",
+      "url": "https://the-decoder.com/",
+      "rules": [
+        "只處理本次更新時間範圍內可驗證的新內容",
+        "最多挑選 1 篇；若同時有多篇，以 AI 研究、模型、產品或重大產業發展最具代表性的內容為主"
+      ]
     },
     {
       "name": "Local News - Hsinchu City",
-      "url": "https://localnews.tw/hsinchuCity/"
+      "url": "https://localnews.tw/hsinchuCity/",
+      "rules": [
+        "只處理本次更新時間範圍內可驗證的新內容",
+        "優先挑選對 36 歲男性日常生活、工作、科技、交通、消費或公共議題具有實際關聯的新聞",
+        "優先挑選有 7 歲小孩家庭會關心的教育、親子、健康、安全、休閒或公共服務資訊",
+        "優先挑選在新竹市生活需要知道的交通、建設、政策、公共服務、災害防救、活動、醫療或教育資訊",
+        "綜合以上規則挑選最多 5 篇最符合的內容；其餘不產生"
+      ]
     },
     {
       "name": "Local News - Hsinchu County",
-      "url": "https://localnews.tw/hsinchuCounty"
+      "url": "https://localnews.tw/hsinchuCounty",
+      "rules": [
+        "只處理本次更新時間範圍內可驗證的新內容",
+        "優先挑選對 36 歲男性日常生活、工作、科技、交通、消費或公共議題具有實際關聯的新聞",
+        "優先挑選有 7 歲小孩家庭會關心的教育、親子、健康、安全、休閒或公共服務資訊",
+        "優先挑選會影響新竹市生活圈的跨區交通、建設、政策、公共服務、災害防救、活動、醫療或教育資訊",
+        "綜合以上規則挑選最多 5 篇最符合的內容；其餘不產生"
+      ]
     }
   ]
 }
