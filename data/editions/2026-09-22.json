@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-22",
+  "generated_at": "2026-09-22T14:08:15+08:00",
+  "is_demo": true,
+  "edition_title": "SAMPLE / DEMO · 一份報紙，從留白開始",
+  "edition_summary": "本期全部是排版與功能示例，不是真實新聞，也未引用任何真實媒體。資訊來源尚未設定；你可以先試試搜尋、篩選與往期存檔，確認這間閱讀室的樣子。",
+  "stories": [
+    {
+      "id": "demo-reading-room",
+      "title": "SAMPLE｜把喧囂留在紙外，讓閱讀回到眼前",
+      "deck": "DEMO 排版示例：一張安靜的報紙，一個專注閱讀的地方。",
+      "summary": "讀一份報紙，不必先穿過閃爍的看板。這段 SAMPLE 文字只為展示標題、導言與正文的節奏：深色油墨、溫暖紙面，以及讓眼睛稍作停留的留白。它不是一則真實新聞。\n\n未來的每一期將由獨立 JSON 載入；版面保留原有順序，不替事件評分。當有可查證的內容時，摘要旁會留下通往原文的入口。現在，先翻閱這份明確標示的 DEMO，看看文字如何在紙上各得其所。",
+      "section": "DEMO 閱讀",
+      "source_kind": "other",
+      "published_at": "",
+      "tags": [
+        "SAMPLE",
+        "版面",
+        "閱讀"
+      ],
+      "image": null,
+      "sources": []
+    },
+    {
+      "id": "demo-sources",
+      "title": "SAMPLE｜每一條線索，都應有來處",
+      "deck": "DEMO：三個示意來源，一個展開入口。",
+      "summary": "這不是任何媒體的報導，而是多來源元件的 SAMPLE。展開下方的「3 sources」，可看到三個明確標示為 DEMO 的來源名稱。它們沒有原文網址，也不代表已讀取任何外部內容。\n\n正式資料會將明顯相同的事件合併，並保留所有取得的原始來源。",
+      "section": "DEMO 來源",
+      "source_kind": "other",
+      "published_at": "",
+      "tags": [
+        "SAMPLE",
+        "來源",
+        "閱讀"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "DEMO 來源甲（排版示例）"
+        },
+        {
+          "name": "DEMO 來源乙（排版示例）"
+        },
+        {
+          "name": "DEMO 來源丙（排版示例）"
+        }
+      ]
+    },
+    {
+      "id": "demo-rss-filter",
+      "title": "SAMPLE｜從一個標籤，找到想讀的段落",
+      "deck": "DEMO：這是一筆 RSS 型態的篩選樣本，不是實際訂閱。",
+      "summary": "SAMPLE 文字可用來試試搜尋、版別與來源型態篩選。輸入「標籤」，或在來源型態選擇 RSS，觀察本期紀事如何收斂。\n\n目前並未加入任何 RSS feed；這個型態只用於展示 JSON 驅動的介面。",
+      "section": "DEMO 工具",
+      "source_kind": "rss",
+      "published_at": "",
+      "tags": [
+        "SAMPLE",
+        "篩選"
+      ],
+      "image": null,
+      "sources": []
+    },
+    {
+      "id": "demo-archive",
+      "title": "SAMPLE｜換一個日期，翻開另一份報紙",
+      "deck": "DEMO：往期存檔保留每一期的入口。",
+      "summary": "這段 SAMPLE 用於示範閱讀器的存檔概念，不是網頁擷取結果。下方存檔由小型目錄 JSON 產生；之後累積期數時，可直接切換日期，不必重新載入整頁。\n\n網址中的 edition 參數保留所選日期。目前只有這一份 DEMO。",
+      "section": "DEMO 工具",
+      "source_kind": "web",
+      "published_at": "",
+      "tags": [
+        "SAMPLE",
+        "存檔"
+      ],
+      "image": null,
+      "sources": []
+    },
+    {
+      "id": "demo-typography",
+      "title": "SAMPLE｜沒有照片，也能好好讀完一頁",
+      "deck": "DEMO：讓字級、細線與留白成為版面的主角。",
+      "summary": "此 SAMPLE 沒有附圖，也沒有虛構的攝影者或圖片來源。文字本身便能構成完整的報紙。\n\n若日後取得允許使用的圖片，閱讀器會以灰階與淡褐色呈現；偏好減少動態的讀者不會看到照片動畫。",
+      "section": "DEMO 閱讀",
+      "source_kind": "other",
+      "published_at": "",
+      "tags": [
+        "SAMPLE",
+        "版面"
+      ],
+      "image": null,
+      "sources": []
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cashbooktw.github.io/schema/edition.schema.json",
+  "title": "The Daily Signal — Edition v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "date",
+    "generated_at",
+    "is_demo",
+    "edition_title",
+    "edition_summary",
+    "stories"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "date": {
+      "$ref": "#/$defs/date"
+    },
+    "generated_at": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "is_demo": {
+      "type": "boolean"
+    },
+    "edition_title": {
+      "type": "string"
+    },
+    "edition_summary": {
+      "type": "string"
+    },
+    "stories": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/story"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "is_demo": {
+            "const": false
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "stories": {
+            "items": {
+              "properties": {
+                "sources": {
+                  "minItems": 1,
+                  "items": {
+                    "required": [
+                      "url"
+                    ],
+                    "properties": {
+                      "url": {
+                        "$ref": "#/$defs/url"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^[1-9]\\d{3}-\\d{2}-\\d{2}$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[1-9]\\d{3}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$"
+    },
+    "publication": {
+      "anyOf": [
+        {
+          "const": ""
+        },
+        {
+          "$ref": "#/$defs/date"
+        },
+        {
+          "$ref": "#/$defs/timestamp"
+        }
+      ]
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://[^/@\\s]+(?:[/?#][^\\s]*)?$"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "anyOf": [
+            {
+              "const": ""
+            },
+            {
+              "$ref": "#/$defs/url"
+            }
+          ]
+        },
+        "published_at": {
+          "$ref": "#/$defs/publication"
+        }
+      }
+    },
+    "image": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "alt"
+      ],
+      "properties": {
+        "url": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://[^/@\\s]+(?:[/?#][^\\s]*)?$"
+            },
+            {
+              "type": "string",
+              "pattern": "^assets/(?:[A-Za-z0-9_-]+/)*[A-Za-z0-9_-]+\\.(?:avif|gif|jpe?g|png|svg|webp)$"
+            }
+          ]
+        },
+        "alt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "credit": {
+          "type": "string"
+        }
+      }
+    },
+    "story": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "summary",
+        "section",
+        "source_kind",
+        "tags",
+        "sources"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,127}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "deck": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        },
+        "source_kind": {
+          "enum": [
+            "facebook",
+            "rss",
+            "news",
+            "web",
+            "other"
+          ]
+        },
+        "published_at": {
+          "$ref": "#/$defs/publication"
+        },
+        "tags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "image": {
+          "$ref": "#/$defs/image"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        }
+      }
+    }
+  }
+}

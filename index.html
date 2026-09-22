@@ -1,1 +1,72 @@
-Hello World
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="THE DAILY SIGNAL 每日情報報：循著原始來源，閱讀每日情報與歷史期數。">
+  <meta name="theme-color" content="#f3eddf">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>THE DAILY SIGNAL · 每日情報報</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/newspaper.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">跳至本期內容</a>
+  <div class="paper">
+    <header class="masthead">
+      <div class="topline"><span>THE READER’S EDITION</span><span aria-hidden="true">✦</span><span>循來源閱讀・為脈絡留白</span></div>
+      <h1 lang="en"><a href="./" class="latest-link">THE DAILY SIGNAL</a></h1>
+      <div class="nameplate"><span aria-hidden="true">❧</span><p>每日情報報</p><span aria-hidden="true">❧</span></div>
+      <div class="dateline">
+        <span id="edition-number">NO. —</span>
+        <time id="edition-date">調閱本期中</time>
+        <span>更新 <time id="updated-time">—</time><span class="timezone"> 台北時間</span></span>
+      </div>
+    </header>
+    <nav class="reader-nav" aria-label="報紙導覽">
+      <a href="./" class="latest-link">最新一期 <span aria-hidden="true">↗</span></a>
+      <span class="nav-motto">一日一卷，循跡而讀。</span>
+      <a href="#archive">往期存檔 <span aria-hidden="true">↓</span></a>
+    </nav>
+    <main id="main" tabindex="-1" aria-busy="true">
+      <noscript><p class="notice">閱讀器需要 JavaScript 才能調閱 JSON。請啟用 JavaScript 後重新整理；本網站不使用追蹤程式。</p></noscript>
+      <section id="message" class="notice" role="status" tabindex="-1" aria-labelledby="message-title">
+        <p class="eyebrow" lang="en">FROM THE READING ROOM</p>
+        <h2 id="message-title">正在調閱本期…</h2>
+        <p id="message-detail">讀取目錄與當期內容。</p>
+        <button id="retry-latest" type="button" hidden>返回最新一期</button>
+      </section>
+      <div id="edition-panel" hidden>
+        <p id="demo-notice" class="demo-notice" hidden>SAMPLE / DEMO — 本期全部為排版示例，並非真實新聞。</p>
+        <section class="opening" aria-labelledby="edition-title">
+          <p class="eyebrow" lang="en">THE EDITION / 本期提要</p>
+          <h2 id="edition-title" tabindex="-1"></h2>
+          <p id="edition-summary"></p>
+        </section>
+        <section class="reading-tools" aria-labelledby="tools-title">
+          <h2 id="tools-title" class="visually-hidden">搜尋與篩選本期</h2>
+          <form id="search-form" role="search">
+            <div class="search-field"><label for="search-input">搜尋本期 <span lang="en">SEARCH</span></label><input id="search-input" type="search" placeholder="關鍵字、主題或來源…" autocomplete="off" maxlength="200"></div>
+            <div><label for="section-filter">版別</label><select id="section-filter"><option value="">全部版別</option></select></div>
+            <div><label for="kind-filter">來源型態</label><select id="kind-filter"><option value="">全部型態</option></select></div>
+            <button id="reset-filters" type="button">清除條件</button>
+          </form>
+          <details id="topic-index" class="topic-index"><summary>主題索引 <span id="tag-total"></span></summary><div id="tag-filters" class="tag-filters" role="group" aria-label="選擇一個主題標籤"></div></details>
+        </section>
+        <section class="dispatches" aria-labelledby="dispatches-title">
+          <div class="section-heading"><h2 id="dispatches-title">本期紀事 <span lang="en">THE DISPATCHES</span></h2><p id="results-count" role="status" aria-live="polite" aria-atomic="true"></p></div>
+          <div id="stories" class="news-grid"></div>
+          <p id="empty-results" class="empty-results" hidden></p>
+        </section>
+      </div>
+    </main>
+    <details id="archive" class="archive">
+      <summary>往期存檔 <span lang="en">THE ARCHIVE</span> <span id="archive-count"></span></summary>
+      <nav aria-label="歷史期數"><ol id="archive-list"></ol></nav>
+    </details>
+    <footer class="colophon"><p class="footer-brand" lang="en">THE DAILY SIGNAL</p><p>公開託管的個人閱讀室・請勿存放私人資料</p><p>保留來源，不替事實添筆。<span aria-hidden="true"> ✦ </span><a href="#top" id="back-top">回到頁首 ↑</a></p></footer>
+  </div>
+</body>
+</html>
