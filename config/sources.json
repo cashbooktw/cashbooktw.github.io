@@ -22,14 +22,6 @@
       ]
     },
     {
-      "name": "Ars Technica AI",
-      "url": "https://arstechnica.com/ai/",
-      "rules": [
-        "只處理本次更新時間範圍內可驗證的新內容",
-        "最多挑選 1 篇；若同時有多篇，以對 AI 技術、模型、安全或重要產品變化最具代表性的內容為主"
-      ]
-    },
-    {
       "name": "Interconnects",
       "url": "https://www.interconnects.ai/",
       "rules": [
@@ -42,8 +34,8 @@
       "name": "The Decoder",
       "url": "https://the-decoder.com/",
       "rules": [
-        "只處理本次更新時間範圍內可驗證的新內容",
-        "最多挑選 1 篇；若同時有多篇，以 AI 研究、模型、產品或重大產業發展最具代表性的內容為主"
+        "只處理 Asia/Taipei 前一天整個日曆日內可驗證發布日期的內容；不要求可驗證到時分秒",
+        "最多挑選 1 篇；若同時有多篇，以對 AI 研究、模型、產品或重大產業發展最具代表性的內容為主"
       ]
     },
     {
