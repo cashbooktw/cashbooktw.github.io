@@ -231,7 +231,7 @@
       const item = node("li"); const a = node("a", date);
       a.href = editionURL(date).href; a.dataset.edition = date;
       if (date === state.edition?.date) a.setAttribute("aria-current", "page");
-      a.append(node("small", `${entries.reduce((total, entry) => total + entry.story_count, 0)} 則${entries.some((entry) => entry.is_demo) ? " · SAMPLE / DEMO" : ""}${date === latest ? " · Latest" : ""}`));
+      a.append(node("small", `${entries.reduce((total, entry) => total + entry.story_count, 0)} stories${entries.some((entry) => entry.is_demo) ? " · SAMPLE / DEMO" : ""}${date === latest ? " · Latest" : ""}`));
       a.addEventListener("click", (event) => {
         if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         event.preventDefault(); openEdition(date, { historyMode: "push", focus: true });
