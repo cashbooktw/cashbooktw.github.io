@@ -3,6 +3,7 @@
   'use strict';
   const finite = (x) => typeof x === 'number' && Number.isFinite(x);
   const day = (date = new Date()) => new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).format(date);
+  const marketStale = (snapshot,key=null) => Boolean(snapshot?.cached || (key && snapshot?.errors?.[key]));
   const weatherInfo = (code) => {
     if (code === 0) return ['Clear','sun'];
     if ([1,2].includes(code)) return ['Partly cloudy','partly'];
@@ -20,7 +21,7 @@
     if (d.precipitation_sum[i] < 0 || d.temperature_2m_min[i] > d.temperature_2m_max[i]) throw new Error('Forecast data is invalid');
     return {date:today,code:d.weather_code[i],low:d.temperature_2m_min[i],high:d.temperature_2m_max[i],rain:d.precipitation_sum[i]};
   }
-  if (typeof module !== 'undefined' && module.exports) module.exports = {day,weatherInfo,validWeather};
+  if (typeof module !== 'undefined' && module.exports) module.exports = {day,weatherInfo,validWeather,marketStale};
   if (typeof document === 'undefined') return;
   const $ = id => document.getElementById(id);
   const el = (tag,text,cls) => {const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
@@ -47,7 +48,7 @@
   function unavailable(key,text){const c=card(key);c.append(el('p',text,'dispatch-unavailable'));return c;}
   function change(q){const sign=q.change>0?'▲':q.change<0?'▼':'—';return `${sign} ${number(Math.abs(q.change))}（${q.change_pct>0?'+':''}${number(q.change_pct)}%）`;}
   const validQuote = q => q && /^\d{4}-\d{2}-\d{2}$/.test(q.date) && q.date<day() && ['close','change','change_pct'].every(k=>finite(q[k])) && q.close>0;
-  function freshness(c,q,snapshot){note(c,`${dateText(q.date)} close`);if(snapshot?.errors?.[q.key] || snapshot?.date!==day() || snapshot?.cached)note(c,'Showing the latest available data; refresh is pending','dispatch-note dispatch-stale');}
+  function freshness(c,q,snapshot){note(c,`${dateText(q.date)} close`);if(marketStale(snapshot,q.key))note(c,'Showing the latest available data; refresh is pending','dispatch-note dispatch-stale');}
   function drawMarkets(data){
     const tw=data?.quotes?.tw;
     if(validQuote(tw)){const c=card('tw');c.append(el('p',number(tw.close),'dispatch-value'));note(c,change(tw));freshness(c,{...tw,key:'tw'},data);source(c,'Taiwan Stock Exchange','https://www.twse.com.tw/zh/trading/historical/fmtqik.html');}
@@ -60,7 +61,7 @@
     }
     if(count)note(c,`${[...dates].map(dateText).join(', ')} close`);
     if(!count)c.append(el('p','No closing data available','dispatch-unavailable'));
-    else if(data.date!==day()||data.cached||failed)note(c,'Showing the latest available data; refresh is pending','dispatch-note dispatch-stale');
+    else if(data.cached||failed)note(c,'Showing the latest available data; refresh is pending','dispatch-note dispatch-stale');
     if(count>0&&count<3)note(c,'Some indices are unavailable');
     source(c,'Yahoo Finance · Closing reference','https://finance.yahoo.com/markets/world-indices/');
   }
