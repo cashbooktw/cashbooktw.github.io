@@ -1,0 +1,47 @@
+name: Daily dispatches
+on:
+  schedule:
+    # Asia/Taipei 07:17 and 09:17; both are after the US regular session.
+    - cron: '17 23,1 * * *'
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/dispatches.yml'
+      - 'scripts/update_dispatches.py'
+      - 'tests/test_dispatches.py'
+permissions:
+  contents: write
+concurrency:
+  group: daily-dispatches
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test parsers and presentation helpers
+        run: |
+          python -m unittest discover -s tests -p 'test_dispatches.py'
+          node --test tests/press.test.cjs
+          node --check assets/js/press.js
+      - name: Fetch dated market snapshots
+        run: python scripts/update_dispatches.py
+      - name: Commit snapshot without touching edition channels
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/dispatches.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'data: refresh daily market dispatches'
+          for attempt in 1 2 3; do
+            git pull --rebase origin master && git push origin HEAD:master && exit 0
+            sleep 5
+          done
+          exit 1
