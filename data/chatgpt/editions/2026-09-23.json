@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "date": "2026-09-23",
-  "generated_at": "2026-09-23T15:54:21+08:00",
+  "generated_at": "2026-09-23T20:06:00+08:00",
   "is_demo": false,
   "edition_title": "2026-09-23 每日資訊整理",
-  "edition_summary": "本次依 2026-09-22 17:22:16 至 2026-09-23 15:54:21（Asia/Taipei）處理既有設定來源；The Decoder 依規則檢查 2026-09-22 整個日曆日，Codex Resets 另檢查即時「Reset scheduled」狀態。共整理 11 則正式 stories。Interconnects 的設定首頁未由讀取工具呈現可驗證的完整文章清單；已發現的公開候選原文與完整逐字稿已讀取，但無法證明首頁清單檢查完整，因此本期來源狀態標記為 limited。",
+  "edition_summary": "本次依 2026-09-23T15:54:21+08:00 至 2026-09-23T20:06:00+08:00（Asia/Taipei）檢查六個既有非 Facebook 來源；The Decoder 仍依規則檢查 2026-09-22 整個日曆日，Codex Resets 另檢查即時「Reset scheduled」狀態。本次新增 1 則 TechCrunch AI story，總計 12 則正式 stories；其餘來源沒有可追加的新項目。",
   "stories": [
     {
       "id": "codex-reset-2026-09-23-no-verifiable-schedule",
@@ -248,16 +248,50 @@
           "published_at": "2026-09-22T20:15:00+08:00"
         }
       ]
+    },
+    {
+      "id": "techcrunch-ema-series-b-2026-09-23",
+      "title": "Ema 募得 7,700 萬美元，AI 代理持續切入企業軟體與 IT 服務",
+      "summary": "企業 AI 新創 Ema 完成 7,700 萬美元 B 輪融資，累計募資達 1.4 億美元。公司以多代理系統自動化人資、IT 與財務流程，並表示將把新資金主要投入銷售與市場拓展，擴大亞太等市場。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-23T05:00:00-07:00",
+      "tags": [
+        "AI",
+        "AI代理",
+        "企業軟體",
+        "新創融資"
+      ],
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/02/Screenshot-2026-02-08-at-12.27.26-PM.png?w=1024",
+        "alt": "字母 AI 的概念插圖",
+        "credit": "Andriy Onufriyenko / Getty Images via TechCrunch"
+      },
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services/",
+          "published_at": "2026-09-23T05:00:00-07:00"
+        }
+      ]
     }
   ],
   "source_reports": {
     "configured_sources": {
-      "status": "limited",
-      "completed_at": "2026-09-23T15:54:21+08:00",
-      "captured": 16,
-      "included": 12,
-      "excluded": 4,
+      "status": "complete",
+      "completed_at": "2026-09-23T20:06:00+08:00",
+      "captured": 4,
+      "included": 1,
+      "excluded": 3,
       "notes": [
+        "本次更新時間範圍為 2026-09-23T15:54:21+08:00 至 2026-09-23T20:06:00+08:00（Asia/Taipei）；The Decoder 依既有規則檢查 2026-09-22 整個日曆日，Codex Resets 不受此時間窗限制。",
+        "Codex Resets 已完整檢查目前狀態頁；未顯示可驗證的「Reset scheduled」時間，因此本次不新增 Codex story。",
+        "TechCrunch AI 依列表順序檢查；完整讀取 2 篇邊界候選。Ema 文章發布於 2026-09-23 05:00 PDT（20:00 Asia/Taipei），在本次時間窗內並新增 1 story；下一篇發布於 2026-09-22 21:59 PDT（2026-09-23 12:59 Asia/Taipei），早於本次起點而排除。Ema 原文頁提供 HTTPS 主圖與 Andriy Onufriyenko / Getty Images credit。",
+        "Interconnects 依 archive 入口檢查；最新項目日期僅標示 2026-09-22，因粗粒度日期可能與邊界重疊而完整讀取原文，確認 URL 與既有 story 相同，依同通道去重不追加。",
+        "The Decoder 依 Asia/Taipei 前一日整個日曆日規則檢查；首頁已列出 2026-09-22 全部可見項目並銜接至 2026-09-21。既有 GPT-6 Sol/Luna story 已占該來源最多 1 篇配額，且本次重新完整讀取相同原文，未另新增。",
+        "地新聞新竹市列表最新文章明示 2026-09-23 12:45，早於本次起點；新竹縣列表最新文章為前一日 22:15。依可信發布時間與列表順序，兩來源本次均無需再讀更舊原文。",
+        "captured/included/excluded 僅計本次實際完整讀取的候選來源項目；本次完整讀取 4 項，其中新增 1 項，3 項因時間窗外或同通道既有 URL/來源配額而不追加。",
+        "Previous run (historical, not current status): completed_at=2026-09-23T15:54:21+08:00, status=limited, captured=16, included=12, excluded=4. The following preserved notes belong to that previous run.",
         "本次更新時間範圍為 2026-09-22 17:22:16 至 2026-09-23 15:54:21（Asia/Taipei）；The Decoder 依既有規則改以 2026-09-22 整個日曆日檢查，Codex Resets 則不受 24 小時窗限制。",
         "Codex Resets 已檢查「Reset scheduled」狀態；頁面未顯示可驗證的下一次排程，僅顯示最近一次 Banked reset 為 2026-09-22 18:23 UTC，因此未推測下一次重置時間。",
         "TechCrunch AI 納入 GPT-6 Sol/Luna 更新；The Decoder 在前一日內容中選到同一事件，依通道去重規則合併為同一 story 並保留兩個來源。",
