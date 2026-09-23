@@ -9,8 +9,6 @@
     "date",
     "generated_at",
     "is_demo",
-    "edition_title",
-    "edition_summary",
     "stories"
   ],
   "properties": {

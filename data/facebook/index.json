@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "current": "2026-09-23",
+  "updated_at": "2026-09-23T05:46:13.418Z",
+  "editions": [
+    {
+      "date": "2026-09-23",
+      "path": "data/facebook/editions/2026-09-23.json",
+      "story_count": 13,
+      "is_demo": false
+    }
+  ]
+}

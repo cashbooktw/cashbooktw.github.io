@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-23",
+  "generated_at": "2026-09-23T05:46:13.418Z",
+  "is_demo": false,
+  "edition_title": "2026-09-23 日報",
+  "edition_summary": "",
+  "stories": [
+    {
+      "id": "facebook-d0c2776c0d800afe277ceba3",
+      "title": "用生成式 AI 補上非同步程式的 CancellationToken",
+      "summary": "作者分享過去難以逐一替非同步方法補上 CancellationToken，如今可透過提示詞協助整個專案補齊，降低實務導入的負擔。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T23:47:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02KMSLPJdMKufaR6xRjnYPZT7PC42PogPDBUCw3CGNQu4Who7D8zo9teV6TVBTJLoul",
+          "published_at": "2026-09-22T23:47:00.000+08:00"
+        }
+      ],
+      "original_text": "寫非同步程式要加 CancellationToken，這件事大家其實都知道。\n但以前真的沒時間加。\n想落實，太難了。\n不只是自己寫的時候沒空補，更不忍心去逼同仁每支方法都嚴格加上。一個一個去解釋為什麼要傳、怎麼傳、漏掉會怎樣，光講完這些就飽了，聽的人還不一定能一次聽懂。\n最後通常就算了。\n現在給一個提示詞，整個專案一次加上去。\n在 GenAI 出現之前，這真的完全無法想像。"
+    },
+    {
+      "id": "facebook-c2c9d4b02373479865c34944",
+      "title": "noswoosh：移除 macOS Space 切換動畫",
+      "summary": "作者介紹開源工具 noswoosh，表示它可移除 Space 切換動畫、不需關閉 SIP，並支援手勢與快捷鍵。貼文另說明輔助使用權限、系統版本限制及空白桌面跳轉問題的處理方式。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T21:15:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/16613638641355050540?_nc_oc=AdpCrSsZNWvker9CDUSExh9nt8A4wx7PUWAX91VZ_N27rBvryI0pkrlnvz1rWXLPAxD_aoBmjypPN7k-qqPDXgEl&url=https%3A%2F%2Frepository-images.githubusercontent.com%2F1341832576%2F93a54965-7042-4d96-915d-1a13a881c2d3&fb_obo=1&utld=githubusercontent.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=C7BirqhXCCksyuugQAvHmw&_nc_zt=3&oh=06_Q3_DAZovbPM1tc4-Po-WCLoNOWMoGIxM2wZyQOaK6A5HB8KL&oe=6AB545A5",
+        "alt": "GitHub - mmathys/noswoosh: Instant, animation-free switching between macOS Spaces (3-finger swipe or Ctrl+←/→). macOS 26.6+ and 27, no SIP disabling, no global Reduce Motion.",
+        "credit": "Will 保哥的技術交流中心"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02YZSKNpLaupsSqussH83gLBUjeH96e5Bn9hG5Fmp7zpGjTAFhgFeESH9VjE6By5Erl",
+          "published_at": "2026-09-22T21:15:00.000+08:00"
+        }
+      ],
+      "original_text": "macOS 切換 Space 的那個滑動動畫，靠系統設定是關不掉的，我被困擾了好久，今天終於找到方法了。\n這個工具叫 noswoosh，開源、免費。\n它做的事情是把 Space 切換的動畫拿掉，變成瞬間跳過去。\n但其實也沒那麼簡單，所以需要靠第三方軟體才能辦到！\n3 指橫向滑動可以用，Ctrl+← / Ctrl+→ 也可以用。\n重點是，它不需要關掉 SIP。\n以前要達到類似效果，像是 yabai，就得把 SIP 部分停用，風險比較高。\n安裝一行搞定：\nbrew install --cask mmathys/tap/noswoosh\n裝完要手動給一次「輔助使用」權限，這步沒辦法自動化，macOS 的限制。\n給完之後一秒內就會生效。\n目前支援 macOS 26.6 以上，以及 27。\n26.0 到 26.5 不支援，因為 Apple 那邊有個 WindowServer 的 bug，切過去可能會遇到桌面變空白，解法就是更新到 26.6。\n另外它還有處理一個很煩的 macOS 老問題。\n切到一個沒有視窗的桌面，大概 400 毫秒後系統會把你踢到別的桌面去。\n原因是 macOS 會自己挑一個 App 啟用，那個 App 的視窗在別的 Space，Dock 就跟著跳過去了。\n作者在 1.7.0 之後改成從源頭解決，Dock 圖示跟隨的功能也保住了。\n如果你有在用 skhd、Karabiner-Elements、Hammerspoon 或 Raycast，也可以把 noswoosh left / right 綁成自己習慣的快捷鍵。\n切換大概 100 毫秒，跟內建的 Ctrl+←/→ 一樣快。\n整個專案就是一個 Swift 檔，MIT 授權，有興趣可以直接看原始碼。"
+    },
+    {
+      "id": "facebook-28d3a3ea7095c500a24862c6",
+      "title": "卡斯伯開源 Claude Code 狀態列工具",
+      "summary": "卡斯伯分享自己開源的 Claude Code 狀態列，可集中顯示資料夾、Git 分支、模型與思考等級、上下文及五小時額度剩餘比例，以及已命名的 Session，協助切換工作時辨識專案與用量。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T19:19:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/795451699_2609262899527172_8949789059384316821_n.png?stp=dst-jpg_tt6&cstp=mx1672x941&ctp=s1672x941&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KC0GOeNlTFUQ7kNvwES7mC6&_nc_oc=AdoKJL-ZVVc_tgv17nJOo5w58wk51ntl_eJZxiH55fJOH0HxjtcBdiuez2qAFAbshUO8xGoibQ0IanCOCCjKKvgV&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=C7BirqhXCCksyuugQAvHmw&_nc_ss=7b2a8&oh=00_AQL_uO29STfG5pIMrHUYHgF6KbvqzHieW6dnBPneg14vKA&oe=6AB91112",
+        "alt": "卡斯伯 分享的貼文配圖",
+        "credit": "卡斯伯"
+      },
+      "sources": [
+        {
+          "name": "卡斯伯",
+          "url": "https://www.facebook.com/WccCasper/posts/pfbid02p9v3mK43fdqqr8dcAN2ArDdkdN8mnkPNC4CMbUeVVbcbkakXy8d5QLT8LwMfwCgJl",
+          "published_at": "2026-09-22T19:19:00.000+08:00"
+        }
+      ],
+      "original_text": "用 Claude Code 時，想知道目前用哪個模型、額度還剩多少，我會直接看輸入框下方的 Status line。\n這個小東西我自己覺得很方便，最近也有人跟我要，所以就把它開源了 \n它可以直接顯示：\n・目前的資料夾、Git 分支\n・使用中的模型與思考等級\n・上下文剩餘比例、5 小時額度剩餘比例\n・目前已命名的 Session 名稱\n尤其同時開幾個 Session，切換回來時，看一眼就能確認自己在哪個專案、哪個分支，也能隨時留意還剩多少用量。\n資訊集中在畫面下方，就不用為了確認這些事情，一直中斷手邊的工作。\n下載連結放在留言區，有需要可以直接下載，照著說明安裝使用。"
+    },
+    {
+      "id": "facebook-5db926d6e719181cbbd56e0b",
+      "title": "以台北市長選舉說明預測市場與交易風險",
+      "summary": "作者以台北市長選舉的 Polymarket 市場為例，解釋預測價格、交易盈虧與流動性風險，並提醒結算爭議及在台灣參與選舉下注的法律風險。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T19:10:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/799869666_1570492494210711_3367250498803127447_n.png?stp=dst-jpg_tt6&cstp=mx1232x958&ctp=s1232x958&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Bj38p6LCs5UQ7kNvwFqsgKb&_nc_oc=Adr6l71FPrEMPV7bldEKnrQx9DzlWFcZNoanEaEYaK1fo5SqstMm44kQHerwZ08hLMF5p4Km3_IMhx6uS9RXCWz0&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=C7BirqhXCCksyuugQAvHmw&_nc_ss=7b2a8&oh=00_AQLR0tOn9_Y_NxBgkTPCWqN6FupbXwdNTNfwbIYl3YrU2Q&oe=6AB90DD0",
+        "alt": "Nathan Chiu 分享的貼文配圖",
+        "credit": "Nathan Chiu"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0QCex1dcH9cHJLLzMUn1JybsZhc9jzyk8Ku7rWfDaGhDQy2GceNHZWokU2k7fcF5ml",
+          "published_at": "2026-09-22T19:10:00.000+08:00"
+        }
+      ],
+      "original_text": "帶大家看懂 Polymarket：台北市長選舉，市場怎麼看？\n最近有朋友傳給我一張截圖，是 Polymarket 上的「臺北市長選舉得主」市場：蔣萬安 81%，沈伯洋 20%。有人問我，這要怎麼玩？今天就用這個例子講清楚，最後再告訴你一個最重要的結論。\nPolymarket 是什麼\nPolymarket 是全世界最大的預測市場平台，建在區塊鏈上，用跟美元等值的穩定幣 USDC 交易。它什麼都能開盤：美國大選、聯準會降不降息、比特幣年底價格、哪部電影拿奧斯卡。\n2024 年美國大選時，它的預測比很多民調更早、更準地反映出川普的勝率，從此一戰成名，連紐約證交所的母公司 ICE 都砥大錢投資。\n什麼是預測市場\n預測市場的核心很簡單：每個問題只有「是」或「否」。結果揭曉時，猜對的一股換 1 美元，猜錯的歸零。\n所以價格本身就是機率。蔣萬安「是」賣 82 美分，意思是市場上真金白銀押注的人，集體認為他有大約八成的機會當選。這跟民調最大的差別在於：民調是問你怎麼想，預測市場是問你敢不敢用錢證明你怎麼想。講錯話不用付代價，押錯注要。\n它也不是跟莊家對賭，而是你跟全世界其他玩家互相買賣，平台只是擮合。\n買沈伯洋，不用等到開票就能賺\n很多人以為這是買樂透，要等到開票那天才知道輸贏。錯，它更像股票。\n看圖就知道，八月底沈伯洋的價格大概只有個位數美分，一路爬到現在的 20 美分左右。最近這兩天更明顯：昨天還是 16 美分，今天已經 20 美分。昨天進場的人，一天之內帳面就賺了 25%，而選舉還有兩個多月才投票。\n往前看更誇張。如果你八月底用 5 美分買進，現在不用等開票，直接在市場上賣掉就是四倍。你賺的不是「他會不會當選」，而是「市場對他的看法改變了」。\n所以真正的玩家在做的事情是：比市場更早判斷民意風向的轉折，在低點買、在情緒高點賣。這其實是一個資訊交易市場，這也是它迷人又危險的地方。\n就算某人「一定當選」，也不能隨便買\n很多人看到 81% 就覺得穩了，把錢全押蔣萬安。算一下：花 82 美分買，贏了拿 1 美元，只賺 18 美分；輸了，82 美分全部歸零。你用四塊錢的風險去賺一塊錢。\n選舉離投票還有兩個多月，醜聞、失言、國際情勢、投票率，任何黑天鵝都可能讓價格一夜崩掉。而且你看這個市場總交易量才 15 萬美元左右，流動性很薄，幾個大戶就能把價格推上推下，你想賣的時候不一定有人接。更別說結算規則、爭議判定這些魔鬼細節。\n魔鬼細節有多魔，看 2025 年 7 月那一次就知道。Polymarket 開了一個盤：澳倫斯基會不會穿西裝？交易量高達一億六千萬美元以上。結果他去參加北約峰會，穿了一件介於西裝與外套之間的黑色外套，全網就開始吵：那件到底算不算西裝？結算爭議鬧了好幾天，連 Polymarket 的大戶都公開嗊「這根本不去中心化」。\n點在這裡：那一局不是有人看錯行情，是大家看的是同一個畫面，卻不知道該怎麼算。你以為你在賭事實，實際上你還在賭「誰來定義這件事實」。台北市長選舉看起來沒這種問題，但們心自問，你真的有把那個盤的結算條款一字一句讀完嗎？\n「穩贏的賭注」是最容易讓人傾家評產的賭注，因為它讓你敢押大。\n不要想那麼多，在台灣這是違法的\n講了這麼多，最重要的是這一段：在台灣，下注台灣選舉就是違法，沒有灰色地帶。\n先講最實際的一件事：台灣已經把 Polymarket 封掉了。現在在台灣用一般網路根本連不上，要翻牆才進得去。而且封網不是唯一手段，台灣是少數同時祭出域名封鎖與刑事追訴的國家。\n就算你翻牆進去也沒用。Polymarket 把台灣列為只能平倉的地區，不能開新倉、不能入金；平台條款又明確禁止用 VPN 繞過地理限制，違者帳號可能被凍結，資金也不會還你。等於你冒了觸法的風險，換到一個隨時可能連本金都拿不回來的帳號。\n檢警這邊也沒有放鬆。針對今年九合一選舉的 Polymarket 賭盤，雲林、台中、高雄都有人被查獲，也已經有人被起訴。不要以為用加密貨幣、用國外網站就抓不到，警方就是透過追查幣流、比對交易所實名資料找到人的。\n所以這篇文章你可以拿來理解預測市場的邏輯，拿來當作觀察民意的另一面鏡子。但真的不要去按那個綠色的「買入」按鈕。\n台北市長誰當選，十一月底就知道了。看熱鬧就好，別把自己賭進去。"
+    },
+    {
+      "id": "facebook-94867947863ec00a60e8d92b",
+      "title": "為陪孩子練琴製作小提琴手冊",
+      "summary": "作者因孩子回家不願主動練習小提琴，製作手冊讓自己先學會，再協助孩子練習。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T14:26:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/13902182158361691349?_nc_oc=AdowOGAwiSaP46sWmnxE9AHcoKsZT-nT6sxwMJ6Lkbf3eeRGPoD34k6a1f5x92il-y7IIK2wrlxgTiBfitgplCc-&url=https%3A%2F%2Fviolin.gh.miniasp.com%2Fimages%2Fog-cover.jpg&fb_obo=1&utld=miniasp.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=TSheP5YN8yGWErDwTHRWpg&_nc_zt=3&oh=06_Q3_DAUaGb9CvVHksTyEQxdqYCOxYkJkLF8gI-oCzzsl1uAP7&oe=6AB51930",
+        "alt": "小提琴 3D 互動教學手冊 — 旋轉、拆解、聆聽四根空弦",
+        "credit": "Will 保哥的技術交流中心"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid023GnQfkq8tYbW5FJKcAvx5HYhEKTf4k6zU433iKZXiLpG9EKHA1VGWkboVJjk6sFsl",
+          "published_at": "2026-09-22T14:26:00.000+08:00"
+        }
+      ],
+      "original_text": "小朋友報了小提琴班，結果回家都不練琴，怕累，不逼就不練，所以我做了這個手冊，並不是給小朋友看，而是自己學會再想辦法盯她練！"
+    },
+    {
+      "id": "facebook-cb4fc78fc33487c9f88fe9f3",
+      "title": "Splash：針對 Apple Silicon 的模型推論引擎",
+      "summary": "作者介紹 Splash 開源推論引擎，說明其針對個別模型配置核心、草稿模型與記憶體規劃的設計，並分享自己在 M5 Max 上的速度提升經驗。貼文亦列出硬體、macOS 與記憶體需求；效能描述來自作者貼文。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T11:26:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/4901276762226876259?_nc_oc=Adq7rkyiQLQd7M2Xk4g9r-nqJ10G34io9N3a8SZYukyy5OCFsJvUD7JR15qBysyoQn44WlSta4hS3zIrEMtU7YDX&url=https%3A%2F%2Finco.ai%2Fog%2Fsplash.png&fb_obo=1&utld=inco.ai&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=TSheP5YN8yGWErDwTHRWpg&_nc_zt=3&oh=06_Q3_DARXlBvZlhpEW0iYQaDefYJ8uny7JSw8p_5W7vF_sZ-zV&oe=6AB53369",
+        "alt": "Splash: A Local Engine Built Around the Model",
+        "credit": "Will 保哥的技術交流中心"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0nEQuPcNKESKTcwUqQ727m8CP6E4nYkhZrP8GGY9CjUsQdUTXHzFSEPj3cRSMmJsBl",
+          "published_at": "2026-09-22T11:26:00.000+08:00"
+        }
+      ],
+      "original_text": "Inco AI 發表 Splash，一款專為 Apple Silicon 打造的開源 inference engine。\n我剛剛在我的 MBP M5 Max 實測，原本 Qwen 3.8 27B 只能跑到 15 tok/s 而已，改用這套，直接跑到 50 tok/s 耶，超強的啦！\n兩行命令就可以跑起來，實在是好貼心：\nbrew install incoai/tap/splash\nsplash serve --model incoai/Qwen3.8-27B-Splash\n它的設計邏輯和主流引擎相反。多數引擎為了通用性而支援各種模型，Splash 則把引擎圍繞單一模型打造。\n每個支援的模型都有專屬的 fused kernel、DFlash 2 draft model 與記憶體規劃，runtime 與 API 則共用。\n官方在 48 GB 的 M5 Pro 上實測，Qwen3.8-27B 的 decode 速度是次快引擎的兩倍。\n從短 prompt 到 32K context 全程領先。四路 subagent 併發時，差距擴大到接近四倍。\nPrefill 同樣領先。32K prompt 下，首字等待時間從 317 秒降到 96 秒。\nCache reuse 的差距最大。32K context 命中快取後，首字僅 282 毫秒，約為 oMLX 的 7.3 倍快。\n執行環境需要 M3 以上的 Mac、macOS 26.4 以上，以及至少 36 GB 記憶體，官方建議 48 GB。\n目前已以 Apache-2.0 開源，更多型號在路上。"
+    },
+    {
+      "id": "facebook-d60dc5423d50b8078fa380e7",
+      "title": "Qwen-Image-2.1 本機圖片編修心得",
+      "summary": "作者分享使用 Qwen-Image-2.1 在本機多次編修圖片的經驗，認為未修改區域能維持品質，並主觀比較其能力與 gpt-image-2。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T10:47:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/819103739_1763748184939485_418506222680191010_n.png?stp=dst-jpg_tt6&cstp=mx1536x1024&ctp=s1536x1024&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=EPfxTNQQojcQ7kNvwGIrShL&_nc_oc=AdoIhz9p_lnmhqbIeOmAK4PdDBRtKgcbD_HC3RzwKk_9Wa08GfsKNAv3XH5cqOXtyvRLpf789H1cvFQYGMgEOZzG&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=TSheP5YN8yGWErDwTHRWpg&_nc_ss=7b2a8&oh=00_AQLoPwIqN-xS6JFKmP9-OZaAm8y9W5JDAZH7tYL_9LQ4GQ&oe=6AB90FBF",
+        "alt": "Will 保哥的技術交流中心 分享的貼文配圖",
+        "credit": "Will 保哥的技術交流中心"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02esQ9iipG3CrPbNxboAnUfmkX5UhobcQUcaxw96NFigPXZqJaDWwLq83g63Jokavrl",
+          "published_at": "2026-09-22T10:47:00.000+08:00"
+        }
+      ],
+      "original_text": "Qwen-Image-2.1 的編輯圖片能力很強，沒改到的地方完全不會失真，這圖我改好幾次了，全部都再本機完成編修，我覺得已經有到 gpt-image-2 的能力！"
+    },
+    {
+      "id": "facebook-48302ed83a46084b1991c2a6",
+      "title": "透過 Agent Plugin 呼叫 Antigravity CLI",
+      "summary": "作者分享一款 Agent Plugin，可在 Claude Code、Codex CLI 或 Pi 中呼叫 Antigravity CLI（agy）執行工作，並表達對速度與可靠性的正面使用評價。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T10:44:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/749366661118142931?_nc_oc=AdrIQUE8W85QHY-YsXMiW3MIu4SKfCUrhjae4vodOJMdVYSaFyQ9DQqSjFo51gizwJxH413TO5c0Lr-V7YPsiDRm&url=https%3A%2F%2Fopengraph.githubassets.com%2F3b0339da7cc7a60a4b1d0d39dbffe077b41eb571419d85af04ba2fac7670cb54%2Fkeli-wen%2Fagy-staff&fb_obo=1&utld=githubassets.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=TSheP5YN8yGWErDwTHRWpg&_nc_zt=3&oh=06_Q3_DAeTeh8bvOlzSdTJX4T4w26a37Nbjxk2SHTAcPM_SAGbK&oe=6AB54791",
+        "alt": "GitHub - keli-wen/agy-staff: Hire Google's Antigravity CLI (agy) as a fast Gemini staffer for Claude Code and OpenAI Codex.",
+        "credit": "Will 保哥的技術交流中心"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02M4i5vJ3PNgXzynEKLZjETyiLMNxz3f5m9Ary2UFmzKbfJTqkAWnjpF5XrpBARm8nl",
+          "published_at": "2026-09-22T10:44:00.000+08:00"
+        }
+      ],
+      "original_text": "有人把 agy 當小弟寫成 Agent Plugin 了，裝起來就能在 Claude Code、Codex CLI 或 Pi 中呼喚 Antigravity CLI (agy) 起來做事，速度快又可靠！"
+    },
+    {
+      "id": "facebook-353caeca3555d65ef0035086",
+      "title": "MiMo-V2.6 Pro 與 Flash：全模態模型介紹",
+      "summary": "作者介紹小米 MiMo-V2.6 的 Pro 與 Flash 版本，貼文聚焦全模態能力、程式設計、電腦操作、3D 推理與創意生成，並稱模型權重、技術報告、強化學習環境及訓練程式碼同步開放。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T10:15:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/796726224_1543954971091920_2085994914484171989_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1935&ctp=s2048x1935&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=w8a-g39fPJEQ7kNvwF5xOxi&_nc_oc=Adpw5ZhSicnAWN0iQGySaqbD6sCQUY54a8JTQ7HW8TwccG7HPZgP5tR9wnUzet1frcbbla43NPpT1st5x7r2e8qi&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=TSheP5YN8yGWErDwTHRWpg&_nc_ss=7b2a8&oh=00_AQKD2UiaGRL0zX61aDptJGmYowrQ5Ij6yRKp3a4sUs5i8A&oe=6AB91CBF",
+        "alt": "Will 保哥的技術交流中心 分享的貼文配圖",
+        "credit": "Will 保哥的技術交流中心"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid06wxmwMLGf7hYNtNM2zREbQ5kF2w7TRAe48YzMhpGxhq8zhKi4TC94DjDjEjX1cP5l",
+          "published_at": "2026-09-22T10:15:00.000+08:00"
+        }
+      ],
+      "original_text": "小米正式發表 MiMo-V2.6，同步推出 Pro 與 Flash 兩種版本。\n這是一套公開構建的前沿全模態模型。\n兩款模型都具備全模態能力，透過大規模強化學習推動性能演進。\n在多數 Agent 基準測試上，Pro 的表現已經能與 Claude Opus 5 和 GPT-5.6 Sol 並駕齊驅。\n根據 Artificial Analysis Intelligence Index 評測，Pro 取得 46 分，創下目前開源模型的最高紀錄。\n這次的升級重點在於寫程式、電腦操作、3D 推理與各項創意生成能力。\n小米也延續了開源的做法。\n除了開放模型權重，官方技術報告、強化學習環境以及訓練程式碼都同步釋出。\n#看來是一個要大賣硬體的節奏了"
+    },
+    {
+      "id": "facebook-fd886ce6d0e02f6f4275f859",
+      "title": "技術粉絲團十萬追蹤的十六年回顧",
+      "summary": "作者回顧十六年記錄技術資料與開發經驗的歷程，感謝十萬名追蹤者的交流與指正，並表示將持續寫作分享。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T09:34:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/2616328160426935663?_nc_oc=AdphCuhmPoWbHTVpWddaP6tXuH7cetpYVhuERJt8FWWrgLUF3MY4RJmIs4wZ3M2eEsw2W2b9airdq8EsPuUgU44D&url=https%3A%2F%2Fcdn2.suno.ai%2Fimage_large_f38d9257-4972-43d5-8fe0-597e21f44b51.jpeg&fb_obo=1&utld=suno.ai&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=QSjpABxIJAWqBfcy9hrO9A&_nc_zt=3&oh=06_Q3_DAVELtTVk80J0a584U7gIBYm826M0tIOMvbgnl1RD41Yw&oe=6AB52C4E",
+        "alt": "謝謝十萬個你",
+        "credit": "Will 保哥的技術交流中心"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02r1NtSjiHBZd6f6FqjXkpoCdLsBECbS7qCBsrrrPxaTZRwdM7Yn59pfjxwAUyy1HPl",
+          "published_at": "2026-09-22T09:34:00.000+08:00"
+        }
+      ],
+      "original_text": "今天，這個粉絲團的追蹤人數突破十萬了。\n十六年。\n算一算時間，真的蠻長的。\n最初只是想找個公開的地方，把平日查到的技術資料、踩坑經驗隨手記下來。那時沒想過受眾，更沒想過這件事會做超過五千多個日子。\n網路環境變了很多。\n演算法改過好幾次，社群平台來來去去，大家閱讀資訊的習慣也跟以前完全不同了。\n很多早年一起互動的朋友換了工作或不再活躍，同時也一直有新加入的夥伴在這裡留下提問。\n十萬追蹤在現在的社群網絡裡，可能不算特別大的數字。\n但一個長期只討論軟體開發、系統架構與技術雜談的專頁，能聚集成千上萬名願意花時間看文字的同行，這件事本身很有重量。\n謝謝大家路過時的停留，也謝謝留言區裡的每一次交流與指正。\n很多內容如果沒有這些互動，我自己也很難持續維持整理的動力。\n技術架構會過時，工具年年都在換。\n寫字記錄這件事，就先照著原本的節奏，繼續往前走。\n#用Suno寫了一首歌給大家"
+    },
+    {
+      "id": "facebook-0d113c38148354733ca419be",
+      "title": "KIAO Voice 語音輸入與台灣用語優化",
+      "summary": "Muki Wu 分享 KIAO Voice 作為語音輸入替代工具，介紹台灣團隊開發與在地用語轉換特色。貼文包含作者推薦碼及額外 Pro 體驗優惠，屬帶有推薦優惠的工具介紹。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T09:01:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/799983533_10168406402078916_4189367020743572315_n.jpg?stp=dst-jpg_tt6&cstp=mx1254x1254&ctp=s1080x2048&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_471ZqQynusQ7kNvwEbVU2N&_nc_oc=AdqX23vkWsOrI-mTSHqmz0JD1nwdIQnGnN8OiEuPHjCx7OJL4f2jklFOFcoBFFK9hGdP5AlpRsP2Btjcv7vevmLl&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=QSjpABxIJAWqBfcy9hrO9A&_nc_ss=7b2a8&oh=00_AQJ25OahmTBytukRK2GqzJcJP7KfoHkuIRTZ_2iO5Gs9Rw&oe=6AB90B3A",
+        "alt": "Muki Wu 分享的貼文配圖",
+        "credit": "Muki Wu"
+      },
+      "sources": [
+        {
+          "name": "Muki Wu",
+          "url": "https://www.facebook.com/muki.wu/posts/pfbid02k6ZspZbj2q1ZUjFEwKRs6Vzk8LAJX8XGHDiVckboWyNLau4ZcP7mREP9W93xabPfl",
+          "published_at": "2026-09-22T09:01:00.000+08:00"
+        }
+      ],
+      "original_text": "從今天開始，Typeless 的免費版就要從 8000 下調到 2000 了，大家是否已經找到替代的語音軟體了呢？早在 2016 年，史丹佛、華盛頓大學和百度就做過了一個研究，當你想要表達一段內容時，用嘴巴說話的速度比打字還快 3 倍，而且正確率更高\n​\n所以，如果你還沒開始用語音輸入，或者你正在找 Typeless 的平替軟體，我要再推薦一次月初介紹的 KIAO Voice，這是台灣團隊 Word Up 開發的，品質相對有保障，也有很多針對台灣使用者的優化，尤其是不會冒出奇怪的大陸用語、還能自動把視頻轉成影片... 這樣的貼心功能，真的蠻推的\n​\n現在加入 KIAO Voice 可以有 1 個月的 Pro 會員體驗，另外我還跟 KIAO Voice 團隊爭取到更多的優惠 \n​\n只要使用我的推薦碼成為會員，除了原本的 1 個月 Pro 會員外，還會額外再送你 14 天的 Pro 會員體驗喔，所以總共是 1M + 14 Days \n，這是我跟 KIAO Voice 爭取來的，一定要用我的推薦碼註冊才有這個優惠喔\n​\nhttps://kiao-voice.kiao.com.tw/?ref=MM662RH2\n​\n然後我從小最討厭早買早享受，晚買享折扣這句話 XXD\n​\n所以我有特地跟 KIAO Voice 許願，希望之前就用過我推薦碼註冊的朋友，也可以享有這個優惠 \n，KIAO Voice 也非常給力的說好 \n (台灣人最棒/\n​\n因此如果你之前就透過我的優惠碼註冊成為會員，請不用擔心，你也會有額外 14 天的 Pro 體驗 (如果真的沒有請再跟我說～～"
+    },
+    {
+      "id": "facebook-37c1fd2869c8005319380e21",
+      "title": "Qwen-Image-2.1 本機圖片編修心得",
+      "summary": "作者分享使用 Qwen-Image-2.1 在本機多次編修圖片的經驗，認為未修改區域能維持品質，並主觀比較其能力與 gpt-image-2。",
+      "original_text": "Qwen-Image-2.1 的編輯圖片能力很強，沒改到的地方完全不會失真，這圖我改好幾次了，全部都再本機完成編修，我覺得已經有到 gpt-image-2 的能力！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T10:47:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/819103739_1763748184939485_418506222680191010_n.png?stp=dst-jpg_tt6&cstp=mx1536x1024&ctp=s1536x1024&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=EPfxTNQQojcQ7kNvwGIrShL&_nc_oc=AdoIhz9p_lnmhqbIeOmAK4PdDBRtKgcbD_HC3RzwKk_9Wa08GfsKNAv3XH5cqOXtyvRLpf789H1cvFQYGMgEOZzG&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=TSheP5YN8yGWErDwTHRWpg&_nc_ss=7b2a8&oh=00_AQLoPwIqN-xS6JFKmP9-OZaAm8y9W5JDAZH7tYL_9LQ4GQ&oe=6AB90FBF",
+        "alt": "Will 保哥的技術交流中心 分享的貼文配圖",
+        "credit": "Will 保哥的技術交流中心"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0aqoSEuchNChPkHtCsVyuGNjrGkBNiNLXg2ZhP5YFQXuPCbJiyk1LZjb5jzohWrajl",
+          "published_at": "2026-09-22T10:47:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-068cc68cef4ce9d51b4d5b3f",
+      "title": "透過 Agent Plugin 呼叫 Antigravity CLI",
+      "summary": "作者分享一款 Agent Plugin，可在 Claude Code、Codex CLI 或 Pi 中呼叫 Antigravity CLI（agy）執行工作，並表達對速度與可靠性的正面使用評價。",
+      "original_text": "有人把 agy 當小弟寫成 Agent Plugin 了，裝起來就能在 Claude Code、Codex CLI 或 Pi 中呼喚 Antigravity CLI (agy) 起來做事，速度快又可靠！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T10:44:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/749366661118142931?_nc_oc=AdrIQUE8W85QHY-YsXMiW3MIu4SKfCUrhjae4vodOJMdVYSaFyQ9DQqSjFo51gizwJxH413TO5c0Lr-V7YPsiDRm&url=https%3A%2F%2Fopengraph.githubassets.com%2F3b0339da7cc7a60a4b1d0d39dbffe077b41eb571419d85af04ba2fac7670cb54%2Fkeli-wen%2Fagy-staff&fb_obo=1&utld=githubassets.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=TSheP5YN8yGWErDwTHRWpg&_nc_zt=3&oh=06_Q3_DAeTeh8bvOlzSdTJX4T4w26a37Nbjxk2SHTAcPM_SAGbK&oe=6AB54791",
+        "alt": "GitHub - keli-wen/agy-staff: Hire Google's Antigravity CLI (agy) as a fast Gemini staffer for Claude Code and OpenAI Codex.",
+        "credit": "Will 保哥的技術交流中心"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0H37NSUqphfpcgjKK3jkXFzcbdg6LECTfSH8zhq2Nj6kdEZha3gpeSAS1XBQJWYUkl",
+          "published_at": "2026-09-22T10:44:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-09-23T04:47:22.409Z",
+      "captured": 11,
+      "included": 8,
+      "excluded": 3,
+      "notes": []
+    }
+  }
+}

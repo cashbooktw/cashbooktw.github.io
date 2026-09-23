@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-22",
+  "generated_at": "2026-09-22T17:22:16+08:00",
+  "is_demo": false,
+  "edition_title": "2026-09-22 每日資訊整理",
+  "edition_summary": "本次依 2026-09-21 17:22 至 2026-09-22 17:22（Asia/Taipei）24 小時窗整理，並依 Codex Resets 規則另讀取即時「Reset scheduled」狀態。保留今日既有 11 則正式 stories，新增 Codex reset 排程與 TechCrunch AI 各 1 則，共 13 則。Ars Technica 的候選文章頁顯示 2026-09-21 12:57 pm 但未標示時區，無法嚴格確認是否落在本次時間窗；Interconnects 首頁未由工具取得文章列表；The Decoder 僅顯示 2026-09-21 日期、未顯示時分，亦無法確認時間窗；地新聞新竹市與新竹縣本次未見需在既有正式 stories 之外追加的新內容。因此本期不宣稱來源收集完整。",
+  "stories": [
+    {
+      "id": "localnews-a_mub6q3cr_7431epg1",
+      "title": "新竹孔廟前廣場音樂節落幕，九降風連辦3天",
+      "summary": "2026新竹九降風音樂節於9月20日在孔廟前廣場落幕。活動從9月18日起結合原創音樂競賽、戶外演出與市集，多組音樂人登台，並由告五人於最後一天壓軸。",
+      "section": "生活",
+      "source_kind": "web",
+      "published_at": "2026-09-21T22:15:00+08:00",
+      "tags": [
+        "新竹市",
+        "藝文展演",
+        "音樂"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹市",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mub6q3cr_7431epg1",
+          "published_at": "2026-09-21T22:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mub6oa23_kr6gfhba",
+      "title": "新竹市以音樂、街舞與黑客松提供青年參與舞台",
+      "summary": "新竹市近期安排九降風音樂節、竹塹盃街舞大賽與新竹X梅竹黑客松，涵蓋文化、運動與科技。市府表示，相關活動面向35歲以下青年，提供競賽、交流與實作機會。",
+      "section": "生活",
+      "source_kind": "web",
+      "published_at": "2026-09-21T21:15:00+08:00",
+      "tags": [
+        "新竹市",
+        "青年",
+        "活動"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹市",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mub6oa23_kr6gfhba",
+          "published_at": "2026-09-21T21:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mub5uvkb_6a8kp4kt",
+      "title": "大新竹輕軌紅藍線整合研究推進，目標116年底提報交通部",
+      "summary": "新竹縣市正進行大新竹輕軌紅、藍線整合研究，評估高鐵延伸、站位、跨越工程、共用機廠與直通營運等議題。縣府表示，專案目標在民國116年底前完成可行性研究並提報交通部。",
+      "section": "交通",
+      "source_kind": "web",
+      "published_at": "2026-09-21T22:15:00+08:00",
+      "tags": [
+        "新竹縣",
+        "新竹市",
+        "輕軌",
+        "交通"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹縣",
+          "url": "https://localnews.tw/hsinchuCounty/news/a_mub5uvkb_6a8kp4kt",
+          "published_at": "2026-09-21T22:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mucdgcxm_elvii3d3",
+      "title": "慈雲空橋重新選色，竹市府目標11月初啟用",
+      "summary": "新竹市政府表示，慈雲空橋原定鐵棕色完成部分上色後收到民眾意見，因此啟動重新選色。替代方案將兼顧不反光、行車安全與維護條件，工程仍以10月下旬完工、11月初啟用為目標。",
+      "section": "交通",
+      "source_kind": "web",
+      "published_at": "2026-09-22T16:15:00+08:00",
+      "tags": [
+        "新竹市",
+        "慈雲空橋",
+        "交通"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹市",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mucdgcxm_elvii3d3",
+          "published_at": "2026-09-22T16:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mub6q7g0_n9j6h1v5",
+      "title": "新竹市9月開辦長者健保費補助，符合資格者免申請",
+      "summary": "新竹市自9月開辦長者全民健保自付保險費補助，符合設籍、年齡等條件者免另行申請，每人每月最高補助826元。市府預估超過7萬名長輩受益，補助結果可由10月下旬健保繳費通知確認。",
+      "section": "生活",
+      "source_kind": "web",
+      "published_at": "2026-09-21T22:15:00+08:00",
+      "tags": [
+        "新竹市",
+        "長者",
+        "健保"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹市",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mub6q7g0_n9j6h1v5",
+          "published_at": "2026-09-21T22:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mub6pq43_nbxtuo96",
+      "title": "新竹市道安會報聚焦校園交安與高齡機車事故",
+      "summary": "新竹市9月21日召開道路交通安全聯席會報，檢視校園交通教育、高齡機車事故與路口改善。警方指出高齡者機車事故人數較前三年平均增加17人，市府表示將從教育、工程、宣導與執法持續改善。",
+      "section": "交通",
+      "source_kind": "web",
+      "published_at": "2026-09-21T22:15:00+08:00",
+      "tags": [
+        "新竹市",
+        "道路安全",
+        "高齡者"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹市",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mub6pq43_nbxtuo96",
+          "published_at": "2026-09-21T22:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mub6njiq_y0ahgept",
+      "title": "新竹市服務業節能補助開放申請至12月15日",
+      "summary": "新竹市服務業能源效率改善補助自9月21日開放，項目包括隔熱、冷氣清洗、LED燈具汰換及ISO 50001能源管理系統驗證。申請期限至12月15日，市府並規劃10月6日辦理說明會。",
+      "section": "生活",
+      "source_kind": "web",
+      "published_at": "2026-09-21T21:45:00+08:00",
+      "tags": [
+        "新竹市",
+        "節能",
+        "補助"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹市",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mub6njiq_y0ahgept",
+          "published_at": "2026-09-21T21:45:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_muax7848_30kszsw2",
+      "title": "豐田消防分隊獲贈滅火器與AED置放箱",
+      "summary": "新竹縣消防局9月21日在豐田消防分隊接受100支滅火器與8個AED置放箱捐贈。消防局表示，滅火器將陸續提供社區使用，AED置放箱則配置於8處消防分隊。",
+      "section": "社會",
+      "source_kind": "web",
+      "published_at": "2026-09-21T21:45:00+08:00",
+      "tags": [
+        "新竹縣",
+        "消防",
+        "防災"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹縣",
+          "url": "https://localnews.tw/hsinchuCounty/news/a_muax7848_30kszsw2",
+          "published_at": "2026-09-21T21:45:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_muaov0fa_8tzmb3hp",
+      "title": "國家防災日進行地震與海嘯警報測試",
+      "summary": "9月21日國家防災日演習安排全國地震速報及沿海海嘯警報測試。新竹縣消防局提醒，民眾收到測試訊息時可練習趴下、掩護、穩住，並檢查避難包與家庭聯絡方式。",
+      "section": "生活",
+      "source_kind": "web",
+      "published_at": "2026-09-21T21:15:00+08:00",
+      "tags": [
+        "新竹縣",
+        "防災",
+        "地震"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹縣",
+          "url": "https://localnews.tw/hsinchuCounty/news/a_muaov0fa_8tzmb3hp",
+          "published_at": "2026-09-21T21:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mub5u8en_xn5pqquz",
+      "title": "新竹縣推失智友善活動，長輩擔任一日店員",
+      "summary": "新竹縣政府與天主教仁慈醫院9月21日舉辦失智友善活動，讓失智長輩以一日店員身分參與服務。縣府同時呼籲在地商家加入失智友善行列，並提供失智共同照護中心、社區據點與1966長照專線等資源資訊。",
+      "section": "生活",
+      "source_kind": "web",
+      "published_at": "2026-09-21T20:15:00+08:00",
+      "tags": [
+        "新竹縣",
+        "失智友善",
+        "長照"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹縣",
+          "url": "https://localnews.tw/hsinchuCounty/news/a_mub5u8en_xn5pqquz",
+          "published_at": "2026-09-21T20:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_muaohzkf_humxbs65",
+      "title": "五峰石鹿大山登山客迷途，山搜人員接力救援",
+      "summary": "一名登山客9月19日在五峰鄉石鹿大山返程時迷途，透過手機定位報案後留在原地等待。搜救人員分路進山，於隔日找到受困者並提供糧食，待體力恢復後陪同下山。",
+      "section": "社會",
+      "source_kind": "web",
+      "published_at": "2026-09-21T19:45:00+08:00",
+      "tags": [
+        "新竹縣",
+        "五峰鄉",
+        "山域救援"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹縣",
+          "url": "https://localnews.tw/hsinchuCounty/news/a_muaohzkf_humxbs65",
+          "published_at": "2026-09-21T19:45:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "codex-reset-2026-09-23-0700-utc",
+      "title": "Codex 使用限制排定於 9 月 23 日 07:00 UTC 重置",
+      "summary": "Codex Resets 的「Reset scheduled」目前顯示下一次重置排定為 2026-09-23 07:00 UTC（台北時間 15:00）。頁面同時顯示最近一次已完成重置為 9 月 12 日 08:09 UTC；該網站標示其為第三方追蹤服務，並非 OpenAI 官方。",
+      "section": "AI",
+      "source_kind": "web",
+      "tags": [
+        "Codex",
+        "使用限制",
+        "重置排程"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Codex Resets",
+          "url": "https://codex-resets.com/"
+        }
+      ]
+    },
+    {
+      "id": "techcrunch-openai-math-advisory-2026-09-21",
+      "title": "OpenAI 成立數學與 AI 諮詢小組，稱內部模型已解決逾百個未解問題",
+      "summary": "TechCrunch 報導，OpenAI 宣布成立由普林斯頓高等研究院承辦的數學與人工智慧諮詢小組，讓數學界參與評估成果的重要性與發布協調。OpenAI 同時稱其內部模型已解決超過 100 個不同領域的數學未解問題；該小組不負責決定 OpenAI 內部數學研究的進度。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-21T13:15:00-07:00",
+      "tags": [
+        "AI",
+        "OpenAI",
+        "數學"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+          "published_at": "2026-09-21T13:15:00-07:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "configured_sources": {
+      "status": "limited",
+      "completed_at": "2026-09-22T17:22:16+08:00",
+      "captured": 13,
+      "included": 13,
+      "excluded": 0,
+      "notes": [
+        "本次依 2026-09-21 17:22 至 2026-09-22 17:22（Asia/Taipei）24 小時窗整理，並依 Codex Resets 規則另讀取即時「Reset scheduled」狀態。保留今日既有 11 則正式 stories，新增 Codex reset 排程與 TechCrunch AI 各 1 則，共 13 則。Ars Technica 的候選文章頁顯示 2026-09-21 12:57 pm 但未標示時區，無法嚴格確認是否落在本次時間窗；Interconnects 首頁未由工具取得文章列表；The Decoder 僅顯示 2026-09-21 日期、未顯示時分，亦無法確認時間窗；地新聞新竹市與新竹縣本次未見需在既有正式 stories 之外追加的新內容。因此本期不宣稱來源收集完整。"
+      ]
+    }
+  }
+}

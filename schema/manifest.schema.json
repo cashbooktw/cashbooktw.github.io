@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cashbooktw.github.io/schema/manifest.schema.json",
+  "title": "The Daily Signal — Channel manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "current", "updated_at", "editions"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "current": { "$ref": "#/$defs/date" },
+    "updated_at": { "$ref": "#/$defs/timestamp" },
+    "editions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["date", "path", "story_count", "is_demo"],
+        "properties": {
+          "date": { "$ref": "#/$defs/date" },
+          "path": { "type": "string", "pattern": "^data/(facebook|chatgpt)/editions/[1-9]\\d{3}-\\d{2}-\\d{2}\\.json$" },
+          "story_count": { "type": "integer", "minimum": 0 },
+          "is_demo": { "type": "boolean" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "date": { "type": "string", "format": "date", "pattern": "^[1-9]\\d{3}-\\d{2}-\\d{2}$" },
+    "timestamp": { "type": "string", "format": "date-time", "pattern": "^[1-9]\\d{3}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$" }
+  }
+}

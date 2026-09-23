@@ -9,8 +9,8 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>THE DAILY SIGNAL · 每日情報報</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/newspaper.css?v=a8b2bce28113">
-  <script src="assets/js/app.js?v=bce133ce396a" defer></script>
+  <link rel="stylesheet" href="assets/css/newspaper.css?v=55c0cd580f86">
+  <script src="assets/js/app.js?v=b7d7526e0653" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">跳至本期內容</a>
@@ -21,7 +21,7 @@
       <div class="nameplate"><span aria-hidden="true">❧</span><p>每日情報報</p><span aria-hidden="true">❧</span></div>
       <div class="dateline">
         <span id="edition-number">NO. —</span>
-        <time id="edition-date">調閱本期中</time>
+        <time id="edition-date" tabindex="-1">調閱本期中</time>
         <span>更新 <time id="updated-time">—</time><span class="timezone"> 台北時間</span></span>
       </div>
     </header>
@@ -39,13 +39,7 @@
         <button id="retry-latest" type="button" hidden>返回最新一期</button>
       </section>
       <div id="edition-panel" hidden>
-        <p id="demo-notice" class="demo-notice" hidden>SAMPLE / DEMO — 本期全部為排版示例，並非真實新聞。</p>
-        <section class="opening" aria-labelledby="edition-title">
-          <p class="eyebrow" lang="en">THE EDITION / 本期提要</p>
-          <h2 id="edition-title" tabindex="-1"></h2>
-          <p id="edition-summary"></p>
-        </section>
-        <section id="source-reports" class="source-reports" aria-label="來源讀取狀態"></section>
+        <section id="channel-status" class="channel-status" aria-label="來源限制或讀取錯誤" hidden></section>
         <section class="reading-tools" aria-labelledby="tools-title">
           <h2 id="tools-title" class="visually-hidden">搜尋與篩選本期</h2>
           <form id="search-form" role="search">

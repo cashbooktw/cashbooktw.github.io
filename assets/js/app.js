@@ -4,8 +4,9 @@
   const BASE = new URL("./", document.baseURI);
   const KINDS = { facebook: "Facebook", rss: "RSS", news: "新聞搜尋", web: "網頁", other: "其他" };
   const $ = (id) => document.getElementById(id);
-  const ui = Object.fromEntries(["main", "message", "message-title", "message-detail", "retry-latest", "edition-panel", "demo-notice", "edition-number", "edition-date", "updated-time", "edition-title", "edition-summary", "source-reports", "search-input", "section-filter", "kind-filter", "tag-filters", "tag-total", "topic-index", "stories", "results-count", "empty-results", "archive-list", "archive-count"].map((id) => [id, $(id)]));
-  const state = { manifest: null, edition: null, controller: null, request: 0, tag: "" };
+  const ui = Object.fromEntries(["main", "message", "message-title", "message-detail", "retry-latest", "edition-panel", "edition-number", "edition-date", "updated-time", "channel-status", "search-input", "section-filter", "kind-filter", "tag-filters", "tag-total", "topic-index", "stories", "results-count", "empty-results", "archive-list", "archive-count"].map((id) => [id, $(id)]));
+  const CHANNELS = ["facebook", "chatgpt"];
+  const state = { manifests: null, edition: null, controller: null, request: 0, tag: "" };
   const own = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
   const obj = (v) => v !== null && typeof v === "object" && !Array.isArray(v);
   const str = (v) => typeof v === "string";
@@ -35,12 +36,12 @@
     if (/^assets\/(?:[A-Za-z0-9_-]+\/)*[A-Za-z0-9_-]+\.(?:avif|gif|jpe?g|png|svg|webp)$/.test(value)) return new URL(value, BASE).href;
     return null;
   }
-  function validateManifest(m) {
+  function validateManifest(m, channel) {
     const error = "目錄 JSON 格式不正確，或與 schema_version 1 不相容。";
     check(keys(m, ["schema_version", "current", "updated_at", "editions"]) && m.schema_version === 1 && day(m.current) && timestamp(m.updated_at) && Array.isArray(m.editions) && m.editions.length > 0, error);
     const dates = new Set();
     for (const e of m.editions) {
-      check(keys(e, ["date", "path", "story_count", "is_demo"]) && day(e.date) && e.path === `data/editions/${e.date}.json` && Number.isSafeInteger(e.story_count) && e.story_count >= 0 && typeof e.is_demo === "boolean" && !dates.has(e.date), error);
+      check(keys(e, ["date", "path", "story_count", "is_demo"]) && day(e.date) && e.path === `data/${channel}/editions/${e.date}.json` && Number.isSafeInteger(e.story_count) && e.story_count >= 0 && typeof e.is_demo === "boolean" && !dates.has(e.date), error);
       dates.add(e.date);
     }
     check(dates.has(m.current), "目錄 current 沒有對應期數。");
@@ -48,7 +49,7 @@
   }
   function validateEdition(e, entry) {
     const error = "本期 JSON 格式不正確，或與目錄／edition schema 不一致。";
-    check(keys(e, ["schema_version", "date", "generated_at", "is_demo", "edition_title", "edition_summary", "stories"], ["source_reports"]) && e.schema_version === 1 && day(e.date) && timestamp(e.generated_at) && typeof e.is_demo === "boolean" && str(e.edition_title) && str(e.edition_summary) && Array.isArray(e.stories), error);
+    check(keys(e, ["schema_version", "date", "generated_at", "is_demo", "stories"], ["edition_title", "edition_summary", "source_reports"]) && e.schema_version === 1 && day(e.date) && timestamp(e.generated_at) && typeof e.is_demo === "boolean" && (!own(e, "edition_title") || str(e.edition_title)) && (!own(e, "edition_summary") || str(e.edition_summary)) && Array.isArray(e.stories), error);
     check(e.date === entry.date && e.is_demo === entry.is_demo && e.stories.length === entry.story_count, error);
     if (own(e, "source_reports")) {
       const reports = e.source_reports;
@@ -115,38 +116,26 @@
     a.setAttribute("aria-label", `${source.name}：查看原文（另開視窗）`);
     return a;
   }
-  function renderSourceReports(reports = {}) {
-    const labels = { facebook: "Facebook Favorites", configured_sources: "已設定的非 Facebook 來源" };
+  function renderChannelStatus(statuses) {
     const fragment = document.createDocumentFragment();
-    for (const channel of Object.keys(labels)) {
-      const article = node("article", undefined, "source-report");
-      article.append(node("h3", labels[channel]));
-      const report = reports[channel];
-      if (!report) {
-        article.append(node("p", "未記錄；本期無法確認此來源是否執行。", "source-report-status"));
-      } else {
-        article.append(node("p", report.status === "complete" ? "完成" : "有限讀取", "source-report-status"));
-        const counts = node("p", `讀取 ${report.captured} · 收錄 ${report.included} · 排除 ${report.excluded}`, "source-report-counts");
-        counts.append(timeNode(report.completed_at));
-        article.append(counts);
-        if (report.notes.length) {
-          const notes = node("ul", undefined, "source-report-notes");
-          for (const note of report.notes) notes.append(node("li", note));
-          article.append(notes);
-        }
-      }
+    for (const status of statuses) {
+      const article = node("p", undefined, "channel-status-item");
+      const label = status.channel === "facebook" ? "Facebook" : "ChatGPT";
+      article.append(node("strong", `${label}: ${status.error ? "讀取失敗" : "有限讀取"}。 `));
+      article.append(document.createTextNode(status.error || status.notes.join("；") || "本通道內容可能不完整。"));
       fragment.append(article);
     }
-    ui["source-reports"].replaceChildren(fragment);
+    ui["channel-status"].replaceChildren(fragment);
+    ui["channel-status"].hidden = statuses.length === 0;
   }
   function renderStory(s) {
     const article = node("article", undefined, "story");
-    article.id = `story-${s.id}`;
-    if (s.id === state.edition.stories[0].id) article.classList.add("story--lead");
+    article.id = `story-${s.channel}-${s.id}`;
+    if (s === state.edition.stories[0]) article.classList.add("story--lead");
     const kicker = node("p", undefined, "story-kicker");
     kicker.append(node("span", s.section || "未分類"));
     if (state.edition.is_demo) kicker.append(node("span", "SAMPLE / DEMO", "demo-stamp"));
-    const title = node("h3", s.title); title.id = `title-${s.id}`;
+    const title = node("h3", s.title); title.id = `title-${s.channel}-${s.id}`;
     article.setAttribute("aria-labelledby", title.id);
     article.append(kicker, title);
     if (s.deck) article.append(node("p", s.deck, "story-deck"));
@@ -204,7 +193,7 @@
     ui.stories.replaceChildren(fragment);
     ui["results-count"].textContent = `顯示 ${filtered.length} / ${state.edition.stories.length} 則`;
     ui["empty-results"].hidden = filtered.length > 0;
-    ui["empty-results"].textContent = state.edition.stories.length ? "沒有符合條件的紀事。請調整搜尋文字，或清除篩選條件。" : "本期暫無新聞。收集狀態請見上方本期提要。";
+    ui["empty-results"].textContent = state.edition.stories.length ? "沒有符合條件的紀事。請調整搜尋文字，或清除篩選條件。" : "本期暫無新聞。";
     for (const button of ui["tag-filters"].querySelectorAll("button")) button.setAttribute("aria-pressed", String(button.dataset.tag === state.tag));
   }
   function fillSelect(select, values, label, labels = null) {
@@ -233,23 +222,25 @@
     return url;
   }
   function renderArchive() {
-    if (!state.manifest) return;
+    if (!state.manifests) return;
     ui["archive-list"].replaceChildren();
-    for (const edition of [...state.manifest.editions].sort((a, b) => b.date.localeCompare(a.date))) {
-      const item = node("li"); const a = node("a", edition.date);
-      a.href = editionURL(edition.date).href; a.dataset.edition = edition.date;
-      if (edition.date === state.edition?.date) a.setAttribute("aria-current", "page");
-      a.append(node("small", `${edition.story_count} 則${edition.is_demo ? " · SAMPLE / DEMO" : ""}${edition.date === state.manifest.current ? " · 最新一期" : ""}`));
+    const dates = [...new Set(CHANNELS.flatMap((channel) => (state.manifests[channel]?.editions ?? []).map((entry) => entry.date)))].sort((a, b) => b.localeCompare(a));
+    const latest = dates[0];
+    for (const date of dates) {
+      const entries = CHANNELS.map((channel) => state.manifests[channel]?.editions.find((entry) => entry.date === date)).filter(Boolean);
+      const item = node("li"); const a = node("a", date);
+      a.href = editionURL(date).href; a.dataset.edition = date;
+      if (date === state.edition?.date) a.setAttribute("aria-current", "page");
+      a.append(node("small", `${entries.reduce((total, entry) => total + entry.story_count, 0)} 則${entries.some((entry) => entry.is_demo) ? " · SAMPLE / DEMO" : ""}${date === latest ? " · 最新一期" : ""}`));
       a.addEventListener("click", (event) => {
         if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-        event.preventDefault(); openEdition(edition.date, { historyMode: "push", focus: true });
+        event.preventDefault(); openEdition(date, { historyMode: "push", focus: true });
       });
       item.append(a); ui["archive-list"].append(item);
     }
-    ui["archive-count"].textContent = `／ ${state.manifest.editions.length} 期`;
+    ui["archive-count"].textContent = `／ ${dates.length} 期`;
   }
   function showMessage(title, detail, error = false) {
-    ui["edition-panel"].hidden = true;
     ui.message.hidden = false;
     ui.message.setAttribute("role", error ? "alert" : "status");
     ui["message-title"].textContent = title;
@@ -270,6 +261,7 @@
       if (url.href !== window.location.href) history[historyMode === "push" ? "pushState" : "replaceState"]({}, "", url);
     }
     state.edition = null;
+    ui["edition-panel"].hidden = true;
     ui.main.setAttribute("aria-busy", "true");
     ui["edition-number"].textContent = "NO. —";
     ui["edition-date"].textContent = "調閱本期中"; ui["edition-date"].removeAttribute("datetime");
@@ -277,30 +269,61 @@
     document.title = "THE DAILY SIGNAL · 每日情報報";
     showMessage("正在調閱本期…", "讀取目錄與當期內容。");
     try {
-      if (!state.manifest || refresh) {
-        const manifest = validateManifest(await fetchJSON("data/index.json", signal));
+      const loadCatalog = async (channel) => {
+        try {
+          const manifest = validateManifest(await fetchJSON(`data/${channel}/index.json`, signal), channel);
+          return { manifest };
+        } catch (error) {
+          if (signal.aborted) throw error;
+          return { error: error instanceof TypeError ? "連線失敗，無法讀取目錄。" : error.message };
+        }
+      };
+      if (!state.manifests || refresh) {
+        const catalogs = await Promise.all(CHANNELS.map(loadCatalog));
         if (request !== state.request) return;
-        state.manifest = manifest;
+        state.manifests = Object.fromEntries(CHANNELS.map((channel, index) => [channel, catalogs[index].manifest]));
+        state.catalogErrors = Object.fromEntries(CHANNELS.map((channel, index) => [channel, catalogs[index].error]));
       }
       renderArchive();
-      const target = date === null ? state.manifest.current : date;
+      const dates = CHANNELS.flatMap((channel) => (state.manifests[channel]?.editions ?? []).map((entry) => entry.date));
+      const target = date === null ? dates.sort((a, b) => b.localeCompare(a))[0] : date;
+      check(target, "兩個來源目錄皆無可用期數。");
       check(day(target), "網址中的 edition 日期無效。請使用 YYYY-MM-DD 格式並從往期存檔選擇。");
-      const entry = state.manifest.editions.find((e) => e.date === target);
-      check(entry, `目錄中沒有 ${target} 這一期。`);
-      const edition = validateEdition(await fetchJSON(entry.path, signal), entry);
+      const channelResults = await Promise.all(CHANNELS.map(async (channel) => {
+        const entry = state.manifests[channel]?.editions.find((e) => e.date === target);
+        if (!entry) return { channel, absent: true };
+        try {
+          const edition = validateEdition(await fetchJSON(entry.path, signal), entry);
+          return { channel, edition };
+        } catch (error) {
+          if (signal.aborted) throw error;
+          return { channel, error: error instanceof TypeError ? "連線失敗，無法讀取本期。" : error.message };
+        }
+      }));
       if (request !== state.request) return;
+      const available = channelResults.filter((result) => result.edition);
+      check(available.length, `無法取得 ${target} 的任何可用通道內容。`);
+      const editions = available.map(({ channel, edition }) => ({ channel, edition }));
+      const edition = { date: target, generated_at: editions.map(({ edition: value }) => value.generated_at).sort((a, b) => Date.parse(a) - Date.parse(b)).at(-1), is_demo: editions.every(({ edition: value }) => value.is_demo), stories: editions.flatMap(({ channel, edition: value }) => value.stories.map((story) => ({ ...story, channel }))) };
       state.edition = edition;
       ui["edition-number"].textContent = `NO. ${edition.date.replaceAll("-", "")}`;
       ui["edition-date"].textContent = formatDate(edition.date); ui["edition-date"].dateTime = edition.date;
-      ui["updated-time"].textContent = formatDate(edition.generated_at); ui["updated-time"].dateTime = edition.generated_at;
-      ui["edition-title"].textContent = edition.edition_title || "本期情報";
-      ui["edition-summary"].textContent = edition.edition_summary;
-      renderSourceReports(edition.source_reports);
-      ui["demo-notice"].hidden = !edition.is_demo;
+      ui["updated-time"].textContent = edition.generated_at ? formatDate(edition.generated_at) : "—";
+      if (edition.generated_at) ui["updated-time"].dateTime = edition.generated_at; else ui["updated-time"].removeAttribute("datetime");
+      const statuses = [];
+      for (const result of channelResults) {
+        if (result.error || state.catalogErrors?.[result.channel]) statuses.push({ channel: result.channel, error: result.error || state.catalogErrors[result.channel], notes: [] });
+        if (result.edition) {
+          const reports = result.edition.source_reports || {};
+          const report = reports[result.channel] || reports[result.channel === "chatgpt" ? "configured_sources" : "facebook"];
+          if (report?.status === "limited") statuses.push({ channel: result.channel, notes: report.notes });
+        }
+      }
+      renderChannelStatus(statuses);
       setupFilters(); renderArchive();
       ui.message.hidden = true; ui["edition-panel"].hidden = false;
       document.title = `${edition.date}${edition.is_demo ? " SAMPLE / DEMO" : ""} · THE DAILY SIGNAL`;
-      if (focus) ui["edition-title"].focus({ preventScroll: true });
+      if (focus) ui["edition-date"].focus({ preventScroll: true });
     } catch (error) {
       if (request !== state.request || signal.aborted) return;
       showMessage("Edition unavailable", error instanceof TypeError ? "連線失敗，無法調閱本期。請檢查網路後重試。" : error.message, true);

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "current": "2026-09-22",
+  "updated_at": "2026-09-22T17:22:16+08:00",
+  "editions": [
+    {
+      "date": "2026-09-22",
+      "path": "data/chatgpt/editions/2026-09-22.json",
+      "story_count": 13,
+      "is_demo": false
+    }
+  ]
+}
