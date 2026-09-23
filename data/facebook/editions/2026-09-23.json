@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-09-23",
-  "generated_at": "2026-09-23T05:46:13.418Z",
+  "generated_at": "2026-09-23T06:17:37.009Z",
   "is_demo": false,
   "edition_title": "2026-09-23 日報",
   "edition_summary": "",
@@ -152,6 +152,11 @@
           "name": "Will 保哥的技術交流中心",
           "url": "https://www.facebook.com/will.fans/posts/pfbid02esQ9iipG3CrPbNxboAnUfmkX5UhobcQUcaxw96NFigPXZqJaDWwLq83g63Jokavrl",
           "published_at": "2026-09-22T10:47:00.000+08:00"
+        },
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0aqoSEuchNChPkHtCsVyuGNjrGkBNiNLXg2ZhP5YFQXuPCbJiyk1LZjb5jzohWrajl",
+          "published_at": "2026-09-22T10:47:00.000+08:00"
         }
       ],
       "original_text": "Qwen-Image-2.1 的編輯圖片能力很強，沒改到的地方完全不會失真，這圖我改好幾次了，全部都再本機完成編修，我覺得已經有到 gpt-image-2 的能力！"
@@ -243,28 +248,6 @@
         }
       ],
       "original_text": "從今天開始，Typeless 的免費版就要從 8000 下調到 2000 了，大家是否已經找到替代的語音軟體了呢？早在 2016 年，史丹佛、華盛頓大學和百度就做過了一個研究，當你想要表達一段內容時，用嘴巴說話的速度比打字還快 3 倍，而且正確率更高\n​\n所以，如果你還沒開始用語音輸入，或者你正在找 Typeless 的平替軟體，我要再推薦一次月初介紹的 KIAO Voice，這是台灣團隊 Word Up 開發的，品質相對有保障，也有很多針對台灣使用者的優化，尤其是不會冒出奇怪的大陸用語、還能自動把視頻轉成影片... 這樣的貼心功能，真的蠻推的\n​\n現在加入 KIAO Voice 可以有 1 個月的 Pro 會員體驗，另外我還跟 KIAO Voice 團隊爭取到更多的優惠 \n​\n只要使用我的推薦碼成為會員，除了原本的 1 個月 Pro 會員外，還會額外再送你 14 天的 Pro 會員體驗喔，所以總共是 1M + 14 Days \n，這是我跟 KIAO Voice 爭取來的，一定要用我的推薦碼註冊才有這個優惠喔\n​\nhttps://kiao-voice.kiao.com.tw/?ref=MM662RH2\n​\n然後我從小最討厭早買早享受，晚買享折扣這句話 XXD\n​\n所以我有特地跟 KIAO Voice 許願，希望之前就用過我推薦碼註冊的朋友，也可以享有這個優惠 \n，KIAO Voice 也非常給力的說好 \n (台灣人最棒/\n​\n因此如果你之前就透過我的優惠碼註冊成為會員，請不用擔心，你也會有額外 14 天的 Pro 體驗 (如果真的沒有請再跟我說～～"
-    },
-    {
-      "id": "facebook-37c1fd2869c8005319380e21",
-      "title": "Qwen-Image-2.1 本機圖片編修心得",
-      "summary": "作者分享使用 Qwen-Image-2.1 在本機多次編修圖片的經驗，認為未修改區域能維持品質，並主觀比較其能力與 gpt-image-2。",
-      "original_text": "Qwen-Image-2.1 的編輯圖片能力很強，沒改到的地方完全不會失真，這圖我改好幾次了，全部都再本機完成編修，我覺得已經有到 gpt-image-2 的能力！",
-      "section": "Facebook",
-      "source_kind": "facebook",
-      "published_at": "2026-09-22T10:47:00.000+08:00",
-      "tags": [],
-      "image": {
-        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/819103739_1763748184939485_418506222680191010_n.png?stp=dst-jpg_tt6&cstp=mx1536x1024&ctp=s1536x1024&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=EPfxTNQQojcQ7kNvwGIrShL&_nc_oc=AdoIhz9p_lnmhqbIeOmAK4PdDBRtKgcbD_HC3RzwKk_9Wa08GfsKNAv3XH5cqOXtyvRLpf789H1cvFQYGMgEOZzG&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=TSheP5YN8yGWErDwTHRWpg&_nc_ss=7b2a8&oh=00_AQLoPwIqN-xS6JFKmP9-OZaAm8y9W5JDAZH7tYL_9LQ4GQ&oe=6AB90FBF",
-        "alt": "Will 保哥的技術交流中心 分享的貼文配圖",
-        "credit": "Will 保哥的技術交流中心"
-      },
-      "sources": [
-        {
-          "name": "Will 保哥的技術交流中心",
-          "url": "https://www.facebook.com/will.fans/posts/pfbid0aqoSEuchNChPkHtCsVyuGNjrGkBNiNLXg2ZhP5YFQXuPCbJiyk1LZjb5jzohWrajl",
-          "published_at": "2026-09-22T10:47:00.000+08:00"
-        }
-      ]
     },
     {
       "id": "facebook-068cc68cef4ce9d51b4d5b3f",
