@@ -1,1 +1,11 @@
-手動更新 cashbooktw/cashbooktw.github.io 今日的 ChatGPT 非 Facebook 通道，使用 GitHub connector。先讀固定 `master` 上的 `automation/UPDATE_RULES.md`、`config/sources.json`、`schema/edition.schema.json`、`schema/manifest.schema.json` 與 `data/chatgpt/index.json`，再依規則逐一讀取已設定的公開來源完整原文並整理可驗證的新資訊。只允許修改 `data/chatgpt/editions/YYYY-MM-DD.json` 與 `data/chatgpt/index.json`；不可讀取、改寫或代替 Facebook 通道。保留本通道既有正式 stories、順序、id、原文、圖片 URL/credit 與來源報告。每篇必須有精簡摘要，不能以原文全文代替摘要。限制記錄在 `source_reports.configured_sources`。每篇至多一張圖片，只保留來源提供的 HTTPS URL、alt 和 credit，不下載圖片、不建立暫存或 repo 圖片；圖片載入失敗由前端隱藏，不可宣稱公開圖片均有授權。只有完整讀取所有預定來源才標記 complete；否則標記 limited 並說明限制。保留既有來源規則，不自行補來源、關鍵字或排名規則。使用 Git Data API 對固定 `master` 原子更新兩檔；HEAD 競爭時重讀合併，最多重試三次，不用順序寫入 fallback。提交前驗證 JSON、schema、story id 唯一、日期及 manifest 路徑/數量/demo 狀態；提交後讀回兩檔確認。保留全部歷史 stories、editions、圖片引用與檔案，不進行清理或刪除。最後回報日期、story 數、ChatGPT 通道狀態/限制及 commit SHA；讀取或寫入失敗時如實回報。Facebook Favorites 由桌面 Codex 本機 CLI 擷取。
+手動更新 cashbooktw/cashbooktw.github.io 今日的 ChatGPT 非 Facebook 通道，使用 GitHub connector。先解析固定 master HEAD，再以該 commit SHA 讀 automation/UPDATE_RULES.md、automation/FAST_PATH.md、config/sources.json、兩份 schema、data/chatgpt/index.json 與今日 edition；只有確定 404 才視為今日尚無 edition。
+
+採用規則中的 fast path：在工具確實支援時合併獨立呼叫；六個來源可並行處理，但各來源內仍先讀列表再完整讀候選原文。使用已設定的 discovery 入口，不臆測或自行新增 RSS。先以可信發布時間排除明確位於各來源既有時間窗之外的文章；時間不明或日期與邊界重疊時不可直接排除。Codex 每次都檢查 Reset scheduled；The Decoder 保留 Asia/Taipei 前一日整個日曆日規則。收錄內容必須完整讀到原文，片段、RSS 摘錄或讀取失敗不能冒充完整。既有選稿條件、數量上限均不變。先配置來源順序與列表順序，再按此順序合併結果，不按請求完成順序排序。
+
+只允許修改 data/chatgpt/editions/YYYY-MM-DD.json 與 data/chatgpt/index.json。保留既有 stories、順序、id、原文、圖片 URL/credit、來源與全部歷史索引；只在同通道去重並追加可驗證來源。不讀取或代替 Facebook 通道。每篇撰寫精簡摘要，不以全文替代；圖片最多一張來源 HTTPS URL、alt、credit，無可用圖片就設 null，不下載、不建立暫存或 repo 圖片，也不宣稱公開圖片均獲授權。
+
+source_reports.configured_sources 如實記錄本次數量與各來源限制；只有全部預定來源的檢查皆完整才標 complete，其餘標 limited 並解釋。保留舊報告 notes，將先前完成時間/狀態/數量標記為歷史紀錄，不把舊次數量當成本次收錄。不得新增來源、關鍵字、排除條件或排名規則。
+
+執行統一 JSON/schema/format、唯一 id、日期、path/story_count/is_demo、歷史保留與 secrets 驗證。可用 automation/update_chatgpt.py prepare 產生兩檔計畫，再交 GitHub connector；本機有明確授權憑證時亦可用 publish。建立含兩檔 inline content 的單一 Git tree、建立 commit、立即重讀 HEAD、以 force:false 更新 master。相依步驟不可並行；HEAD 競爭時重讀合併，初次之外最多重試三次；規則或來源已變更、跨 Taipei 午夜時停止重新蒐集，不用 Contents API 順序寫入 fallback。
+
+提交後讀回 commit、兩檔與當前 master 確認內容及 commit 關係。回報日期、story 數、通道狀態/限制與已驗證 commit SHA；零變更明示 unchanged。讀取、提交或回讀失敗如實回報，不能把「建立了 commit」當成「已發布」。此 prompt 不新增排程；Facebook Favorites 仍由桌面 Codex 本機 CLI 擷取。

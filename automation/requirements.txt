@@ -1,0 +1,2 @@
+# Automation only; the Pages reader remains dependency-free.
+jsonschema[format]==4.26.0
