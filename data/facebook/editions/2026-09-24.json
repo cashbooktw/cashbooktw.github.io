@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-24",
+  "generated_at": "2026-09-24T00:15:30+08:00",
+  "is_demo": false,
+  "edition_title": "2026-09-24 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理有限制，檢查 12 則，入選 10 則，排除 2 則。Champ Yen: 正文僅提出 RTL 是否進入 AI coding 時代的問題，未提供實質細節；未讀取分享文章全文，不依連結預覽撰寫摘要。；高見龍: 正文只有「Opus 5.5 來了」，不足以產生實質摘要；未解讀圖片或補造功能資訊。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-4a31807a82c0c607e68b4211",
+      "title": "Huli 回顧換機成本與 Galaxy S25 使用體驗",
+      "summary": "Huli 回顧過去 14 年約花 3.5 萬元購買手機，選機主要考量可負擔的替換成本與日常需求。他表示，近期換用 Galaxy S25 後操作明顯流暢，但續航不如先前使用的機種。",
+      "original_text": "好奇大家換手機的頻率 & 考量為何\n我月初剛換了上一代的三星手機 Samsung Galaxy S25（最新的是 S26），順便寫了篇文章記錄以前用過的每一支手機跟價格：\nMotorola Defy - 6000 元用 2 年\nASUS ZenFone 5 - 5000 元用 2 年\nASUS ZenFone 3 - 10000 元用 4 年\nNokia 5.3 - 6000 元用 2 年\nNokia G60 - 9000 元用 4 年\nSamsung Galaxy S25 = 約 2 萬元，剛換\n先撇除最新的那支不看，在 14 年間，大概只花了 35k 在手機上，平均每年只花 2500 元。從上面歷程也可以大概看得出來，5k 的手機我可以用兩年，10k 的可以用四年。\n但這個規則被剛買的手機打破了，我不覺得我這支兩萬塊的可以用到八年。\n其實主要是在我印象中，手機是個很脆弱的東西，一不小心就會壞掉或不見、被偷等等，就需要換。所以我一開始買手機的原則是：「這個價錢，再買一支也不會心痛」，再加上我又不玩遊戲也不拍照，用中階機甚至低階機就夠了，就可以選擇 CP 值高的機種。\n不過中低階其實用個一兩年，就算只是日常開個網頁都會卡卡的，也算是磨練耐心的一個方法。月初剛換到這支三星手機後，真的順了不少，唯一的缺點就是續航力沒有之前那些主打機能的這麼強。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-23T22:43:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Huli 隨意聊",
+          "url": "https://www.facebook.com/huli.blog/posts/pfbid0o2VxNNWJqzPUxCjMQdEBkLuaetupbTThZGTuVfb7W8X9Y4F1qCn6X23AdY7DWAhFl",
+          "published_at": "2026-09-23T22:43:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-f37e5b6a0c32c83315a9daad",
+      "title": "保哥實測離線 AI 開發：瓶頸在筆電電力",
+      "summary": "保哥分享在飛機上以 Qwen-Image-2.1 生圖、Qwen3.8-27B 寫程式的離線經驗，認為流程與品質已可用，但筆電電池只足以支撐完成一項功能。",
+      "original_text": "今天在飛機上，完全沒有網路。\n我試著在離線狀態下完成一次程式碼修改。\n從生圖到寫程式，整個流程完全沒問題，品質也很好，本機跑這些工具已經很成熟了。\n生圖 = Qwen-Image-2.1\n寫程式 = Qwen3.8-27B\n唯一的缺點大概就是耗電量。\n筆電電池掉得太快，電力只夠支撐我寫完一個功能。\n離線開發的體驗很好，但現在看來，最大的瓶頸其實是電池。\n下次可能要搭商務艙才有電源了！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-23T19:46:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02iiQaqod9c8Za5G3uR2as9uqYus3D2BD2dxhchCu9UcH9oysXr6kcjQtDyJHa4zi5l",
+          "published_at": "2026-09-23T19:46:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-a55758925d54ba76560497af",
+      "title": "新工具穩定性踩坑：從 herdr 到 Postgres 衍生資料庫",
+      "summary": "曾一峰分享 herdr 無回應、以及某款 Postgres 衍生資料庫連線未釋放導致資源耗盡的經驗。他表示，最後利用對 Postgres 的理解，在應用架構層暫時緩解資料庫問題。",
+      "original_text": "我是 Bug 奶油手？\n朋友推薦 #herdr，用了幾個月，平均每周壞掉一次，沒 Log 沒反應，只能整個關掉重啟，而平行運行的老工具 screen / tmux 穩固如山。\n他們說，我出的事他們沒發生過…！\n- - -\n社群推薦基於 #Postgres 資料庫，衍生出的新生代開源資料庫，測試運行了半年，踩了某個未被發現/回報的連線不釋放 Bug，導致資源耗盡卡死，而另一邊主要的 Postgres 穩固如山。\nCoding Agent 也說無解，建議我退回效能不好的老版本。\n不甘心呀，分析下程式，利用我對 Postgres 的理解，在 Application 架構層暫時緩解了此次問題，Coding Agent 審視後也通過了。\n難道我又跟社群的用法不同了？\n- - -\n哼哼 ~ 不能只有我出問題，打算開源工具讓大家一起共襄盛「坑」 (誤",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-23T15:40:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid0287tc1RX2WmzJAyWEsyCb8nugLZLeMHZoYreSzHpScAAqWq2Yvc4rfHYxmwPHMffRl",
+          "published_at": "2026-09-23T15:40:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-08de8d6ddaecb27385e99f35",
+      "title": "保哥介紹 Antigravity CLI 子代理直接傳訊",
+      "summary": "保哥介紹 Antigravity CLI 1.2.9 的 @子代理 傳訊功能，可補齊名稱並顯示狀態，讓使用者直接調整執行中任務，或向仍保留上下文的已完成子代理追問。",
+      "original_text": "Antigravity CLI 更新到 1.2.9 版本。\n現在可以直接在主提示詞輸入 @<子代理> <訊息>，私訊指定的子代理。\n鍵入 @ 符號，系統會自動補齊所有正在執行或已經結束的子代理名稱。清單內包含即時狀態，以及當前步驟的預覽。\n這項功能允許你在中途直接介入。\n例如面對執行中的 @coder，你可以隨時調整它的處理方向。\n對於已經執行完畢的子代理，只要記憶庫內仍保留完整上下文，就能直接發送後續問題。\n所有溝通都是直接送達，不需要再等待主代理在中間轉發。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-23T14:51:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/13288397043114097413?_nc_oc=Adq-pB5V2sfKtfPH0neSVk28qwwnvPOXpdHP19hifDoOM7Iotg8HcQViQqcvnSvJBvT_FRvPU3h7qL9_5YctyzGc&url=https%3A%2F%2Fantigravity.google%2Fassets%2Fimage%2Fsitecards%2Fsitecard-default.png&fb_obo=1&utld=antigravity.google&_nc_sid=f93bbc&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=5S8LpC6wwrWZzxKJXKgHwQ&_nc_zt=3&oh=06_Q3_DASX1P3KsA9l3QHUNoI4c6DoYv3uiyQKjcwjFa0zNDMQw&oe=6AB5E0F9",
+        "alt": "Google Antigravity - Antigravity CLI",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid03CxmjtKBq8zUkRtXVU2ddeWN4MWzJoHm9RPrvZPYFAQouX1EVNSoEbywWMDVVLLfl",
+          "published_at": "2026-09-23T14:51:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-e4570f14022dedfd4c84402c",
+      "title": "高見龍關注 GPT 新模型與教材更新",
+      "summary": "高見龍提到 gpt-6-sol 與 gpt-6-luna 的推出及價格變化，表示能力仍待測試，也需要隨之更新課程教材。",
+      "original_text": "剛剛上課上到一半發現 gpt 那邊也有點進度了（gpt-6-sol & gpt-6-luna)，能力還待測試，但價格更便宜了\n又要更新教材了",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-23T12:17:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/821486891_2223418971557232_1961719872791335054_n.png?stp=dst-jpg_tt6&cstp=mx2048x1150&ctp=s2048x1150&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AFHzAg_CxqUQ7kNvwEwLrNK&_nc_oc=Adp2YzxqDT1kXDD1MNXGEM3-m0KWOZ5IWN1G9PorfLK0VcBFm2gddtn3cMY9Mt-99VSW1uGnHFXZ-IF0REY3DfrO&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=eY6z7Dn-0KFtetsX1wfE1w&_nc_ss=7b2a8&oh=00_AQIanS1iYpPke796H7qFL7r94vh5efcBSW6Iq_TdGkopVw&oe=6AB9BCB0",
+        "alt": "May be an image of eclipse and text",
+        "credit": "高見龍／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid035kB8pdu4QX4Q9AXWUzHq6gLz9LSq7227TtaRyZwujZ4bykJpG2vtUxHptZsqV4u6l",
+          "published_at": "2026-09-23T12:17:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-4c13f5743abacd5a1da77739",
+      "title": "保哥分享 AI 塗鴉遊戲，保留筆觸並補齊細節",
+      "summary": "保哥分享自製畫畫遊戲，可用 AI 補足塗鴉細節、切換風格，並透過文字或魔術棒調整。他表示已提供試玩預算，每分鐘最多生成兩張圖，人多時需排隊。",
+      "original_text": "我做了一個讓我兒子與女兒愛不釋手的畫畫遊戲，不用我多介紹了，小朋友不用解釋就會玩，反正塗鴉後可以透過 AI 補齊細節，會很有成就感，因為會保留小朋友繪畫的細節，還有很多種風格可以設定，還可以打字或用魔術棒指導 AI 調整，可以說大人小孩都好玩！ \n我有設定一筆預算讓大家隨意生圖，但一分鐘只能生兩張圖，太多人玩會需要排隊，希望小朋友玩的愉快！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-23T12:08:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/9189624803183325012?_nc_oc=AdoW7KM9EDxPORZxs2nSdcq99vHCv-H8nPIfccTO_ra8v5qCJ4UayXNj3yrvrcZV8qIR4PIqkUF1cgILMauQuLEe&url=https%3A%2F%2Fdraw.miniasp.com%2Fog-image.jpg&fb_obo=1&utld=miniasp.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=eY6z7Dn-0KFtetsX1wfE1w&_nc_zt=3&oh=06_Q3_DAWh7VAPB2bevFaU0w30gYF0tbDDfUCzRXu_68LveH2mP&oe=6AB5C1D7",
+        "alt": "小小畫家｜畫一筆，讓想像發光",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid021uc88peXpdrk4PV7L9tiZZAYEUaSxtUDU7MM7RRDSoufgzW5f8qx6839QFJzh8Kul",
+          "published_at": "2026-09-23T12:08:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-2d96a3fc5f9c9467c49479d0",
+      "title": "Ray 推出兒童每日知識問答 App",
+      "summary": "Ray 分享為兒童製作的知識問答 App「尊嘟假嘟研究所」，以每日短時間答題累積知識，題庫將持續新增，並提供 App Store 搜尋名稱供下載。",
+      "original_text": "「尊都假都研究所」\n有鑑於之前「台灣在哪裡？」滿多人私訊滿喜歡的\n所以跟親友討論之後，就決定出一個知識問答的小 App 給小朋友學習用。\n每天只需要花一點點時間，就可以讓小朋友掌握一點點知識\n例如...「食物通過食道，只能依靠重力往下掉？」這種小知識\n目前題目都還會持續新增中，歡迎下載體驗，讓步步狐一起陪你長知識～\n下載連結：\nhttps://myppt.cc/lEPk1O\n或者 AppStore 搜尋「尊嘟假嘟研究所 | 每天長一點知識」也可以",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-23T12:08:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.30808-6/818940389_1500289575454703_5715618694653401871_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x1024&ctp=s1536x1024&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jQXtJZ1UenoQ7kNvwEdGOjP&_nc_oc=AdrpKAlgQkVg1h4450WHUSwgk6mIZqqPLIUQJWwmQefqiQ-AtCxnUAUW-n9DdtyubqV4DOAEhfQk2JNVxFXp_Vc5&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=eY6z7Dn-0KFtetsX1wfE1w&_nc_ss=7b2a8&oh=00_AQLjd6c6tqLczuheLlkkXKXvLA4ktoBjOgHA1y2EozRbPg&oe=6AB9CA20",
+        "alt": "May be an illustration of red panda, slow loris and text",
+        "credit": "是 Ray 不是 Array／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "是 Ray 不是 Array",
+          "url": "https://www.facebook.com/israynotarray/posts/pfbid02d9ukrZXmyKSmt5obmVLG7hPynCdAXAh5mr1QCL91pbdf8TxJkdkSRks9x9vQUysrl",
+          "published_at": "2026-09-23T12:08:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-f191e5d13550cd4815a33f83",
+      "title": "Three.js 烏克麗麗教學網站結合 3D 模型與合成音效",
+      "summary": "保哥介紹自製烏克麗麗互動教學網站，以 Three.js 呈現可旋轉、縮放的樂器模型，搭配七章課程、和弦標示與節拍練習。貼文表示音效由瀏覽器即時合成，原始碼採 MIT 授權。",
+      "original_text": "想學烏克麗麗，卻不知道從哪裡開始嗎？\n我設計了一個「烏克麗麗 3D 互動教學手冊」。\n它最大的特色，是把 3D 模型直接搬進網頁裡。\n你可以用滑鼠拖曳旋轉，用滾輪或雙指縮放，點擊任何一個部位就會跳出說明。\n琴頭、弦鈕、琴頸、琴格、音孔、琴橋，每個名字都能對應到實際的位置。\n全站分成七個章節，從認識樂器一路帶到第一首練習曲。\n第一章教你辨認每個部位，第二章講正確的持琴姿勢。\n第三章是調音，標準的 G-C-E-A 調音，點擊琴弦就能聽到參考音。\n第四章收錄 C、F、G、Am 等十六個常用和弦，直接標示在 3D 琴頸上。\n第五章練刷弦與節奏，跟著動畫和節拍器練習島嶼節奏等常見刷法。\n第六章把和弦與節奏組合起來，完成一段完整的伴奏。\n第七章談保養，也告訴你接下來可以練什麼。\n操作上很直覺，上方章節列或下方的上一章、下一章都能切換，鍵盤左右鍵也可以。\n模型下方有正面、琴頭、琴頸、琴身與彈奏者視角五種鏡頭可以快速切換。\n勾選顯示部位標籤，名稱會浮現在模型上，點標籤一樣能看說明。\n右上角可以切換深色或淺色主題，設定會自動記住。\n有一個小地方要提醒，站內的聲音是瀏覽器即時合成的。\n第一次點擊播放時，瀏覽器可能要求你先與頁面互動才允許發聲，這是正常現象。\n這個網站是非官方的教學內容，僅供學習參考，調音頻率依 A4 等於 440 Hz 的標準音高。\n原始碼以 MIT 授權釋出，3D 繪圖使用 Three.js\n如果你一直想學烏克麗麗，卻卡在不知道怎麼開始，這個網站會是很輕鬆的起點。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-23T10:37:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/4718098382154742366?_nc_oc=Adpjr5yXxMtODVQB1SPUivMys_--E8tG3LTs_1_LAUZYvNFtU31MWpkOFJ6KU_xNzGkJWnvciOF59pN72hZhD4_e&url=https%3A%2F%2Fukulele.gh.miniasp.com%2Fassets%2Fimg%2Fog-image.png&fb_obo=1&utld=miniasp.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=eY6z7Dn-0KFtetsX1wfE1w&_nc_zt=3&oh=06_Q3_DAReacjGLYgcvarhAxtoWBzViPBn-kkjVoJVcLG8iGNHj&oe=6AB5C7E7",
+        "alt": "烏克麗麗 3D 互動教學手冊",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0PaWLJYnsrngNFFgPev85ydPiHBhU7kTikyGri5aim4vReRiVjgnR4KfcTtHD7sgbl",
+          "published_at": "2026-09-23T10:37:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-00edab870c7e04434476effb",
+      "title": "保哥比較 GPT-6 系列模型價格",
+      "summary": "保哥在貼文中比較 GPT-6 系列的價格定位，稱 Sol 比 GPT-5.6-Terra 便宜，Luna 與 Astra 價差達百倍；本文僅轉述其價格觀察。",
+      "original_text": "GPT-6 全系列都推出了，但沒有 \"Terra\" 喔，且價格真的殺瘋了，全部打對折賣！\n GPT-6-Sol 的 API 價格比 GPT-5.6-Terra 的價格還便宜 \n GPT-6-Luna 與 GPT-6-Astra 的價差是 100 倍！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-23T09:34:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/799427870_1806878123841890_599211089764261626_n.png?stp=dst-jpg_tt6&cstp=mx2046x1388&ctp=s2046x1388&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aPbz0HeOciIQ7kNvwFUgSyq&_nc_oc=AdrRKUEAZk7dgqfZMAL2jmbs54GfOtsa8ZkG_OgbRmClFy07dTBFi4MZ9WJpWrfijJkzurJgulR_VLKv_srqANPi&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=rEMw_v8fuC2xYMuTSiVFPQ&_nc_ss=7b2a8&oh=00_AQISkrEWZDN-MOKlOBQGK4cT1VBldZAH0Ebs18RNAgkaCw&oe=6AB9D122",
+        "alt": "May be a graphic of text",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0GQdkanm6dUs4mCW54CwLmVmYKFUs42B3Tr3AX19U3NXWN3JCVeEMx765gVhqkwUsl",
+          "published_at": "2026-09-23T09:34:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-28a08adfecb03f610e3fb6af",
+      "title": "保哥整理 Claude Opus 5.5 的成本與開發能力變化",
+      "summary": "保哥整理 Claude Opus 5.5 的更新，著重成本降低、生成加速及大型程式庫任務能力，並提及溝通風格與安全防護改善。貼文亦列出多個雲端與開發工具的支援情況。",
+      "original_text": "Anthropic 正式推出全新 Claude 5.5 系列的首款模型 Claude Opus 5.5。\n這款新模型在多數任務中展現出與 Claude Fable 5.1 相當的實力，並大幅優化了運行成本。\n與前一代 Opus 5 相比，Opus 5.5 在典型工作負載下的綜合成本降低了百分之四十。\n在 API 計價方面，每百萬 Input Token 為 4 美元，每百萬 Output Token 為 20 美元。\n在大量仰賴 Agent 與程式開發的快取讀取上，成本更降低了百分之六十，整體生成速度也提升超過百分之三十。\n在技術表現上，Opus 5.5 特別擅長龐大且複雜的任務，例如大型程式庫的遷移與審查。\n測試案例顯示，該模型能在一天之內完成過去需要工程團隊數週處理的 68 萬行程式碼遷移。\n在多項 Agentic coding 與知識工作 Benchmark 中，它的表現均展現出顯著的技術優勢。\n除了運算能力，這次更新也大幅改善了文字溝通風格。\n模型的表達更加自然流暢，會優先呈現核心重點，減少不必要的術語，提升長時間協作的效率。\n在安全架構方面，Opus 5.5 在行為審計測試中取得歷來最高表現，對 Prompt injection 的防禦力也進一步提升。\n針對生物科技與網路安全等高風險領域，官方亦配套實施嚴格的安全機制與驗證計畫。\n為了符合歐盟 AI 法案等合規要求，模型全面支援文字浮水印機制與 Preserved thinking 防護。\n目前 Claude Opus 5.5 已全面上線，支援 Claude Platform 以及 AWS、Google Cloud 與 Microsoft Azure。Cursor 與 GitHub Copilot 也都已經上線！\n後續 Claude Sonnet 5.5 與 Claude Haiku 5.5 也預計於數週內陸續發表。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-23T08:01:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/10397428189264853476?_nc_oc=AdoxPcEB6qSJt5-EAcTRSFFKedYizEyWtD4a7flZgWePeGPtDh9VTVICyWmS84P4J70v6AUtMT6W9EmqQkKgzsSJ&url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff4d37a1d1f582f53f4e89440062b649b6273a093-1200x630.jpg&fb_obo=1&utld=anthropic.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=rEMw_v8fuC2xYMuTSiVFPQ&_nc_zt=3&oh=06_Q3_DAT0Ne9ND5I-o7FmHUHUuXt4ptDns3guHAgqERDghsmvd&oe=6AB5C5C5",
+        "alt": "Introducing Claude Opus 5.5",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02khx9rE8hpo7Lw54f4tC6ETNpv2R7i19vnob8hWU9X6QG1g9CA7y1UfFSFR8jVyrml",
+          "published_at": "2026-09-23T08:01:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "limited",
+      "completed_at": "2026-09-23T16:15:28.894Z",
+      "captured": 12,
+      "included": 10,
+      "excluded": 2,
+      "notes": [
+        "Champ Yen: 正文僅提出 RTL 是否進入 AI coding 時代的問題，未提供實質細節；未讀取分享文章全文，不依連結預覽撰寫摘要。",
+        "高見龍: 正文只有「Opus 5.5 來了」，不足以產生實質摘要；未解讀圖片或補造功能資訊。"
+      ]
+    }
+  }
+}
