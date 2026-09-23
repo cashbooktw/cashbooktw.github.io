@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-23",
+  "generated_at": "2026-09-23T15:54:21+08:00",
+  "is_demo": false,
+  "edition_title": "2026-09-23 每日資訊整理",
+  "edition_summary": "本次依 2026-09-22 17:22:16 至 2026-09-23 15:54:21（Asia/Taipei）處理既有設定來源；The Decoder 依規則檢查 2026-09-22 整個日曆日，Codex Resets 另檢查即時「Reset scheduled」狀態。共整理 11 則正式 stories。Interconnects 的設定首頁未由讀取工具呈現可驗證的完整文章清單；已發現的公開候選原文與完整逐字稿已讀取，但無法證明首頁清單檢查完整，因此本期來源狀態標記為 limited。",
+  "stories": [
+    {
+      "id": "codex-reset-2026-09-23-no-verifiable-schedule",
+      "title": "Codex Resets 目前無可驗證的下一次重置排程",
+      "summary": "Codex Resets 頁面目前未顯示可驗證的「Reset scheduled」時間；頁面顯示最近一次為 2026-09-22 18:23 UTC 的 Banked reset。依來源規則不推測下一次排程；該站亦標示為非 OpenAI 官方第三方追蹤服務。",
+      "section": "AI",
+      "source_kind": "web",
+      "tags": [
+        "Codex",
+        "使用限制",
+        "重置排程"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Codex Resets",
+          "url": "https://codex-resets.com/"
+        }
+      ]
+    },
+    {
+      "id": "techcrunch-openai-gpt6-sol-luna-2026-09-22",
+      "title": "OpenAI 推出 GPT-6 Sol、Luna，API 價格較 5.6 系列減半",
+      "summary": "OpenAI 擴充 GPT-6 系列，推出 Sol 與 Luna；TechCrunch 報導兩款 API 價格較 5.6 系列降低一半，Sol 面向較複雜工作、Luna 面向大量明確任務。The Decoder 亦報導此次更新，並指出主要變化集中在成本與效率，基準表現增幅有限。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-22T11:00:00-07:00",
+      "tags": [
+        "AI",
+        "OpenAI",
+        "GPT-6"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+          "published_at": "2026-09-22T11:00:00-07:00"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openais-gpt-6-sol-and-luna-cut-prices-in-half-but-barely-move-the-needle-on-performance/",
+          "published_at": "2026-09-22"
+        }
+      ]
+    },
+    {
+      "id": "interconnects-epoch-ai-rsi-2026-09-22",
+      "title": "Interconnects 與 Epoch AI 討論 AI 自我加速、模型差距與後訓練",
+      "summary": "Interconnects 訪談 Epoch AI 的 JS Denain，討論 AI 自我加速（RSI）、研究生產力、機器人瓶頸、模型能力差距、模型安全與後訓練流程。雙方多次強調目前證據與時間尺度仍具高度不確定性，Denain 認為公開證據尚不足以證明自我維持式能力加速已迫近。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-22",
+      "tags": [
+        "AI",
+        "Interconnects",
+        "Epoch AI",
+        "AI研究"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Interconnects",
+          "url": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+          "published_at": "2026-09-22"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mudkolc4_ktbgywvi",
+      "title": "新竹護城河畔9月25日至28日辦炭火主題市集",
+      "summary": "新竹市「竹風好市集」9月25日至28日在護城河畔推出炭火主題活動，安排餐飲、市集、交通安全互動戲劇與親子節電演出。系列市集預計持續至11月22日。",
+      "section": "生活",
+      "source_kind": "web",
+      "published_at": "2026-09-23T12:45:00+08:00",
+      "tags": [
+        "新竹市",
+        "親子",
+        "活動",
+        "交通安全"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹市",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mudkolc4_ktbgywvi",
+          "published_at": "2026-09-23T12:45:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mucm3wh0_3df7x74s",
+      "title": "新竹市市務會議聚焦營養午餐、學生公車與友善廁所",
+      "summary": "新竹市9月22日市務會議討論治安、學生午餐、公車與性別友善廁所。市府說明明年營養午餐PLUS上路後，國小每餐70元、國中75元，建功高中放學公車班次也已調整。",
+      "section": "生活",
+      "source_kind": "web",
+      "published_at": "2026-09-22T22:15:00+08:00",
+      "tags": [
+        "新竹市",
+        "教育",
+        "營養午餐",
+        "公共服務"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹市",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mucm3wh0_3df7x74s",
+          "published_at": "2026-09-22T22:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mucm4c7t_q5b9u1ff",
+      "title": "青草湖秋焰祭10月9日起試營運，安排6場煙火",
+      "summary": "2026青草湖秋焰祭10月9日至26日舉行，規劃《蠟筆小新》大型氣偶、燈光秀、市集與6場湖畔煙火；10月18日另有動漫音樂會，10月25日安排小新見面會。",
+      "section": "生活",
+      "source_kind": "web",
+      "published_at": "2026-09-22T22:15:00+08:00",
+      "tags": [
+        "新竹市",
+        "青草湖",
+        "親子",
+        "活動"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹市",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mucm4c7t_q5b9u1ff",
+          "published_at": "2026-09-22T22:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_muc4a5v0_lfbpmbo8",
+      "title": "新竹市核發首張再生水籌設許可，客雅計畫進入建設準備",
+      "summary": "新竹市核發首張再生水經營籌設許可，客雅再生水計畫進入建設與營運準備階段。計畫將串聯污水處理、再生水廠與輸水系統，規劃以約22公里管線供水至竹科二期擴建園區。",
+      "section": "環保",
+      "source_kind": "web",
+      "published_at": "2026-09-22T20:15:00+08:00",
+      "tags": [
+        "新竹市",
+        "再生水",
+        "竹科",
+        "水資源"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹市",
+          "url": "https://localnews.tw/hsinchuCity/news/a_muc4a5v0_lfbpmbo8",
+          "published_at": "2026-09-22T20:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mucdheak_4ofv0et5",
+      "title": "培英國中新C棟學悉樓啟用，A、D棟重建續辦",
+      "summary": "培英國中新C棟「學悉樓」9月22日啟用，校舍採先建後拆方式更新，配置普通教室、專科教室與行政空間。市府表示，A、D棟老舊校舍重建工程目前正辦理發包。",
+      "section": "教育",
+      "source_kind": "web",
+      "published_at": "2026-09-22T19:15:00+08:00",
+      "tags": [
+        "新竹市",
+        "培英國中",
+        "教育",
+        "校舍"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹市",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mucdheak_4ofv0et5",
+          "published_at": "2026-09-22T19:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_muclypxz_0jwhooz3",
+      "title": "新竹縣工業區永續論壇改至11月9日舉辦",
+      "summary": "新竹縣「碳索未來」工業區永續論壇改至11月9日舉行，內容涵蓋碳管理案例、減碳實務與永續資源媒合。縣府相關輔導計畫並提供碳排診斷、盤查、查證與培訓等資源。",
+      "section": "環保",
+      "source_kind": "web",
+      "published_at": "2026-09-22T22:15:00+08:00",
+      "tags": [
+        "新竹縣",
+        "企業",
+        "碳管理",
+        "ESG"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹縣",
+          "url": "https://localnews.tw/hsinchuCounty/news/a_muclypxz_0jwhooz3",
+          "published_at": "2026-09-22T22:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mucdi9ih_x88wiuqz",
+      "title": "新竹縣溫泉管理草案擴至5處，公開展覽至10月13日",
+      "summary": "新竹縣溫泉區管理計畫草案除既有小錦屏、清泉外，規劃新增內灣、嘉樂與秀巒3處，範圍擴至5處。草案公開展覽至10月13日，民眾與團體可在指定地點或線上提出意見。",
+      "section": "生活",
+      "source_kind": "web",
+      "published_at": "2026-09-22T21:15:00+08:00",
+      "tags": [
+        "新竹縣",
+        "溫泉",
+        "公共政策",
+        "觀光"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹縣",
+          "url": "https://localnews.tw/hsinchuCounty/news/a_mucdi9ih_x88wiuqz",
+          "published_at": "2026-09-22T21:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "localnews-a_mucdjit6_mbmx8t6a",
+      "title": "新竹縣表揚164名衛生志工，高齡志工約占48%",
+      "summary": "新竹縣衛生局表揚164名衛生保健志工；截至今年4月底，全縣共有815名衛生保健志工，65歲以上約占48%。志工持續在衛生所與社區協助健康服務與民眾引導。",
+      "section": "生活",
+      "source_kind": "web",
+      "published_at": "2026-09-22T20:15:00+08:00",
+      "tags": [
+        "新竹縣",
+        "衛生",
+        "志工",
+        "社區健康"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "地新聞－新竹縣",
+          "url": "https://localnews.tw/hsinchuCounty/news/a_mucdjit6_mbmx8t6a",
+          "published_at": "2026-09-22T20:15:00+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "configured_sources": {
+      "status": "limited",
+      "completed_at": "2026-09-23T15:54:21+08:00",
+      "captured": 16,
+      "included": 12,
+      "excluded": 4,
+      "notes": [
+        "本次更新時間範圍為 2026-09-22 17:22:16 至 2026-09-23 15:54:21（Asia/Taipei）；The Decoder 依既有規則改以 2026-09-22 整個日曆日檢查，Codex Resets 則不受 24 小時窗限制。",
+        "Codex Resets 已檢查「Reset scheduled」狀態；頁面未顯示可驗證的下一次排程，僅顯示最近一次 Banked reset 為 2026-09-22 18:23 UTC，因此未推測下一次重置時間。",
+        "TechCrunch AI 納入 GPT-6 Sol/Luna 更新；The Decoder 在前一日內容中選到同一事件，依通道去重規則合併為同一 story 並保留兩個來源。",
+        "Interconnects 的設定首頁未由讀取工具呈現可驗證的完整文章清單；透過該網域公開索引發現 2026-09-22 的候選文章後，已完整讀取其公開原文與逐字稿。由於無法證明設定首頁的預定來源清單已完整檢查，本次狀態標記 limited。",
+        "新竹市完整讀取 7 個候選原文，依最多 5 篇與通道去重規則納入 5 篇；另 2 篇營養午餐相關稿與已納入市務會議屬明顯相同事件，未另建 story。",
+        "新竹縣完整讀取 5 個候選原文；22:15、21:15、20:15 三篇在本次時間窗內並納入，17:15 與 16:45 兩篇早於 17:22:16 起點而排除。",
+        "captured/included/excluded 以本次完整讀取的候選來源項目計；The Decoder 與 TechCrunch 的同一 GPT-6 事件合併後，12 個 included 來源項目對應 11 個正式 stories。"
+      ]
+    }
+  }
+}
