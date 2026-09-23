@@ -70,3 +70,35 @@ test("reader renders original text safely and shows an absent source channel as 
   assert.equal(story.querySelector("figure").hidden,true);
   assert.match(story.textContent,/原文第一行/);
 });
+
+test("reader renders every published edition using the real manifest", async () => {
+  const manifest = JSON.parse(await read("data/index.json"));
+  for (const entry of manifest.editions) {
+    const { document } = parseHTML(await read("index.html"));
+    Object.defineProperty(document, "baseURI", { value: "https://cashbooktw.github.io/" });
+    for (const select of document.querySelectorAll("select")) {
+      select.add = (option) => select.append(option);
+      let value = "";
+      Object.defineProperty(select, "value", { get: () => value, set: (next) => { value = next; } });
+    }
+    const edition = JSON.parse(await read(entry.path));
+    const window = { location: { href: `https://cashbooktw.github.io/?edition=${entry.date}` }, addEventListener() {}, scrollTo() {} };
+    const fetch = async (url) => ({ ok: true, json: async () => String(url).includes("index.json") ? manifest : edition });
+    const Option = function (label, value) { const option = document.createElement("option"); option.textContent = label; Object.defineProperty(option, "value", { value, writable: true }); return option; };
+    const script = await read("assets/js/app.js");
+    runInNewContext(script, { document, window, URL, Intl, Date, TypeError, AbortController, setTimeout, clearTimeout, fetch, history: { pushState() {}, replaceState() {} }, Option });
+    await new Promise((resolve) => setTimeout(resolve, 0));
+    assert.equal(document.getElementById("edition-panel").hidden, false, `${entry.date}: ${document.getElementById("message-detail").textContent}`);
+    assert.equal(document.querySelectorAll(".story").length, entry.story_count);
+  }
+});
+
+test("reader assets have content versions so schema changes cannot reuse stale scripts", async () => {
+  const { createHash } = await import("node:crypto");
+  const { document } = parseHTML(await read("index.html"));
+  for (const [selector, attribute] of [["script[src]", "src"], ['link[rel="stylesheet"]', "href"]]) {
+    const url = new URL(document.querySelector(selector).getAttribute(attribute), "https://cashbooktw.github.io/");
+    const hash = createHash("sha256").update(await read(url.pathname.slice(1))).digest("hex").slice(0, 12);
+    assert.equal(url.searchParams.get("v"), hash, `Version must match ${url.pathname}`);
+  }
+});

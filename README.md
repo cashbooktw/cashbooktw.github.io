@@ -42,3 +42,9 @@
 ## Verification
 
 網站保持無 build dependency。合約與 DOM 回歸測試重用本機 importer 的 Ajv/linkedom；設定 `FB_IMPORT_ROOT` 為該專案位置，再執行 `node --test tests/edition-contract.test.mjs`。另執行 `node --check assets/js/app.js` 與 `git diff --check`。
+
+### 前端快取與驗證
+
+修改 JavaScript 或 CSS 後，需同步更新 `index.html` 對應 URL 的 `?v=`，值為檔案 SHA-256 的前 12 碼，避免舊版讀取器快取拒絕新版資料欄位。
+
+執行 `FB_IMPORT_ROOT=/path/to/facebook-edition-import node --test tests/edition-contract.test.mjs`，使用匯入器既有測試依賴，驗證真實目錄中的每一期、原文安全呈現及資源版本。
