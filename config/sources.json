@@ -9,7 +9,7 @@
       "rules": [
         "每次更新都讀取頁面上的「Reset scheduled」狀態，不限於過去 24 小時的新內容",
         "如果「Reset scheduled」有排定時間，必須寫出可從來源驗證的重置時間；若來源同時提供時區，需一併保留",
-        "如果沒有排定時間、欄位為空或無法從來源驗證時間，則如實寫明沒有可驗證的排程，不得推測或補造",
+        "如果沒有排定時間、欄位為空或無法從來源驗證時間，則不要產生 Codex reset story；只在 source_reports.configured_sources 如實記錄已檢查且沒有可發布的排程，不得推測或補造",
         "最多產生 1 則 Codex reset 資訊"
       ],
       "discovery": [

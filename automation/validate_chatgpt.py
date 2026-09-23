@@ -113,7 +113,8 @@ class Validator:
         require(error is None, f"{'Edition' if which == 0 else 'Manifest'} schema/format validation failed")
 
     def pair(self, edition: dict, manifest: dict, day: str,
-             previous: dict | None = None, previous_index: dict | None = None) -> None:
+             previous: dict | None = None, previous_index: dict | None = None,
+             enforce_new_images: bool = False) -> None:
         scan_secrets(edition)
         scan_secrets(manifest)
         self.schema(edition, 0)
@@ -136,6 +137,8 @@ class Validator:
             if story["id"] not in known:
                 require(not story.get("original_text") or story["summary"] != story["original_text"], "Summary cannot be the full original text")
                 image = story.get("image")
+                if enforce_new_images:
+                    require(isinstance(image, dict), "Every new non-Facebook story needs one source HTTPS image")
                 if image:
                     require(image["url"].startswith("https://") and bool(image.get("credit", "").strip()), "New images need original HTTPS URL and attribution")
         dates = [e["date"] for e in manifest["editions"]]
@@ -171,7 +174,8 @@ def main() -> int:
             edition = read_json(args.edition or args.root / edition_path(day))
             validator.pair(edition, manifest, day,
                            read_json(args.previous_edition) if args.previous_edition else None,
-                           read_json(args.previous_index) if args.previous_index else None)
+                           read_json(args.previous_index) if args.previous_index else None,
+                           enforce_new_images=bool(args.previous_edition))
         print(f"Validated {len(days)} ChatGPT edition(s), schemas/formats and manifest agreement")
         return 0
     except (Invalid, OSError, KeyError, TypeError) as error:

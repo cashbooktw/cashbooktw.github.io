@@ -25,7 +25,7 @@ GitHub 官方依據：[Create a tree](https://docs.github.com/en/rest/git/trees#
 
 每筆是 `{ "kind": "status|listing|archive", "url": "https://..." }`，順序代表嘗試偏好；未配置時才用原 url。入口不代表完整性已獲保證；當次仍須驗證清單覆蓋與分頁。
 
-- Codex Resets：原 status 頁，永遠檢查目前排程，不能套新聞時間窗跳過。
+- Codex Resets：原 status 頁，每次都檢查目前排程；只有 `Reset scheduled` 有可驗證排定時間時才建立 story。沒有 schedule、欄位空白或無法驗證時，只記錄來源已檢查，不發布文章。
 - TechCrunch AI、The Decoder、地新聞新竹市與新竹縣：原有分類或文章列表，不放未驗證 RSS。
 - Interconnects：`https://www.interconnects.ai/archive` 優先，原首頁備用。2026-09-23 已透過公開網頁讀取確認 archive 可列出文章；不表示付費全文可讀或每次清單都完整。
 
@@ -57,7 +57,7 @@ python automation/update_chatgpt.py prepare \
   --out /tmp/chatgpt-plan.json
 ```
 
-候選 edition 必須以快照今日資料為基礎：保留既有 stories 的位置、id、所有非 sources 欄位，以及 sources 的原有前綴；僅追加新 sources 與新 stories。首次當日尚無 edition 時提供完整新期數。不要手動修改快照；它必須來自固定 master SHA 的完整讀取。
+候選 edition 必須以快照今日資料為基礎：保留既有 stories 的位置、id、所有非 sources 欄位，以及 sources 的原有前綴；僅追加新 sources 與新 stories。每個新 story 必須包含一個原始來源提供的 HTTPS `image.url`、非空 `alt` 與 `credit`；沒有可驗證來源圖片的候選不加入 stories。既有 story 的 image/null 不回寫。首次當日尚無 edition 時提供完整新期數。不要手動修改快照；它必須來自固定 master SHA 的完整讀取。
 
 `source_reports.configured_sources` 填本次完成時間、狀態、數量與各來源實際限制。更新器保留所有舊 notes，將先前報告的時間/狀態/數量用有標籤的歷史紀錄追加至 notes，使用較新 completed_at 的報告作頂層計數。舊次 limited 不被抹除，也不冒充本次狀態。內容、報告皆未變則回傳 unchanged；新一次檢查要有新的實際 completed_at。
 

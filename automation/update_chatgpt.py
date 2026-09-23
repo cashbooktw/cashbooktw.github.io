@@ -195,7 +195,7 @@ def prepare(snap, candidate, now=None):
     updated["current"] = updated["editions"][0]["date"]
     if not unchanged:
         updated["updated_at"] = edition["generated_at"]
-    validator.pair(edition, updated, day, old, manifest)
+    validator.pair(edition, updated, day, old, manifest, enforce_new_images=True)
     return {"head": snap["head"], "base_tree": snap["tree"], "date": day,
             "unchanged": unchanged, "files": {edition_path(day): encode(edition), INDEX: encode(updated)}}
 

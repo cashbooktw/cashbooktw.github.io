@@ -120,6 +120,7 @@ class ContractTests(unittest.TestCase):
         self.validator = Validator.from_root(ROOT)
         self.new = deepcopy(self.old)
         self.new["stories"].append(story("new"))
+        self.new["stories"][-1]["image"] = {"url": "https://example.org/new.jpg", "alt": "Image new", "credit": "Test source"}
         self.new["source_reports"]["configured_sources"].update(
             completed_at=f"{DAY}T13:00:00+08:00", status="limited", notes=["One listing was incomplete"])
 
@@ -181,6 +182,10 @@ class ContractTests(unittest.TestCase):
         with self.assertRaises(Invalid): self.plan()
         # A direct validator also rejects an unexplained limited run.
         with self.assertRaises(Invalid): self.validator.pair(self.new, self.index, DAY)
+
+    def test_new_story_requires_image(self):
+        self.new["stories"][-1]["image"] = None
+        with self.assertRaises(Invalid): self.plan()
 
     def test_new_image_must_have_credit_and_https(self):
         for image in [{"url": "https://example.org/x.png", "alt": "Image"}, {"url": "assets/x.png", "alt": "Image", "credit": "Source"}]:
