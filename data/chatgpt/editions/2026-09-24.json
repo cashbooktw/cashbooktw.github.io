@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-24",
+  "generated_at": "2026-09-24T00:18:23+08:00",
+  "is_demo": false,
+  "edition_title": "2026-09-24 每日資訊整理",
+  "edition_summary": "本次依 2026-09-23T20:06:00+08:00 至 2026-09-24T00:18:23+08:00（Asia/Taipei）檢查六個既有非 Facebook 來源；The Decoder 依規則檢查 2026-09-23 整個日曆日，Codex Resets 另檢查即時「Reset scheduled」狀態。本次新增 2 則正式 stories。",
+  "stories": [
+    {
+      "id": "techcrunch-youtube-custom-feeds-ai-2026-09-23",
+      "title": "YouTube 將用 Gemini 讓使用者以提示詞建立自訂推薦動態",
+      "summary": "YouTube 發表 Custom Feeds，使用者可用自然語言描述想看的影片類型，由 Gemini 建立並固定成獨立推薦分頁。功能預計下月起在網頁與行動版推出，且不會取代既有首頁推薦。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-23T07:30:00-07:00",
+      "tags": [
+        "AI",
+        "YouTube",
+        "Gemini",
+        "推薦系統"
+      ],
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/09/Discovery-Custom-Feeds-Title-Card-1.jpg?w=1024",
+        "alt": "YouTube Custom Feeds 功能宣傳圖，顯示自訂推薦動態介面",
+        "credit": "YouTube via TechCrunch"
+      },
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/09/23/youtube-will-let-you-build-your-own-algorithm-with-ai/",
+          "published_at": "2026-09-23T07:30:00-07:00"
+        }
+      ]
+    },
+    {
+      "id": "decoder-basecamp-research-eden-2026-09-23",
+      "title": "Basecamp Research 以全球基因資料訓練生物 AI，推進 EDEN 模型與療法",
+      "summary": "Basecamp Research 完成 1.4 億美元募資，持續以全球環境採樣的基因資料訓練 EDEN 生物 AI 模型，目標涵蓋抗生素設計與基因插入工具。報導同時指出，目前成果主要仍在實驗室、動物試驗與前臨床前階段，距人體療法尚有多項驗證工作。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-23",
+      "tags": [
+        "AI",
+        "生物科技",
+        "Basecamp Research",
+        "AI研究"
+      ],
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/09/Basecamp-Research-title.png",
+        "alt": "Basecamp Research 生物 AI 研究主題圖片",
+        "credit": "Basecamp Research / GPT-Image-2 prompted by THE DECODER"
+      },
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/inside-basecamp-research-the-ai-startup-turning-evolution-into-training-data/",
+          "published_at": "2026-09-23"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "configured_sources": {
+      "status": "complete",
+      "completed_at": "2026-09-24T00:18:23+08:00",
+      "captured": 12,
+      "included": 2,
+      "excluded": 10,
+      "notes": [
+        "本次更新時間範圍為 2026-09-23T20:06:00+08:00 至 2026-09-24T00:18:23+08:00（Asia/Taipei）；The Decoder 依既有規則檢查 2026-09-23 整個日曆日，Codex Resets 不受此時間窗限制。",
+        "Codex Resets 已完整檢查目前狀態頁；未顯示可驗證的「Reset scheduled」時間，因此本次不新增 Codex story。",
+        "TechCrunch AI 依分類列表順序檢查至可確定早於本次起點的邊界；完整讀取 4 篇時間窗內 AI 候選原文，並依最多 1 篇規則納入 YouTube Custom Feeds。該文發布於 2026-09-23 07:30 PDT（2026-09-23 22:30 Asia/Taipei），原文提供 YouTube 的 HTTPS 主圖。前次已收錄的 Ema 文章發布於 05:00 PDT（20:00 Asia/Taipei），早於本次 20:06 起點。",
+        "Interconnects 依 archive 入口檢查；最新列出文章日期為 2026-09-22，明確早於本次時間窗，因此依 fast path 不再讀更舊原文。",
+        "The Decoder 依 Asia/Taipei 前一日整個日曆日規則檢查；首頁列出 2026-09-23 的 6 篇文章後即銜接 2026-09-22，6 篇均完整讀取。依最多 1 篇規則納入 Basecamp Research 專訪；原文提供 HTTPS 主圖與 Basecamp Research / GPT-Image-2 prompted by THE DECODER credit。",
+        "地新聞新竹市依列表檢查；最新文章為既有 2026-09-23 12:45 項目，早於本次 20:06 起點。為確認邊界完整讀取該原文，本次不新增。",
+        "地新聞新竹縣依列表檢查；最新文章 URL 與既有 2026-09-22 22:15 項目相同，早於本次時間窗。為確認邊界完整讀取該原文，本次不新增。",
+        "captured/included/excluded 僅計本次實際完整讀取的候選來源項目；本次完整讀取 12 項，其中新增 2 項，10 項因來源數量上限或時間窗外而不追加。"
+      ]
+    }
+  }
+}
