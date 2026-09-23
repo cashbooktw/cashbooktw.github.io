@@ -48,3 +48,5 @@
 修改 JavaScript 或 CSS 後，需同步更新 `index.html` 對應 URL 的 `?v=`，值為檔案 SHA-256 的前 12 碼，避免舊版讀取器快取拒絕新版資料欄位。
 
 執行 `FB_IMPORT_ROOT=/path/to/facebook-edition-import node --test tests/edition-contract.test.mjs`，使用匯入器既有測試依賴，驗證真實目錄中的每一期、原文安全呈現及資源版本。
+
+編輯審核的排除或 `source_reports.status: limited` 不顯示為前端警告。讀者介面只提示實際索引／日報讀取失敗；舊資料的來源報告保留相容性，不用於產生通道狀態訊息。

@@ -122,8 +122,8 @@
     for (const status of statuses) {
       const article = node("p", undefined, "channel-status-item");
       const label = status.channel === "facebook" ? "Facebook" : "ChatGPT";
-      article.append(node("strong", `${label}: ${status.error ? "Read failed" : "Limited read"}. `));
-      article.append(document.createTextNode(status.error || "This channel may be incomplete."));
+      article.append(node("strong", `${label}: Read failed. `));
+      article.append(document.createTextNode(status.error));
       fragment.append(article);
     }
     ui["channel-status"].replaceChildren(fragment);
@@ -313,11 +313,7 @@
       const statuses = [];
       for (const result of channelResults) {
         if (result.error || state.catalogErrors?.[result.channel]) statuses.push({ channel: result.channel, error: result.error || state.catalogErrors[result.channel], notes: [] });
-        if (result.edition) {
-          const reports = result.edition.source_reports || {};
-          const report = reports[result.channel] || reports[result.channel === "chatgpt" ? "configured_sources" : "facebook"];
-          if (report?.status === "limited") statuses.push({ channel: result.channel, notes: report.notes });
-        }
+
       }
       renderChannelStatus(statuses);
       setupFilters(); renderArchive();

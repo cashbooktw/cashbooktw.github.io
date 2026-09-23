@@ -80,11 +80,11 @@ test("reader renders each real channel edition and unions its archive dates", as
   for (const [channel, fixture] of [["facebook", facebook], ["chatgpt", chatgpt]]) {
     const entry = fixture.manifest.editions[0];
     const doc = await render({ manifests, editions, date: entry.date });
-    assert.equal(doc.querySelectorAll(".story").length, entry.story_count);
+    assert.equal(doc.querySelectorAll(".story").length, [facebook, chatgpt].reduce((n, f) => n + (f.manifest.editions.find(e => e.date === entry.date)?.story_count || 0), 0));
     assert.match(doc.querySelector(".story h3").textContent, /.+/);
   }
   const doc = await render({ manifests, editions });
-  assert.equal(doc.querySelectorAll("#archive-list a").length, 2);
+  assert.equal(doc.querySelectorAll("#archive-list a").length, new Set([...facebook.manifest.editions, ...chatgpt.manifest.editions].map(e => e.date)).size);
   assert.equal(doc.querySelector("#channel-status").hidden, true, "a channel that has no edition that date is not an error");
   assert.equal(doc.querySelector("#edition-title"), null);
   assert.equal(doc.querySelector("#source-reports"), null);
@@ -116,11 +116,11 @@ test("reader merges same-date editions Facebook first and safely distinguishes d
   assert.match(stories[fbEdition.stories.length].id, /^story-chatgpt-/);
   assert.equal(new Set(stories.map((story) => story.id)).size, stories.length);
   assert.equal(doc.querySelectorAll(".story--lead").length, 1);
-  assert.equal(doc.querySelector("#channel-status").hidden, false, "a limited channel report is surfaced");
-  assert.match(doc.querySelector("#channel-status").textContent, /ChatGPT: Limited read/);
+  assert.equal(doc.querySelector("#channel-status").hidden, true, "editorial reports are not reader errors");
+  assert.doesNotMatch(doc.querySelector("#channel-status").textContent, /Limited read/);
 });
 
-test("channel failures leave the other channel readable and limited notes are reported", async () => {
+test("channel failures leave the other channel readable without displaying editorial reports", async () => {
   const facebook = await channelData("facebook");
   const chatgpt = await channelData("chatgpt");
   const date = facebook.manifest.current;
@@ -136,8 +136,8 @@ test("channel failures leave the other channel readable and limited notes are re
   });
   assert.equal(doc.querySelectorAll(".story").length, fbEntry.story_count);
   assert.match(doc.querySelector("#channel-status").textContent, /ChatGPT: Read failed/);
-  assert.match(doc.querySelector("#channel-status").textContent, /Facebook: Limited read/);
-  assert.match(doc.querySelector("#channel-status").textContent, /This channel may be incomplete/);
+  assert.doesNotMatch(doc.querySelector("#channel-status").textContent, /Facebook: Limited read/);
+  assert.doesNotMatch(doc.querySelector("#channel-status").textContent, /This channel may be incomplete/);
 });
 
 test("reader keeps original text safe, hides failed images, and suppresses routine complete notes", async () => {
@@ -150,7 +150,7 @@ test("reader keeps original text safe, hides failed images, and suppresses routi
   edition.source_reports = { facebook: { status: "complete", completed_at: edition.generated_at, captured: 2, included: 1, excluded: 1, notes: ["例行圖片來源說明不應顯示"] } };
   const doc = await render({
     manifests: { [facebook.manifestPath]: facebook.manifest, [chatgpt.manifestPath]: chatgpt.manifest },
-    editions: { [entry.path]: edition },
+    editions: { ...chatgpt.editions, [entry.path]: edition },
   });
   const story = doc.querySelector(".story");
   assert.equal(story.querySelector("details.story-original script"), null);
