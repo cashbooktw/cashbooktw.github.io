@@ -4,7 +4,7 @@
   const BASE = new URL("./", document.baseURI);
   const KINDS = { facebook: "Facebook", rss: "RSS", news: "新聞搜尋", web: "網頁", other: "其他" };
   const $ = (id) => document.getElementById(id);
-  const ui = Object.fromEntries(["main", "message", "message-title", "message-detail", "retry-latest", "edition-panel", "demo-notice", "edition-number", "edition-date", "updated-time", "edition-title", "edition-summary", "search-input", "section-filter", "kind-filter", "tag-filters", "tag-total", "topic-index", "stories", "results-count", "empty-results", "archive-list", "archive-count"].map((id) => [id, $(id)]));
+  const ui = Object.fromEntries(["main", "message", "message-title", "message-detail", "retry-latest", "edition-panel", "demo-notice", "edition-number", "edition-date", "updated-time", "edition-title", "edition-summary", "source-reports", "search-input", "section-filter", "kind-filter", "tag-filters", "tag-total", "topic-index", "stories", "results-count", "empty-results", "archive-list", "archive-count"].map((id) => [id, $(id)]));
   const state = { manifest: null, edition: null, controller: null, request: 0, tag: "" };
   const own = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
   const obj = (v) => v !== null && typeof v === "object" && !Array.isArray(v);
@@ -48,13 +48,23 @@
   }
   function validateEdition(e, entry) {
     const error = "本期 JSON 格式不正確，或與目錄／edition schema 不一致。";
-    check(keys(e, ["schema_version", "date", "generated_at", "is_demo", "edition_title", "edition_summary", "stories"]) && e.schema_version === 1 && day(e.date) && timestamp(e.generated_at) && typeof e.is_demo === "boolean" && str(e.edition_title) && str(e.edition_summary) && Array.isArray(e.stories), error);
+    check(keys(e, ["schema_version", "date", "generated_at", "is_demo", "edition_title", "edition_summary", "stories"], ["source_reports"]) && e.schema_version === 1 && day(e.date) && timestamp(e.generated_at) && typeof e.is_demo === "boolean" && str(e.edition_title) && str(e.edition_summary) && Array.isArray(e.stories), error);
     check(e.date === entry.date && e.is_demo === entry.is_demo && e.stories.length === entry.story_count, error);
+    if (own(e, "source_reports")) {
+      const reports = e.source_reports;
+      check(keys(reports, [], ["facebook", "configured_sources"]), error);
+      for (const channel of ["facebook", "configured_sources"]) {
+        if (!own(reports, channel)) continue;
+        const report = reports[channel];
+        check(keys(report, ["status", "completed_at", "captured", "included", "excluded", "notes"]) && ["complete", "limited"].includes(report.status) && timestamp(report.completed_at) && [report.captured, report.included, report.excluded].every((count) => Number.isInteger(count) && count >= 0) && Array.isArray(report.notes) && report.notes.every(str), error);
+      }
+    }
     const ids = new Set();
     for (const s of e.stories) {
-      check(keys(s, ["id", "title", "summary", "section", "source_kind", "tags", "sources"], ["deck", "published_at", "image"]) && str(s.id) && /^[A-Za-z0-9][A-Za-z0-9_-]{0,127}$/.test(s.id) && !ids.has(s.id) && str(s.title) && s.title.length > 0 && str(s.summary) && str(s.section) && str(s.source_kind) && own(KINDS, s.source_kind), error);
+      check(keys(s, ["id", "title", "summary", "section", "source_kind", "tags", "sources"], ["deck", "published_at", "image", "original_text"]) && str(s.id) && /^[A-Za-z0-9][A-Za-z0-9_-]{0,127}$/.test(s.id) && !ids.has(s.id) && str(s.title) && s.title.length > 0 && str(s.summary) && str(s.section) && str(s.source_kind) && own(KINDS, s.source_kind), error);
       ids.add(s.id);
       check((!own(s, "deck") || str(s.deck)) && (!own(s, "published_at") || publication(s.published_at)), error);
+      check(!own(s, "original_text") || str(s.original_text), error);
       check(Array.isArray(s.tags) && s.tags.every((t) => str(t) && t.length > 0) && new Set(s.tags).size === s.tags.length && Array.isArray(s.sources), error);
       check(e.is_demo || s.sources.length > 0, error);
       for (const source of s.sources) {
@@ -105,6 +115,30 @@
     a.setAttribute("aria-label", `${source.name}：查看原文（另開視窗）`);
     return a;
   }
+  function renderSourceReports(reports = {}) {
+    const labels = { facebook: "Facebook Favorites", configured_sources: "已設定的非 Facebook 來源" };
+    const fragment = document.createDocumentFragment();
+    for (const channel of Object.keys(labels)) {
+      const article = node("article", undefined, "source-report");
+      article.append(node("h3", labels[channel]));
+      const report = reports[channel];
+      if (!report) {
+        article.append(node("p", "未記錄；本期無法確認此來源是否執行。", "source-report-status"));
+      } else {
+        article.append(node("p", report.status === "complete" ? "完成" : "有限讀取", "source-report-status"));
+        const counts = node("p", `讀取 ${report.captured} · 收錄 ${report.included} · 排除 ${report.excluded}`, "source-report-counts");
+        counts.append(timeNode(report.completed_at));
+        article.append(counts);
+        if (report.notes.length) {
+          const notes = node("ul", undefined, "source-report-notes");
+          for (const note of report.notes) notes.append(node("li", note));
+          article.append(notes);
+        }
+      }
+      fragment.append(article);
+    }
+    ui["source-reports"].replaceChildren(fragment);
+  }
   function renderStory(s) {
     const article = node("article", undefined, "story");
     article.id = `story-${s.id}`;
@@ -131,6 +165,12 @@
       article.append(figure);
     }
     article.append(node("p", s.summary, "story-summary"));
+    if (own(s, "original_text")) {
+      const original = node("details", undefined, "story-original");
+      original.append(node("summary", "查看原始全文"));
+      original.append(node("p", s.original_text, "original-text-content"));
+      article.append(original);
+    }
     if (s.tags.length) {
       const tags = node("p", undefined, "story-tags"); tags.setAttribute("aria-label", "主題標籤");
       for (const tag of s.tags) tags.append(node("span", `#${tag}`));
@@ -255,6 +295,7 @@
       ui["updated-time"].textContent = formatDate(edition.generated_at); ui["updated-time"].dateTime = edition.generated_at;
       ui["edition-title"].textContent = edition.edition_title || "本期情報";
       ui["edition-summary"].textContent = edition.edition_summary;
+      renderSourceReports(edition.source_reports);
       ui["demo-notice"].hidden = !edition.is_demo;
       setupFilters(); renderArchive();
       ui.message.hidden = true; ui["edition-panel"].hidden = false;

@@ -79,6 +79,14 @@ summary { cursor: pointer; min-height: 44px; padding: 13px 0; }
 .story-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; margin: 0 0 17px; color: var(--muted); font: 11px/1.6 var(--sans); }
 .story-summary { margin: 0; font-size: 16px; line-height: 1.9; white-space: pre-line; }
 .story--lead .story-summary::first-letter { float: left; margin: .08em .12em 0 0; font-size: 3.65em; font-weight: 700; line-height: .95; }
+.source-reports { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 28px; margin: 20px 0 28px; padding: 14px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font: 12px/1.7 var(--sans); }
+.source-report h3 { margin: 0 0 5px; font-size: 13px; }
+.source-report p { margin: 3px 0; }
+.source-report-counts time { display: block; color: var(--muted); font-size: 11px; }
+.source-report-notes { margin: 4px 0 0; padding-left: 18px; }
+.story-original { margin-top: 12px; border-top: 1px solid var(--rule); font: 12px/1.7 var(--sans); }
+.story-original summary { padding: 10px 0; }
+.original-text-content { margin: 0; white-space: pre-line; overflow-wrap: anywhere; }
 .story-tags { display: flex; flex-wrap: wrap; gap: 6px 12px; margin: 20px 0 0; color: var(--muted); font: 11px/1.7 var(--sans); }
 .story-sources { margin-top: 16px; padding-top: 8px; border-top: 1px solid var(--rule); font: 12px/1.7 var(--sans); }
 .story-sources summary { padding: 10px 0; }
@@ -156,6 +164,7 @@ summary { cursor: pointer; min-height: 44px; padding: 13px 0; }
   .story h3 { font-size: 1.7rem; }
   .story--lead h3 { font-size: 2.05rem; }
   .story-summary { font-size: 17px; }
+  .source-reports { grid-template-columns: 1fr; }
   .story-meta, .story-tags { font-size: 12px; }
   .archive ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .archive > summary > span { margin-left: 6px; font-size: 9px; }

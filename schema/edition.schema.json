@@ -32,6 +32,9 @@
     "edition_summary": {
       "type": "string"
     },
+    "source_reports": {
+      "$ref": "#/$defs/source_reports"
+    },
     "stories": {
       "type": "array",
       "items": {
@@ -161,6 +164,27 @@
         }
       }
     },
+    "source_report": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "completed_at", "captured", "included", "excluded", "notes"],
+      "properties": {
+        "status": { "enum": ["complete", "limited"] },
+        "completed_at": { "$ref": "#/$defs/timestamp" },
+        "captured": { "type": "integer", "minimum": 0 },
+        "included": { "type": "integer", "minimum": 0 },
+        "excluded": { "type": "integer", "minimum": 0 },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "source_reports": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "facebook": { "$ref": "#/$defs/source_report" },
+        "configured_sources": { "$ref": "#/$defs/source_report" }
+      }
+    },
     "story": {
       "type": "object",
       "additionalProperties": false,
@@ -186,6 +210,9 @@
           "type": "string"
         },
         "summary": {
+          "type": "string"
+        },
+        "original_text": {
           "type": "string"
         },
         "section": {
