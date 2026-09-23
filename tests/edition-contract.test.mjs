@@ -117,7 +117,7 @@ test("reader merges same-date editions Facebook first and safely distinguishes d
   assert.equal(new Set(stories.map((story) => story.id)).size, stories.length);
   assert.equal(doc.querySelectorAll(".story--lead").length, 1);
   assert.equal(doc.querySelector("#channel-status").hidden, false, "a limited channel report is surfaced");
-  assert.match(doc.querySelector("#channel-status").textContent, /ChatGPT: 有限讀取/);
+  assert.match(doc.querySelector("#channel-status").textContent, /ChatGPT: Limited read/);
 });
 
 test("channel failures leave the other channel readable and limited notes are reported", async () => {
@@ -135,9 +135,9 @@ test("channel failures leave the other channel readable and limited notes are re
     failedPaths: [chatEntry.path],
   });
   assert.equal(doc.querySelectorAll(".story").length, fbEntry.story_count);
-  assert.match(doc.querySelector("#channel-status").textContent, /ChatGPT: 讀取失敗/);
-  assert.match(doc.querySelector("#channel-status").textContent, /Facebook: 有限讀取/);
-  assert.match(doc.querySelector("#channel-status").textContent, /部分貼文無法讀取/);
+  assert.match(doc.querySelector("#channel-status").textContent, /ChatGPT: Read failed/);
+  assert.match(doc.querySelector("#channel-status").textContent, /Facebook: Limited read/);
+  assert.match(doc.querySelector("#channel-status").textContent, /This channel may be incomplete/);
 });
 
 test("reader keeps original text safe, hides failed images, and suppresses routine complete notes", async () => {
