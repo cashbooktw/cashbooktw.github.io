@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "date": "2026-09-23",
-  "generated_at": "2026-09-23T09:21:22+08:00",
+  "generated_at": "2026-09-23T12:47:24+08:00",
   "is_demo": false,
   "edition_title": "2026-09-23 Facebook Favorites",
-  "edition_summary": "本期收錄 11 則於 2026-09-22T00:00:00+08:00 至 2026-09-23T00:00:00+08:00 間發布的公開 Facebook Favorites 貼文。",
+  "edition_summary": "Facebook：本次處理完成，檢查 11 則，入選 8 則，排除 3 則。post:will.fans_pfbid02KMSLPJdMKufaR6xRjnYPZT7PC42PogPDBUCw3CGNQu4Who7D8zo9teV6TVBTJLoul 配圖：未擷取到可用圖片。；post:will.fans_pfbid02YZSKNpLaupsSqussH83gLBUjeH96e5Bn9hG5Fmp7zpGjTAFhgFeESH9VjE6By5Erl 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。；post:WccCasper_pfbid02p9v3mK43fdqqr8dcAN2ArDdkdN8mnkPNC4CMbUeVVbcbkakXy8d5QLT8LwMfwCgJl 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。；post:chihuangchiu_pfbid0QCex1dcH9cHJLLzMUn1JybsZhc9jzyk8Ku7rWfDaGhDQy2GceNHZWokU2k7fcF5ml: 全文主軸是選舉預測市場交易及法律風險，非實質科技或 AI 技術介紹。；post:will.fans_pfbid023GnQfkq8tYbW5FJKcAvx5HYhEKTf4k6zU433iKZXiLpG9EKHA1VGWkboVJjk6sFsl: 正文為親子練琴與製作手冊的經驗，未說明技術內容；不依連結預覽補造摘要。；post:will.fans_pfbid0nEQuPcNKESKTcwUqQ727m8CP6E4nYkhZrP8GGY9CjUsQdUTXHzFSEPj3cRSMmJsBl 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。；post:will.fans_pfbid0aqoSEuchNChPkHtCsVyuGNjrGkBNiNLXg2ZhP5YFQXuPCbJiyk1LZjb5jzohWrajl 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。；post:will.fans_pfbid0H37NSUqphfpcgjKK3jkXFzcbdg6LECTfSH8zhq2Nj6kdEZha3gpeSAS1XBQJWYUkl 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。；post:will.fans_pfbid06wxmwMLGf7hYNtNM2zREbQ5kF2w7TRAe48YzMhpGxhq8zhKi4TC94DjDjEjX1cP5l 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。；post:will.fans_pfbid02r1NtSjiHBZd6f6FqjXkpoCdLsBECbS7qCBsrrrPxaTZRwdM7Yn59pfjxwAUyy1HPl: 主要是粉絲團十萬追蹤的感謝與經營回顧，Suno 標籤未提供實質 AI 使用內容。；post:muki.wu_pfbid02k6ZspZbj2q1ZUjFEwKRs6Vzk8LAJX8XGHDiVckboWyNLau4ZcP7mREP9W93xabPfl 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。\n設定來源：尚無執行紀錄。\n既有說明：本期收錄 11 則於 2026-09-22T00:00:00+08:00 至 2026-09-23T00:00:00+08:00 間發布的公開 Facebook Favorites 貼文。",
   "stories": [
     {
       "id": "facebook-d0c2776c0d800afe277ceba3",
@@ -192,6 +192,64 @@
           "published_at": "2026-09-22T09:01:00.000+08:00"
         }
       ]
+    },
+    {
+      "id": "facebook-37c1fd2869c8005319380e21",
+      "title": "Qwen-Image-2.1 本機圖片編修心得",
+      "summary": "作者分享使用 Qwen-Image-2.1 在本機多次編修圖片的經驗，認為未修改區域能維持品質，並主觀比較其能力與 gpt-image-2。",
+      "original_text": "Qwen-Image-2.1 的編輯圖片能力很強，沒改到的地方完全不會失真，這圖我改好幾次了，全部都再本機完成編修，我覺得已經有到 gpt-image-2 的能力！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T10:47:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0aqoSEuchNChPkHtCsVyuGNjrGkBNiNLXg2ZhP5YFQXuPCbJiyk1LZjb5jzohWrajl",
+          "published_at": "2026-09-22T10:47:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-068cc68cef4ce9d51b4d5b3f",
+      "title": "透過 Agent Plugin 呼叫 Antigravity CLI",
+      "summary": "作者分享一款 Agent Plugin，可在 Claude Code、Codex CLI 或 Pi 中呼叫 Antigravity CLI（agy）執行工作，並表達對速度與可靠性的正面使用評價。",
+      "original_text": "有人把 agy 當小弟寫成 Agent Plugin 了，裝起來就能在 Claude Code、Codex CLI 或 Pi 中呼喚 Antigravity CLI (agy) 起來做事，速度快又可靠！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-22T10:44:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0H37NSUqphfpcgjKK3jkXFzcbdg6LECTfSH8zhq2Nj6kdEZha3gpeSAS1XBQJWYUkl",
+          "published_at": "2026-09-22T10:44:00.000+08:00"
+        }
+      ]
     }
-  ]
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-09-23T04:47:22.409Z",
+      "captured": 11,
+      "included": 8,
+      "excluded": 3,
+      "notes": [
+        "post:will.fans_pfbid02KMSLPJdMKufaR6xRjnYPZT7PC42PogPDBUCw3CGNQu4Who7D8zo9teV6TVBTJLoul 配圖：未擷取到可用圖片。",
+        "post:will.fans_pfbid02YZSKNpLaupsSqussH83gLBUjeH96e5Bn9hG5Fmp7zpGjTAFhgFeESH9VjE6By5Erl 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。",
+        "post:WccCasper_pfbid02p9v3mK43fdqqr8dcAN2ArDdkdN8mnkPNC4CMbUeVVbcbkakXy8d5QLT8LwMfwCgJl 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。",
+        "post:chihuangchiu_pfbid0QCex1dcH9cHJLLzMUn1JybsZhc9jzyk8Ku7rWfDaGhDQy2GceNHZWokU2k7fcF5ml: 全文主軸是選舉預測市場交易及法律風險，非實質科技或 AI 技術介紹。",
+        "post:will.fans_pfbid023GnQfkq8tYbW5FJKcAvx5HYhEKTf4k6zU433iKZXiLpG9EKHA1VGWkboVJjk6sFsl: 正文為親子練琴與製作手冊的經驗，未說明技術內容；不依連結預覽補造摘要。",
+        "post:will.fans_pfbid0nEQuPcNKESKTcwUqQ727m8CP6E4nYkhZrP8GGY9CjUsQdUTXHzFSEPj3cRSMmJsBl 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。",
+        "post:will.fans_pfbid0aqoSEuchNChPkHtCsVyuGNjrGkBNiNLXg2ZhP5YFQXuPCbJiyk1LZjb5jzohWrajl 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。",
+        "post:will.fans_pfbid0H37NSUqphfpcgjKK3jkXFzcbdg6LECTfSH8zhq2Nj6kdEZha3gpeSAS1XBQJWYUkl 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。",
+        "post:will.fans_pfbid06wxmwMLGf7hYNtNM2zREbQ5kF2w7TRAe48YzMhpGxhq8zhKi4TC94DjDjEjX1cP5l 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。",
+        "post:will.fans_pfbid02r1NtSjiHBZd6f6FqjXkpoCdLsBECbS7qCBsrrrPxaTZRwdM7Yn59pfjxwAUyy1HPl: 主要是粉絲團十萬追蹤的感謝與經營回顧，Suno 標籤未提供實質 AI 使用內容。",
+        "post:muki.wu_pfbid02k6ZspZbj2q1ZUjFEwKRs6Vzk8LAJX8XGHDiVckboWyNLau4ZcP7mREP9W93xabPfl 配圖：本次原文未提供足以確認圖片再利用權利的依據，保留為空。"
+      ]
+    }
+  }
 }
