@@ -2,7 +2,7 @@
 (() => {
   "use strict";
   const BASE = new URL("./", document.baseURI);
-  const KINDS = { facebook: "Facebook", rss: "RSS", news: "新聞搜尋", web: "網頁", other: "其他" };
+  const KINDS = { facebook: "Facebook", rss: "RSS", news: "News Search", web: "Web", other: "Other" };
   const $ = (id) => document.getElementById(id);
   const ui = Object.fromEntries(["main", "message", "message-title", "message-detail", "retry-latest", "edition-panel", "edition-number", "edition-date", "updated-time", "channel-status", "search-input", "section-filter", "kind-filter", "tag-filters", "tag-total", "topic-index", "stories", "results-count", "empty-results", "archive-list", "archive-count"].map((id) => [id, $(id)]));
   const CHANNELS = ["facebook", "chatgpt"];
@@ -37,18 +37,18 @@
     return null;
   }
   function validateManifest(m, channel) {
-    const error = "目錄 JSON 格式不正確，或與 schema_version 1 不相容。";
+    const error = "The catalog JSON is invalid or incompatible with schema_version 1.";
     check(keys(m, ["schema_version", "current", "updated_at", "editions"]) && m.schema_version === 1 && day(m.current) && timestamp(m.updated_at) && Array.isArray(m.editions) && m.editions.length > 0, error);
     const dates = new Set();
     for (const e of m.editions) {
       check(keys(e, ["date", "path", "story_count", "is_demo"]) && day(e.date) && e.path === `data/${channel}/editions/${e.date}.json` && Number.isSafeInteger(e.story_count) && e.story_count >= 0 && typeof e.is_demo === "boolean" && !dates.has(e.date), error);
       dates.add(e.date);
     }
-    check(dates.has(m.current), "目錄 current 沒有對應期數。");
+    check(dates.has(m.current), "The catalog current date has no matching edition.");
     return m;
   }
   function validateEdition(e, entry) {
-    const error = "本期 JSON 格式不正確，或與目錄／edition schema 不一致。";
+    const error = "The edition JSON is invalid or does not match the catalog / edition schema.";
     check(keys(e, ["schema_version", "date", "generated_at", "is_demo", "stories"], ["edition_title", "edition_summary", "source_reports"]) && e.schema_version === 1 && day(e.date) && timestamp(e.generated_at) && typeof e.is_demo === "boolean" && (!own(e, "edition_title") || str(e.edition_title)) && (!own(e, "edition_summary") || str(e.edition_summary)) && Array.isArray(e.stories), error);
     check(e.date === entry.date && e.is_demo === entry.is_demo && e.stories.length === entry.story_count, error);
     if (own(e, "source_reports")) {
@@ -70,7 +70,7 @@
       check(e.is_demo || s.sources.length > 0, error);
       for (const source of s.sources) {
         check(keys(source, ["name"], ["url", "published_at"]) && str(source.name) && source.name.length > 0 && (!own(source, "url") || source.url === "" || externalURL(source.url)) && (!own(source, "published_at") || publication(source.published_at)), error);
-        check(e.is_demo || externalURL(source.url), "正式新聞必須保留有效的原始來源 URL。");
+        check(e.is_demo || externalURL(source.url), "Published stories must retain a valid original-source URL.");
       }
       if (s.image !== undefined && s.image !== null) {
         check(keys(s.image, ["url", "alt"], ["credit"]) && imageURL(s.image.url) && str(s.image.alt) && s.image.alt.length > 0 && (!own(s.image, "credit") || str(s.image.credit)), error);
@@ -89,11 +89,11 @@
     url.searchParams.set("_", String(Date.now()));
     try {
       const response = await fetch(url, { cache: "no-store", credentials: "omit", mode: "same-origin", signal: controller.signal });
-      if (!response.ok) throw new Error(`無法取得 ${path}（HTTP ${response.status}）。`);
+      if (!response.ok) throw new Error(`Unable to fetch ${path} (HTTP ${response.status}).`);
       try { return await response.json(); }
-      catch (error) { if (error.name === "AbortError") throw error; throw new Error(`${path} 不是有效的 JSON。`); }
+      catch (error) { if (error.name === "AbortError") throw error; throw new Error(`${path} is not valid JSON.`); }
     } catch (error) {
-      if (timedOut) throw new Error("調閱逾時，請稍後重試最新一期。");
+      if (timedOut) throw new Error("The request timed out. Please retry the latest edition.");
       throw error;
     } finally { clearTimeout(timer); signal.removeEventListener("abort", abort); }
   }
@@ -104,16 +104,17 @@
     return element;
   }
   function formatDate(value) {
-    if (day(value)) return new Intl.DateTimeFormat("zh-TW", { timeZone: "Asia/Taipei", year: "numeric", month: "long", day: "numeric", weekday: "long" }).format(new Date(`${value}T00:00:00+08:00`));
-    return new Intl.DateTimeFormat("zh-TW", { timeZone: "Asia/Taipei", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(new Date(value));
+    if (day(value)) return value.replaceAll("-", "/");
+    const parts = Object.fromEntries(new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Taipei", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).formatToParts(new Date(value)).filter((part) => part.type !== "literal").map((part) => [part.type, part.value]));
+    return `${parts.year}/${parts.month}/${parts.day} ${parts.hour}:${parts.minute}`;
   }
   function timeNode(value) { const el = node("time", formatDate(value)); el.dateTime = value; return el; }
   function link(source) {
     const href = externalURL(source.url);
-    if (!href) return node("span", `${source.name} · 未提供原文網址`, "source-note");
-    const a = node("a", `${source.name} · 查看原文 ↗`, "source-link");
+    if (!href) return node("span", `${source.name} · Original URL unavailable`, "source-note");
+    const a = node("a", `${source.name} · View original ↗`, "source-link");
     a.href = href; a.target = "_blank"; a.rel = "noopener noreferrer";
-    a.setAttribute("aria-label", `${source.name}：查看原文（另開視窗）`);
+    a.setAttribute("aria-label", `${source.name}: view original (opens in a new tab)`);
     return a;
   }
   function renderChannelStatus(statuses) {
@@ -121,8 +122,8 @@
     for (const status of statuses) {
       const article = node("p", undefined, "channel-status-item");
       const label = status.channel === "facebook" ? "Facebook" : "ChatGPT";
-      article.append(node("strong", `${label}: ${status.error ? "讀取失敗" : "有限讀取"}。 `));
-      article.append(document.createTextNode(status.error || status.notes.join("；") || "本通道內容可能不完整。"));
+      article.append(node("strong", `${label}: ${status.error ? "Read failed" : "Limited read"}. `));
+      article.append(document.createTextNode(status.error || "This channel may be incomplete."));
       fragment.append(article);
     }
     ui["channel-status"].replaceChildren(fragment);
@@ -133,7 +134,7 @@
     article.id = `story-${s.channel}-${s.id}`;
     if (s === state.edition.stories[0]) article.classList.add("story--lead");
     const kicker = node("p", undefined, "story-kicker");
-    kicker.append(node("span", s.section || "未分類"));
+    kicker.append(node("span", s.section || "Uncategorized"));
     if (state.edition.is_demo) kicker.append(node("span", "SAMPLE / DEMO", "demo-stamp"));
     const title = node("h3", s.title); title.id = `title-${s.channel}-${s.id}`;
     article.setAttribute("aria-labelledby", title.id);
@@ -142,7 +143,7 @@
     const meta = node("p", undefined, "story-meta");
     meta.append(node("span", KINDS[s.source_kind]));
     if (s.published_at) meta.append(timeNode(s.published_at));
-    else meta.append(node("span", "發布時間未提供"));
+    else meta.append(node("span", "Publication time unavailable"));
     article.append(meta);
     if (s.image) {
       const figure = node("figure", undefined, "news-photo");
@@ -150,31 +151,30 @@
       const image = node("img"); image.alt = s.image.alt; image.loading = "lazy"; image.decoding = "async"; image.referrerPolicy = "no-referrer";
       image.addEventListener("error", () => { figure.hidden = true; }, { once: true });
       image.src = imageURL(s.image.url); frame.append(image); figure.append(frame);
-      if (s.image.credit) figure.append(node("figcaption", s.image.credit));
       article.append(figure);
     }
     article.append(node("p", s.summary, "story-summary"));
     if (own(s, "original_text")) {
       const original = node("details", undefined, "story-original");
-      original.append(node("summary", "查看原始全文"));
+      original.append(node("summary", "View original text"));
       original.append(node("p", s.original_text, "original-text-content"));
       article.append(original);
     }
     if (s.tags.length) {
-      const tags = node("p", undefined, "story-tags"); tags.setAttribute("aria-label", "主題標籤");
+      const tags = node("p", undefined, "story-tags"); tags.setAttribute("aria-label", "Topic tags");
       for (const tag of s.tags) tags.append(node("span", `#${tag}`));
       article.append(tags);
     }
     const sources = node("div", undefined, "story-sources");
     if (s.sources.length > 1) {
-      const details = node("details"); details.append(node("summary", `${s.sources.length} sources · 展開來源`));
+      const details = node("details"); details.append(node("summary", `${s.sources.length} sources · Show sources`));
       const list = node("ul");
       for (const source of s.sources) { const item = node("li"); item.append(link(source)); if (source.published_at) item.append(timeNode(source.published_at)); list.append(item); }
       details.append(list); sources.append(details);
     } else if (s.sources.length === 1) {
       sources.append(link(s.sources[0]));
       if (s.sources[0].published_at) sources.append(timeNode(s.sources[0].published_at));
-    } else sources.append(node("p", "DEMO 排版示例 · 無新聞來源", "source-note"));
+    } else sources.append(node("p", "DEMO layout sample · No news source", "source-note"));
     article.append(sources);
     return article;
   }
@@ -191,9 +191,9 @@
     const fragment = document.createDocumentFragment();
     for (const story of filtered) fragment.append(renderStory(story));
     ui.stories.replaceChildren(fragment);
-    ui["results-count"].textContent = `顯示 ${filtered.length} / ${state.edition.stories.length} 則`;
+    ui["results-count"].textContent = `Showing ${filtered.length} / ${state.edition.stories.length}`;
     ui["empty-results"].hidden = filtered.length > 0;
-    ui["empty-results"].textContent = state.edition.stories.length ? "沒有符合條件的紀事。請調整搜尋文字，或清除篩選條件。" : "本期暫無新聞。";
+    ui["empty-results"].textContent = state.edition.stories.length ? "No stories match the current filters. Adjust the search or clear the filters." : "No stories are available for this edition.";
     for (const button of ui["tag-filters"].querySelectorAll("button")) button.setAttribute("aria-pressed", String(button.dataset.tag === state.tag));
   }
   function fillSelect(select, values, label, labels = null) {
@@ -203,14 +203,14 @@
   function resetFilters() { state.tag = ""; ui["search-input"].value = ""; ui["section-filter"].value = ""; ui["kind-filter"].value = ""; renderResults(); }
   function setupFilters() {
     const stories = state.edition.stories;
-    fillSelect(ui["section-filter"], [...new Set(stories.map((s) => s.section).filter(Boolean))], "全部版別");
-    fillSelect(ui["kind-filter"], [...new Set(stories.map((s) => s.source_kind))], "全部型態", KINDS);
+    fillSelect(ui["section-filter"], [...new Set(stories.map((s) => s.section).filter(Boolean))], "All sections");
+    fillSelect(ui["kind-filter"], [...new Set(stories.map((s) => s.source_kind))], "All types", KINDS);
     const tags = [...new Set(stories.flatMap((s) => s.tags))];
     ui["topic-index"].hidden = tags.length === 0;
-    ui["tag-total"].textContent = `（${tags.length}）`;
+    ui["tag-total"].textContent = `(${tags.length})`;
     ui["tag-filters"].replaceChildren();
     for (const tag of ["", ...tags]) {
-      const button = node("button", tag || "全部主題"); button.type = "button"; button.dataset.tag = tag;
+      const button = node("button", tag || "All topics"); button.type = "button"; button.dataset.tag = tag;
       button.addEventListener("click", () => { state.tag = tag; renderResults(); });
       ui["tag-filters"].append(button);
     }
@@ -231,14 +231,14 @@
       const item = node("li"); const a = node("a", date);
       a.href = editionURL(date).href; a.dataset.edition = date;
       if (date === state.edition?.date) a.setAttribute("aria-current", "page");
-      a.append(node("small", `${entries.reduce((total, entry) => total + entry.story_count, 0)} 則${entries.some((entry) => entry.is_demo) ? " · SAMPLE / DEMO" : ""}${date === latest ? " · 最新一期" : ""}`));
+      a.append(node("small", `${entries.reduce((total, entry) => total + entry.story_count, 0)} 則${entries.some((entry) => entry.is_demo) ? " · SAMPLE / DEMO" : ""}${date === latest ? " · Latest" : ""}`));
       a.addEventListener("click", (event) => {
         if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         event.preventDefault(); openEdition(date, { historyMode: "push", focus: true });
       });
       item.append(a); ui["archive-list"].append(item);
     }
-    ui["archive-count"].textContent = `／ ${dates.length} 期`;
+    ui["archive-count"].textContent = `/ ${dates.length} editions`;
   }
   function showMessage(title, detail, error = false) {
     ui.message.hidden = false;
@@ -264,10 +264,10 @@
     ui["edition-panel"].hidden = true;
     ui.main.setAttribute("aria-busy", "true");
     ui["edition-number"].textContent = "NO. —";
-    ui["edition-date"].textContent = "調閱本期中"; ui["edition-date"].removeAttribute("datetime");
+    ui["edition-date"].textContent = "Loading edition"; ui["edition-date"].removeAttribute("datetime");
     ui["updated-time"].textContent = "—"; ui["updated-time"].removeAttribute("datetime");
-    document.title = "THE DAILY SIGNAL · 每日情報報";
-    showMessage("正在調閱本期…", "讀取目錄與當期內容。");
+    document.title = "THE DAILY SIGNAL";
+    showMessage("Loading edition…", "Loading catalogs and edition content.");
     try {
       const loadCatalog = async (channel) => {
         try {
@@ -275,7 +275,7 @@
           return { manifest };
         } catch (error) {
           if (signal.aborted) throw error;
-          return { error: error instanceof TypeError ? "連線失敗，無法讀取目錄。" : error.message };
+          return { error: error instanceof TypeError ? "Connection failed while loading the catalog." : error.message };
         }
       };
       if (!state.manifests || refresh) {
@@ -287,8 +287,8 @@
       renderArchive();
       const dates = CHANNELS.flatMap((channel) => (state.manifests[channel]?.editions ?? []).map((entry) => entry.date));
       const target = date === null ? dates.sort((a, b) => b.localeCompare(a))[0] : date;
-      check(target, "兩個來源目錄皆無可用期數。");
-      check(day(target), "網址中的 edition 日期無效。請使用 YYYY-MM-DD 格式並從往期存檔選擇。");
+      check(target, "No editions are available from either source catalog.");
+      check(day(target), "The edition date in the URL is invalid. Use YYYY-MM-DD and select an edition from the archive.");
       const channelResults = await Promise.all(CHANNELS.map(async (channel) => {
         const entry = state.manifests[channel]?.editions.find((e) => e.date === target);
         if (!entry) return { channel, absent: true };
@@ -297,12 +297,12 @@
           return { channel, edition };
         } catch (error) {
           if (signal.aborted) throw error;
-          return { channel, error: error instanceof TypeError ? "連線失敗，無法讀取本期。" : error.message };
+          return { channel, error: error instanceof TypeError ? "Connection failed while loading this edition." : error.message };
         }
       }));
       if (request !== state.request) return;
       const available = channelResults.filter((result) => result.edition);
-      check(available.length, `無法取得 ${target} 的任何可用通道內容。`);
+      check(available.length, `No channel content is available for ${target}.`);
       const editions = available.map(({ channel, edition }) => ({ channel, edition }));
       const edition = { date: target, generated_at: editions.map(({ edition: value }) => value.generated_at).sort((a, b) => Date.parse(a) - Date.parse(b)).at(-1), is_demo: editions.every(({ edition: value }) => value.is_demo), stories: editions.flatMap(({ channel, edition: value }) => value.stories.map((story) => ({ ...story, channel }))) };
       state.edition = edition;
@@ -326,8 +326,8 @@
       if (focus) ui["edition-date"].focus({ preventScroll: true });
     } catch (error) {
       if (request !== state.request || signal.aborted) return;
-      showMessage("Edition unavailable", error instanceof TypeError ? "連線失敗，無法調閱本期。請檢查網路後重試。" : error.message, true);
-      ui["edition-date"].textContent = "本期暫不可用";
+      showMessage("Edition unavailable", error instanceof TypeError ? "Connection failed while loading this edition. Check your network and retry." : error.message, true);
+      ui["edition-date"].textContent = "Edition unavailable";
     } finally { if (request === state.request) ui.main.setAttribute("aria-busy", "false"); }
   }
   $("search-form").addEventListener("submit", (event) => { event.preventDefault(); renderResults(); });
