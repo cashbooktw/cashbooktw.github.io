@@ -53,6 +53,26 @@
       ]
     },
     {
+      "name": "Latent Space",
+      "url": "https://www.latent.space/",
+      "rules": [
+        "只處理 Asia/Taipei 前一天整個日曆日內可驗證發布日期的新內容",
+        "最多挑選 1 篇；若同時有多篇，以 AI 工程、模型、代理、基礎設施或研究最具代表性的內容為主",
+        "必須先讀取文章全文才產生摘要，不得僅依標題、列表或 RSS 片段撰寫",
+        "遇到付費牆、登入限制或無法讀取全文時跳過並記錄限制，不繞過限制；Podcast／影音須有可完整讀取的文字稿才摘要"
+      ],
+      "discovery": [
+        {
+          "kind": "archive",
+          "url": "https://www.latent.space/archive"
+        },
+        {
+          "kind": "listing",
+          "url": "https://www.latent.space/"
+        }
+      ]
+    },
+    {
       "name": "The Decoder",
       "url": "https://the-decoder.com/",
       "rules": [
