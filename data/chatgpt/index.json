@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "current": "2026-09-24",
-  "updated_at": "2026-09-24T00:18:23+08:00",
+  "updated_at": "2026-09-24T07:34:25+08:00",
   "editions": [
     {
       "date": "2026-09-24",
       "path": "data/chatgpt/editions/2026-09-24.json",
-      "story_count": 2,
+      "story_count": 4,
       "is_demo": false
     },
     {

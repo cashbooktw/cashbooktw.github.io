@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "date": "2026-09-24",
-  "generated_at": "2026-09-24T00:18:23+08:00",
+  "generated_at": "2026-09-24T07:34:25+08:00",
   "is_demo": false,
   "edition_title": "2026-09-24 每日資訊整理",
-  "edition_summary": "本次依 2026-09-23T20:06:00+08:00 至 2026-09-24T00:18:23+08:00（Asia/Taipei）檢查六個既有非 Facebook 來源；The Decoder 依規則檢查 2026-09-23 整個日曆日，Codex Resets 另檢查即時「Reset scheduled」狀態。本次新增 2 則正式 stories。",
+  "edition_summary": "本次依 2026-09-24T00:18:23+08:00 至 2026-09-24T07:34:25+08:00（Asia/Taipei）更新非 Facebook 通道；依固定快照的 config/sources.json 實際檢查 7 個設定項目，Latent Space 與地新聞列表／原文存在完整性或日期驗證限制，因此本次 source status 為 limited。新增 2 則正式 stories，既有 2 則保持不變。",
   "stories": [
     {
       "id": "techcrunch-youtube-custom-feeds-ai-2026-09-23",
@@ -57,16 +57,69 @@
           "published_at": "2026-09-23"
         }
       ]
+    },
+    {
+      "id": "techcrunch-anthropic-biology-lab-enzyme-2026-09-23",
+      "title": "Anthropic 生物實驗室稱以 Claude 發現類 CRISPR 的新酵素系統",
+      "summary": "Anthropic 表示，其灣區濕實驗室透過 Claude 主導的大規模資料搜尋，找到一套先前未知、具有類 CRISPR DNA 操作特性的噬菌體酵素系統。這項結果仍待更廣泛研究驗證；實體實驗目前由人類科學家執行，尚未由 Claude 自主操作實驗設備。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-23T15:17:00-07:00",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "Claude",
+        "生物科技"
+      ],
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2025/02/Claude_3-7_illustration.jpg?w=1024",
+        "alt": "Anthropic Claude 標誌風格插圖",
+        "credit": "Anthropic"
+      },
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
+          "published_at": "2026-09-23T15:17:00-07:00"
+        }
+      ]
+    },
+    {
+      "id": "decoder-gemini-38-flash-tts-2026-09-23",
+      "title": "Google 推出 Gemini 3.8 Flash TTS，可用文字設計聲音並支援語音複製",
+      "summary": "Google 推出 Gemini 3.8 Flash TTS 與 Flash-Lite TTS，支援逾 100 種語言；Flash TTS 可用文字描述建立聲音，並以 30 秒音訊建立語音設定檔。語音複製要求本人錄製同意聲明，生成音訊加入 SynthID，模型正透過 Gemini API 與 Google AI Studio 推出。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-23",
+      "tags": [
+        "AI",
+        "Google",
+        "Gemini",
+        "語音生成"
+      ],
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/09/gemini_voice_audio.png",
+        "alt": "Gemini Flash TTS 語音生成與自訂聲音功能示意圖",
+        "credit": "Nano Banana Pro prompted by THE DECODER"
+      },
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/googles-new-flash-tts-models-let-you-design-ai-voices-from-scratch-using-text-descriptions/",
+          "published_at": "2026-09-23"
+        }
+      ]
     }
   ],
   "source_reports": {
     "configured_sources": {
-      "status": "complete",
-      "completed_at": "2026-09-24T00:18:23+08:00",
-      "captured": 12,
+      "status": "limited",
+      "completed_at": "2026-09-24T07:34:25+08:00",
+      "captured": 21,
       "included": 2,
-      "excluded": 10,
+      "excluded": 19,
       "notes": [
+        "Previous run (historical, not current status): completed_at=2026-09-24T00:18:23+08:00; status=complete; captured=12; included=2; excluded=10.",
         "本次更新時間範圍為 2026-09-23T20:06:00+08:00 至 2026-09-24T00:18:23+08:00（Asia/Taipei）；The Decoder 依既有規則檢查 2026-09-23 整個日曆日，Codex Resets 不受此時間窗限制。",
         "Codex Resets 已完整檢查目前狀態頁；未顯示可驗證的「Reset scheduled」時間，因此本次不新增 Codex story。",
         "TechCrunch AI 依分類列表順序檢查至可確定早於本次起點的邊界；完整讀取 4 篇時間窗內 AI 候選原文，並依最多 1 篇規則納入 YouTube Custom Feeds。該文發布於 2026-09-23 07:30 PDT（2026-09-23 22:30 Asia/Taipei），原文提供 YouTube 的 HTTPS 主圖。前次已收錄的 Ema 文章發布於 05:00 PDT（20:00 Asia/Taipei），早於本次 20:06 起點。",
@@ -74,7 +127,17 @@
         "The Decoder 依 Asia/Taipei 前一日整個日曆日規則檢查；首頁列出 2026-09-23 的 6 篇文章後即銜接 2026-09-22，6 篇均完整讀取。依最多 1 篇規則納入 Basecamp Research 專訪；原文提供 HTTPS 主圖與 Basecamp Research / GPT-Image-2 prompted by THE DECODER credit。",
         "地新聞新竹市依列表檢查；最新文章為既有 2026-09-23 12:45 項目，早於本次 20:06 起點。為確認邊界完整讀取該原文，本次不新增。",
         "地新聞新竹縣依列表檢查；最新文章 URL 與既有 2026-09-22 22:15 項目相同，早於本次時間窗。為確認邊界完整讀取該原文，本次不新增。",
-        "captured/included/excluded 僅計本次實際完整讀取的候選來源項目；本次完整讀取 12 項，其中新增 2 項，10 項因來源數量上限或時間窗外而不追加。"
+        "captured/included/excluded 僅計本次實際完整讀取的候選來源項目；本次完整讀取 12 項，其中新增 2 項，10 項因來源數量上限或時間窗外而不追加。",
+        "Current run: 更新時間範圍為 2026-09-24T00:18:23+08:00 至 2026-09-24T07:34:25+08:00（Asia/Taipei）；Latent Space、The Decoder、地新聞新竹市與新竹縣依各自設定檢查 2026-09-23 整個日曆日，Codex Resets 不受一般時間窗限制。",
+        "固定快照的 config/sources.json 實際列出 7 個 web_pages，與 FAST_PATH.md／執行提示中的「六個來源」描述不一致；本次未新增來源，依設定檔逐一檢查 7 個項目，並將此契約差異列為限制。",
+        "Codex Resets 已檢查目前狀態頁；未顯示可驗證的「Reset scheduled」時間，因此本次無可發布 Codex story。",
+        "TechCrunch AI 依列表順序檢查 5 篇邊界／時間窗候選原文：其中 4 篇落在本次更新窗內；YouTube Music 文章發布於 2026-09-23 08:19 PDT（2026-09-23 23:19 Asia/Taipei），明確早於本次起點。依最多 1 篇規則納入 Anthropic 生物實驗室文章；原文提供 Anthropic credit 的 HTTPS 主圖。",
+        "Interconnects 依 archive 入口檢查；最新列出文章為 2026-09-22，明確早於本次更新窗，依 fast path 不再讀更舊原文。",
+        "Latent Space 依 2026-09-23 整個 Taipei 日檢查 2 項：Bio-security podcast 頁雖標示 Transcript，但無法驗證為 1:31:58 音訊的完整文字稿；AINews Opus 5.5 明確為 Paid 且要求訂閱才能繼續。兩項均 excluded，未以片段或不完整文字冒充全文，因此此來源為 limited。",
+        "The Decoder 依 2026-09-23 整個 Taipei 日檢查首頁列出的 9 項並完整讀取原文；既有 Basecamp Research 保持原 story 不變，依最多 1 篇規則新增 Google Gemini 3.8 Flash TTS。原文提供 HTTPS 圖片連結與「Nano Banana Pro prompted by THE DECODER」credit。",
+        "地新聞新竹市依設定 listing 檢查 4 項並讀取候選原文；3 項可確認屬 2026-09-22，另 1 項僅提供 12:45 與相對時間，沒有可穩定驗證的發布日曆日期；同站嵌入快報與設定 listing 的日期呈現亦不一致，因此本次不新增並標 limited。",
+        "地新聞新竹縣依設定 listing 完整讀取最新 1 項；原文只提供 21:45 與相對時間，未提供可穩定驗證的發布日曆日期；同站對「小圖妹妹說故事」在 listing 與嵌入快報顯示 2026-09-22／2026-09-23 衝突，且該原文讀取失敗，因此本次不新增並標 limited。",
+        "本次 captured=21、included=2、excluded=19；captured 計候選原文頁檢查項目，included 只計完整讀取且符合既有條件者。Latent Space 的 2 項雖列入 captured/excluded，均未冒充完整讀取。"
       ]
     }
   }
