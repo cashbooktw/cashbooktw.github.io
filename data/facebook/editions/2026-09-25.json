@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-25",
+  "generated_at": "2026-09-25T00:14:12+08:00",
+  "is_demo": false,
+  "edition_title": "2026-09-25 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 13 則，入選 7 則，排除 6 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-bc00c27ee6465d6eb1b1efcc",
+      "title": "Nathan Chiu 分享 ChatGPT 廣告布局方向",
+      "summary": "Nathan Chiu 分享 cacaFly 的 ChatGPT 廣告訊息，建議品牌從消費者提問情境、清楚的品牌資訊與到達頁，以及既有數位行銷策略三方面評估應用。",
+      "original_text": "chatgpt 廣告開賣囉！\n\nChatGPT 廣告正式在台灣上線！cacaFly 與品牌一起把握 AI 對話中的新機會！\n完整文章看： https://reurl.cc/lnXmYj\n對品牌來說，可以先從三個方向評估應用：\n 掌握需求情境：\n思考消費者會在比較商品、規劃旅程或尋找解方時提出哪些問題。\n 規劃廣告內容：\n用清楚的品牌資訊與到達頁，接住有興趣進一步了解的人。\n 串起行銷策略：\n搭配 AEO、GEO 與既有數位廣告布局，增加品牌被看見的機會。\n立即透過 cacaFly 佈局 ChatGPT 廣告，歡迎洽詢 \n marketing@cacafly.com\n#ChatGPT廣告 #cacaFly #OpenAI #ChatGPT Ads #ChatGPT Ads #ChatGPT 廣告策略規劃",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-24T18:49:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.30808-6/820036926_1559495762888274_7599080364834944885_n.jpg?stp=dst-jpg_tt6&cstp=mx1672x941&ctp=s1672x941&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=VSZA86l9xCwQ7kNvwGwewZM&_nc_oc=Adqdef0O9Iw6TIddr58TNeVA1QqIeCXCFoK1s_4CS7uCn-ZTukNPYkmTZDwFRnCk-Ed0WiplAg6py-WJlBoZv_mw&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=8WrLg0YiRWDrhuOk541CrA&_nc_ss=7b2a8&oh=00_AQJ8MRi5puTV1QdLZJQILbAl7Kb71JexVAHzXRquGEdd-A&oe=6ABB2FEE",
+        "alt": "May be an image of text",
+        "credit": "Nathan Chiu／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid02jSai3m5iktoHDVed1e6Hz56hjVqkFuJqCzMFuBTpuquMFwVY1N8t3MA5DGp8DHrl",
+          "published_at": "2026-09-24T18:49:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-f742afbdc3cd898a81c4b981",
+      "title": "Champ Yen 關注 Ubuntu 核心每週更新",
+      "summary": "Champ Yen 提到 Ubuntu 核心改採每週發布，以應對增加的 CVE 漏洞。",
+      "original_text": "Ubuntu Kernel 更新發布週期改為每週\n來因應日益增加的 CVE 漏洞",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-24T18:02:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/13937469704260781249?_nc_oc=AdpXemUTEx2cjLHqw-_p2sJVBOp3eu85z973OtxOcJoliJhs6sSbuDCZHQ8whI9_2WEhkP3g_M3uTPjofZuOM10W&url=https%3A%2F%2Flinuxiac.com%2Fwp-content%2Fuploads%2F2026%2F09%2Fcanonical-kernel-weekly-releases.jpg&fb_obo=1&utld=linuxiac.com&_nc_sid=f93bbc&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=8WrLg0YiRWDrhuOk541CrA&_nc_zt=3&oh=06_Q3_DAVVmS1qnfhpU-vWJJCFPK4ckiAodaMWM9YTMoF4uGrmc&oe=6AB7216D",
+        "alt": "Ubuntu Kernels Move to Weekly Releases for Faster CVE Fixes",
+        "credit": "Champ Yen／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Champ Yen",
+          "url": "https://www.facebook.com/champ.yen/posts/pfbid0ytrvne7f5GoA4rF6RFi9jG927PAV9Pdk3PpTVnDP9QGNKvywBaPhUkhm2XSXo1J8l",
+          "published_at": "2026-09-24T18:02:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-5433f42a49a11b932c797916",
+      "title": "保哥談對話式廣告與使用者信任",
+      "summary": "保哥以 ChatGPT 廣告拓展至東南亞與台灣為題，認為對話上下文能成為新的廣告入口，也提醒商業推薦與客觀解答的界線將考驗使用者信任。",
+      "original_text": "OpenAI 正式將 ChatGPT 廣告業務拓展至東南亞與台灣。單純的對話介面開始要放進商業內容了。這是搜尋引擎之後的下一個流量入口。AI 掌握使用者的提問意圖與上下文，順著語境推薦解決方案，比傳統關鍵字或橫幅廣告更直接。但這考驗信任。當工具同時扛起營利任務，推薦結果到底算是客觀解答還是廣告推播，使用者很快就會有所感受。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-24T12:19:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/545229406020594004?_nc_oc=AdqzOcVlTM5WrRY2KJLxl6bSLAxOhDkWtTFEgrPrvdptgEvnu_P0_Be1wAUipk8JZ--G11QWKXt0OJfZ9GTLZNlI&url=https%3A%2F%2Fimages.ctfassets.net%2Fkftzwdyauwt9%2F7FJ6xwUhzfqnyoSn9ciPcS%2F2f477db82efadb6e10ace70da6498bb3%2Fchatgpt-ads-expands-to-southeast-asia-and-taiwan-seo.png%3Fw%3D1600%26h%3D900%26fit%3Dfill&fb_obo=1&utld=ctfassets.net&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=Gt6zZ7z7qqALfVrcVlokjQ&_nc_zt=3&oh=06_Q3_DAQ1Te3HeVQg92wJQ9gdK5QuROL8gwf118iwT7pxAe-hL&oe=6AB72148",
+        "alt": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid034TauoT46AkgorxBGMGgxdNVyXxi8rFoy9VsoZwR8RondE4KpaYN6fDSwwRysN6JQl",
+          "published_at": "2026-09-24T12:19:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ecd8d8b986671c174a50ef6b",
+      "title": "保哥整理大型程式碼差異介面的捲動優化",
+      "summary": "保哥在貼文中整理 GitHub Copilot 差異檢視的效能做法：以虛擬化限制 DOM 數量，把動態評論高度的測量移到閒置時段，並以程式碼行或評論作為定位錨點，減少高度變動造成的畫面跳動。",
+      "original_text": "GitHub 官方部落格發了一篇技術文章，介紹他們如何重寫 GitHub Copilot 應用程式裡的程式碼差異檢視介面。\n測試對象是一個包含 2,200 個檔案、變更超過一百萬行，還有 400 多則行內評論的開源 PR。\n要讓百萬行程式碼順暢捲動，業界標準做法是虛擬化捲動 (Virtual Scroll)。\n畫面上只保留大約一百個 DOM 節點，使用者捲動時重複使用這些節點。\n每一行程式碼的高度在繪製前都是固定的，捲軸位置是單純的加法，算一次就結束。\n破壞這套規則的是評論。\n評論的高度在渲染前無法預知。\nMarkdown 折行、圖片載入、摺疊區塊展開，這些都會改變高度。\n如果用預估高度占位，極端情況會留下大片空白或內容被截斷。如果渲染後才回寫真實高度，使用者捲動時畫面就會劇烈跳動。\n開發團隊原本考慮過給每個留言區塊掛上 ResizeObserver，但這在大規模介面上會引發嚴重的效能迴圈。\n改版後的做法把測量動作移出關鍵路徑，只在閒置或捲動間隙去量測視窗內的元素。\n修正捲動跳動的方式是改用身分錨定，而不是像素。\n在高度更新前，系統會先記住使用者目前停留在哪一行程式碼或哪則評論。等高度變更生效，再把視窗對齊回同一個物件。\n視線就不會移位。\n真實世界的資料，通常不會照著理想規格長。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-24T11:07:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/2136314181305566999?_nc_oc=AdoWJMpxz3uYIwzeIfMeyd7OmWYgQJOhxijz6sb8CjeMAFuW7Tk5BgQgVNPgUFZnh7CzxtxX-DcZZPM014XDbuJ9&url=https%3A%2F%2Fgithub.blog%2Fwp-content%2Fuploads%2F2026%2F06%2FMSFTBuild_Blog_Header_01.jpg&fb_obo=1&utld=github.blog&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=Gt6zZ7z7qqALfVrcVlokjQ&_nc_zt=3&oh=06_Q3_DAb-Ao6vxfkYrkUamGdWA_nW60Y2Lg2RRiaglQwS1Ikvy&oe=6AB73517",
+        "alt": "Rendering huge pull requests in the GitHub Copilot app",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0qjsZrtMkJjQ2A8srLUGBDXuHBKfJrke1kRQTowHbpmRTNXA1VmXKhj1Y6Br2AzLBl",
+          "published_at": "2026-09-24T11:07:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-61d55d3b2ffa324816758e7e",
+      "title": "Nathan Chiu 質疑個資外洩罰款的嚇阻力",
+      "summary": "Nathan Chiu 以酷澎個資外洩裁罰為例，質疑固定金額罰款能否促使大型平台投資資安，並指出受害者自行求償的困難，呼籲檢討個資保護制度。",
+      "original_text": "20 萬人的個資，值多少錢？答案是：一人 7 塊。\n酷澎（Coupang）外洩 204,552 名台灣用戶的個資：姓名、電話、地址，還有你買了什麼。\n數發部開罰：公司 75 萬、代表人 75 萬，合計 150 萬。\n換算下來，每個受害者 7.3 元。\n比一杯超商咖啡還便宜。\n同一起事件，在韓國是什麼規模？\n CEO 下台\n 國會追究\n 酷澎宣布發放上兆韓元的補償\n 韓國法律可以罰到營業額的 3%\n歐盟 GDPR 更狠，最高可罰全球營業額 4%。\n台灣呢？\n個資法罰鍰是固定金額，一般情況最高 200 萬，「情節重大」也才 1,500 萬。\n不管你是巷口小店，還是年營收上百億的電商平台，天花板都一樣。\n這代表什麼？\n違法的成本，遠低於守法的成本。\n對大企業來說，罰款只是會計帳上的一行「營運費用」。\n資安做好要花大錢，出事被罰卻只要一點零頭，理性的公司會怎麼選？\n而受害的我們呢？\n想求償，得自己打官司、自己舉證。\n一個人損失說不清楚，告了也拿不到多少，最後大多數人只能默默換電話、小心詐騙。\n公平地說，數發部是依法開罰，問題在於法律本身就沒有牙齒。\n個資法修法、專責機關設立，已經喊了好幾年。\n所以我想問：\n台灣，是不是資本家的天堂？\n當企業犯錯的代價是 7 塊錢，\n被當成商品的，其實是我們自己。\n圖是AI 創作，掉漆的 coupang !\n你覺得 150 萬罰得夠嗎？留言聊聊",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-24T10:34:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/819103726_1157394773698465_4132359934304510590_n.png?stp=dst-jpg_tt6&cstp=mx1678x1074&ctp=s1678x1074&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tdXQgyw5duQQ7kNvwGhadmD&_nc_oc=AdoJc0ccfQkgH13wNFs2BTJ_Sp5oCoWIceTa-ps48AcZmU1ofmSSEMRWjdAlTXX9fckMN--wnssW5F4UBLQ8rUuZ&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=vNT3JS1RiqwC_taf6kABag&_nc_ss=7b2a8&oh=00_AQI-rcHoaqxx2P8AbDSsSxP69bnlXu9NGoJ8PVh-pYvL-Q&oe=6ABB1621",
+        "alt": "Nathan Chiu 在原貼文標示為 AI 創作的配圖",
+        "credit": "Nathan Chiu／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0HwXq4EPqzwzvUeZhjrJuSErX9Pwbwix2iu4JzNbs9geiMhsbXHx28YmWhpq6sxsBl",
+          "published_at": "2026-09-24T10:34:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-d042490680db1746210e172f",
+      "title": "保哥紀念 Angular 2 推出十週年",
+      "summary": "保哥回顧 Angular 2 於 2016 年 9 月推出，至今滿十年。",
+      "original_text": "Angular v2.0.0 於 2016/9/15 推出，滿十年了！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-24T10:07:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t15.5256-10/823998645_1420631693533371_2404254197515402920_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x720&ctp=s1280x720&_nc_cat=101&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=XkxnjLa-QuEQ7kNvwHRr4Rh&_nc_oc=AdrZAa1lcRk--M1iJvsr9ZVFibgxA3QL23xIThaRIzqbzR-1iqSVJM7nWoPznXLotys9mmPDmQm4dM8orOqveFdE&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=vNT3JS1RiqwC_taf6kABag&_nc_ss=7b2a8&oh=00_AQJwLme1i4zzohlz4__vYA_9zF6PTHGxabEy0qDlpWKwNw&oe=6ABB2853",
+        "alt": "Will 保哥的技術交流中心 的影片封面",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/watch?v=1152881607255070",
+          "published_at": "2026-09-24T10:07:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-b6f83874e3ad529e7a99fab8",
+      "title": "保哥分享以可重現指標驅動 AI 效能優化",
+      "summary": "保哥整理 Claude 團隊的效能改善流程：先用 CPU 指令數、React commit 與 DOM 變更建立基準，再由模型拆分修正、透過功能旗標驗證，並將改善後指標納入 CI，防止後续變慢。",
+      "original_text": "Claude 官方最近公開了一篇工程記錄。\n他們在八月的兩週衝刺裡，把 claude.ai 和桌面版應用的速度提升了三倍。\n起因其實就是很多使用者反映介面太慢，團隊也承認這點。\n他們在 Slack 開了一個頻道，把 Claude 放進每一個討論串裡面協作。\n工程團隊挑出四個涵蓋九成五使用者行為的核心流程：啟動應用、開啟新對話、載入歷史紀錄，以及送出訊息。\n數字差滿多的。\n網頁版從打開到可以開始輸入文字的時間，從 3.1 秒降到 0.55 秒。桌面版啟動時間也從 6.3 秒縮短成 3.3 秒。\n這兩週內總共合併了三千多次程式碼變更，沒有發生任何對外事故，也沒有任何一次回滾。\n這篇文章提到一個核心觀點：只要一個東西可以被衡量，AI 就能把它變快。\n以往工程師做效能分析，通常要先埋點，等真實使用者的數據累積幾天，才能慢慢定位問題。\n但這次他們換了做法，讓模型先在實驗室環境建立確定性的衡量標準。\n例如用 Valgrind 去算純 JavaScript 跑了多少 CPU 指令數，或是統計 React 的 commit 次數和 DOM 變更次數。\n只要指令數被降下來，實際的時間往往也會跟著下降。\n整個開發流程變成一個循環。\n工程師在 Slack 丟一段螢幕錄影，指出哪裡的載入不順暢。\nClaude 就會順著那段路徑建立基準測試重現問題，接著送出好幾個切分清楚的 PR，並把新改動藏在 feature flag 後面。\n上線之後，Claude 會去比對監控數據。\n如果確實變快，就把新的數值寫進 CI 當作天花板，往後只要任何 PR 讓指令數上升，測試就會直接掛掉。\n如果沒變快，就關掉 flag 重新調整。\n工程師在裡面主要做的事情只有三件：設定目標、權衡取捨，以及審查程式碼。\n剩下的定位瓶頸、寫測試、發 PR 和盯部署，基本上都交給模型自己跑。\n當測量指標夠精準，AI 就能在既定規則下持續把數字往下壓。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-24T08:16:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/12766604404953060196?_nc_oc=AdqXIbSJ4MrF3_TY11Desj9ssKPVzxgqJdgjVA0VQ8V3gM6iMBI5yx539LD2pxutl9LdXKrG9mByURiS7VeKlGXB&url=https%3A%2F%2Fclaude.dev%2Fblog%2Fhow-we-made-claude-ai-faster%2Fog.png&fb_obo=1&utld=claude.dev&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=vNT3JS1RiqwC_taf6kABag&_nc_zt=3&oh=06_Q3_DAToY0NOCWvoU5jRujf376Ef1EaSPfcSdQ5calMGGEcQW&oe=6AB732D4",
+        "alt": "How we made claude.ai 3x faster in two weeks / claude.dev",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid024yqYJp1pm6UKQEFXJCWmrE2PJvrBqnBuiVRgxvKU8CzQMycSUWuSZqzaKtqpdsHRl",
+          "published_at": "2026-09-24T08:16:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-09-24T16:14:10.773Z",
+      "captured": 13,
+      "included": 7,
+      "excluded": 6,
+      "notes": []
+    }
+  }
+}
