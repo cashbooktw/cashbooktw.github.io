@@ -183,9 +183,10 @@ class ContractTests(unittest.TestCase):
         # A direct validator also rejects an unexplained limited run.
         with self.assertRaises(Invalid): self.validator.pair(self.new, self.index, DAY)
 
-    def test_new_story_requires_image(self):
+    def test_new_story_allows_image_null(self):
         self.new["stories"][-1]["image"] = None
-        with self.assertRaises(Invalid): self.plan()
+        result = loads(self.plan()["files"][PATH])
+        self.assertIsNone(result["stories"][-1]["image"])
 
     def test_new_image_must_have_credit_and_https(self):
         for image in [{"url": "https://example.org/x.png", "alt": "Image"}, {"url": "assets/x.png", "alt": "Image", "credit": "Source"}]:
@@ -316,9 +317,10 @@ class ContractTests(unittest.TestCase):
         self.assertEqual(sum(method == "PATCH" for method, _, _ in api.calls), 1)
         self.assertEqual(api.ref, api.initial)
 
-    def test_ref_failure_is_not_success(self):
+    def test_permission_denial_is_reported_directly(self):
         api = FakeAPI(self.snap); api.patch_error = 403
-        with self.assertRaises(Unverified): publish(api, self.snap, self.new, lambda: NOW)
+        with self.assertRaises(APIError): publish(api, self.snap, self.new, lambda: NOW)
+        self.assertEqual(sum(method == "PATCH" for method, _, _ in api.calls), 1)
         self.assertEqual(api.ref, api.initial)
 
     def test_corrupt_readback_is_not_success(self):

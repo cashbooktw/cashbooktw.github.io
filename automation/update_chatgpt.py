@@ -195,7 +195,7 @@ def prepare(snap, candidate, now=None):
     updated["current"] = updated["editions"][0]["date"]
     if not unchanged:
         updated["updated_at"] = edition["generated_at"]
-    validator.pair(edition, updated, day, old, manifest, enforce_new_images=True)
+    validator.pair(edition, updated, day, old, manifest)
     return {"head": snap["head"], "base_tree": snap["tree"], "date": day,
             "unchanged": unchanged, "files": {edition_path(day): encode(edition), INDEX: encode(updated)}}
 
@@ -260,9 +260,11 @@ def publish(api, original, candidate, clock=lambda: datetime.now(TAIPEI)):
             if error.status in {409, 422}:
                 if api.head() != plan["head"]:
                     continue
-                raise  # Not a HEAD race: do not hide validation/protection errors.
-            # A timeout may have happened after GitHub accepted the ref update.
-            raise Unverified(f"Commit {sha} exists; ref update outcome is unverified (HTTP {error.status or 'unknown'})") from None
+                raise  # Not a HEAD race: report validation/protection errors directly.
+            if error.status is not None:
+                raise  # Permission and other definite HTTP denials are not ambiguous races.
+            # A transport failure may have happened after GitHub accepted the ref update.
+            raise Unverified(f"Commit {sha} exists; ref update outcome is unverified (HTTP unknown)") from None
         plan["tree"] = tree
         return verify(api, sha, plan)
     raise Invalid("master changed during all four attempts; stopped after three retries")

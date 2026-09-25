@@ -7,9 +7,9 @@
 | 建議 | 採用方式與邊界 |
 | --- | --- |
 | 合併 GitHub 操作 | 分相依階段處理。connector 有批次能力才使用；本機 updater 提供至多六個並行讀取 worker。不要把一個 helper 呼叫誤稱一次 HTTP。 |
-| 六來源平行讀取 | 更新 prompt/規則允許來源間並行；來源內維持「列表 → 候選全文」。按預先配置的來源與列表位置合併，而非完成時間。來源閱讀仍由具備閱讀能力的執行者負責。 |
+| 依設定來源平行讀取 | 依 `config/sources.json` 實際 `web_pages` 數量啟動來源工作，不硬編碼來源總數；來源間可並行，來源內維持「列表／archive／status → 候選全文」。按預先配置的來源與列表位置合併，而非完成時間。來源閱讀仍由具備閱讀能力的執行者負責。 |
 | 候選先篩時間 | 只排除可證明完全在原時間窗外的文章。未知、粗粒度或跨邊界的發布時間仍需查原文；不自創全來源共用的 24 小時規則。 |
-| 機器可讀入口 | 在原六個 web_pages 中新增 discovery，不新增 rss_feeds 項目。Interconnects 使用已驗證 archive，其餘保留已設定入口。 |
+| 機器可讀入口 | discovery 僅附著於 `config/sources.json` 實際設定的 web_pages，不新增 rss_feeds 項目。Interconnects 使用已驗證 archive，其餘保留已設定入口。 |
 | 專用驗證腳本 | validate_chatgpt.py：Draft 2020-12 與 formats、id、日期、索引、正式旗標、歷史保留和常見 secrets。 |
 | 可執行 updater | update_chatgpt.py：固定快照、純資料準備、精確 URL 去重、保守合併、inline tree 原子發布、衝突重試與回讀。prepare 不寫 GitHub；publish 需明確旗標及本機環境憑證。 |
 
@@ -31,7 +31,11 @@ GitHub 官方依據：[Create a tree](https://docs.github.com/en/rest/git/trees#
 
 同次查核中，Interconnects `/feed` 的 XML 無法由目前閱讀工具解析；TechCrunch AI 與 The Decoder RSS 也未完成可用性驗證。因此未將猜測的 feed URL 寫成正式來源。這不是宣稱它們沒有 RSS。日後經使用者明確授權與實測才新增。
 
-來源 scope、name、原 url、rules、順序及六個來源總數均保留。從列表找到的文章仍須屬原設定來源範圍；不能因 archive 或全站 feed 混入其他分類而擴充選稿。
+來源 scope、name、原 url、rules 與順序均以 `config/sources.json` 為準；來源總數不得在文件或執行器中硬編碼。從列表找到的文章仍須屬原設定來源範圍；不能因 archive 或全站 feed 混入其他分類而擴充選稿。
+
+相對時間（例如「9 小時前」「15 小時前」「23 小時前」）不是排除理由。這類候選仍需讀完整原文，並用同一來源的列表／archive、實際執行時間及可驗證時區解析日曆日期；只有合理查證後仍無法符合該來源既有日期要求時才排除。不得把事件日期、頁面更新時間或 sitemap `lastmod` 當成發布日期。
+
+對 Latent Space 等同時含免費與付費項目的既有來源，先列完並讀取當日所有符合範圍的免費全文候選，再處理付費候選的限制。只有免費全文不足且其餘符合日期候選確因付費牆／登入限制無法完整讀取時，才在 source report 記錄 paid limitation；看到單一 Paid 項目不代表整個來源不可用。
 
 ## 安裝與驗證
 
@@ -57,7 +61,7 @@ python automation/update_chatgpt.py prepare \
   --out /tmp/chatgpt-plan.json
 ```
 
-候選 edition 必須以快照今日資料為基礎：保留既有 stories 的位置、id、所有非 sources 欄位，以及 sources 的原有前綴；僅追加新 sources 與新 stories。每個新 story 必須包含一個原始來源提供的 HTTPS `image.url`、非空 `alt` 與 `credit`；沒有可驗證來源圖片的候選不加入 stories。既有 story 的 image/null 不回寫。首次當日尚無 edition 時提供完整新期數。不要手動修改快照；它必須來自固定 master SHA 的完整讀取。
+候選 edition 必須以快照今日資料為基礎：保留既有 stories 的位置、id、所有非 sources 欄位，以及 sources 的原有前綴；僅追加新 sources 與新 stories。新 story 若原始來源頁面直接提供且工具可可靠取得 HTTPS 圖片 URL，填入 `image.url`、非空 `alt` 與 `credit`；只確認 URL 為來源頁面提供的 HTTPS URL，不額外判定授權。若來源未提供圖片或工具無法可靠取得 URL，允許 `image: null`，不得僅因缺圖排除候選或把來源標 limited。既有 story 的 image/null 不回寫。首次當日尚無 edition時，確認 404 視為正常 absent 狀態，直接依 index/schema 提供完整新期數，不列 failure/limitation。不要手動修改快照；它必須來自固定 master SHA 的完整讀取。
 
 `source_reports.configured_sources` 填本次完成時間、狀態、數量與各來源實際限制。更新器保留所有舊 notes，將先前報告的時間/狀態/數量用有標籤的歷史紀錄追加至 notes，使用較新 completed_at 的報告作頂層計數。舊次 limited 不被抹除，也不冒充本次狀態。內容、報告皆未變則回傳 unchanged；新一次檢查要有新的實際 completed_at。
 
@@ -76,7 +80,7 @@ python automation/update_chatgpt.py publish \
   --confirm-master
 ```
 
-寫入目標固定 cashbooktw/cashbooktw.github.io 的 master，且只有當日 ChatGPT edition 和 index。GitHub 回應有限時與大小限制，不跟隨 redirect 傳遞憑證。遇 HEAD 競爭先重讀合併；初次失敗後最多三次重試。一般 422、權限或驗證錯誤不冒充競爭無限重試。規則、sources 或 schema 變更時停止重做來源檢查；不強推、不清理、不跨通道去重。
+寫入目標固定 cashbooktw/cashbooktw.github.io 的 master，且只有當日 ChatGPT edition 和 index。GitHub 回應有限時與大小限制，不跟隨 redirect 傳遞憑證。只有確認 HEAD 競爭才重讀合併，初次之外最多三次 conflict retry。connector safety denial、403/權限拒絕、branch protection、一般 422/validation error 等非競爭錯誤直接回報，不進 conflict retry。若 connector 寫入被拒，只有執行環境已存在明確授權的 `GH_TOKEN` 或 `GITHUB_TOKEN` 時才可改走上述 local `publish`；connector 授權不能當成本機 token。不得改用 Contents API 順序寫入 fallback。規則、sources 或 schema 變更時停止重做來源檢查；不強推、不清理、不跨通道去重。
 
 提交後核對 commit 的 tree/parent、兩檔實際內容與目前 master。master 若因其他提交前進，還須確認祖先關係；若資料已被再次改動或驗證期間又前進，回報 unverified 而非假成功。ref 寫入逾時可能是 GitHub 已接受但回應丟失，應帶 commit SHA 回報未確認，不盲目再寫。
 
