@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-26",
+  "generated_at": "2026-09-26T07:32:42+08:00",
+  "is_demo": false,
+  "edition_title": "2026-09-26 每日資訊整理",
+  "edition_summary": "本次依固定 master 快照檢查 7 個設定的非 Facebook web_pages，新增 3 則 stories。TechCrunch AI 與地新聞部分候選全文讀取未完成，因此 configured_sources 為 limited；Codex Resets 無可驗證排定時間，Interconnects 無時間窗內新項目，Latent Space 候選因本次圖片必要條件未收錄。",
+  "stories": [
+    {
+      "id": "decoder-microsoft-copilot-autopilot-2026-09-25",
+      "title": "Microsoft 重整 Copilot，加入常駐 Autopilot 代理與用量計費",
+      "summary": "Microsoft 將 Copilot 分成 Home、Code 與 Autopilot；其中 Autopilot 是可在雲端持續執行的企業代理，能在使用者離線時處理 Teams、供應商評估等工作。Autopilot、Code 與 Cowork 也改採用量計費，企業可控管模型與支出。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-25",
+      "tags": ["AI", "Microsoft", "Copilot", "AI代理"],
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/07/microsoft_copilot_logo-2.png",
+        "alt": "Microsoft Copilot 標誌風格圖片",
+        "credit": "GPT-Image-2 prompted by THE DECODER"
+      },
+      "sources": [{
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/microsoft-gives-copilot-another-makeover-adding-an-autopilot-agent-and-usage-based-billing/",
+        "published_at": "2026-09-25"
+      }]
+    },
+    {
+      "id": "localnews-hsinchu-city-phone-recycling-2026-09-25",
+      "title": "新竹市10月辦手機回收月，舊手機與廢雨傘可換好禮",
+      "summary": "新竹市10月1日至31日辦理手機回收月，回收舊手機可取得抽獎序號與紙巾；拆解後的廢雨傘金屬傘骨也可兌換洗碗精。市府提醒回收手機前先備份並刪除個人資料。",
+      "section": "新竹市",
+      "source_kind": "web",
+      "published_at": "2026-09-25",
+      "tags": ["新竹市", "資源回收", "手機回收", "生活"],
+      "image": {
+        "url": "https://pub-7c5f2f0a62e043d9a5354496358b6b05.r2.dev/181c9302-3687-4813-a8b5-4fb7535114cb_1200.webp",
+        "alt": "新竹市手機回收月宣傳圖，標示10月手機回收抽獎活動",
+        "credit": "地新聞／圖／翻攝"
+      },
+      "sources": [{
+        "name": "Local News - Hsinchu City",
+        "url": "https://localnews.tw/hsinchuCity/news/a_mug6060x_lk4aohtg",
+        "published_at": "2026-09-25"
+      }]
+    },
+    {
+      "id": "localnews-hsinchu-county-holiday-trash-2026-09-25",
+      "title": "新竹縣公布連假垃圾清運，9月27日全縣停收",
+      "summary": "新竹縣公布9月25日至28日連假垃圾收運安排，9月27日各鄉鎮市全部停收，其他日期則依地區有不同清運方式。環保局提醒民眾先確認所在地時程，並完成一般垃圾、資源回收與廚餘分類。",
+      "section": "新竹縣",
+      "source_kind": "web",
+      "published_at": "2026-09-25",
+      "tags": ["新竹縣", "垃圾清運", "連假", "公共服務"],
+      "image": {
+        "url": "https://pub-7c5f2f0a62e043d9a5354496358b6b05.r2.dev/ac766577-cfcc-410f-8ba2-be91251c2438_1200.webp",
+        "alt": "新竹縣9月25日至28日各地垃圾清運安排表",
+        "credit": "地新聞／圖／翻攝"
+      },
+      "sources": [{
+        "name": "Local News - Hsinchu County",
+        "url": "https://localnews.tw/hsinchuCounty/news/a_mug30ly8_od6n6a4q",
+        "published_at": "2026-09-25"
+      }]
+    }
+  ],
+  "source_reports": {
+    "configured_sources": {
+      "status": "limited",
+      "completed_at": "2026-09-26T07:32:42+08:00",
+      "captured": 32,
+      "included": 3,
+      "excluded": 29,
+      "notes": [
+        "Current run: 一般更新時間窗依上一個 ChatGPT configured_sources 完成時間，為 2026-09-24T07:34:25+08:00 至 2026-09-26T07:32:42+08:00（Asia/Taipei）；Latent Space、The Decoder、地新聞新竹市與新竹縣依設定檢查 2026-09-25 整個日曆日；Codex Resets 不受一般時間窗限制。",
+        "固定快照 config/sources.json 實際列出 7 個 web_pages；依 FAST_PATH.md 使用設定檔實際數量處理，未硬編碼提示文字中的六個來源，也未新增任何來源或 RSS。",
+        "Codex Resets 已檢查設定 status 頁；未找到可驗證的「Reset scheduled」排定時間，因此本次沒有 Codex story。來源檢查本身完成。",
+        "TechCrunch AI 已先讀設定分類列表並翻至第 2 頁建立時間邊界，且完整讀取列表前 6 篇時間窗內候選原文；列表仍有其他位於時間窗內或邊界不明的候選尚未全部完成全文查核，因此未做最多 1 篇的最終代表性選稿，本來源標記為 limited。本次 captured=6、included=0、excluded=6。",
+        "Interconnects 已檢查設定 archive；最新列出文章日期為 2026-09-22，明確早於本次一般更新時間窗，因此依 fast path 不再讀更舊原文。本次 captured=0、included=0、excluded=0。",
+        "Latent Space 已依設定 archive 檢查 2026-09-25：OpenRouter 訪談、AINews 與 Runway WorldPrompt 共 3 項均讀到完整原文／完整文字稿。現有閱讀工具未能從這 3 個原始來源頁可靠取得可驗證的原始來源 HTTPS 圖片 URL；依本次提示的圖片必要條件，3 項均不加入 stories。本次 captured=3、included=0、excluded=3。",
+        "The Decoder 已依 2026-09-25 整個 Taipei 日檢查首頁至 2026-09-24 邊界，完整讀取當日 9 篇原文；依最多 1 篇規則納入 Microsoft Copilot Autopilot 與用量計費文章，原文提供 HTTPS 主圖與「GPT-Image-2 prompted by THE DECODER」credit。本次 captured=9、included=1、excluded=8。",
+        "地新聞新竹市已先讀設定 listing，辨識 2026-09-25 的 8 個列表位置並逐一嘗試完整原文；3 項完整讀取成功，其中手機回收月文章具可驗證來源 HTTPS 圖片並納入。數位實中與東京旅展文章完整讀取成功但原文讀取結果未提供可驗證來源圖片 URL，另 5 項原文讀取逾時／失敗，不能冒充完整，因此本來源 limited。本次 captured=8、included=1、excluded=7。",
+        "地新聞新竹縣已先讀設定 listing，辨識 2026-09-25 的 6 個列表位置並逐一嘗試完整原文；垃圾清運與東京旅展 2 項完整讀取成功，其中垃圾清運具可驗證來源 HTTPS 圖片並依既有生活／公共服務優先條件納入；其餘 4 項原文讀取逾時／失敗，無法完成全部候選比較，因此本來源 limited。本次 captured=6、included=1、excluded=5。",
+        "本次 configured_sources 合計 captured=32、included=3、excluded=29。由於 TechCrunch AI 與兩個地新聞來源未完成全部預定候選全文查核，整體 status=limited；未把片段、列表摘要或讀取失敗內容當成完整原文。"
+      ]
+    }
+  }
+}
