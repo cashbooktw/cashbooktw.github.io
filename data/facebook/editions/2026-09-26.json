@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-09-26",
-  "generated_at": "2026-09-26T00:31:54+08:00",
+  "generated_at": "2026-09-26T00:35:23+08:00",
   "is_demo": false,
   "edition_title": "2026-09-26 Facebook Favorites",
   "edition_summary": "Facebook：本次處理完成，檢查 6 則，入選 4 則，排除 2 則。\n設定來源：尚無執行紀錄。",
@@ -52,7 +52,7 @@
       "published_at": "2026-09-25T12:03:00.000+08:00",
       "tags": [],
       "image": {
-        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/799440257_2620471528398847_7169051990102114468_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=104&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=KuVtaa6B1ooQ7kNvwHhOy3V&_nc_oc=Adox1S_WX1px_z4oQF3-6f5frdJus6Vo0D1fNo4CdmXRT4c24EyY6oaKcyee1r3_i6A&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=aJSpNTxdvoOCMQqKRFnHfA&_nc_ss=7b2a8&oh=00_AQIHJkFINM4wJaqV0IveUoiPBturiMVx5kwV8GtqY1XMwQ&oe=6ABC6A72",
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/799440257_2620471528398847_7169051990102114468_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=104&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=KuVtaa6B1ooQ7kNvwHhOy3V&_nc_oc=Adox1S_WX1px_z4oQF3-6f5frdJus6Vo0D1fNo4CdmXRT4c24EyY6oaKcyee1r3_i6A&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=d3P4Uita_xI5yS55ZY2NGw&_nc_ss=7b2a8&oh=00_AQIxxJsA4opOjHVR_Xppwbf28OKjUnF05DU1GHY-HvJMWw&oe=6ABC6A72",
         "alt": "Will 保哥的技術交流中心 的影片封面",
         "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
       },
@@ -74,7 +74,7 @@
       "published_at": "2026-09-25T08:10:00.000+08:00",
       "tags": [],
       "image": {
-        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/821281874_1570502397888888_3041156051205901626_n.png?stp=dst-jpg_tt6&cstp=mx2500x1136&ctp=s2500x1136&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3h11LehA7Y0Q7kNvwEhJ4rm&_nc_oc=AdqnVUQCe7N65XGIU-EVoNUk-XoUfT-N492Vn7Z_5S-vrLM4V7Ma2hUpxqPnlY__ucg&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=29BqsaBhwz1pRLvU159-eA&_nc_ss=7b2a8&oh=00_AQKpv5UWKTWmJ9rtIfDHlRKNVCUuEooNgv36QpIKNT82qQ&oe=6ABC65C9",
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/821281874_1570502397888888_3041156051205901626_n.png?stp=dst-jpg_tt6&cstp=mx2500x1136&ctp=s2500x1136&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3h11LehA7Y0Q7kNvwEhJ4rm&_nc_oc=AdqnVUQCe7N65XGIU-EVoNUk-XoUfT-N492Vn7Z_5S-vrLM4V7Ma2hUpxqPnlY__ucg&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=_aCnRWWrq6TWi-H_ZZNI3A&_nc_ss=7b2a8&oh=00_AQIKs1YeOjBAVlR8SFXtEzTXWnmwD8JRp6E94EnlWi5SkA&oe=6ABC65C9",
         "alt": "May be a graphic of map and text",
         "credit": "柯仁傑／Facebook 原貼文配圖"
       },
@@ -90,7 +90,7 @@
   "source_reports": {
     "facebook": {
       "status": "complete",
-      "completed_at": "2026-09-25T16:31:52.149Z",
+      "completed_at": "2026-09-25T16:35:22.114Z",
       "captured": 6,
       "included": 4,
       "excluded": 2,
