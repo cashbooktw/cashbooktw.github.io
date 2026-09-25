@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-26",
+  "generated_at": "2026-09-26T00:31:54+08:00",
+  "is_demo": false,
+  "edition_title": "2026-09-26 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 6 則，入選 4 則，排除 2 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-ae2fafceb378548ae486024b",
+      "title": "保哥分享 Opus 5.5 推理強度比較",
+      "summary": "保哥表示，其實測中 Opus 5.5 設為 xhigh 的分數高於 max，並提醒提高思考強度不一定改善結果；貼文未列出測試題目或量化分數。",
+      "original_text": "Opus 5.5 實測下來 reasoning 設在 xhigh 的評測分數，比拉到 max 還要高。\n大家平時用這類模型，直覺會想把思考程度直接開到底。\n但這次真的不要開 max。\n開到底沒有變聰明，反而扣分。\n想得太深，推理方向反而容易偏掉，產出的結果比沒拉滿還糟糕。\n用這顆模型，停在 xhigh 就好。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-25T14:12:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0zYYDrZVuMujykh6THbgrJEovAkfmMEFkZ4jvUjTZji7NWZ9qgLoNCBMgaArmcoiWl",
+          "published_at": "2026-09-25T14:12:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-fbae61f24e103832ff2cd82c",
+      "title": "保哥提及 ChatGPT Pro Max 訂閱消息",
+      "summary": "保哥在貼文中稱 ChatGPT Pro Max 即將推出，月費為 500 美元；正文沒有提供發布日期或方案細節。",
+      "original_text": "OpenAI 即將推出\nChatGPT Pro Max\n每月 $500 美元",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-25T13:46:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0mwbYBLhRd2siD3NtJKCK1HTmB6mH44pPZeLjdpiJcKHUNmCLV7RRgFkdrmYwSNQ6l",
+          "published_at": "2026-09-25T13:46:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c07d75f7388770d697f81ecb",
+      "title": "保哥整理 TPU 太空運算計畫與工程挑戰",
+      "summary": "保哥介紹 Google 與 Planet 的 Project Suncatcher 原型衛星計畫，討論以軌道太陽能支援 AI 運算的構想，以及電力、散熱、輻射與發射成本等限制。貼文指出，原型測試仍是驗證太空資料中心可行性的早期步驟。",
+      "original_text": "TPU 即將上太空了！\nGoogle 準備把自家 AI 晶片送進太空。\nSundar Pichai 宣布，Project Suncatcher 的第一顆原型衛星下週發射，搭乘 SpaceX 的 Transporter-18 共乘任務。發射時間定在 10 月 1 日，從加州范登堡基地出發。\n這顆衛星由 Google 和衛星公司 Planet 合作打造。\n出發點很單純：AI 資料中心太吃電。如果搬到近地軌道，衛星幾乎能一直曬到太陽，太陽能發電量可以達到地面的 8 倍。\n這顆代號 MVP 的衛星只有冰箱大小，裡面裝了 4 塊 TPU 晶片。\n算力大概等於地面的一台伺服器。\n電力其實很吃緊。上面的太陽能板只能提供約 1 千瓦電力，差不多只夠吹風機運轉。它在軌道上能回答簡單的 Gemini 提問，設計壽命約一年。\n能不能在太空中活下來是個問題。\n升空那 10 分鐘，整顆衛星要承受最高 10 倍重力的持續加速度，單塊晶片甚至可能面臨 50 到 100 倍。Google 在地面沿三個軸向猛烈搖晃測試過，硬體扛住了。\n輻射測試也沒問題。第六代 TPU Trillium 能承受的累積輻射量，超過在太空執行五年任務所承受的量。\n真正沒把握的是散熱。\n太空沒有空氣，風扇派不上用場。熱量只能靠熱管和散熱板輻射出去。專案負責人 Travis Beals 透露，現在晶片連續跑 15 分鐘左右，就得關機降溫。\n原本兩家公司打算 2027 年才發射兩顆原型星。Google 決定承擔風險提早測試，乾脆把晶片裝進 Planet 現成的衛星裡先送上去。\n2027 年那兩顆還是會照常發射，專門測衛星之間的雷射高速互聯。\nGoogle 最終設想是在半徑 1 公里內讓 81 顆衛星編隊飛行，用雷射串成一座太空資料中心。\n但成本是個現實門檻。\n發射價格要在 2030 年代中期降到每公斤 200 美元以下，太空資料中心的建置加營運成本，才可能跟地面資料中心的電費相當。去年的發射價格還落在每公斤 1500 到 2900 美元。\n把資料中心晶片送上天，Google 其實不是第一家。\n新創公司 Starcloud 去年 11 月就把一張 NVIDIA H100 送進軌道，當時在上面跑的，剛好是 Google 的 Gemma 開放模型。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-25T12:03:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/799440257_2620471528398847_7169051990102114468_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=104&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=KuVtaa6B1ooQ7kNvwHhOy3V&_nc_oc=Adox1S_WX1px_z4oQF3-6f5frdJus6Vo0D1fNo4CdmXRT4c24EyY6oaKcyee1r3_i6A&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=aJSpNTxdvoOCMQqKRFnHfA&_nc_ss=7b2a8&oh=00_AQIHJkFINM4wJaqV0IveUoiPBturiMVx5kwV8GtqY1XMwQ&oe=6ABC6A72",
+        "alt": "Will 保哥的技術交流中心 的影片封面",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/watch?v=948871161048340",
+          "published_at": "2026-09-25T12:03:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-527cc202cfcf5b7577c61741",
+      "title": "柯仁傑談 AI 時代軟體團隊的驗證瓶頸",
+      "summary": "柯仁傑認為，AI 加快產出後，判斷正確性、掌握系統全貌及資訊交接成為團隊瓶頸。他介紹一場以協作實作比較組織設計的 90 分鐘工作坊，探討驗證責任與初階工程師的成長位置。",
+      "original_text": "[你的團隊，是不是已經生得比驗得快了？]\nAI 進來之後，產出的速度翻倍了，但有一件事沒有跟著變快：判斷這些東西對不對。\n於是很多團隊開始出現一些說不太出口的感受。東西看起來都對，卻要花更多時間確認和修。資深工程師漸漸從寫程式的人，變成整天看別人（和 AI）寫了什麼的人。Junior 好像不需要了，可是階梯斷了之後，誰來接下一棒？到最後，好像沒有人真的懂整個系統了。\n這些擔心背後其實是同一個問題：當「生出來」變便宜，「判斷對不對」就變成瓶頸——而這個瓶頸，不是換一個更強的模型就能解決的。它跟誰負責看見全局、誰負責判斷對錯、資訊在團隊裡怎麼流動有關。換句話說，這是組織設計的問題。\n# 那要怎麼設計？我不打算用投影片告訴你。\n這 90 分鐘裡，你會和一群人一起接一個任務。任務本身不難，難的是你們會被放在一種很熟悉、熟悉到平常不會去質疑的協作方式裡完成它。然後條件會改變，你們再做一次。\n同樣的人，同樣的題目，同樣的 AI 工具。差別只在一件事。\n那件事會造成多大的差距，我現在不說。但我可以保證，做完第二次之後，你會回頭看自己公司裡某幾個流程，然後開始覺得不太對勁。\n# 你會帶走的\n(1) 一種看見交接的眼睛：從此看到任何一次「我做完了，換你」，都會忍不住問一個問題。\n(2) 對「AI 時代為什麼驗證比生成難」的親身理解——不是聽來的，是自己撞到的。\n(3) 幾條可以直接拿回去檢查自家團隊的原則，簡單到可以寫在一張便利貼上，但要做到並不簡單。\n(4) 對「Junior 沒位置了」這件事，一個和主流焦慮不太一樣的答案。\n# 適合誰\n工程師、Tech Lead、PM/PO、QA，以及正在想「導入 AI 之後團隊該怎麼重組」的主管。中階程度，不需要任何框架背景，會用 ChatGPT就好。其他需要的東西，你到現場會很意外。\n與其猜 AI 會拿走什麼，不如花 90 分鐘親手試一次，帶著自己的答案離開。\n 2026-10-15（四）10:40–12:10｜Hello World Dev Conference 605+606 會議室\n工作坊: AI 時代下,軟體團隊要怎麼設計?\n https://hwdc.ithome.com.tw/2026/lab/4994",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-25T08:10:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/821281874_1570502397888888_3041156051205901626_n.png?stp=dst-jpg_tt6&cstp=mx2500x1136&ctp=s2500x1136&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3h11LehA7Y0Q7kNvwEhJ4rm&_nc_oc=AdqnVUQCe7N65XGIU-EVoNUk-XoUfT-N492Vn7Z_5S-vrLM4V7Ma2hUpxqPnlY__ucg&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=29BqsaBhwz1pRLvU159-eA&_nc_ss=7b2a8&oh=00_AQKpv5UWKTWmJ9rtIfDHlRKNVCUuEooNgv36QpIKNT82qQ&oe=6ABC65C9",
+        "alt": "May be a graphic of map and text",
+        "credit": "柯仁傑／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "柯仁傑",
+          "url": "https://www.facebook.com/kojenchieh/posts/pfbid02r1AHz382qugVQQHmfDCkpKQ32XKyu1EvJGayZdaKtcL3JJ7cXRXXHnYFHGfm2cM8l",
+          "published_at": "2026-09-25T08:10:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-09-25T16:31:52.149Z",
+      "captured": 6,
+      "included": 4,
+      "excluded": 2,
+      "notes": []
+    }
+  }
+}
