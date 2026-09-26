@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-27",
+  "generated_at": "2026-09-27T00:15:42+08:00",
+  "is_demo": false,
+  "edition_title": "2026-09-27 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 5 則，入選 3 則，排除 2 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-9b4443f25a257be793df03f4",
+      "title": "保哥整理 Copilot Home、Code 與 Autopilot 的功能分工",
+      "summary": "保哥在貼文中介紹，Copilot Home 整合對話、任務與 Office 文件；Code 以自然語言生成小工具及內部應用；Autopilot 則以企業帳號和稽核機制執行持續性任務。他也指出，一般文書維持訂閱制，長時間代理工作與部分進階功能採用量計費。",
+      "original_text": "微軟更新了 Copilot，主要推出 Home、Code 和 Autopilot （龍蝦企業版) 三項新功能。\nHome 是新的工作入口。\n它把對話與任務交辦放在同一個介面，Word、Excel 和 PowerPoint 直接整合在裡面，修改會即時同步，不用在不同軟體間切換。\nCode 讓非工程師也能做工具。\n以往辦公產出多半是文件、試算表或簡報。Code 增加了一種形態：針對特定需求製作的小程式或自動化流程。\n用日常語言描述需求，系統就會生成桌面小工具、互動儀表板或內部應用。底層使用 GitHub Copilot 技術，在企業租戶的沙盒環境運作。\nAutopilot 先前代號是 Scout，骨子裡就是開源社群那隻龍蝦 OpenClaw，微軟把它收編成了企業版。\n這是一個常駐的數位同事。\n原版 OpenClaw 直接在本機跑，權限大但沒防護。微軟替每個 Autopilot 配發獨立的 Entra 帳號，套用 Purview 資安與稽核規範，再透過 Microsoft IQ 吃進組織內部的權限與資料脈絡。\n設定好角色與目標後，它會自動跟進討論串、排程、聯絡相關窗口，你離線時它依然在雲端運作。\n資料整合同步擴展，結合 Power BI 的 Fabric IQ，接下來也會串接 Dynamics 365 和 Power Platform 的資料庫。\n收費架構分成兩塊：\n 一般對話與文書處理維持固定訂閱制。\n 需要長時間運行的 Autopilot、Code 以及高階模型，則改走用量計費。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-26T18:22:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-1.fna.fbcdn.net/emg1/v/t13/417534241064423478?_nc_oc=AdrRhMqu_QEB3dmbzwBjK-J_yi-TDU4KnNrR5JhsOjUeleoo99f_1lihi1ltfxrMGFACGUIyS5x5_tgndSkEnRgo&url=https%3A%2F%2Fblogs.microsoft.com%2Fwp-content%2Fuploads%2F2026%2F09%2FOMB-Copilot-9-25-Hero-9_22_26-1024x576.png&fb_obo=1&utld=microsoft.com&_nc_sid=f93bbc&_nc_ht=external.ftpe7-1.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=HerzAYqXUuTGG4yzKF3mRQ&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_DAWBrd5lpqULR1V3v1s96EurFcowYiegVUs0ukudL0X5L&oe=6AB9E8D5",
+        "alt": "Introducing the new Copilot with Home, Code and Autopilot - The Official Microsoft Blog",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid035JWhbx6RbkxwpF5PFjS3ft2eBwpoz2w5SfgFMdvYijojwxeTFJzuuxADZQqfTEFcl",
+          "published_at": "2026-09-26T18:22:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-786f8a11022ed881a729ebbb",
+      "title": "Huli 分享用實體 eSIM 卡補足手機功能的經驗",
+      "summary": "Huli 表示，自己換用的 Galaxy S25 缺少 eSIM 功能，因此選用內建 eSIM 晶片的實體 SIM 卡，讓手機能載入 eSIM。他依網路評價挑選產品，目前使用日本 povo eSIM 順利；貼文分享的是其個人裝置與使用經驗。",
+      "original_text": "前幾天寫了自己換了三星 Galaxy S25 以後才發現居然沒有 eSIM\n這個是番外篇，記錄一下後來怎麼解決的\n總而言之就是有種東西叫「實體 eSIM 卡」\n你一樣把一張 SIM 卡插到手機裡，但其實內部是有支援 eSIM 的晶片，於是你的手機就重新擁有了 eSIM 功能\n在做的廠商有三四間，然後我根據網路上的評論選了一個\n使用起來都沒問題，目前開心的用著日本 povo 的 eSIM\n感謝實體 eSIM 卡讓我的手機變得完整，不然真的頭很痛",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-26T16:51:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-1.fna.fbcdn.net/emg1/v/t13/12717460642423755829?_nc_oc=Adoa15wvf6quP-zrkk9X1qDfxFyR-a03BwL9S3QzyKaojARwFy59LUCia7w4gi5lHIkd-xMSXStPZjFto0s3CQnF&url=https%3A%2F%2Flife.huli.tw%2Fimg%2Fsamsung-galaxy-s25-estkme-esim%2Fp2.jpg&fb_obo=1&utld=huli.tw&_nc_sid=f93bbc&_nc_ht=external.ftpe7-1.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=HerzAYqXUuTGG4yzKF3mRQ&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_DAcvBwrQQvtqXUYbgRP-78NQeF9LBIM5ZU7hfF3l4S60u&oe=6AB9CEE4",
+        "alt": "Samsung Galaxy S25 沒有 eSIM，就自己裝一個上去吧之 ESTKme 使用心得 - Huli's blog",
+        "credit": "Huli 隨意聊／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Huli 隨意聊",
+          "url": "https://www.facebook.com/huli.blog/posts/pfbid0R66Rco1RvyKN5Yu2tyszjmYZtXsEi16qbAbioVnorTFs2SdS2L9cP2rCLN4ja7Tfl",
+          "published_at": "2026-09-26T16:51:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-345de796f4922fe277d9bec7",
+      "title": "保哥談 Claude Code 成本：重試、思考強度與驗證方式",
+      "summary": "保哥認為，評估 Claude Code 成本應看任務是否完成，而非只比較 token 單價；代理迴圈、思考輸出與失敗重試都會累積費用。他建議範圍清楚的工作先用 medium，漏掉跨層關聯時再提高 effort，並提供建置或測試指令，讓代理自行驗證結果、減少重做。",
+      "original_text": "跑 Claude Code 時，多數人第一反應是看 token 價格。\n其實沒人想買 token。\n重點是事情有沒有做完。\n任務沒搞定，按一次重來，前面省下來的錢全倒賠回去。\n重試比什麼都貴。\nAddy Osmani 寫了一篇 Opus 5.5 的成本拆解。\n帳面定價確實降了。\n輸入和輸出便宜 20%，快取讀取降了 60%，每百萬 token 兩毛美金。\n長對話如果快取命中率高，費用會掉很多。\n但 Agent 跑起來是個迴圈。\n讀 context、叫 tool、拿結果，每多一輪，前面的紀錄全部重傳一次。\n真正吃錢的是思考。\nThinking token 算在 output 裡面。\n在 Opus 5.5 上，output 價格是快取讀取的一百倍。\n只要模型多想幾秒，費用就疊上去了。\n這次 Opus 5.5 把預設 effort 改成 medium。\n舊版 Opus 5 預設是 high。\n範圍清楚的日常工作，medium 的思考量通常夠。\n什麼時候該拉高？\n看它只修了第一層的時候。\n比如改了後端欄位，自己寫的測試也過了，但前端呼叫端根本沒改。\n這時候不用急著換模型。\n下指令把 effort 切到 high，讓它多看幾層關聯，通常就解得掉。\n另一個更省錢的習慣是給它驗證方式。\n給一段 build 指令，或一支能打測試的 script。\n讓它自己對答案。\n跑一次測試只占一輪。\n總比猜錯之後整串重來划算。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-26T15:32:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-3.fna.fbcdn.net/emg1/v/t13/14522376003145107718?_nc_oc=Adq2Y2mEtzbMkdqdKB8J8FjQz4D66AyMWiczDlrpT4XOiH8mpmv56iIxFv3oSi5lAGjBe_J9G7racvxwvw29jinG&url=https%3A%2F%2Fclaude.dev%2Fblog%2Fwhat-a-task-costs-on-opus-5-5%2Fog.png&fb_obo=1&utld=claude.dev&_nc_sid=c63717&_nc_ht=external.ftpe7-3.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=EyjIWoBYLBe7UYYPIL1urw&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_DAeYcH5NbFBEXaPjxUi3DFns49YVeQR7SOZSv2EIk0JDs&oe=6AB9CB31",
+        "alt": "What a task costs on Opus 5.5 / claude.dev Blog",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0znr2SM1UpGdkgxQGLSCy1TWeS2fXXb8ntWRe4d95NgmqWBQbRj6aL5FccqCbrwZtl",
+          "published_at": "2026-09-26T15:32:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-09-26T16:15:41.353Z",
+      "captured": 5,
+      "included": 3,
+      "excluded": 2,
+      "notes": []
+    }
+  }
+}
