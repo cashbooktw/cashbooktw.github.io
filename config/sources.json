@@ -99,6 +99,10 @@
       "discovery": [
         {
           "kind": "listing",
+          "url": "https://localnews.tw/hsinchuCity/news"
+        },
+        {
+          "kind": "listing",
           "url": "https://localnews.tw/hsinchuCity/"
         }
       ]
@@ -114,6 +118,10 @@
         "綜合以上規則挑選最多 5 篇最符合的內容；其餘不產生"
       ],
       "discovery": [
+        {
+          "kind": "listing",
+          "url": "https://localnews.tw/hsinchuCounty/news"
+        },
         {
           "kind": "listing",
           "url": "https://localnews.tw/hsinchuCounty"

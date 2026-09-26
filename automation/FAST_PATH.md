@@ -26,7 +26,8 @@ GitHub 官方依據：[Create a tree](https://docs.github.com/en/rest/git/trees#
 每筆是 `{ "kind": "status|listing|archive", "url": "https://..." }`，順序代表嘗試偏好；未配置時才用原 url。入口不代表完整性已獲保證；當次仍須驗證清單覆蓋與分頁。
 
 - Codex Resets：原 status 頁，每次都檢查目前排程；只有 `Reset scheduled` 有可驗證排定時間時才建立 story。沒有 schedule、欄位空白或無法驗證時，只記錄來源已檢查，不發布文章。
-- TechCrunch AI、The Decoder、地新聞新竹市與新竹縣：原有分類或文章列表，不放未驗證 RSS。
+- TechCrunch AI、The Decoder：使用原有分類或文章列表，不放未驗證 RSS。
+- 地新聞新竹市、新竹縣：優先使用已驗證的同站 `/hsinchuCity/news`、`/hsinchuCounty/news` 快報列表，因其直接按日期列出候選；原區域首頁保留作 fallback。這些都是同一既有來源的 listing，不是新增來源，也不是 RSS。
 - Interconnects：`https://www.interconnects.ai/archive` 優先，原首頁備用。2026-09-23 已透過公開網頁讀取確認 archive 可列出文章；不表示付費全文可讀或每次清單都完整。
 
 同次查核中，Interconnects `/feed` 的 XML 無法由目前閱讀工具解析；TechCrunch AI 與 The Decoder RSS 也未完成可用性驗證。因此未將猜測的 feed URL 寫成正式來源。這不是宣稱它們沒有 RSS。日後經使用者明確授權與實測才新增。
@@ -36,6 +37,8 @@ GitHub 官方依據：[Create a tree](https://docs.github.com/en/rest/git/trees#
 相對時間（例如「9 小時前」「15 小時前」「23 小時前」）不是排除理由。這類候選仍需讀完整原文，並用同一來源的列表／archive、實際執行時間及可驗證時區解析日曆日期；只有合理查證後仍無法符合該來源既有日期要求時才排除。不得把事件日期、頁面更新時間或 sitemap `lastmod` 當成發布日期。
 
 對 Latent Space 等同時含免費與付費項目的既有來源，先列完並讀取當日所有符合範圍的免費全文候選，再處理付費候選的限制。只有免費全文不足且其餘符合日期候選確因付費牆／登入限制無法完整讀取時，才在 source report 記錄 paid limitation；看到單一 Paid 項目不代表整個來源不可用。
+
+全文讀取的暫時性失敗採有限重試：一旦已取得候選 canonical URL，若閱讀工具回報 timeout、暫時性網路失敗或 parser/fetch failure，對同一 canonical URL 最多再嘗試 2 次；若當前環境另有 reader/fetch 模式，只能用來讀同一原始 URL，不得用搜尋片段、mirror、cache、RSS 摘錄或第三方轉載代替原文。來源的 listing／archive／status 已完整列舉並先固定 acquisition position 後，各候選原文可在工具支援時並行讀取，但合併仍依固定位置。TechCrunch AI 等需從候選中挑代表作或有 max-N 上限的來源，不能在仍有已知時間窗內候選未讀時，只因已成功讀到任意篇數就提前停止比較；重試後仍失敗才如實標 limited，並在 notes 記錄剩餘失敗數與重試覆蓋。
 
 ## 安裝與驗證
 
