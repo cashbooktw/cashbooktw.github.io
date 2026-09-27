@@ -136,8 +136,9 @@ class Validator:
             if story["id"] not in known:
                 require(not story.get("original_text") or story["summary"] != story["original_text"], "Summary cannot be the full original text")
                 image = story.get("image")
-                if image:
-                    require(image["url"].startswith("https://") and bool(image.get("credit", "").strip()), "Provided new images need HTTPS URL and attribution")
+                require(bool(image), "New stories require a source-provided HTTPS image")
+                require(image["url"].startswith("https://") and bool(image["alt"].strip()) and bool(image.get("credit", "").strip()),
+                        "New images need HTTPS URL, nonblank alt and attribution")
         dates = [e["date"] for e in manifest["editions"]]
         require(len(dates) == len(set(dates)), "Manifest dates must be unique")
         require(dates == sorted(dates, reverse=True), "Manifest dates must be newest first")
@@ -169,8 +170,10 @@ def main() -> int:
         require(not args.all or not (args.edition or args.previous_edition or args.previous_index), "--all cannot use candidate/baseline overrides")
         for day in days:
             edition = read_json(args.edition or args.root / edition_path(day))
+            # Repository editions are historical; explicit candidates need a baseline.
+            previous = read_json(args.previous_edition) if args.previous_edition else (None if args.edition else edition)
             validator.pair(edition, manifest, day,
-                           read_json(args.previous_edition) if args.previous_edition else None,
+                           previous,
                            read_json(args.previous_index) if args.previous_index else None)
         print(f"Validated {len(days)} ChatGPT edition(s), schemas/formats and manifest agreement")
         return 0

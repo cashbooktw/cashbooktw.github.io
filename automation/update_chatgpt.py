@@ -114,7 +114,7 @@ def unpack(snap):
     validator.schema(manifest, 1)
     old = loads(files[path]) if files[path] is not None else None
     if old:
-        validator.pair(old, manifest, snap["date"])
+        validator.pair(old, manifest, snap["date"], previous=old)
     else:
         require(not any(e["date"] == snap["date"] for e in manifest["editions"]), "Indexed edition is missing")
     return validator, old, manifest

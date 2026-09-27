@@ -4,6 +4,9 @@ from datetime import datetime
 import hashlib
 from pathlib import Path
 import threading
+import subprocess
+import sys
+import tempfile
 import unittest
 
 from validate_chatgpt import (INDEX, TAIPEI, Invalid, Validator, edition_path,
@@ -128,7 +131,7 @@ class ContractTests(unittest.TestCase):
         return prepare(self.snap, self.new, NOW)
 
     def test_valid_pair(self):
-        self.validator.pair(self.old, self.index, DAY)
+        self.validator.pair(self.old, self.index, DAY, previous=self.old)
 
     def test_duplicate_json_keys(self):
         with self.assertRaises(Invalid): loads('{"x":1,"x":2}')
@@ -138,15 +141,15 @@ class ContractTests(unittest.TestCase):
 
     def test_bad_calendar_date(self):
         self.old["stories"][0]["published_at"] = "2026-02-30"
-        with self.assertRaises(Invalid): self.validator.pair(self.old, self.index, DAY)
+        with self.assertRaises(Invalid): self.validator.pair(self.old, self.index, DAY, previous=self.old)
 
     def test_naive_timestamp(self):
         self.old["generated_at"] = f"{DAY}T12:00:00"
-        with self.assertRaises(Invalid): self.validator.pair(self.old, self.index, DAY)
+        with self.assertRaises(Invalid): self.validator.pair(self.old, self.index, DAY, previous=self.old)
 
     def test_unknown_publication_allowed(self):
         self.old["stories"][0]["published_at"] = ""
-        self.validator.pair(self.old, self.index, DAY)
+        self.validator.pair(self.old, self.index, DAY, previous=self.old)
 
     def test_duplicate_ids(self):
         self.new["stories"].append(deepcopy(self.new["stories"][-1]))
@@ -161,7 +164,7 @@ class ContractTests(unittest.TestCase):
         x = deepcopy(self.index); x["editions"].append(deepcopy(x["editions"][0])); variants.append(x)
         for variant in variants:
             with self.subTest(variant=variants.index(variant)), self.assertRaises(Invalid):
-                self.validator.pair(self.old, variant, DAY)
+                self.validator.pair(self.old, variant, DAY, previous=self.old)
 
     def test_formal_source_url_required(self):
         self.new["stories"][-1]["sources"][0]["url"] = ""
@@ -183,15 +186,54 @@ class ContractTests(unittest.TestCase):
         # A direct validator also rejects an unexplained limited run.
         with self.assertRaises(Invalid): self.validator.pair(self.new, self.index, DAY)
 
-    def test_new_story_allows_image_null(self):
-        self.new["stories"][-1]["image"] = None
-        result = loads(self.plan()["files"][PATH])
-        self.assertIsNone(result["stories"][-1]["image"])
+    def test_new_story_requires_image_before_any_remote_write(self):
+        for missing in (False, True):
+            with self.subTest(missing=missing):
+                self.new["stories"][-1]["image"] = None
+                if missing:
+                    del self.new["stories"][-1]["image"]
+                api = FakeAPI(self.snap)
+                with self.assertRaisesRegex(Invalid, "New stories require"):
+                    publish(api, self.snap, self.new, lambda: NOW)
+                self.assertEqual(api.calls, [])
 
     def test_new_image_must_have_credit_and_https(self):
         for image in [{"url": "https://example.org/x.png", "alt": "Image"}, {"url": "assets/x.png", "alt": "Image", "credit": "Source"}]:
             self.new["stories"][-1]["image"] = image
             with self.assertRaises(Invalid): self.plan()
+
+    def test_new_image_rejects_blank_alt_or_credit(self):
+        for field in ("alt", "credit"):
+            with self.subTest(field=field):
+                candidate = deepcopy(self.new)
+                candidate["stories"][-1]["image"][field] = "   "
+                with self.assertRaisesRegex(Invalid, "nonblank alt and attribution"):
+                    prepare(self.snap, candidate, NOW)
+
+    def test_existing_images_and_nulls_are_preserved(self):
+        self.old["stories"][0]["image"] = {"url": "https://example.org/old.png", "alt": "Old image", "credit": "Old source"}
+        self.snap["files"][PATH] = encode(self.old)
+        self.new["stories"][:2] = deepcopy(self.old["stories"])
+        result = loads(self.plan()["files"][PATH])
+        self.assertEqual(result["stories"][:2], self.old["stories"])
+
+    def test_cli_distinguishes_history_from_candidate(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / PATH).parent.mkdir(parents=True)
+            (root / PATH).write_text(encode(self.old))
+            (root / INDEX).write_text(encode(self.index))
+            (root / "schema").mkdir()
+            for path in CONTRACTS[2:]:
+                (root / path).write_text((ROOT / path).read_text())
+            command = [sys.executable, str(ROOT / "automation/validate_chatgpt.py"), "--root", str(root)]
+            history = subprocess.run(command, capture_output=True, text=True)
+            self.assertEqual(history.returncode, 0, history.stderr)
+            candidate = subprocess.run(command + ["--edition", str(root / PATH)], capture_output=True, text=True)
+            self.assertNotEqual(candidate.returncode, 0)
+            self.assertIn("New stories require", candidate.stderr)
+            preserved = subprocess.run(command + ["--edition", str(root / PATH), "--previous-edition", str(root / PATH)], capture_output=True, text=True)
+            self.assertEqual(preserved.returncode, 0, preserved.stderr)
 
     def test_existing_story_delete_rewrite_and_order_rejected(self):
         for mutate in [lambda e: e["stories"].pop(0), lambda e: e["stories"].reverse(), lambda e: e["stories"][0].update(summary="changed")]:
@@ -209,7 +251,7 @@ class ContractTests(unittest.TestCase):
         result = loads(self.plan()["files"][INDEX])
         self.assertEqual(result["editions"][1], self.index["editions"][1])
         result["editions"].pop()
-        with self.assertRaises(Invalid): self.validator.pair(self.old, result, DAY, previous_index=self.index)
+        with self.assertRaises(Invalid): self.validator.pair(self.old, result, DAY, previous=self.old, previous_index=self.index)
 
     def test_real_time_and_midnight(self):
         self.assertEqual(loads(self.plan()["files"][PATH])["generated_at"], NOW.isoformat())
@@ -264,8 +306,13 @@ class ContractTests(unittest.TestCase):
         snap = deepcopy(self.snap); snap["files"][PATH] = None
         index = deepcopy(self.index); index["editions"].pop(0); index["current"] = "2026-09-22"
         snap["files"][INDEX] = encode(index)
-        result = prepare(snap, self.new, NOW)
+        candidate = deepcopy(self.new)
+        candidate["stories"] = [candidate["stories"][-1]]
+        result = prepare(snap, candidate, NOW)
         self.assertEqual(loads(result["files"][INDEX])["current"], DAY)
+        candidate["stories"][0]["image"] = None
+        with self.assertRaisesRegex(Invalid, "New stories require"):
+            prepare(snap, candidate, NOW)
 
     def test_parallel_reads_preserve_order(self):
         barrier = threading.Barrier(6)

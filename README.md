@@ -12,7 +12,7 @@
 
 ## Sources
 
-`config/sources.json` 的 `facebook_pages`、`rss_feeds`、`news_search_queries` 是字串陣列；`web_pages` 是含 `name`、`url` 與可選來源規則的物件陣列。Facebook Favorites 由桌面匯入程式讀取，本檔不設定或擷取 Facebook 來源。現有六個 `web_pages` 來源為 Codex Resets、TechCrunch AI、Interconnects、The Decoder、新竹市地方新聞與新竹縣地方新聞，選稿上限與條件見各來源的 `rules`。ChatGPT 更新時只處理這些公開非 Facebook 來源與本檔查詢，不自行補來源、關鍵字或排名規則。
+`config/sources.json` 的 `facebook_pages`、`rss_feeds`、`news_search_queries` 是字串陣列；`web_pages` 是含 `name`、`url` 與可選來源規則的物件陣列。Facebook Favorites 由桌面匯入程式讀取，本檔不設定或擷取 Facebook 來源。`web_pages` 的來源數量與順序以設定檔為準，選稿上限與條件見各來源的 `rules`。ChatGPT 更新時只處理這些公開非 Facebook 來源與本檔查詢，不自行補來源、關鍵字或排名規則。
 
 新增／修改來源時，需明確要求使用 GitHub connector 更新該檔指定欄位。不要放 token、密碼或需登入的私人網址。來源設定變更與每日內容更新是不同工作。
 
@@ -31,7 +31,7 @@
 
 `schema/edition.schema.json` 使用 JSON Schema Draft 2020-12；`schema/manifest.schema.json` 描述兩個獨立索引。驗證時啟用 format 檢查。唯一 story id、manifest 與 edition 一致性另由更新器與前端檢查。每個索引的路徑為 `data/CHANNEL/editions/DATE.json`。發布時間可為已知日期、含時區的 timestamp、空字串或省略；未知不得補造。
 
-正式 edition 為 `is_demo: false`，每則 story 至少一個有 URL 的原始來源。`summary` 是摘要；Facebook story 可另帶可選 `original_text`，前端以純文字在可展開區塊呈現並保留換行，不解讀 HTML。可選 image 為 null 或具 url/alt 的物件；保留原文 HTTPS 圖片 URL 與來源 credit，不下載或存放每日圖片，載入失敗時隱藏圖片。不可宣稱公開圖片均有授權；應保留 attribution。`source_reports` 記錄本通道狀態、完成時間、讀取/收錄/排除數與備註；complete 報告與一般圖片備註不會顯示在 UI，limited 與通道錯誤會顯示。
+正式 edition 為 `is_demo: false`，每則 story 至少一個有 URL 的原始來源。`summary` 是摘要；Facebook story 可另帶可選 `original_text`，前端以純文字在可展開區塊呈現並保留換行，不解讀 HTML。Schema 保留 image 為 null 或具 url/alt 物件的歷史相容性；新增 ChatGPT 非 Facebook story 則必須有可驗證的來源 HTTPS 圖片與非空白 alt/credit，缺圖候選計入 excluded，工具限制導致圖片查核未完成時另標 limited。既有 image/null 原樣保留；保留原文 HTTPS 圖片 URL 與來源 credit，不下載或存放每日圖片，載入失敗時隱藏圖片。不可宣稱公開圖片均有授權；應保留 attribution。`source_reports` 記錄本通道狀態、完成時間、讀取/收錄/排除數與備註；complete 報告與一般圖片備註不會顯示在 UI，limited 與通道錯誤會顯示。
 
 `is_demo: true` 只用於明確標示的版面示例，不得混入正式 edition。現有歷史期數是正式內容；每日更新不得重寫或刪除既有 stories 與 editions。前端不內嵌新聞。
 
