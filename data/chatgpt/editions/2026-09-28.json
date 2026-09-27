@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-28",
+  "generated_at": "2026-09-28T07:23:59+08:00",
+  "is_demo": false,
+  "edition_title": "2026-09-28 每日資訊整理",
+  "edition_summary": "本次依固定 master 快照檢查 7 個設定的非 Facebook web_pages，建立今日 ChatGPT edition 並收錄 2 則 stories。TechCrunch AI、Interconnects、Latent Space、The Decoder、地新聞新竹市與新竹縣均完成既定範圍檢查；Codex Resets 的設定 status 頁在有限重試後仍無法讀取，因此無法驗證 Reset scheduled，本次 configured_sources 為 limited。",
+  "stories": [
+    {
+      "id": "techcrunch-meta-muse-trust-2026-09-27",
+      "title": "Meta 主推消費型 AI 代理 Muse，實用性與資料信任成關鍵",
+      "summary": "TechCrunch 測試 Meta 在 Connect 主推的個人 AI 代理 Muse，認為它能協助處理找回未領款項等跨服務任務，但長期實用性仍待驗證。當任務需要存取信用卡、Gmail 等敏感資料時，Meta 以廣告為核心的商業模式也使資料信任成為採用門檻。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-27T12:57:00-07:00",
+      "tags": [
+        "AI",
+        "Meta",
+        "Muse",
+        "AI代理"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/",
+          "published_at": "2026-09-27T12:57:00-07:00"
+        }
+      ]
+    },
+    {
+      "id": "decoder-ai-agent-model-development-study-2026-09-27",
+      "title": "研究：AI 代理承擔更多模型開發工作，但關鍵決策仍主要由人類做出",
+      "summary": "The Decoder 報導一項分析 AI 模型開發專案 700 多筆任務紀錄的研究：代理在四週內承擔更多操作步驟，約三分之一的 AI 輔助任務被參與者評為沒有 AI 就不會完成；但目標與方法的最終決策仍主要由人類做出。研究也提醒，代理鏈愈長可能增加人類難以充分審查而流於背書的風險。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-27",
+      "tags": [
+        "AI",
+        "AI代理",
+        "模型開發",
+        "研究"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/ai-agents-do-more-of-the-work-in-model-development-but-humans-still-make-the-decisions/",
+          "published_at": "2026-09-27"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "configured_sources": {
+      "status": "limited",
+      "completed_at": "2026-09-28T07:23:59+08:00",
+      "captured": 10,
+      "included": 2,
+      "excluded": 8,
+      "notes": [
+        "Current run: 一般更新時間窗依上一個 ChatGPT configured_sources 完成時間，為 2026-09-27T13:47:39+08:00 至 2026-09-28T07:23:59+08:00（Asia/Taipei）；Latent Space、The Decoder、地新聞新竹市與新竹縣依設定檢查 2026-09-27 整個日曆日；Codex Resets 不受一般時間窗限制。",
+        "固定快照 config/sources.json 實際列出 7 個 web_pages；依設定陣列順序與各來源列表順序固定 acquisition position，未新增來源、RSS、關鍵字、排除條件或排名規則。",
+        "Codex Resets 已依設定 status 入口嘗試讀取；主要 reader 對同一 canonical URL 初次及另外兩次重試均逾時，替代 reader 亦因名稱解析失敗無法取得原頁，因此本次無法驗證 Reset scheduled。未產生 Codex story；此來源檢查不完整，為本次 configured_sources 唯一 limitation。",
+        "TechCrunch AI 已依設定 listing 固定候選順序。一般時間窗內共有 3 篇候選，均完整讀取；再下一篇可靠發布時間為 2026-09-26T18:30:00-07:00，明確早於本次起點，後續更舊項目不納入。本次依最多 1 篇與既有代表性規則納入 Meta 消費型 AI 代理 Muse 文章。本次 captured=3、included=1、excluded=2。",
+        "Interconnects 已檢查設定 archive；最新列出文章日期為 2026-09-22，明確早於本次一般更新時間窗，因此沒有需讀取的時間窗內候選。本次 captured=0、included=0、excluded=0。",
+        "Latent Space 已檢查設定 archive；最新列出文章日期為 2026-09-25，設定要求 2026-09-27 整個 Asia/Taipei 日曆日，因此本次沒有符合日期的候選。本次 captured=0、included=0、excluded=0。",
+        "The Decoder 已依設定 listing 完整列舉 2026-09-27 的 7 篇候選並逐篇完整讀取；依最多 1 篇與既有代表性規則納入 AI 代理參與模型開發決策研究文章。本次 captured=7、included=1、excluded=6。",
+        "地新聞新竹市已依設定 listing 檢查；最新列表日期為 2026-09-26，設定要求 2026-09-27 整個 Asia/Taipei 日曆日，因此沒有符合日期的候選。本次 captured=0、included=0、excluded=0。",
+        "地新聞新竹縣已依設定 listing 檢查；最新列表日期為 2026-09-26，設定要求 2026-09-27 整個 Asia/Taipei 日曆日，因此沒有符合日期的候選。本次 captured=0、included=0、excluded=0。",
+        "本次 configured_sources 合計 captured=10、included=2、excluded=8；6 個來源完成預定檢查，Codex Resets 因設定 status 頁重試後仍讀取失敗而使 status=limited。兩則新 story 均使用 image:null；圖片缺失未作為排除或限制理由。",
+        "Previous run (historical, not current status): completed_at=2026-09-27T13:47:39+08:00; status=complete; captured=18; included=10; excluded=8。",
+        "Previous run note (historical, not current status): Current run: 一般更新時間窗依上一個 ChatGPT configured_sources 完成時間，為 2026-09-26T07:32:42+08:00 至 2026-09-27T13:47:39+08:00（Asia/Taipei）；Latent Space、The Decoder、地新聞新竹市與新竹縣依設定檢查 2026-09-26 整個日曆日；Codex Resets 不受一般時間窗限制。",
+        "Previous run note (historical, not current status): 固定快照 config/sources.json 實際列出 7 個 web_pages；依設定陣列順序與各來源列表順序固定 acquisition position，未新增來源、RSS、關鍵字、排除條件或排名規則。",
+        "Previous run note (historical, not current status): Codex Resets 已檢查設定 status 頁；「Reset scheduled」顯示 Time to be announced，沒有可驗證的排定時間，因此本次沒有 Codex story。來源檢查本身完成。",
+        "Previous run note (historical, not current status): TechCrunch AI 已完整列出本次時間窗邊界：2026-09-25 16:11 PDT 的 Crusoe 文章明確早於本次起點 16:32:42 PDT，之後列表位置更舊；時間窗內共 4 篇候選均完整讀取。依最多 1 篇與代表性規則納入 Google／Flipkart 在 Gemini 與 AI Mode 測試直接交易的文章。本次 captured=4、included=1、excluded=3。",
+        "Previous run note (historical, not current status): Interconnects 已檢查設定 archive；最新列出文章日期為 2026-09-22，明確早於本次一般更新時間窗，因此無需讀取更舊原文。本次 captured=0、included=0、excluded=0。",
+        "Previous run note (historical, not current status): Latent Space 已檢查設定 archive；最新列出文章日期為 2026-09-25，設定要求 2026-09-26 整個 Asia/Taipei 日曆日，因此本次沒有符合日期的候選。本次 captured=0、included=0、excluded=0。",
+        "Previous run note (historical, not current status): The Decoder 已依設定 listing 完整列舉 2026-09-26 的 6 篇候選並逐篇完整讀取；依最多 1 篇與代表性規則納入 OpenAI 代理繞過限制與資料外洩調查文章。本次 captured=6、included=1、excluded=5。",
+        "Previous run note (historical, not current status): 地新聞新竹市已依設定 listing 完整列舉 2026-09-26 的 4 個列表位置並逐篇完整讀取；4 篇均符合既有生活、健康、科技、公共服務或活動優先條件，且低於最多 5 篇上限，依列表順序全部納入。本次 captured=4、included=4、excluded=0。",
+        "Previous run note (historical, not current status): 地新聞新竹縣已依設定 listing 完整列舉 2026-09-26 的 4 個列表位置並逐篇完整讀取；初次部分候選點擊的暫時性失敗已在同一設定 listing 重試成功，4 篇均完成原文查核並符合既有教育、親子、公共服務或休閒優先條件，依列表順序全部納入。本次 captured=4、included=4、excluded=0。",
+        "Previous run note (historical, not current status): 本次 configured_sources 合計 captured=18、included=10、excluded=8；全部 7 個設定來源均完成預定檢查，沒有以列表片段、RSS 摘錄或讀取失敗內容代替完整原文，因此 status=complete。新加入 stories 均使用 image:null；圖片缺失未作為排除或限制理由。"
+      ]
+    }
+  }
+}
