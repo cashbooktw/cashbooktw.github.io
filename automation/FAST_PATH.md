@@ -50,7 +50,7 @@ python automation/validate_chatgpt.py --all
 python -m unittest discover -s automation -p 'test_chatgpt.py' -v
 ```
 
-`--all` 只讀 ChatGPT 索引中的歷史期數。驗證候選可指定 `--date`、`--edition`、`--index`、`--previous-edition`、`--previous-index`；使用兩個 previous 參數才能另外檢查相對基準的保留性。每日 updater 會自動帶入基準。未指定 `--edition` 時視為檢查已存入 repository 的歷史資料，保留既有 image/null；指定候選 `--edition` 卻未提供 `--previous-edition` 時，所有 stories 都視為新增並要求圖片。首次當日尚無 edition 時不提供 previous edition。
+`--all` 只讀 ChatGPT 索引中的歷史期數。驗證候選可指定 `--date`、`--edition`、`--index`、`--previous-edition`、`--previous-index`；使用兩個 previous 參數才能另外檢查相對基準的保留性。每日 updater 會自動帶入基準。未指定 `--edition` 時視為檢查已存入 repository 的歷史資料，保留既有 image/null；指定候選 `--edition` 卻未提供 `--previous-edition` 時，所有 stories 都視為新增，僅檢查實際附上的圖片；image:null 或省略 image 均有效。首次當日尚無 edition 時不提供 previous edition。
 
 ## 取得快照、人工閱讀、準備計畫
 
@@ -64,11 +64,11 @@ python automation/update_chatgpt.py prepare \
   --out /tmp/chatgpt-plan.json
 ```
 
-候選 edition 必須以快照今日資料為基礎：保留既有 stories 的位置、id、所有非 sources 欄位，以及 sources 的原有前綴；僅追加新 sources 與新 stories。每篇新 story 必須有可驗證的來源 HTTPS 圖片 URL，填入 `image.url`、非空白 `alt` 與 `credit`；只確認 URL 為來源頁面提供的 HTTPS URL，不額外判定授權。來源未提供可用圖片或工具無法可靠取得 URL 時，不加入 stories，計入本次 excluded 並記錄原因。已確認來源無圖片是選稿排除；因工具／讀取限制未完成圖片查核時，另須標 limited 並說明。既有 story 的 image/null 不回寫。首次當日尚無 edition時，確認 404 視為正常 absent 狀態，直接依 index/schema 提供完整新期數，不列 failure/limitation。不要手動修改快照；它必須來自固定 master SHA 的完整讀取。
+候選 edition 必須以快照今日資料為基礎：保留既有 stories 的位置、id、所有非 sources 欄位，以及 sources 的原有前綴；僅追加新 sources 與新 stories。圖片為選用：有可驗證的來源 HTTPS 圖片 URL 時，可填入 `image.url`、非空白 `alt` 與 `credit`；只確認 URL 為來源頁面提供的 HTTPS URL，不額外判定授權。來源無圖片、圖片無法驗證或工具無法可靠取得 URL 時，使用 `image:null` 或省略 image；不得因此排除候選、阻止符合既有選稿條件的文章收錄、增加 excluded 或單獨標 limited。文章全文與來源檢查的既有完整性要求不變。既有 story 的 image/null 不回寫。首次當日尚無 edition時，確認 404 視為正常 absent 狀態，直接依 index/schema 提供完整新期數，不列 failure/limitation。不要手動修改快照；它必須來自固定 master SHA 的完整讀取。
 
 `source_reports.configured_sources` 填本次完成時間、狀態、數量與各來源實際限制。更新器保留所有舊 notes，將先前報告的時間/狀態/數量用有標籤的歷史紀錄追加至 notes，使用較新 completed_at 的報告作頂層計數。舊次 limited 不被抹除，也不冒充本次狀態。內容、報告皆未變則回傳 unchanged；新一次檢查要有新的實際 completed_at。
 
-建立 tree 前，必須相對固定快照逐篇檢查新增 stories 的圖片；prepare/publish 會拒絕缺圖、非 HTTPS 或 alt/credit 空白的新文章，但不會替執行者驗證圖片出處。Schema 通過不能取代這項查核。
+建立 tree 前，僅檢查新增 stories 實際附上的圖片；prepare/publish 接受 image:null 或省略 image，但會拒絕非 HTTPS 或 alt/credit 空白的圖片。腳本不會替執行者驗證圖片出處，Schema 通過不能取代來源查核。
 
 prepare 只產生兩個允許路徑的 JSON 字串與 Git tree 基準資料，沒有網路寫入。它使用實際執行時間並拒絕改寫過去日期；跨 Taipei 午夜需重新取得快照與蒐集來源。相同快照、候選與注入的測試時鐘會產生相同結果；實際執行時間與 GitHub commit metadata 本來就會隨執行改變。
 

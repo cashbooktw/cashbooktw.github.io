@@ -31,7 +31,7 @@
 
 `schema/edition.schema.json` 使用 JSON Schema Draft 2020-12；`schema/manifest.schema.json` 描述兩個獨立索引。驗證時啟用 format 檢查。唯一 story id、manifest 與 edition 一致性另由更新器與前端檢查。每個索引的路徑為 `data/CHANNEL/editions/DATE.json`。發布時間可為已知日期、含時區的 timestamp、空字串或省略；未知不得補造。
 
-正式 edition 為 `is_demo: false`，每則 story 至少一個有 URL 的原始來源。`summary` 是摘要；Facebook story 可另帶可選 `original_text`，前端以純文字在可展開區塊呈現並保留換行，不解讀 HTML。Schema 保留 image 為 null 或具 url/alt 物件的歷史相容性；新增 ChatGPT 非 Facebook story 則必須有可驗證的來源 HTTPS 圖片與非空白 alt/credit，缺圖候選計入 excluded，工具限制導致圖片查核未完成時另標 limited。既有 image/null 原樣保留；保留原文 HTTPS 圖片 URL 與來源 credit，不下載或存放每日圖片，載入失敗時隱藏圖片。不可宣稱公開圖片均有授權；應保留 attribution。`source_reports` 記錄本通道狀態、完成時間、讀取/收錄/排除數與備註；complete 報告與一般圖片備註不會顯示在 UI，limited 與通道錯誤會顯示。
+正式 edition 為 `is_demo: false`，每則 story 至少一個有 URL 的原始來源。`summary` 是摘要；Facebook story 可另帶可選 `original_text`，前端以純文字在可展開區塊呈現並保留換行，不解讀 HTML。圖片為選用，image 可為 null、省略或具 url/alt 的物件；新增 ChatGPT 非 Facebook story 有可驗證的來源 HTTPS 圖片時可附上，並提供非空白 alt/credit。來源無圖或工具無法可靠取得圖片時，不得因此排除候選或符合既有選稿條件的文章、增加 excluded 或單獨標 limited。既有 image/null 原樣保留；保留原文 HTTPS 圖片 URL 與來源 credit，不下載或存放每日圖片，載入失敗時隱藏圖片。不可宣稱公開圖片均有授權；應保留 attribution。`source_reports` 記錄本通道狀態、完成時間、讀取/收錄/排除數與備註；complete 報告與一般圖片備註不會顯示在 UI，limited 與通道錯誤會顯示。
 
 `is_demo: true` 只用於明確標示的版面示例，不得混入正式 edition。現有歷史期數是正式內容；每日更新不得重寫或刪除既有 stories 與 editions。前端不內嵌新聞。
 

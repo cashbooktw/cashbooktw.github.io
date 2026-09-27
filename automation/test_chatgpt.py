@@ -186,16 +186,21 @@ class ContractTests(unittest.TestCase):
         # A direct validator also rejects an unexplained limited run.
         with self.assertRaises(Invalid): self.validator.pair(self.new, self.index, DAY)
 
-    def test_new_story_requires_image_before_any_remote_write(self):
+    def test_new_story_without_image_is_published(self):
         for missing in (False, True):
             with self.subTest(missing=missing):
                 self.new["stories"][-1]["image"] = None
                 if missing:
                     del self.new["stories"][-1]["image"]
                 api = FakeAPI(self.snap)
-                with self.assertRaisesRegex(Invalid, "New stories require"):
-                    publish(api, self.snap, self.new, lambda: NOW)
-                self.assertEqual(api.calls, [])
+                self.new["source_reports"]["configured_sources"].update(
+                    status="complete", captured=1, included=1, excluded=0, notes=["Source checked; no usable image"])
+                result = publish(api, self.snap, self.new, lambda: NOW)
+                self.assertEqual(result["status"], "verified")
+                edition = loads(api.files[api.ref][PATH])
+                self.assertEqual(edition["stories"][-1], self.new["stories"][-1])
+                report = edition["source_reports"]["configured_sources"]
+                self.assertEqual((report["status"], report["included"], report["excluded"]), ("complete", 1, 0))
 
     def test_new_image_must_have_credit_and_https(self):
         for image in [{"url": "https://example.org/x.png", "alt": "Image"}, {"url": "assets/x.png", "alt": "Image", "credit": "Source"}]:
@@ -217,7 +222,7 @@ class ContractTests(unittest.TestCase):
         result = loads(self.plan()["files"][PATH])
         self.assertEqual(result["stories"][:2], self.old["stories"])
 
-    def test_cli_distinguishes_history_from_candidate(self):
+    def test_cli_accepts_image_null_in_history_and_candidate(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / PATH).parent.mkdir(parents=True)
@@ -230,8 +235,7 @@ class ContractTests(unittest.TestCase):
             history = subprocess.run(command, capture_output=True, text=True)
             self.assertEqual(history.returncode, 0, history.stderr)
             candidate = subprocess.run(command + ["--edition", str(root / PATH)], capture_output=True, text=True)
-            self.assertNotEqual(candidate.returncode, 0)
-            self.assertIn("New stories require", candidate.stderr)
+            self.assertEqual(candidate.returncode, 0, candidate.stderr)
             preserved = subprocess.run(command + ["--edition", str(root / PATH), "--previous-edition", str(root / PATH)], capture_output=True, text=True)
             self.assertEqual(preserved.returncode, 0, preserved.stderr)
 
@@ -311,8 +315,8 @@ class ContractTests(unittest.TestCase):
         result = prepare(snap, candidate, NOW)
         self.assertEqual(loads(result["files"][INDEX])["current"], DAY)
         candidate["stories"][0]["image"] = None
-        with self.assertRaisesRegex(Invalid, "New stories require"):
-            prepare(snap, candidate, NOW)
+        result = prepare(snap, candidate, NOW)
+        self.assertEqual(loads(result["files"][PATH])["stories"], candidate["stories"])
 
     def test_parallel_reads_preserve_order(self):
         barrier = threading.Barrier(6)

@@ -136,9 +136,9 @@ class Validator:
             if story["id"] not in known:
                 require(not story.get("original_text") or story["summary"] != story["original_text"], "Summary cannot be the full original text")
                 image = story.get("image")
-                require(bool(image), "New stories require a source-provided HTTPS image")
-                require(image["url"].startswith("https://") and bool(image["alt"].strip()) and bool(image.get("credit", "").strip()),
-                        "New images need HTTPS URL, nonblank alt and attribution")
+                if image:
+                    require(image["url"].startswith("https://") and bool(image["alt"].strip()) and bool(image.get("credit", "").strip()),
+                            "New images need HTTPS URL, nonblank alt and attribution")
         dates = [e["date"] for e in manifest["editions"]]
         require(len(dates) == len(set(dates)), "Manifest dates must be unique")
         require(dates == sorted(dates, reverse=True), "Manifest dates must be newest first")
