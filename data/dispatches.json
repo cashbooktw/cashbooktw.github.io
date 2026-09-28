@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "date": "2026-09-27",
-  "generated_at": "2026-09-27T01:26:10.790932+00:00",
+  "date": "2026-09-28",
+  "generated_at": "2026-09-28T01:38:42.543961+00:00",
   "quotes": {
     "tw": {
       "date": "2026-09-24",
@@ -36,7 +36,7 @@
     "base": "USD",
     "quote": "TWD",
     "date": "2026-09-27",
-    "rate": 31.786,
+    "rate": 31.774,
     "source": "Frankfurter"
   },
   "errors": {}
