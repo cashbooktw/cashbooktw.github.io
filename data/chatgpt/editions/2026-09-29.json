@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-29",
+  "generated_at": "2026-09-29T07:28:37+08:00",
+  "is_demo": false,
+  "edition_title": "2026-09-29 每日資訊整理",
+  "edition_summary": "本次依固定 master 快照檢查 7 個設定的非 Facebook web_pages，建立今日 ChatGPT edition 並收錄 5 則 stories。Codex Resets、TechCrunch AI、Interconnects、Latent Space及兩個新竹地新聞來源完成既定檢查；The Decoder 有 2 篇 Plus 候選受訂閱限制而無法完整讀取，因此 configured_sources 為 limited。",
+  "stories": [
+    {
+      "id": "techcrunch-amd-world-labs-acquisition-2026-09-28",
+      "title": "AMD 以 82 億美元收購 World Labs，將世界模型研究納入 AI 晶片布局",
+      "summary": "AMD 宣布以 82 億美元收購李飛飛創辦的 World Labs，交易完成後李飛飛將出任 AMD 執行副總裁兼首席科學家。雙方表示，世界模型研究與硬體、系統及運算的緊密整合可加速技術落地；AMD 也可藉此強化機器人、模擬與 AI 專用晶片生態布局。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-28T13:39:00-07:00",
+      "tags": [
+        "AI",
+        "AMD",
+        "World Labs",
+        "世界模型"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+          "published_at": "2026-09-28T13:39:00-07:00"
+        }
+      ]
+    },
+    {
+      "id": "decoder-claude-sonnet-5-5-2026-09-28",
+      "title": "Claude Sonnet 5.5 主打更快、更省成本，部分基準接近 Opus 5.5",
+      "summary": "Anthropic 發布 Claude Sonnet 5.5，宣稱輸出速度較前代提升逾 30%，並透過較低的每任務 token 用量把實際成本最多降低 30%。The Decoder 整理的基準顯示，新模型在代理式程式開發與知識工作上大幅進步，部分測試接近 Opus 5.5；Anthropic 同時加入更嚴格的資安防護。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-28",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "Claude",
+        "Sonnet 5.5"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropics-claude-sonnet-5-5-nearly-matches-opus-5-5-on-benchmarks-while-costing-up-to-30-percent-less-per-task/",
+          "published_at": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "id": "local-hsinchu-city-community-planner-2026-09-28",
+      "title": "新竹市社區規劃師計畫設市區、香山工作站，提供提案與資源媒合",
+      "summary": "新竹市啟動社區規劃師駐地輔導計畫，首次以市區與香山兩個工作站分區服務北區、東區及香山居民。工作站提供環境改善提案諮詢、社造課程、專業顧問與資源媒合，社區團體可依服務區域尋求協助。",
+      "section": "新竹",
+      "source_kind": "web",
+      "published_at": "2026-09-28",
+      "tags": [
+        "新竹市",
+        "社區營造",
+        "公共服務",
+        "都市發展"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Local News - Hsinchu City",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mul7uwlf_c0h54eda",
+          "published_at": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "id": "local-hsinchu-city-vision-exhibition-postponed-2026-09-28",
+      "title": "新竹市城市願景展延至 12 月 5 日，開展仍須確認場館合法安全",
+      "summary": "原訂 10 月 3 日的新竹市城市願景展改排 12 月 5 日至 20 日，原因是文創館尚未取得使用執照且相關法定程序與整備未完成。市府表示，實際開展仍以場館完成程序並符合安全使用條件為前提，民眾安排參觀前需留意後續公告。",
+      "section": "新竹",
+      "source_kind": "web",
+      "published_at": "2026-09-28",
+      "tags": [
+        "新竹市",
+        "活動",
+        "公共安全",
+        "城市願景展"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Local News - Hsinchu City",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mukifsxs_4ii0tjly",
+          "published_at": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "id": "local-hsinchu-county-teachers-day-benefits-2026-09-28",
+      "title": "新竹縣教師節發千元禮券，教師考核獎金提前撥付",
+      "summary": "新竹縣政府在教師節前提供符合資格教育人員每人 1,000 元敬師禮券，並自 9 月 24 日起陸續提前撥付教師考核獎金。縣府同時說明校園環境、教師宿舍、運動場地與老舊廁所等改善經費，以及課輔鐘點費與行政獎勵措施。",
+      "section": "新竹",
+      "source_kind": "web",
+      "published_at": "2026-09-28",
+      "tags": [
+        "新竹縣",
+        "教育",
+        "教師",
+        "校園"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Local News - Hsinchu County",
+          "url": "https://localnews.tw/hsinchuCounty/news/a_mul84d4u_so27bqsy",
+          "published_at": "2026-09-28"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "configured_sources": {
+      "status": "limited",
+      "completed_at": "2026-09-29T07:28:37+08:00",
+      "captured": 26,
+      "included": 5,
+      "excluded": 21,
+      "notes": [
+        "Current run: 一般更新時間窗依上一個 ChatGPT configured_sources 完成時間，為 2026-09-28T07:23:59+08:00 至 2026-09-29T07:28:37+08:00（Asia/Taipei）；Latent Space、The Decoder、地新聞新竹市與新竹縣依設定檢查 2026-09-28 整個日曆日；Codex Resets 不受一般時間窗限制。",
+        "固定快照 config/sources.json 實際列出 7 個 web_pages；依設定陣列順序與各來源列表順序固定 acquisition position，未新增來源、RSS、關鍵字、排除條件或排名規則。",
+        "Codex Resets 已完整讀取設定 status 入口；頁面沒有可驗證的「Reset scheduled」排定時間，僅顯示推測性的 possible reset 資訊，依規則未產生 Codex story。本次 captured=0、included=0、excluded=0。",
+        "TechCrunch AI 已依設定 listing 固定候選順序。一般時間窗內共有 15 篇候選並完成原文讀取；再下一篇可靠發布時間為 2026-09-27T13:34:00-07:00，明確早於本次起點。依最多 1 篇與既有代表性規則，納入 AMD 以 82 億美元收購 World Labs 的文章。本次 captured=15、included=1、excluded=14。",
+        "Interconnects 已檢查設定 archive；最新列出文章日期為 2026-09-22，明確早於本次一般更新時間窗，因此沒有需讀取的時間窗內候選。本次 captured=0、included=0、excluded=0。",
+        "Latent Space 已檢查設定 archive；最新列出文章日期為 2026-09-25，設定要求 2026-09-28 整個 Asia/Taipei 日曆日，因此本次沒有符合日期的候選。本次 captured=0、included=0、excluded=0。",
+        "The Decoder 已依設定 listing 列舉 2026-09-28 的 8 篇候選；其中 6 篇免費候選完成原文讀取，2 篇 Plus 候選（OpenAI 代理抓取 UN 貿易資料、Nvidia AI 代理安全平台）只提供訂閱牆前內容，無法完整讀取，未以片段冒充全文。依最多 1 篇與既有代表性規則，在可完整讀取候選中納入 Claude Sonnet 5.5 文章。本次 captured=8、included=1、excluded=7；因 2 篇候選無法完整讀取，本來源 limited。",
+        "地新聞新竹市已依設定 listing 完整列舉 2026-09-28 的 2 個候選並逐篇完整讀取；兩篇分別提供居民可使用的社區規劃服務，以及城市願景展延期與場館安全資訊，均符合既有公共服務、活動或安全條件，且低於最多 5 篇上限，依列表順序納入。本次 captured=2、included=2、excluded=0。",
+        "地新聞新竹縣已依設定 listing 完整列舉 2026-09-28 的 1 個候選並完整讀取；內容涉及教師福利、考核獎金及校園設施改善，符合既有教育與公共服務條件，納入。本次 captured=1、included=1、excluded=0。",
+        "本次 configured_sources 合計 captured=26、included=5、excluded=21；6 個來源完成預定檢查，The Decoder 因 2 篇 Plus 候選受訂閱限制無法完整讀取而使 status=limited。5 則新 story 均使用 image:null；圖片缺失未作為排除或限制理由。"
+      ]
+    }
+  }
+}
