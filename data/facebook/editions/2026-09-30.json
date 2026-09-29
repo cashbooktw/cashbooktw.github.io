@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-30",
+  "generated_at": "2026-09-30T00:14:59+08:00",
+  "is_demo": false,
+  "edition_title": "2026-09-30 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 10 則，入選 8 則，排除 2 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-b2e6b415c909b9aa225bae50",
+      "title": "保哥分享 OpenAI DevDay 直播時間",
+      "summary": "保哥提醒，OpenAI DevDay 2026 的直播安排在台灣時間 9 月 30 日凌晨 1 點，並表達對活動的期待。貼文未提供發表內容。",
+      "original_text": "OpenAI DevDay [2026] \n台灣時間 2026/9/30 凌晨 1:00 開始直播！\n今天應該是大場面，好期待～ 但只要讓我失望就會立即退訂！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-29T22:48:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe5-1.xx.fbcdn.net/emg1/v/t13/8117330576557676297?url=https%3A%2F%2Fimages.ctfassets.net%2Fkftzwdyauwt9%2F1hA1wdA3Ew7BtDhZsNEJh7%2Fff28ec82a8c0ca53999498e16e7cc2e2%2Fopenai-livestreams.png%3Fw%3D1600%26h%3D900%26fit%3Dfill&fb_obo=1&utld=ctfassets.net&_nc_sid=f93bbc&_nc_ht=external-tpe5-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=pGTA6FBDGj0t-voA84uDvA&_nc_zt=3&_nc_enc=QZmbVgnvPoGAgeJ6z32jYyGGn5nbf9ZoQUlzKr1V4ZuxVkkglzYRwFN6CIH7BYvMPGGgy7F81FMlQPVL&oh=06_Q3_DARbAjDKKDjdSRpHLfzxwb_6roaIWNveY4QAX0UM91xLs&oe=6ABDB331",
+        "alt": "Livestreams",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0B9BEMotGhEHZND6NSAeCtQjQdJNjxtFPzzgkShNPrKE6BvZZ28UyZkCiZYBCYrdVl",
+          "published_at": "2026-09-29T22:48:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-777a16112c83b9dcaaff0588",
+      "title": "保哥分享 Sonnet 5.5 一日使用感受",
+      "summary": "保哥表示，使用 Claude Sonnet 5.5 一整天後，感受到回應較快，其他表現則與 Opus 5.5 相近。這是其個人體驗，貼文未提供測試任務或量化比較。",
+      "original_text": "我用了一整天 Claude Sonnet 5.5 之後，除了回應速度比較快之外，我感受不到跟 Opus 5.5 之間的差異，厲害！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-29T20:05:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid029XampuBFeevUC81N546pTXGywiszJWd7mwSEdwvv9b5GsKMZmvf4d28k4iMLmiYRl",
+          "published_at": "2026-09-29T20:05:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-700cdc47ecf98e5b4805be46",
+      "title": "陶韻智以顧問式課程探討 AI 商業模式與企業轉型",
+      "summary": "陶韻智介紹新的 AI 公開課，計畫以顧問式解題帶學員思考企業轉型與創新商機。他也主張，AI 能讓創業者從一開始就嘗試多語言、海外市場，重新設計商業模式。",
+      "original_text": "我最近一次的AI公開課 開在遠見領導力學院\n在這個全新的課程裡，我想要帶大家來拆解AI時代下的商業模式，協助現有企業思考實作企業AI轉型。有志做創新事業者也可來看怎麼抓AI時代下重分配的新商機。\n這會是個顧問型教學課程的新嘗試。也就是我雖然做老師，但我更是顧問，用顧問手法我們一起來解題。還是個創業者，一起來尋找偉大航道。\n適合誰？你要有idea, AI也蠻熟稔的，來上課，我們一起做AI時代下的大冒險家，衝啊！\n如果AI不熟？還是可以來上，橫豎你都得熟的～\n去搜尋遠見領導力學院吧\n—————-\n 領導影響力學院｜營運實戰｜陶韻智：現在是大膽用 AI 賺錢的時代，第一天就做海外市場\nhttps://youtube.com/shorts/C3VKUC519x8\n「現在是大膽去使用 AI 創造新商機的機會，也就是所謂的賺錢！你可以從第一天就做全球多種語言的生意，商業模式也就起了不同的變化。」",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-29T19:53:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe5-1.xx.fbcdn.net/emg1/v/t13/5506989895095190538?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FtTWSUjWr400%2Foar2.jpg%3Fsqp%3D-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB%26rs%3DAOn4CLCe6tx_NTSyEl0uq7ckxUsz_OJsnQ%26usqp%3DCCk&fb_obo=1&utld=ytimg.com&_nc_sid=f93bbc&_nc_ht=external-tpe5-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p278x430_q75_tt6&ccb=18-1&_nc_gid=pGTA6FBDGj0t-voA84uDvA&_nc_zt=3&oh=06_Q3_DARDNv0z7au9JQ5kbbblMwIAGI40ZgxkI4wzY9iJVcYim&oe=6ABDBA52",
+        "alt": "領導影響力學院｜營運實戰｜陶韻智：每天測一個產品點子，用 AI 把市場搶回來",
+        "credit": "陶韻智／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid0ra9QEe9dqvbMnZeE7AshVvJyJkdfYceVByu26GcrKhwpPfDT2aZ5ujXcqpmgGP9Ml",
+          "published_at": "2026-09-29T19:53:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-5c27f39c6190d98d54cead9b",
+      "title": "保哥批評 AI 額度縮減公告的溝通方式",
+      "summary": "保哥以諷刺語氣評論 Tibo 的額度調整公告，質疑業者將額度減半包裝成保留使用自由、提升單位價值。他關注的是付費用戶實際可用額度與公告說法的落差；文中的戲劇化對話不作為官方逐字引述。",
+      "original_text": "現在這幫科技大佬發公告，簡直把「說話的藝術」練到了出神入化。\n今天看到賽博義父 Tibo 發文了「親愛的用戶，我們決定——把你的額度直接砍掉一半！」\n換作一般商家，早就等著被罵爆了吧！\n他不一樣，他話鋒一轉：\n「但我為什麼要砍你一半呢？因為我太在乎你了啊！」\n他說：「各位，如果我不砍掉這一半，我就得限制你每五個小時只能用一次。你說，我怎麼忍心限制你的自由？所以，我決定讓你自由自在地……花原本雙倍的錢。」\n（觀眾笑）\n「而且你們要往好處想啊，現在模型變聰明了，以前問一個問題要花一塊錢，現在只要五毛！這代表什麼？這代表雖然我給你的錢變少了，但你實際能幹的活變多了！你花的每一分錢，價值都在提升！」\n我坐在螢幕前算盤打得劈啪響，整個人都給他盤明白了：\n合著我現在是花兩百美金，買了你一百美金的額度，然後你跟我說，因為通貨緊縮，我手裡剩下的一百美金其實跟兩百美金一樣大？\n這不叫降價，這叫「AI 式通膨」！\n最絕的是最後那句話：\n「大家不要慌，明天我還會宣佈更多超級棒的新功能，保證讓你們驚喜萬分！但我今天得先寫信告訴你這個壞消息——免得明天排山倒海的好消息，把你給砸暈了！」\n你聽聽，這叫人話嗎？\n他怕我明天吃滿漢全席太撐，今天先上門把我冰箱給砸了！還情真意切地落款：「您真誠的 Tibo。」\n我真謝謝你啊 Tibo，下次要搶錢的時候，麻煩別挑在月底！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-29T19:41:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe5-1.xx.fbcdn.net/emg1/v/t13/4484699337523298042?url=https%3A%2F%2Fjf.x.com%2Fimages%2Fpost%2F2104823812042940713.png&fb_obo=1&utld=x.com&_nc_sid=f93bbc&_nc_ht=external-tpe5-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=pGTA6FBDGj0t-voA84uDvA&_nc_zt=3&oh=06_Q3_DAUnS8AmCbzfTxMgyyY7NPw9I-0K7c9Iolzjt145Aofc9&oe=6ABDDBDA",
+        "alt": "Tibo (@thsottiaux) on X",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0J4JhQD2UbVxA9Z7v7DMxJLCu7V6f11CmwuaEKnoA356NPdQozsoTzm8tu4mxCPsCl",
+          "published_at": "2026-09-29T19:41:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-410dd00c17c224679d7921f4",
+      "title": "Ant 談 Coding Agent 節省用量：應看完成任務的總成本",
+      "summary": "Ant 分享自己調整輸出處理方式的經驗，強調過濾器即使減少單次輸出，也可能因增加代理往返而耗費更多用量與時間。他稱個人比較測試省下大量輸出相關 Tokens，但明確限定討論範圍為輸出過濾，不能視為整體任務用量的降幅。",
+      "original_text": "意外的軟體工程習慣，讓 Coding Agent 省了不少 Tokens\n早期跟著流行，也研究過如 rtk [1] 等宣稱可節省大量 Tokens 的輸出過濾器，雖然當下就移除了。因為這種工具支援的指令有限，像我常用的 make 就不支援 (好啦，承認我老，還在用這老工具… 但 make 真香)。\n如《RTK reports huge token savings, but our cost benchmarks disagree》（2026-09-11) [2] 這篇所述，他們發現 rtk 反而浪費了更多的 Tokens，主要不是它「當下」省了多少 Tokens，而是它可能讓 Agent 進行更多輪對話才完成任務 (耗 Tokens + 耗 Time)。\n為了確認我的成效，跑了幾輪與 rtk 的比較測試，實際平均讓 Tokens 省了 99.75%，如圖 ，而且沒有另外讓 Agent 多跑幾輪的發現。注意，Coding Agent 除了輸出過濾器，還包括讀取文件內容 / 搜尋程式碼 / Prompt 與 Skill / …，這裡談的只是輸出過濾器，因為 rtk 主做這個。有興趣的話，這個可以另開話題聊。\n於是，我把經驗總結出了 Skill (但不能是 Prompt-based Skill)，並讓 Coding Agent 與另一產品的 Coding Agent 做師徒交流，徒弟很快也接納了這個 Skill。跑了一陣子，徒弟說確實省了大量 Tokens，這下暫時不用困擾 Tokens 一下就用完了。\n一直以來，我安裝的 Skill 都很少，更多的都是基於產業或產品特性而自己經驗出來的 Skill。隨著 Agent 愈來愈強，多數 Skill 或工具都會變成負資產。\n[1] https://github.com/rtk-ai/rtk\n[2] https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-29T19:13:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/825268335_2207799319792341_3738670795870402422_n.png?stp=dst-jpg_tt6&cstp=mx1850x400&ctp=s1850x400&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=yuxXuE_rNIIQ7kNvwGZHY9P&_nc_oc=AdovvfFlsOhQze-xoegyiUJRfWKhCBl5tHlsxOe-EguGUygsArOx7ldwyBhS03o_NJlYSw7jCk_KZZI4Uc2XonPZ&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=RMM9jw3i0I8MBu613U7xWw&_nc_ss=7b2a8&oh=00_AQPFXHoqMCYyv2YeZpnzHcnSQaTXBT211gnScXwPXCA_lA&oe=6AC1BAB7",
+        "alt": "Ant Yi-Feng Tzeng的原貼文配圖",
+        "credit": "Ant Yi-Feng Tzeng／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid08GrGM9RWnkw3VF2VVDQZJeQsPp2ZjWcRKxLeZV2iajxRonQw3SqLEQn1eSe5mGJLl",
+          "published_at": "2026-09-29T19:13:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-1932e09ec85957c11af8a49d",
+      "title": "保哥轉述 AMD 收購 World Labs 與世界模型布局",
+      "summary": "保哥在貼文中轉述，AMD 擬以 82 億美元全股票交易收購 World Labs，交易仍待監管批准。他將此布局連結到世界模型、機器人合成訓練資料，以及模型與硬體共同最佳化的需求；本篇僅整理其正文說法，未另行核實交易公告。",
+      "original_text": "AMD 宣布以 82 億美元收購 World Labs。\n全股票交易。\n收購完成之後，創辦人李飛飛會加入 AMD，擔任執行副總裁兼首席科學家。\n李飛飛是史丹佛大學電腦科學教授。以前主導 ImageNet 資料庫跟圖像識別競賽，推動了整波電腦視覺突破。2024 年她創辦 World Labs，專門做世界模型。\n她的觀點是，AI 只讀文字沒辦法成為真正的通用智慧。\n還得理解真實物理世界。物體在哪裡、空間怎麼排布、東西怎麼動。\n世界模型現在沒有統一定義。從能看懂圖像的語言模型，到能生成並持續運行逼真虛擬環境的系統，都有人叫它世界模型。\nWorld Labs 的第一款產品 Marble 屬於後者。輸入文字或圖片，能生出可以在裡面走動查看的 3D 場景。\n官方定了兩個用途：做娛樂內容，還有幫機器人搭訓練用的虛擬環境。\nAMD 為什麼要買一家做模型的公司？\n在 AI 晶片市場，主要對手輝達除了賣晶片，還提供配套的軟體跟模型。像輝達已經推出 Cosmos 系列開放權重模型，開發者買輝達晶片，順手就能拿這些工具用。\nAMD 公開發布過的只有文字和影片模型。\n買下 World Labs 能補上這塊短板。用 AMD 顯卡的開發者，以後更有可能拿到針對自家硬體最佳化過的世界模型。\nAMD 也提到，搞清楚最前沿的模型怎麼跑，會直接影響下一代晶片怎麼設計。\n現在做 AI，模型研究、系統跟算力三方面必須緊密配合。李飛飛在宣布交易的文章裡寫，團隊拿出了成果，接下來要擴大規模、接觸更多人，也要離硬體更近。\n兩家公司本來就有合作。去年在模型訓練和推論最佳化上建立合作關係，今年初 CES 發表會李飛飛也去幫 AMD 站台。\n世界模型受重視，主要是機器人缺訓練資料。\n大語言模型能爬網路上海量文字來學，機器人要學的是在真實環境裡怎麼動、怎麼操作，這種資料很少，採集成本也高。\n世界模型能批量生成逼真虛擬場景讓機器人在裡面練，產出的資料叫合成資料。自動駕駛車、工廠機器人，還有特斯拉跟 Figure 在弄的通用人形機器人，都要靠這種資料。\n這筆交易還需要監管部門批准，預計今年底前完成。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-29T11:41:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe5-1.xx.fbcdn.net/emg1/v/t13/14161485987634026206?url=https%3A%2F%2Fwww.worldlabs.ai%2Fapi%2Fopengraph-image%3FimageUrl%3D%2Fimages%2Fblog%2Fglobe_chip.png%26title%3DWorld%2520Labs%2520is%2520Joining%2520AMD&fb_obo=1&utld=worldlabs.ai&_nc_sid=c63717&_nc_ht=external-tpe5-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=RMM9jw3i0I8MBu613U7xWw&_nc_zt=3&oh=06_Q3_DAazAqx52ZFBIhe0MllELvn_SQpFvpcYs5ExrWzZLkEke&oe=6ABDC3EF",
+        "alt": "World Labs is Joining AMD",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0RrmEMrtkq8nTME4v245YLYrxxEwCmubLGbQV12VrCrwUaoxoQWm2BuJr6tYZ2x7fl",
+          "published_at": "2026-09-29T11:41:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-07529262b7a21bdba7c1fcc4",
+      "title": "保哥介紹 Sonnet 5.5 的速度與程式能力改進",
+      "summary": "保哥介紹 Claude Sonnet 5.5，稱其生成速度與完成任務效率提升，Token 定價則維持不變。貼文重點包括程式與終端機操作能力、電腦操作評測及新增安全防護；相關效能說法是作者轉述，並非本次實測結果。",
+      "original_text": "Anthropic 今天正式推出全新模型 Claude Sonnet 5.5。\n這款新模型主打速度更快，同時性價比也大幅提升。\n根據官方數據，它的生成速度比前一代快了三成以上。\n雖然 Token 定價維持不變，但因為它完成任務需要的步驟更少，所以實際花費最高可以省下三成。\n這次最引人注目的突破，在於寫程式與終端機操作能力。\n在終端機寫程式測試中，它的成績從前一代的 10.3% 一口氣暴衝到 70.6%，表現相當驚人。\n在日常知識工作、圖表辨識與電腦操作評測上，它甚至逼近旗艦款 Opus 5.5 的水準。\n官方甚至提到，它是第一個只看遊戲截圖就成功破關《Pokémon Red》的 Sonnet 模型。\n在安全性方面，新模型首次加入了針對進階資安威脅的專門防護，同時也強化了防範模型蒸餾的機制。\n目前 Claude Sonnet 5.5 已經在 Claude 平台以及各大主要雲端服務同步上線。\n對於需要高強度寫程式、製作精美文件與日常自動化任務的使用者來說，這無疑是一個值得立刻嘗試的全新主力選擇。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-29T08:09:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe5-1.xx.fbcdn.net/emg1/v/t13/13168783501078141798?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Feaa6046f4ae8c88e368c3c530c4c1312f7ff6f2e-1200x630.jpg&fb_obo=1&utld=anthropic.com&_nc_sid=c63717&_nc_ht=external-tpe5-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=RMM9jw3i0I8MBu613U7xWw&_nc_zt=3&oh=06_Q3_DAda2nZMIYOzBX2O9kBVWOD56S50IhFCl6X1ER_xv-NSz&oe=6ABDB342",
+        "alt": "Introducing Claude Sonnet 5.5",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文配圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02fLhwmjtvXM8DQxX87cfNYj7WfpD6FbT7z88A5fnC6XvHGUdy3btiFf3sJWFRJWcAl",
+          "published_at": "2026-09-29T08:09:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-56f92dccad5c9d7aa4f76ec5",
+      "title": "高見龍談 AI 時代的開發重心：需求、規格與判斷",
+      "summary": "高見龍分享使用 AI 開發 ezBundle 後的角色轉變，將更多心力放在釐清需求與撰寫規格，並採用規格驅動開發。他認為多年程式經驗仍能支撐品質判斷，也因此調整了公司的 coding 課程方向。",
+      "original_text": "同樣是 Ruby on Rails 的愛好者，我的體感來得比 DHH 早一些，大概在 2025 年七、八月開發 ezBundle 的時候就有這種感受，那也是我開始每月課金 USD 200 的時候。\n一邊看著 AI 快速生成程式碼，一邊懷疑自己的角色，同時也重新評估我們正在開的 coding 課程。最後不得不接受事實，調整自己的心態，也調整公司課程的方向。\n不是 coding 不重要了，而是可以把力氣放在更值得的地方，例如把需求想清楚、把規格寫明白，這也是我最近都用 SDD（Spec-Driven Development）開發的原因，用得超開心的。過往近 30 年的 coding 經驗值也沒有浪費，反而會化作 AI 時代的判斷 & 養分，因為總得先知道好的程式長什麼樣子，才寫得出好的規格。\n寫了這麼多年 Ruby，我還是很喜歡它，只是現在寫程式的方式不一樣了。與其擔心被取代，不如想想怎麼讓自己站在更好的位置上。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-29T02:37:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid02UsiY9K5YeZJsfSuPELfi217hjM9Vu5LGQFmyxEspEWfpLujvFr7nU1DjUeqKeMR1l",
+          "published_at": "2026-09-29T02:37:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-09-29T16:14:57.371Z",
+      "captured": 10,
+      "included": 8,
+      "excluded": 2,
+      "notes": []
+    }
+  }
+}
