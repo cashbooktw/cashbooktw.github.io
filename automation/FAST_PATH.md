@@ -1,6 +1,6 @@
 # ChatGPT fast path：評估與操作
 
-維護評估日期：2026-09-23。只改善公開非 Facebook 通道更新；不改 schema v1、既有選稿規則、來源數量、歷史資料或前端。本次維護不發布新聞，也不啟用新排程。
+維護評估日期：2026-09-23；可靠性補強：2026-09-29。只改善公開非 Facebook 通道更新；不改 schema v1、既有選稿規則、來源數量、歷史資料或前端。本次維護不發布新聞，也不啟用新排程。
 
 ## 六項建議的結論
 
@@ -54,6 +54,8 @@ python -m unittest discover -s automation -p 'test_chatgpt.py' -v
 
 ## 取得快照、人工閱讀、準備計畫
 
+快照包含 UPDATE_RULES、FAST_PATH、SCHEDULED_TASK_PROMPT、sources、兩份 schema、index 及今日 edition，全部讀取同一 commit SHA。新版 updater 拒絕缺少契約檔的舊快照；請重新執行 snapshot，不手動補檔。今日 edition 只有明確 404 可視為不存在；JSON null 或格式損壞必須停止，不能覆寫為新期數。
+
 ```sh
 python automation/update_chatgpt.py snapshot --out /tmp/chatgpt-snapshot.json
 # 執行者讀快照中的規則與來源，並行檢查來源、完整讀候選原文。
@@ -66,15 +68,17 @@ python automation/update_chatgpt.py prepare \
 
 候選 edition 必須以快照今日資料為基礎：保留既有 stories 的位置、id、所有非 sources 欄位，以及 sources 的原有前綴；僅追加新 sources 與新 stories。圖片為選用：有可驗證的來源 HTTPS 圖片 URL 時，可填入 `image.url`、非空白 `alt` 與 `credit`；只確認 URL 為來源頁面提供的 HTTPS URL，不額外判定授權。來源無圖片、圖片無法驗證或工具無法可靠取得 URL 時，使用 `image:null` 或省略 image；不得因此排除候選、阻止符合既有選稿條件的文章收錄、增加 excluded 或單獨標 limited。文章全文與來源檢查的既有完整性要求不變。既有 story 的 image/null 不回寫。首次當日尚無 edition時，確認 404 視為正常 absent 狀態，直接依 index/schema 提供完整新期數，不列 failure/limitation。不要手動修改快照；它必須來自固定 master SHA 的完整讀取。
 
-`source_reports.configured_sources` 填本次完成時間、狀態、數量與各來源實際限制。更新器保留所有舊 notes，將先前報告的時間/狀態/數量用有標籤的歷史紀錄追加至 notes，使用較新 completed_at 的報告作頂層計數。舊次 limited 不被抹除，也不冒充本次狀態。內容、報告皆未變則回傳 unchanged；新一次檢查要有新的實際 completed_at。
+`source_reports.configured_sources` 填本次完成時間、狀態、數量與各來源實際限制。更新器保留所有舊 notes，將先前報告的時間/狀態/數量用有標籤的歷史紀錄追加至 notes，使用較新 completed_at 的報告作頂層計數。舊次 limited 不被抹除，也不冒充本次狀態。首次建立 edition 同樣以原文 URL 去重，保留先取得的 story id／內容並追加可驗證來源。內容、報告皆未變則回傳 unchanged；新一次檢查要有新的實際 completed_at。
 
 建立 tree 前，僅檢查新增 stories 實際附上的圖片；prepare/publish 接受 image:null 或省略 image，但會拒絕非 HTTPS 或 alt/credit 空白的圖片。腳本不會替執行者驗證圖片出處，Schema 通過不能取代來源查核。
+
+publish 在 ref 寫入前及回報 unchanged 前會再次檢查 Taipei 日期，防止 prepare 後的網路操作跨日。這是客戶端送出前檢查，不宣稱能控制伺服器的實際接收時刻。
 
 prepare 只產生兩個允許路徑的 JSON 字串與 Git tree 基準資料，沒有網路寫入。它使用實際執行時間並拒絕改寫過去日期；跨 Taipei 午夜需重新取得快照與蒐集來源。相同快照、候選與注入的測試時鐘會產生相同結果；實際執行時間與 GitHub commit metadata 本來就會隨執行改變。
 
 ## 發布：connector 或明確授權的本機 CLI
 
-ChatGPT 使用 GitHub connector 時，依計畫建立帶 base_tree 的單一 tree（兩個 entry 都是 mode 100644、type blob、content），再建立單 parent commit。立即重讀 master；未變才以 force:false 更新 ref。若 connector 不支援必要 Git Data 動作，停止，不用逐檔更新替代。connector 的授權不會自動變成本機 token。
+ChatGPT 使用 GitHub connector 時，依計畫建立帶 base_tree 的單一 tree（兩個 entry 都是 mode 100644、type blob、content），再建立單 parent commit。立即重讀 master，使用 compare_commits 確認候選 ahead_by=1、behind_by=0、merge base 為目前 master，再讀回候選 commit 核對 tree／唯一 parent。更新前再次確認 Taipei 日期未跨日，才以最小必要參數 update_ref（repository_full_name、branch_name=master、候選 sha、force:false）更新。若 connector 不支援必要 Git Data 動作，停止，不用逐檔更新替代。connector 的授權不會自動變成本機 token。
 
 在已授權、可連 GitHub API 的本機環境，憑證只能放 GH_TOKEN 或 GITHUB_TOKEN 環境變數，需該 repository 的 Contents write 權限。不要貼到對話、命令列參數、JSON、Git 或 logs。明確發布命令為：
 
@@ -85,7 +89,7 @@ python automation/update_chatgpt.py publish \
   --confirm-master
 ```
 
-寫入目標固定 cashbooktw/cashbooktw.github.io 的 master，且只有當日 ChatGPT edition 和 index。GitHub 回應有限時與大小限制，不跟隨 redirect 傳遞憑證。只有確認 HEAD 競爭才重讀合併，初次之外最多三次 conflict retry。connector safety denial、403/權限拒絕、branch protection、一般 422/validation error 等非競爭錯誤直接回報，不進 conflict retry。若 connector 寫入被拒，只有執行環境已存在明確授權的 `GH_TOKEN` 或 `GITHUB_TOKEN` 時才可改走上述 local `publish`；connector 授權不能當成本機 token。不得改用 Contents API 順序寫入 fallback。規則、sources 或 schema 變更時停止重做來源檢查；不強推、不清理、不跨通道去重。
+寫入目標固定 cashbooktw/cashbooktw.github.io 的 master，且只有當日 ChatGPT edition 和 index。GitHub 回應有限時與大小限制，不跟隨 redirect 傳遞憑證。只有確認 HEAD 競爭才重讀合併，初次之外最多三次 conflict retry。connector safety denial、403/權限拒絕、branch protection、一般 422/validation error 等非競爭錯誤直接回報，不進 conflict retry。Connector safety denial 應立即結束本次執行，不重試該攔截，不改參數、切換工具或憑證繞過。上述 local `publish` 是發布前事先選定、具明確本機憑證授權的獨立方式，不是被拒後的 fallback；connector 授權不能當成本機 token。不得改用 Contents API 順序寫入 fallback。固定快照中的規則、FAST_PATH、SCHEDULED_TASK_PROMPT、sources 或 schema 變更時停止重做來源檢查；不強推、不清理、不跨通道去重。
 
 提交後核對 commit 的 tree/parent、兩檔實際內容與目前 master。master 若因其他提交前進，還須確認祖先關係；若資料已被再次改動或驗證期間又前進，回報 unverified 而非假成功。ref 寫入逾時可能是 GitHub 已接受但回應丟失，應帶 commit SHA 回報未確認，不盲目再寫。
 
@@ -93,6 +97,6 @@ python automation/update_chatgpt.py publish \
 
 ## 測試與能力邊界
 
-離線測試覆蓋 schema formats、非法 JSON、索引一致性、圖片/來源/歷史保留、credentials、並行順序、零變更、原子寫入、HEAD 檢查後的競爭、三次重試上限及回讀失敗。Fake API 測試不等於已完成 live CLI 整合測試；實際發布仍需上述回讀。
+離線測試覆蓋 schema formats、非法 JSON（含數值溢位）、空索引／非 UTF-8 拒絕、首次建刊去重、快照完整性／操作規則變更、發布途中跨日、回應遺失不重送、索引一致性、圖片/來源/歷史保留、credentials、並行順序、零變更、原子寫入、HEAD 檢查後的競爭、三次重試上限及回讀失敗。Fake API 測試不等於已完成 live CLI 整合測試；實際發布仍需上述回讀。
 
 腳本不會替執行者證明已讀全文、來源清單已窮盡、摘要事實正確、發布時間可驗證或選稿符合原規則。精確 URL 去重不會猜測事件語意；同事件不同 URL 由編輯保留同一既有 id 並追加已驗證 sources。secrets 掃描是保守的常見模式檢查，不是完整 DLP 或無秘密保證。沒有加入無人值守採集器、排程、GitHub Actions 自動發布或自動付費牆處理。

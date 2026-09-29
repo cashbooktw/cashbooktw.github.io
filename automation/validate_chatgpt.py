@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import re
 import sys
 from datetime import datetime
@@ -40,8 +41,14 @@ def loads(text: str):
     def constant(_):
         raise Invalid("JSON contains a non-finite number")
 
+    def finite_float(value):
+        number = float(value)
+        require(math.isfinite(number), "JSON contains a non-finite number")
+        return number
+
     try:
-        return json.loads(text, object_pairs_hook=pairs, parse_constant=constant)
+        return json.loads(text, object_pairs_hook=pairs, parse_constant=constant,
+                          parse_float=finite_float)
     except json.JSONDecodeError as error:
         raise Invalid(f"Invalid JSON at line {error.lineno}, column {error.colno}") from None
 
@@ -166,6 +173,9 @@ def main() -> int:
     try:
         manifest = read_json(args.index or args.root / INDEX)
         validator = Validator.from_root(args.root)
+        # Validate before enumeration: an empty/malformed manifest must not pass --all.
+        scan_secrets(manifest)
+        validator.schema(manifest, 1)
         days = [e["date"] for e in manifest["editions"]] if args.all else [args.date or manifest["current"]]
         require(not args.all or not (args.edition or args.previous_edition or args.previous_index), "--all cannot use candidate/baseline overrides")
         for day in days:
@@ -177,7 +187,7 @@ def main() -> int:
                            read_json(args.previous_index) if args.previous_index else None)
         print(f"Validated {len(days)} ChatGPT edition(s), schemas/formats and manifest agreement")
         return 0
-    except (Invalid, OSError, KeyError, TypeError) as error:
+    except (Invalid, OSError, KeyError, TypeError, ValueError) as error:
         print(f"Validation failed: {error.__class__.__name__}: {error if isinstance(error, Invalid) else 'unreadable or malformed input'}", file=sys.stderr)
         return 1
 

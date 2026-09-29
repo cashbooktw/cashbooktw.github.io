@@ -25,8 +25,9 @@ from validate_chatgpt import (INDEX, TAIPEI, Invalid, Validator, edition_path,
                               require, scan_secrets)
 
 REPO = "cashbooktw/cashbooktw.github.io"
-CONTRACTS = ("automation/UPDATE_RULES.md", "config/sources.json",
-             "schema/edition.schema.json", "schema/manifest.schema.json")
+SCHEMAS = ("schema/edition.schema.json", "schema/manifest.schema.json")
+CONTRACTS = ("automation/UPDATE_RULES.md", "config/sources.json", *SCHEMAS,
+             "automation/FAST_PATH.md", "automation/SCHEDULED_TASK_PROMPT.md")
 
 
 class APIError(RuntimeError):
@@ -109,11 +110,13 @@ def unpack(snap):
     require(bool(re.fullmatch(r"[0-9a-f]{40}", snap["tree"])), "Invalid snapshot tree")
     files = snap["files"]
     path = edition_path(snap["date"])
-    validator = Validator(loads(files[CONTRACTS[2]]), loads(files[CONTRACTS[3]]))
+    require(all(isinstance(files.get(p), str) for p in CONTRACTS),
+            "Snapshot lacks required contracts; take a new snapshot")
+    validator = Validator(*(loads(files[p]) for p in SCHEMAS))
     manifest = loads(files[INDEX])
     validator.schema(manifest, 1)
     old = loads(files[path]) if files[path] is not None else None
-    if old:
+    if files[path] is not None:
         validator.pair(old, manifest, snap["date"], previous=old)
     else:
         require(not any(e["date"] == snap["date"] for e in manifest["editions"]), "Indexed edition is missing")
@@ -141,11 +144,11 @@ def merge_report(old, new):
 
 
 def merge_edition(current, candidate):
-    if current is None:
-        return deepcopy(candidate)
-    require(current["date"] == candidate["date"], "Cannot merge different dates")
+    if current is not None:
+        require(current["date"] == candidate["date"], "Cannot merge different dates")
     result = deepcopy(candidate)
-    result["stories"] = deepcopy(current["stories"])
+    # First editions need the same URL deduplication as append-only updates.
+    result["stories"] = deepcopy(current["stories"]) if current is not None else []
     for incoming in candidate["stories"]:
         urls = {s["url"] for s in incoming["sources"]}
         matches = [s for s in result["stories"] if s["id"] == incoming["id"] or urls.intersection(x["url"] for x in s["sources"])]
@@ -163,16 +166,23 @@ def merge_edition(current, candidate):
             if source["url"] not in known:
                 existing["sources"].append(deepcopy(source))
                 known.add(source["url"])
-    result["source_reports"] = {"configured_sources": merge_report(
-        current["source_reports"]["configured_sources"], candidate["source_reports"]["configured_sources"])}
+    if current is not None:
+        result["source_reports"] = {"configured_sources": merge_report(
+            current["source_reports"]["configured_sources"], candidate["source_reports"]["configured_sources"])}
     return result
+
+
+def check_run_day(day, now):
+    require(now.tzinfo is not None and now.utcoffset() is not None,
+            "Execution time must include a timezone")
+    require(day == now.astimezone(TAIPEI).date().isoformat(),
+            "Snapshot expired across Taipei midnight; recollect sources")
 
 
 def prepare(snap, candidate, now=None):
     now = now or datetime.now(TAIPEI)
-    require(now.tzinfo is not None, "Execution time must include a timezone")
-    day = now.astimezone(TAIPEI).date().isoformat()
-    require(snap["date"] == day, "Snapshot expired across Taipei midnight; recollect sources")
+    day = snap["date"]
+    check_run_day(day, now)
     validator, old, manifest = unpack(snap)
     validator.schema(candidate, 0)
     scan_secrets(candidate)
@@ -246,6 +256,7 @@ def publish(api, original, candidate, clock=lambda: datetime.now(TAIPEI)):
         if plan["unchanged"]:
             if api.head() != latest["head"]:
                 continue
+            check_run_day(plan["date"], clock())
             return {"status": "unchanged", "commit": latest["head"], "date": plan["date"]}
         tree = api.request("POST", "/git/trees", {
             "base_tree": plan["base_tree"],
@@ -254,6 +265,11 @@ def publish(api, original, candidate, clock=lambda: datetime.now(TAIPEI)):
             "message": f"Update ChatGPT edition {plan['date']}", "tree": tree, "parents": [plan["head"]]})["sha"]
         if api.head() != plan["head"]:
             continue
+        # Network writes above can cross midnight after prepare validated the date.
+        try:
+            check_run_day(plan["date"], clock())
+        except Invalid as error:
+            raise Invalid(f"{error}; candidate commit {sha}; ref was not updated by this attempt") from None
         try:
             api.request("PATCH", "/git/refs/heads/master", {"sha": sha, "force": False})
         except APIError as error:
