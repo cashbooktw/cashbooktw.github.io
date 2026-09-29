@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-30",
+  "generated_at": "2026-09-30T07:32:27+08:00",
+  "is_demo": false,
+  "edition_title": "2026-09-30 每日資訊整理",
+  "edition_summary": "本次依固定 master 快照檢查 7 個設定的非 Facebook web_pages，收錄 3 則 stories。Latent Space 有 1 篇時間窗內候選在同一 canonical URL 額外重試 2 次後仍無法完整讀取；地新聞新竹市的主要 listing 連續讀取失敗，fallback 只取得 3 天前快取，無法證明 2026-09-29 清單覆蓋，因此 configured_sources 為 limited。",
+  "stories": [
+    {
+      "id": "techcrunch-gpt-6-1-sol-2026-09-29",
+      "title": "OpenAI 發布 GPT-6.1 Sol，主打接近 Astra 表現與較低成本",
+      "summary": "OpenAI 發布 GPT-6.1 Sol，定位於代理式程式開發、電腦操作與專業工作。TechCrunch 引述 OpenAI 表示，Sol 在多項能力上接近尚未推出的 GPT-6.1 Astra，但標準輸入與輸出 token 價格約為 Astra 的五分之一；模型也加入程式開發、除錯、文件與多步驟任務等改進。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-29T10:15:00-07:00",
+      "tags": [
+        "AI",
+        "OpenAI",
+        "GPT-6.1 Sol",
+        "模型"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/",
+          "published_at": "2026-09-29T10:15:00-07:00"
+        }
+      ]
+    },
+    {
+      "id": "latent-space-claude-code-next-era-2026-09-29",
+      "title": "Claude Code 團隊談代理工作流、可變軟體與安全邊界",
+      "summary": "Latent Space 訪談 Anthropic 的 Thariq Shihipar，討論 Claude Code 從 CLI 擴展到 Projects、Claude Tag、Mods 與多代理協作的方向，以及提示設計與模型 effort 對工程流程的影響。訪談後段聚焦代理安全，包括沙箱、提示注入、工具權限、模型路由與 Auto Mode，並討論更強代理如何擴大企業資料與基礎設施的攻擊面。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-29",
+      "tags": [
+        "AI",
+        "Claude Code",
+        "代理",
+        "AI 工程"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Latent Space",
+          "url": "https://www.latent.space/p/thariq",
+          "published_at": "2026-09-29"
+        }
+      ]
+    },
+    {
+      "id": "decoder-chatgpt-work-platform-2026-09-29",
+      "title": "OpenAI 擴充 ChatGPT 協作、自動化與外部工具整合",
+      "summary": "OpenAI 在 DevDay 公布多項 ChatGPT 更新，包括共享工作區 Space、協作文件 Pages、共同製作投影片、開放外部開發者使用的 plugin 系統，以及 Slack、Microsoft Teams 整合。新功能也透過 MCP Events 與 Team Tasks 支援事件觸發與週期性工作，並加入企業市集與「Sign in with ChatGPT」等生態系整合。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-29",
+      "tags": [
+        "AI",
+        "OpenAI",
+        "ChatGPT",
+        "自動化"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openais-reveals-a-new-chatgpt-that-looks-less-like-a-chatbot-and-more-like-an-operating-system/",
+          "published_at": "2026-09-29"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "configured_sources": {
+      "status": "limited",
+      "completed_at": "2026-09-30T07:32:27+08:00",
+      "captured": 32,
+      "included": 3,
+      "excluded": 29,
+      "notes": [
+        "Current run: 一般更新時間窗依上一個 ChatGPT configured_sources 完成時間，為 2026-09-29T07:28:37+08:00 至 2026-09-30T07:32:27+08:00（Asia/Taipei）；Latent Space、The Decoder、地新聞新竹市與新竹縣依設定檢查 2026-09-29 整個日曆日；Codex Resets 不受一般時間窗限制。",
+        "固定快照 config/sources.json 實際列出 7 個 web_pages；依設定陣列順序與各來源列表順序固定 acquisition position，未新增來源、RSS、關鍵字、排除條件或排名規則。",
+        "Codex Resets 已完整讀取設定 status 入口；頁面僅顯示「Possible reset」預測，沒有可驗證的「Reset scheduled」排定時間，依規則未產生 Codex story。本次 captured=0、included=0、excluded=0。",
+        "TechCrunch AI 已依設定 listing 固定候選順序。一般時間窗內共有 19 篇候選並完成公開原文讀取；再下一篇可靠發布時間為 2026-09-28T14:29:00-07:00，明確早於本次起點。依最多 1 篇與既有代表性規則，納入 GPT-6.1 Sol 發布文章。本次 captured=19、included=1、excluded=18。",
+        "Interconnects 已檢查設定 archive；最新列出文章日期為 2026-09-22，明確早於本次一般更新時間窗，因此沒有需讀取的時間窗內候選。本次 captured=0、included=0、excluded=0。",
+        "Latent Space 已依設定 archive 固定 2026-09-29 的 3 個可能候選位置。其中 Opus 5.5 AINews 與 Claude Code 訪談可完整讀取，Claude Code 訪談並有完整文字稿；AMD／World Labs AINews 的 canonical URL 初次讀取失敗後，對同一 URL 額外重試 2 次仍無法取得公開全文。依最多 1 篇與既有代表性規則，在已完整讀取候選中納入 Claude Code 訪談；因仍有 1 篇時間窗內候選無法完整查核，本來源 limited。本次 captured=3、included=1、excluded=2。",
+        "The Decoder 已依設定 listing 列舉 2026-09-29 的 10 篇候選，必要分頁的第 2 頁由 2026-09-27 開始，確認沒有更多 2026-09-29 候選；10 篇公開原文均完成讀取，其中 Florida 短訊初次讀取失敗後於同一 canonical URL 重試成功。依最多 1 篇與既有代表性規則，並避免與 TechCrunch 已選 GPT-6.1 Sol 的同事件重複，納入 ChatGPT 協作、自動化與工具整合文章。本次 captured=10、included=1、excluded=9。",
+        "地新聞新竹市的首選 /hsinchuCity/news listing 初次讀取失敗後額外重試 2 次仍失敗；設定的 fallback /hsinchuCity/ 之後可讀，但工具只取得 3 天前快取，頁面內容最新明確日期停在 2026-09-25，無法證明 2026-09-29 候選清單覆蓋。未用空結果或舊快取宣稱完整，也未產生 story；本來源 limited。本次 captured=0、included=0、excluded=0。",
+        "地新聞新竹縣已完整讀取設定 listing；最新日期為 2026-09-28，設定要求 2026-09-29 整個 Asia/Taipei 日曆日，因此沒有符合日期的候選。本次 captured=0、included=0、excluded=0。",
+        "本次 configured_sources 合計 captured=32、included=3、excluded=29；Latent Space 與地新聞新竹市有上述查核限制，因此 status=limited。3 則新 story 均使用 image:null；圖片缺失未作為排除或限制理由。"
+      ]
+    }
+  }
+}
