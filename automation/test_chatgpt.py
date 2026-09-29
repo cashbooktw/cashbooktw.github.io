@@ -11,7 +11,7 @@ import unittest
 
 from validate_chatgpt import (INDEX, TAIPEI, Invalid, Validator, edition_path,
                               encode, loads, preserve_stories, scan_secrets)
-from update_chatgpt import (APIError, CONTRACTS, Unverified, merge_edition,
+from update_chatgpt import (APIError, CONTRACTS, SCHEMAS, Unverified, merge_edition,
                             merge_report, parallel, prepare, publish, rebase)
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -37,6 +37,7 @@ def fixture():
     files = {CONTRACTS[0]: "test rules", CONTRACTS[1]: '{"web_pages": []}',
              CONTRACTS[2]: (ROOT / CONTRACTS[2]).read_text(), CONTRACTS[3]: (ROOT / CONTRACTS[3]).read_text(),
              INDEX: encode(manifest), PATH: encode(edition)}
+    files.update({path: "test guidance" for path in CONTRACTS[4:]})
     return {"head": "a" * 40, "tree": "b" * 40, "date": DAY, "files": files}, edition, manifest
 
 
@@ -229,7 +230,7 @@ class ContractTests(unittest.TestCase):
             (root / PATH).write_text(encode(self.old))
             (root / INDEX).write_text(encode(self.index))
             (root / "schema").mkdir()
-            for path in CONTRACTS[2:]:
+            for path in SCHEMAS:
                 (root / path).write_text((ROOT / path).read_text())
             command = [sys.executable, str(ROOT / "automation/validate_chatgpt.py"), "--root", str(root)]
             history = subprocess.run(command, capture_output=True, text=True)
@@ -377,6 +378,155 @@ class ContractTests(unittest.TestCase):
     def test_corrupt_readback_is_not_success(self):
         api = FakeAPI(self.snap); api.corrupt = True
         with self.assertRaises(Unverified): publish(api, self.snap, self.new, lambda: NOW)
+
+
+    def test_overflowing_json_numbers_rejected(self):
+        for number in ("1e400", "-1e400", "NaN", "Infinity", "-Infinity"):
+            with self.subTest(number=number), self.assertRaises(Invalid):
+                loads('{"nested": [' + number + ']}')
+        self.assertEqual(loads('{"number": 1.25e2}')["number"], 125.0)
+
+    def test_first_edition_deduplicates_original_urls(self):
+        snap = deepcopy(self.snap)
+        snap["files"][PATH] = None
+        manifest = deepcopy(self.index)
+        manifest["editions"].pop(0)
+        manifest["current"] = "2026-09-22"
+        snap["files"][INDEX] = encode(manifest)
+        candidate = deepcopy(self.new)
+        first = story("first-new")
+        duplicate = deepcopy(first)
+        duplicate.update(id="same-original", title="Another discovery title")
+        duplicate["sources"].append({"name": "Additional original", "url": "https://example.org/extra"})
+        candidate["stories"] = [first, duplicate]
+        result = loads(prepare(snap, candidate, NOW)["files"][PATH])
+        self.assertEqual(len(result["stories"]), 1)
+        self.assertEqual(result["stories"][0]["id"], "first-new")
+        self.assertEqual(result["stories"][0]["title"], first["title"])
+        self.assertEqual(len(result["stories"][0]["sources"]), 2)
+        self.assertEqual(candidate["stories"], [first, duplicate])
+
+    def test_publish_stops_when_midnight_passes_during_writes(self):
+        from unittest.mock import patch
+        api = FakeAPI(self.snap)
+        state = {"now": NOW}
+        request = api.request
+        def cross_midnight(method, path, value=None):
+            result = request(method, path, value)
+            if path == "/git/commits":
+                state["now"] = datetime(2026, 9, 24, tzinfo=TAIPEI)
+            return result
+        with patch.object(api, "request", side_effect=cross_midnight):
+            with self.assertRaisesRegex(Invalid, "midnight"):
+                publish(api, self.snap, self.new, lambda: state["now"])
+        self.assertEqual(api.ref, api.initial)
+        self.assertFalse(any(method == "PATCH" for method, _, _ in api.calls))
+
+    def test_cli_all_rejects_empty_manifest(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "manifest.json"
+            manifest = deepcopy(self.index)
+            manifest["editions"] = []
+            path.write_text(encode(manifest), encoding="utf-8")
+            result = subprocess.run(
+                [sys.executable, str(ROOT / "automation/validate_chatgpt.py"),
+                 "--all", "--index", str(path)], capture_output=True, text=True)
+            self.assertEqual(result.returncode, 1, result.stdout)
+            self.assertNotIn("Validated", result.stdout)
+            self.assertNotIn("Traceback", result.stderr)
+
+    def test_cli_rejects_invalid_utf8_without_traceback(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "manifest.json"
+            path.write_bytes(b"\xff")
+            result = subprocess.run(
+                [sys.executable, str(ROOT / "automation/validate_chatgpt.py"),
+                 "--all", "--index", str(path)], capture_output=True, text=True)
+            self.assertEqual(result.returncode, 1)
+            self.assertNotIn("Traceback", result.stderr)
+
+
+    def test_operational_guidance_changes_block_rebase(self):
+        for path in ("automation/FAST_PATH.md", "automation/SCHEDULED_TASK_PROMPT.md"):
+            with self.subTest(path=path):
+                latest = deepcopy(self.snap)
+                latest["files"][path] = "changed guidance"
+                with self.assertRaises(Invalid):
+                    rebase(self.snap, latest, self.new)
+
+    def test_incomplete_snapshot_requires_recapture(self):
+        del self.snap["files"]["automation/FAST_PATH.md"]
+        with self.assertRaisesRegex(Invalid, "take a new snapshot"):
+            self.plan()
+
+    def test_snapshot_reads_all_contracts_at_one_commit(self):
+        from update_chatgpt import snapshot
+        from unittest.mock import patch
+        api = FakeAPI(self.snap)
+        with patch.object(api, "file", wraps=api.file) as read:
+            captured = snapshot(api, DAY)
+        self.assertEqual(captured, self.snap)
+        self.assertEqual({call.args[0] for call in read.call_args_list},
+                         {*CONTRACTS, INDEX, PATH})
+        self.assertTrue(all(call.args[1] == self.snap["head"] for call in read.call_args_list))
+
+    def test_noop_cannot_report_unchanged_after_midnight(self):
+        api = FakeAPI(self.snap)
+        times = iter([NOW, NOW, datetime(2026, 9, 24, tzinfo=TAIPEI)])
+        with self.assertRaisesRegex(Invalid, "midnight"):
+            publish(api, self.snap, self.old, lambda: next(times))
+        self.assertEqual(api.calls, [])
+
+    def test_first_edition_cross_story_ambiguity_fails(self):
+        candidate = deepcopy(self.new)
+        bridge = story("bridge")
+        bridge["sources"] = [*candidate["stories"][0]["sources"],
+                             *candidate["stories"][1]["sources"]]
+        candidate["stories"].append(bridge)
+        with self.assertRaisesRegex(Invalid, "Ambiguous deduplication"):
+            merge_edition(None, candidate)
+
+    def test_transport_failure_is_unverified_and_not_retried(self):
+        from unittest.mock import patch
+        api = FakeAPI(self.snap)
+        request = api.request
+        def lose_response(method, path, value=None):
+            result = request(method, path, value)
+            if method == "PATCH":
+                raise APIError(None)
+            return result
+        with patch.object(api, "request", side_effect=lose_response):
+            with self.assertRaises(Unverified) as caught:
+                publish(api, self.snap, self.new, lambda: NOW)
+        self.assertIn(api.ref, str(caught.exception))
+        self.assertEqual(sum(method == "PATCH" for method, _, _ in api.calls), 1)
+
+
+    def test_existing_invalid_json_is_not_an_absent_edition(self):
+        snap = deepcopy(self.snap)
+        manifest = deepcopy(self.index)
+        manifest["editions"].pop(0)
+        manifest["current"] = "2026-09-22"
+        snap["files"][INDEX] = encode(manifest)
+        for content in ("null", "{}", "[]", "false", "0", ""):
+            with self.subTest(content=content):
+                snap["files"][PATH] = content
+                with self.assertRaises(Invalid):
+                    prepare(snap, self.new, NOW)
+
+    def test_only_confirmed_optional_404_means_missing(self):
+        from update_chatgpt import GitHubAPI
+        from unittest.mock import patch
+        api = GitHubAPI()
+        for status in (404, 403, 429, 500, None):
+            with self.subTest(status=status), patch.object(api, "request", side_effect=APIError(status)):
+                if status == 404:
+                    self.assertIsNone(api.file(PATH, self.snap["head"], optional=True))
+                else:
+                    with self.assertRaises(APIError):
+                        api.file(PATH, self.snap["head"], optional=True)
+                with self.assertRaises(APIError):
+                    api.file(PATH, self.snap["head"])
 
 
 if __name__ == "__main__":
