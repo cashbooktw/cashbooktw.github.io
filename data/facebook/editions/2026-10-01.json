@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-01",
+  "generated_at": "2026-10-01T00:45:56+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-01 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 19 則，入選 14 則，排除 5 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-d3bdd12759825dc90fc89bec",
+      "title": "Pro 500 製作減法遊戲的速度與額度實測",
+      "summary": "保哥分享以 GPT-6-Astra 的 xhigh 推理與 ultrafast 模式製作三位數減法遊戲：耗時 9 分 35 秒，使用量面板減少 9% 額度，呈現這次實作的速度與消耗取捨。",
+      "original_text": "為了給小學三年級的小朋友玩，剛剛跟 張振豪 借了個 ChatGPT Pro500 訂閱來體驗 $$ 的威力，算是幫大家開箱了！ \n我選了 GPT-6-Astra，推理設 xhigh，模式選 ultrafast，直接做一個三位數減法遊戲。\n整個過程只花 9 分 35 秒就全部完成。\n真的超快！\n回頭看狀態面板。\nPro500 的額度直接扣了 9%。\n不到十分鐘噴掉 9%。\n這種燃燒速度，錢給再多都不夠燒。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T23:06:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/830256585_2254204065376260_5891132520682905189_n.png?stp=dst-jpg_tt6&cstp=mx1462x940&ctp=s1462x940&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Vf6yHZNUNugQ7kNvwHHzk-R&_nc_oc=AdqPj0Vxa1JhOVJ8jcjiddkFj4-7W85Un1fCR5zQVajzYNk051_O9OFdGFXbJCURAj_11ruAMuzZS0qFjXW-qH2n&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=hHE0NUxkyw7k_uvMWfXNgw&_nc_ss=7b2a8&oh=00_AQNLH4XW4_0vvVSeDNhXaBnZq5IN_DrhxICIFzeOuuiUQw&oe=6AC31555",
+        "alt": "Will 保哥的技術交流中心此則貼文的原始配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02Cp9xFnq5VbUm65xcJYvAWv9wHjPuz7raz3mBF2TkFB2WgXcziu6cC19yCiMYimTYl",
+          "published_at": "2026-09-30T23:06:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-8cfa35ba9401edb13f410d64",
+      "title": "陶韻智打造課堂模擬投資網站",
+      "summary": "陶韻智分享以 vibe coding 製作教學網站，讓學生用千萬元虛擬資金，於盤後按收盤價模擬買賣；首版不含信用交易、權證與個股資料查詢，後續再依需求擴充。",
+      "original_text": "台大教的課裡面，教的是清晰的商業思考，裡面有一部分是思考投資怎麼做。但有許多同學沒買過股票，所以來賓來談時會一知半解。\n想了一下，就vibe出一個模擬投資的網站，明天就請同學可以模擬下單。\n幾個規則：\n- 只能晚上到隔天早上開盤前用當天收盤價來買進賣出\n- 一登入每個帳號就有1000萬虛擬籌碼\n- 沒有信用交易，權證或其他商品無法模擬購買，或者說 很多實務上可以做投資的方法都沒有。\n- 沒有查詢個股資料的功能，用戶自己去yahoo股市看線圖\n後續看情況再來加其他模擬功能，不時會重新部署。\n有興趣的人，也歡迎上去模擬投資一下。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T22:39:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/829797693_1080926627887044_8797764933390416483_n.png?stp=dst-jpg_tt6&cstp=mx1282x921&ctp=s1282x921&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=CnHv5eJOJfcQ7kNvwFWwpsK&_nc_oc=Ado6eryQO3Zun_qWaGeO6uRICkj8a0zxWodHwdeS8fHWaheHxwYpiSqEi4w_cl_pYHe1tahAAy1uHCGVYoM4bQXI&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=hHE0NUxkyw7k_uvMWfXNgw&_nc_ss=7b2a8&oh=00_AQOw7yMG4LWi9mWXGoKyAmp-DQxoPqNpxbxFpPZiame4SQ&oe=6AC31D35",
+        "alt": "陶韻智此則貼文的原始配圖",
+        "credit": "陶韻智／Facebook"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid029v5e7tHvjYnz9cB7eeoY2ZnLQfPHt4DBZ7g84wVtYQGauBi1z7vK3pbrbMULg4j2l",
+          "published_at": "2026-09-30T22:39:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-5dd09fd4d85cf50b0f4b6044",
+      "title": "Ray 製作廣告收益查詢 iOS App，加入 AI 分析",
+      "summary": "Ray 為方便在手機查看 Google 廣告收益，自製 iOS App 並導入名為 Mimo 的 AI 分析功能；他也以自身使用需求持續維護。",
+      "original_text": "就...我想在手機看 AdMod 跟 AdSense RRR\n這件事情超級困擾我，為了看 Google AdMod 或者 Google AdSense 都要打開網頁才有辦法\n所以就做成了... iOS App 方便自己快速查看收益狀況？！\n也順便導入了 AI 分析（他就叫 Mimo）\n如果你跟我一樣有相同困擾，可以考慮讓我的 App 幫你解決這個問題？\n反正我也是使用者，只要有狀況我都會處理～～",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T20:45:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/829196782_1507514761398851_5121550575739357012_n.jpg?stp=dst-jpg_tt6&cstp=mx1320x1650&ctp=p960x960&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gwbWYnc3bHQQ7kNvwHsLH6M&_nc_oc=Adr1daHS4XNIrflxICGzZH_yExnc0zH4iDxbU9ztueytXPKUaYy2qciwUCDgg-hPbhgD1jolrJTrTVLkR16B8Lbl&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=hHE0NUxkyw7k_uvMWfXNgw&_nc_ss=7b2a8&oh=00_AQOgARZqRbuQDiwf8h29rYVPo0Rvff_FWZZhYqrBZKX8fQ&oe=6AC324F4",
+        "alt": "是 Ray 不是 Array此則貼文的原始配圖",
+        "credit": "是 Ray 不是 Array／Facebook"
+      },
+      "sources": [
+        {
+          "name": "是 Ray 不是 Array",
+          "url": "https://www.facebook.com/israynotarray/posts/pfbid0ZJ2w4CLkxmx9LJt6juGDY7E4HKUjd8yBDZhJz8pFrvst5R3gRDmp9zb53w1Yvgabl",
+          "published_at": "2026-09-30T20:45:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-31e5de0c79f6b63a729cda97",
+      "title": "Antigravity CLI 協助填寫 Google Play 上架資料",
+      "summary": "Eric 分享安裝 Android skill 並啟用 Chrome remote debugger 後，用 Antigravity CLI 的 /browser 操作 Google Play Console，完成上架聲明等資料與圖片上傳。",
+      "original_text": "我今天試著用全用 Antigravity CLI 把做完的 Android app 上架到 Google Play Console ，發現它能自己開 browser 把 app 上架的資料（一堆聲明及隱私權宣告等）跟圖上傳完 \n註：我有裝 Android skill 跟 Chrome 打開 remote debugger，Antigravity CLI 的 `/browser` 指令可以透過 Chrome remote debugger 來操作瀏覽器",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T20:21:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid0onBrQZA4kPD59QHnWCTesgiwpDN3J8qKW3VZDEh4uAUuF9LppfugX294n4FH8rJEl",
+          "published_at": "2026-09-30T20:21:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-b8d189971ea05100a93b9f32",
+      "title": "保哥分享 dot.com 導向 Grok Bot 的消息",
+      "summary": "保哥在貼文中稱，OpenAI 推出 dots 後，SpaceXAI 購入 dot.com 並將網址導向 Grok Bot，點出兩個個人 AI 助理的命名巧合。",
+      "original_text": "說個秘密 \nOpenAI 昨天推出 dots 個人 AI 助理，然後 SpaceXAI 剛買下 dot.com 域名，並直接導向 Grok Bot 個人 AI 助理！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T18:04:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02yj9JJ2XFtt19u6q8RLosC6T6EZKv8SL9pWPRm9bbuV5poPPTa4PFDZD7GrfMzGE6l",
+          "published_at": "2026-09-30T18:04:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-98afa5eb160a237e8bdd641a",
+      "title": "保哥整理 WSL containers 的容器管理與企業整合",
+      "summary": "保哥的貼文整理 WSL containers 正式版功能，包括 Windows 上管理 Linux 容器的 CLI 與 API、容器健康檢查、網路及檔案存取改善，以及 Defender、Intune 和開發工具整合；並提到 compose 支援仍屬後續規劃。",
+      "original_text": "微軟正式宣布 WSL containers 邁入一般可用性 GA 階段！\n這項功能讓開發者能直接在 Windows 上建立、執行並管理 Linux 容器。\n現在只要在終端機輸入 wsl --update 就能立刻體驗。\n更新後將獲得全新的 WSL containers CLI 工具 wslc.exe，也可以使用別名 container.exe 操作。\n同時微軟也提供了 WSL containers API，讓 Windows 原生應用程式能直接呼叫容器。\n這對於想在本地執行 AI 工作負載或微服務的開發者來說非常方便。\n在正式版本中，微軟加入了完整的容器生命週期管理指令。\n包含容器重啟、透過 tar 歸檔複製檔案的 cp 指令，以及即時活動串流與健康檢查機制。\n網路部分支援連接與中斷網路，並引進全新的 consomme 網路模式以改善相容性。\n跨系統檔案效能也大幅升級，從 Linux 環境存取 Windows 檔案的速度最高提升兩倍。\n針對企業用戶，這項功能整合了 Microsoft Defender for Endpoint 與 Microsoft Intune。\n資安團隊可以直接監控容器內的處理程序與網路活動，企業也能統一控管映像檔存取白名單。\n生態系方面已支援 VS Code dev containers、Aspire 等多項開發工具。\n官方也預告下一階段的重點功能是 wslc compose，未來可以直接沿用現有的 compose.yaml 檔案。\nWindows 正持續從單純的開發環境，進化為 AI 與雲端原生工作負載的核心執行平台。\n···\n但我還是要說一句：「用了 macOS 就回不去了」",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T17:45:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe1-1.xx.fbcdn.net/emg1/v/t13/8483306059744070654?url=https%3A%2F%2Fblogs.windows.com%2Fwp-content%2Fuploads%2Fsites%2F3%2F2026%2F09%2FWindows-11-bloom.jpg&fb_obo=1&utld=windows.com&_nc_sid=c63717&_nc_ht=external-tpe1-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=TRD6Qr9Z4uzAjYMYcyHJKQ&_nc_zt=3&oh=06_Q3_DAS60WZhevxyz4eehMZGRNpkQRzMs2IlwVHNsiLpEDdAN&oe=6ABF1CFA",
+        "alt": "Will 保哥的技術交流中心此則貼文的原始配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0ZhQUQoVdUNqu7J7YhTD2fhvZA6Ti51QwtLtkKA2sCx7uPtHFwjTGDb6NaZh7KiJdl",
+          "published_at": "2026-09-30T17:45:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-60577ced03b3f5a888b46783",
+      "title": "員工入口網改版：保哥分享 Loop engineering 心得",
+      "summary": "保哥表示，建立 Loop engineering 後，員工入口網改版與新增功能的速度明顯提升；貼文分享開發心得，未提供具體架構或量測數據。",
+      "original_text": "我把公司的員工入口網改版了，我把 Loop engineering 建好之後，整體開發速度躍升，越來越強大，想加什麼功能就加什麼功能，也越來越有趣！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T14:51:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/830096117_2210498506551386_2845910608290220983_n.png?stp=dst-jpg_tt6&cstp=mx2048x1094&ctp=s2048x1094&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=GECDcYZkLwYQ7kNvwEOrx-U&_nc_oc=Adq35gS7_SaOId1QPbVbKFct9YkEOgGhZLibUICviu7TJpU8GzGhNJRTC2g2XQmtpF4E3_Jrv08W8nWPQP3ERFHj&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=TRD6Qr9Z4uzAjYMYcyHJKQ&_nc_ss=7b2a8&oh=00_AQOXWW2ONtJVQv4q_eNzZf98WYqr6iB7CKm5C4WZc9LznQ&oe=6AC302AD",
+        "alt": "Will 保哥的技術交流中心此則貼文的原始配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02Npc9ryFDnEa6TNejGdhyRwWxCYjSC9zk8gnYwzyQFw1jP5c4gWg9QyyakqtUEACul",
+          "published_at": "2026-09-30T14:51:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ffc1efef54e365255730452e",
+      "title": "Eric 分享 Android Dev Summit 十月底回歸消息",
+      "summary": "Eric 分享 Android Dev Summit 活動連結，表示活動將於十月底回歸；Android 18 是否揭露仍是他文中提及的傳聞。",
+      "original_text": "https://rsvp.withgoogle.com/.../android-dev-summit-bayview \n10 月底 Android Dev Summit 回歸啦，據說要揭露 Android 18 .... 不過現在大家 Google Android 18 應該都還是克林他老婆？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T11:59:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/829126099_1073601858858880_563557919468560428_n.png?stp=dst-jpg_tt6&cstp=mx800x800&ctp=s800x800&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=CxEwQdsVWnkQ7kNvwE75hRy&_nc_oc=AdrtktmnxUBQ758H2uLb5lHpNRodDmABMd_71d_CsyS6Vnr-3kIOeaVR11kc_496UeXTMOPdylSWHpwzGVqXAj1x&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=S-bjIpIPFkbMZqHQABzTWQ&_nc_ss=7b2a8&oh=00_AQMvK0i8bzQQB7m5absfgwW0GL3Y5pYYE_bsRmMPBfhTlA&oe=6AC30956",
+        "alt": "Eric ShangKuan此則貼文的原始配圖",
+        "credit": "Eric ShangKuan／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid034WD72xePKugBJ8fchDp9rcKazheCvqCAwddCwdRLsu1XKKNsw6mKP4M3M8iXpH3Hl",
+          "published_at": "2026-09-30T11:59:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-981c1fc83c5f191f18ce1258",
+      "title": "Champ 分享 Firefox 157 介面改版消息",
+      "summary": "Champ 在貼文中指出，Firefox 157 採用重新設計的介面；正文未詳列各項變更。",
+      "original_text": "今日推出的 Firefox 157 採用了全新設計的 UI!",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T10:22:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe1-1.xx.fbcdn.net/emg1/v/t13/6980685522088635142?url=https%3A%2F%2Fwww.digitaltrends.com%2Ftachyon%2F2026%2F09%2FFirefox-update-featured-image.jpg%3Fresize%3D1200%252C630&fb_obo=1&utld=digitaltrends.com&_nc_sid=c63717&_nc_ht=external-tpe1-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=S-bjIpIPFkbMZqHQABzTWQ&_nc_zt=3&oh=06_Q3_DAUd66lS9rzcwHVRQy7sw8enLbKJ-Wi1wpTXsbQgN0Chs&oe=6ABEFFCE",
+        "alt": "Champ Yen此則貼文的原始配圖",
+        "credit": "Champ Yen／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Champ Yen",
+          "url": "https://www.facebook.com/champ.yen/posts/pfbid02UaMRiKiUsjDf8C8LbikhgHvowmrwPHZJjZmh646mCPsNsmtmRDQdAVMhTwUJGcbhl",
+          "published_at": "2026-09-30T10:22:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-666c0bbd191d77a9939aed5e",
+      "title": "Champ 關注麥當勞以 AI 動態調價",
+      "summary": "Champ 的短文提及麥當勞運用 AI 即時調整商品價格，聚焦 AI 在餐飲定價的應用；正文未交代實施地區或機制。",
+      "original_text": "麥當勞透過 AI 動態即時調整產品價格",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T10:16:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe1-1.xx.fbcdn.net/emg1/v/t13/13225998259530002594?url=https%3A%2F%2Fwww.engadget.com%2Fimg%2Fgallery%2Fmcdonalds-is-reportedly-using-ai-to-surge-price-its-burgers%2Fl-intro-1790701141.jpg&fb_obo=1&utld=engadget.com&_nc_sid=c63717&_nc_ht=external-tpe1-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=S-bjIpIPFkbMZqHQABzTWQ&_nc_zt=3&oh=06_Q3_DAQOX9VtyTUjNqiDFYjoTxu4sHKBxkBu44PzXaazjOpuu&oe=6ABF3431",
+        "alt": "Champ Yen此則貼文的原始配圖",
+        "credit": "Champ Yen／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Champ Yen",
+          "url": "https://www.facebook.com/champ.yen/posts/pfbid0PGi5pdXX6Jheszvm5tbGm5HASF3pVCMgLxbFdz4nXEjupCChow6rnhRqa8NbPjvUl",
+          "published_at": "2026-09-30T10:16:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-490def781a357fc73562e1ed",
+      "title": "Champ 分享 WSL 容器與 API 發布消息",
+      "summary": "Champ 提及微軟發布 WSL Container 及相關 API，讓開發者能在 Windows 執行與部署 Linux 容器。",
+      "original_text": "微軟正式發布 WSL Container 與相關 API, 能夠在 Windows 上運作與部屬 Linux Container",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T10:05:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe1-1.xx.fbcdn.net/emg1/v/t13/8483306059744070654?url=https%3A%2F%2Fblogs.windows.com%2Fwp-content%2Fuploads%2Fsites%2F3%2F2026%2F09%2FWindows-11-bloom.jpg&fb_obo=1&utld=windows.com&_nc_sid=c63717&_nc_ht=external-tpe1-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=S-bjIpIPFkbMZqHQABzTWQ&_nc_zt=3&oh=06_Q3_DAf6GWeQgVyQRzU9WNByWoIcCe_8VkV83GjZ5NXtjC97p&oe=6ABF1CFA",
+        "alt": "Champ Yen此則貼文的原始配圖",
+        "credit": "Champ Yen／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Champ Yen",
+          "url": "https://www.facebook.com/champ.yen/posts/pfbid02cFAZsnkY8JJQCxxLD5W2p3TVK9thUB2Be1xdq5hUCCpdfDnR9qtC5v9ZwUSPPdMYl",
+          "published_at": "2026-09-30T10:05:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-f5e39143ba31bcd225173c3b",
+      "title": "保哥整理 DevDay：從個人代理人到開發與商業通路",
+      "summary": "保哥的七章整理將 DevDay 主軸歸納為交付完整工作給 AI：Dots 與 Spaces 支援持續任務和團隊協作，模型及 Ultrafast 強調成本與速度，Agents API、雲端 Codex 和 Marketplace 延伸執行與銷售通路。他也區分預覽功能、未完成的現場示範與尚缺驗證細節的數據。",
+      "original_text": "OpenAI DevDay 2026 Keynote 完整重點整理 \n這場 Keynote 的主軸，是讓 AI 承接更完整的工作。\n從持續追蹤任務的個人代理人、團隊與 AI 共用的協作空間，到模型、雲端執行環境，以及產品曝光與銷售管道，OpenAI 把整場發表串成一套開發與工作流程。\n以下依演講脈絡，整理成七個章節。產品狀態與數據均依本次演講內容；文中的「當天推出」指發表當天。\n···\n第一章｜Dots：可以長期交付責任的個人 AI 代理人\n1. 從交辦單一任務，延伸到持續負責一件事\nOpenAI 發表 Dots，定位是全天候運作、能逐步理解使用者工作方式的 AI 代理人。\n你可以交付一個目標，讓它持續推進，例如：\n・追蹤 Bug 回報、調查原因、測試修正並提出 PR。\n・啟動年度預算規劃，追蹤各團隊進度。\n・分析應用程式效能瓶頸，完成修正並提供改善結果。\n・在舊版 API 停用前，找出相依關係並完成遷移。\n這裡的關鍵，是任務範圍可以涵蓋調查、規劃、執行與驗證，並在需要人類判斷時回報。\n2. Dots 具備執行工作的環境與上下文\n依演講說明，Dots 配有雲端電腦與瀏覽器，也能撰寫、執行及測試程式。\n它可以使用你已連結的應用程式，在授權範圍內掌握工作資訊。OpenAI 表示，ChatGPT 已支援超過 4,000 個應用程式。\n使用者可以設定應用程式與電腦操作的界線，也能針對特定動作制定指示與核准要求。\n初期先提供一個 Dot，未來規劃讓使用者管理一整個 Dots 團隊。簡訊互動與直接打電話給 Dot，則列為即將提供的功能。\n3. 主動追蹤，減少使用者反覆整理背景\n展示影片中的 Dot，會追蹤設計更新、準備董事會簡報、發現行程衝突，以及接手網站發布前的修改。\n這些情境共同指向一個設計方向：代理人需要理解使用者正在做什麼、哪些事情重要，以及什麼時候需要使用者介入。\n使用者因此可以把注意力放在決策與審閱，讓代理人持續處理後續工作。\n···\n第二章｜Spaces：讓人與代理人共同工作的協作空間\n1. 把頁面、檔案與 AI 工作整合在一起\nChatGPT Spaces 是團隊成員與代理人共同工作的空間。\n一個 Space 可以從頁面開始，承載計畫、研究、圖片、資料及互動內容。團隊可以在留言中標註同事，也能直接標註 Dot，請它處理工作。\n頁面還能附帶持續性的指示，例如每天查看特定 Slack 頻道，將新發現更新到頁面。\n演講也預告，Spaces 將加入新的簡報製作方式，讓團隊與代理人直接在 ChatGPT 內共同編輯。\n2. Blossom Music 示範：把分散資訊接成工作流程\n產品團隊以虛構音樂 App「Blossom Music」示範發布前一天的工作情境。\nDot 主動找出提前的發布審查、設計團隊最後一刻的更新，並提供相關內容供使用者查看。\n接著，使用者可以要求它：\n・根據新設計開始實作。\n・整理使用者測試回饋，建立 FAQ。\n・把資料轉成可篩選、可持續更新的互動圖表。\n・從 Slack 私訊找出相關數據。\n・將指定同事的回饋納入文件。\n這段示範呈現的價值，是把原本散落在對話、文件與開發工具裡的資訊，直接轉成可執行的工作。\n3. 在 Slack 交接工作，透過 Codex 執行開發\nDots 可以加入 Slack，使用者能把討論串轉交給它處理，也能把它帶進群組，讓所有人看到交辦與回報。\nOpenAI 分享的內部案例是：工程師的 Dot 從回饋頻道讀到使用者問題與 Session ID，開始調查，並提出修正 PR。\n示範也展示了透過本機 Codex 建置 App、啟動 iPhone 模擬器的工作方式。\n現場部分語音與 Codex 操作遇到延遲或錯誤，因此這些展示應視為功能與工作流程示範，不能直接解讀為每個環節都已順利完成。\n4. 開放方案與企業專用代理人\n演講宣布，Dots 與 Spaces 當天向 ChatGPT Pro、Business、Premium 與 Enterprise 使用者提供。\nDot 包含在方案內，與 Dot 的對話不消耗使用量。這項說明針對「對話」，不能延伸解讀成所有背景任務與工具執行都無限使用。\n企業端另行預覽 specialist Dots，供公司建立會計、行銷、法務等專業角色的代理人，讓整個團隊共同使用並提供回饋。\nOpenAI 也表示，正在與 Microsoft 合作，將 specialist Dots 整合至 Agent 365。\n···\n第三章｜模型與速度：降低長任務成本，加快互動節奏\n1. GPT-6.1 Sol：以日常大量使用為定位\nOpenAI 發表 GPT-6.1 Sol，主打能力、成本與實用性的平衡。\n依台上說明：\n・智慧能力接近 Astra。\n・價格約為 Astra 的五分之一。\n・快取輸入價格比一般輸入低 95%。\n對代理人應用而言，快取輸入折扣尤其值得注意。當任務需要反覆使用相同上下文、持續修改與驗證時，這類成本會直接影響長時間工作的可行性。\n上述為演講中的相對比較，逐字稿沒有提供完整的每百萬 Token 單價表。\n2. Ultrafast：用較高價格換取更快輸出\nUltrafast 推向 API、ChatGPT 與 Codex。\n演講以標準模式為基準，提出以下比較：\n・Fast：速度 2 倍，價格 2 倍。\n・Ultrafast：速度 8 倍，價格 6 倍。\n・Ultrafast 宣稱可達每秒 300 Tokens。\n發表當下先支援 Astra，GPT-6.1 Sol 的支援則列為即將提供。\n現場用相同的火箭動畫開發任務對照兩種速度，呈現更快輸出如何縮短等待與修改週期。不過，Token 輸出速度不等於整體任務完成速度，工具執行與測試仍會占用時間。\n3. Pro 500 與 Pro 200\nOpenAI 宣布推出 Pro 500，提供最高使用量級距，並可在 ChatGPT 與 Codex 使用 Ultrafast。\n演講表示，Pro 500 的使用量為 Plus 的 25 倍，未來也能透過 Sign in with ChatGPT，在合作夥伴應用程式中使用方案額度。\nPro 200 則於當天重新開放，持續提供前沿模型存取，並將 GPT-6.1 Sol 作為適合日常大量使用的選擇。\n4. Decisions API：針對明確選項快速做決策\n這次預覽的 Decisions API，讓 Luna 模型從預先定義的選項中，快速選出下一步。\n演講列出的用途包括：\n・請求路由。\n・圖片分類。\n・決定代理人的下一個動作。\nOpenAI 表示，回應時間可縮短至不到一秒，並保留圖片理解、多語言與安全保護能力。\n對開發者來說，這類 API 適合放在需要頻繁判斷、選項明確，而且對延遲敏感的流程中。\n···\n第四章｜AI 協助 AI 研究：從短任務走向整日工作\n1. AI Research Intern 的定位\nOpenAI 表示，已達成先前提出的 AI 研究實習生目標。\n這裡指的是：系統能承接定義清楚、原本需要熟練研究人員投入大量時間的研究任務。\n演講中的內部評估指出，一月的模型主要擅長十五分鐘以內的短任務；到了七月，搭配高速執行，已有超過三分之一的整日研究任務能在無人介入下完成。\n這是 OpenAI 分享的內部結果，逐字稿沒有提供完整測試方法與任務分布。\n2. 透過模型改善 Computer Use 的執行與安全性\n研究團隊讓模型持續尋找 Computer Use 執行框架的改善機會，再把成果納入正式環境與後訓練。\n依演講說明，這項工作已帶來超過兩倍的延遲改善。\n模型也被用來改善監控、行為訓練，以及面對不安全情境時的拒絕能力。\n這一節的重要訊息，是 AI 已被放進研究與工程改善流程，用來協助提升後續模型與產品的能力。\n3. 延伸至數學與科學研究\nOpenAI 表示，Astra 等模型已協助解決超過一百個懸而未決數十年的數學問題，也用於抗藥性感染的新抗生素研究、古代語言、再生能源、能源效率與工業機器人。\n這些內容屬於演講中提出的研究成果與應用方向；逐字稿未附個別論文或驗證細節。\n···\n第五章｜開發平台：把代理人的執行基礎交給開發者\n1. 開源 Codex Harness，提供代理人的執行基礎\nOpenAI 強調，Codex Harness 是支撐 Codex 與 Dots 的核心執行框架，並以開源方式提供。\n這個框架關注的是如何讓代理人有效率地執行工作，在速度、Token 用量與結果準確性之間取得平衡。\n開發者可以查看內部實作，並以此建立自己的代理人產品。\n2. Codex 全面雲端化，支援跨裝置接續任務\nCodex 的雲端執行能力，讓使用者能從手機開始任務，再到瀏覽器或桌面接續查看。\n任務在雲端執行時，即使關閉筆電，代理人仍能繼續工作。\n演講表示，雲端環境具備與本機 Codex 相同的工具能力，包括外掛與 Computer Use，適合交付需要長時間處理的工作。\n3. Codex Security Cloud：持續找漏洞並準備修正\n當天推出的 Codex Security Cloud，會在雲端環境持續尋找漏洞，並準備經過驗證的修正，交由使用者審閱。\n新功能包括：\n・自動去除重複問題。\n・排程掃描。\n・新的操作介面。\n它的工作範圍涵蓋問題發現與修正準備，保留人工審閱的環節。\n4. Agents API：整合託管、記憶與多代理人控制\nAgents API 進入公開測試版，提供執行框架、託管、記憶、多代理人控制等核心元件。\nOpenAI 表示，這與 Codex、Dots 使用的是相同技術基礎，並將 Computer Use 納入 Agents API。\n示範情境是網站測試代理人：直接開啟瀏覽器、點擊頁面，完成操作流程的檢查。\n雲端合作方面，演講也提到與 AWS 共同打造由 OpenAI 技術支援的 Bedrock 託管代理人，讓企業能在既有 AWS 應用程式與資料旁部署代理人。\n5. Private Intelligence 與 API 效能改善\nOpenAI 預覽 Private Intelligence，強調兩個方向：\n・結合零資料保留與私密安全處理，在提供安全機制的同時，不於伺服器保存使用者內容。\n・透過私密推論，進一步保護推論過程中的資料。\n逐字稿未說明完整架構、支援範圍或啟用條件。\nAPI 效能方面，OpenAI 表示，Responses API 過去一年成長一百倍，仍維持超過 99% 的可靠性；首個 Token 等待時間縮短 45%，工具呼叫與工作流程加快超過 30%。\n這些是演講中的整體改善數據，不能直接視為每個應用都能取得相同比例的提升。\n···\n第六章｜現場示範：語音、程式、視覺與硬體串接\n1. Codex CLI 加入雙向即時語音\n新版 Codex CLI 展示了透過 GPT Live 提供的雙向音訊互動。\n設計目標是讓使用者在開發過程中直接說話、補充與調整需求。\n現場以抽獎 App 示範 Ultrafast：先建立隨機抽出三名與會者的功能，再改成六名，快速完成修改。\n不過，現場語音操作出現問題，部分流程改以文字輸入完成。因此，展示出的快速修改結果，應與原先規劃的語音互動分開看待。\n2. 從草圖做出遊戲，再讓 AI 操作遊戲\nAstra Adventures 示範從紙上草圖開始，透過程式與圖像能力，逐步建立具有完整視覺素材的 3D 太空遊戲。\n接著，Astra 透過 Browser Use 操作遊戲，觀察畫面、選擇飛船並嘗試鍵盤控制。\n這段展示把內容製作與實際操作接在一起，呈現模型理解畫面並採取動作的能力。\n3. 用 Computer Use 檢查 App\n另一段示範以 App 截圖提供上下文，要求 Codex 檢查不同螢幕尺寸下的介面，並沿途擷取畫面。\nCodex 開始操作模擬器、開啟 App、探索功能及截圖。這類流程可用來協助檢查介面與使用者操作路徑。\n演講也示範將「把整個後端改寫為 Rust」交給雲端執行；這是長任務的啟動示範，現場並未展示完成結果。\n4. Microduck：把多模態能力接到機器人\n可程式化機器人 Microduck 的展示，整合了：\n・Astra 的視覺理解。\n・GPT Image 2.5 的圖像生成。\n・GPT Live 1 的即時語音互動。\n機器人被要求觀察觀眾並生成圖片，也透過聲音與現場互動。\n演講進一步提到，具備視覺輸入能力的 Decisions API，可讓機器人依照所見內容，更快速選擇動作。\n···\n第七章｜產品通路與商業化：讓開發者接觸使用者與企業\n1. Sign in with ChatGPT：把訂閱額度帶進合作產品\nOpenAI 表示，ChatGPT 每週已有約十二億名使用者，並希望讓開發者能在這個平台上建立生意。\nSign in with ChatGPT 讓使用者登入合作應用程式後，使用自己 ChatGPT 方案內包含的 Token 額度。\n對開發者而言，這能降低讓新使用者開始體驗產品時，需要自行負擔的模型成本。\n當天先由十六家合作夥伴推出，後續再擴大。\n2. Plugin Extensions：在 ChatGPT 裡提供完整操作介面\nPlugin Extensions 讓開發者把編輯器、儀表板，甚至整個工作空間，帶進 ChatGPT 與 Codex。\n演講展示的例子包括：\n・會議應用程式：查看行程、記錄會議，並將內容轉成可協作的 Space。\n・Figma：開啟設計、查看團隊留言，並要求 ChatGPT 修改。\n・Adobe：直接在 ChatGPT 使用 Photoshop 功能。\n這讓產品的操作介面能與 AI 對話並列，使用者可以一邊討論，一邊處理實際內容。\n3. Sites 支援外掛、資料與個人化使用情境\nChatGPT Sites 也開始支援連結外掛與資料。\n網站分享給團隊後，每個人可以使用自己的身分登入，帶入自己的授權與代理人，取得不同的使用體驗。\n這項能力讓 Sites 能承載需要個人資料與服務存取權限的應用情境。\n4. 在對話中探索外掛，簡化提交與更新流程\n除了搜尋外掛資料庫，ChatGPT 也會在對話中判斷某個外掛是否有助於處理使用者需求，讓使用者直接連結。\n開發者端則將改善提交流程，包括追蹤審查進度、查看需修正項目、要求人工審查，以及更新工具時不必重新走完整提交程序。\n5. OpenAI Marketplace：建立企業採購通路\nOpenAI Marketplace 當天推出，首波超過三十家合作夥伴，包括 CodeRabbit、Notion 與 Vercel。\n企業客戶可以把既有 OpenAI 承諾支出的一部分，用來購買 Marketplace 中的產品。\nOpenAI 也透過與 Baseten 的合作，讓客戶能在 Marketplace 存取開源模型。\n對軟體供應商來說，這增加了一條接觸既有 OpenAI 企業客戶的銷售管道。\n···\n結語｜AI 帶來的生產力，最後要回到人的自主性\nKeynote 最後把焦點拉回：人們取得這些能力之後，要用來做什麼。\nSam 提出，理想的 AI 未來應該更接近新的文藝復興，讓人有更多能力創作、學習、探索與擴展知識。\n他也強調，生活中有些部分無法自動化，也不應該自動化。\n整場發表呈現的方向很清楚：個人可以把更完整的工作交給代理人，團隊可以與代理人在同一個空間協作，開發者則能取得執行基礎與產品通路。\n真正值得觀察的，是這些能力如何在日常工作中，轉化成可驗證的成果，以及人們能否因此取得更多時間與決策空間。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T02:03:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02dt4yXucgsv5RDq9UDvT58wn5SaWznYsuyhjQinvHGX7DaLpPJubdqR6zQKXSDwqUl",
+          "published_at": "2026-09-30T02:03:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-e2c93e13579614da57b3a3e4",
+      "title": "保哥關注 Astra Ultrafast 的訂閱門檻",
+      "summary": "保哥稱 Astra Ultrafast 限 Pro 500 訂閱使用，並以每月 500 美元的門檻引出付費意願討論。",
+      "original_text": "Astra Ultrafast 極速模式僅適用於 Pro 500 訂閱方案 ( $500/mo )\n猜猜誰會買？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T01:52:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/826638717_29661921593396314_4513382205122334979_n.png?stp=dst-jpg_tt6&cstp=mx1418x662&ctp=s1418x662&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4ZqS8VOcDDYQ7kNvwGMW0X4&_nc_oc=AdoVRDQQ9y0qLfKsAHR_zF_XhoWX_jJP1bu5zAmwVGV6hEQD10mxN0UZNfGUfe1RMkv-w0hYPoljkVLlSsLPpetU&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=t5tFNiaPRCCQtMbdzdkE_Q&_nc_ss=7b2a8&oh=00_AQPdG2oX2gsZVeUVd6JVyV3Rpgh5A_xpDuIEZLUFZwBIfw&oe=6AC3152F",
+        "alt": "Will 保哥的技術交流中心此則貼文的原始配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02DP8uJEQ7hcDjxZAYPyLgu5dXN35QGUhSCiAnX1NTGfheKXG1QEsv2LH3xyunfGhyl",
+          "published_at": "2026-09-30T01:52:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-6896f8d78f6fd5b60e8f1edf",
+      "title": "保哥觀察 AI 平台轉向完整任務協作",
+      "summary": "保哥認為，訂閱與算力分層，加上 Space、Pages、Sites 的串接，正讓 AI 競爭重心從單次回答轉向多代理人協作及專案交付能力。",
+      "original_text": "OpenAI 正式推出每月 500 美元的 Pro 500 與 Astra Ultrafast，確立了算力與服務層級的分層。結合 GPT-6.1 Sol 在電腦操作與程式設計上的突破，高階工作流的自動化門檻正快速下降。\n從 Space 整合、協作 Pages 到 Sites 發布，平台正收斂專案從發想到交付的完整生命週期。競爭焦點已不再是單次對話輸出品質，而是多 Agent 協同與端到端任務落地的系統化深度。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-09-30T01:30:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0SCXk5n94hpYibRsbHzwNVCptHy8hph2DvabEwpaWErrU93mRMcP3YHaREjwxQS3Kl",
+          "published_at": "2026-09-30T01:30:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-09-30T16:45:54.771Z",
+      "captured": 19,
+      "included": 14,
+      "excluded": 5,
+      "notes": []
+    }
+  }
+}
