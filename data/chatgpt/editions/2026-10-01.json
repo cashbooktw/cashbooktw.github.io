@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-01",
+  "generated_at": "2026-10-01T11:17:57+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-01 每日資訊整理",
+  "edition_summary": "本次依固定 master 快照檢查 7 個設定的非 Facebook web_pages，完成 32 個時間窗內候選查核，收錄 7 則 stories。付費候選依既有規則跳過，所有入選內容均已完整讀取公開原文；configured_sources 為 complete。",
+  "stories": [
+    {
+      "id": "techcrunch-google-gemini-4-argon-2026-09-30",
+      "title": "Google 發布 Gemini 4 Argon，主攻長流程推理與防禦性資安",
+      "summary": "Alphabet 發布 Gemini 4 Argon，定位於程式開發、研究、寫作與長流程工作。Google 表示模型特別針對防禦性資安訓練，可自主尋找、驗證並修補軟體漏洞；目前先透過 Fairwind Program 提供給部分資安合作夥伴使用。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-30T16:43:00-07:00",
+      "tags": [
+        "AI",
+        "Google",
+        "Gemini 4 Argon",
+        "模型",
+        "資安"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+          "published_at": "2026-09-30T16:43:00-07:00"
+        }
+      ]
+    },
+    {
+      "id": "latent-space-openai-computer-use-decisions-api-2026-09-30",
+      "title": "Latent Space 專訪 OpenAI 團隊，解析 Computer Use 與 Decisions API",
+      "summary": "Latent Space 訪談 OpenAI 的 Ari Weinstein 與 Nikunj Handa，討論 Computer Use 代理如何結合螢幕畫面、無障礙樹、DOM、Playwright 與程式碼來操作軟體，並解析 async tool calling、mid-turn steering、UltraFast、Decisions API、提示快取、context compaction 與 Agents API 等開發者堆疊。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-30",
+      "tags": [
+        "AI",
+        "OpenAI",
+        "Computer Use",
+        "Agents API",
+        "Decisions API"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Latent Space",
+          "url": "https://www.latent.space/p/devday-2026",
+          "published_at": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "id": "decoder-google-gemini-skills-2026-09-30",
+      "title": "Google 以 Skills 取代 Gemini Gems，支援可重用與串接任務指令",
+      "summary": "Google 正在 Gemini Chat 全球推出 Skills，以可重用的詳細提示取代 Gems。使用者可用斜線指令叫用 Skill，讓 Gemini 從既有對話產生或自動觸發，也能串接多個 Skills；目前支援文字文件、PDF 與圖片，後續將加入分享、Google Drive 與 Notebook 整合。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-09-30",
+      "tags": [
+        "AI",
+        "Google",
+        "Gemini",
+        "Skills",
+        "代理"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/google-drops-gems-for-skills-joining-openai-and-anthropic-in-the-shift-to-agent-ready-prompt-formats/",
+          "published_at": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "id": "hsinchu-city-welfare-card-1200-2026-09-30",
+      "title": "新竹市敬老卡與愛心卡 10 月起每月增至 1,200 點",
+      "summary": "新竹市敬老卡與愛心卡自 10 月 1 日起，每月社福點數由 800 點提高至 1,200 點，農會與藥局的每月使用上限由 200 點提高至 300 點。既有持卡人不需換卡，其餘使用規則維持不變。",
+      "section": "新竹市",
+      "source_kind": "web",
+      "published_at": "2026-09-30",
+      "tags": [
+        "新竹市",
+        "敬老卡",
+        "愛心卡",
+        "社福"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Local News - Hsinchu City",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mumwjycp_4ge63ikv",
+          "published_at": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "id": "hsinchu-city-electric-scooter-subsidy-2026-09-30",
+      "title": "新竹市電動機車汰舊換購補助仍有名額",
+      "summary": "新竹市 115 年度汰舊換購電動機車加碼補助仍可申請，補助可追溯至 1 月 1 日。一般民眾依汰換車況最高可獲 2 萬9,500 元，中低收入戶最高 5 萬500 元；今年也放寬四行程機車車齡限制並將充電費用納入補助。",
+      "section": "新竹市",
+      "source_kind": "web",
+      "published_at": "2026-09-30",
+      "tags": [
+        "新竹市",
+        "電動機車",
+        "補助",
+        "交通",
+        "環保"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Local News - Hsinchu City",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mun4vpl7_if1i6nol",
+          "published_at": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "id": "hsinchu-city-special-education-support-2026-09-30",
+      "title": "新竹市擴充特教師資、鑑定人力與行政支援",
+      "summary": "新竹市說明 2026 年特教服務投入，包括編列 7.9 億元特教經費、112 至 115 學年度累計增置 96 位特教教師，115 學年度再增聘國中與國小鑑定評估專責人員各 1 名。特教網路行政系統已於 2026 年正式上線，後續規劃導入個別化教育計畫與輔具申請系統。",
+      "section": "新竹市",
+      "source_kind": "web",
+      "published_at": "2026-09-30",
+      "tags": [
+        "新竹市",
+        "教育",
+        "特殊教育",
+        "公共服務"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Local News - Hsinchu City",
+          "url": "https://localnews.tw/hsinchuCity/news/a_mun4vjdx_ydd888kz",
+          "published_at": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "id": "hsinchu-county-public-ev-charging-2026-09-30",
+      "title": "新竹縣 7 處公有停車場新增充電站 10 月啟用",
+      "summary": "新竹縣第二波公有停車場充電站自 10 月 1 日啟用，在竹北、寶山與尖石新增 7 處、69 槍充電樁。慢充每度電上限 8 元、快充上限 14 元，實際即時費率與付款以營運商指定 App 為準。",
+      "section": "新竹縣",
+      "source_kind": "web",
+      "published_at": "2026-09-30",
+      "tags": [
+        "新竹縣",
+        "交通",
+        "電動車",
+        "充電站",
+        "公共設施"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Local News - Hsinchu County",
+          "url": "https://localnews.tw/hsinchuCounty/news/a_mun51qos_p3h82ub9",
+          "published_at": "2026-09-30"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "configured_sources": {
+      "status": "complete",
+      "completed_at": "2026-10-01T11:17:57+08:00",
+      "captured": 32,
+      "included": 7,
+      "excluded": 25,
+      "notes": [
+        "Current run: 一般更新時間窗依上一個 ChatGPT configured_sources 完成時間，為 2026-09-30T07:32:27+08:00 至 2026-10-01T11:17:57+08:00（Asia/Taipei）；Latent Space、The Decoder、地新聞新竹市與新竹縣依設定檢查 2026-09-30 整個日曆日；Codex Resets 不受一般時間窗限制。",
+        "固定快照 config/sources.json 實際列出 7 個 web_pages；依設定陣列順序與各來源列表順序固定 acquisition position，未新增來源、RSS、關鍵字、排除條件或排名規則。",
+        "Codex Resets 已讀取設定 status 入口；頁面未顯示可驗證的「Reset scheduled」排定時間，僅有過去 reset 紀錄，因此依規則未產生 Codex story。本次 captured=0、included=0、excluded=0。",
+        "TechCrunch AI 已依設定 listing 固定候選順序；一般時間窗內共有 15 篇候選並完成公開原文讀取。下一篇文章發布於 2026-09-29T16:30:00-07:00（2026-09-30T07:30:00+08:00），早於本次起點，據此確認時間窗邊界。依最多 1 篇與既有代表性規則，納入 Gemini 4 Argon 發布文章。本次 captured=15、included=1、excluded=14。",
+        "Interconnects 已檢查設定 archive；最新列出文章日期為 2026-09-22，明確早於本次一般更新時間窗，因此沒有需讀取的時間窗內候選。本次 captured=0、included=0、excluded=0。",
+        "Latent Space 已依設定 archive 固定 2026-09-30 的 2 個候選位置；Computer Use／Decisions API 訪談可公開完整讀取且提供全文文字稿，OpenAI DevDay AINews 標示 Paid，依規則未繞過付費限制。公開候選足以完成最多 1 篇的代表作選稿，納入訪談。本次 captured=2、included=1、excluded=1。",
+        "The Decoder 已依設定 listing 列舉 2026-09-30 的 8 篇候選；6 篇公開原文完成讀取，2 篇 Plus 文章在正式頁面顯示訂閱後續全文提示，依規則跳過而未繞過限制。公開候選足以完成最多 1 篇的代表作選稿，納入 Gemini Skills 文章。本次 captured=8、included=1、excluded=7。",
+        "地新聞新竹市已完整讀取設定 listing，2026-09-30 共有 4 篇候選且公開原文均完成讀取。依既有實際影響與實用資訊條件，納入敬老卡／愛心卡點數調整、電動機車補助與特教支援措施；釋奠典禮內容未同時呈現居民公共服務變動，因此未納入。本次 captured=4、included=3、excluded=1。",
+        "地新聞新竹縣已完整讀取設定 listing，2026-09-30 共有 3 篇候選且公開原文均完成讀取。依既有實際影響與實用資訊條件，納入 7 處公有停車場充電站啟用；百歲人瑞慰訪與祭孔典禮未同時呈現居民公共服務變動，因此未納入。本次 captured=3、included=1、excluded=2。",
+        "本次 configured_sources 合計 captured=32、included=7、excluded=25；全部預定來源均依設定完成查核，status=complete。7 則新 story 均使用 image:null；圖片缺失未作為排除或限制理由。"
+      ]
+    }
+  }
+}
