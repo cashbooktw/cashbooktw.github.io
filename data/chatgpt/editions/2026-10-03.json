@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-03",
+  "generated_at": "2026-10-03T07:33:22+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-03 每日資訊整理",
+  "edition_summary": "本次依固定 master 快照檢查 7 個設定的非 Facebook web_pages，共固定 32 個時間窗內候選位置，收錄 3 則 stories。TechCrunch 有 2 個影音候選缺少可完整讀取的文字稿；地新聞新竹市與新竹縣的正式 listing 與 fallback 均無法建立 2026-10-02 的完整清單覆蓋，因此 configured_sources 為 limited。",
+  "stories": [
+    {
+      "id": "techcrunch-amazon-strands-decider-2b-2026-10-01",
+      "title": "Amazon 推出開源 Strands Decider 2B，瞄準代理工作流決策步驟",
+      "summary": "AWS 推出開源 Strands Decider 2B，採用類似 Jev 的決策模型思路，針對預先定義的選項回傳選擇與信心分數。模型主打低延遲、低成本且可在本機執行，定位於代理工作流中不需要完整大型語言模型的決策節點。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-10-01T09:49:00-07:00",
+      "tags": [
+        "AI",
+        "AWS",
+        "代理",
+        "決策模型",
+        "開源模型"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+          "published_at": "2026-10-01T09:49:00-07:00"
+        }
+      ]
+    },
+    {
+      "id": "latent-space-airbnb-inside-out-ai-2026-10-02",
+      "title": "Airbnb 以 AI 重塑工程流程、客服與非同步代理",
+      "summary": "Latent Space 訪談 Airbnb 技術長 Ahmad Al-Dahle，整理公司把 AI 同時導入內部研發與使用者服務的做法。Airbnb 表示約 60% 程式碼由 AI 產生、客服約半數工單可由 AI 處理，並以 Everest 組織情境圖、客製模型與非同步代理加速產品開發及值班事件處理。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-10-02",
+      "tags": [
+        "AI",
+        "Airbnb",
+        "AI 工程",
+        "代理",
+        "企業應用"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Latent Space",
+          "url": "https://www.latent.space/p/airbnb",
+          "published_at": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "id": "decoder-cloudflare-clef-decision-models-2026-10-02",
+      "title": "Cloudflare 推出 Clef 決策模型，讓代理以機率直接選擇動作",
+      "summary": "Cloudflare 發布 Clef 與 Clef-flash，讓代理針對預先定義的選項輸出機率，而不是生成長篇文字。兩款模型以 Qwen 為基礎，支援文字與圖片；Cloudflare 另規劃提供強化學習微調服務，讓企業依自身工作流客製化決策模型。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-10-02",
+      "tags": [
+        "AI",
+        "Cloudflare",
+        "代理",
+        "決策模型",
+        "Qwen"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/cloudflare-says-its-new-clef-model-means-humans-no-longer-need-to-be-in-the-loop-for-ai-agents/",
+          "published_at": "2026-10-02"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "configured_sources": {
+      "status": "limited",
+      "completed_at": "2026-10-03T07:33:22+08:00",
+      "captured": 32,
+      "included": 3,
+      "excluded": 29,
+      "notes": [
+        "Current run: 一般更新時間窗依上一個 ChatGPT configured_sources 完成時間，為 2026-10-01T11:17:57+08:00 至 2026-10-03T07:33:22+08:00（Asia/Taipei）；Latent Space、The Decoder、地新聞新竹市與新竹縣依設定檢查 2026-10-02 整個日曆日；Codex Resets 不受一般時間窗限制。",
+        "固定快照 config/sources.json 實際列出 7 個 web_pages；依設定陣列順序與各來源列表順序固定 acquisition position，未新增來源、RSS、關鍵字、排除條件或排名規則。",
+        "Codex Resets 已讀取設定 status 入口；頁面沒有可驗證的「Reset scheduled」排定時間，依規則未產生 Codex story。本次 captured=0、included=0、excluded=0。",
+        "TechCrunch AI 已依設定 listing 固定候選順序；一般時間窗內共列出 21 個候選，下一篇 Gemini 4 Argon 文章發布於 2026-09-30T16:43:00-07:00（2026-10-01T07:43:00+08:00），明確早於本次起點。文字文章候選均可從正式 canonical 頁面讀取；其中 1 個 Podcast 與 1 個影音候選未提供可完整讀取的文字稿，無法完成全文查核，因此本來源 limited。依最多 1 篇與代表性規則，納入 AWS Strands Decider 2B 決策模型文章。本次 captured=21、included=1、excluded=20。",
+        "Interconnects 已檢查設定 archive；最新列出的 Interconnects 自有文章日期為 2026-09-22，明確早於本次一般更新時間窗，因此沒有需讀取的時間窗內候選。本次 captured=0、included=0、excluded=0。",
+        "Latent Space 已依設定 archive 固定 2026-10-02 的 3 個候選位置；Airbnb AI 工程文章與 Alex Zhang 訪談的公開全文／文字稿可讀，Pi 1.0 AINews 標示 Paid，依規則未繞過付費限制。依最多 1 篇與代表性規則，納入 Airbnb AI 工程與代理實務文章。本次 captured=3、included=1、excluded=2。",
+        "The Decoder 已依設定 listing 列舉 2026-10-02 的 8 個候選，之後列表已進入 2026-10-01；正式 canonical 頁面均完成查核。依最多 1 篇與代表性規則，納入 Cloudflare Clef 決策模型文章。本次 captured=8、included=1、excluded=7。",
+        "地新聞新竹市的首選 /hsinchuCity/news 與設定 fallback /hsinchuCity/ 均未提供可證明 2026-10-02 清單覆蓋的內容；可讀頁面最新明確日期停在 2026-09-30。未以舊內容或空結果推定 2026-10-02 無新聞，也未產生 story；本來源 limited。本次 captured=0、included=0、excluded=0。",
+        "地新聞新竹縣的首選 /hsinchuCounty/news 與設定 fallback /hsinchuCounty 均未提供可證明 2026-10-02 清單覆蓋的內容；可讀頁面最新明確日期停在 2026-09-30。未以舊內容或空結果推定 2026-10-02 無新聞，也未產生 story；本來源 limited。本次 captured=0、included=0、excluded=0。",
+        "本次 configured_sources 合計 captured=32、included=3、excluded=29；TechCrunch AI、地新聞新竹市與地新聞新竹縣有上述查核限制，因此 status=limited。3 則新 story 均使用 image:null；圖片缺失未作為排除或限制理由。"
+      ]
+    }
+  }
+}
