@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-03",
+  "generated_at": "2026-10-03T00:15:26+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-03 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 8 則，入選 6 則，排除 2 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-652de31100e8a8fe9cc33b7c",
+      "title": "陶韻智分享 AI 基礎建設支出的分配",
+      "summary": "陶韻智轉述 a16z 的整理：每 100 元 AI 資本支出，晶片約占一半，電力占兩成，網路與冷卻、建物及土地各占一成半，呈現供應鏈不同環節的投入比例。",
+      "original_text": "每100塊的AI資本支出，花到哪裡去，營收是怎麼分配到供應鏈裡各個類別的\na16z整理了：\n- $50 to chips\n- $20 to power\n- $15 to networking\n- $15 to cooling, buildings, and land",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-02T23:53:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/833276517_1631390662012596_7197771786492037646_n.png?stp=dst-jpg_tt6&cstp=mx1561x2048&ctp=s1080x2048&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cIsQyq2mMe0Q7kNvwHdVq-X&_nc_oc=Adr8d7sC0mkj0xGScCDJaWyq6p7NYZHJFCsWHCdwcaQDEljMnv9yeiAbI0ozReB6Ow82lc2ackE6dY7P_qzokGem&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=07TYoZwehwhSALpdl1rEQQ&_nc_ss=7b2a8&oh=00_AQN4I9F1ujKxsVRWiUFdEq01W6yE7caa7Txa3rPzfrPP_g&oe=6AC5BF18",
+        "alt": "陶韻智此則貼文的原始配圖",
+        "credit": "陶韻智／Facebook"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid04QRcRc14LzYByLZRgTKNPMi6XeUvzCXWTwAFirz4zwhWgyc6k7GnshrVUcnxasSXl",
+          "published_at": "2026-10-02T23:53:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-076c024f4d6b68f4e8068c30",
+      "title": "安德魯：個人 Agent 的價值取決於 Context 與授權管理",
+      "summary": "安德魯回顧從遠端 PC、雲端 VM 到 NAS 的工作方式，認為 Agent 正逐步整合遠端操作。他以本機設備集中管理個人資訊、檔案、開發工作區、公開內容與筆記，強調整理好 Context 和服務授權，比單純更換模型更影響助手的實用性。",
+      "original_text": "2026, 很多平日的工作習慣, 都是有感的改變... \n講個很明顯的個人習慣改變, 過去很長一段時間, 我都會 24 hr 開著自己家裡的 PC, 有需要就可以連回去做事... \n後來太耗電了, 而且當時 PC 跟家裡網路環境也沒那麼可靠, 偶爾會連不上, 後來有一陣子就開始在 server 開 VM, 或是直接開 cloud 的 VM 來用...\n不過個人的資料跟環境越來越多, 最終還是搬回家了, 只是設備從 PC 改成 NAS, 網路設備也升級成 unifi, 開始透過 NAS 處理大部分的事情, 平時靠 S 牌 NAS 的套件 + docker 就足以應付, 必要時 vpn + ssh 搞定一些複雜一點的問題...\n這些行為, 抽象化的角度來看, 就是這三件事的技術進步改變而已:\n1. 部署與連線方式:\n   打通網路, 自己架 VPN, 或是用各種跳板類型的服務 ( ex: teamviewer, ... etc ), 或是直接開雲端的 VM\n2. 遠端控制方式:\n   終端機 ( ssh + terminal ), Web Browser ( Web APP, NAS Like ), 或是遠端桌面類型的協定 ( microsoft RDP, VNC ... etc )\n3. 應用操作模式:\n   Remote Access / Thin Client / Web Application ( Hosted on NAS, or Personal Server )\n這一切其實都各自在進步, 不過這一年來, 很有感的是過去那麼多種工具組合, 現在都被 agent 逐步統一了, 越來越多人選擇透過對話的 client ( telegram, line, 或是 remote agent ), 搭配 computer use, 遠端操作 agent, 在你自己的設備上做事\n原本的遠端連線, 被 agent 大廠的 remote agent 替代了, 原本的遠端桌面 ( RDP, VNC .. ), 被 remote agent + computer use 替代了, 原本各種整合的服務, 現在都不需要了, 各自的服務授權都在自己設備上 login / 放好 access token, 讓 agent 去操作就夠了...\n這些改變, 也順便解決掉手機很難用 remote desktop 類型的操作問題 ( chat + computer use 就搞定了 ), 現在你用慣了可能覺得沒什麼, 回顧過去 20 年來的發展, 你會覺得這是降維打擊... \n所謂的 computer use, 不是只有 computer use 而已, 昨天才 po 了一篇, 談怎麼設計給 agent 用的軟體, 其實各種 xxx use 都算; 從最友善 ( agent 最容易使用 ) 的 tool use (CLI, API, MCP), 到 browser use, 再到 computer use, 都只是種讓 agent 使用軟體的 \"途徑\" 而已｡\n不過, 這也帶來改變了, 個人的運算需求重新被拉起來 ... (你看 Mac Mini 過去一年賣到缺貨好幾個月), 我覺得最重要的原因, 就是 Context 跟 Authorization ...\n回想過去, 我會想自己養 pc 的原因是什麼? 運算能力嗎? 我個人的資料, 我可管控的環境, 授權能使用我的服務等等, 這才是重點, 這是我願意自己架設, 不想用其他人的服務最重要的原因｡ 我自己重要的檔案, 我不想放在外面, 所以我選擇 NAS + 本地端的工作檔案; 我自己的重要服務授權 ( ex: email, IM, 各種服務的登入帳號 ), 我不想授權給外面的電腦, 所以我選擇在自己的設備上登入使用...\n一年多以前我就在等 M5 Mac Mini 出來就要去買一台來用, 其實主要的目的就是要跑 AI 相關應用, 包含個人 Agent, 結果我賭錯了, 這一等就等一年多, Mac Mini 銷量大好, 不但賣到缺貨, 還漲價, 一直等到上個月 Mac Mini M6 出來, 這次不等了, 我直接訂了台 32G / 512G, 買了個陽春的 TB4 (Intel JHL7440) + PC 拆下來的 2TB SSD 來用..\n搞定自己的作業環境, 其實可以做很多事, 這類經驗分享的文章太多了, 輪不到我, 我就略過細節了 XDD, 我只分享我認為最重要, 最需要被累積, 最需要被好好管理的個人 Context ..\n我自己的案例, 把這些 Context 都集中在一起, 讓 Agent 當我的助手, 開始替我維護:\n1. PIM ( email, calendar ... etc )\n2. 我的個人檔案 ( 來源在 NAS, 我用 Synology Drive 同步, 因此筆電手機等等都能直接取用 )\n3. 我的開發工作區 ( code repo, container, database, ... )\n4. 我的公開發表內容 ( 簡報, 部落格文章, Skills ), 這些都設置好 CI/CD, 只要 git push 就能自動發佈\n5. 我的個人筆記, 包含其他記錄, 我的心得, 想法, 參考資料 ( Obsidian + NAS Sync )\n還是老話一句, agent 能力其實都已經夠強了, 好不好用真正的差異其實是在你的 context 準備的有多充足? 這才是 agent 表現好壞的最大差距｡ Mac Mini 來做這種事情其實剛剛好, 加了效能夠用的 TB4 SSD, 空間使用就不需要綁手綁腳的了 (對不起我買不起頂規的版本 XDD)\n試了一下, 難怪那麼多人買 Mac Mini 來做這用途, 體積小又省電, 圖1 純曬圖, 底下擺了 TB4 SSD, 以及兩顆舊筆電的 1TB 2.5\" HDD ..., 圖2 則是從 sleep 狀態下開機, 扣掉其他待機的電器, 連同 sleep mode 中的 mac mini + TB4 外接 SSD (這個 sleep 也會發熱) 才 9w, 開機了也才 15 ~ 20w ...\n如果你試過這些 remote agents 但是覺得不好用, 別急著怪 agent, 先盤點看看你的 context 吧, 工具跟模型大家都差不多 (有錢的話大家都買的到), 真正差別還是在 context, 有把 context 養好的人, 用了 agent 才會覺得值回票價",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-02T20:51:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/830543552_1623820929088138_5989175237191499573_n.png?stp=dst-jpg_tt6&cstp=mx2048x1152&ctp=p720x720&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5iT3heKrXlkQ7kNvwE68btN&_nc_oc=Adopf7kEtsESlWCrzOPlWCQG7pHw6XmkAJnIbOfXclrZi6lbPckAB1dLJt4fL4li_D55YpNo-n8gHFoiLifAdszQ&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=07TYoZwehwhSALpdl1rEQQ&_nc_ss=7b2a8&oh=00_AQPb7c9Cy3nmt3xw0Yf1cOqOOCksAc5v9yB3h1MGUEJEeQ&oe=6AC5B697",
+        "alt": "安德魯的部落格此則貼文的原始配圖",
+        "credit": "安德魯的部落格／Facebook"
+      },
+      "sources": [
+        {
+          "name": "安德魯的部落格",
+          "url": "https://www.facebook.com/andrew.blog.0928/posts/pfbid0343Ednc9MYJZyEg4EmmDjknS189vB6kPjhVnLqY2Z6BG6H3ryNWMPPyua1QnJ4WW4l",
+          "published_at": "2026-10-02T20:51:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-2aa5cdde8d276eaa39a0116c",
+      "title": "保哥以多層遠端登入故事談協作效率",
+      "summary": "保哥以真實情境改編的幽默故事，描述 VPN、多層跳板與 RDP、剪貼簿限制及閒置登出如何拖慢客戶環境維護，也讓截圖回覆與議題同步更困難，凸顯存取管制與協作效率之間的取捨。",
+      "original_text": "登入客戶的測試環境真的就跟「全面啟動」沒什麼兩樣，雖然已經可以允許我們遠端登入，但是遠端桌面一層接著一層跳，層層封鎖記憶密碼，而且每季都要改一次密碼。\n第一層：VPN。\n客戶的 VPN 只能用極其嚴苛的條件撥接登入，先鎖實體 mac 位址、再綁定登入帳號、然後再加上 OTP / MFA 驗證。花了四十分鐘，我才終於入夢。\n第二層：跳板機。\n被關閉了剪貼簿功能，什麼都摳不進去，什麼也都摳不出來，就算擷圖也很難區分 O 跟 0 的差異。離線 15 分鐘就會被強制登出！\n第三層：再 RDP 到一台 Windows Server 2012。\n從這層開始，時間變慢了。在現實世界按一個鍵，畫面三秒後才出現。我打了 cd，起身倒水，回來剛好看到 d 浮現。還好這問題不常見，不然真的會崩潰。\n第四層：進入協作平台\n我們被迫在如此艱困的環境跟客戶的 Users 協作，他們會上一個內部網站，建立 Issues、提問、擷圖，對他們來說很方便。但是對我們的人來說，我們無法貼圖回覆，也無法自動同步 Issues 回來，工作效率大打折扣。\n這時同事從現實世界傳訊息：「好了沒？客戶在問進度。」\n我回：「我還在第四層。」\n「什麼第四層？」\n「你不懂，你沒下來過。」\n我需要一個圖騰。柯柏有陀螺，我有桌布：我的筆電是貓，跳板機是客戶 logo，Server 2012 是一片絕望的藍。我定睛一看——黑底白字。我在 Ghostty (macOS)。我還活著。\n問題修好了。改了一行設定，花了 8 秒。登入花了兩個小時。\n然後是踢擊。閒置 15 分鐘自動登出，我被一層一層踢出來，像被三個保鑣接力丟出夜店。\n回到現實，我盯著自己的桌面。滑鼠游標旁邊，有個小小的藍色圈圈還在轉。\n一直轉。\n一直轉。\n我到現在都還不確定，它到底會不會停。\n#以上劇情根據我司真實情況改編 #如有雷同純屬虛構",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-02T19:09:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02LgyvqFoePCz2U1TBZLQpWbdkn7EpjC7TQUuj17Rt6DV7ynoCLqzb2W8msnha6EYil",
+          "published_at": "2026-10-02T19:09:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-9fea3ebf415a387edb70e105",
+      "title": "陶韻智推薦《用 AI 加速思考的 56 招》",
+      "summary": "陶韻智推薦《用 AI 加速思考的 56 招》，認為書中整理了他想分享的實用技巧。",
+      "original_text": "這本不錯，很厚，把我想講但沒寫的實用招數都寫出來了\n用AI加速思考的56招！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-02T18:59:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.30808-6/832662924_10165689839452938_8546987134472403322_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=p960x960&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OsWFssmdhtgQ7kNvwFJaUdx&_nc_oc=Adqx8KLHCzQCQBh5fNaPnKANQzewb7XzswfAscySa3tGc-ZMeTFC8ctYFZyrPPIJO7AqyEVDFiVHGICQ1figpxfF&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=07TYoZwehwhSALpdl1rEQQ&_nc_ss=7b2a8&oh=00_AQNOAF8qCUfRH8JXBy2ounk7RFO-eVHVgi5Z4a0GsQgDsw&oe=6AC5C2C5",
+        "alt": "陶韻智此則貼文的原始配圖",
+        "credit": "陶韻智／Facebook"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid033sxEFNzWdRVpA7GXirvvgEt47jqUjP6xcjLgFb3zp4Zwhczk4GjP6moHbULUf8nfl",
+          "published_at": "2026-10-02T18:59:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-d8648277640fbb991a1de513",
+      "title": "Ray 分享 AdSense 退件後調整網站的經驗",
+      "summary": "Ray 分享網站從五月申請到九月通過 AdSense 的過程：兩度因內容價值不足退件後，增加貼近台灣需求的工具，調整首頁並補上部落格與開發紀錄，強化網站的獨特性。這是個人申請經驗，並非保證通過審核的公式。",
+      "original_text": "申請了無數次 AdSense 之後得到的審核心得（唉？\n\n想開啟 Google 廣告營利，要怎麼快速通過審核？\n我五月就開始申請，一直到九月才通過\n兩次退件理由都叫「缺乏價值的內容」\n當時我做的其中一個工具叫做「複製愛心符號」，例如♡ \n但 Google 審核說這單元其他網站都有，價值不夠高而打槍\n後來除了新青安房貸試算這類貼近台灣需求的工具\n也重新調整首頁，補上部落格和開發紀錄，分享說自己近期內做了哪些辨識性高、獨特性高的網站，才終於送審成功\n以上分享一下我被退兩次的經驗，希望讓大家少走一些冤枉路 \n如果你也想開營利模式，我請 AI 把我過去四個月遇到的雷，整理成 prompt 放在留言\n包含內容規劃和 SSR／SSG 的設定方向，方便大家拿去改成自己的版本 \nPS：這招是 是 Ray 不是 Array 師傅教我 der",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-02T13:24:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/828564184_1132852142419545_1229587209021387463_n.png?stp=dst-jpg_tt6&cstp=mx668x464&ctp=s668x464&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=n1JK8lTwD1EQ7kNvwF37mpk&_nc_oc=AdpuBHyCq6yaeZhrnxZaX9u4-kiBk9N4v99t1X2LlS2-XFMd2QB_t-2vxHRqYecfNSZJsPDk06JQR8ZqL5A2Q6Aa&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=XZR5eRZ4qANriEhzsMZ9Qw&_nc_ss=7b2a8&oh=00_AQPGpiIqgyLStL0v_iZ6y5Y8xvzX7vcmXqs8i3oHnge6JQ&oe=6AC5B1A7",
+        "alt": "是 Ray 不是 Array此則貼文的原始配圖",
+        "credit": "是 Ray 不是 Array／Facebook"
+      },
+      "sources": [
+        {
+          "name": "是 Ray 不是 Array",
+          "url": "https://www.facebook.com/israynotarray/posts/pfbid0LRasKuHav6LngnSkW8qjNDZtUGZFHgCx1CjyKL2HHsCagdna5zdjWE4Z434yzkwDl",
+          "published_at": "2026-10-02T13:24:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-a37968c45da8764495bddbd9",
+      "title": "保哥提醒 Codex 額度重置時間",
+      "summary": "保哥在貼文中提醒，Codex 將於台北時間 10 月 3 日凌晨 2 點重置額度，並建議預先整理大型任務清單。",
+      "original_text": "Codex 又要重置額度了。\n時間就在台灣時間 10 月 3 日凌晨 2 點。\n想跑大型任務或測試新想法的朋友，可以準備開工了。\n把排隊的工作清單列好。\n時間一到直接開工，不要浪費重置後的算力。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-02T10:55:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/834528542_1449430840510543_5975296330539913759_n.png?stp=dst-jpg_tt6&cstp=mx1125x821&ctp=s1125x821&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=WzhkXlDpKgAQ7kNvwHZ-0k7&_nc_oc=AdqQtS_V6Z9YRaGl9O9Q0jCstrxGT0lbLEbh4FyNXnU9M1IfuchXo9sd4hrKczwZluZhC8xUobe2lz4kxuEI_qrl&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=XZR5eRZ4qANriEhzsMZ9Qw&_nc_ss=7b2a8&oh=00_AQOw2iIMjaVzrqA28zTNT-ewILvnH6yb5u5Sj6x6v4vYEQ&oe=6AC5C52F",
+        "alt": "Will 保哥的技術交流中心此則貼文的原始配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid035PyanjJrtsTUUqSzrRjkSXXZXrWyQWfcLjU3G12cmdwnBYq2g8HMeggicKov12n1l",
+          "published_at": "2026-10-02T10:55:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-02T16:15:24.823Z",
+      "captured": 8,
+      "included": 6,
+      "excluded": 2,
+      "notes": []
+    }
+  }
+}
