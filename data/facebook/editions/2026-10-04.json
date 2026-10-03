@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "generated_at": "2026-10-04T00:15:00+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-04 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 4 則，入選 2 則，排除 2 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-84715b5c7c8b3548b31e3ae6",
+      "title": "保哥介紹以 TypeScript 定義的 Cloudflare CI",
+      "summary": "保哥介紹 @cloudflare/ci：以 TypeScript 定義 CI 流程，提供型別檢查與重構支援，底層結合 Workflows 和 Sandbox。貼文著重冪等步驟的重試設計，以及診斷介面與修復 Agent 串接的用途。",
+      "original_text": "Cloudflare 推出原生 CI 引擎 @cloudflare/ci，以 TypeScript 全面取代傳統脆弱的 YAML DSL。開發者能享有編譯期型別檢查與程式碼重構支援，在本地端即可確保工作流程定義的正確性。\n系統底層架構於 Workflows 與 Sandbox，將 CI 執行環境直接搬移至邊緣運算。任務步驟要求具備冪等性以實現彈性重試，並透過解耦的診斷介面，便於與外部修復 Agent 串接。\n這項設計將 CI 流程視為第一級應用程式碼，大幅減少維護設定檔的認知負擔。它展示了邊緣運算在提供運算隔離與分散式狀態調度上的潛力，為現代雲原生自動化提供全新範式。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-03T21:24:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/9520738465567789977?_nc_oc=Adqsah5cuJsMbifXv7BHlY6YhzT8hfOEO_uD8KOQAxiJ3d0TSh_8VhkrshnWKlyvUwHQP9vvw_bC2t5sg1aI4lqO&url=https%3A%2F%2Fopengraph.githubassets.com%2F4aff0a027b69612861a7f4f89f588750f2440ff5396411c8f70d09c50d2b4558%2Fcloudflare%2Fci&fb_obo=1&utld=githubassets.com&_nc_sid=f93bbc&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=GA31wwJkdqTPIupv6Vjwcw&_nc_zt=3&oh=06_Q3_DAWuNsaxrKCQDK7S-xUDAUa2V9adSGa4njcZ0wc4bMWRu&oe=6AC31C94",
+        "alt": "Cloudflare CI 貼文的 GitHub 專案預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook；預覽來源：GitHub cloudflare/ci"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02124i7DjDYWm56TzM5BikugordC6wPgT9S7HtHq3cv8MhT7hWSuTmUT8Qd69GBBeul",
+          "published_at": "2026-10-03T21:24:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-be69cae975c824a3b6459b37",
+      "title": "保哥分享 Antigravity 新增 Claude 5.5 模型消息",
+      "summary": "保哥表示，Antigravity CLI 與 Antigravity 2.0 已加入 Claude Opus 5.5 和 Sonnet 5.5，並認為這增加了 Google AI Pro／Ultra 訂戶的模型選擇。",
+      "original_text": "Antigravity CLI 與 Antigravity 2.0 上架了 Claude Opus 5.5 與 Claude Sonnet 5.5 模型，這真的是 Google AI Pro/Ultra 訂戶的好消息！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-03T21:06:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/832779917_979409551857166_8222133525769637838_n.png?stp=dst-jpg_tt6&cstp=mx1650x1170&ctp=s1650x1170&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3oDMKw4Dz0sQ7kNvwFsYOl1&_nc_oc=AdrqQic42-yaElVtQM8j5Mf0h-deWLasu9ESJz710UhuOYDP0Y9ZaL3G7TI9HMjCXliE7P1d_W0h4dXsv4jnIQpW&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=GA31wwJkdqTPIupv6Vjwcw&_nc_ss=7b2a8&oh=00_AQPJenxDnrdjN0WsX0qBDu7xbxnNdC_LAo5kRXaSXB4Ttg&oe=6AC7015A",
+        "alt": "保哥分享 Antigravity 模型更新的原始配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02QmCoGrwGHUFarBtiHzc5DcHr3Y4q7XmtWpYr1VqTe6NULEskkdvAYLL6UZDTTi2tl",
+          "published_at": "2026-10-03T21:06:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-03T16:14:58.623Z",
+      "captured": 4,
+      "included": 2,
+      "excluded": 2,
+      "notes": []
+    }
+  }
+}
