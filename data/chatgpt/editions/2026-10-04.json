@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "generated_at": "2026-10-04T07:23:42+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-04 每日資訊整理",
+  "edition_summary": "本次依固定 master 快照檢查 7 個設定的非 Facebook web_pages，共固定 13 個時間窗內候選位置，收錄 3 則 stories。The Decoder 有 2 篇 Plus 候選無法完整讀取全文；地新聞新竹市與新竹縣的正式 listing 與 fallback 均只取得過時內容，無法建立 2026-10-03 的完整清單覆蓋，因此 configured_sources 為 limited。",
+  "stories": [
+    {
+      "id": "techcrunch-meta-muse-gadgets-2026-10-02",
+      "title": "Meta 開放 Muse Gadgets，讓開發者自製 AI 硬體",
+      "summary": "Meta 推出 Muse Gadgets，提供開源韌體與 Linux SDK，讓開發者把 ESP32、Raspberry Pi 或自製硬體接上 Muse。Meta 也製作 5,000 個 Muse Home Link USB-C 裝置供訂閱者申請，並把 Muse 進一步推向小型企業與企業市場。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-10-02T17:45:00-07:00",
+      "tags": [
+        "AI",
+        "Meta",
+        "Muse",
+        "AI 硬體",
+        "開源"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
+          "published_at": "2026-10-02T17:45:00-07:00"
+        }
+      ]
+    },
+    {
+      "id": "latent-space-ai-roundup-2026-10-03",
+      "title": "Latent Space 整理決策模型、代理工具鏈與多代理研究進展",
+      "summary": "Latent Space 的 10 月 3 日 AINews 彙整近期 AI 進展，涵蓋 GPT-6.1 Sol、Claude Sonnet 5.5、決策模型、生態系工具與代理執行框架，也整理多代理強化學習、context compression、AI for science 等研究與工程議題。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-10-03",
+      "tags": [
+        "AI",
+        "代理",
+        "決策模型",
+        "AI 工程",
+        "研究"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "Latent Space",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-cee",
+          "published_at": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "decoder-bootloops-ai-science-2026-10-03",
+      "title": "BootLoops 以開源 harness 協助 AI 進行精密科學計算",
+      "summary": "哈佛物理學家 Matthew Schwartz 公開 BootLoops，一套讓 AI 模型處理精密科學計算的開源 harness。文章指出團隊在三個月內完成 36 份手稿、涵蓋 18 個領域與 30 個積分問題，但也強調模型會自信地產生錯誤結果，仍需人工驗證。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-10-03",
+      "tags": [
+        "AI",
+        "BootLoops",
+        "AI for Science",
+        "開源",
+        "研究"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/open-source-bootloops-harness-supports-ai-models-in-performing-precise-scientific-calculations/",
+          "published_at": "2026-10-03"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "configured_sources": {
+      "status": "limited",
+      "completed_at": "2026-10-04T07:23:42+08:00",
+      "captured": 13,
+      "included": 3,
+      "excluded": 10,
+      "notes": [
+        "Current run: 一般更新時間窗依上一個 ChatGPT configured_sources 完成時間，為 2026-10-03T07:33:22+08:00 至 2026-10-04T07:23:42+08:00（Asia/Taipei）；Latent Space、The Decoder、地新聞新竹市與新竹縣依設定檢查 2026-10-03 整個日曆日；Codex Resets 不受一般時間窗限制。",
+        "固定快照 config/sources.json 實際列出 7 個 web_pages；依設定陣列順序與各來源列表順序固定 acquisition position，未新增來源、RSS、關鍵字、排除條件或排名規則。",
+        "Codex Resets 已讀取設定 status 入口；頁面沒有可驗證的「Reset scheduled」排定時間，依規則未產生 Codex story。本次 captured=0、included=0、excluded=0。",
+        "TechCrunch AI 已依設定 listing 固定候選順序；一般時間窗內共有 4 篇候選，正式 canonical 原文均完成讀取。下一篇 Sean Parker／Stability AI 文章發布於 2026-10-02T14:09:00-07:00，明確早於本次起點。依最多 1 篇與代表性規則，納入 Meta Muse Gadgets 開源 AI 硬體文章。本次 captured=4、included=1、excluded=3。",
+        "Interconnects 已檢查設定 archive；最新可驗證的 Interconnects 自有文章日期仍為 2026-09-22，明確早於本次一般更新時間窗；archive 上較新的外部連結未用來擴張設定來源範圍。本次 captured=0、included=0、excluded=0。",
+        "Latent Space 已依設定 archive 固定 2026-10-03 的 1 個候選位置；[AINews] not much happened today 可公開完整讀取，依最多 1 篇規則納入。本次 captured=1、included=1、excluded=0。",
+        "The Decoder 已依設定 listing 列舉 2026-10-03 的 8 個候選，之後列表已進入 2026-10-02；其中 6 篇公開原文可完整讀取，2 篇 Plus 文章在正式 canonical 頁面顯示訂閱後續全文提示，依規則未繞過限制，因此本來源 limited。依最多 1 篇與代表性規則，在可完整查核的候選中納入 BootLoops AI 科學計算文章。本次 captured=8、included=1、excluded=7。",
+        "地新聞新竹市已讀取設定首選 /hsinchuCity/news 與 fallback /hsinchuCity/，但目前閱讀工具只提供兩天前抓取的內容，無法以過時副本證明 2026-10-03 清單覆蓋；未以舊內容或空結果推定無新聞，也未產生 story。本來源 limited。本次 captured=0、included=0、excluded=0。",
+        "地新聞新竹縣已讀取設定首選 /hsinchuCounty/news 與 fallback /hsinchuCounty，現有讀取同樣只提供兩天前抓取的內容，無法以過時副本證明 2026-10-03 清單覆蓋；未以舊內容或空結果推定無新聞，也未產生 story。本來源 limited。本次 captured=0、included=0、excluded=0。",
+        "本次 configured_sources 合計 captured=13、included=3、excluded=10；The Decoder、地新聞新竹市與地新聞新竹縣有上述查核限制，因此 status=limited。3 則新 story 均使用 image:null；圖片缺失未作為排除或限制理由。"
+      ]
+    }
+  }
+}
