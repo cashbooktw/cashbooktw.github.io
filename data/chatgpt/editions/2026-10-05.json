@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05T07:22:14+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-05 每日資訊整理",
+  "edition_summary": "本次依固定 master 快照檢查 7 個設定的非 Facebook web_pages，共固定 16 個時間窗內候選位置，收錄 2 則 stories。The Decoder 有 1 篇 Plus 候選無法完整讀取全文；地新聞新竹市與新竹縣的 2026-10-04 候選 canonical 頁面在有限重試後仍無法讀取，fallback 又是過時內容，因此 configured_sources 為 limited。",
+  "stories": [
+    {
+      "id": "techcrunch-super-intelligence-force-2026-10-04",
+      "title": "美國成立 Super Intelligence Force，將統籌聯邦 AI 政策協調",
+      "summary": "美國總統川普宣布成立 Super Intelligence Force，由國家情報體系主管 Jay Clayton 等官員領導，負責協調聯邦政府的 AI 相關工作。TechCrunch 報導指出，該小組預計在 120 天內提出 AI 風險與機會報告，並規劃因應 AI 帶來的社會與安全威脅。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-10-04T08:15:00-07:00",
+      "tags": [
+        "AI",
+        "美國",
+        "AI 政策",
+        "Super Intelligence Force"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
+          "published_at": "2026-10-04T08:15:00-07:00"
+        }
+      ]
+    },
+    {
+      "id": "decoder-nasa-ibm-lunar-foundation-model-2026-10-04",
+      "title": "NASA 與 IBM 開源月球基礎模型，整合 17 年軌道觀測資料",
+      "summary": "NASA 與 IBM Research 發布開源 Lunar Foundation Model，以近 200 萬組多模態月球資料訓練，涵蓋約 17 年月球勘測軌道器觀測。The Decoder 報導指出，模型在極區冰沉積預測與部分隕石坑偵測任務上優於基準，並同步釋出模型、程式碼與可供機器學習使用的資料集。",
+      "section": "AI",
+      "source_kind": "web",
+      "published_at": "2026-10-04",
+      "tags": [
+        "AI",
+        "NASA",
+        "IBM",
+        "基礎模型",
+        "AI for Science"
+      ],
+      "image": null,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/nasa-and-ibms-open-source-lunar-model-turns-17-years-of-orbiter-data-into-a-foundation-for-lunar-science/",
+          "published_at": "2026-10-04"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "configured_sources": {
+      "status": "limited",
+      "completed_at": "2026-10-05T07:22:14+08:00",
+      "captured": 16,
+      "included": 2,
+      "excluded": 14,
+      "notes": [
+        "Current run: 一般更新時間窗依上一個 ChatGPT configured_sources 完成時間，為 2026-10-04T07:23:42+08:00 至 2026-10-05T07:22:14+08:00（Asia/Taipei）；Latent Space、The Decoder、地新聞新竹市與新竹縣依設定檢查 2026-10-04 整個日曆日；Codex Resets 不受一般時間窗限制。",
+        "固定快照 config/sources.json 實際列出 7 個 web_pages；依設定陣列順序與各來源列表順序固定 acquisition position，未新增來源、RSS、關鍵字、排除條件或排名規則。",
+        "Codex Resets 已讀取設定 status 入口；頁面沒有可驗證的「Reset scheduled」排定時間，依規則未產生 Codex story。本次 captured=0、included=0、excluded=0。",
+        "TechCrunch AI 已依設定 listing 固定候選順序；一般時間窗內共有 3 篇候選，正式 canonical 原文均完成讀取。再下一篇 Amazon data center 文章發布於 2026-10-03T11:43:00-07:00，換算 Asia/Taipei 為 2026-10-04T02:43:00+08:00，明確早於本次起點。依最多 1 篇與代表性規則，納入美國成立 Super Intelligence Force 的文章。本次 captured=3、included=1、excluded=2。",
+        "Interconnects 已檢查設定 archive；最新可驗證的 Interconnects 自有文章日期仍為 2026-09-22，明確早於本次一般更新時間窗；archive 上較新的外部連結未用來擴張設定來源範圍。本次 captured=0、included=0、excluded=0。",
+        "Latent Space 已依設定 archive 檢查 2026-10-04；最新列出文章日期為 2026-10-03，因此沒有符合前一個完整 Taipei 日曆日的候選。本次 captured=0、included=0、excluded=0。",
+        "The Decoder 已依設定 listing 列舉 2026-10-04 的 5 個候選，之後列表已進入 2026-10-03；其中 4 篇公開原文可完整讀取，1 篇 Plus 文章顯示訂閱後續全文提示，依規則未繞過限制，因此本來源 limited。依最多 1 篇與代表性規則，在可完整查核候選中納入 NASA／IBM Lunar Foundation Model 文章。本次 captured=5、included=1、excluded=4。",
+        "地新聞新竹市的設定首選 /hsinchuCity/news 已完整列出 2026-10-04 的 5 個候選，但 5 個 canonical 原文頁面皆在初次讀取與額外 2 次同 URL 重試後仍回報 cache miss；設定 fallback /hsinchuCity/ 僅取得 3 天前抓取的過時內容，未用來代替候選全文或判斷覆蓋。因無法完成全文查核，本來源 limited，未產生 story。本次 captured=5、included=0、excluded=5。",
+        "地新聞新竹縣的設定首選 /hsinchuCounty/news 已完整列出 2026-10-04 的 3 個候選，但 3 個 canonical 原文頁面皆在初次讀取與額外 2 次同 URL 重試後仍回報 cache miss；設定 fallback /hsinchuCounty 僅取得 3 天前抓取的過時內容，未用來代替候選全文或判斷覆蓋。因無法完成全文查核，本來源 limited，未產生 story。本次 captured=3、included=0、excluded=3。",
+        "本次 configured_sources 合計 captured=16、included=2、excluded=14；The Decoder、地新聞新竹市與地新聞新竹縣有上述查核限制，因此 status=limited。2 則新 story 均使用 image:null；圖片缺失未作為排除或限制理由。"
+      ]
+    }
+  }
+}
