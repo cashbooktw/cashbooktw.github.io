@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "date": "2026-10-03",
-  "generated_at": "2026-10-03T01:56:13.164333+00:00",
+  "date": "2026-10-04",
+  "generated_at": "2026-10-04T02:37:20.643879+00:00",
   "quotes": {
     "tw": {
       "date": "2026-10-02",
@@ -19,8 +19,8 @@
     },
     "nasdaq": {
       "date": "2026-10-02",
-      "close": 27190.8633,
-      "change": 319.2637,
+      "close": 27190.8594,
+      "change": 319.2598,
       "change_pct": 1.1881,
       "source": "Yahoo Finance"
     },
