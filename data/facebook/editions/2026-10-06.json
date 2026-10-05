@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-06",
+  "generated_at": "2026-10-06T00:16:12+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-06 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 11 則，入選 6 則，排除 5 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-88242604bebf89024a57a930",
+      "title": "陶韻智邀請試玩收盤價模擬投資遊戲",
+      "summary": "陶韻智分享網頁模擬投資遊戲，說明玩家每天只能依收盤價買賣，並邀請讀者參與目前僅數十人使用的排行榜。",
+      "original_text": "今天我的虛擬投資漲幅排第一~\n當然，現在只有幾十個人在網站裡。\n模擬投資練習遊戲，每天只能根據收盤價買賣。來試玩看看吧～\nhttps://invest-game.stingtao.info/#rank",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-05T20:42:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/839232631_4035725950069207_8092557513321089124_n.png?stp=dst-jpg_tt6&cstp=mx2048x1306&ctp=s2048x1306&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=sGjFc6VdA3oQ7kNvwGXEB3R&_nc_oc=AdocNHxir-mP_V_9-mYXhDhhfPo05sj231_r8ikWhSYG_2uGgKlzdZAK5dGiZq0-0BGUrQwSNGHt-9W2AtjPF30E&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=lrFbPG_hG1bVj4w2KIFD6w&_nc_ss=7b2a8&oh=00_AQOToVc7XSTa5QsDQA50hUFlnf777LxNLgZIbX2HC6vLIQ&oe=6AC99844",
+        "alt": "陶韻智分享的模擬投資遊戲貼文配圖",
+        "credit": "陶韻智／Facebook"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid02ukPLUSFB8JPcTL7YiZyrdgDfpwRn6KVNWcXcwEZeRuN4iN13Vk8DNAkLUtHTqe9Ul",
+          "published_at": "2026-10-05T20:42:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-71b013539db4905f91662642",
+      "title": "陶韻智談 AI 採用率與雲端容量準備",
+      "summary": "陶韻智在貼文中將美國家戶付費採用 AI 的比例描述為 2%，並與其他科技的普及速度比較。他認為，超大規模雲端業者須提前準備容量，才能承接可能快速成長的需求。",
+      "original_text": "美國達到50%家戶採用率（付錢）所花的時間\n- 車: 15 年\n- 網際網路: 7.5 年\n- 電腦: 19 年\n- 智慧型手機: 6.5 年\n- AI: 到今天是2%\nhyperscaler得先備好，否則明天用量起來十倍到20%也提供不了服務。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-05T19:39:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/835413389_1653361316431788_900282877863821359_n.png?stp=dst-jpg_tt6&cstp=mx960x1200&ctp=s960x1200&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=e7OONl_BFDUQ7kNvwHjoPXR&_nc_oc=AdqxzTnFNjj-_ViUxGXJzFBdth8Ujs7Ai_Fww_7xk2eCZ1U3Ul8SxIfkOVB7El3raJ7eeJAq4W9-cl0eTs_jyiGq&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=lrFbPG_hG1bVj4w2KIFD6w&_nc_ss=7b2a8&oh=00_AQNwlMkaUXPQPAJ7BnSS2jKZYRJKH-ZDyqQ7FCM5LBuY8Q&oe=6AC99ED8",
+        "alt": "陶韻智分享的 AI 家戶採用率貼文配圖",
+        "credit": "陶韻智／Facebook"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid0375cUC6Et43GFDyaiS2RA8nHEb5grFh32DiGAdT1p73UehJbs6DJMSgJQARf7bBp3l",
+          "published_at": "2026-10-05T19:39:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-81ffc2f663def4019eff7b31",
+      "title": "保哥開源〈過故人莊〉動畫並分享製作成本",
+      "summary": "保哥宣布開源〈過故人莊〉動畫，並表示這部教學影片的 Token 費用為 48 美元；若要製作〈唐詩三百首〉系列，他考慮透過開課支應成本。",
+      "original_text": "我把「過故人莊」動畫開源了～ \n不過這部教學影片的 Token 費用花了 $48 美元，好像沒有很便宜，若要設計「唐詩 300 首」可能要開一堂課才能解決 \n別吝嗇到 GitHub 幫我按個星星",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-05T15:25:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-4.fna.fbcdn.net/emg1/v/t13/17862385829239349291?_nc_oc=AdreF-QPTFAbAweuHPa-gelTM-E2PgCP9hIyy-gCePA01ufaqSUGLoOpGZXm6JCzUmmppUauR63_r83lnBj7-MUY&url=https%3A%2F%2Fopengraph.githubassets.com%2F2a8ee6ab5b714b0c1b61bbd1cf897e11a1558c0f8b08cc788a41184555da6d99%2Fdoggy8088%2FTangPoetry-guo-guren-zhuang&fb_obo=1&utld=githubassets.com&_nc_sid=f93bbc&_nc_ht=external.ftpe7-4.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=lrFbPG_hG1bVj4w2KIFD6w&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_DAW2VvKV4C_bcts3lAMCSn4mYtJLjFxGPrxhV_aNtOfA7&oe=6AC5B265",
+        "alt": "〈過故人莊〉動畫開源專案的 GitHub 預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook；預覽來源：GitHub doggy8088/TangPoetry-guo-guren-zhuang"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid05MuUdVxyKQJhnjoWeRHdmCRpYyMd55YdtvCV5G2wLTyQKrdFFThE7cBAVwLRNrNNl",
+          "published_at": "2026-10-05T15:25:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-0aaee23ed18811e19d875f6d",
+      "title": "保哥用 Claude Code 製作唐詩動畫教材",
+      "summary": "保哥表示，他以 Claude Code 搭配 Opus 5.5 製作八分鐘直式動畫，幫助小三孩子理解〈過故人莊〉。教材包含 23 個生字的注音與圖解字卡，並以四張圖串聯詩句、搭配看圖填空練習，免費供讀者使用。",
+      "original_text": "我們家小孩今年小三，昨天好不容易把〈過故人莊〉背起來了。\n但我發現他其實對詩裡的句子一點興趣都沒有，什麼是「雞黍」、什麼是「場圃」、「還來就菊花」在講什麼，他都不知道，就只是把 40 個字死記硬背塞進腦袋。背是背起來了，可是跟沒讀過差不多。\n所以我昨晚用 Claude Code + Opus 5.5 乾脆自己做了一支動畫給他看。\n我老婆看過我做的這支影片，她也認可說超讚 (難得)，不然他經常說 AI 都生一堆垃圾。\n故事是這樣：小玉邀請好朋友阿庭到她家的農莊作客，阿庭走過被綠樹圍起來的村子、看到斜躺在城牆外的青山，小玉推開窗戶指給他看曬穀場和菜園，一家人邊吃飯邊聊桑樹和麻，傍晚兩人勾手指約好重陽節再來賞菊花。孟浩然那首詩，就是這一天的紀錄。\n詩裡的 23 個生字都做成字卡，有注音、意思和圖；最後用「四張圖」把四句詩串起來，再加一段看圖填空的小挑戰。8 分鐘，直式影片，手機看剛好。\n家裡有國小的孩子、或是身邊有老師的，歡迎分享。\n#這些都免費提供給大家的學習資源\n#我是不是有點投身教育領域太多了",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-05T13:49:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t15.5256-10/838643400_1120229637129215_4993074952296691638_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=110&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=9F0c6Z5GV3sQ7kNvwERXKYZ&_nc_oc=Adrak6itfHlQ8qD8jzU9cnLZilh_Q0rE21krHDPCeHpHGbfu_yjGQibtkRQLfxNCFN_2BCzwwcpp0SNC0ZEZd3HX&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=qjtTwpJn6_G9nMWY9UUdTQ&_nc_ss=7b2a8&oh=00_AQPPczVY4awHzoLj6nHWqZ9JBqfZjyPLlScXFbXVXHOwmw&oe=6AC9AAFE",
+        "alt": "保哥分享的〈過故人莊〉教學影片封面",
+        "credit": "Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/watch?v=2284929299024836",
+          "published_at": "2026-10-05T13:49:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-6bb85469049eeb213130ce4a",
+      "title": "卡斯伯整理 AI Coding 基本資安自查清單",
+      "summary": "卡斯伯將 AI Coding 的基本資安觀念整理成圖卡與檢查清單，涵蓋金鑰、Git、前後端、服務權限，以及對 AI 的限制，供開發者自我檢查。",
+      "original_text": "先前有提到想寫一個開發上的「基本資安觀念」\n花了不少時間，才來回順出一個版本\n簡單來說分為五個觀念：\n1. 金鑰的重要性\n2. Git 的運用\n3. 前後端的理解\n4. 服務權限的檢查\n5. 給予 AI 的限制\n這些內容我做成圖卡\n另外也有包含「檢查清單」\n如果你有在進行 AI Coding 可以先自我檢查看看喔",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-05T11:09:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/836438585_1401870542028867_6355857134765368079_n.png?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s2048x2048&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=pefhuf0SWXkQ7kNvwEZ67IT&_nc_oc=AdoPnMTtZxts2tpr2WSkg0RfMau9hUOY3O6J7RWM2t1V2TWC5XDUwhbDtMVqpjQSgpHcVxCm4VBv9JfsMK_FTmHM&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=qjtTwpJn6_G9nMWY9UUdTQ&_nc_ss=7b2a8&oh=00_AQNOfzo6j5ik4WYiAAJ7QdXFgEWBJepX5S5vAGHq5z1_Dg&oe=6AC9B98D",
+        "alt": "卡斯伯分享的 AI Coding 基本資安圖卡",
+        "credit": "卡斯伯／Facebook"
+      },
+      "sources": [
+        {
+          "name": "卡斯伯",
+          "url": "https://www.facebook.com/WccCasper/posts/pfbid029sa8MsQpG2caaqkXfVG8rF5LFUADYiXxBv6QEXPUwiJB7BTUHBfL4VLKYVLNSWsXl",
+          "published_at": "2026-10-05T11:09:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-74cd3c951812d102ac92e470",
+      "title": "The Will Will Web 新增自動切換深色主題",
+      "summary": "保哥宣布部落格新增深色主題，會依瀏覽器設定自動切換；系統採用深色設定時，開啟網站即可套用。他也邀請讀者回報閱讀時的排版或顯示問題。",
+      "original_text": "我的部落格終於有深色主題了，現在會自動依據瀏覽器的設定切換。\n如果你的系統設定是深色，打開就會直接套用深色樣式，夜間看文章應該會舒服很多。\n大家可以試試看切換的效果，要是閱讀時發現排版或顯示上有任何問題，再麻煩跟我說一聲。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-05T10:24:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-3.fna.fbcdn.net/emg1/v/t13/2110143158330059820?_nc_oc=AdpiGiC4uqJ6w4mNUD-geXW87rFd7WlG680GnEJ7GzBg595KVGV9wOHpvl6ey49ZDFk5S4AUahdoc5cOqy4c6FtX&url=https%3A%2F%2Fblog.miniasp.com%2FContent%2Fog-image.png&fb_obo=1&utld=miniasp.com&_nc_sid=c63717&_nc_ht=external.ftpe7-3.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=qjtTwpJn6_G9nMWY9UUdTQ&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_DAQb1fkEIxqvvp0W2g6BE7quYpR1V3l9uOaSwTEU2u6al&oe=6AC591F6",
+        "alt": "The Will Will Web 的原始網站預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook；預覽來源：The Will Will Web"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02NKT6hWD6nJn6ZwAhHKo6oK5QrtJ4iYoBd1u2sDEhGwrcEoBBVztxMzgoCPZE5iP3l",
+          "published_at": "2026-10-05T10:24:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-05T16:16:10.201Z",
+      "captured": 11,
+      "included": 6,
+      "excluded": 5,
+      "notes": []
+    }
+  }
+}
