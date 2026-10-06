@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "generated_at": "2026-10-07T00:13:44+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-07 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 11 則，入選 9 則，排除 2 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-661bfba68a276e751f45a378",
+      "title": "保哥轉述 ChatGPT 圖片廣告測試消息",
+      "summary": "保哥轉述，OpenAI 擬於本月稍晚在美國測試 ChatGPT 圖片生成廣告；貼文提到廣告將清楚標示、與生成圖片分開，並避開敏感對話。",
+      "original_text": "OpenAI 宣布將於本月稍晚在美國開始測試，在 ChatGPT 的圖片生成功能中置入圖片廣告。根據早期合作夥伴的回饋，這類廣告的獲客成本比起傳統搜尋廣告低了許多，而 OpenAI 也強調廣告會清楚標示、與生成圖片分開，並避開敏感對話。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-06T23:25:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02cQfqfJXjcT64VmGmSqz4NEnasXTWrNu5hQWdPTSVtHtrnui1WfsxiaUx3ch7mhh1l",
+          "published_at": "2026-10-06T23:25:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-97ac7482d9cd6912cd3c386a",
+      "title": "保哥介紹 Mistral Large 4 多模態模型",
+      "summary": "保哥介紹 Mistral Large 4，貼文描述其原生多模態架構、1T 總參數與 49B 活躍參數，並稱 Preview API 已可測試、模型權重預計於十月底釋出。",
+      "original_text": "歐洲 AI 實驗室 Mistral 正式發表全新旗艦模型 Mistral Large 4，官方暱稱為 Le Chonk \n這款新模型採用原生多模態架構，總參數量達 1T，運算時啟用 49B 活躍參數。\n在 Coding、Agentic Workflow 與多模態理解能力上，展現了目前頂尖的運算實力。\n其整體表現大幅超越現階段歐美地區的所有 Open-weight 模型。\n在資安、金融與法律等企業核心領域，該模型已達到開源領域的最高水準。\n在視覺定位等特定應用場景中，其表現甚至超越了部分頂尖的閉源模型。\n該模型全程於歐洲本土資料中心，採用 3,800 張 NVIDIA Grace Blackwell 晶片從頭訓練完成。\n這項進展不僅展現技術實力，更為企業自主掌握 AI 技術與資料主權奠定基礎。\n目前開發者已可在 Mistral Studio 測試 Preview API。\n完整的開源模型 Weights 預計將於 10 月底正式對外釋出",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-06T23:02:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-1.fna.fbcdn.net/emg1/v/t13/9997285676076133253?_nc_oc=AdqPNUJVrh1FPSMCELCpLCZb6QU-6ecZrj_xgPIUUttCLa1rK1m_j5fwpPtbGYZkZoTWXJ5mGI1eN4Z8zHuThJJ_&url=https%3A%2F%2Fmistral.ai%2Fcms-media%2Fapi%2Fmedia%2Ffile%2Fcover-mistral-sovereign%2520copie.webp&fb_obo=1&utld=mistral.ai&_nc_sid=f93bbc&_nc_ht=external.ftpe7-1.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=lHHYpPgsoTMMxa6U0zD51A&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EARE21X9Cg2ybqZwnlC7_Gzjl83-nFD8nzmz8_zLizqEA&oe=6AC70A06",
+        "alt": "Mistral Large 4 貼文的原始預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook；預覽來源：Mistral"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid03TAduEJbnk6NvU1FdHuhz711NJmtzyi9SrbcLKfWHrgZnjKy4AdZGfYxmLAygyhyl",
+          "published_at": "2026-10-06T23:02:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-d1b3a86a6a6e82fdf9b43692",
+      "title": "陶韻智從消費型 AI 榜單觀察付費需求",
+      "summary": "陶韻智以 a16z 榜單討論消費型 AI 商機，認為使用者願為可交付成果、專業品質、持續練習及節省工作流程付費。他列出 Canva、Speechify、Zeely、Jumpspeak 與 Sudowrite，並關注朗讀本土化及小企業廣告素材工具。",
+      "original_text": "a16z 於5號發布的榜單，依 YipitData 美國消費者卡片樣本中的觀察支出排序，排序to-C AI公司的營收\n用戶願意付費的，通常是可交付的成果、專業品質、持續練習，或省下整段工作流程的時間。\n幾個我覺得有意思的商業想法，後續追蹤之：\n1. Canva是本來就有的平台，business 尚未被AI端走。整體體驗的護城河強\n2. Speechify 文字、網頁與文件朗讀，以及語音輸入。看起來似乎是個容易本土化的點子\n3. Zeely 小企業廣告素材生成、UGC 風格影片與投放工作流。服務小電商、服務業與店主。 這應該很適合亞洲/台灣企業？\n4. Jumpspeak 外語情境對話、角色扮演與口說回饋。服務成人語言學習者、旅遊及職場需求者。 真是個不敗的題目\n5. Sudowrite 小說構思、情節、角色、章節與 Story Bible。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-06T22:56:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/836841267_27531870479822832_6082715343452130965_n.png?stp=dst-jpg_tt6&cstp=mx2048x1298&ctp=s2048x1298&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IxNjQyJ_2r0Q7kNvwHAgN1Q&_nc_oc=AdqRZl4c0l9RVd3SOJKwqcpGbAUoEOXlX6bz4fxd-ApMoasTRSjnImTUdv-KfVtAWoFibAYxN-VxvTLZQozOm4RH&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=lHHYpPgsoTMMxa6U0zD51A&_nc_ss=7b2a8&oh=00_AQOUyUSk_-rS8f7GO1oi9MyL_RrbJ38r6juTCqHRSr6SDw&oe=6ACAF2D8",
+        "alt": "陶韻智分享的消費型 AI 榜單貼文配圖",
+        "credit": "陶韻智／Facebook"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid0sfvp9MK2QRFDVo2n1qA3tzCYpYbMuW5KS8pUXKkfsduuz7yKSY4KnZHnror3NSpRl",
+          "published_at": "2026-10-06T22:56:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-203a3ef3b5f26a5cc59543c8",
+      "title": "保哥談 AI 效率與工程師能力培養的拉扯",
+      "summary": "保哥肯定 AI 能有效完成工作，卻擔心工程師直接交付 AI 產出的程式碼，跳過需求分析、架構與抽象設計的練習。他希望團隊善用工具，也能累積能力，坦言目前尚未找到兼顧兩者的培養方式。",
+      "original_text": "當老闆二十多年，我一直在找一種人。\n不排斥工作、不整天抱怨，交辦的任務能聽懂，接下來就想辦法做到，讓人放心。\n找了二十多年，有沒有找到？\n有，但真的少。一百個裡面能遇到一個，我就偷笑了。\n所以我也沒什麼好抱怨的，找不到，就自己培養。\n從相關科系剛畢業的新人，到去補習班學程式、準備轉職的工程師，再到中階、資深的人，我帶過很多。\n帶著帶著，也聽過離職同仁笑說：「多奇就是一間教育訓練中心，根本是練功房。」\n剛聽到，心裡多少有點不舒服。花這麼多心力帶人，結果得到這個評語。\n後來就看開了，人本來就來來去去。\n你有機會來我公司，我就想辦法把你培養成人才。這件事，我做了二十多年。\n怎麼培養？給你專案、給你舞台，讓你接觸客戶，試試沒碰過的技術。\n那些原本不熟悉的東西，你得親自下去做，才會慢慢變成自己的本事。\n也因為這樣，我一直沒有為了降低成本，替公司做一套程式碼產生器，讓大家套一套就能交差。\n同仁自己會做這些工具，但我這個老闆，反而刻意不做。\n我很在意一件事：如果連思考、摸索的機會都幫你省掉了，你要在哪裡練功？\n然後，我最近好像真的找到那個夢寐以求的員工了。\n懂我在講什麼，交代的事情做得很好，有些任務甚至做得比我還好。\n不太需要休息，只要「薪水」給夠，就能繼續做。\n而且，要多少個，就有多少個。\n對，就是 AI。只是薪水變成了 Token 費。\n照理說，當老闆的應該開心死了吧？\n我確實用得很開心。但新的困擾也來了。\n因為現在每個工程師，都有了自己的「下屬」。\n大家一樣認真工作，卻不一定會花心力去帶這個下屬。有些人把原本自己該做的事情交給 AI，拿到結果，事情就結束了。\n看著這個狀況，我想到二十年前那些程式碼產生器。\n當年我刻意沒有替大家準備的工具，現在每個人手上都有了，而且強大太多。\n以前我還可以說：「這個案子先不要用產生器，你們把架構想清楚，再來跟我討論。」\n現在，遇到不懂的地方，交給 AI 就有程式碼了。\n架構為什麼這樣設計？物件怎麼切？那些抽象概念到底在處理什麼問題？\n有些人原本就還沒學好，現在乾脆跳過了。\n客戶講出來的需求，要怎麼抽絲剝繭，整理出概念，再轉成程式碼？這中間有很多功夫，需要自己想過、做過才會懂。\n工程師的工作，也還有很多事情需要人親自處理。程式碼寫出來，只是其中一部分。\n我現在擔心的是，專案做完了，原本應該在專案裡練到的能力，卻沒有跟著長出來。\n以前，我會小心保留這些學習機會。\n現在，工具太方便了，有些人自己就把這段路省掉了。\n偏偏我很清楚 AI 有多好用，我自己也用得很兇。要我叫大家都不要用，實在說不過去。\n我也不可能站在每個人後面，盯著他到底有沒有自己想。\n帶工程師帶了二十多年，這是我現在遇到的一個大困擾。\n我終於找到了很能幹的「員工」，卻開始煩惱，該怎麼繼續把身邊的工程師培養起來。\n這題，我目前還沒有解法。\n大家也遇過這種狀況嗎？你們怎麼讓團隊用好 AI，又能把該練的功夫練起來？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-06T18:00:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0Ey6VhWd7ro4ukGeZ1VTCAwhY4XqoLDvyTAGYgUrsETU22WCwDrWKYXqDuXoTZx25l",
+          "published_at": "2026-10-06T18:00:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-95aecac43cb53ae485ca6052",
+      "title": "保哥將 AI 使用能力納入工程師招募門檻",
+      "summary": "保哥把 AI 使用能力列為工程師招募門檻，僅在人選不足時考慮例外。",
+      "original_text": "到了 2026 年還不會用 AI 的工程師，我大概是不會再錄用了，除非我真的找不到人",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-06T17:33:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0FNU1ct8tXfffkQJbEWpEhexkip21kaKApGSfD6ikN6bV8r8zoMEhz2cFhNUVX8bTl",
+          "published_at": "2026-10-06T17:33:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-934b8b401216bfc9ddc3f0d9",
+      "title": "保哥介紹 LCU 串接桌面操作能力",
+      "summary": "保哥介紹開源 LCU，表示它沿用本機桌面執行環境，讓 Claude Code、Codex CLI、Pi 等 Agent 使用視窗辨識、點擊、輸入與截圖能力，並可選擇整合瀏覽器控制。",
+      "original_text": "讓 AI Agent 直接操作你的電腦，現在有了更靈活的架構選擇。\n過去想要體驗 ChatGPT 桌面應用的 Computer Use 能力，通常必須綁定在原生的軟體介面與登入流程之內。\n近期開源的 LCU 專案，成功將這套操作電腦的 Runtime 完全解耦。\n它不是重新寫一套自動化控制工具，而是直接取用本機既有的官方 ChatGPT 桌面版執行環境。\n這意味著無論是底層指令、權限授權還是工具執行結果，都維持百分之百的原生邏輯。\n更重要的是，使用者完全不需要在該應用程式中登入任何帳號。\n透過 LCU，開發者可以在自己熟悉的 Agent 環境中使用這套能力。\n目前已經原生支援 Claude Code、Codex CLI 與 Pi 等工具。\n在功能層面上，Agent 能夠辨識任何視窗畫面、精準點擊、輸入文字與截圖。\n如果需要瀏覽器控制，也能以自願啟用的方式整合 Chrome 官方擴充套件，且每一次網頁存取都保留手動確認機制。\n系統需求方面，本機需準備好官方 ChatGPT 桌面應用與 Python 3.12 以上環境。\n平台則支援 Apple Silicon 的 macOS 以及 Ubuntu 24.04 相容的 Linux 系統。\n安裝過程相當精簡，只要將設定提示詞提供給現有的 Agent 即可自動完成配置。\n這種將核心能力與特定產品解綁的設計，為個人化 Agent 應用帶來了極高的自由度。\n對於想讓終端機 AI 助手擁有完整桌面操作權限的開發者來說，這是一個相當值得關注的新發展。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-06T11:31:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-1.fna.fbcdn.net/emg1/v/t13/4992882935225778831?_nc_oc=AdrJ93YkBHGJPO32BxfRquApR_UhZoF2Z-1AKQJ0BwIv2yDetQhfGaCe_CvsvRN22MikiUurapN3ph5b__s_2CHD&url=https%3A%2F%2Flcu.amontlabs.com%2Fmedia%2Flcu-showreel-poster.jpg&fb_obo=1&utld=amontlabs.com&_nc_sid=c63717&_nc_ht=external.ftpe7-1.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=y64oUXedPPn8k_crvVGn_Q&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAQdugINdc-WZlEnRo6o_9L39vOJpSs0SY6zJ2npc3lep&oe=6AC70CCE",
+        "alt": "LCU 桌面操作工具的原始預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook；預覽來源：LCU amontlabs.com"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0iXiLdQ5DAx8KQEckgdUmDu2thR6AYy5jaa5jtiEYRarGZyBk6NoGPgcF7eN543RUl",
+          "published_at": "2026-10-06T11:31:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-b3aa4d5a81fdc44f6e2427b4",
+      "title": "保哥分享 Google 雲端硬碟與文件的 Markdown 支援",
+      "summary": "保哥分享 Google 雲端硬碟與文件的 Markdown 支援更新：可直接預覽、開啟編輯並協作留言，不必先轉成 Google 文件格式；他認為這方便了技術筆記與文件處理。",
+      "original_text": "Google 雲端硬碟和文件現在原生支援 Markdown 檔案了 \n過去我們在雲端硬碟裡看到副檔名為 md 的檔案時，通常只能下載或者轉成 Google 文件才能編輯。\n現在使用者可以直接在雲端硬碟裡預覽這些檔案，也可以直接用 Google 文件開啟來編輯。\n這項更新讓技術人員在處理筆記或文件時方便許多。\n團隊成員之間也能直接在上面進行協作和留言。\n整個過程不需要先把檔案轉換成 Google 文件格式。\n這項功能改善了開發者與文字工作者日常使用的便利性，我覺得非常實用！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-06T09:28:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/838503702_960366839899472_8147233555087376926_n.png?stp=dst-jpg_tt6&cstp=mx2048x1094&ctp=s2048x1094&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Eef4K6kO0SQQ7kNvwFRSCBL&_nc_oc=Adr3nMdPpwcOUn4q2z1d5-TWzZJgENRaN8sTic1pGNviCwKFbu2Adw3pbN7NO7Fm_58Iw-YmIslVMuJ-gqlw4k0B&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=y64oUXedPPn8k_crvVGn_Q&_nc_ss=7b2a8&oh=00_AQOuOXOPBCznEozJ4jCm6Pmz44iXJjUqOtOJTf55RifEaQ&oe=6ACAF408",
+        "alt": "保哥分享的 Google Markdown 支援更新配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0cymA7w7cLbiQ7L7akKNiqpRh38TSzZvRxbxko28VCb5jSr2ggx4Rnjka2s68XEVZl",
+          "published_at": "2026-10-06T09:28:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c394d4eeb51502660844d3f5",
+      "title": "陶韻智用 Codex 為 AI 話題短片加上繁中字幕",
+      "summary": "陶韻智分享一分半鐘的 AI 產業話題影片，表示使用 Codex 加上繁體中文字幕。",
+      "original_text": "一分半鐘 看完最新AI大戰恩怨情仇與特色論點！\n用codex上了繁中字幕..... 一開始GPU太熱，Jensen一直流汗，風扇吹已經不夠了.....",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-06T08:17:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t15.5256-10/830996146_844787415359542_4775528274717162434_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=101&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=uETrgcQpiV4Q7kNvwGKWjmL&_nc_oc=AdqylGFuNjH6Yf1ifP3sdbduC-9x5-_9zMe3x72q0eZaFtJIa4MgT4w6xebkxFHqCEDe-f_eHBeTYzrnyiF_dji7&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=XYzKIOKjwLOWafWRKwuruQ&_nc_ss=7b2a8&oh=00_AQNyAuQXq5EWQaGYbCQ2XRWvJw-Yk7N_H99Dyb6QW5bLRQ&oe=6ACB0043",
+        "alt": "陶韻智分享並加上繁中字幕的 AI 話題影片封面",
+        "credit": "陶韻智／Facebook"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/watch?v=1412817620977086",
+          "published_at": "2026-10-06T08:17:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-fa241be5fd329ff35524e206",
+      "title": "保哥免費上架 Duotify Link Checker 網頁檢查工具",
+      "summary": "保哥宣布免費上架並開源 Duotify Link Checker，可檢查網頁可見連結、圖片、影音與 CSS 圖片，直接標示問題。貼文介紹八路並行、圖片 MIME 驗證，以及可篩選、匯出 CSV 的報表功能。",
+      "original_text": "經營網站或維護內容時，最令人困擾的問題之一，就是頁面上出現失效連結或破損圖片。\n這些問題不僅影響使用者體驗，也會對網站的專業形象與搜尋表現造成扣分。\n為了解決這個痛點，我很久之前就開發了一款名為 Duotify Link Checker 的 Chrome 擴充功能。\n今天，我把他公開上架了，免費給所有人使用！\n這款工具能一鍵檢查當前網頁中所有可見的超連結、圖片、影音以及各類 CSS 背景圖片。\n只要啟動檢查，工具便會直接在網頁上以框線標示出結果，讓問題資源一目了然。\n它不只支援常見的網頁標籤，連 CSS border、mask、偽元素圖片與頁內錨點都能完整辨識。\n在效能與精準度方面，工具採用了 8 路並行處理與網址去重機制，兼顧速度與系統負載。\n為了避免常見的誤判問題，檢查圖片時會驗證 MIME 類型，防止將回傳 HTTP 200 的登入頁誤判為正常圖片。\n連線請求則優先發送 HEAD 方法，必要時才以 GET 確認並即時中斷下載本文，大幅節省頻寬。\n所有檢測結果都能在頁面浮動報表中即時篩選，並且支援將資料匯出為 UTF-8 編碼的 CSV 報表。\n在安全性與隱私方面，該工具完全在瀏覽器本機端執行，不含追蹤碼，也不會將瀏覽紀錄傳回開發者伺服器。\n目前 Duotify Link Checker 已正式上架至 Chrome 線上應用程式商店，同時在 GitHub 開源釋出。\n對於前端工程師、網站維運人員或內容編輯者而言，這是一套相當嚴謹且高效率的檢查利器。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-06T08:00:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/12842433323235171913?_nc_oc=Adr7NdqBx3kaorj2tOtpZwaXkkFc2TeWHdh2nq_Kb3QbMx0d4rivuXvtOBonBzQ2pcNWKR86MO-0ly8x73hrD4Gi&url=https%3A%2F%2Fopengraph.githubassets.com%2F35e25643fe86520854afa79fcb1c4a698c64a62ec12a310d5cc14591456712e2%2Fdoggy8088%2Fduotify-link-checker&fb_obo=1&utld=githubassets.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=XYzKIOKjwLOWafWRKwuruQ&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EATpbmHIdqcva9QFhFY5T-zaRErOPXJ186wK2qryv88jc&oe=6AC6EE32",
+        "alt": "Duotify Link Checker 開源專案的 GitHub 預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook；預覽來源：GitHub doggy8088/duotify-link-checker"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0fzPXDzwEoNMJQf8XZpMQf8ueQH64W7gbCVCLidDeLNGv7NhCkzVM3feoLkEZc8YAl",
+          "published_at": "2026-10-06T08:00:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-06T16:13:42.811Z",
+      "captured": 11,
+      "included": 9,
+      "excluded": 2,
+      "notes": []
+    }
+  }
+}
