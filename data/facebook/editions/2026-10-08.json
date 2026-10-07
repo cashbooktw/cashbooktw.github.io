@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-08",
+  "generated_at": "2026-10-08T00:20:40+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-08 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 13 則，入選 9 則，排除 4 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-01a1fa13ceffe2fc1489ade6",
+      "title": "陶韻智以諷刺組織圖談 AI 公司文化",
+      "summary": "陶韻智分享 AI 公司組織文化諷刺圖，圖中以 benchmark、安全和部門對立描繪不同企業，並邀讀者比較台灣公司的文化。",
+      "original_text": "X上看到有人講 AI公司現在的組織圖，有數種不同的畫法\n從圖看起來：\nXAI最上面是個神（或外星人）\nGoogle到處在談benchmark\nAnthropic安全部門最核心\n微軟則各自舉槍瞄準其他部門\n你知道的台灣公司比較像哪一張圖的組織圖?",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-07T23:13:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/839303403_1627134409195399_7213827578790611337_n.png?stp=dst-jpg_tt6&cstp=mx900x587&ctp=s900x587&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5OWpKcDNWgUQ7kNvwGPvJtK&_nc_oc=AdrowBItxHf9HJPm_B_WA_rIYmML1fDfsiwMJeecQ646gnob6tbOtLWrS8zIkbBBUPuQvDdPKUCPhsfDUGfm0kjT&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=9F3UdC0ggH9NHW4_BlLJRw&_nc_ss=7b2a8&oh=00_AQNAcHJBn518jX2fnvEtNYrTMT6C8ykjUNNXVpj9hkILbw&oe=6ACC3AB9",
+        "alt": "陶韻智分享的 AI 公司組織文化諷刺圖",
+        "credit": "陶韻智／Facebook"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid0i4rBL1grUNT8L4noJ6XgPuAbzgG2ThCrbdwUFE7b6xyHizQw4bLqKcFgcfAC5C8Dl",
+          "published_at": "2026-10-07T23:13:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-2656037a1d671f9ae540b7c2",
+      "title": "保哥介紹 C# Dev Kit 11.0 架構與效能更新",
+      "summary": "保哥介紹 C# Dev Kit 11.0：整合背景服務、採用 Native AOT，並透過專案快取與優先載入當前檔案改善開發反應。貼文也介紹 MSBuild 編輯支援與 C# Doctor 診斷工具，並稱預覽版已可在 VS Code 測試。",
+      "original_text": "微軟正式發表了 C# Dev Kit 11.0 的重大架構更新。\n這次版本號直接對齊 .NET 11，從先前的 3.3 版大幅躍升。\n過去在 Visual Studio Code 撰寫 C# 時，大型專案常面臨載入緩慢、記憶體負擔偏高以及建置等待過長等痛點。\n為了解決這些問題，微軟徹底翻新了底層架構，核心目標只有一個，就是讓開發工具變得更輕、更快。\n首先是背景程序的全面精簡。\n舊版架構會在背景啟動 6 個 Managed 程序，啟動時必須經歷防毒掃描、磁碟讀取與 JIT 編譯，彼此通訊完成後才能提供服務。\n新版將內部服務整合成單一伺服器，改採 Native AOT 提前編譯成原生執行檔，啟動路徑不再需要等待 Runtime 載入。\n專案載入邏輯也迎來重大變革。\n新版引入了專案快取機制，初次解析後便保留結構，不必每次開啟都重新運算。\n更關鍵的是採用優先載入當前檔案的策略，在大型專案中，當前檔案的語言服務就緒時間提升了 95 到 180 倍，大約半秒內就能開始寫程式。\n記憶體佔用方面同樣帶來驚人的瘦身成果。\n以 Orleans 與 Aspire 等數百個專案組成的架構測試，記憶體用量降低了約百分之八十以上。\n過去動輒佔用 1.3GB 至 2GB 的記憶體，新架構下僅需 200MB 至 380MB 左右即可維持運作。\n日常開發最常遇到的增量建置也有明顯改進。\n微軟將 Visual Studio 的高速最新狀態檢查與建置加速技術移植至 Visual Studio Code，僅修改單檔時的建置耗時大幅縮短，單元測試與啟動偵錯的反應更加即時。\n除了效能優化，編輯體驗也獲得補強。\n現在編輯 csproj 與各類 MSBuild 檔案時，同樣享有語意標色、屬性補全、NuGet 套件版本提示與安全弱點警示。\n若專案因缺少 SDK 或環境異常而無法載入，全新加入的 C# Doctor 診斷工具能集中指出問題並提供修復指引。\n目前 C# Dev Kit 11.0 已經開放於 Visual Studio Code 的 Pre-Release 通道測試。\n只要在擴充功能頁面切換為預覽版本，即可搶先體驗這次有感的效能蛻變。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-07T21:19:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/16713851720970658512?_nc_oc=Adr_3kHeu2HZZssj-vN5eysI2-YiMIxsV7PgxS68wHQEtO79hbS2WP-LIIZ8qLP4IvbGD2FVA8ykNrY5S9MeSbaC&url=https%3A%2F%2Fdevblogs.microsoft.com%2Fdotnet%2Fwp-content%2Fuploads%2Fsites%2F10%2F2026%2F10%2Ffaster-lighter-csharp-dev-kit.webp&fb_obo=1&utld=microsoft.com&_nc_sid=f93bbc&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=9F3UdC0ggH9NHW4_BlLJRw&_nc_zt=3&oh=06_Q3_EARTESNGjh5Rb2-AJC9j57z41EpUsCTkmbER0PvgxrOhy&oe=6AC83B24",
+        "alt": "C# Dev Kit 更新貼文的 .NET Blog 預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook；預覽來源：Microsoft .NET Blog"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0ppFuJNf7kKDo3sqqpDqf4oiFwukj2UxTpR5sA5A7BqAVXYbJiCXKJw1CydQNfB9nl",
+          "published_at": "2026-10-07T21:19:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-70e8ad206ffed18978e3d292",
+      "title": "高見龍分享 AI 協作下的開發與教學近況",
+      "summary": "高見龍分享以 AI 協助寫程式的近況，同時進行授課、線上課程準備與專案開發，也能兼顧遊戲和追劇。他以副駕駛比喻 AI，描述工作效率帶來的忙與閒。",
+      "original_text": "最近我的副駕駛座比我還忙，寫程式也寫的比我還好，我以後只能當它的司機了\n最近一邊講課、一邊準備新的線上課程、一邊做專案還一邊做新玩具，然後偷閒打個電動再追個劇\n謝謝 AI 讓我這麼忙又這麼閒",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-07T19:31:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t51.82787-15/838879820_18626310208029293_2581491251199102812_n.jpg?stp=dst-jpegr_tt6&cstp=mx3072x4096&ctp=s1080x2048&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PUOu5JkHTacQ7kNvwHMb21F&_nc_oc=AdoyaZSgph5eVeD2OwtxPwGPZt2IDNa9O-3L1E73C57r0VeQ3d_mC4KNS6-Xk0mbY07Qv8wBTABzZUkLhu9H9rE1&_nc_zt=23&se=-1&_nc_ht=scontent-tpe5-1.xx&_nc_gid=9F3UdC0ggH9NHW4_BlLJRw&_nc_ss=7b2a8&oh=00_AQMR-JSTIK_yKKZ4HlRuMqm117lqVv3K2JkR0BhIH1VH7Q&oe=6ACC44E5",
+        "alt": "高見龍分享 AI 副駕駛開發近況的原始配圖",
+        "credit": "高見龍／Facebook"
+      },
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid0KNsD6dVVnAJ4kj5rC7MNyBGhCKmzK6HjdmYYxGJdPL36TtRu6Fbim7nzxXEi198vl",
+          "published_at": "2026-10-07T19:31:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-eca53a7eac090c4aab7927da",
+      "title": "保哥介紹 Nano Banana 2.1 多模態能力與限制",
+      "summary": "保哥介紹 Nano Banana 2.1，貼文稱其基於 Gemini 3.6 Flash、支援 1M Token 上下文，並改善角色一致性、風格轉換與圖像編輯；同時指出小字、長篇文字及空間方位辨識仍有限制。",
+      "original_text": "Google DeepMind 正式公開了最新的多模態模型 Nano Banana 2.1。\n這款模型隸屬於 Gemini 3 系列，並以 Gemini 3.6 Flash 為基礎架構打造。\n它具備原生的多模態推理能力，能夠精準理解複雜的文字與圖像輸入。\n在規格表現上，模型支援高達 1M 的 Token Context Window。\n輸出端則支援最高 64K Token 的文字內容，以及 4K Token 的圖像生成。\n根據官方公布的評測數據，Nano Banana 2.1 在圖像生成與編輯能力上有顯著突破。\n無論是單一與多角色的一致性、風格化轉換，還是塗鴉遮罩編輯，整體表現皆大幅超越前代。\n特別是在啟用 Thinking 機制時，模型在資訊圖表設計與內容真實性上的評分均創下新高。\n目前該模型已陸續導入 Google 旗下多項產品與開發管道。\n包含 Gemini App、Google AI Studio、Gemini API 以及 Google Search AI Mode。\n開發者與企業用戶已可直接透過 API 進行各類多模態應用的串接與測試。\n不過官方也在 Model Card 中客觀指出當前版本的限制。\n例如極小字體與長篇文字的清晰度、空間方位辨識，仍有持續迭代改進的空間。\n隨著新架構的推出，多模態推理與高精準度圖像創作的應用門檻預期將進一步降低。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-07T16:48:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/7637137100208493309?_nc_oc=AdrfWlL17gKPwWws3tLHdh68X1Slc5Xn89wal17fXB2UvM0eBGPWh_dACCeZfITqz_gpQB5xOXMRGx8o9vfA1AyJ&url=https%3A%2F%2Flh3.googleusercontent.com%2FyrRTC8bSO6wto56LNZX8R0yQmIkRul6J4U_hGCV2jGE7v3u3TWbCNH8pkV07SrTDettBVQ8o3o74k4Xy1ESSPtqmI9NkQt16Ltc0kzCLtOTThAZE%3Dw1200-h630-n-nu-rw&fb_obo=1&utld=googleusercontent.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=gyhLib-mKtVXuQCz0BCqYA&_nc_zt=3&oh=06_Q3_EAbCTG3pP1nm7CM0iQGG3u4k8bgJJ5mWyH0_y0Y5n8cZ4&oe=6AC8648B",
+        "alt": "Nano Banana 2.1 貼文的 Model Card 預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook；預覽來源：Nano Banana 2.1 Model Card"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02ezQ2vPurF5KZmq8Gfj3PYctGjXZjxE77P28VD6qsd1U45yadfdnY52NZX3GYbNSFl",
+          "published_at": "2026-10-07T16:48:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-47ea56bfd624a5995955a45a",
+      "title": "保哥分享唯音輸入法配置助手",
+      "summary": "保哥介紹 Shiki 製作的唯音輸入法配置助手，整理常見設定供使用者選用，並邀請有需要的讀者試用。",
+      "original_text": "唯音輸入法作者 Shiki 最近做了一個「唯音輸入法配置助手」，幫你精選了幾個唯音輸入法常見的設定，我覺得還蠻貼心的，有需要的人可以打開來試試看",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-07T13:32:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/15400120202256612464?_nc_oc=AdoeJm3-cPXdexdN9vzlt2HqXGwstw_GWyQ1HbX_EP-Faw3yA0kHNKZ2oE_Qk3jYW0JIhWtGDqCT0Jm8X2PYdcAL&url=https%3A%2F%2Fvchewing.github.io%2Fsite_logo_opengraph.png&fb_obo=1&utld=vchewing.github.io&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p472x246_q75_tt6&ccb=18-1&_nc_gid=gyhLib-mKtVXuQCz0BCqYA&_nc_zt=3&oh=06_Q3_EAVumAt7ObNtLEF654oYyHN1mQp9thLAVi5Dvcn0oP75u&oe=6AC86525",
+        "alt": "唯音輸入法配置助手的原始網站預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook；預覽來源：唯音輸入法配置助手"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid06WxiYQeo1k8ErN4FeGrWZr3i93trxAqw8s5NWefYLk1YpLzPb9T86NZ6vx55udVWl",
+          "published_at": "2026-10-07T13:32:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ceef3430e5a4a629a9a6a769",
+      "title": "保哥分享 Antigravity 的 Claude 模型使用感想",
+      "summary": "保哥表示，近期在 Antigravity 使用 Sonnet 5.5 與 Opus 5.5 的體驗良好，以致這週較少使用 Gemini 3.8 Flash。",
+      "original_text": "反重力的 Sonnet 5.5 與 Opus 5.5 好好用喔，好用到我這週都忘記用 Gemini 3.8 Flash，再 6 小時就要重置了！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-07T11:54:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/838579088_1617258293277680_1737646032529594705_n.png?stp=dst-jpg_tt6&cstp=mx1674x860&ctp=s1674x860&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZCSbFVKDw0QQ7kNvwFxbq9q&_nc_oc=Adp-lOzWDmm1xNtCWueNWzidLYEqSIoDVSW2WjUQiyv6WXMz3gtHG013zOuH9KpJJQP389i0PrITUFjLDWQf4Li7&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=H9icjVK1n0-zd1lmh1yxyg&_nc_ss=7b2a8&oh=00_AQOeK_NRr0USTfTduuVN5nXtgVJFnDpuTOU2BUgZXW9sMQ&oe=6ACC3E5B",
+        "alt": "保哥分享 Antigravity 模型使用感想的原始配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0awUyd13cXuW7uaP4tU61hFAuyD1AwSqMxPjfWnrgHKBbJbVWEr7B56Re67QcCr9l",
+          "published_at": "2026-10-07T11:54:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-6cb9316c11424e99be9c874b",
+      "title": "保哥為部落格文章提供原始 Markdown 內容",
+      "summary": "保哥在部落格文章標題下方新增 Markdown 圖示，讓讀者取得完整原始內容。他希望以乾淨的文字結構，讓歷年技術筆記更便於 AI Agent 讀取與運用。",
+      "original_text": "從 2007 年寫下第一篇部落格文章開始，算一算，也快要二十年了。\n那時候想法很單純，每天下班對著螢幕除錯，熬夜試出解法，怕自己過幾天忘記，也想著說不定有人跟我卡在同一個坑裡，就順手整理成筆記貼上來。\n一篇文章一篇文章地寫，從幾十篇到幾千篇，不知不覺就這樣走到了今天。\n這十幾二十年裡，很多網路平台興起又收掉，演算法翻了好幾輪，大家從讀長文變成刷短影音。有時候看著後台那些早期的舊文章，也會忍不住想，技術迭代這麼快，過去花那麼多心血整理的紀錄，最後到底能留下什麼。\n但我始終沒有中斷，就這樣一篇一篇繼續記著。\n最近我在部落格做了一個小調整。\n只要點進文章，在標題下方那一行的右邊，就會看到一個小小的 Markdown 圖示。\n點下去，可以直接拿到這篇文章最原始、完整的 Markdown 內容。\n進入 AI 時代之後，文字的生命好像不太一樣了。乾淨的結構與純粹的內容，能讓 AI Agent 毫無阻礙地讀取和理解。也就是說，我這些年寫下來的每一篇文章，現在都成了一個可以被 AI 直接取用、發揮作用的「技能」。\n十幾年前在半夜一行行敲下來的踩坑血淚，換了一種形式，在全新的架構裡重新活了過來，繼續替未來的開發者解決問題。\n看著後台那些密密麻麻的存檔，心裡有一種很安靜的踏實。\n歲月一直在走，但敲進螢幕裡的文字沒有消失。\n能在這個世界上留下一丁點足跡，也算是此生無悔了。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-07T11:20:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/839934709_1329870342429958_8880521631236348810_n.png?stp=dst-jpg_tt6&cstp=mx2048x1094&ctp=s2048x1094&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6X5dD2L59soQ7kNvwHci7Oq&_nc_oc=Adqu46OJCWrajv6oRwjgbtEIrQtYfPT-5_f_qd4WHfW--sLYV3eUL8wshqEyvufa0_GEDjvESMAsItCs7u7ap42l&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=H9icjVK1n0-zd1lmh1yxyg&_nc_ss=7b2a8&oh=00_AQMAbnsJ5oRLHBC32wZutf2YjAheSbU3Rzs-1tIYFUSSUg&oe=6ACC426F",
+        "alt": "保哥分享部落格 Markdown 內容功能的原始配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0333MgwqcWP3totygo3qopbAkkqUxyp1EaoaW4UX2iBJodfZeG3medSSFxxeT8EjmUl",
+          "published_at": "2026-10-07T11:20:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-faf510cff86906ca1adcecfb",
+      "title": "Eric 分享 Nano Banana 2.1 的基礎模型資訊",
+      "summary": "Eric 分享 Nano Banana 2.1，並在貼文中註明其基於 Gemini 3.6 Flash。",
+      "original_text": "Nano Banana 2.1 (based on Gemini 3.6 Flash)",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-07T10:56:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/7637137100208493309?_nc_oc=AdrfWlL17gKPwWws3tLHdh68X1Slc5Xn89wal17fXB2UvM0eBGPWh_dACCeZfITqz_gpQB5xOXMRGx8o9vfA1AyJ&url=https%3A%2F%2Flh3.googleusercontent.com%2FyrRTC8bSO6wto56LNZX8R0yQmIkRul6J4U_hGCV2jGE7v3u3TWbCNH8pkV07SrTDettBVQ8o3o74k4Xy1ESSPtqmI9NkQt16Ltc0kzCLtOTThAZE%3Dw1200-h630-n-nu-rw&fb_obo=1&utld=googleusercontent.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=H9icjVK1n0-zd1lmh1yxyg&_nc_zt=3&oh=06_Q3_EAQPawIrDXwOsB7DjYePefRbM8SI02Pa8kKxmxnb4ahS1&oe=6AC8648B",
+        "alt": "Eric 分享的 Nano Banana 2.1 Model Card 預覽配圖",
+        "credit": "Eric ShangKuan／Facebook；預覽來源：Nano Banana 2.1 Model Card"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid0gcyXLN3wV47apAFE9jYk5ZtzT5CdCw5ajnKti3T21FVXn948qfXN2DTGU4EK95pDl",
+          "published_at": "2026-10-07T10:56:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ddf6dba766ca920b65df2940",
+      "title": "保哥提醒 Chrome inputSchema 型別變更的相容處理",
+      "summary": "保哥以 Nano Banana 2.1 製作資訊圖，介紹 Chrome 的 getTools() 將 inputSchema 回傳值由字串改為 JavaScript 物件。他建議先檢查型別，只對字串執行 JSON.parse()，以兼容新舊版本。",
+      "original_text": "Nano Banana 2.1 正式推出，影像畫質非常讚，文字處理更精準！\n--- 附圖是以下內容生成的資訊圖表 ---\nChrome 154.0.8014.0 有一個 Breaking Change\n主要是修正 RegisteredTool.inputSchema 型別不一致的問題\n以前註冊 ModelContextTool 時傳入物件，透過 getTools() 拿回來的卻是 DOMString 字串。兩邊型別對不起來。\n現在型別拉齊了。\n新版透過 getTools() 取回的 inputSchema 統一改為 JavaScript 物件，底層以 deep copy 處理。\n如果現有專案原本寫死用 JSON.parse() 去解 tool.inputSchema，Chrome 升級後會直接發生 Runtime Error。\n要同時相容新舊版本，可以先做型別檢查：\nconst [tool] = await document.modelContext.getTools();\nconst inputSchemaObject =\n  typeof tool.inputSchema === \"string\"\n    ? JSON.parse(tool.inputSchema)\n    : tool.inputSchema;\n專案裡有用到 getTools() 的話，記得檢查一下這段解析邏輯。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-07T08:13:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/839068357_28976822711943660_2765041655308305743_n.png?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=s2048x1143&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=czr9A2p6NAcQ7kNvwEsGie-&_nc_oc=AdqpOi5eVJNDg7lsgAxpFCHc0ekv4VpKCadhDwpBM3tRgf3t_ee5j2SU5wcdRcMou6WE52mZPIe0rpmMdA-J5LL-&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=H9icjVK1n0-zd1lmh1yxyg&_nc_ss=7b2a8&oh=00_AQPQq3pIfXMulrf0AGRGYUlOXowc85DpV_EUA1sZfHmCDw&oe=6ACC5E81",
+        "alt": "保哥使用 Nano Banana 2.1 生成的 Chrome inputSchema 資訊圖",
+        "credit": "Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0c8woSaPTCSHPCq1VsSbCgwZLKuJ1wS6ESTMTWKmJu3jmuQEgiswLeGHzwTTvghsAl",
+          "published_at": "2026-10-07T08:13:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-07T16:20:38.779Z",
+      "captured": 13,
+      "included": 9,
+      "excluded": 4,
+      "notes": []
+    }
+  }
+}
