@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T00:19:27+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-12 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 9 則，入選 6 則，排除 3 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-bc58fec89106a50133fde99c",
+      "title": "貼文比較 Decision-1 與 OpenAI 決策模型的遊戲表現",
+      "summary": "Will 保哥分享一場《太空侵略者》測試，稱微軟 Decision-1 的決策速度快 3.5 倍、得分 3,300 分，對照 OpenAI 決策 API 的 1,300 分，藉此討論即時決策效率。",
+      "original_text": "針對 System One Models 這樣比速度最有感覺 \n微軟最近在一場太空侵略者遊戲的測試中，擊敗了 OpenAI 的決策模型。\n這項測試主要比較雙方模型在遊戲中下達指令的速度與表現。\n微軟的 Decision-1 模型在測試中展現出極高的反應效率。\n它的決策速度比對手快了 3.5 倍，平均每個動作只需要極少的時間。\n最終，Decision-1 拿下了 3,300 分的成績，成功清理了四波的敵人。\n相較之下，OpenAI 的決策 API 平均每次決策需要花費超過三百毫秒。\n在反應時間較慢的情況下，其最終得分僅有 1,300 分。\n這項結果顯示出，專門針對決策任務最佳化的模型，在即時反應的場景中確實具備明顯優勢。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-11T21:20:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t15.5256-10/843510463_1653009523103564_8296526872551841119_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=110&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=Ib0NAapOnBcQ7kNvwGCU86o&_nc_oc=AdrAyirIkHcvxfEpaEHY5snCBlk0_hD7Sl-IVLw5Y4TgKTRBagk6gYs0CFYIFC_ve5daQiH9sEo7qpqCuJQavEhE&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=Sr1osugBO_LNMTkrTDmlsA&_nc_ss=7b2a8&oh=00_AQM0Dm3Ba-wWJb_GTDqfHS8rZ9Cpydy4vgX449YxL2Ehcg&oe=6AD184ED",
+        "alt": "Decision-1 遊戲測試貼文的影片預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/watch?v=1104526165282327",
+          "published_at": "2026-10-11T21:20:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ff662536ee1756b7dc25ff71",
+      "title": "Will 保哥開發「彩虹方塊大逃脫」益智遊戲",
+      "summary": "作者分享週末完成的 Block Out!：在 6×6 棋盤把積木送到同色出口，搭配冰塊、石頭障礙及連續滑動計步規則，共 16 關。貼文另提醒使用獨立瀏覽器遊玩。",
+      "original_text": "來看看我本週末的遊戲創作，這應該是我有史以來做最好的遊戲了！ \n你有玩過考驗空間邏輯的滑動益智遊戲嗎。\n最近滑 AI 短劇經常會看到 Block Out! 這種遊戲，趁著本次連假我開發了一套名為「彩虹方塊大逃脫」的解謎作品。\n遊戲的機制很純粹，目標是在六乘六的棋盤迷陣中，將彩色積木推送到同色出口。\n看似簡單的規則，實際上非常考驗路徑規劃與推演能力。\n關卡中加入了需要優先融化的急凍冰塊，以及無法消除、只能推開的石頭怪。\n這些障礙大幅提升了移動空間的複雜度。\n它的計分邏輯也兼顧了效率與策略性。\n同一塊積木連續滑動只計為一步，鼓勵玩家走出最佳解。\n若想在時限內拿到三星評價，每一步決策都必須乾淨俐落。\n整套遊戲就像是十六道精巧的空間演算法題目。\n在破碎的日常節奏中動動腦筋，能帶來很純粹的破關成就感。\n如果你平時也喜歡挑戰益智解謎，這款遊戲相當值得親自嘗試。\n趁小孩睡覺前給他們玩看看吧～ \n歡迎留言回覆改善意見 \n建議用獨立瀏覽器開啟，不要在 FB 內建的瀏覽器玩喔！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-11T19:53:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/2159005719351686545?_nc_oc=AdoSP-GEXHt4XBXNO0daJeJh9ysjmJtlO9ThnlpVHx6zdTbvUtW0oi0F8ii2UFUXYzf0-4opMdnroPWMrQavbEF6&url=https%3A%2F%2Fblockout.game.miniasp.com%2Fassets%2Fimages%2Fog-image.webp&fb_obo=1&utld=miniasp.com&_nc_sid=f93bbc&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=Sr1osugBO_LNMTkrTDmlsA&_nc_zt=3&oh=06_Q3_EAcJz-ZsmT32KisUz8xTnJSbSY0AFHqO3Uc_-JDaszNXb&oe=6ACD9E46",
+        "alt": "Block Out! 彩虹方塊大逃脫的原站預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0F2hip5eVDCX1NwFaWD3puY36EozjhY12g72whU94d4xbtoGU7w9v8eZkeJ5VTeXel",
+          "published_at": "2026-10-11T19:53:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c9c60c13336fc73ff7b03aba",
+      "title": "高見龍分享自製 Coding Agent 的研習重點",
+      "summary": "高見龍分享自製 Coding Agent 的研究與連載，認為 AI 已降低開發門檻，但理解 context window、tokenization 和推論的系統設計仍需投入研究；他也提到為驗證這些概念進行了付費實驗。",
+      "original_text": "> 2026 年，你做不出一個 Claude Code，就不算資深工程師\n有 AI 幫忙，要自己刻一個 Coding Agent 已經沒有想像中困難。不過要能清楚講出底層運作，像是 context window、tokenization，或是從系統設計的角度看推論怎麼進行，這些還是需要花點時間研究，我還實際燒了一些錢錢做實驗。\n想學嗎？我教你啊 \nhttps://kaochenlong.com/tags/coding-agent\n剛好是今年鐵人賽的題目，可惜兩度因為睡過頭而斷賽，只好在自己的 blog 繼續連載了\n\n「2026 年，你做不出一個 Claude Code，就不算資深工程師。」Claude Code 是 Anthropic 推出的 AI 寫程式工具，能自己讀檔案、改程式、下指令。這句話出自澳洲工程師 Geoffrey Huntley 的部落格文章〈replaced〉。10 月 10 日，Shopify 執行長 Tobi Lütke 在 X 上轉貼這篇文章，只寫了兩個英文單字\"Good read\"。\nTobi 自己早有立場，2025 年 3 月 20 日他寄給全公司一封內部信，主旨是「AI 使用現在是基本要求」（\"AI usage is now a baseline expectation\"），4 月 7 日聽說信件外流，他自己把全文貼上 X。信裡第 5 點寫著，團隊要增加人力和資源之前，必須先證明為什麼這件事無法用 AI 完成；第 3 點則是 AI 的使用情形會列進績效與同儕考核問卷。\nHuntley 是 Ralph 迴圈的發明人，這個方法用一個無限迴圈，把同一份規格反覆交給 AI 寫程式的代理（能自己讀資料、用工具、一步步把事做完的 AI），一輪一輪改程式，直到任務完成，今年初在工程圈爆紅。這次他談的題目，是大型語言模型已經能輕鬆應付 LeetCode 這類線上刷題網站的演算法題之後，面試工程師要怎麼看出誰真的懂。他的做法是在原本的技術測驗之外，再加一把三級的尺。\n第一級是不錄取，包括對使用 AI 態度消極、面試時用 AI 作弊或欺瞞，以及拿不出任何可展示的 AI 實作經驗。\n第二級是可以接受，請求職者到白板前，講清楚 AI 代理的底層怎麼運作，像是 context window（模型一次能讀進多少內容）、tokenization（模型怎麼把文字切成小單位），以及從系統設計看推論怎麼進行。講到最後只能談自己裝了哪些現成技能包的，他建議不錄取。\n第三級是理想人選，手上有一堆自己做的小專案。問他平常用哪一套 harness，也就是把模型接上檔案、指令與工具的那層程式，可接受的回答只有兩種。一種是哪套都能替換，哪裡的 token（AI 模型處理文字的計量單位，也是計費依據）最便宜就用哪裡；另一種是眼睛一亮，說他用自己寫的，問你要不要看。如果面試結束，反而是面試官從他身上學到 AI 的新東西，Huntley 建議當場錄取。\n開頭那句話，是把標準再往上拉一層。Huntley 認為資深工程師的價值在於能帶新人，而 Claude Code 是最基本的代理，能自己重做一個，才代表真的懂這類工具為什麼會動。\n文章也附了一封未具名的讀者來信，這封信無法查證，內容是寫信的人自己說的。他說，他用 Anthropic 的 Sonnet 模型，花了大約 3K 的使用費，完成價值 100K 以上的開發案。他還說，同一間公司以前花 50 萬請承包商做的整套系統改建，他現在大約兩週就能做完。原文沒有註明幣別。Huntley 用這封信帶出對主管的提醒，接下來半年，就得開始找沒跟上轉型的員工談去留。\nHuntley 給軟體工程師最具體的建議，是自己動手做一個代理，弄懂 Claude Code 背後的技巧，並且說得出它底層怎麼運作。\n 請訂閱我的 YouTube 頻道 foxh\n#AI #ClaudeCode #軟體工程師",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-11T17:07:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/844758103_2332875040892853_3770860922276411927_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=myq4Z5MrvqYQ7kNvwG0nqEK&_nc_oc=Adpxr3ugsHnihUR766I25sDEN934CSxBOhhaSumwFs6rXasAZAzemJm3hHkKnx_RgxrL4ExTTzgRrMz5LwF3kbQU&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=Sr1osugBO_LNMTkrTDmlsA&_nc_ss=7b2a8&oh=00_AQMheJACbZQADsPF3N8gcKlA0103bZ6YmWBpjKaZjPDR3g&oe=6AD16D88",
+        "alt": "高見龍分享自製 Coding Agent 研究的貼文附圖",
+        "credit": "高見龍／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid02gpfKZmU4kE6C5c2Gszo4Ggs1skJfrYsK9RjrUF3fZQZmpx6QHu7UBJfqhtzukUJbl",
+          "published_at": "2026-10-11T17:07:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-2bb3d20b27fe9a9aed36196e",
+      "title": "多奇教育訓練首頁加入 Shader Component Library 特效",
+      "summary": "Will 保哥分享在多奇教育訓練官網首頁導入 Shader Component Library，並邀請讀者尋找新增的特效位置。",
+      "original_text": "我昨天在我們「多奇教育訓練」官網首頁加入了 Shader Component Library 特效，酷到不要不要的，大家看能不能發現在哪裡！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-11T16:34:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/9615298499764754545?_nc_oc=AdqW0oNDFYT5RIK6GSB61xFmrxAqJQ-NqJJuGSy9_b5MZ51rgf_BZGRZkp9IP3ZbkoJ82Ui9ImeKWOc34vELiChW&url=https%3A%2F%2Flearn.duotify.com%2Fimg%2Fcustomizer%2Fog-architectural-maquette-1200x630.jpg&fb_obo=1&utld=duotify.com&_nc_sid=f93bbc&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=Sr1osugBO_LNMTkrTDmlsA&_nc_zt=3&oh=06_Q3_EAfPxfRirpPBjoPiz4ffUzuQ9Zy8i68TmDpWXL4xLO5bD&oe=6ACDA0C8",
+        "alt": "多奇教育訓練官網的原站預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid028dw6ioRTxoqAhxBiBiAFtPSWB46V4XhvsszEv87xvbWVC5PHp7AGA41Rz3zCpFZNl",
+          "published_at": "2026-10-11T16:34:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-d41f9d0bd6204e9e59855ad5",
+      "title": "Will 保哥反映 Claude 促銷額度的使用限制",
+      "summary": "作者表示收到 260 美元促銷額度，但須透過 API 或 claude -p 使用，並對 Claude Code 的額度適用限制提出抱怨。",
+      "original_text": "Claude Team 送我 $260 美元的 Promotional credits，結果不能用在 Claude Code 上面，一定要用 API 或透過 claude -p 才能用，真是莫名其妙的限制！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-11T15:12:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0JdWgjahaFaxXZbH3sNhkUVBsgfcap3N66nZuRhbJfXs3aCYveRgsed6bM1e4YY5Xl",
+          "published_at": "2026-10-11T15:12:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-d512afb764897ee483f09058",
+      "title": "deep-sleep 用 Shell 整合外接 SSD 的睡眠前後流程",
+      "summary": "安德魯分享 deep-sleep 小工具，以 Shell 在睡眠前卸載外接 SSD、喚醒後重新掛載，減少睡眠期間的磁碟活動。他另將設定指引封裝為 --skill，供 AI 代理讀取，並回報實測 SSD 溫度下降。",
+      "original_text": "換了 Mac Mini M6, 開始把最後一個 windows 的使用場景 (桌機) 也轉移過來了｡ 剩下最礙眼的一件小事, 結果是外接 SSD 在 Sleep 狀態下還會持續發燙... 今天就來聊聊這題, 順帶發表一下我花了一個小時準備的小工具: deep-sleep\n這題其實我有做事前功課的, 沒想到最後還是栽在意料之外的地方 XDD, 起因是這樣:\n1. Mac 沒有所謂的 \"Hibernate\" (休眠), 只有 Sleep (其實有, Macbook 限定)\n2. Mac 的 TB4 在 Sleep Mode 下仍然會持續供電 (USB 可以關閉, TB4 不行)\n所以, Sleep 的時候外接 SSD 是會發燙的, 雖然只有 3 ~ 5 w, 不過就是覺得很礙眼.. 在八月份決定下訂 M6 的時候我就開始研究, 找到 MacOS 的 pmset 指令有一個參數: hibernatemode, 設為 25 的行為就像是 windows 的休眠一樣, 可以把 memory 內的東西 dump 到 disk, 機器就能完全斷電 (我在 macbook pro m4 實際驗證過, 確認 tb4 真的會完全斷電), 回覆之後也一切正常, 於是我也開始準備採購外接盒等等設備 (相容性優先, 我挑 Intel JH7440, 沒有挑大家推的 ASMedia AS2464PD), 等著新機器到貨\n結果, M6 一出貨就是配 MacOS 27, pmset 不給指定 hibernatemode ... 文件沒有明確寫, 但是我猜這些睡眠管理功能應該是綁定在 macbook 機種了, 桌機 ( mac mini / studio ) 應該直接封印了吧..., 既然沒有 100 分的解決方案, 那只好退而求其次, 找 60 分的...\n關閉一些不必要的背景服務, 降低 sleep 中途被喚醒的機會有些幫助, 不過最根本的還是 eject / unmount SSD, 確保 sleep 過程中都不會被軟體存取, 雖然 SSD 還是通電, 但是沒在運作, 溫度就降了很多...\n這類工具熱門的都要付費, 例如 Jettison 等等, 其實不貴, 但是我要的也很簡單, 我向來是走極簡派的, 我只想要晚上睡前的那次 \"Sleep\" 能確實執行 unmount volumes -> sleep, 然後等喚醒時 mount volumes 就好, 這些操作 ( pmset, diskutil ... ) 其實都有內建 CLI 了, 因此我把實作技術限定在 shell script 就好\n第一版 deep-sleep 就這樣出來了, 我希望的使用情境很無腦, 要睡覺了就下指令: deep-sleep 就好, 其他什麼都不用做, 複雜的應該會在事前準備, 安裝設定, 或是查問題等等, 於是我就搬出先前聊的 AX ( agent experience ) 的原則...\n人要看的說明, 通常會用 --help 來看, 我多加了一個給 agent 看的說明, 用 --skill 就會列出來了, 而我最需要 agent 代勞的是 configuration, 因此針對這邊我額外定了這個主題, 用 --skill configuration 就能叫出來, 觀念上跟 SKILL.md 的結構都一樣, 只是我把他封裝到 CLI 內..\n果然, codex 很自動的就去讀這些指引, 無腦的幫我把設定都準備好了 \n, 實際測試, 原本 sleep 的時候, SSD 會維持在 55 ~ 60 度, 改完之後, 大概維持在 47 ~ 50 度, 不無小補...\n只花一小時就能弄好的專案, 就直接公開了, 其實需要的人應該都能自己弄一套了, 大家自己判斷需不需要就好, 我自己是拿來解決我自己問題的同時, 也當作一個練習場域, 正好驗證一下過去體悟到的一些新作法語觀念 (例如這次的 --skill 做法). 先前的研究案例跟工作方法, 都是公司內部的專案我不能公開, 不過這是個人專案, 就沒這限制了｡ 包含 --skill, 包含 decisions 記錄, 包含 research 記錄, 都是這專案相關寶貴的 context, 我選擇都擺在一起, 讓未來我希望 agent 替我做一些修正的時候, 它能保有最完整的 context 替我做正確決定時能參考.\nGitHub Repo 連結我放在第一則留言",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-11T12:23:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/843091225_868409543027800_7285643210964490985_n.png?stp=dst-jpg_tt6&cstp=mx2048x1475&ctp=p960x960&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rKQFzUey8mEQ7kNvwGRLg7k&_nc_oc=Adrd2mTu_lCZzMFluTWo898R44XkXfl7Vs4ldh9hxnwFM-auazxckrna_dZmdG9Kt47mNEbL0TcLblJcMC6kVV31&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=GdR78BaI_cKD9MzEiAEkrA&_nc_ss=7b2a8&oh=00_AQNsEI517fzK5uMCbsdgA5U-U-27fEu7K4LIOwaSPJlbjQ&oe=6AD185A5",
+        "alt": "安德魯分享 deep-sleep 工具的貼文原附圖",
+        "credit": "安德魯的部落格／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "安德魯的部落格",
+          "url": "https://www.facebook.com/andrew.blog.0928/posts/pfbid0TKWvwfANqhVZhrG6SHfUaKAB5ec6ETbiCtsihEGaaAuDNHify9RNsLHfTFtt3sHMl",
+          "published_at": "2026-10-11T12:23:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-11T16:19:25.372Z",
+      "captured": 9,
+      "included": 6,
+      "excluded": 3,
+      "notes": []
+    }
+  }
+}
