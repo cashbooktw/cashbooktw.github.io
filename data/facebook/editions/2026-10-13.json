@@ -1,0 +1,346 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-13",
+  "generated_at": "2026-10-13T00:53:59+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-13 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 21 則，入選 15 則，排除 6 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-5add15ed4bf9a280e896fb5c",
+      "title": "Nathan Chiu 分享 Apple Watch 游泳後故障的經驗",
+      "summary": "作者分享手錶在游泳後故障、隨後重新購買的經驗，並提到自己看到 Coupang 的 85 折價格；故障與折扣情況皆為貼文中的個人觀察。",
+      "original_text": "上週末去游泳，忘了把 Apple Watch 摘下來，網路上說可以防水，然後不保證不會防水失效，總之就壞了！死機!\n只好再買一台，想說 Apple Watch 12 如果要 46mm 好貴！\n沒想到 Coupang 這種瘋子真的屌，直接打八五折，別人是要怎麼玩 ?\n我檢查很久, 沒騙人！扯！\n市場有一個瘋子真的很恐怖！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T23:26:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.99422-6/846025429_3816234315202990_4650947533372747835_n.png?stp=dst-jpg_tt6&cstp=mx2048x1231&ctp=s2048x1231&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=T7VeLR18PO8Q7kNvwH922vK&_nc_oc=AdowOxjUYwStpCNCnXakLYz4RpJquOus5UYUJhkBv_JEu9Oy1pHmzFzwwrehdcUkWlE9KpQYp6sbXqCCrj8jUPxB&_nc_zt=14&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=AsUieMEzFLRfD9h1ASbBFg&_nc_ss=7b2a8&oh=00_AQNYCqN1mjw24PUzlr5R4qc-IcVtCwnkn1vR6kyQXw6uBA&oe=6AD2D624",
+        "alt": "Nathan Chiu 分享 Apple Watch 使用經驗的貼文附圖",
+        "credit": "Nathan Chiu／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0u8F19h5qpfQiHNBvFooVKBiJekbitH5poixxvnxtBnovtWmVdpci6ucXSXeuUjGFl",
+          "published_at": "2026-10-12T23:26:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c2d193021df13bfa0cf0f509",
+      "title": "安德魯談 Coding Agent 加速下的工程品質防線",
+      "summary": "安德魯認為 AI 加速開發也會放大技術債，建議把大型系統拆成可驗證的小模組，掌握關鍵介面、測試與設計檢查點；他強調危機辨識與決策能力會影響工程師及團隊的生產力上限。",
+      "original_text": "未來軟體開發這條路, 怎麼開發的 (叫 AI 寫, 人已經不自己寫 code 了這類) 就不說了, 我覺得連要開發什麼, 都會有很大的不同｡\n前幾篇聊過, 未來的軟體你開始要顧慮到 \"給 Agent 使用\" 的體驗夠不夠好 ( AX ) 是其中一個改變, 那給人用的體驗好不好 ( UX ) 我相信也會跟現在不一樣了, 可能不再有固定的 UI 設計, 而是靠 AI 及時生成操作介面都有可能; 純工具型的軟體會式微, 因為越來越少人會 \"親自\" 操作工具型的軟體了, 改由 Agent 來操作的比例越來越高, 因此個人喜好可能不再那麼重要, 我猜會 M 型化發展, 要嘛就是通用的, 要嘛就是自己 vibe coding 來用..\n而開發過程, 我覺得也會兩極化, 越來越多人有能力 vibe coding ( 但是寫出來大概也只能自己用 ), 另一種就是有很好的基礎工程能力的人, 能開發出 AX / UX 以及品質都很棒的軟體, 這種就會變成上面我講的流通性廣的一員..\n怎樣的特質, 才能做出這樣的軟體? 撇開其它的不談, 就心態而言, 我覺得 \"危機感\" 是很重要的一個能力｡\n--\n我舉個例, 什麼叫 \"危機感\" ?\n有些人, 坐上跑車會覺得很興奮, 就忍不住想開快一點試試馬力, 結果不小心就.... , 這就是沒有 \"危機感\", 跑車換成強大的 coding agent 也一樣, 你突然發現你寫 code 有 10 ~ 30 倍快了, 就忍不住越寫越多 X code, 那下場會是什麼? 當你用 coding agent 不顧一切全速開發, 就像坐上跑車無腦踩油門一樣... 該做的是, 要會花一定比例能力來做防守 (不管是 review 設計, 補足測試等等都算), 來確保你可以快速安全的前進｡\n我在 DevOpsDays Taipei 2026 講了這頁簡報, 大意是 AI 加速了 \"所有\" 事情, 包含好的也包含壞的, 如果過去系統 10 年需要翻新一次 (例如技術債累積到某個程度, 改寫比較快的時候), 那麼 AI 加速 10x, 這 \"壽命\" 也會被加速嗎?\n差異就在你的 \"危機感\" 有多敏銳, 有沒有辦法在察覺壞味道時就修正他? \n而察覺 \"危機\" 的能力, 其實沒那麼好培養, 需要有技巧的觀察, 以我來說, 我習慣性的會把功能做大略的拆解, 把中間幾個關鍵環節的 check point 抓出來 (就是同一場演講, 我提到把大黑箱拆解成多個小黑箱), 你不用替所有的 code 做好 code review, 你只要找出這些關鍵的地方, 做好介面的 review, 同時做好測試的防護, 你就能有系統的提高你的 \"危機感\", 而不是只靠直覺...\n這些能力, 不會 \"自然\" 就養成的, 在過去 (我這年代的人) 都是需要刻意練習跟學習才做的到, 而現在時代不一樣了, 現在的工程師也完全沒有機會走我經歷過的養成過程了 (所以我也不知道年輕人該怎麼培養這樣的能力 XDD), 不過, 從結果來說, 有沒有這些感知能力跟決策能力, 我覺得才是你的生產力上限... \n過去還沒有 ai 輔助 coding 時, 我會用各種手段來提前驗證設計, 包含做 prototype, 在驗證階段除了測試之外也會觀察我在意的指標, 同時也會 review 重要的邊界介面設計, 這些習慣即使在現在 coding agent 已經那麼厲害了我還是保持這樣的做法, 心得是不但沒有讓我變慢, 反而讓我可以更穩定 (因為品質有守住) 持續的用高速前進\n這就是我在另一頁簡報提到的觀點, 當你把大黑箱拆成多個小黑箱的時候, 你只要 review 黑箱的邊界, 你就可以控制住整體的品質了 (換言之 AI 再怎麼暴走, 至少只是炸掉小黑箱而已, 而小黑箱很容易個別重寫一次), 結構守住了, 多個小黑箱又容易灑出去給多個人 (或是多個 agent) 個別處理, 效率就是從這邊而來的｡\n這對越資深的人而言越重要 (尤其是架構師), 因為你不但是揹負你自己的速度, 同時也影響到按照你規劃而一起進行的其他 team member, 效益是會加成的, 包含個人放大的效率, 乘上能影響的人數｡",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T23:25:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.99422-6/845101571_1088492643893508_7754382965704639612_n.png?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=s1920x1080&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1Y2uN152TKQQ7kNvwE7ngAp&_nc_oc=AdoCUtJlpjcRvcfLMpBIfbt313UkDZ1UrmxAS9q86uPWFVD9zWU6bWChKbQvVYsi2W0unQ_snzxdFgDjCOAs-53z&_nc_zt=14&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=AsUieMEzFLRfD9h1ASbBFg&_nc_ss=7b2a8&oh=00_AQPXnQ9d-AIgZ7QLQAKAbpda1BUEuYGCZS0RCxSl8yz0iw&oe=6AD2DD2B",
+        "alt": "安德魯討論 Coding Agent 工程品質的貼文附圖",
+        "credit": "安德魯的部落格／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "安德魯的部落格",
+          "url": "https://www.facebook.com/andrew.blog.0928/posts/pfbid0eCkaRYovVitWHVF1cDSTZFbEQDR79hazaeMBK5Zxxfktx7HVc7bcGs7gcBXdcjuRl",
+          "published_at": "2026-10-12T23:25:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-994a489303c3167c4b020200",
+      "title": "Will 保哥談 AI 面試中的程式理解與錯誤辨識",
+      "summary": "貼文以可使用 Gemini 的 Code Comprehension 關卡為例，討論閱讀 200 至 500 行陌生程式碼、獨立找出問題，以及辨識 AI 錯誤的能力；作者認為重點是工程基本功與判斷力。",
+      "original_text": "考驗功力的時刻到了！\n刷 LeetCode 的日子到頭了，Google 最近他們推出了一個叫 Code Comprehension 的新關卡，直接把 AI 放進考場讓大家光明正大地用。\n考試方式非常刺激，直接塞給你一份 200 到 500 行的陌生程式碼。\n面試官甚至會一臉慈祥地對你說：放輕鬆，旁邊有 \"Gemini\" 可以隨便你問喔。\n聽到這裡你可能以為是佛心放水，但這根本是精心設計的頂級陷阱題。\n因為這關表面上是考你寫程式，骨子裡其實是在考三件很現實的事。\n第一，你能不能看懂別人留下來的神奇程式碼。\n第二，在召喚 AI 大神之前，你自己有沒有獨立抓出 Bug 的基本功。\n第三，也是最刺激的一點，你能不能及時發現 Gemini 在一本正經地胡說八道。\n沒錯，面試官根本不是在看你 Prompt 寫得多文雅，而是在看你什麼時候會被 AI 帶進溝裡。\n以前的面試是比誰背演算法背得熟，看誰能手撕紅黑樹(Red-Black Tree)。\n現在的面試是比誰的測謊能力強，看你能不能在 AI 瘋狂自信胡扯的時候當場抓包。\n這年頭當工程師真的越來越不容易了。\n上班要提防同事留下的神秘歷史包袱，面試還要提防 AI 當場謀害你的 Offer。\n只能說未來的核心競爭力，大概就是看誰能在被 AI 帶偏之前，優雅地給它一記回馬槍了。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T22:42:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.99422-6/846410218_2058796344759604_775058802593561520_n.png?stp=dst-jpg_tt6&cstp=mx542x352&ctp=s542x352&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tnDe3o8IfnUQ7kNvwHTnFj1&_nc_oc=AdpZTeONQt7SO8Heubi31oAFkONL4I_BaaouwYT3IyqFmvbfxwNHyz2vCSkJ0JbnBwFmpE9J_rJYLDi2i88hZPt8&_nc_zt=14&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=AsUieMEzFLRfD9h1ASbBFg&_nc_ss=7b2a8&oh=00_AQO__NuBq96stNesg3fFcRflcUEAlrlnC3oL3RfnDy-XfA&oe=6AD2D197",
+        "alt": "Code Comprehension 與 AI 面試討論的貼文附圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02u4xvCPYSYQi4DuB8t9LW6gWJ3sfVGzfKgVhqLexihkGp5e6W9cYshbPYf3FcZgN6l",
+          "published_at": "2026-10-12T22:42:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-980bf650f39fc93125fd75d1",
+      "title": "Will 保哥分享 Azure Maia 的部署與晶片規劃",
+      "summary": "貼文介紹 Maia 200 的部署與推論能效，並轉述 2027 年 Maia 300 的 chiplet、HBM4 和機架整合規劃，重點在雲端 AI 運算的效能與能源效率。",
+      "original_text": "微軟近日正式公布 Azure Maia 晶片系列的最新部署進展。\n隨著 AI 運算需求激增，微軟計畫從 2027 年起，將 Maia 系統擴展至數個 Gigawatt 的部署規模。\n這項布局將使 Maia 成為微軟旗下各項產品與服務中最核心的 Inference 運算基礎設施。\n目前第二代架構 Maia 200 已經在美國、歐洲與澳洲正式投入生產環境。\n這款晶片正負責執行 Microsoft Copilot 的實際負載，並支援內部團隊訓練與研發新一代模型。\n微軟預計在今年底前，進一步將 Maia 200 導入至 GitHub Copilot 與 Microsoft Foundry。\n在實際能效方面，Maia 200 在 Teams 與 Copilot 應用中，每瓦可產生的 Token 數量相較於主流 GPU 系統提升了 1.7 倍。\n針對未來更複雜的 AI 負載，微軟也同步揭露了預計於 2027 年問世的第三代晶片 Maia 300。\nMaia 300 採用運算、記憶體控制器與傳輸介面分離的 Chiplet 架構。\n其中運算晶片將採用 TSMC 的 N2P 製程製造，追求極致的運算能效比。\n硬體規格配置了 8 組 HBM4，在 950 瓦的功耗限制下可提供高達 18 TB/s 的記憶體頻寬。\n此外，晶片導入了軟體定義資料流架構，並支援 MXFP4 低精度格式。\n這項設計專門針對長 Context 推理、低 Latency 對話以及多步驟 Agentic 任務進行深度最佳化。\n在機架級整合上，單一機架可部署 96 顆加速器，機架級 Token Throughput 最高可達 Maia 200 的 7 倍。\n同時，每百萬瓦所能產生的 Token 數量，預期將比現行頂級 GPU 系統高出 40%。\n從底層晶片、資料流設計到機架網路全面整合，展現了雲端平台在後續大規模 AI 運算中的技術轉向與布局決心。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T22:35:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-4.fna.fbcdn.net/emg1/v/t13/2566191256344099593?_nc_oc=Adov9rsnvbixUk_Se4UXRETPDFgl3_CKoETVp5P_9vmdZFpBkJl5JBt0k38D7tuNsGddFNZOi-8rzx_Ophd_1PVm&url=https%3A%2F%2Fblogs.microsoft.com%2Fwp-content%2Fuploads%2F2026%2F10%2FOMB-Maia-300-Hero_10_9_26-1024x576.png&fb_obo=1&utld=microsoft.com&_nc_sid=c63717&_nc_ht=external.ftpe7-4.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=FGtJA6lXPrkYqdXJm_-i9A&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAd9M9SpUMfT6vN8WCKDZ47Hbx6f1OrSlihNKNYH-X_po&oe=6ACED2E7",
+        "alt": "Azure Maia 部署與晶片規劃的原站預覽圖",
+        "credit": "Microsoft Blog／Will 保哥的技術交流中心 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0Wck96zyx6PZM7iFArKH6b2XSaVQqTtbd6wQM3WcFBBM5i6brpQwqzU9Hw3aENPwUl",
+          "published_at": "2026-10-12T22:35:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-8d70444f26b9a892c5ecac05",
+      "title": "Will 保哥談 Google RCE 通報中的金鑰與反序列化風險",
+      "summary": "作者轉述 Simon Koeck 的漏洞通報：Cookie 暴露簽章金鑰，加上不安全的資料還原機制，導致遠端程式碼執行風險。貼文稱 Google 已修復並支付 9 萬美元獎金，提醒開發者避免把機密放進客戶端資料。",
+      "original_text": "你可能很難想像，世界級科技巨頭 Google 也會犯下把家門鑰匙直接掛在門把上的低級錯誤。(很扯很扯這種) \n而且這個錯誤，價值 9 萬美元，折合新台幣將近兩百九十萬元。\n故事的主角是一位資安研究員 Simon Koeck，他在研究 Google 開發者網站的登入流程。\n一般來說，當你點擊登入頁面，伺服器只會發給你一張小小的通行證，也就是所謂的 Cookie。\n這張通行證通常只有幾十個位元組，用來記錄簡單的驗證資訊。\n但他拿到的這塊餅乾，體積卻高達一千兩百個位元組，顯然裝了不該裝的東西。\n在 Flask 框架的架構下，這類資料預設只有簽名防竄改，本身完全沒有加密。\n於是他順手把封包解開，裡面的內容讓他當場愣住。\n封包裡面除了完整的 Python 物件，還大剌剌寫著 Google 官方的客戶端識別碼與金鑰密碼。\n更離奇的還在後頭。\n照理說，防止通行證被偽造的那道簽名防線，應該由伺服器私下妥善保管的密鑰來計算。\n他抱著半信半疑的心態，拿剛剛外洩的那把金鑰密碼去驗算。\n答案居然完全吻合。\n也就是說，Google 把用來鎖門的鑰匙，直接裝在包裹裡寄給了路人。\n既然能自行偽造合法簽名，代表通行證裡的任何內容都可以被任意竄改。\n而 Google 後端伺服器在讀取這份資料時，偏偏使用了資安界公認最危險的資料還原機制。\n這項機制允許攻擊者夾帶自訂指令，並強迫伺服器全盤照單全收。\n這在資訊安全領域被稱為遠端程式碼執行，等於把整台伺服器的掌控權直接奉送給對方。\n為了不對正式系統造成破壞，研究員採用了一種優雅的驗證方式。\n他在封包裡塞入讓伺服器強制沉睡數秒的指令。\n指令發出後，伺服器不多不少，剛好精準延遲了對應的時間才做出回應。\n這證明程式碼確實被 Google 的主機執行了。(#RCE)\n因為架構共用的關係，這個問題一次波及了 Google 旗下的七個大型開發者網域。\n研究員隨後提交了這份通報，Google 也以極高效率迅速完成修復。\n官方原本的最高漏洞懸賞金額是 75,000 美元。\n但因為這份通報內容完整、邏輯嚴謹，官方審查團隊額外給予加成獎勵。\n最終發出的獎金達到了整整 90,000 美元。\n這場資安事件給了所有軟體工程師一個昂貴且深刻的提醒。\n不要把機密金鑰裝進給使用者的資料裡，更不要隨意信任任何未經檢驗的外部輸入。\n即便是全世界最頂尖的科技公司，偶爾也會在最基礎的地方跌跤。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T21:58:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-1.fna.fbcdn.net/emg1/v/t13/7403446880069450434?_nc_oc=AdpzufJ4wxS8FqMxmi3Xu23aiUxu7HN3mdQDv32_WKhKgaFa1g0-vaguC1DgVB-B02SqziXc5jyTxhQYdG0gcciZ&url=https%3A%2F%2Fsimonkoeck.com%2Fog%2Fgoogle-devsite-flask-session-pickle-rce.png&fb_obo=1&utld=simonkoeck.com&_nc_sid=c63717&_nc_ht=external.ftpe7-1.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=FGtJA6lXPrkYqdXJm_-i9A&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAXFdXIwa0DPHG8teXEk_TPAiTqO0nMXLVhlGYbI0aybK&oe=6ACED0B2",
+        "alt": "Simon Koeck Google RCE 通報的原文預覽圖",
+        "credit": "Simon Koeck／Will 保哥的技術交流中心 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02WcXPS8w8xvahWaNyUiKPCBjV9GukG1xZfZFRkmWZi6bLj8EswzcaeJaDRS6LRLUNl",
+          "published_at": "2026-10-12T21:58:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-2d0f7ed665393d9ea10ebade",
+      "title": "Huli 從 Google RCE 案例談觀察與假設驗證",
+      "summary": "Huli 從一份 Google RCE writeup 討論資安研究中的觀察與假設驗證：異常長的 Flask Cookie 暴露簽章金鑰，配合 pickle 反序列化形成風險，並提及共用金鑰使影響擴及其他網站。",
+      "original_text": "剛看到一個 9 萬美金的 Google RCE 漏洞的 writeup，只能說觀察力跟想像力會帶給你超能力（？）\n研究員 Simon Koeck 發現 Google developers 的網站會寫一個 Flask cookie，而這個 signed cookie 的長度比他想像中的長，所以他就解開來看。\n發現 cookie 裡面的 payload 有一個 pickle，解開來是 Google OAuth 用的 client id 跟 client secret。寫到這邊都是觀察力，接著是想像力發揮作用的時候了。\n「會不會這個 client secret 就是 Flask 的 secret key 呢？」\n噢，還真的是。\n所以這個拿來簽 cookie 的 secret key，就放在明碼的 cookie 裡面，最危險的地方就是最安全的地方（？），但終究還是被發現了。\n然後因為有了 secret key 所以可以自己簽任意 cookie，而這 cookie 內容又是一個 pickle 會被後端反序列化，因此就變成了個 RCE 漏洞，先準備好要執行的 code，序列化成 pickle，放進 cookie 裡面然後自己 sign，丟到後端，打完收工。\n除了 Google developer 的網站以外，還有其他網站也共用同一把 key，也都會受到影響，總之你看賞金就知道影響範圍不小了。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T21:10:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Huli 隨意聊",
+          "url": "https://www.facebook.com/huli.blog/posts/pfbid0tTUNFk9rFdf2S3v3zGrkcR9dS7R6PRrM8WXq6kJ2DYgaj8SwqqtFwji7k3qPkbNZl",
+          "published_at": "2026-10-12T21:10:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-0f8f8b74b23daf06449b0d9a",
+      "title": "OpenTWBench：以台灣語境評估大型語言模型",
+      "summary": "Will 保哥介紹 OpenTWBench，說明它以台灣國考資料和在地社群語料評估專業知識、生活文化與繁體中文表現，並檢查格式遵循及簡體字滲漏，藉此討論模型在地化的評量需求。",
+      "original_text": "現在的主流大型語言模型，到底有多懂台灣？\n過去我們評估 AI 的能力，多半仰賴歐美的英文基準，或是中國語境的簡體中文測試。\n但當模型面對台灣的法規制度、專技考題，甚至是本土日常文化時，往往容易出現理解落差。\n近期推出的 OpenTWBench，正是為了解決這個痛點而建立的開源評測基準。\n這項計畫旨在以嚴謹的繁體中文語境，全面衡量模型對台灣在地領域知識的真實掌握度。\n整個評測架構主要由兩個核心面向組成。\n第一部分取材自台灣歷年國家考試開放資料，涵蓋醫學、公共事務、海事與工程等近 150 個專業學科。\n這項測試能精確檢驗模型在面對專業認證與本土法規時的嚴謹程度。\n第二部分則來自在地社群語料庫，聚焦於國考不考的當代生活、交通規則、飲食與文化脈絡。\n除了專業知識，評測標準也嚴格檢視模型的格式遵循能力，以及生成內容中的簡體中文滲漏比例。\n所有數據皆透過開源評測框架執行，並以全精度運算呈現，確保每一筆成績都具備客觀性與可重現性。\n在 AI 加速落地的今天，唯有建立屬於台灣自己的評量尺標，才能讓技術發展真正契合在地的實際需求。\n這不僅是一份模型排行榜，更是台灣繁體中文生態系在數位主權與在地化深耕上的重要里程碑。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T20:51:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/15275209397721143108?_nc_oc=AdophqatgD1XRAFzhvx-WEBDzY3o7LvNdmUthKW9_qilTTxd7AdAAlVZLYxe4Bm_GDcZrGf1AEIMijfhZPzEVfAC&url=https%3A%2F%2Fopentwbench.ai%2Fassets%2Fog-image.png%3Fv%3D190b892fe3&fb_obo=1&utld=opentwbench.ai&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=FGtJA6lXPrkYqdXJm_-i9A&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAd5FfDoHEjtpmyE8f6bDgcUdaHimHryLLfKV1oFZlWLH&oe=6ACEE01E",
+        "alt": "OpenTWBench 的原站預覽圖",
+        "credit": "OpenTWBench／Will 保哥的技術交流中心 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0uXBBYFaWnHKwZmTosTmu87z9LDFVXLGRbWtmB9AVZ31aAWK49FnRggfxB1WDjzUil",
+          "published_at": "2026-10-12T20:51:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-e5921f45a0ec22f0228e9685",
+      "title": "高見龍公告 10/17 宜蘭 Claude Meetup",
+      "summary": "高見龍公告宜蘭 Claude Meetup 將於 10/17 下午舉行，安排在地朋友分享 Claude 使用心得，並將大部分時間留給參與者交流；貼文附有活動報名連結。",
+      "original_text": "Claude Meetup 宜蘭場就在本週六（10/17）下午！\nhttps://luma.com/claude-yilan\n這次有幾位在地朋友來分享他們使用 Claude 的心得，歡迎大家一起來參加～\n跟之前一樣，我們還是會把大部分的時間留給大家交流。聽分享之外，更重要的是來認識更多同樣在使用 Claude 的朋友。不然每天都只跟 AI 聊天，都快忘了跟人類聊天是什麼感覺了 \n#ClaudeMeetup",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T20:00:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-3.fna.fbcdn.net/emg1/v/t13/13863473142771684668?_nc_oc=AdpG3vykgeYkpEDVkxtPGe4bucf2Pmz9XtztBp4OzqCg8AO5jncRerDM8hjVoTMkOwWZ60DIJTsbNk1rwCsoNuaL&url=https%3A%2F%2Fimages.lumacdn.com%2Fcdn-cgi%2Fimage%2Fformat%3Dauto%2Cfit%3Dcover%2Cdpr%3D1%2Canim%3Dfalse%2Cbackground%3Dwhite%2Cquality%3D75%2Cwidth%3D800%2Cheight%3D420%2Fevent-social%2Foz%2F7decc8f0-e234-48e5-b87a-60c562248c8f.png&fb_obo=1&utld=lumacdn.com&_nc_sid=c63717&_nc_ht=external.ftpe7-3.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p800x417_q75_tt6&ccb=18-1&_nc_gid=Mw8i4oQ1QZzKNlrlocZxIw&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAb7WdTlM-lp1jG-pvsZxYBhHAY6Xz3VLjDbNw_B_bLpT&oe=6ACEFCCA",
+        "alt": "宜蘭 Claude Meetup 活動的原站預覽圖",
+        "credit": "Claude Meetup（Luma）／高見龍 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid02Qz6XfbfsuhDJxgQNxp8CgCGiLCWeCNvnphry4scvWBK4F4GaLcXTwpwiShk9wmZ7l",
+          "published_at": "2026-10-12T20:00:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-71aedf69f9c8b4607baa7ba7",
+      "title": "Will 保哥分享 gh-stack 的堆疊式 PR 使用經驗",
+      "summary": "作者分享 GitHub Stacked PRs 的實測，介紹 gh-stack 如何管理分支相依、拆小審查範圍並同步後續分支，另提及 worktree 平行作業及 AI 工具介面，重點在降低大型變更的審查與維護負擔。",
+      "original_text": "我上週體驗了 GitHub Stacked PRs 工具，真的很強，一次處理多個 Issues 時，可以幫我把 PR 的順序都排好！\n在軟體開發的日常工作中，處理跨模組的大型功能往往伴隨著相當高的心理負擔。\n最常見的困境，就是將所有修改打包成一個巨大的 Pull Request 送出。\n這種做法雖然省去了分支管理的繁瑣，卻讓審查者面對上千行的程式碼變更，無從看起。\n審查時間因此不斷拖延，最終也容易忽略潛在的邏輯缺陷。\n許多開發者嘗試將任務手動拆解為數個循序漸進的小 PR。\n然而這往往帶來另一個技術維護上的惡夢。\n底層分支一旦需要調整，所有依賴於它的上層分支就必須手動進行繁雜的 Rebase。\n如果中途發生衝突，或是忘記調整 GitHub 上的 Base 分支，審查視角便會立刻混亂。\n這正是 GitHub 官方推出 gh-stack 這個 CLI 工具所要解決的核心痛點。\n它將堆疊式 PR 的流程自動化，讓每一個分支都能清晰地依附於前一個層級。\n工具會自動維護分支之間的相依關係，並確保審查者每次只聚焦於當前層級的實質變更。\n即使中途需要修改底層程式碼，後續的鏈式同步也能透過指令流暢完成。\n此外，它也支援多個 Git Worktree 的平行作業，甚至提供了讓 AI 輔助工具理解此工作流的介面。\n這項工具不僅改善了個人的開發節奏，也實質降低了團隊之間的溝通成本。\n對於希望提升工程品質與審查效率的團隊而言，這是一個非常值得深入嘗試的工作模式。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T17:54:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-4.fna.fbcdn.net/emg1/v/t13/13355975506656316658?_nc_oc=AdrgoS0jn2r1L1Um1Vnq1xqj0Cj3Kov9hmbnYpDWD5e8mTQXJnmXBAG2c8-Qy36MEgFb6CRx-044wNM_uA5-RWEb&url=https%3A%2F%2Fopengraph.githubassets.com%2Fa574f0e1201c1f83dc010148b5082b59af422bff81195f1680f23252f69bca94%2Fgithub%2Fgh-stack&fb_obo=1&utld=githubassets.com&_nc_sid=c63717&_nc_ht=external.ftpe7-4.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=Mw8i4oQ1QZzKNlrlocZxIw&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAeuO_FiB5AULbf1PlkLIsg9BMgOIe_2bIpDkpMuf1Vtz&oe=6ACEDAEC",
+        "alt": "GitHub gh-stack 專案的預覽圖",
+        "credit": "github/gh-stack／Will 保哥的技術交流中心 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid032xmpuyPgGR4iKUGa66KdJxdMC94PyHry2fNBat5UnXGt8H6kPcCtHEh5nS1N2hrMl",
+          "published_at": "2026-10-12T17:54:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-82311663325a7a18130009ec",
+      "title": "Will 保哥觀察生成式 AI 的網頁流量變化",
+      "summary": "貼文列出 ChatGPT 網頁流量佔比由 53% 升至 56%、Gemini 由 26% 降至 25% 的觀察，並討論 Claude 的開發者布局，以及模型進展如何影響使用者注意力與後續競爭。",
+      "original_text": "最近幾個月的生成式 AI 流量版圖又出現了一些微妙變化。\nChatGPT 在過去四個月的網頁流量佔比呈現回升趨勢，從 53% 爬升到 56%。雖然距離一年前 71% 的宰制地位仍有差距，但成長動能確實再度回穩。\nGemini 則微幅下滑，從 26% 降至 25%。先前的主要推升動能來自於 Gemini 3 的發布效益，目前則處於高原調整期。\n另一邊的 Claude 則像是蓄勢待發的黑馬。Anthropic 目前重兵佈署在開發者生態，一旦他們決定把資源與產品體驗全面轉向一般大眾市場，這張市占圖表的輪廓很有可能會在短時間內被改寫。\n以目前使用者的長期價值（LTV）來看，黏著度與付費意願都相當高。多數人對模型能力的每一次躍進反應也極其敏銳，哪邊有顯著突破，注意力就往哪邊轉移。\n接下來短期內，我們還會看到市占板塊的下一波劇烈震盪嗎？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T16:55:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.99422-6/839960372_928316150138063_4121355206464485471_n.png?stp=dst-jpg_tt6&cstp=mx700x615&ctp=s700x615&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=J8FSiw2bw5sQ7kNvwEItDZh&_nc_oc=Adq5FWquWQDfK8Wb4h-61zIBL2VGmtlk1k6QQR4-WGjgsrW7iLMD-7ENas4P93inhxurO-2xLQ6O5_sqxfxirO6G&_nc_zt=14&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=Mw8i4oQ1QZzKNlrlocZxIw&_nc_ss=7b2a8&oh=00_AQNotDjhhQhX0M3xaoxwZpXRlGEX9r0-wwCafJlzvYEXyg&oe=6AD2EA96",
+        "alt": "生成式 AI 網頁流量討論的貼文附圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid024cswpJpQppqR62WpCymbcRxZAw1BV2yfUUjz9uckhsEa1Aq8PdQCTp2mpHAwfWMBl",
+          "published_at": "2026-10-12T16:55:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-1786f0545da469b55d20df62",
+      "title": "Will 保哥接手 Carnac，發布 2.6.0 與繁中介面",
+      "summary": "Will 保哥宣布接手多年未更新的 Carnac，處理累積問題並推出 2.6.0、繁體中文介面與新版官網；貼文也提到重新發布 winget 套件，以及接手 Chocolatey 維護。",
+      "original_text": "我上週正式接手了 Carnac 這套開源工具。\n這款熱門的輸入顯示工具已經超過 6 年沒有更新，累積了 158 個未處理的 Issues 以及 12 份 Pull Requests。\n在接手專案後，我花時間處理了所有累積多年的問題，重新發佈了 winget 套件，也順利接手了 Chocolatey 的套件維護權。\n目前已經正式推出 2.6.0 版本，整個官網也重新設計。\n新版本不僅讓工具恢復運作，更加入了繁體中文介面，使用起來更加順手。\n歡迎大家下載試用看看這款經典工具的新面貌！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T14:59:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-3.fna.fbcdn.net/emg1/v/t13/15892618530923408337?_nc_oc=AdqkISDrea-g5Mz4Bl6Yl3TwHupO377h8aR73JZbfj4EXWewZxNdnxl-KYgLhKFkozAm7G3EUFLnTUX_FIZ8hMxm&url=https%3A%2F%2Fcarnac.gh.miniasp.com%2Fassets%2Fimg%2Fog.jpg&fb_obo=1&utld=miniasp.com&_nc_sid=c63717&_nc_ht=external.ftpe7-3.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=0T-a3jOMivPgZj2lGrH_pw&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAZ4OECvqmykWpQ_9xu69Sbl6rLY2XXeYMOySB42qHUYz&oe=6ACEEC4A",
+        "alt": "Carnac 官網預覽圖",
+        "credit": "Carnac 官網／Will 保哥的技術交流中心 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid045Y7rbkMer9hXtc7u632WUv5SyJqwbvr86KbYExiWVHGdfNGKn47yXweWBp5nEJVl",
+          "published_at": "2026-10-12T14:59:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-9fb2361d05d8d7e778f81028",
+      "title": "Eric ShangKuan 分享本機筆記軟體 Google AI Edge Foresight",
+      "summary": "Eric ShangKuan 將 Google AI Edge Foresight 介紹為使用 EmbeddingGemma2 的純本地端筆記軟體，並附上 Google 開發者頁面連結。",
+      "original_text": "基於 EmbeddingGemma2 的純本地端筆記軟體 Google AI Edge Foresight \nhttps://developers.google.com/edge/foresight",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T13:53:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.99422-6/844230837_2202916973976416_2265323900790156068_n.png?stp=dst-jpg_tt6&cstp=mx786x474&ctp=s786x474&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=prkLFHJxiq4Q7kNvwE1vy7Y&_nc_oc=AdqghijveOYjpnbs4DIyBaryKw6Y2hFn_2U8KGtkQnBHsNfuncESqMiCpfuMCQNgQbjlNidpEecItEpi7C-mjsTD&_nc_zt=14&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=0T-a3jOMivPgZj2lGrH_pw&_nc_ss=7b2a8&oh=00_AQNvMRsGuslGu2k-N-nGXtkwqh_f1XF2gwcRTDJCphZ_Dw&oe=6AD2E12C",
+        "alt": "Google AI Edge Foresight 介紹貼文的原附圖",
+        "credit": "Eric ShangKuan／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid02Zz7v37fVg7jCxPC4RM7XH8QAfevXucjUGnaX2zmq1rADE9Nkb6VNKB8kLBy8wjgPl",
+          "published_at": "2026-10-12T13:53:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c6ac9cce2917e4aab37a7dd1",
+      "title": "Will 保哥追查 Inno Setup 空白頁與 Global Atom Table 耗盡",
+      "summary": "作者從 Carnac 安裝時核取方塊空白的問題，追查到 Windows Global Atom Table 耗盡及 VCL 控制項反查失效；貼文說明控制項存在卻無法繪製，並以重新登入重建工作階段作為處理方式。",
+      "original_text": "我那台用了六七年的主力電腦最近變得非常緩慢，大小問題不斷。\n因為太久沒有重新安裝系統，平常累積了大量軟體與工具。\n老實說，許多平時難以想像的系統底層怪問題，往往就是在這種環境下才會浮現。\n最近接手了一個廢棄多年的開源專案：Carnac\n而在測試安裝新版的時候，就遇到了一個耐人尋味的除錯案例。\n執行 Inno Setup 安裝程式後，畫面直接停在選擇附加工作頁面。\n原本應該顯示桌面捷徑與開機啟動的核取方塊區域整片空白，只留下細小的焦點框。\n直覺上容易以為是安裝腳本寫錯，或是高 DPI 縮放導致版面異常。\n但透過 Win32 API 深入檢查視窗記憶體，控制項其實完好無缺。\n清單裡的項目字串都在，鍵盤方向鍵能正常選取，甚至直接按下一步也能完成安裝。\n真正的問題在於畫面完全畫不出來。\n這個清單屬於自繪控制項，高度計算與繪製需要父視窗轉發 Win32 訊息。\nInno Setup 使用 Delphi 開發，底層架構為 VCL。\n父視窗轉發訊息時，必須透過 FindControl 函式，將視窗代號反查回記憶體中的控制項物件指標。\n追查 Delphi VCL 原始碼後發現，這個反查機制依賴 Windows 的 Global Atom Table。\n> 這個 Global Atom Table 對我來說是個陌生的詞彙！\n程式在啟動時會註冊專屬的 Atom 字串，並掛載在控制項的視窗屬性上。\nVCL 為了防範 Atom 被其他程式誤刪，設計了一段防禦邏輯，若查不到就改用較慢的備援機制。\n然而，當系統的 Global Atom Table 耗盡時，全域變數與查詢結果同時回傳為零。\n這導致判斷式落入了零等於零的邏輯漏洞。\nVCL 誤以為 Atom 正常，結果永遠抓不到控制項指標，也永遠無法進入備援機制。\n這就是核取方塊明明存在，畫面卻無法繪製的真正原因。\n那麼，為什麼 Global Atom Table 會被塞滿。\n這張表格在同一個登入工作階段中由所有應用程式共享，上限僅有一萬六千多個槽位。\n它最特殊的性質是，在應用程式關閉時，系統並不會自動回收這些項目。\n一旦有程式異常崩潰、忘記釋放，或是 DDE 訊息處理不當，孤兒 Atom 就會永久留在記憶體中。\n多年累積下來，表格終於被徹底耗盡，導致任何需要註冊新 Atom 的程式都出現記憶體不足錯誤。\n要處理這個狀況，可以透過 PowerShell 腳本掃描表格，比對已不存在的行程並強制清除孤兒項目。\n若不想撰寫腳本，最徹底有效的方法就是將 Windows 帳號登出再重新登入。\n重新登入時系統會銷毀並重建工作階段的 Atom Table，安裝介面就會立刻恢復正常。\n從看似單純的介面空白問題，一路追查到 Windows 核心的資源洩漏，整個除錯過程十分精彩。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T10:09:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-3.fna.fbcdn.net/emg1/v/t13/12066078008291704649?_nc_oc=AdqoGw_GItpUr7z_X2JeCOzL0JWxKvdtj0-hKH-btal_XEI1kKwRES4w021oiw0mett8iCNxtXjx59TaiA5YNmNZ&url=https%3A%2F%2Fstwillblogassets.blob.core.windows.net%2Ffiles%2Fimages%2F2026%2F10%2Finno-setup-global-atom-table%2Finno-setup-global-atom-table-banner.webp&fb_obo=1&utld=windows.net&_nc_sid=c63717&_nc_ht=external.ftpe7-3.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=0T-a3jOMivPgZj2lGrH_pw&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAcpTBIlxY54cFSd7Y21LHogakq_G0EFsABiAI4eP4MHH&oe=6ACEDFA3",
+        "alt": "Inno Setup 與 Global Atom Table 除錯文章的預覽圖",
+        "credit": "The Will Will Web／Will 保哥的技術交流中心 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0XfTwwgceGVaaCp2nSPCMwb1wva7otoy348ATjMfrRKMAsjgjwVyghr5keV5eztnbl",
+          "published_at": "2026-10-12T10:09:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-9def24e66119458d9a593e63",
+      "title": "Nathan Chiu 主張從北台灣整體檢視 AI 園區規劃",
+      "summary": "作者以松山機場遷移與 AI 園區提案為題，主張從北台灣整體規劃檢視人才、既有產業土地、住宅交通及離島航空需求，並質疑園區開發時程能否跟上 AI 產業變化。",
+      "original_text": "不要用台北看台灣\n10月8日，台北市長蔣萬安宣布規劃遷移松山機場，把松機和周邊約300公頃土地打造成台北AI園區。其中100公頃做產業聚落，90公頃做國際永續生活聚落，110公頃做中央立體公園。市府估計可以創造12兆元產值，帶來6萬5千個就業人口。\n這幾天的討論，大多繞著同一個問題：這對台北好不好。我想換一個問題：這對台灣好不好。\n從台北的角度看，這個計畫很合理。市府的說法是，北士科、內湖、南港都快滿了，連規劃中的洲美都不夠大，產業想加碼，台北卻沒地可給。任何一位台北市長，都會想辦法替台北搶到下一個輝達，這本來就是選民交給他的工作。\n這也不是某一個人或某一個黨的習慣。2015年柯文哲就說過，機捷蓋好就可以談松機遷移。黃仁勳談總部選址時也提到，許多縣市長都對輝達非常友善。新北市長侯友宜說過，他的願望是讓輝達落腳新北。台北市長選戰的另一邊，民進黨參選人沈伯洋的團隊，也提出北士科的AI聚落規劃，包括變電所和AI研究院。每一位首長都在替自己的城市搶，這是地方選舉的結構。\n問題在於，把每個城市各自最好的選擇加起來，不見得是台灣最好的選擇。\n先看人。國發會8月公布的推估，15到64歲工作年齡人口目前約1,576萬，到2035年只剩約1,416萬。工作人口在縮小，台北多出來的一個職位，很大機會是從新竹、桃園或台中移過來的。對台北是加分，對台灣接近零和。除非同時引進外籍人才，或者每個人的產值大幅提高。\n再看尺度。舊金山到聖荷西大約七十公里，台北到新竹也差不多。和矽谷對應的不是台北市，而是整個北台灣。輝達在台員工目前主要在南港辦公室，也有部分在新竹。台灣真正的護城河，是這七十公里內晶圓、封裝、零組件、伺服器研發和工程師的密度，任何一個城市都無法單獨擁有它。市府的藍圖其實有寫到要連結新北、桃園、新竹、苗栗、基隆、宜蘭，打造北台灣首都科技廊帶，方向是對的。只是土地、稅收和增值都留在台北，廊帶要怎麼分工，目前沒有任何機制。\n再看已經有的地。桃園航空城區段徵收面積3,148公頃，產業專用區第一期287公頃、第二期134公頃，緊鄰機場，也有機捷。已標出的基地中，面積最大的I基地18.94公頃由台灣人壽以137億元標下，據了解租客是雲豹籃球隊的主場。下一波95公頃預計2028到2029年才招商。真正鎖定AI的亞矽創研中心，產業基地約3.81公頃。從台灣的角度看，一邊是航空城還在找AI公司，一邊是台北要再開300公頃，兩個城市在搶同一批公司和同一批工程師。\n再看房價。產業越往一個地方集中，那裡的房子就越貴，而且不必等園區蓋好就會發生。黃仁勳公布總部選址前後，北士科的成交價就提高了5%到10%；輝達進駐南港後，對面的國泰建案被市場叫成「輝達宅」。松機案還沒動工，房地產業者已經在算解除限高後的老屋更新空間。2025年第2季，台北市的房價所得比是15.41倍，桃園是8.65倍；台北市的房貸負擔率達67%，家庭收入將近七成要拿去繳房貸。市府的計畫有至少3萬5千名居住人口，但就業人口是6萬5千人，多出來的人要住哪裡，按照現在年輕家庭「脫北」的趨勢，答案多半是新北和桃園。從台北的角度看，這是地價上漲、稅基擴大；從台灣的角度看，是年輕工程師的薪水有更大一塊被房貸和房租吃掉，通勤距離拉得更長，增值則落在已經有房子的人手上。90公頃的生活聚落是賣斷還是只租不賣，結果會差很多，這是值得追問的地方。\n再看松機本身。從台北看，它是一塊地；從台灣看，它是東部和離島的空中入口。東部與離島的班機都停松機，醫療後送也靠它，空勤總隊和軍方也在這裡。2017年交通部要求民航局評估松機遷移可行性時，藍綠兩黨的離島立委一起開記者會抗議，理由就是急診送醫會增加轉運時間。這部分的成本，台北選民感受不到，澎湖、金門、馬祖和花東的居民會。\n最後看時間。AI時代每一季都在變，但松機的地要等2033年第三跑道啟用後才可能騰出來。那是七年後的事，之後還要變更都市計畫、拆除、興建，產業大樓真正啟用的時間更晚。這段期間，台灣的優勢能不能留在原地，沒有人能保證。目前的優勢集中在半導體和AI伺服器這條硬體鏈，而伺服器的製造端正在往北美移：墨西哥今年前五個月輸美的企業伺服器金額達469億美元，僅次於台灣；緯穎約七成產能在墨西哥。蓋辦公室不會變成優勢，騰出一塊地也不會。台灣的下一個優勢是什麼，這個問題沒有一個城市回答得了。\n所以我不認為這是蔣萬安一個人的問題，也不是藍綠的問題。台灣有22個縣市長，各自為自己的城市負責，卻沒有一個位子是由選民選出來、專門替整個北台灣算總帳的。市府自己也說要與中央整合規劃。那麼中央要回答的，就不只是松機能不能搬，還有北台灣的產業、住宅和交通要怎麼分配。航空城、竹科、北士科和松機，應該放在同一張圖上看。\n下次聽到任何一位候選人談產業園區，不管是台北、新北、桃園還是新竹，可以多問一句：這個計畫對隔壁的城市，是加分還是減分？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T09:50:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.99422-6/844007609_1466715815372223_4667907727315051881_n.png?stp=dst-jpg_tt6&cstp=mx757x498&ctp=s757x498&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LNKtVtHJJukQ7kNvwFR16j-&_nc_oc=AdrwP2W2B8PjC0Q3WYyw0KOWRNTAt8EiDQvJ13ab3peN17T54xSW7qR9iJntrTPcBig6Orx77uLDw3AuQkPCf8Y7&_nc_zt=14&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=0T-a3jOMivPgZj2lGrH_pw&_nc_ss=7b2a8&oh=00_AQN4hp6SPBbaoDzoKw7TlaDBMmUdAyi1DXg4w7QXoDc61g&oe=6AD2DE8E",
+        "alt": "北台灣 AI 園區規劃討論的貼文附圖",
+        "credit": "Nathan Chiu／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0DmeB9jNMyM8heGo1onTHFxBAApTKhm25c6tr8dXA1H6fpcEXBDDgr7zMf9nscCWpl",
+          "published_at": "2026-10-12T09:50:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-35e2c8e4aa23f62b8a20e879",
+      "title": "REA：以 AI Agent 分析軟體結構的逆向工具",
+      "summary": "Will 保哥介紹 REA（Reverse Engineer Anything），說明它可配合 Claude Code 等代理分析網站、桌面程式及 Android 功能的結構脈絡；貼文強調理解架構、自行實作與遵守軟體條款，反對破解及規避授權。",
+      "original_text": "來看看這半個月狂攬 9 萬 6 千顆星星的超強專案：REA: Reverse Engineer Anything \n在軟體開發的過程中，我們經常會看見令人驚豔的產品功能。\n大多數人只能看見最終的呈現效果，卻很難得知背後的實作邏輯。\n最近在開源社群引起廣泛討論的工具 REA，試圖改變這個現狀。\n它的全稱是 Reverse Engineer Anything，主要是搭配 Claude Code 等 AI Agent 使用。\n作者用了一個很貼切的比喻，成品軟體就像一顆已經烤好的蛋糕。\n你可以品嚐它的味道，卻看不到當初烘焙所使用的食譜。\nREA 的角色，就是提供專業的分析工具給 Agent，協助拆解軟體的結構層次。\n不管是網站、桌面應用程式或 Android 系統，都能逐步找出特定功能的運作脈絡。\n這項技術在實務上，特別適合用來理解公司內部遺失原始碼的老舊系統。\n但在實際應用時，合規性依然是最關鍵的考量。\n使用者必須確認軟體條款是否允許逆向工程，並且嚴禁將其用於破解與規避授權。\n更重要的是，這項工具的核心理念在於理解架構，而不是抄襲。\n透過釐清運作邏輯，進而使用自己的方式重新實作，才能在學習與創新之間取得平衡。\n隨著 AI 工具的演進，軟體架構的研究方式，顯然正在迎來全新的工作思維。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-12T07:54:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-3.fna.fbcdn.net/emg1/v/t13/17316338864984849124?_nc_oc=Adr_f-xmU7PHy7PgTZg_4CcFYxnHPuguh_P7v5KkEO1OIuH_Rb8Msl_6aMGdTUF4RrDtOwp3U-jVnamxJGpgKkT4&url=https%3A%2F%2Frepository-images.githubusercontent.com%2F1209966933%2F1a3fef9a-be4b-41f4-8830-a94c0e8288cc&fb_obo=1&utld=githubusercontent.com&_nc_sid=c63717&_nc_ht=external.ftpe7-3.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=9yko2ZpFneDgwc-h9vedxA&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EASCm-jbeIvZjte0IwHmmrHQcHlj9OJa5AcHie2bAS70j&oe=6ACEFFB3",
+        "alt": "REA 開源專案的預覽圖",
+        "credit": "morluto/rea／Will 保哥的技術交流中心 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02d5t1ZwbdcPgeyNTVbWjhwUDW2A2x8Fu2Z3K8Kjwayh2addHFk7eHhqhp2uxA2ZhFl",
+          "published_at": "2026-10-12T07:54:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-12T16:53:57.505Z",
+      "captured": 21,
+      "included": 15,
+      "excluded": 6,
+      "notes": []
+    }
+  }
+}
