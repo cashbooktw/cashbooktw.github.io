@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "generated_at": "2026-10-14T00:16:07+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-14 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 16 則，入選 9 則，排除 7 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-5b2e9ced3af69abcca4aab8f",
+      "title": "Eric ShangKuan 分享 GCP 的 Gemini 4 可用訊息",
+      "summary": "Eric ShangKuan 表示，Gemini 4 已可在 GCP 使用。",
+      "original_text": "GCP 上已可開始使用 Gemini 4",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-13T23:50:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/847802397_1422919463331292_8838421526447139504_n.png?stp=dst-jpg_tt6&cstp=mx2048x1715&ctp=s2048x1715&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8E5l1ZSusaoQ7kNvwFPZ0Zy&_nc_oc=AdqSVxJ6qQsYRrQPANkvWj9wkSfeh5HFKp3yKQh1ZaDdYFLxueP4vahxr7X3MXOomNgIq9cwn2Vv0rmS85IICDdd&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=LSvUACuq2av6vYfGjwK1Mg&_nc_ss=7b2a8&oh=00_AQOzD5B8WlpIO90JLlIbCZfB-iTi2yNJwuLg3yIV_SEGvw&oe=6AD42746",
+        "alt": "GCP 與 Gemini 4 可用訊息的貼文配圖",
+        "credit": "Eric ShangKuan／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid0Xsv522J3wUpaQzcLUSUHhnemhZJwKYCwFdjRe7khsmuJYUJYB7sTmkgq8p5bZ5GPl",
+          "published_at": "2026-10-13T23:50:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ab807db1979e7a61e9c7bac5",
+      "title": "從分散 IP 與重試行為辨別爬蟲流量",
+      "summary": "作者分析分散 IP 的整站爬取流量，認為伺服器負載主要來自逾時後反覆重試；他也分享查驗 IP 歸屬與調整網頁渲染方式，補足 LLM 在成因分析及事後追蹤上的盲點。",
+      "original_text": "是 #DDoS 還是 #Crawler？是善意還是惡意？\n某客戶產品網站持續被大量「瀏覽/索取」，導致伺服器偶爾撐不住而短暫出錯。\n警報響的那一刻，記錄很像 DDoS。3 分鐘內 458 個不同 IP、遍布美國、印度、巴西、越南、新加坡，每個 IP 只來 1~2 次。\n封 IP？沒用，每個 IP 才來一兩次。\n限速？沒用，單一 IP 根本很正常。\n所以它到底要什麼？這點很重要。DDoS 要的是「打垮你」，量越大越好；這波流量最高每秒才 3.6 頁，比 Applebot 一天 2.8 萬次還溫和。\n➊ 它要的是內容，不是讓你掛掉\n 93% 的網址只抓一次，橫跨 2011 到 2026 年的內容，是整站在爬，不是盯著某幾頁打。\n 它會跑 JavaScript、等頁面渲染完；沒拿到就換個 IP 重抓同一頁。\n 有 952 次是點「站內連結」進去的，代表它順著一路走，但刻意把 referer 拿掉。\n➋ 讓伺服器喘不過氣的，其實是它自己的重試\n它大約等 4 秒拿不到就放棄、換 IP 再打一次。尖峰那 3 分鐘，54% 的請求是 60 秒內重打同一頁。伺服器一慢，它就逾時；一逾時，它就重打；一重打，伺服器更慢。壓垮系統的不是流量大，主要還是重試放大。\n➌ IP 很散，不代表它是一群人\n逐一查了 IP 的歸屬（ASN）才發現：大約 3 成來自兩家機房業者的 IPv6 大區塊，每個請求隨機換一個位址；7 成才是各國電信的家用與行動網路。四次爆量一共 1,236 個 IP，沒有任何一個重複出現過。黑名單在這裡完全沒用。\n➍ 它不是最近才來的\n往回追 90 天的 log，同一批機房 IP 從我們有紀錄的第一天就在了，只是當時偽裝成 Chrome 151。某天它把 UA 換成 Chrome 153，看起來就像一個新的攻擊者突然出現。中間有 2 次露出原形，益來是偽裝成 Chrome 的 Lightpanda。\n所以，是 DDoS 還是 Crawler？是善意還是惡意？\n- - -\n比較有趣的是，我把過程丟給某幾個知名 LLM，發現它可以很快幫你分析，但對於「發生原因」與「事後追蹤」感覺仍不到位。\n例如：\n➀ LLM 報告說是「住宅代理」，我反問「你有查 IP 是哪些雲服務廠商或電信業者嗎」，結果它才更正他的說法，去實查 IP (圖一)。這差別很大，如果是「住宅代理」那原因比較可能就會推導成「駭客攻擊」(大量非法跳板) 而非「爬蟲服務」\n➁ 事後追蹤也是，我問了很多次，它一直說沒有辦法抓出對方是哪些「業者」。我就跟它說，我們先換個網頁渲染方法，然後再觀察一陣子。果然，這名「業者」隨後也換了方法爬取，比對前後差異，用篩選法抓到了\n最後，我跟它說，你有沒有覺得我好棒棒呀，竟然這次沒有回嘴，害我都有點害羞，原本以為又可以跟他吵架了 (圖二)。\n[附上之前跟它的爭吵] https://www.facebook.com/yftzeng.tw/posts/pfbid0NAAzyrMRhJpWs7R6Dz3nut4HtG5f55D6orPZJf71sDR6yD7dfgjc7TvWubvnUAXYl",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-13T19:30:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/846410219_1795545398433406_594877559667929843_n.png?stp=dst-jpg_tt6&cstp=mx2011x255&ctp=p160x160&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=J-V39kYTG1cQ7kNvwG5jypX&_nc_oc=AdqkfVSGwWFZwCQuFLpNm-58rqa3TYMycDZBeO1mx-AX_y3DKPnvEx88CKPX2eF4IUxPUJmn8L8I8KxHjEVdXWad&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=LSvUACuq2av6vYfGjwK1Mg&_nc_ss=7b2a8&oh=00_AQMV-PoryGvnp8H3gYKR-337z-7Q0KdoszywcxTszRosjg&oe=6AD4297A",
+        "alt": "分散式爬蟲流量分析與 LLM 討論的貼文配圖",
+        "credit": "Ant Yi-Feng Tzeng／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid09T7aS3eU8faUaPK6mN9LrPTt4Y5PLJ6FHjG3MZmNAcKmTbidHB7gXxo7a8ETCSZNl",
+          "published_at": "2026-10-13T19:30:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-9a0928218e351cd3f9d3ca6a",
+      "title": "高見龍分享 10/24 Hackathon 活動訊息",
+      "summary": "高見龍分享 10/24 的 Hackathon 活動連結並邀請組隊，表示自己屆時會在海外關注。",
+      "original_text": "報隊！\n\nhttps://puma.taipei/hackathon \n10/24 啊... 我在海的另一端關注",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-13T14:53:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-sin11-2.xx.fbcdn.net/emg1/v/t13/1724085119995040440?url=https%3A%2F%2Fpuma.taipei%2Fimages%2Fmeta.webp&fb_obo=1&utld=puma.taipei&_nc_sid=c63717&_nc_ht=external-sin11-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=N7pdK_lmxR01CLbc1_nhlQ&_nc_zt=3&oh=06_Q3_EAUwF1ylyDVu4bhalbGKKcG4x15aGehC3qlrzseVB22-A&oe=6AD03498",
+        "alt": "10/24 Hackathon 活動連結的原站預覽圖",
+        "credit": "puma.taipei／高見龍 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid027gZjwkh2oRNX8ZbvS8J5pLSLeFPX8hxBeAY69cX2otiezcp1XXrCNTot7aie6PQgl",
+          "published_at": "2026-10-13T14:53:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-fe96d9cd4ef0425d64030b38",
+      "title": "Will 保哥分享 Pro 500 用量突然重置的觀察",
+      "summary": "作者記錄 Pro 500 用量剩 2%、距預定重置還有四天時，額度突然重置的個人經驗，並評論 OpenAI 的用量安排。",
+      "original_text": "十分鐘前，突然看到 Pro 500 用量只剩下 2% 時，我覺得有點內疚，因為還有四天才重置啊～\n結果，剛一轉眼，又重置了～\nOpenAI 明明偷斤減兩的很嚴重，但又罵不下去，等一兩個月後，就算他不重置也沒時機可以罵了，我覺得 Tibo 真的很會！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-13T13:29:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/847886451_1702214991907638_2293629372900434498_n.png?stp=dst-jpg_tt6&cstp=mx1832x756&ctp=s1832x756&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=2IJx481jRccQ7kNvwEn9LL7&_nc_oc=Adp2bQisgby1jpW5Bzq0vJ6v6u0fSa9nUFhcWSr5bL03yzq87vkR2aI-V7Od3ZI1rW5-10PH6PCs_x7UKRwWtv2g&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=N7pdK_lmxR01CLbc1_nhlQ&_nc_ss=7b2a8&oh=00_AQPseWqj9M5WjiNlu41LdKaKVuZzSshkMzEBPfem6hiSRg&oe=6AD42D04",
+        "alt": "Pro 500 用量與重置經驗的貼文配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0BmmesAsgegSD8JghqvXmRHf7FpsmS6SzCVncSyTowCw3zD2adYDtMtyYnWKHsCEKl",
+          "published_at": "2026-10-13T13:29:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-556cd5c6e42e48abac73b226",
+      "title": "Ray 分享自用 iOS 解壓縮 App 的上架經驗",
+      "summary": "Ray 因工作需求製作 iOS 解壓縮 App，朋友也想使用後才決定上架；他分享這個原本自用的工具開始有人下載使用的近況。",
+      "original_text": "我沒想過我自用的 iOS 解壓縮 APP 慢慢開始有人下載跟使用惹！！\n當初只是因為工作需求只做給自己用，後來朋友說他也想用才上架，沒想到...",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-13T11:19:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.30808-6/846137805_1519637426853251_3172515716539127220_n.jpg?stp=dst-jpg_tt6&cstp=mx319x312&ctp=s319x312&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=uNCTFkEaNOcQ7kNvwHgJxB4&_nc_oc=AdqjmtbyG9whuEBkmYMc9vMPvXTOAAU9PdpnwyEwgr7qnXgGerrbCDY2wS7AAm3UePskjWU2vB_E1jBMf2Iu2EIF&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=N7pdK_lmxR01CLbc1_nhlQ&_nc_ss=7b2a8&oh=00_AQNfMwMBU5zgGesk6HdfOQQ0SSlrDjGkeLQEDdHTsOfQeQ&oe=6AD43FBE",
+        "alt": "自用 iOS 解壓縮 App 上架經驗的貼文配圖",
+        "credit": "是 Ray 不是 Array／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "是 Ray 不是 Array",
+          "url": "https://www.facebook.com/israynotarray/posts/pfbid02kbdSPpdVeVcztUm7NWVhZUH5n3TzYnhufUJqw3JLcQP2RZWhPK7sKLCybgk9bKYzl",
+          "published_at": "2026-10-13T11:19:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-800049a2b3a57b26b595779b",
+      "title": "卡斯伯規劃 Claude Code CLI 遠端工具與手機介面",
+      "summary": "卡斯伯計畫更新既有遠端工具並加入手機介面，改善多個 Claude Code CLI 工作階段的排序、關閉、用量監控與側欄摘要預覽，方便行動裝置使用。",
+      "original_text": "雖然現在 Claude 有出桌面版\n但說實在，我還是使用 CLI 版本，而且一次開一大串 session\n這時候桌面版的排序就時常不如人意\n像是：\n- 想要按照自己意思排列、不想要多餘的資料夾標示\n- 想要直接關掉不使用的資料夾 + session\n- 想要直接看到用量及電腦目前狀況\n- 想要直接在側欄預覽現在的摘要\n- 想要遠端使用終端機\n原本就有做一版遠端工具\n這次打算大幅更新，順便再補上手機版（如下方的額外輸入框）\n讓行動裝置都可以輕鬆地使用 claude code cli",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-13T11:09:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/843885416_966570705908828_4386906080521601896_n.png?stp=dst-jpg_tt6&cstp=mx2048x1038&ctp=s2048x1038&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8pkiIwfvMbQQ7kNvwFahzeb&_nc_oc=AdqruK5Yxlz21Rrn7CtcXshfBmWMlgjVmABBzcwHCZxrO-Ei-OV-nYv-7VMHCKhxoB610TkGvA29ACe0X_ve0xyv&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=N7pdK_lmxR01CLbc1_nhlQ&_nc_ss=7b2a8&oh=00_AQN9DC-80-HKsDbhshu5Z9FlWkk0G2NBtovfptkp0Ei0kg&oe=6AD43FEF",
+        "alt": "Claude Code CLI 遠端工具改版計畫的貼文配圖",
+        "credit": "卡斯伯／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "卡斯伯",
+          "url": "https://www.facebook.com/WccCasper/posts/pfbid02VUfvUQ7Eqcfr4qCKR5guygoLagUpFKYPkZULXDaVnSuYg4egMbepReHXLEFF84qYl",
+          "published_at": "2026-10-13T11:09:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-4bdbbda1d73a560b8f227a26",
+      "title": "Will 保哥分享 Stylebot 恢復更新的觀察",
+      "summary": "作者表示，自己使用逾十年的 Stylebot 擴充套件近期恢復積極更新。",
+      "original_text": "我用十多年的 Stylebot 擴充套件，最近終於重出江湖，作者開始積極更新了！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-13T10:00:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0EQmpjscqTTV2uPjaLzEoXHHmuNPKPsZQDjzRxbKXnNoVSSrj8YB1h2QDo83XAntxl",
+          "published_at": "2026-10-13T10:00:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-e1d0a4ae2d01161e75250732",
+      "title": "Will 保哥分享 Muse Wonder 個人 AI 助理介紹",
+      "summary": "貼文介紹 Muse Wonder 的個人 AI 助理定位，重點為持續記憶與自主執行能力。",
+      "original_text": "Muse Wonder 打造持續記憶與自主執行的個人 AI 助理",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-13T08:00:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t15.5256-10/846413052_3822508381267194_5999839654200157500_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=j_2lxuJDnhwQ7kNvwEQubJA&_nc_oc=AdoVpD7Uipn4L7zyEml3U78R71xI4o3-lAa77i9ib9FBMwPXNnCiNzSiHTSsDo4p7kzBGbnMjf9XQSlVtKhM442x&_nc_zt=23&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=u4yvD-hEKAtf58ChQ3Mnmw&_nc_ss=7b2a8&oh=00_AQPFbTUMgkgB9aal7S9FKP95NAcu4dAqw330O7ixs7O3Ag&oe=6AD43792",
+        "alt": "Muse Wonder 個人 AI 助理介紹的貼文配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/watch?v=1124800490135164",
+          "published_at": "2026-10-13T08:00:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-07c9fc59ac0a1e1bd0afec0a",
+      "title": "Will 保哥介紹 Muse Wonder 的長期記憶與任務執行機制",
+      "summary": "Will 保哥介紹 Meta 的 Muse Wonder 系列，聚焦 Active Memory 的長期脈絡保存與 Active Focus 的長任務執行，並轉述軟體工程應用、隱私防護及 API／Muse Code 支援。",
+      "original_text": "Meta 在今天正式發表了全新的 Muse Wonder 系列模型\n Muse Wonder\n Muse Wonder Full\n這項發表被視為 Meta 邁向個人超級智慧的重要里程碑，核心焦點在於全面升級個人與專業領域的 Agent 應用。\n過去一年多以來，Meta 從底層架構重新推敲技術堆疊，並在 GW 級規模的 Prometheus 資料中心完成了這項訓練成果。\n這一次技術突破的核心，主要建立在 Active Memory 與 Active Focus 兩大機制上。\nActive Memory 能讓模型在長期互動中，主動保留關鍵脈絡，並在適當時機精準調用過去的記憶。\nActive Focus 則強化了長週期任務的執行力，當模型遭遇阻礙時，會主動嘗試替代路徑或向使用者確認。\n在各項指標評測中，Muse Wonder 系列在長程軟體工程、複雜商業工作流以及法律和金融等專業場景中，皆展現出前沿水準。\n特別是在程式開發方面，模型具備長時間自主維護的能力，能跨專案修改程式碼並完成測試與除錯迴圈。\n值得留意的是，本次發表特別著重於分佈外任務的泛化表現，而非僅僅在既有 Benchmark 上進行過度最佳化。\n這意味著模型在面對現實世界中從未見過的工具、限制與目標時，具備更穩健的適應力與推理能力。\n在安全性方面，由於 Agent 具備存取隱私資料的高權限，Meta 亦大幅加強了隱私防護與抵抗對抗性 Prompt 的能力。\n目前 Muse Wonder 已正式支援 Meta Model API 與 Muse Code，Muse Wonder Full 則優先提供給 Muse Code 訂閱用戶。\n未來該系列模型也將逐步整合至終端產品 Muse，並持續衍生為各種專業場景下的特化模型。\n從單純的文字生成走向具備自主規劃與執行能力的 Agentic Workflow，這項發布清楚揭示了下一世代 AI 的演進方向。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-13T07:27:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-3.fna.fbcdn.net/emg1/v/t13/12614914401376330549?_nc_oc=AdpeUnyyj87VmtmgM4poMV4YwtnYQJYqNux07vDyEr5hbXwajWPr9ieyjXa716KPsrPGYX4z5Ai4Uqi1lewufstV&url=https%3A%2F%2Fresearch.meta.ai%2Farticles%2Fintroducing-muse-wonder%2Fsocial%2Fmuse-wonder-social-v1.webp&fb_obo=1&utld=meta.ai&_nc_sid=c63717&_nc_ht=external.ftpe7-3.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=u4yvD-hEKAtf58ChQ3Mnmw&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAb6NV4ijtsLyb4SAvDhprnwGsvLICsH_O-obrK2x5Q6F&oe=6AD03E30",
+        "alt": "Muse Wonder 系列模型的原站預覽圖",
+        "credit": "Meta／Will 保哥的技術交流中心 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0HLV9cpUc9FL3QcTADr5s822WpGJJRVaob5YqzaYR3RGxpZSXBzxma1nYqTEEav9nl",
+          "published_at": "2026-10-13T07:27:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-13T16:16:05.317Z",
+      "captured": 16,
+      "included": 9,
+      "excluded": 7,
+      "notes": []
+    }
+  }
+}
