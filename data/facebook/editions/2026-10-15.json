@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T00:18:00+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-15 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 17 則，入選 11 則，排除 6 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-1e892bd729c38b0d7f8ce7b6",
+      "title": "卡斯伯規劃非開發者的 AI Coding 部署訓練",
+      "summary": "卡斯伯規劃公司內部訓練，協助行銷、行政與企劃等非開發者把 AI Coding 製作的工具部署到 Cloudflare，並納入資訊安全注意事項。",
+      "original_text": "最近在做公司內部教育訓練\n平常公開的課程，我都用中規中矩的版型\n想想是內部教育訓練，整個樣式就輕鬆起來了\n我們公司內有很多非開發者，\n像是行銷、行政，或者是課程企劃等等，\n他們其實也會想要透過 AI Coding，\n來開發一些屬於自己的工具。\n其實 Cloudflare 就是一個不錯的平台，\n可以把自己做的 AI coding 東西往上丟，\n這次的教育訓練，就會引導他們怎麼把東西丟上去，\n同時注意資訊安全等相關議題～",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-14T20:30:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/848535925_1409197774717644_3813826249665607264_n.png?stp=dst-jpg_tt6&cstp=mx1000x564&ctp=s1000x564&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WA5inIP5OgYQ7kNvwHp2YWG&_nc_oc=AdqLuwlKILaP6yXsCEkLa7-_iGvg-nCUWSaIGurqBIWiqWDLGukOw5VfYRBOygj9qyUED02lKXcF_77FlnMzrzyB&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=gP7CnDuB-mUeM4N3uI5ZLw&_nc_ss=7b2a8&oh=00_AQNpOaa1t0B5b01C1hAIsHGHvAZR9iT6uvIJ5H9KY3rqyA&oe=6AD5780E",
+        "alt": "AI Coding 與 Cloudflare 內部訓練的貼文配圖",
+        "credit": "卡斯伯／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "卡斯伯",
+          "url": "https://www.facebook.com/WccCasper/posts/pfbid022XYjprE6vZCaMH1xyzozLqAd361YsBMvUd1gfNAvLkwtdkgFpKntFj2bfYZRUy5Ll",
+          "published_at": "2026-10-14T20:30:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-e7dab33bcf84c137ed6c1f44",
+      "title": "SITCON 2027 一般議程徵稿與投稿時程",
+      "summary": "Ant Yi-Feng Tzeng 分享 SITCON 2027 徵稿訊息，提供 40 分鐘 Presentation 與 Espresso 兩種形式；早鳥截止 2026/11/29，投稿與修改截止 2027/1/15，年會預定 2027/3/13。",
+      "original_text": "分享\n( 各大開源會議，非限特定領域或程式語言的，好像就剩 SITCON 沒上台演講過，要不要假裝年輕人投稿試試… )\n\n【SITCON 2027 一般議程徵稿中 \n】\n帶上你最近在想的事情、踩過的坑，或是還想不透的模糊念頭，來到這裡和大家一起拋出問題、交換觀點！\n無論你是想分享硬核技術還是輕鬆的經驗談，在 SITCON 的舞台上完全沒有主題限制！只要與資訊科技相關，不管是你想聊的任何冷門酷東西，甚至是前沿 AI 技術實作、實用專案與痛點解決、小眾或創新型程式語言、海內外社群參與見聞等各種不同的方向，你都完全可以大膽投件，讓你的故事成為舞台上的焦點！ \n為此，SITCON 2027 提供了兩種發表形式，無論你想深入暢談還是精準快閃，都有最適合你的舞台： \n Presentation\n完整 40 分鐘：包含 30 分鐘的議程與 10 分鐘的問答時間，讓您可以分享您的經歷、介紹您的技術或研究、帶給與會者一場豐富完整的知識洗禮。\n Espresso\n挑戰用最濃縮且輕量的新知與技術分享，快速衝擊與會者的認知，激發他們對新領域的想像與好奇。\n不論是探討技術或輕鬆的分享，任何與資訊科技、電腦技術相關的講題，我們都非常歡迎！\n 重要時程\n 早鳥投稿至 2026 年 11 月 29 日\n 投稿及稿件修改至 2027 年 1 月 15 日\n 錄取通知 2027 年 1 月下旬\n 彩排 2027 年 3 月 12 日\n 年會 2027 年 3 月 13 日\n 早鳥投稿優惠：\n11/29 前投稿可以獲得審稿委員第一手的回饋，越早投稿，議程組越能安排充裕的時間，給予你更詳細的稿件修改建議！另外，凡在早鳥期間投稿並成功錄取，還能獲得 SITCON 年會當天的紀念品抵用券！\n--\n文 / 嵩嵩・圖 / 兆翌",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-14T20:20:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/849536501_929090576693387_6367333385256591619_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=WkSOLu2CHd0Q7kNvwEb2YFd&_nc_oc=AdpWC19Jstf83yr6ioP62vUajFhdIjswPuYvejuKYgV0YVr4gBZ3OYRSnf61cIdkr4NjT4N4Ug1i-_hXCaklBim0&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=gP7CnDuB-mUeM4N3uI5ZLw&_nc_ss=7b2a8&oh=00_AQNoU81nvvcnsc2WBXIbrZA0nn5jDQza2ZJtlOxGlCiW_g&oe=6AD57F1A",
+        "alt": "SITCON 2027 一般議程徵稿的貼文配圖",
+        "credit": "兆翌／SITCON 2027（Ant Yi-Feng Tzeng Facebook 分享貼文）"
+      },
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid02RgHZQeh9EEhSCBZRbSxg7vDcdtr6dH8tt26VwQMYexojVuqCZcSMR224pwj9Dgnhl",
+          "published_at": "2026-10-14T20:20:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c425d6b9587bfeda49797b74",
+      "title": "AI 智慧零售技術加速器 10/21 舉辦 Demo Day",
+      "summary": "Nathan Chiu 公告，聖洋科技與 MUSE BUILDER 新軌道將於 10/21 14:00–17:00 在誠品生活松菸店 B1 舉辦 Demo Day，由十組新創展示 AI 零售應用，需先報名。",
+      "original_text": "開店的老闆，時間大多被這幾件事吃掉：營業時間在回訊息、接電話，打烊後排班、盤點、對帳，空檔還要拍照、寫文案、剪短影音。客人進門逛一圈就走，也沒人知道為什麼。\n聖洋科技和 MUSE BUILDER 新軌道合辦的「AI 智慧零售技術加速器」，十組新創針對的就是這些事。下週三 Demo Day，歡迎開店的朋友來看，現場可領本屆新創適用的限定折扣優惠券。\n時間：2026/10/21（三）14:00–17:00，13:00 開放入場\n地點：誠品生活松菸店 B1 表演廳\n名額有限，請先報名： https://forms.gle/vyjn4KNNR4ciVgo56",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-14T16:35:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/846569883_1729293775038484_4100010418128031748_n.png?stp=dst-jpg_tt6&cstp=mx1038x1302&ctp=s1038x1302&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=S-quHYAhCoQQ7kNvwErnG1D&_nc_oc=AdreAInTWOXarK0fsW6ZpKlPSU3IcR_tZAtUjSTIoSKW9WqeCCWTzGjrQ3yAFFFXi13ZGrooNKYbne4XBdYEjtT0&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=zuUAOCQHp_zqC9u5DHstRA&_nc_ss=7b2a8&oh=00_AQOYU6ah_mpHnp9PvO1NRkK9mROHGqsHBK9CMli80gy3og&oe=6AD567ED",
+        "alt": "AI 智慧零售技術加速器 Demo Day 的貼文配圖",
+        "credit": "Nathan Chiu／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid02nfm6ME7nXsHyEKfckUBdfGGyEKrMQFbvfHSdeFQQzmFfjGDJUpGLR6YywQVpiwwSl",
+          "published_at": "2026-10-14T16:35:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-dd3a47194cf56c5e7d0cdd76",
+      "title": "Eric ShangKuan 分享 Gemini 4 的取用與 Cloud credits 訊息",
+      "summary": "Eric ShangKuan 分享 Gemini 4 Argon 的取用方式，提及 Antigravity 的 Ultra 訂閱資格，以及訂閱附送的 Cloud credits 可用於 GCP Agent Platform、AI Studio，並提醒後者有預付條件。",
+      "original_text": "目前在 Antigravity 由 Gemini 4 Argon 先開放給 Ultra 訂閱的用戶，不過你知道嗎？你的 AI Pro 以上的訂閱每個月都還有送你 Cloud credits，所以你可以在 GCP 裡的 Agent Platform 用到 Gemini 4 ，也可以在 AI Studio 裡運用這些 credits （但在 AI Studio 裡要先 prepaid $5），可參考這篇文章：",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-14T14:55:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/17042023299063727120?_nc_oc=Adr18g0wyAVXL-hSo7Z1FPk_uxDEe8WcFyJuSBIghVWR2I_bwKPUW5EzeCwj0Kp0hGl9Pik7fbSMwBeMgHP4L0b5&url=https%3A%2F%2Fai.google.dev%2Fstatic%2Fsite-assets%2Fimages%2Fshare-ais-513315318.png&fb_obo=1&utld=google.dev&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=zuUAOCQHp_zqC9u5DHstRA&_nc_zt=3&oh=06_Q3_EARXxywDGnchPLkqwDAiRVF7zcSGeVe9xsmdDs6un-aFu&oe=6AD17459",
+        "alt": "Gemini 4 取用訊息所附的 Google AI Studio 預覽圖",
+        "credit": "Google AI Studio／Eric ShangKuan Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid0CoqUqscq6JoeuDtYc6xMDwJuyw2XAFjvfkozYsXbjwFPWf14gMzQ493WCGH4SnyJl",
+          "published_at": "2026-10-14T14:55:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-b198798534c0468a09432ae3",
+      "title": "Will 保哥分享 Gemini 4 Argon 作品「彩虹方塊大逃脫」",
+      "summary": "Will 保哥分享以 Gemini 4 Argon 製作的首個作品「彩虹方塊大逃脫」。",
+      "original_text": "這是我的第一個 Gemini 4 Argon 作品：彩虹方塊大逃脫 \n#大人小孩都愛玩",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-14T13:07:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/845801184_1127006216499176_7459862859415774507_n.png?stp=dst-jpg_tt6&cstp=mx1920x929&ctp=s1920x929&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=weTskDyLaiEQ7kNvwG40ocD&_nc_oc=Adoe2a3YnxO89rtZTpcWQboJEkzLBjDk3pXv77jJGdxQxzSFvEYg3QcD4-br9TmPeR4zleoTUammVFqWz5KQ_xF7&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=zuUAOCQHp_zqC9u5DHstRA&_nc_ss=7b2a8&oh=00_AQNkjyOahUNzCMkBePplUq_ImaaZi9Lk8lSGPJw_hy-Reg&oe=6AD597F8",
+        "alt": "「彩虹方塊大逃脫」作品的貼文配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02i2zdqE5KyYeuABmAR8R2m2RYtxxiXXxUzagbZiCLfMtjo3F3uDWt7BKxJQXYfghul",
+          "published_at": "2026-10-14T13:07:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-d401979667765b9d2bbca126",
+      "title": "Muki Wu 分享 Apple 鍵鼠組的二手與新品採購比較",
+      "summary": "Muki Wu 分享 Apple 鍵鼠組的採購比較：依自己選配，二手與官網新品的價差約為 800 至 1,000，因此仍在兩者間猶豫。",
+      "original_text": "新公司的預算不夠，所以我應該會自己買 Apple 的鍵鼠組\n想說去蝦皮逛逛二手，精打細算找來找去，配好我想要的東西後，跟 Apple 官網全新的價差大概 800 ~ 1000 吧\n怎麼覺得好像也沒差多少....，這樣我還要買二手嗎 \n，還是直接去官網買 \n，但錢也是錢.... 好猶豫 XXD",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-14T12:13:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Muki Wu",
+          "url": "https://www.facebook.com/muki.wu/posts/pfbid024qL9CMR81rLUafSA74Q8DStQEn1KA7a9dCFSHq22RyZPf8Pvm1ZFKWbG5TAEfzqXl",
+          "published_at": "2026-10-14T12:13:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-58542152fff6871d18e60f9f",
+      "title": "Champ Yen 分享 Claude 輔助核心程式碼與效能的案例",
+      "summary": "Champ Yen 轉述 Linus 使用 Claude 產生記憶體頁面管理相關核心程式碼的嘗試，稱多執行緒讀取效能達到約三倍。",
+      "original_text": "Linus 教主嘗試使用 Claude 針對 memory page management m 所\n產生的 kernel, 結果對於multi- threads reading 帶來 3X 的效能",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-14T12:11:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/17458955711971670235?_nc_oc=AdoQL69rqTq8WZvlFCkLIEfEV4vxGWFUoi1979y5OiMH48IuX4Ajcm6y8vr419BbazP1Gm4j91l62qyXUS2tTgjd&url=https%3A%2F%2Flinuxiac.com%2Fwp-content%2Fuploads%2F2026%2F10%2Ftorvalds-use-ai-for-linux-kernel.jpg&fb_obo=1&utld=linuxiac.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=0bA2cwRBxVl_yFafCI5PFA&_nc_zt=3&oh=06_Q3_EAX5e8gQLFzqV3fX8jcaTPnN8xSxw4gYNz6chFP3nO8zW&oe=6AD197B6",
+        "alt": "Claude 輔助核心程式碼案例的原站預覽圖",
+        "credit": "Linuxiac／Champ Yen Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Champ Yen",
+          "url": "https://www.facebook.com/champ.yen/posts/pfbid027rPqqEFrC7gqaqvAY1XCqNSWUcrDx8KP2FvvkhaWevxs5CRrWHZq7QPQUAoqEdhul",
+          "published_at": "2026-10-14T12:11:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-b206ab3ae5ab5f4347fc23d1",
+      "title": "Will 保哥比較 Gemini 對 Claude Code 設定問題的回答",
+      "summary": "作者以關閉 Claude Code 提交署名的問題比較模型回答，指出舊版曾錯誤要求修改 CLAUDE.md，而 Gemini 4 Argon 改為指向使用者設定檔；他將此視為事實型回答準確度的進步。",
+      "original_text": "你知道 Gemini 網頁版最讓人頭痛的地方，就是過去常常出現滿滿的幻覺，任何「需要基於事實回答」的提問，幾乎都會瞎掰。\n以前詢問關於 Claude Code 該如何關閉 Commit Attribution 時，得到的答案全部都是錯的。\n例如：\n\"\"\"\n請問 Claude Code 如何關閉 Commit Attribution?\n\"\"\"\n不管是 Gemini 3.8 Flash 還是其他舊版本，總是會給出錯誤的指引。\n當時甚至會叫你去修改專案裡的 CLAUDE.md 檔案來解決這個問題。\n但實際上完全是 AI 的幻覺。\n直到最近 Gemini 4 Argon 出現後，這個狀況終於有了明顯的改變。\n現在詢問相同問題，Gemini 4 Argon 終於能給出正確的方向。\n它會正確指示你去修改使用者目錄底下的 ~/.claude/settings.json 檔案。\n雖然過程經歷了漫長的幻覺期，但至少這些基於事實的回答，準確度終於進步了。\n龍兒！好樣的！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-14T07:28:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0eczqiFHC7MZss6Vhd8ns1jS35fY7aTtsfUU7GZpWeFNv78Go26pUbXimMjCSZtG8l",
+          "published_at": "2026-10-14T07:28:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-828bd600d19384e1029a794a",
+      "title": "Ant Yi-Feng Tzeng 談開源批評與維護者的熱情",
+      "summary": "作者呼籲批評開源軟體者實際參與改善，並回顧社群經歷，談到搭便車與社會怠惰對維護者熱情的消耗，表達對投入開源軟體及活動者的尊重。",
+      "original_text": "開源軟體，但凡遇到一些不講理的人時，確實對熱情很折磨\n今天又看見有人對開源軟體作者，批評、質疑且要他提供品質的審查和驗證。\n其實，要用不用，要不跳下來一起改善。出一張嘴質疑，並沒有顯得比較高尚，絕大多數的開源軟體都沒有直接或間接營利。\n早期跟著開源前輩從 IRC → BBS → ICOS (COSCUP 前身) → COSCUP → MOPCON → SITCON → …\n(以前參加社群活動都是在 IRC 或 BBS 上公告宣傳)\n經歷太多 Social loafing 與 Free riding，也被現在還自稱開源大佬的前輩無視過，所以對於投身在開源軟體及活動的任何人，我始終都尊重與佩服。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-14T02:35:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid028Jw3rUf5neoNiN2rxSmCzex3PRhomus5NJnLYTD7P9349ZZWbf7tfBAqs61Su5uHl",
+          "published_at": "2026-10-14T02:35:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-daedbebb6e95dcb31c95cdd6",
+      "title": "Will 保哥介紹 Gemini 4 Argon 的推理定位與取用管道",
+      "summary": "Will 保哥介紹 Gemini 4 Argon，轉述其多步驟推理能力、在 Chromium 架構重構的應用，以及 AI Studio／API 等取用管道；貼文也列出輸入、輸出與快取的定價資訊。",
+      "original_text": "Google 正式發表新一代前沿模型 Gemini 4 Argon \n這款模型專門為了處理各領域最棘手、最複雜的深度任務而設計。\n從大型軟體架構重構、資安漏洞修補，到金融、法律與科學研究，它都能提供高精確度的多步驟推理能力。\n在衡量經濟關鍵領域表現的 Vals Index 上，Gemini 4 Argon 成功拿下第一名。\nGoogle 內部團隊也已將其導入 Chromium 的龐大專案中。\n工程團隊藉此完成了橫跨數百個檔案的架構重構，把原本需要數月的龐大工程縮短至數週。\n這項改進未來將讓 Chrome 頁籤與懸浮視窗切換更流暢，並消除常見的瀏覽器崩潰問題。\n目前 Gemini 4 Argon 已經正式向全球開放。\n開發者與企業用戶即日起可透過 Google AI Studio 與 Gemini API 取用。\n訂閱用戶也能在 Google Antigravity、Gemini App 以及 Search 的 AI Mode 中直接體驗。\n定價方面，輸入每百萬 Token 為 2 美元，輸出每百萬 Token 為 10 美元，快取輸入更享有 95% 的費用減免。\n這代表高效能與大規模的 AI 推理應用，正在以更親民的成本進入實際生產環境。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-14T00:35:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/9529177200564952998?_nc_oc=AdpLsGQxwyaYZCGkzubbw_LEr1bXCawuDlXLdbVmrwYo7yvhBPGI6XdfRjyqrCq-183Ph7RczttilzNflYY1-gCb&url=https%3A%2F%2Fstorage.googleapis.com%2Fgweb-uniblog-publish-prod%2Fimages%2Fgemini-4-argon__blog-header__2784x1566.width-1300.png&fb_obo=1&utld=googleapis.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=glZbJXmooJ2GVbwCmY9FWQ&_nc_zt=3&oh=06_Q3_EAZinkNhVHyf6VCWU-W3u49ZgdCRIjuq4BByc-q6lD4nu&oe=6AD16CB5",
+        "alt": "Gemini 4 Argon 模型介紹的原站預覽圖",
+        "credit": "Google／Will 保哥的技術交流中心 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02cVhTcyeNi9Nwbxt4JSbcYmwXC6hfStGXXaczurdiAWoU3H6HArRouhSxgpcX3b6Vl",
+          "published_at": "2026-10-14T00:35:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-8ffa76a5e13b1f405e661aa5",
+      "title": "Will 保哥分享 Gemini app 的 Argon 與 Tasks 更新",
+      "summary": "貼文轉述 Gemini app 導入 Gemini 4 Argon，重點包括更直接的回覆、長任務進度回報、macOS 的 Antigravity coding 介面，以及可在背景執行跨應用工作的新 Tasks 模式。",
+      "original_text": "Google 正式宣布將 Gemini 4 Argon 導入 Gemini app \n( 大家可能要睡一覺起來才會看到更新 )\n這款新模型具備更強大的前沿推理能力，能更從容應對各類複雜任務。\n在對話體驗上，Argon 的回覆風格更加俐落直接。\n它減少了不必要的語意保留與客套，也不會重複贅述或使用陳腔濫調。\n當執行耗時較長的任務時，它能更有效率地即時回報進度，讓使用者隨時掌握狀況。\n程式撰寫方面也有重大突破。\nGemini macOS app 現在已直接整合 Google Antigravity 的 agentic coding 介面，讓使用者能在聊天與寫程式之間無縫切換。\n此外，主對話視窗新增了 Tasks 功能切換開關。\n只要切換至 Tasks 模式，即使人不在電腦前，Gemini 也能在背景自動處理事務，跨 Google 應用程式協助完成工作。\n目前 Gemini 已經能與超過 40 款第三方應用程式深度串接。\n包含 Instacart、OpenTable、Adobe 與 Shopify 等知名服務，涵蓋日常採購、餐廳訂位到商業設計等多元情境。\n這項全新升級即日起正式上線。\n擁有 Google AI Pro 與 Ultra 資格的訂閱用戶，現在即可在 Gemini app 中體驗 Gemini 4 Argon 的強大功能。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-14T00:30:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/8180664000857263100?_nc_oc=Ado1hXqeHYrjkKtnePy2UbhD0z3NqcSJVBH-3K60OJzsmHmLe10XNB9dRMqja5c1WrxgxxWFfgptOjB7MdEX9aWg&url=https%3A%2F%2Fstorage.googleapis.com%2Fgweb-uniblog-publish-prod%2Fimages%2FArgonDemos_social2.max-1440x810.png&fb_obo=1&utld=googleapis.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=glZbJXmooJ2GVbwCmY9FWQ&_nc_zt=3&oh=06_Q3_EAatSZK4roetFRkRhiH-ctecCviqBFecj6Y-i153K6YQV&oe=6AD17C0D",
+        "alt": "Gemini app 與 Gemini 4 Argon 更新的原站預覽圖",
+        "credit": "Google／Will 保哥的技術交流中心 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02cJtQA9ZneBsKymawVxQ2iU5bKRF2c7FJaD9cBDoUJ4BRQ8uJkperQ9K1cDuoWAbVl",
+          "published_at": "2026-10-14T00:30:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-14T16:17:58.046Z",
+      "captured": 17,
+      "included": 11,
+      "excluded": 6,
+      "notes": []
+    }
+  }
+}
