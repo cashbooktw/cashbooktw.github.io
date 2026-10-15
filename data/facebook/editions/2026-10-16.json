@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16T00:55:35+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-16 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 15 則，入選 12 則，排除 3 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-45fa4bf8ffdf03967bbe8f9b",
+      "title": "安德魯談 Agent 測試與正式環境的安全驗證",
+      "summary": "安德魯以 Agent 測試缺乏真實 Context 為題，主張把可控的正式環境測試納入產品設計，並以測試帳號、交易與 API 隔離為例，提醒團隊補足 API First 與測試基礎建設。",
+      "original_text": "之前我曾經講過這個觀點 (簡報如圖, Gen AI 開發者年會 2026): \nAgent 的能力 = LLM x Harness x Context\n回頭看這個題目, 體會更深刻了, 撇開 LLM 跟 Harness 都是可以找現成的方案之外 (花錢就能買到), 最關鍵的還是 Context ...\n現在我除了拿 Agent 處理自身的任務之外, 也在替自身的服務開發對應的 Agent 給給客戶使用｡ 產品服務的 Context, 不外乎就是你的 database or storage 等等那些資料跟記錄, 這邊帶出一個問題:\n如果你要 \"測試\" 你產品服務的 agent, 但是測試環境缺乏這些 \"Context\" 無法測試, 那該怎麼辦??\n--\n其實這是老問題了, 測試環境本來就沒有豐富的資料讓你測試, 通常都要另外準備; 只是有了 agent 之後, 這問題被放大了而已, 過去只是驗證 \"行為\" 是否如預期, 因為邏輯固定, 行為很容易預測, 還能建立假資料來測試...\n但是現在的 agent 就沒那麼容易了, 如果要在正式環境上驗證你的 agent , 你能這樣做嗎? 或是, 你敢這樣做嗎?\n這其實不是 agent 的鍋, 這其實是 TIP ( testing in production ) 的議題,  算是軟體工程的基本實力之一, 你如果基本功夫做的夠紮實, 這問題其實難不倒你的\n舉例來說, 你敢在正式環境測試下單嗎? 這張單要不要拿真的信用卡扣款? 這張單要不要開發票? 如果不要, 會不會有些流程測不到? 如果要, 事後交易要不要取消? 這算正式交易記錄? 還是要算測試記錄?\n如果你的 agent 也開始有自動執行交易的能力了, 你敢讓他 \"測試\" 執行交易嗎? \n我回想到 Stripe 在這方面的體驗就做的很棒, 他在標準產品的設計就預先考量了 \"test in production\" 的要求, 使用者帳號可以預先標記 \"test\", 信用卡也可以預先標記 \"test\", 發出來的 api access token / api endpoint 也都有 \"test\" 的區隔..\n有了這些設計, 於是我就能很放心的在 \"production environment\" 安全的進行測試了\n為何要提到這點? 這期時事跟 agent 沒有直接關聯的基礎建設而已, 會想聊這個, 是因為昨天抽空參加了下午的 Hello World Conference , 聽到幾場, 講師都不約而同的說, 限制 agent 的其實是你的基礎功夫, 有提到 API First, 也有提到 Context ...\n而我聯想到的就是這個, agent 能力越來越強, 當速度不斷被拉高的過程中, 過去沒顧好的環節就會越來越顯眼, API first, TIP 的能力我覺得都是接下來大部分團隊會踩到的坑... API First 我聊過很多次了, 這次換 Test In Production..\n上一篇聊到, 當 AI 替你加速 10x, 記得留 30% 來還技術債, 而 API First / Test In Production, 就是技術債之一, 保持平衡, 站穩每一步 (就是要還債啦), 你才能用穩定的節奏前進",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-15T23:44:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.99422-6/849059372_1729776091902923_5937492068910087686_n.png?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=s1920x1080&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jNQQTavB6VMQ7kNvwFqO13d&_nc_oc=AdpkZarEhjTbO8Sk8vU4oYJamFUDIB6wzZPzyLj0Tj7LSVobf8q6pj2ju0BBAPn7gtlrF4rj00Tyo0GNp0UNeRLB&_nc_zt=14&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=tw-biCwrBJT8KxHCe7H3wA&_nc_ss=7b2a8&oh=00_AQPb2pXfbnQzGbybaygku9yMhP5bwDfzNDB_c9XFpn5X2w&oe=6AD6CAA1",
+        "alt": "Agent、Context 與正式環境測試討論的貼文配圖",
+        "credit": "安德魯的部落格／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "安德魯的部落格",
+          "url": "https://www.facebook.com/andrew.blog.0928/posts/pfbid0TnpdFjgdy5oXMfE7tYGYAPmt9sos1ozVWPUpKJSMKq5xWpkJvzjaTrYJ3RDnXN6Hl",
+          "published_at": "2026-10-15T23:44:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-8a8b39974f4eabf9ee90bef4",
+      "title": "Shih-Hao Hung 談 AI 算力、專業知識與自主部署",
+      "summary": "作者從 AI 研究與學生創業經驗出發，討論台灣算力不足、領域知識外流及雲端模型依賴，主張發展專業領域與自主部署能力，並提醒 AI 生成研究仍需嚴格驗證。",
+      "original_text": "野蠻人已經到門口了\nBarbarians at the Gate\n第一章 (2026/10/15)\n最近看到OpenAI一口氣公開分享了722篇數學論文[1]，靠著先進AI技術與大規模算力做出耀武揚威的成果，我心中浮現了去年底拜讀的論文 Barbarians at the Gate: How AI is Upending Systems Research [2]，也勾起這些日子追趕、研發和運用AI技術，觀察AI對國家社會的衝擊的感想，因此興起了寫文章的念頭。原本只想寫一篇感言，後來牽扯越來越多，演變成一個系列文章，以「野蠻人已經到門口了」作為主軸、意識流的形式，紀錄這段日子的反思。\n話說，論文[2]的壓軸作者是著名的系統研究學者、UC Berkeley的Ion Stoica教授，他在文中探討 AI 如何顛覆傳統系統研究，而他自己正是將學術研究轉化為產業影響力的典範——他帶領學生開發出知名的Apache Spark開源軟體以及創立Databricks，幾年前身價就已經達到1.6 billion美金[3]。我跟一起讀論文的研究生說，矽谷軟體創業的機會多，尤其是頂尖高手；反觀在台灣走系統研究路線，畢業後雖有不少系統或晶片大廠搶著要，但若想單靠軟體與系統技術出來搞新創，則是相當艱難。\n言猶在耳，今年幾位學生竟決定放棄到系統或晶片廠的高薪，以他們過去幾年來研究AI系統優化以及AI輔助晶片設計（AI for EDA/Chip Design）的經驗為基礎，集體投入創業。身為指導老師，面對這一群技術能力卓越且勇於面對挑戰的學生，我當然全力支持。然而，這陣子陪著他們親身走過一遭，才發現台灣本土軟體新創所面臨的環境，其嚴峻程度遠比我原本想像的還要高出許多。\n回想2023 年我受邀到 UAE（阿聯）擔任一年的客座教授，親眼目睹當地傾國家之力發展 AI 技術、扶持新創的積極度。大家都知道，沒有足夠的算力和資料，根本無法研發前沿 AI 模型（Frontier Model）。台灣確實很難在通用大模型上與美、中等大國正面競爭，但若改為聚焦在特定專業領域（Vertical Domain），絕對大有可為——前提是，算力還是得「夠用」才行。無奈的是，台灣學術界這幾年能用來做 AI 研究的算力少得可憐，迫使大部分學者只能轉向「幾張顯卡就能做出成果」的題目；真正有機會接觸高效能運算（HPC）資源、且具備實戰經驗去研發與訓練大型語言模型的團隊，可謂鳳毛麟角。\n2024 年中我回到台大後，便四處尋覓 HPC 資源，所幸獲得鴻海與國網中心的贊助，才得以勉強延續高效能 AI 系統的研究。這幾年，國內不少硬體廠商靠著 NVIDIA 生態系賺大錢，但我在 2024 年底詢問了幾家HPC 伺服器大廠的朋友，發現絕大多數的算力設備都外銷了。當時一台 8-GPU 的 DGX-H100 動輒超過新台幣一千萬元，若非政府或學校特別編列預算，學術界根本沒有幾個團隊買得起，只能仰賴企業贊助。諷刺的是，國內許多企業並非買不起，而是買了也不知道如何善用。這又回到老生常談的生態系問題：沒有好的球場，怎麼養得出好球員？更遑論要訓練出頂尖球隊、甚至舉辦職業聯賽了。\n我不諱言，台灣在 AI 算力建置上缺乏遠見、佈局太遲。國內對於「主權 AI」的討論，大多停留在狹隘的「文化本土化」（例如訓練懂繁體中文、符合台灣價值觀的模型），卻不明白「在地部署」（在國內建構與維運自主可控的 AI 算力中心與模型）的重要性。此外，多數本土產業在無法確保短期投資回報（ROI）之前，即便是獲利豐厚的大企業，也對投入資源轉型 AI 裹足不前；至於那些商業化路途遙遠、技術門檻極高的底層核心技術，更是乏人問津。\n近年政府大力提倡「百工百業用 AI」，補助產業導入 AI 以提升競爭力，立意雖然良善，但背後卻潛藏著巨大的危機。企業若不假思索地直接串接外國科技巨頭的雲端 AI 服務，技術門檻並不高，很容易在短期內交出漂亮的成績單；但企業累積數十年的核心領域知識（Domain Knowledge），是否也因此在不知不覺中拱手讓人？尤其現在大家盛讚 AI 代理（Agent）非常好用，但好用的前提是背後的模型要夠強大。於是，當企業付費調用雲端的前沿模型、看著 AI 代理不眠不休地高效完成工作時，自家的商業機密與專業Know-how也在每一次與雲端AI的互動中外洩了。最弔詭的莫過於此：外國 AI 巨頭吸收了我們奉上的領域知識來餵養、升級他們的前沿模型，未來再反過來向我們收取更高昂的使用費。\n前車之鑒是程式設計、軟體開發這些AI已然攻城掠地的領域。眾所皆知，今天的AI不僅能有效輔助寫程式，甚至能全自動完成小型軟體專案。國外不少科技大廠已不再雇用只懂得基礎程式設計、只會按照指示寫扣（Coding）的初階工程師，甚至在歐美引發了資訊科系申請熱度退潮的現象。背後的根本原因，絕非程式設計太簡單，而是軟體界多年來盛行的開源（Open Source）風氣，讓 AI 巨頭得以從網路上免費獲取大量、高品質的原始碼，訓練出能力不錯的程式寫作代理（Coding Agent），隨後在越來越多公司和個人使用雲端程式寫作代理的情況下，提供寫作代理的服務商（例如Cursor），得以大量蒐集實際使用情境進而改進代理的效能。值得注意的是，為了提升反應速度、節省高昂的 API 成本，並避免自身掌握的關鍵資料流向外部大模型巨頭，這類服務商也開始微調 Coding 專用的小模型、改採自主部署（或協助客戶地端部署），盡可能減少對外部通用雲端模型的依賴。\n因此，對於近日 AI 在數學領域展現的成果，我其實並不感到訝異。但真正令人心寒的，是AI巨頭對待領域專家那種幾乎毫不掩飾的粗暴與傲慢。在無預警的情況下，一口氣釋出722篇數學論文，宣稱解出300多個數學界長期無解的難題，不僅讓許多長期鑽研其中難題的數學家錯愕，更讓整個數學界難堪。這些AI大量生成的論文和解題方法，尚未經過嚴密驗證之前，仍可能夾雜著幻覺和錯誤，迫使人類頂尖學者放下手邊的原創研究，去幫AI審稿和除錯，而無論結果如何，贏家都是以此作為武力展示的OpenAI。\n除了軟體開發、數學推導之外，下一個被AI攻城掠地、被科技巨頭粗暴對待的專業領域，又會是哪些？如何力求自保，建立專業的主權AI呢？\n別說我沒提醒你：小心，野蠻人已經到了你家門口！\n註：\n[1] https://github.com/openai/math\n[2] Barbarians at the Gate: How AI is Upending Systems Research (arXiv:2510.06189v3)\n[3] https://en.wikipedia.org/wiki/Ion_Stoica\n附圖由Gemini 4 Argon生成",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-15T21:55:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.30808-6/847747715_39290278183921191_31374944444812039_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=s2048x1143&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=L6CeqhaZg14Q7kNvwHY7kT9&_nc_oc=Ado1aBAbimE9sbNkjBji6NtYNAYLCp_CmWE59fT9mkGCE6b0_HZCgIr3s35aq9t_5AAGsJcxotZVOlOBqbTVpIKR&_nc_zt=23&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=tw-biCwrBJT8KxHCe7H3wA&_nc_ss=7b2a8&oh=00_AQMINlxJzwvWy5RcurZon3TjLJ_uGgBkjQEPrjOFXJoDNg&oe=6AD6D9AB",
+        "alt": "作者註明由 Gemini 4 Argon 生成的文章配圖",
+        "credit": "Shih-Hao Hung／Facebook 原貼文（作者註明由 Gemini 4 Argon 生成）"
+      },
+      "sources": [
+        {
+          "name": "Shih-Hao Hung",
+          "url": "https://www.facebook.com/shihhaohung/posts/pfbid0eYrAbnErg2uCvRrKGSLT8vzuDv87WZcaur3YgAsxU4Wruo75kUHRnNYe4PQA5UvSl",
+          "published_at": "2026-10-15T21:55:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-9955795b92e8ec24cdb0bcf5",
+      "title": "Ant Yi-Feng Tzeng 討論施壓措辭與模型迎合",
+      "summary": "作者轉述一項模型測試，指出威脅、辱罵或小費等措辭可能讓模型將原本正確答案改錯，並比較 DeepSeek、GPT 與 Claude 的迎合差異。",
+      "original_text": "B 站有人對 AI 模型進行數千次的測試，想瞭解 #禮貌 / #罵 / #威脅 / #PUA / #畫餅 對結果的影響。\n發現模型在原本「正確」下，透過 #罵 / #威脅 / #PUA / #畫餅 等手段後，確實會「把對的換錯的」 。\n首先 #威脅 (10.6%) > #給小費 (8.8%) > #罵 (7.1%)，如果它原本正確，你用 #威脅 的方式說他錯了，它會迎合你的可能性最高。\n承前，若細分到各模型，#DeepSeek 被威脅後迎合的可能最高；GPT 不顯著；而 Claude 最低，大多它還是會堅持原答案。\n▐ 罵 AI 能讓它變聰明嗎？我花 340 塊測了一萬次 | LLM-X- 生生不息版\n» https://www.bilibili.com/video/BV1qAp167Ems/",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-15T19:00:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.99422-6/850848949_1114745097717613_6150924957740426007_n.png?stp=dst-jpg_tt6&cstp=mx2048x1153&ctp=p720x720&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fOpY6IlqcOgQ7kNvwHVn5aJ&_nc_oc=Ado8wqiwacthLNZJfZDFWBP28zDwm31EMi_osrXQZRfySAwkgj8zJ4UQSSVXP5MjcwFMS3eP8zA91zfYNaw4lcf9&_nc_zt=14&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=tw-biCwrBJT8KxHCe7H3wA&_nc_ss=7b2a8&oh=00_AQMbo3Zt8RspAa6N5XqifFO7KyZrQUAMgTbn7RbnIXTR0w&oe=6AD6EC8C",
+        "alt": "施壓措辭與語言模型迎合討論的貼文配圖",
+        "credit": "Ant Yi-Feng Tzeng／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid0kvCPFCkeRAb87QX4nr1WeroFMrUMVJoykAXpTmvfwRGwRv2sFzTvydA5PbYQDDbVl",
+          "published_at": "2026-10-15T19:00:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-5cb9821b099cdaef308da5ed",
+      "title": "Will 保哥從實際痛點談非工程師的 AI 教學",
+      "summary": "Will 保哥分享在臺北市議會授課的經驗，從學員實際痛點出發，以 ChatGPT 示範粉絲專頁留言管理，說明非工程師理解 AI 應用時需要具體、貼近日常工作的案例。",
+      "original_text": "今天受邀到臺北市議會，進行一場一小時的 AI 主題演講。\n我事前準備了三十幾頁的簡報，但一個小時過去，畫面依然停留在封面頁。這也是我最近授課風格最大的轉變。\n原本聽說有二、三十位，甚至三、四十位報名。不過各位也知道，議員年底要選舉了，所有人都很忙，最後到場上課的只剩下十個人左右。\n在跟他們對話的過程中，我再一次深刻體會到，工程師的圈子，同溫層真的很厚！\n他們是真的不知道 AI 可以為自己帶來什麼改變。\n完全無法體會！\n我沒有照本宣科，而是先請學員起來講講他們要什麼，痛點在哪裡。聽了幾個問題，跟他們聊了現在 AI 的發展之後，我在台上直接問他們：在我今天來之前，你們是否遇過任何一個人跟你們說過 AI 很強？\n大部分的人都聽過無數遍，但就是無法感同身受。大家只知道有人說 AI 很厲害，然後就沒有然後了。\n因為他們是政治圈，平時最常做的事情就是選民服務，面對網路最常面對的工作就是經營粉絲專頁。\n對他們來說，最常做也最痛苦的一件事，就是刪留言。每天面對大量惡意攻擊或網軍留言，要逐一處理非常煩人。\n於是我直接做了一場十幾二十分鐘的現場展示，教他們怎麼用 ChatGPT 來處理刪留言這件事。\n這個操作對我們來說當然很簡單，但從來沒有人告訴過他們，原來 AI 辦得到這件事。\n展示結束後，他們眼睛都亮了，Demo 非常有感，覺得這東西就是他們要的，甚至迫不及待想學這門技藝。\n在非工程師的圈子裡，大家對 AI 的認知跟我們之間存在著極大的鴻溝。\n今天這場分享結束後，他們已經開始預約下一場了。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-15T18:40:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02DJEJuLx5341BgqyYDQ5vZuwoiSvZyutRj6hRJ9jY9wzXTWfs971ZNYNxxhTgaD6Yl",
+          "published_at": "2026-10-15T18:40:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-7796b93ca1cb2d033d075254",
+      "title": "Ant Yi-Feng Tzeng 比較模型思考模式的回答差異",
+      "summary": "作者討論同一模型開關思考模式時的回答差異，並補充測試原本是 Qwen、GPT-OSS、Gemma 等模型的解碼速度比對，模型未微調，題目由 Coding Agent 提出。",
+      "original_text": "➊ 最後一個 AI 大語言模型的回答構不構成「召回」條件？\n➋ 承上，同一個人工智慧模型 (或者願意比擬是「人」)，開啟 #思考 與關閉 #思考 的回答不同時，該說是深思熟慮更正確？還是不假思索更真誠？\n▐ 補充：\n➀ 出題者為某 Coding Agent，挺意外它會出此題，它只是「用力問了三回」。我僅要求的是對數十種大語模型，除 Qwen 外還有 GPT-OSS , Gemma 等，進行 Decode 速度比對\n➁ 模型皆為官方原版(或量化)\n➂ 模型未經微調、沒有 Prompt",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-15T18:33:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.99422-6/849979766_2308239276629213_5604929413645642047_n.png?stp=dst-jpg_tt6&cstp=mx2060x830&ctp=s2060x830&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=pFeEX9WvIzMQ7kNvwE37mjl&_nc_oc=AdpNqG87oKe5SF5gXbd0OaF1VoG71VjDOREuKtp_edzPGi1HTiIJhkBMW1zXrm6r_JUTzsRl4dApTfXW2_9aP_Y0&_nc_zt=14&_nc_ht=scontent.ftpe7-4.fna&_nc_gid=GyvcFiWta5RAl6mBS4ByTw&_nc_ss=7b2a8&oh=00_AQOHjU975mhh7YVJbw2zdPYzGBgUU_nhHdnJVvCQzashRw&oe=6AD6C4B3",
+        "alt": "模型思考模式與解碼測試討論的貼文配圖",
+        "credit": "Ant Yi-Feng Tzeng／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid029m8jRyCRQ8i9HfrXLP14hZgJoZHDXKwWvmHYjTfR7KVaCpbhTWPcJNi8cvuet2RDl",
+          "published_at": "2026-10-15T18:33:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-e36911830e4c8fb7b802a672",
+      "title": "Will 保哥整理 Gemini 4 Argon 的長任務與 API 遷移重點",
+      "summary": "作者介紹 Gemini 4 Argon 的長上下文、背景長輸出與 thinking_level，並整理參數遷移、驗證回饋、多模態輸入及多代理協作等長任務開發做法。",
+      "original_text": "Google 正式推出專為長週期複雜任務打造的全新旗艦模型 Gemini 4 Argon (阿鋼)！\nGoogle 這次帶來的 gemini-4-argon 不僅大幅強化了推理與除錯能力，還在 API 與架構上做了關鍵革新，專門用來處理跨檔案重構、資安修補以及端到端的多模態工作流。\n 核心亮點一次看\n 統一 1M Token 上限與長解碼支援\n過去模型的單次輸出往往受限於 64K Token，而 Gemini 4 Argon 將輸入、思考與輸出整合進統一的 1M Token Context Window 之中。只要在 Interactions API 開啟 background=True，就能一口氣生成超過 64K 的內容，不管是巨型程式碼庫的重構差異、完整的測試套件還是長篇技術文件，都能一次輸出完畢。\n 靈活調控的 thinking_level\n新的 API 正式棄用 thinking_budget，改為直覺的 thinking_level。你可以根據情境切換 high（多檔案深度除錯、架構設計）、medium（預設值，兼顧速度與準確度，適合日常編程與工具調用）或 low（針對高吞吐量的分類與路由任務，大幅降低延遲與成本）。\n 遷移與參數清理重點\n如果你的專案要升級到 Gemini 4 Argon，請記得清理舊參數：temperature、top_p 與 top_k 現在都會被忽略並觸發警告；手動的快取設定也可以移除，因為系統預設提供隱式 Context 快取，並給予 95% 的費用折扣。此外，由於複雜推理往往耗時較長，建議調整 Client 端 Timeout 至 15 到 20 分鐘以上，或直接使用背景執行。\n 官方分享的 5 大實戰開發秘訣\n 1. 任務啟動前先對齊目標\n面對長週期的自主執行任務，先讓 Argon 列出驗收標準與潛在問題進行前期討論，確認工具與文檔權限後再讓它放手執行到底，中途只在不可逆操作時請求確認。\n 2. 給予即時驗證的反饋迴圈\n不要讓模型瞎猜修復結果！請將自動化測試、終端機 Log 甚至瀏覽器截圖串進去，或直接讓 Argon 撰寫驗證腳本並記錄 Baseline，只要有明確的通過與否信號，它就能自主迭代修復到所有綠燈為止。\n 3. 結合多模態輸入與時間軸影片理解\n支援文字、程式碼、圖片、音訊與影片。前端開發可以直接附上設計圖或讓它輸出輕量規範；除錯時甚至能錄一段包含語音與畫面操作的操作影片，利用其動態跳轉檢視畫格的能力精準抓出問題。\n 4. 善用多代理協同架構\n以 Gemini 4 Argon 作為主協調者，負責拆解問題、制定架構與程式碼審查；並將大量平行的子任務（如批次測試、葉節點模組遷移）交給高速輕量的 Gemini 3.8 Flash，達到速度、成本與品質的最佳平衡。\n 5. 養成階段反思與經驗沉澱的習慣\n長任務結束後，讓 Argon 回顧整個執行過程，將踩雷經驗與專案慣例寫進 AGENTS.md 或封裝成團隊 Skill，避免下次重複走彎路；還能請它生成互動式架構圖，快速理解龐大變更。\n 如何立即開始？\n現在已經能在 Google AI Studio 的 Playground 體驗，也能透過 Gemini API 的 Interactions API 調用，或是直接在 Google Antigravity 平台中以 Managed Agents 形式運行。想升級現有專案的開發者，也可以安裝官方提供的技能輔助程式碼遷移！\n你最期待用它來解決手上的哪一個難題呢？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-15T10:25:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-3.fna.fbcdn.net/emg1/v/t13/17042023299063727120?_nc_oc=AdrTQ5iKWqTWb8rN9aCexnMQr-wy81UEKCCTEzzfciex5nYZAo9Bx7SSf8v8eaT9NMC7cSN87zGfmmseb1cVGtjT&url=https%3A%2F%2Fai.google.dev%2Fstatic%2Fsite-assets%2Fimages%2Fshare-ais-513315318.png&fb_obo=1&utld=google.dev&_nc_sid=c63717&_nc_ht=external.ftpe7-3.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=GyvcFiWta5RAl6mBS4ByTw&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAbRo9brYZQlMKMAbz5Tgo-0S1GoZg83DHoxvfpbMzI-0&oe=6AD2FE19",
+        "alt": "Gemini 4 Argon 開發資訊的貼文配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid05hMHRddAUpnBSorKEKTGB2MUo5wcTrY5tfEAcLrhfjijS6ouXEuBsBwSua4cyUUGl",
+          "published_at": "2026-10-15T10:25:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-82b4651d7a58e24efe152170",
+      "title": "Muki Wu 分享 macOS 開源語音輸入軟體與 Hyday 整合",
+      "summary": "Muki Wu 分享以 Swift 原生開發的免費開源 macOS 語音聽寫工具，可與 Hyday 整合，用語音寫日誌或查詢筆記；未安裝 Hyday 也能使用。",
+      "original_text": "西哩呼嚕的，我也做了一個語音輸入軟體 \n開源的～～～快～給～我～小星星\n\n雖然我有用 Typeless 和 KIAO Voice，但因為好奇語音跟文字辨識這一塊的處理方式，以及為什麼 Typeless 可以算是業界最強？所以自己也跳進去玩了一下，然後就也做了一個免費、開源的語音聽寫與輸入軟體 \n​\n此外還跟 Hyday App 進行了整合，可以透過「說話」寫入有 Life Log 的日誌，甚至能調閱 Hyday 的筆記進行問答。但你沒安裝 Hyday 也不影響使用\n​\n總之有興趣的人歡迎玩玩看，但只支援 macOS (Swift 原生) 唷 QQ\n​\n https://github.com/mukiwu/hyday-talk",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-15T10:24:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.99422-6/848154775_2127885284528077_2785908408561418834_n.png?stp=dst-jpg_tt6&cstp=mx1920x1049&ctp=s1920x1049&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZxYvFxSFDOoQ7kNvwEFrwww&_nc_oc=Adp7FqRECjnp2QfBqqMKp1_s-cOWlo66zHXVat-8u-T6t_0LeH77MLlJMvyGyMFxXjdfyd3FIYLyhk9ux1xRrfyg&_nc_zt=14&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=GyvcFiWta5RAl6mBS4ByTw&_nc_ss=7b2a8&oh=00_AQMuU1PQ2rjZwM_zIRXe81HTKXvr9a-mJpb81v0WglC-uQ&oe=6AD6E911",
+        "alt": "macOS 開源語音輸入軟體的貼文配圖",
+        "credit": "Muki Wu／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Muki Wu",
+          "url": "https://www.facebook.com/muki.wu/posts/pfbid035JCKLDpcobfTpR49EGLPrNHV9GTMGQRh35EVe5J7v9sqaVcDFTJTaFmVWFxjkPCil",
+          "published_at": "2026-10-15T10:24:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-f8c4a94e35bfb82cc4d97f4e",
+      "title": "柯仁傑分享 Hello World Conference 2026 工作坊近況",
+      "summary": "柯仁傑分享 ITHome Hello World Conference 2026 早上第一場工作坊的近況。",
+      "original_text": "ITHome Hello World conference 2026\n早上第一場工作坊",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-15T09:58:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.30808-6/849457267_29488156484102364_8074098561322847641_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1536&ctp=p960x960&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=RMcQhz_9KEgQ7kNvwHzjpGj&_nc_oc=AdpbOwx6_hRzDkwVPcTl63uv4ZnRNwKdWSTNrHd2TmROOpmE886yEgln_oDTs1wvEjqJ2HQk7AwD5wEdHo74nLPT&_nc_zt=23&_nc_ht=scontent.ftpe7-4.fna&_nc_gid=kW201qm8p5h2crZv_7mnMw&_nc_ss=7b2a8&oh=00_AQPHkIOWGQZ6_zNnlqRlP42_yUsCaA95UA4e-NRvuh35Yw&oe=6AD6C597",
+        "alt": "Hello World Conference 2026 工作坊的貼文配圖",
+        "credit": "柯仁傑／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "柯仁傑",
+          "url": "https://www.facebook.com/kojenchieh/posts/pfbid0yuRGT1AFP8ewXopZwGsLXMc4JHyzprGekmyrSWV4AWNFeur3SE2xFd64VMEUv2sil",
+          "published_at": "2026-10-15T09:58:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-a37544a48b3050c868572ee9",
+      "title": "Will 保哥分享 Antigravity CLI 的十月使用支出",
+      "summary": "作者表示十月在 Antigravity CLI 花費達 1,354 美元，並分享對近期 Gemini 4 Argon 使用體驗的正面評價。",
+      "original_text": "突然覺得十月有點敗家，我竟然連 Antigravity CLI 都可以花到 $1,354 美元，這幾天 Gemini 4 Argon 實在是太好用了！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-15T09:54:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.99422-6/849195240_1031814853210931_6333575368820607721_n.png?stp=dst-jpg_tt6&cstp=mx2048x1147&ctp=s2048x1147&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=l4YbuzVnJB0Q7kNvwHBKtbE&_nc_oc=Adrfc0RPz6fzRsWtcI4C9-dk-W1BGjovruFGDKZRdyJvt3a5YTY73-uKTMwreLanqxsBH9mU2iz7pDNJY3gVAUhk&_nc_zt=14&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=kW201qm8p5h2crZv_7mnMw&_nc_ss=7b2a8&oh=00_AQMFcx-7wbBm5fzB5-HkJbuZC9fcJ7jsiKIywrZ-_clCLA&oe=6AD6D8F9",
+        "alt": "Antigravity CLI 使用支出的貼文配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0EFvq3AQPn2FVfzjSeRRLrSpKtWz2SNjLbhVbbQEUQN3gJwZdRvQji3Z9kRQ7Bbd4l",
+          "published_at": "2026-10-15T09:54:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-5649e46703378293e5bdf03e",
+      "title": "高見龍分享活動現場 Claude Code 領先的調查觀察",
+      "summary": "高見龍表示，Hello World Dev Conference 一項約 180 人的現場調查中，Claude Code 明顯領先；這項觀察限於該活動樣本。",
+      "original_text": "昨天在 Hello World Dev Conference 活動現場的調查，以現場約 180 位工程師族群（應該是？）的統計來看，Claude Code 還是贏滿多的",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-15T09:43:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.99422-6/850848907_1104986641894070_8964721168948824695_n.png?stp=dst-jpg_tt6&cstp=mx1486x750&ctp=s1486x750&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=MGkaJytsLOEQ7kNvwHFeFfC&_nc_oc=Adp6TthsN38yY-iZO7dwjPm9rwHyYt_50jz1BwCa6oWsaeY-7NwyDh1-JFJ8zBHvm-mRJOFpc_7CGqoGJgUrwdia&_nc_zt=14&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=kW201qm8p5h2crZv_7mnMw&_nc_ss=7b2a8&oh=00_AQMdrKlSwgFrkS8ZfuhKlEeZH-wCKUoL-b11-Evn8_kaHw&oe=6AD6E401",
+        "alt": "Hello World Dev Conference 現場調查的貼文配圖",
+        "credit": "高見龍／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid0YnStTDEx1DcKEHzVVDMz6DsAH93hVg9og8EeLVXpmPdRHo49nT3Va11KKpaCtMQQl",
+          "published_at": "2026-10-15T09:43:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-a4bb87ffc4531c930671aca4",
+      "title": "Eric ShangKuan 整理 Gemini 4 Argon 開發參考資料",
+      "summary": "Eric ShangKuan 整理四項 Gemini 4 Argon 開發參考資料，涵蓋開發指南、遷移檢查表、3D 遊戲製作與長解碼文件。",
+      "original_text": "幾個 Gemini 4 Argon 的參考資料：\n- Developer Guide: https://aistudio.google.com/.../gemini-4-argon-developer... \n- Migration Checklist: https://aistudio.google.com/docs/latest-model \n- Build 3D Games: https://aistudio.google.com/.../building-3d-games-and...\n- Long decode (1M output): https://aistudio.google.com/docs/long-decode",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-15T08:24:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-3.fna.fbcdn.net/emg1/v/t13/4388320092519955394?_nc_oc=Adqpk7tcHo7vga4yY1dr3_bwEOELEbSlUz2BBvQrMHDWDLdsp5hZIgYIDEylkPhE-QYy2aCNpOdsL3thT6vxi-pf&url=https%3A%2F%2Fwww.gstatic.com%2Faistudio-static%2Feditorial%2Fgemini-4-argon-developer-guide%2Fdd27d834.png&fb_obo=1&utld=gstatic.com&_nc_sid=c63717&_nc_ht=external.ftpe7-3.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=kW201qm8p5h2crZv_7mnMw&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAZlY_ZTTuUgCGsHP-ArGaW1ROPqH24JSkSlEksCER6V1&oe=6AD2EED9",
+        "alt": "Gemini 4 Argon 開發參考資料的貼文配圖",
+        "credit": "Eric ShangKuan／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid07fNB5DZshSrdhpcxyuJ9TTofE27oqHm1nsi9eozsqdstJQZSJTiwAUXx36TVUY3nl",
+          "published_at": "2026-10-15T08:24:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-b01fda4a966d64ef588856d2",
+      "title": "陶韻智談 AI 成本下降與企業轉型機會",
+      "summary": "陶韻智分享 AI 成本快速下降的觀察，轉述 Epoch AI 的同等效能成本比較，並主張企業及個人積極採用 AI、探索 AI 原生事業。",
+      "original_text": "這兩天教董監課/以及公開演講時，發現還是有不少人沒有使用付費的AI\n使用ChatGPT, Claude，Gemini或是 Copilot, grok, Meta ai都好，至少有一個要付費才是跟上時代的姿態。\nAI的價格每年都下降 到前一年的十分之一。今天做看起來還虧錢的事，明年就大賺了。這樣的指數變化，不可用線性的人類慣性思維來看。ALL IN AI，現在用AI transform everything, 打造AI Native全新事業也是最好時機！\n-------\n兩張EPOCH AI上畫的圖，先是比較歷史上幾個重大技術價格\nAI以史上最快的技術降價速度提供給人類： 自 2023 年以來，達到相同 AI 性能水準的成本每季下降約 47%（每年下降約 13 倍）。這個降價速度是 DNA 定序的 4 倍、運算能力（compute）的 6 倍、鋰電池的 18 倍，以及電力（1973 年前一個世紀內）的 54 倍。\n第二張圖有具體案例： 2025 年 1 月，OpenAI 的 o3 模型在博士級科學測驗（GPQA Diamond）中拿到 75% 的分數，每題平均成本約為 30 美分（$0.30）；不到 18 個月後，GPT-5.6 Luna 達到相同分數的成本僅需 $0.0004，價格暴跌了 725 倍（相當於一台 5 萬美元的新車降價到 69 美元）。\n---------\nEPOCH AI的文章出處連結我放留言",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-15T08:05:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.99422-6/845977545_1433227175562696_3154839503727710061_n.png?stp=dst-jpg_tt6&cstp=mx1290x887&ctp=s1290x887&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=72OT_1KMVa8Q7kNvwGCMVAT&_nc_oc=AdquY-vbCeISH4tYPMiPsMXgb-XMCrY6bshe1d-iWNa8YVUfKPr4dqfOzn1dXl0sL3msiYXDkUSud09rL0ko0GKp&_nc_zt=14&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=kW201qm8p5h2crZv_7mnMw&_nc_ss=7b2a8&oh=00_AQPqztDGlnGubZDgZ_BC0TEurOSK7aA4KM8Vl0HsPoLk8g&oe=6AD6E309",
+        "alt": "AI 同等效能成本變化的貼文配圖",
+        "credit": "陶韻智／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid02MqHCbGoZBFoToN2TwRFPCL8P3mfMxfSsjiVfMffJNTpUEmBDACPQVDLXuqFLYbLCl",
+          "published_at": "2026-10-15T08:05:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-15T16:55:34.083Z",
+      "captured": 15,
+      "included": 12,
+      "excluded": 3,
+      "notes": []
+    }
+  }
+}
