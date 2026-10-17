@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-18",
+  "generated_at": "2026-10-18T00:16:02+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-18 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 13 則，入選 9 則，排除 4 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-c5b425cedb4319ce93d03798",
+      "title": "Will 保哥介紹 DeepSeek-V4.1-Flash-1017 與搜尋 API",
+      "summary": "Will 保哥介紹 DeepSeek-V4.1-Flash-1017，稱新版提升任務處理速度與端到端開發能力，並提到同步開放 Search、Fetch API 及模型權重。",
+      "original_text": "DeepSeek 正式發表了最新的 DeepSeek-V4.1-Flash-1017 模型 \n相較於上一代版本，新模型在各項基準測試中的表現更為強勁。\n它的任務處理速度明顯提升，同時輸出內容更加精簡，實現了效益上的帕雷托改善。\n目前官方網站、應用程式以及 API 服務，均已同步開放使用。\n針對開發者生態，該模型也特別優化了與 DeepSeek Harness、Tencent CodeBuddy 及 WorkBuddy 等開發工具的整合體驗。\n在功能層面上，DeepSeek-V4.1-Flash-1017 採用了具備自我反饋機制的強化學習技術。\n這項技術大幅增強了端到端的專案開發能力，應用範疇涵蓋遊戲製作到 3D 建模等複雜任務。\n此外，官方也同步向所有使用者全面開放 Search 與 Fetch 兩項 API。\n該功能由其內部自研的搜尋引擎所驅動，每日已在全球處理數億次請求。計費標準則設定為每千次調用收費 0.75 美元。\n延續一貫的開源策略，官方已將模型權重同步發布至 Hugging Face 與 ModelScope 平台，供社群自由下載與部署。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-17T22:39:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-sin2-1.xx.fbcdn.net/v/t39.99422-6/854235594_860823673742472_8638498549577325161_n.png?stp=dst-jpg_tt6&cstp=mx1052x889&ctp=s1052x889&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1cnA_EDvI88Q7kNvwGPgUUR&_nc_oc=AdqhW7KE1yhkBlw4XIVYVINPqn7JYQn1zr9s3KcEQl3zDom2QPbxDwWgtKrd3TugQLxq1kccIfo8Whehno8XTbeM&_nc_zt=14&_nc_ht=scontent-sin2-1.xx&_nc_gid=9Fmn8yTDT5mYGgKUFHpdMg&_nc_ss=7b2a8&oh=00_AQMW8AVODCMy66fmsK1VcvdQZX5nUVhaaDyvLGodRh0Fow&oe=6AD98AFD",
+        "alt": "DeepSeek 新模型與搜尋 API 介紹的貼文配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0dN3gJa33Uoi75EvjAJpAPJRQR1qA9HXkyaw84DWBenWCFvztzKRfdtK3Qhtbe4TPl",
+          "published_at": "2026-10-17T22:39:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-e8813cc788fd84ad7822eee4",
+      "title": "高見龍分享 Claude Meetup 宜蘭場活動回顧",
+      "summary": "高見龍分享 Claude Meetup 宜蘭場順利完成的消息，感謝協助者，並預告下次將帶來工作坊。",
+      "original_text": "Claude Meetup 宜蘭場，感謝各位的幫忙，活動順利完成，看起來大家聊得很開心，Good！\n希望大家都玩得開心，也認識了新朋友，下次會帶 Workshop 來給大家玩 \n#claude_tw",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-17T21:25:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-sin2-1.xx.fbcdn.net/v/t39.99422-6/854069094_1427250282708249_683813005735608034_n.png?stp=dst-jpg_tt6&cstp=mx3000x3000&ctp=s2048x2048&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=E_fWL6S59p4Q7kNvwGk9zTG&_nc_oc=AdpkLazEHRCKe9i-lIQEaHbp2Zud9SXdyT2mqXsxPBpjz8YWztlwZ5Zu3e7Wvj40260DT1fP9mLlT7iz70Ig35IW&_nc_zt=14&_nc_ht=scontent-sin2-1.xx&_nc_gid=9Fmn8yTDT5mYGgKUFHpdMg&_nc_ss=7b2a8&oh=00_AQPQyeLWmrpvqXTWcw1XLI1tkDtsH6yDeDkyXvEkCJubKQ&oe=6AD97824",
+        "alt": "Claude Meetup 宜蘭場活動的貼文配圖",
+        "credit": "高見龍／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid02NNBpo6fyau4c9Qdou2J5kUNRQ2fqdvtfyXHWKmRs4D2hqCeHDiGGvtpKdp1jg8qFl",
+          "published_at": "2026-10-17T21:25:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-aea6a6c855349b3d384bee51",
+      "title": "Champ Yen 分享 Palm OS 開發與歷史資料庫",
+      "summary": "Champ Yen 分享一份約 1 GB 的 GitHub 資料庫，收集 Palm OS 開發文件、歷史資料、工具與 SDK。",
+      "original_text": "有人將 Palm OS 相關的開發文件與歷史資料, 工具與 SDK上傳了 GitHub \n整個 repo 大小高達 1GB",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-17T20:22:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Champ Yen",
+          "url": "https://www.facebook.com/champ.yen/posts/pfbid02755EGpxgSJTSgfaq7QKUEWe4paJb6KQHRb5Be11N8yUcvQULshiAkmwsMWBEFAxsl",
+          "published_at": "2026-10-17T20:22:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-29c41ae43894df6e17652724",
+      "title": "Will 保哥評論 AI 使用程度與工作表現",
+      "summary": "作者認為，AI 用得過多與過少的人都可能工作表現不佳。",
+      "original_text": "我發現有兩種人\n工作表現特別差\n AI 用的太多\n AI 用的太少",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-17T19:05:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0UGftjtRNP8XQV4CRa5vxAQzTaFdpvXuHUxJdkuXJN55ga6aE831qZXiuGuWSYKZ5l",
+          "published_at": "2026-10-17T19:05:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-61f1e35322b0a3e1f7217c73",
+      "title": "Eric ShangKuan 分享 AI Pro 的 AI Studio 模型使用消息",
+      "summary": "Eric ShangKuan 表示，AI Pro 訂閱者也可在 Google AI Studio 的 vibe coding 工具使用 Gemini 4 Argon。",
+      "original_text": "Google AI Studio 的 vibe coding 工具 https://ai.studio/build 也提供給 AI Pro 訂閱者使用 Gemini 4 Argon 囉",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-17T16:37:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/1981928577297445110?url=https%3A%2F%2Faistudio.google.com%2Fsocial_preview_image%2Fpage%2Fapps&fb_obo=1&utld=google.com&_nc_sid=c63717&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=FNkDqybPyTTJvYAZTeFJ1w&_nc_zt=3&oh=06_Q3_EAaaP_lPVX7Rj6mAOwtHTjstcPw--MuexxPmisr_sslzW&oe=6AD578AB",
+        "alt": "Google AI Studio 的原站預覽圖",
+        "credit": "Eric ShangKuan／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid0PTRQLuCkP8rx11gLe3EfkNzKXyfgWCQ5jLrxN8zQuSfYgCKdxhJR9SWx2PjCZd2bl",
+          "published_at": "2026-10-17T16:37:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-13493df8be0ea37be4f39941",
+      "title": "Eric ShangKuan 分享 Cloud Run 部署用的 Agent Skill",
+      "summary": "Eric ShangKuan 分享可用於部署到 Google Cloud Run 的 Agent Skill。",
+      "original_text": "部署到 Google Cloud Run 的 agent skill",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-17T13:51:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/8671662896172332591?url=https%3A%2F%2Fopengraph.githubassets.com%2Fed1597c81533c859195e9e72016b94afd3448b3eac867f42a5c925faed8e52cc%2Fgoogle%2Fskills&fb_obo=1&utld=githubassets.com&_nc_sid=c63717&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=OayoeiRmebbQbxN2OVryFg&_nc_zt=3&oh=06_Q3_EAZ9DwdGMuOirw7JMgQqng_SMn1W-OzlzNFxK1xnnsA9X&oe=6AD57D00",
+        "alt": "Cloud Run Agent Skill 連結的 GitHub 預覽圖",
+        "credit": "Eric ShangKuan／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid0ydUYs7tTMqH5gQYfNNMgYsRvoEjorv6jqNL5FPcCLfKPF3zVrBdA3H2AAPfbYEoJl",
+          "published_at": "2026-10-17T13:51:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-045d5ff85a7a889dc31a9201",
+      "title": "Will 保哥談 Zeabur 攻擊事件與營運疑慮",
+      "summary": "作者在貼文中稱 Zeabur 再遭攻擊且已無法繼續營運，並擔心使用該平台的 Vibe Coding 開發者受影響。",
+      "original_text": "今天聽到了個大消息。Zeabur 倒了。\n他們最近又遭遇了一次攻擊事件，而且這次的狀況比九月那次還要嚴重。\n九月那場風波才過去沒多久，沒想到這次直接撐不住。\n這原本是個對新手友善的平台，現在連平台都倒了，這些 Vibe Code 們該怎麼辦呢？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-17T11:40:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0kFRoDj6rXUiScnPLyoPcn92HSJ2YyYmW2RNk3g7RyoBRNGuDcGxaiTAeDRjqDFdAl",
+          "published_at": "2026-10-17T11:40:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-59f012361ff37540a01e6a1a",
+      "title": "李健榮分享收到 Zeabur 即將停止營運的通知",
+      "summary": "李健榮表示收到 Zeabur 即將停止營運的通知信，並表達對服務難以持續經營的感慨。",
+      "original_text": "收到 Zeabur 即將停止營運的信，覺得蠻難過的。活下去是如此困難，一切盡在不言中。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-17T11:13:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "李健榮",
+          "url": "https://www.facebook.com/chienjung.li.7/posts/pfbid0dJLKHgNhuxnBiLnaF1oFFpLvUSTjvo5KcGf3G2t27apfitYQPjSikFsvcLh1zzDcl",
+          "published_at": "2026-10-17T11:13:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-cd449cb2fa5c6cbd5b3b6624",
+      "title": "Nathan Chiu 詢問 OpenAI API 的大量使用情況",
+      "summary": "作者詢問社群中是否有 OpenAI API 的大量使用者。",
+      "original_text": "有人在用大量的openai api 嗎？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-17T00:43:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0bQFUrdEyxVoVQwDF7LSUzkn9jN1StpR3uNFBD9Akg56Zd2FotYUkx1NGevm9qM4yl",
+          "published_at": "2026-10-17T00:43:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-17T16:16:01.243Z",
+      "captured": 13,
+      "included": 9,
+      "excluded": 4,
+      "notes": []
+    }
+  }
+}
