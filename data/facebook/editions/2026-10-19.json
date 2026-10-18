@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-19",
+  "generated_at": "2026-10-19T00:17:36+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-19 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 9 則，入選 8 則，排除 1 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-f65a5fd522f798fc113ffcd7",
+      "title": "Will 保哥質疑以 AI 未對齊淡化軟體 Bug",
+      "summary": "作者質疑把軟體未符合預期稱為「AI 沒有對齊」，是否會讓原本應修復的 Bug 被視為理所當然。",
+      "original_text": "以前軟體運作不符合用戶預期，我們會說那是 Bugs，然後趕緊修復！現在只要說 AI 沒有對齊就可以認為出現 Bug 理所當然，只要改一下就好。是不是哪裡怪怪的？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-18T23:02:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0zT6HCibHy6yQVytjXXdAic3u1cHyqh9uX9eNCtrmmZUZqZ2MyUC1DXgBB3wLhMsWl",
+          "published_at": "2026-10-18T23:02:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-b6efc6a1f95717ea339a35ce",
+      "title": "Will 保哥介紹 Apate 的 AI 反詐應用",
+      "summary": "Will 保哥介紹 Apate 以 AI 接聽可疑電話、拖延詐騙者並蒐集線索的做法，將其視為與電信商、銀行合作的防詐商業模式。",
+      "original_text": "詐騙集團大概做夢也沒想到，自己苦練多年的話術，有一天會被拿來反詐騙。\n現在他們每天辛勤打電話，對面坐著的根本不是什麼待宰肥羊，而是一群沒日沒夜、還不會口渴的 AI 機器人。\n這一切的起點非常荒謬。\n澳洲麥覺理大學的一位教授在家庭野餐時接到詐騙電話。他沒有掛斷，而是開始裝傻，硬是跟騙子瞎聊了 44 分鐘。\n掛掉電話後他突然頓悟，騙子陪他演戲的這 44 分鐘，就沒空去害人了。既然這樣，為什麼不找 AI 來專門做這件事？\n於是他創立了一家叫 Apate 的公司。名字取自希臘神話的欺騙女神，核心業務只有一個，就是派 AI 去欺騙詐騙集團。\n傳統防詐是封鎖號碼，但騙子換門號只要三秒鐘。Apate 則是跟電信商合作，直接把可疑電話轉接給旗下的 AI 大軍。\n他們已經幫澳洲電信商 TPG 接了快 59 萬通電話。這些 AI 會偽裝成搞不清楚狀況、反應慢半拍、密碼永遠打錯，但聽起來又很有錢的受害者，在電話跟簡訊裡跟騙子無止盡地鬼打牆。\n到目前為止，這群 AI 已經成功消耗了詐騙集團高達 17 年的人生。試想一下，一個詐騙車手花了兩個小時好不容易教會阿嬤怎麼操作網銀，最後發現那個阿嬤是一串程式碼，心理陰影面積有多大。\n更絕的是，騙子以為自己終於要得手了，就會開心地把人頭帳戶跟加密貨幣錢包地址交出來。\nAI 拿到帳號後也不匯款，轉頭就把資料交給銀行直接凍結。澳洲聯邦銀行用了這套系統後，詐騙損失直接暴跌 76%。\n甚至他們的 AI 還會自己去網路論壇找投資詐騙群組，混進去當臥底，把騙子的劇本跟底細全部套出來。\n現在詐騙集團用 AI 寫劇本，防詐公司就派 AI 裝瘋賣傻陪聊。人類終於可以退居幕後，看 AI 跟 AI 互騙。\n靠著這套專門浪費壞人時間的商業模式，這家只有 20 個人的公司剛拿下了 815 萬美元的種子輪融資，總募資額逼近 1000 萬美元。\n誰說找 AI 講廢話不能當飯吃，這門生意可值錢了。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-18T17:21:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/1906334355557895688?_nc_oc=AdqikitUIovWi_8MR-YJwnl2hr-9771m_B8E06w557qK4EI7VBordABF-rffHHgkbDaWcbdlPu9sbLkqH1HXegex&url=https%3A%2F%2Fcdn.prod.website-files.com%2F67fc761b6913a3a0711e2c3b%2F681aded215497262ba8946f7_webclip.jpg&fb_obo=1&utld=website-files.com&_nc_sid=f93bbc&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=SI0K342t0SwbxYTBWIlJZw&_nc_zt=3&oh=06_Q3_EAShX3yojxaTl1_hLRFmEO3FKwYumH9MVWbEGItm_qwY6&oe=6AD6DC75",
+        "alt": "Apate AI 反詐應用介紹的原站預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02pc96RwwP2ET914fBmNpGoPjQwJs9SvPjPUNKB8JLCsuDQd8eY2hFbB5ZEqXVQ25Ml",
+          "published_at": "2026-10-18T17:21:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-215e31522d8c02d03f0199e5",
+      "title": "Will 保哥為 macOS 的 PDF 保護需求開發 CLI",
+      "summary": "作者為簡報 PDF 設定限制編輯密碼與文件屬性的需求，自行開發 CLI 工具，補足轉用 macOS 後的工作流程。",
+      "original_text": "我經常有一個需求，就是需要把我上課所需要的簡報轉成 PDF，還要加入防寫保護的密碼(限制編輯、防止篡改內容)。但是這個需求以前我在 Windows 的時候，有一個好用的 PDF-XChange 軟體，可以很方便地幫我修改文件屬性，還可以很快地設定密碼。\n但是到了 macOS 之後，我發現沒有好用的工具可以用。因此，我最近就自己寫了一套全新的 CLI 工具來做這件事。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-18T16:36:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/18037131737503072817?_nc_oc=AdqfgrWHCLoHI4T0T63lqmQYVprdVNA7YfRhw0Qzj7omsUqIF3X4eWtXx0lab3h6qIOg3m_RNKBRJmYTF7l1sJrn&url=https%3A%2F%2Fstwillblogassets.blob.core.windows.net%2Ffiles%2Fimages%2F2026%2F10%2Fgenerate-write-protected-pdf-using-cli%2Fgenerate-write-protected-pdf-using-cli-banner.webp&fb_obo=1&utld=windows.net&_nc_sid=f93bbc&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=SI0K342t0SwbxYTBWIlJZw&_nc_zt=3&oh=06_Q3_EAVcOzi6esUWv_vyKdipVUk998ePCQeoTr3kXMLCSEWTN&oe=6AD6E965",
+        "alt": "PDF 保護 CLI 工具文章的原站預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02sp1rXerhGZAEiEjavHFpypFzHmEBmusoBdgReGcCHbhjeGVfqSHkPocZLGrodDKsl",
+          "published_at": "2026-10-18T16:36:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-f17b8643c23bcdb5e558f77d",
+      "title": "Will 保哥介紹 Gemini 4 Argon 的長任務應用",
+      "summary": "Will 保哥的影片說明介紹 Gemini 4 Argon 在寫作、程式碼遷移與硬體診斷等長任務上的應用，並提醒使用者查證輸出、保留自己的判斷。",
+      "original_text": "Google DeepMind 團隊揭開 Gemini 4 Argon 的全新進展：從潤飾寫作、將老舊 Fortran 程式碼遷移至 Rust，到診斷資料中心硬體問題，模型已能勝任更長、更複雜的任務，甚至單次輸出百萬 Token。節目也分享內部測試心得，聊聊模型如何協助打造下一代模型，以及使用 AI 時別忘了查證、保持自己的判斷。一起看看這股快速迭代的 AI 飛輪，還能帶來哪些驚喜！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-18T13:03:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t15.5256-10/854711974_2329227731222678_6464098404619253191_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=102&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=7gcpXV1TGF8Q7kNvwHNLJq3&_nc_oc=AdplIPzKp5OTtcEBoy5hfbs8lKcDOQtSArNuIYCXSRR4rls3r5OQOSJNvQf1K0mKG-mHy08XXA9EU9FW9zG-eKnZ&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=4gulvpEQ3WEUojCZQM1_gg&_nc_ss=7b2a8&oh=00_AQMDBKzETwmCIWCg5h-irU4tmMEymmLWl3PEu5b75hdAqQ&oe=6ADAD5F1",
+        "alt": "Gemini 4 Argon 長任務應用影片的封面圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/reel/1433406948759822",
+          "published_at": "2026-10-18T13:03:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-1c182faf8f92dd220087e7c7",
+      "title": "Will 保哥轉述 OpenCode Console 資安事件",
+      "summary": "作者轉述 OpenCode Console 的資安事件，提到連結外部模型供應商的帳號可能受影響，並引述使用者對 API 金鑰遭濫用與帳單增加的抱怨。",
+      "original_text": "OpenCode 昨晚爆發嚴重資安漏洞，遭遇大規模蒸餾攻擊。\n官方公告指出，約有 1.4% 的 OpenCode Console 使用者受到波及，且全數是連結了外部模型供應商的帳號。\n災情已經在社群上炸開。\n有受害者表示，自己只綁定在 OpenCode 上的 OpenAI 與 Anthropic 金鑰，一夕之間被盜刷超過 400 美元。另一位使用者更慘，帳單直接暴增 1,700 美元。\n這些平白無故蒸發的額度，最後誰來賠償？\n目前事件甚至還沒完全平息，官方僅表示正與 Anthropic、OpenAI 和 Google 合作修復中。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-18T11:08:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/853049144_2927644024268757_5585745429595080261_n.png?stp=dst-jpg_tt6&cstp=mx1125x1267&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dDg5Cp8fLOsQ7kNvwHw1BRM&_nc_oc=AdpmTura3OXxq_Pwk4ApmDWcZR4F0P4gZJ1cpqIcC6hPzHlDEmBgxmc3LKMiddQsw_qzD4Z6yDbQz_oNrUHiHpml&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=4gulvpEQ3WEUojCZQM1_gg&_nc_ss=7b2a8&oh=00_AQNwi_ZiQvdxKuw3tLv6AJ9mf9xwMTFuX_3FYLcnAe9USQ&oe=6ADAC019",
+        "alt": "OpenCode Console 資安事件討論的貼文配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02wtM4MTk66ZR5ALvA2ThsMmVPjjv2UZZ3zb8agToi3fX4PHLaAFoF6nWPWeTx4rn8l",
+          "published_at": "2026-10-18T11:08:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-62e7539f62478e7d37e5c226",
+      "title": "Will 保哥轉述 Linus 對 AI 撰寫提交訊息的看法",
+      "summary": "作者轉述 Linus Torvalds 對禁用 AI 產生 Commit Message 的反對意見，強調貢獻者是否理解工作，比使用什麼工具更重要。",
+      "original_text": "最近在 Linux Kernel 郵件列表上，有人提議為了確保貢獻者真的懂自己在寫什麼，應該禁止大家使用 AI 產生 Commit Message，規定一律得純手動撰寫。\nLinus Torvalds 看到之後直接回信開噴。\n他說他完全無法理解這種「禁止用 AI 做某件事」的愚蠢概念。如果要這樣定規矩，那乾脆規定以後提交 Kernel 程式碼也全面禁用編譯器好了。\n因為如果你沒辦法直接手寫組合語言來證明你徹底理解機器底層在幹嘛，那你顯然不夠格提交程式碼。\n順便一提，寫 Commit Message 的時候最好連文字編輯器都不要用。\n畢竟大家需要看你證明自己擁有一次寫好訊息的實力，而不是靠那些讓你輕鬆按下 Backspace 倒退鍵的工具，把打字過程中的失誤偷偷藏起來。\n拿禁用編譯器跟禁用倒退鍵來當類比，這種酸度真的很 Linus \n但玩笑歸玩笑，他最後講的那段話其實切中了工程師在面對新工具時的核心盲點。\n他對貢獻者的期望，是大家盡力而為，並且真正搞懂自己在做什麼。\n然而你到底懂不懂自己在幹嘛，跟你手裡拿什麼工具根本沒有太大關係。\n就他的經驗而言，那些他真正尊重、而且稱得上聰明的人，從來就不是那些會去逃避使用有趣新工具的人。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-18T10:35:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/854944061_1093521806899996_8859787995051632531_n.png?stp=dst-jpg_tt6&cstp=mx2048x1214&ctp=s2048x1214&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=T5XimwCivlgQ7kNvwGOS-Kd&_nc_oc=AdoiO8MPsMxJBahbLEEksfUGxClTKABTphFZUh_X87loJh5ZK6w61yzN6o988ri7Koubv9aaUQK6j-m-8ePjQRrq&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=4gulvpEQ3WEUojCZQM1_gg&_nc_ss=7b2a8&oh=00_AQODemxza_gjTK_rP0Cppkk7AiWHsFENRBZztxek7Q8Cjw&oe=6ADABC4F",
+        "alt": "AI 撰寫提交訊息討論的貼文配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0f41U7bfz4jSevVSSyP2fwEJFP27bJrvBzzQxzMPXpgbkwAcPFvyxXqPbJ5ttADSMl",
+          "published_at": "2026-10-18T10:35:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-7f545589b935a639caddcf8c",
+      "title": "Will 保哥分享 ChatGPT 訂閱用量提早重置的觀察",
+      "summary": "Will 保哥表示，ChatGPT Plus／Pro 訂閱用量在 10/18 提早重置。",
+      "original_text": "OpenAI 的 ChatGPT Plus/Pro 訂閱的用量，今天提早重置了！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-18T07:49:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/856325078_1598447494598156_1419342851195018503_n.png?stp=dst-jpg_tt6&cstp=mx1186x1072&ctp=s1186x1072&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=-GAnwg0vmb8Q7kNvwErlblO&_nc_oc=AdqRcdCgmkjnLYJ0OxRs_7yPBhFhPpAzyDqDv-dPovdLCtvcweK2K8_9REnZOfFCdXwSxLyL3loXmpbTZg2u5gxE&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=4gulvpEQ3WEUojCZQM1_gg&_nc_ss=7b2a8&oh=00_AQOPEE64M1y6989oLQpCEtoztHAw91w9bfeA8PZnuY86fQ&oe=6ADACA4D",
+        "alt": "ChatGPT 訂閱用量重置觀察的貼文配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0P95HU63iFqTe3Jmv8n21HeaVZ6FB39kYGVW7nN99xMfj5gU4gRj8dDhdJJihHJJ9l",
+          "published_at": "2026-10-18T07:49:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-0007bf8f9ef31634a6b94ffe",
+      "title": "Ant Yi-Feng Tzeng 談 Coding Agent 改寫成本與長期驗證",
+      "summary": "作者討論 Coding Agent 降低語言改寫成本後的選型問題，並以網站、資料庫等例子，追問開發效率是否也應計入長期驗證與返工。",
+      "original_text": "關於 #Node & #Rust，這兩篇 X 推文可以一起看 [1][2]。\n➊ Coding Agent 時代，對程式語言的選擇，帶來哪些變化？\n如果 Coding Agent 讓專案/產品換用程式語言改寫的成本降低，是不是就不用太在意程式語言的選擇？\n特別最近 #REA (Reverse Engineer Anything) [3] 有著熱烈的正反討論。\n➋ 「開發效率」不管是否處於 Coding Agent 時代，一直都是熱門議題。\n然而，「開發效率」包不包括「長期驗證」或「返工次數」的討論？\n- - -\n軟體工程中，很多都是需要「長期驗證」才能發現的，包括 Race Condition, Memory Leaking, Cache Eviction Failure, Deadlock …\n➊ + ➋ 舉個例，\n如果有個網站，剛把 A 語言換成 B 語言，你採用的意願多高？\n如果有個資料庫，剛把 A 語言換成 B 語言，你採用的意願多高？\n(嘿，我用 Rust 把 Postgres 改寫了，你趕快來用)\n如果有個維生醫療儀器，剛把 A 語言換成 B 語言，你採用的意願多高？\n(嘿，我把葉克膜的 C/C++ 用 Rust 改寫了，你要不要用用看)\n- - -\n[1] https://github.com/morluto/rea\n[2] https://x.com/yifanxu_ephai/status/2111238006233309210\n[3] https://x.com/jolestar/status/2111344687713751218",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-18T00:24:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/851783271_1144474648235600_140988677991918953_n.png?stp=dst-jpg_tt6&cstp=mx880x444&ctp=s880x444&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WjYdP8wpusEQ7kNvwEp_eig&_nc_oc=Adq8sZs77EeCHd_ewEU-jXvnzOvuyqdGiV798yaQtYhzc5UXv1NoqgHIqCDu_VCi2TtWypVvkznA85K4pF5vzryw&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=4gulvpEQ3WEUojCZQM1_gg&_nc_ss=7b2a8&oh=00_AQMn8v92F4m49N3H00hJR11887oy10a1jiMCg7Iv8wAKtw&oe=6ADAC090",
+        "alt": "程式語言改寫與長期驗證討論的貼文配圖",
+        "credit": "Ant Yi-Feng Tzeng／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid0kGJX9pRFddW5kPATr9ufnekc3F2Cbz2rYEsF9NTMvaECteuxRySf4DNZ6Q6fRsPJl",
+          "published_at": "2026-10-18T00:24:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-18T16:17:34.384Z",
+      "captured": 9,
+      "included": 8,
+      "excluded": 1,
+      "notes": []
+    }
+  }
+}
