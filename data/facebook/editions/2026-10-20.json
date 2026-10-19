@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-20",
+  "generated_at": "2026-10-20T00:18:42+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-20 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 11 則，入選 9 則，排除 2 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-c0ee61cb0c532836349e5851",
+      "title": "Will 保哥談 AI 文件的可讀性與使用者責任",
+      "summary": "作者指出 AI 產生文件仍須讓讀者看得懂，認為多人無法理解時，使用 AI 的人應負責改善表達。",
+      "original_text": "以前的人常卡在寫作障礙，現在的人則是遇到閱讀障礙。叫 AI 寫文件當然可以，但它生出來的東西常讓人看不懂。一個人看不懂，可能是自己的問題；一群人看不懂，那就是用 AI 的人的問題了！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-19T21:22:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid09Hj4RjVkr9PKTbtvnGogtM3MScqx7mqQRFWu5J6YMbw41UXti2T8rwSM5hv46HmLl",
+          "published_at": "2026-10-19T21:22:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-904b10d345a078f3ffdcb83e",
+      "title": "Eric ShangKuan 分享 DevFest 高雄場的 AI Agents 主旨演講",
+      "summary": "Eric ShangKuan 邀請開發者參加 11/14 的 DevFest 高雄場，主旨演講將討論 AI Agents 時代軟體工程師的角色與機遇。",
+      "original_text": "11 月 14 號歡迎高雄的朋友參加 DevFest Kaohsiung 2026 交流交流一下\n\nDevFest 2026 高雄場主旨演講 - Eric ShangKuan今年很高興能再次邀請到 上官林傑 來幫我們 DevFest 2026 高雄場 進行開場的主旨演講，大家應該都能體驗到，今年的各種主題都在講 AI Agnet，那麼身為 Googler 的 Eric 的想法是什麼呢？我好想知道啊！我們開場完後馬上就是主旨演講，歡迎一起來聽連結DevFest 2026 高雄場官網https://gdgkh.cc/2026/講者連結https://gdgkh.cc/2026/share/speakers/eric_shangkuan/主旨演講講者：Eric ShangKuan / 上官林傑講者介紹：\n現任 Google 大中華區開發者生態系計劃主持人，透過 Google 開發技術、GDG 及 GDE 計劃來提供開發人員瞭解學習 Google 開發技術的資源，也協助討論並使用 Google 開發技術的開發人員成功。\n\n過去 Eric 曾在 Microsoft 擔任資深技術傳教士、GDG Taipei 創辦人、中華電信從事開發的工作，持續與開發社群互動議程：AI Agents 新典範：軟體工程師在 Agentic Era 的重塑與機遇活動資訊日期：2026/11/14 星期六時間：09:00 ~ 18:00地點：KO-IN智高點地址：800高雄市新興區中正三路 25 號https://maps.app.goo.gl/tsrtSkCcmjxoYs4cA合作夥伴Google for Developers開發者 Buffet高雄市政府經濟發展局誠研創新 LEGENDINNOVATIONKODA Accelerator 誠研創新產業化加速器贊助廠商新加坡商鈦坦科技股份有限公司 台灣分公司貓缶簿#DevFest",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-19T17:55:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.30808-6/856116303_29641648535421930_9194611837828995385_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x630&ctp=s1200x630&_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=nCKJtx69KF8Q7kNvwE2xLyn&_nc_oc=AdrtrVXWMerc1tsbIZSORRn5vEvamp8-3pAl34nLHfjHagLzujC-TB2USHdYuVN6ym5VXJMYRaKzxroENNWC77dS&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=k7p1a7v6g818XvQgh60T1w&_nc_ss=7b2a8&oh=00_AQMyO-6flknp_dk6bp3m1CsG74ue4tWMfI7d12FrDUIA3A&oe=6ADC0BAA",
+        "alt": "DevFest 2026 高雄場的公開活動配圖",
+        "credit": "Eric ShangKuan／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid02QX8ETteYzoA4tMPa6MXEGUJXEnpvWfkG8ZAMajjKZ8zPFSYUm7SCcqToxPbQvyaNl",
+          "published_at": "2026-10-19T17:55:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c4996897c313d9104ecbbaae",
+      "title": "Will 保哥分享小一互動數學遊戲的開發經驗",
+      "summary": "作者分享為小一學童開發互動數學遊戲的經驗，加入音樂、聲音與正向回饋，並談到家長對訂閱和客製化構想的反應。",
+      "original_text": "昨天陪小朋友去溜冰，家長們在場邊聊天，我介紹了我之前設計的一些教育類遊戲，他們覺得很棒，然後給小朋友玩，小朋友也超捧場，玩到忘我！ \n我就開玩笑以後要開放訂閱服務給有小孩的家長們，付小錢就可以玩我做過的所有遊戲，付多一點還能直接許願，我幫你客製化做給你家小孩玩，他們都紛紛說會付費訂閱，不知道是不是場面話。\n其實我們家小一的弟弟數學不好，現在無論考他什麼都瞎猜、也不動腦，所以我昨晚又寫了一個遊戲來幫助他理解，我覺得設計的超好，有音樂、有聲音、有可愛畫面、互動感極強、還很有教育意義。玩這個遊戲可以從中得到正向回饋，並在不知不覺中體會到數學的奧妙！喜歡的給個愛心啊！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-19T14:15:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/12668613635854376014?_nc_oc=Adp7GwEnK5ZMgNr18fglzNJdraLl35zAhpFcVHau8mT7iVKSSZ-1QXf352lQa3fmtvtdt4UvXy9RIvDRbi0FTQf-&url=https%3A%2F%2Fmath-1.gh.miniasp.com%2Fassets%2Fimages%2Fog-cover.jpg&fb_obo=1&utld=miniasp.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=wWLOy8wM66DA9ohtaqj8sg&_nc_zt=3&oh=06_Q3_EAbJrBYmrrJIzHVWk1oVIwcJtJeYNAjq904EiwnSs70T3&oe=6AD818CC",
+        "alt": "小一互動數學遊戲的原站預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0WwkWdP4eBgMmNM1VYCEPd6BCrhq3zngSobM1fMgFATPdRJhYZGQBgcDW4DLKsiUKl",
+          "published_at": "2026-10-19T14:15:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-237cfb3d6ee6f3796246357c",
+      "title": "Eric ShangKuan 分享 DevFest 台北暖場 AI 技術小聚",
+      "summary": "Eric ShangKuan 分享與 GDG Cloud Taipei 合作的 DevFest 暖場小聚，邀 Sylph Lin、Denny 在 Google Taipei 101 辦公室討論 Antigravity 與 Google AI 應用。",
+      "original_text": "隨著 #DevFest #Taipei 2026 即將在 12 月 13 日舉行，在這場大型開發者嘉年華之前，我們與 #GDG Cloud Taipei 社群合作，將邀請最近加入 Google Cloud AI 團隊的開發者推廣工程師 Sylph Lin 以及 GDG Cloud Taipei 組織者 Denny 在 Google Taipei 101 辦公室舉辦 DevFest 暖場小聚，討論 Antigravity 以及 Google AI 的應用\n座位有限，䀆速報名喔",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-19T13:09:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/16656446089676807270?_nc_oc=AdoLqIweDj7pTWbYy3bWogazlEaKovCVwP5H2FSdEvOGNj-Dpo8QXpesl9edq54FjHQqroSfMqL9etp4TeYDWWx6&url=https%3A%2F%2Fres.cloudinary.com%2Fstartup-grind%2Fimage%2Fupload%2Fc_fill%2Cdpr_2.0%2Cf_auto%2Cg_center%2Ch_900%2Cq_auto%3Agood%2Cw_1200%2Fv1%2Fgcs%2Fplatform-data-goog%2Fcontentbuilder%2FGDG_Bevy_SocialSharingThumbnail_KFxxrrs.png&fb_obo=1&utld=cloudinary.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=wWLOy8wM66DA9ohtaqj8sg&_nc_zt=3&oh=06_Q3_EARz_0TvoRLmroiesJixBkhCaNH5R0036_lkYj9iH8ys5&oe=6AD82503",
+        "alt": "DevFest 台北暖場 AI 技術小聚的原站預覽圖",
+        "credit": "Eric ShangKuan／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid02eM48xr2YBChWE2pcoidxBVM9KFJpTZZiXYjAmgpDQgMiB1ifWesbQiCD4Sxfifbql",
+          "published_at": "2026-10-19T13:09:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-0c2f6139e865c23549c35eb2",
+      "title": "Will 保哥談 AI 開發中追查根因與保留判斷的重要性",
+      "summary": "作者批評把需求與錯誤訊息反覆轉交 AI、卻不思考或追查原始碼的做法，主張工程師應理解問題根源並保留判斷能力。",
+      "original_text": "轉而不思則廢，\n改而不究則亂。\n——\n以前軟體運作不符合用戶預期，我們會承認那是 Bug，接著開始追查原因並修復。\n現在的開發日常卻變了調。\n不少人拿到需求，連想都不想，直接複製貼上轉發給 AI。\n跑出問題了，也不看原始碼，只把錯誤訊息再丟回去叫 AI 改一下。如果沒修好，就把同樣的步驟再走一輪。\n這種把大腦外包、把自己當成傳聲筒的做法，看似修得很快，實則一點感覺都沒有。\n把問題推給 AI 沒有對齊，就能理所當然看待 Bug 的出現嗎？\n收到需求只會轉發卻不思考，工程師的核心能力遲早會廢掉。\n遇到 Bug 只求表面修改卻不深究根源，系統架構最終只會越改越亂。\n工具再強，也不該讓我們放棄身為工程師的思考與判斷。\n你怎麼看？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-19T12:40:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid04NU978VL7EPVTWsP6cU6qkaKrLnxPWz6jnqpTsUAnqxPdxk6proHrdvYtSDJ3QwYl",
+          "published_at": "2026-10-19T12:40:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-72a704e282fcc6c8be0bcb37",
+      "title": "是 Ray 不是 Array 分享 Zeabur 使用者的反思",
+      "summary": "作者表示，作為 Zeabur 早期使用者與推廣者，對其決定結束營運感到難過，並撰文整理覆盤與反思。",
+      "original_text": "對於 Zeabur 的事情，其實發生之後一直都有些人來私訊詢問我的一些想法跟看法\n畢竟自己算是早期的使用者也是其中一個推廣者。\n當看到 Zeabur 決定結束營運時，其實我也是心裡五味雜陳，所以就…寫一篇文章下來當作覆盤與反思。\n其實寫的過程，心裡屬實滿難過的就是了。\nZeabur 結束營運：台灣新創的跌倒與成長：",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-19T11:53:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/11679103862165842248?_nc_oc=AdoaRePXhlWLUXrQRCrBd0ltnExFvujQR3Nmf1UNLbY6UKcvCrhKc1m_r9RNAlgj1lotXQSQEfzSl64SeWJDycrk&url=https%3A%2F%2Fimages.israynotarray.com%2Fblog%2Fother%2Fzeabur-see-you%2Fcover.png&fb_obo=1&utld=israynotarray.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=wWLOy8wM66DA9ohtaqj8sg&_nc_zt=3&oh=06_Q3_EAeQ9KD4ddeq3gkcPtsRcTwEN97yfqoiz2AL3sMgUrwYq&oe=6AD81EF2",
+        "alt": "Zeabur 使用者反思文章的原站預覽圖",
+        "credit": "是 Ray 不是 Array／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "是 Ray 不是 Array",
+          "url": "https://www.facebook.com/israynotarray/posts/pfbid02R8Q9g7nf2BcFTc7wCeCRDSCnQD13sK4Kip5hXF3BcL2VdYaynxGgpvr6xWNSo7NKl",
+          "published_at": "2026-10-19T11:53:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-04e35b256130acdded7999b7",
+      "title": "Champ Yen 整理 Linux kernel 7.3 的個人觀察重點",
+      "summary": "Champ Yen 整理 Linux kernel 7.3 的個人觀察重點，包括 cgroup 子排程器、failfs／fchroot 沙箱，以及 userfaultfd 對虛擬機器記憶體的工作集追蹤。",
+      "original_text": "Linux kernel 7.3 正式發布\n個人觀察重點:\n* cgroup sub-schedulers (sched_ext) 在這版完備實作\n* 新的 sandbox 技術: failfs + fchroot\n* userfaultfd: working set tracking for VM guest memory",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-19T10:04:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Champ Yen",
+          "url": "https://www.facebook.com/champ.yen/posts/pfbid02eP29rVcUtFRHfWF2mTSp9Jc8AddoFmHDEX1qJdag7uA8SzHHYRrNRkhcVNx3MVYVl",
+          "published_at": "2026-10-19T10:04:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-faf79c5be798f2f9a28eec1f",
+      "title": "高見龍介紹 WebConf 暖身小聚的 AI Agent 與產品分享",
+      "summary": "高見龍介紹 10/25 的 WebConf 暖身小聚，由六角學院洧杰分享全天運作的 AI Agent 與 AI 產品開發、SEO 及收益經驗，並說明現場不錄影。",
+      "original_text": "今年的 WebConf（12/11、12/12）正在準備中，講者 & 議程表快要可以出來見人了。這回同樣也會有兩天三軌的議程，門票將於 10/22（四）開賣。\n不過如果現在去 WebConf 官網按「前往購票」，會跳到一個叫「暖身小聚」的頁面。這是今年新的嘗試，有點像預購票，不只價格比一般票優惠一點點，還多了一下午精彩的分享。\n這場是六角學院的洧杰校長主講，上半場開箱他自己 24 小時運作的 AI Agent。下半場介紹怎麼用 AI 做產品，3 個月把 GA 網頁流量做到百萬曝光，從選題、開發、SEO 一路講到廣告收益。當天有些畫面是他個人的商業資訊，只給到場的人看，全程不錄影。\n時間是 10/25（日）14:00 到 17:00，地點在行天宮站附近的 IEAT 會議中心。如果原本就打算參加 WebConf，又剛好那天下午有空的話，不妨參考這個方案，名額有限喔。\nhttps://ezbundle.cc/p/webconf2026gathering\n#WebConf2026",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-19T09:00:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/9414521536999801933?_nc_oc=AdrIcN3OvH_pErBYsVyxNYDKbbPJ9kiFNIelw1fKwxJrUpiAv4Rv2BpROtlBsounmdbtggTNKjnUmgZfeneSMGJC&url=https%3A%2F%2Fezbundle.cc%2Frails%2Factive_storage%2Frepresentations%2Fredirect%2FeyJfcmFpbHMiOnsiZGF0YSI6MTc3MywiZXhwIjoiMjAzMS0xMC0xOFQxMDo1OTo1NS41MTBaIiwicHVyIjoiYmxvYl9pZCJ9fQ%3D%3D--29617896b00338ebe3601c7ec308ef705929c43e%2FeyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOlsxMjAwLDYzMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0%3D--4d686494a265afb214dc4c968df004a08544bd96%2Fproject_cover_20260923110629_3661f8fd98aa35f3.png&fb_obo=1&utld=ezbundle.cc&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=EN9CD15Ms2CSfMlk0SkGTw&_nc_zt=3&oh=06_Q3_EAfOTInoZvUfzUip0TzpNrY1EIWQ4r6OEZinDM3H6BKrd&oe=6AD829D4",
+        "alt": "WebConf 2026 暖身小聚的公開宣傳圖",
+        "credit": "高見龍／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid0EQZMTME6KGDNPfPfZheUV92MCA3hdkN8exAjECwP2gMUczEPXSEQM2FYnVm4sz6Fl",
+          "published_at": "2026-10-19T09:00:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-55653a5d9dea26ea7416bf8a",
+      "title": "Will 保哥介紹 apfel 將 Mac 裝置端模型轉為 API 與 CLI",
+      "summary": "Will 保哥介紹 apfel，將 Mac 內建 Apple FoundationModels 包裝成 OpenAI 相容 API 與 CLI，並提醒與 Ollama 的預設連接埠衝突及上下文長度限制。",
+      "original_text": "介紹一個非常實用且有趣的 macOS 本機工具：apfel \n如果你手邊有 Apple Silicon Mac，並且已經啟用 Apple Intelligence，這個專案值得你關注。\n以往想要調用系統內建的 Apple FoundationModels，通常必須自己寫 Swift 程式。\napfel 這款開源工具，直接把 Mac 內建的裝置端模型包裝成 OpenAI 相容的 HTTP API 與命令列工具。\n這代表你不需要申請雲端 API Key，直接用 cURL 或既有的 HTTP 用戶端，就能在本機發送提示詞並取得模型回應。\n在實際部署時，有一個非常關鍵的細節需要注意。\napfel 的本機服務預設監聽連接埠是 11434。\n這個連接埠剛好與大家常用的 Ollama 預設值完全相同。\n如果你的機器平常就開著 Ollama，啟動 apfel 時就會發生連接埠衝突。\n最單純的解決方式，就是讓 Ollama 繼續保留原本的 11434。\n啟動 apfel 時，明確指定使用 11435。\n如此一來，兩套本機服務就能在同一台 Mac 上和平共存。\n兩者的模型來源與特性也有所區隔。\nOllama 是由你自行下載並載入開源模型。\napfel 則是直接使用系統管理的 Apple 裝置端模型，模型名稱指定為 apple-foundationmodel。\n只要連接埠與 Base URL 設定正確，兩邊都能透過熟悉的 Chat Completions 介面進行呼叫。\n在實際測試中，apfel 支援基本的文字聊天、SSE 串流輸出，以及透過 JSON Schema 進行結構化資料擷取。\n想要串接自動化腳本或日常工具，門檻大幅降低。\n不過在評估使用前，還是要注意硬體與系統的限制。\n目前系統模型的上下文長度有其上限，輸入與輸出的 Token 都共用同一套額度。\n它非常適合處理本機快速摘要、短文字分類與特定格式擷取，但不適合直接丟入超長篇幅的文件。\n將 Mac 內建模型轉化為標準 HTTP 服務，讓本地 AI 開發多了全新的選擇。\n如果你也想讓 Mac 內建模型與 Ollama 並存運用，不妨試試看這個工具。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-19T07:56:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/2495538074489543415?_nc_oc=Adq24pk5maVQNaYcOIw1vxcXrOaXQ465-CmDE8FQ0H7nqhNGaaTCEqtFXnvhswGeelKx3X7-e5hHX5IqZj-DzGkN&url=https%3A%2F%2Fstwillblogassets.blob.core.windows.net%2Ffiles%2Fimages%2F2026%2F10%2Fapfel-foundationmodels%2Fapfel-banner.webp&fb_obo=1&utld=windows.net&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=EN9CD15Ms2CSfMlk0SkGTw&_nc_zt=3&oh=06_Q3_EAQ-8QmuxLW2cjbI4LYU6ExIRgMP6a5eCcNLkKfmzPgHa&oe=6AD805BA",
+        "alt": "apfel 本機模型工具文章的原站預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0c1dokm4ARkJ85FSsTe9Qn7w2xhjHTuyaRSdSX19zAYujGeoJAUsgqQhgeTGVfsKZl",
+          "published_at": "2026-10-19T07:56:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-19T16:18:41.055Z",
+      "captured": 11,
+      "included": 9,
+      "excluded": 2,
+      "notes": []
+    }
+  }
+}
