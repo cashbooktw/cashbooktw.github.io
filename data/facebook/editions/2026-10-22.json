@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "generated_at": "2026-10-22T00:17:59+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-22 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 21 則，入選 17 則，排除 4 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-30b7d7c2c6dd29f302d7718f",
+      "title": "陶韻智比較 Netflix 與 YouTube 的觀看表現",
+      "summary": "陶韻智認為 Netflix 總觀看時間下滑反映留存壓力，主張調整內容與廣告執行策略，並以 YouTube 的瀏覽成長作為對照。",
+      "original_text": "Netflix的北極星指標 total viewing time不增反降。 retention的護城河出了裂縫。\n內容 執行策略需要修正，廣告策略執行太慢需要修正。\n反之，YouTube真是強大，瀏覽數一路向上，強大的YouTube團隊。辦公室的餐廳也很好吃。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T22:43:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/855937698_1742915613462890_6055168877269425470_n.png?stp=dst-jpg_tt6&cstp=mx1094x2048&ctp=s1080x2048&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KgVxLVKMiqAQ7kNvwFK17GD&_nc_oc=AdqYXD2_KLJ-APbSu9kO2pchW6J6w95I7h5BqHNKTddjGW3Kv6uooywYWXUftiBfdQbKJbk3M_-fHouFBY4AWyiP&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=bE4qg0uTPOET6Yrvh-hEjw&_nc_ss=7b2a8&oh=00_AQPaLWlHCa-3liwy7at1hR_2fedSIc-srnIulIVwnCH0ug&oe=6ADEAE82",
+        "alt": "Netflix 與 YouTube 觀看表現討論的原貼文配圖",
+        "credit": "陶韻智／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid02pZJUnPEYQR3HDKV9mkMwrL58U2FxzMRgaywWpyPCRAy83WASaB2Dr5rxRXJx2UUKl",
+          "published_at": "2026-10-21T22:43:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-56c79e9ed1ac5fbedd2d53c5",
+      "title": "Huli 整理 PHP 兩項 RCE 的修補資訊",
+      "summary": "Huli 表示 PHP 漏洞資訊已公開，整理受支援版本升級、部分舊版修補原始碼，以及 session 與記憶體問題的暫時緩解資訊，提醒使用者儘快處理更新。",
+      "original_text": "PHP 漏洞的消息公開囉，剛剛看到推特上甚至連日本首相高市早苗都發了相關文章，提醒有用 PHP 的人盡快更新。\n8.2 以上版本可以直接升級，以下的就沒有了。7.4, 8.0 跟 8.1 雖然沒有新版本，但官方有提供修補過的 source code，可以自己 build，再更底下的就沒有了，可以參考官方建議先把一些設置改掉。\n其中一個 RCE via stale global state (CVE-2026-109619) 如同社群上猜測的，與 session 有關，若暫時沒辦法 patch 的可以把這功能關掉 session.upload_progress.enabled=0\n另一個 RCE via OOM corruption (CVE-2026-109618) ，可以配 memory_limit=-1 跟 post_max_size = 32M",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T22:03:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Huli 隨意聊",
+          "url": "https://www.facebook.com/huli.blog/posts/pfbid05d6SycJkzUrxgQX3sG5UwZ1VdcaKcb1fu3fit6RNdSg1aL9EVjhDtcJnbe7SL67Jl",
+          "published_at": "2026-10-21T22:03:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-bc1e48da886faca6e214d173",
+      "title": "Ollama Cloud 串流用量統計須辨識 API 端點",
+      "summary": "保哥整理 Ollama Cloud 的串流用量差異：Chat Completions 須開啟 include_usage，Responses API 則從完成事件讀取用量；統計缺漏應保留為未知，而非記為零。",
+      "original_text": "使用 Ollama Cloud 取得 Token 用量，關鍵是先辨識端點再決定參數；串流中斷或未回傳統計時，應保留未取得用量而非零。\nChat Completions 串流需明確設定 stream_options.include_usage: true；用量區塊的 choices 為空陣列，仍須保存統計。\nResponses API 不需此參數，用量在 response.completed 事件的 response.usage，欄位為 input_tokens 與 output_tokens。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T22:00:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-sin11-2.xx.fbcdn.net/emg1/v/t13/17845595491252841707?url=https%3A%2F%2Fstwillblogassets.blob.core.windows.net%2Ffiles%2Fimages%2F2026%2F10%2Follama-cloud-streaming-token-usage%2Fbanner.webp&fb_obo=1&utld=windows.net&_nc_sid=f93bbc&_nc_ht=external-sin11-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=bE4qg0uTPOET6Yrvh-hEjw&_nc_zt=3&oh=06_Q3_EAXIEiueZVJnJWQ06latHH1fM7ZIk5pfdzj-DGMt_8EH9&oe=6ADAC326",
+        "alt": "Ollama Cloud 串流 Token 用量主題的原貼文連結預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文連結預覽"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02vBBh59N2ezYfLUuahNaVmd29D3oWoUr7cSZwbD44ffLHWo6uMA6eeBkELhTUFUyGl",
+          "published_at": "2026-10-21T22:00:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-91e892bcbac6c0c9a6ec3109",
+      "title": "保哥以三種模型製作《廟口的小綠球》故事書",
+      "summary": "保哥分享以限時免費的 minimax-m3.1-flash 撰文，搭配本機 Ming 語音與 Qwen-Image 圖像模型創作故事書。他認為成果已有進步，但語音品質仍未達商用水準。",
+      "original_text": "這是一個除了電費以外完全免費的故事書創作：廟口的小綠球 \n文字：minimax-m3.1-flash (限時免費)\n語音：Ming-3.0-tts-0.5B (純地端模型)\n圖片：Qwen-Image-2.1 (純地端模型)\n整體品質不是特別好，尤其是 Ming-3.0-tts-0.5B 還有很大的改進空間，我覺得不到商用程度，但是已經比以前好很多！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T21:18:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t15.5256-10/858383290_1447514387446170_7940909004080267419_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x720&ctp=s1280x720&_nc_cat=109&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=MwAifYLFl0IQ7kNvwGRvu25&_nc_oc=AdpKwiTCOVCQ5I_xr8q1PdGHRb2JyTOvHXDz07fyvmLVxzhfsAHmrX6Uaiu_geflu_gLyy7V3lw0l3YUMlP2wDZK&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=bE4qg0uTPOET6Yrvh-hEjw&_nc_ss=7b2a8&oh=00_AQOk2ORAoAmGj8ClLGwiHUfif5z2UeWfJWMZ0bmJyq5edQ&oe=6ADEC751",
+        "alt": "《廟口的小綠球》AI 故事書原貼文影片縮圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/reel/1133697202455501",
+          "published_at": "2026-10-21T21:18:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c50ac88f7392f78e0d5b50a5",
+      "title": "Eric 關注 Google Cloud 的多模型選項",
+      "summary": "Eric 表示，Google Cloud 現已涵蓋 Gemini／Gemma、Claude、GPT 及部分開放模型。",
+      "original_text": "Alright, 現在在 Google Cloud 上 Gemini/Gemma, Claude, GPT 以及一些開放模型全齊了",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T20:49:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/2835405943502991428?_nc_oc=AdoMLICur97zIvLg3JtEkYT2klgq4t1gAQjF67ywQM5p9h7hHjLKrGErF7mjxWZ3x7I0s-3CRDCbRZXpqO8GOz8j&url=https%3A%2F%2Fstorage.googleapis.com%2Fgweb-cloudblog-publish%2Fimages%2FBlog_Headers_-_Cloudstyle_3.0_10.max-2500x2500.png&fb_obo=1&utld=googleapis.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=ul0HXmAZOkhNZaXB_W1gwg&_nc_zt=3&oh=06_Q3_EAZvpczH8AftMq0NDsbijFjd9hVJ_BeVhPgsOPpQ2lCwO&oe=6ADABB3E",
+        "alt": "Google Cloud 多模型服務主題的原貼文連結預覽配圖",
+        "credit": "Eric ShangKuan／Facebook 原貼文連結預覽"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid036k5AokaLWNcWVfSRcf3Cjdk3g9iRTksCSD4L7nJWLPyJGfy4N5yBw1DQhizjoCVgl",
+          "published_at": "2026-10-21T20:49:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-37548f2dbb08e982b95fe2ae",
+      "title": "Huli 關注 TiDB、PHP 與 eMudhra 資安事件",
+      "summary": "Huli 整理三起資安消息：TiDB 遭宣稱竊取內部資料、PHP 兩項重大漏洞待修補，以及 eMudhra 憑證風險。他區分業者回應與社群猜測，並說明憑證信任清單的重要性。",
+      "original_text": "這兩天怎麼爆了這麼多嚴重的資安事件\n一、\n提供 DB 服務的 TiDB 被駭客宣稱拿到了一堆敏感資料，還直接附上部分資料的下載連結，雖然根據 TiDB 自己的說法，存在 DB 裡的資料是沒被拿走的，但帳單紀錄、客戶資料（用 TiDB 的客戶）、一大堆 log 跟內部 repo 的原始碼等等，這洩漏範圍還是不小。\n內部 repo 的 source code 被拿走，感覺被找到洞之後再被打進來一次也不是不可能\n二、\nPHP 爆出兩個嚴重漏洞，嚴重到事前先提醒大家要準備好更新，嚴重到名字被取叫 php2Shell，再兩個小時就會釋出 patch 了。現在所有有用到 PHP 的人都剉咧等，patch 釋出之後，逆向還原出漏洞難度就低很多了。\n雖然現在已經很多人在猜漏洞是什麼了，一個最廣為流傳的說法是跟 session 有關，不過似乎沒被證實，也沒看到真的可以動的 public exploit POC。然後 Cloudflare 已經公告他們把最新規則加到 WAF 了，不確定那些 rule 是自家工程師有驗證過，還是網路上流傳的這些先擋一擋。\n總之，今晚見真章，明早醒來感覺就有詳細 writeup 跟 working poc 了。另外，PHP 8.2 以下已經 EOL 了，代表官方不再維護，所以看起來好像不會有 patch，若真的是那種預設設置就能打的 RCE，那只能上 WAF 或用其他方式擋了，感覺災情會挺慘重。（或也有可能因為太嚴重，所以破例釋出 patch？）\n三、\n印度憑證機構 eMudhra 的私鑰太弱導致憑證可以被偽造，各大瀏覽器 & 套件緊急更新。\n大家在訪問 facebook 時，為了證明這個網站是真的 facebook[dot]com，會檢查一個憑證，那怎麼檢查呢？去看發這張憑證的機構是不是真的有發，那你又要怎麼確定這個發憑證的機構是真的呢？答案是作業系統/瀏覽器等等都內建了一個清單，在這裡的就是可信的。\n因此，若是清單內的私鑰被破解了，就要從清單中拿掉，否則攻擊者就可以自己簽出任意憑證。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T20:08:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Huli 隨意聊",
+          "url": "https://www.facebook.com/huli.blog/posts/pfbid02bjFhAqs7FxPFArmKdiGTjXKW35DtexzwY4CY2TxTB9txQrXaUbqR78rpUHpBRHN7l",
+          "published_at": "2026-10-21T20:08:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-97aeb921460ca6b6472217ac",
+      "title": "洪士灝談 AGI 競逐、主權 AI 與治理風險",
+      "summary": "洪士灝以「蠻族入侵」比喻 AI 擴張，擔憂算力與 AGI 集中於少數強權，以及生成內容對學術、媒體與社會信任的衝擊。他主張建立主權 AI、發展領域專業 AI，並規範研發與運用。",
+      "original_text": "野蠻人已經到門口了 （Barbarians at the Gate）\n第二章 誰是野蠻人？野蠻又如何？\n談到野蠻人，我特地去回顧一下歷史上「蠻族入侵」（Barbarian Invasions）的始末。我小時候頗討厭歷史課，因為當年課程中沒有太多深度思考空間和時間，想太多無助於考試，不如背書。但叛逆時期的我最不喜歡記憶一些沒道理、沒價值或政令宣傳的東西，所以總是考前連夜背歷史，考後就立刻忘掉。順帶一提，當年的教育現場極強調規訓，有很多不顧及學生意願的強迫性作法，對於小時候的我來說，是頗野蠻的。\n現在用AI很方便，隨手就可以查找、分析、多視角理解歷史事件。古代羅馬帝國將外族視為野蠻人，「蠻族入侵」便是從該帝國的視角看待這段始於西元376年的歷史；但若從入侵者的角度看，他們只是仰慕與吸收羅馬帝國的文化後壯大成長，而羅馬帝國本身因內耗和衰退，自然促成了民族大遷徙以及地緣政治的解構與重構。短期來看，帝國瓦解造成歐洲物質文明倒退，進入某些學者所謂的「黑暗時代」；但從另一方的觀點看，入侵的民族們沿用了羅馬法框架、行政體系，並陸續皈依基督教，可說這段過渡期為後來歐洲中世紀的文明發展奠定了基石。\n以歷史為鏡，AI技術的發展，如同當年野蠻人從羅馬帝國逐漸獲得了先進的武器和軍事技術，從各個領域進逼，如今已經到了門口。到處都是AI生成的文章、影音，幾近氾濫成災，導致真假難辨、劣幣驅逐良幣；學術界更首當其衝，靠AI解題、拼學術研究、寫論文已然相當普遍，在提高生產力的同時，也讓論文產量暴增，人類學者根本來不及審查。相較於「蠻族入侵」造成歐洲物質文明的衰退和民族大遷徙，AI衝擊的是人類全體的文明與文化，上述的野蠻行徑只是過渡時期的現象嗎？ AI究竟會把人類帶到何種處境？\n話說在這波AI大放異彩之前，致力研發AI技術的學者，大多希望以AI促進文明發展、造福人類。可是當AI越來越強，擁抱AI的人群越多時，大公司與大國力量開始介入，學者純粹的初衷也因為商業競爭和政治因素而變質。科技巨頭們不計血本推出前沿模型來搶佔市場，為的是造就大者恆大的壟斷局面；他們斥巨資擴增算力、重金禮聘第一流人才，不擇手段搜刮訓練資料，在害怕落隊後被邊緣化的恐懼驅使下，無暇顧及AI的負面影響。不知不覺中，有些人變野蠻了，使用AI的方式變粗暴了，製造出一大堆AI垃圾，甚至忽視AI有可能因不斷自我進化而失控、對人類造成巨大的風險。\n以上並非我危言聳聽，不少內行人已經察覺到AI失控的風險。2026年7月，全球頂尖AI機構（包含 OpenAI、Anthropic、Google DeepMind、Meta、SSI 等）共1,386位研發人員在Pacing the Frontier網站[4]上發佈公開聲明，呼籲預先建立能同步調節全球前沿 AI 發展速度的技術與治理工具。然而，這些第一線研發人員的反思與呼籲，真能促成全球AI管理制度的建立，產生實質的影響嗎？\n打從1950年代發明圖靈測試和AI的名詞以來，熱衷AI的開發者從來都不滿足於做出僅為大眾服務的技術。通用型AI（Artificial General Intelligence, AGI）不僅都是前沿AI學者的目標，也是權力追求者渴望掌握的終極工具。Google、OpenAI等巨頭設立的頂尖研究團隊，一直都是把AGI視為聖杯，希望打造出具備人類同等或超越人類水準，能在廣泛、非預設、未見過的領域中自主理解、學習、推理、規劃並解決複雜問題的計算系統，為的是突破人類在生物認知與時間尺度上的物理極限，提供高階智力與決策能力[5]。\n因此大家必須認清，科技巨頭發展 AGI的根本目的，並非讓我們升斗小民能利用AI創作、聊天、寫扣、解題、自動化我們手邊的日常工作。對於OpenAI來說，提供ChatGPT這種大眾化商業服務，只是邁向AGI過渡時期的因應做法，為的是技術驗證、緩解資金壓力、蒐集數據、搶佔生態系。換句話說，在這些科技巨頭眼中，目前的AI服務和我們這些一般用戶並不是重點，只是通往終極算力與智慧霸權的數據原料與資金提款機罷了，而那些真正需要高階智力與決策能力的國防軍事體系、大型資本家和先進科研機構，才是其終極客戶。\n所以說，做出或間接促成各種野蠻行徑的根源，究竟是AI本身、AI的開發者，抑或是使用AI的人呢？還是在幕後操弄的公司、政黨或國家呢？我認為以上皆是。依照目前的趨勢持續推演下去，結果恐怕不是造福全人類，而是讓掌握頂級 AGI 的菁英或強權壟斷人類的未來，或者是因為毫無節制的研發和部署而導致AGI失控，讓AI主導人類的命運。\n如果不放心把未來交給上述的菁英、強權或AI，又該如何是好呢？首先，沒有主權AI、只會依賴外部AI服務的企業和國家，要如何抵擋AI時代的野蠻人入侵？又有什麼籌碼去影響AI的發展方向？所以我在第一章談到關於發展主權AI應有的作為，其實是亂世的自保之道。其次，人類必須正視AGI可能造成的劇烈衝擊，並開始規範AI的發展與運用，以免AGI淪為強權霸凌他國的工具，或是因AI失控暴走而造成不可逆的浩劫。\n相較於AGI或強AI，學術界慣稱的窄/弱AI（Narrow/Weak AI），我更願意稱之為「領域專業（Domain-Specific）AI」，是我近年來一直提倡的、自身也投入的重點研發工作，因為這是在有限的算力下仍然有機會發展的路線。雖然領域專業AI的影響範圍小於AGI，卻也必須有所節制。例如擅長鑽資安漏洞的AI，一旦落在惡意人士手中、甚至駭入軍事體系，後果仍是不堪設想。\n就算不談何時會到來的AGI或專業的資安攻防，當前的AI早已對於媒體造成莫大的衝擊，尤其是演算法的介入、假新聞的氾濫，正嚴重扭曲人們對主流意見和事實的認知。利用AI製造假新聞的成本，遠低於偵測和查核的成本，偏偏許多受眾又喜歡接收「投其所好」或「口耳相傳」的八卦和假新聞，以至於假新聞傳播得特別快。我個人最不樂見的，是敵對陣營頻繁以AI酸民與假新聞互相攻擊，以及媒體不經查核就隨之起舞，這會加重社群的對立、讓事實難以確認，導致社會信任的崩解。\n如果人類自身濫用AI、不顧後果地研發AI，讓AI落入少數野心家之手，那麼是福是禍就難說了。我想起道教經典《太上感應篇》[6]開宗明義就說：「禍福無門，惟人自召；善惡之報，如影隨形。」接著列舉各種善惡果報，最後如佛教般勸人「諸惡莫作，眾善奉行」。捫心自問，在指責別人是野蠻人之前，自己又有多文明、多高尚呢？從這個視角看，人類打造出善於模仿自己的AI來放大自己的能力之後，人類會用來為善為惡，或者AI在脫離人類掌握之後會如何對待人類，終究得視人類自身文明的發展而定。\n從大局來看，AI只是反映人類行為與業力的放大反射鏡，我們自己是什麼德性，餵養給它的是善或惡、文明或野蠻，就會如影隨形地放大並回饋給我們。\n[4] https://www.pacingthefrontier.com/\n[5] 綜合Google Gemini對AGI的解釋。\n[6] https://zh.wikisource.org/zh-hant/太上感應篇\n附圖取自於Pacing the Frontier聲明的第一段。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T19:12:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.30808-6/855889215_39444063368542671_7639271356587355996_n.jpg?stp=dst-jpg_tt6&cstp=mx1170x462&ctp=s1170x462&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=sawB--EKR6gQ7kNvwEmYfXw&_nc_oc=Adr2nu2ABcOJjyRM6V0p6WWnGovOw7u7sox-1hpDolnw4zdpCe1PMezX2vV0Q2hWXspOzwyZH1WcRQTBtLSrEdXb&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=ul0HXmAZOkhNZaXB_W1gwg&_nc_ss=7b2a8&oh=00_AQOHvTB_JC10eK9hxuNgc84R7vscJWdJbJ5yUpiliaeHBg&oe=6ADEAD40",
+        "alt": "Pacing the Frontier 聲明節錄，洪士灝原貼文配圖",
+        "credit": "Pacing the Frontier／Shih-Hao Hung Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Shih-Hao Hung",
+          "url": "https://www.facebook.com/shihhaohung/posts/pfbid021AbLySJxGXPcYoTAkRxjjviBETe7yr89H75cZ7LnFzzLXYBfAHgksPb2pgXS1Xwel",
+          "published_at": "2026-10-21T19:12:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-14a0a6d000d92667eca1638c",
+      "title": "保哥預告 Antigravity 開發閉環實戰分享",
+      "summary": "保哥將於 11 月 20 日在台北華南國際會議中心的 Build with Gemini 活動，分享 Antigravity CLI 的使用心得，主題聚焦自行完成與自行驗證的開發流程。",
+      "original_text": "我最近 Antigravity CLI 用蠻多的，是有累積出一些開發心得，所以我預計在今年的 Google Cloud Build with Gemini Taipei 2026 活動中分享，演講主題是「用 Antigravity 打造自行完成、自行驗證的開發閉環」，歡迎報名參加！ \n活動在 2026 年 11 月 20 日於台北的「華南國際會議中心」舉行！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T15:31:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-sin11-2.xx.fbcdn.net/emg1/v/t13/4565953232908887485?url=https%3A%2F%2Fcloud.google.com%2F_static%2Fcloud%2Fimages%2Fsocial-icon-google-cloud-1200-630.png&fb_obo=1&utld=google.com&_nc_sid=c63717&_nc_ht=external-sin11-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=j1fin3Sk9x5x7aFl1jTClA&_nc_zt=3&oh=06_Q3_EAZU5HZYw9aeCq0HIx9p1Rrx86iJfUSTR5KO-AvX9GCA5&oe=6ADAC0A3",
+        "alt": "Build with Gemini Taipei 活動的原貼文連結預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文連結預覽"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0nA4UcSVA16M7JNWa6TXRExtHPbEyx8qgeWycXFmndEpuCAWnJCLXvwqsbBvwQwYDl",
+          "published_at": "2026-10-21T15:31:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ec00524baf7c12a56c4c4c99",
+      "title": "保哥提醒盤點 PHP 版本與準備緊急修補",
+      "summary": "保哥在修補公告前提醒 PHP 使用者，優先盤點對外服務與內嵌版本、安排升級，並處理已停止維護版本的曝險與異常行程監控。貼文強調，當時確切影響範圍與利用條件仍待確認。",
+      "original_text": "大家都認同 \"PHP 是世界上最好的語言\"，這句話流傳已久。但最近 PHP 被發現兩項關鍵 RCE 漏洞，CVSS 評分高達 9.2，這下真的死定了！\nPHP 將於 10 月 21 日 14:00 UTC 釋出循環外安全版本，修補兩個可導致遠端程式碼執行的關鍵漏洞，官方評為 CVSS v4.0 9.2。\n研究單位 watchTowr 確認漏洞為真，且仍在保密期。研究者將其命名為 php2shell，CVE 編號為 CVE-2026-109618 與 CVE-2026-109619，PHP 官方公告中並未列出這兩個編號。\n官方刻意不公布細節、受影響版本與利用條件，完整內容預計隨版本一併發布。\n目前尚無已知利用案例，未列入 CISA 已知被利用漏洞目錄，Huntress 也表示未見公開的 exploit code。\n但情況遠沒有時間放鬆的理由。\n官方保留一項權限，若漏洞細節外流或出現實際利用情形，修補版本將提早推出，也就是說這個緩衝期可能比外界預期的更短。\n對照 2024 年的 CVE-2024-4577，該漏洞在公開後 24 小時內，Akamai 就在 honeypot 上觀察到利用嘗試。\n這次被研究社群冠上 php2shell 這個名稱，本身就意味著它被視為足以改寫遊戲規則的漏洞。\n真正危險的問題在版本落差。\n只有 8.2 到 8.5 這四個仍在支援的分支會拿到修補版本，8.1、8.0、7.x 與 5.x 全部已經結束生命週期，不會有任何官方 patch。\nShodan 統計顯示，約 88.4 萬台對外開放主機的 HTTP banner 回報 PHP 8.1 或更舊版本，約占回報任何 PHP 版本主機的 59%。\n這是依 banner 推估的數字，不等於已確認受影響的系統，但曝險面相當可觀。\n這意味著近六成對外主機跑的是完全沒有補丁可用的版本。\n這些 EOL 主機若真的受影響，等於沒有任何廠商修補可以依靠，攻擊者只需要掃描就能找到目標，防守方卻連一個官方修補版本都等不到。\n更糟的情況是，官方到現在為止完全沒有提供 workaround。\n在修補版本釋出之前，暴露在外的系統等於是裸奔狀態。\n第一，盤點所有 PHP 安裝，別只查自己的伺服器，廠商 appliance、Windows 軟體以及 cPanel、Plesk 等控制面板內建的 PHP 同樣要列入，這是整個事件裡最容易被漏掉、也最致命的一塊。\n第二，預留 14:00 UTC 的升級時間，優先處理對外開放的系統，並確認自家 Linux 發行版與 hosting 供應商是否已 backport 套件。\n第三，EOL 分支先做隔離，選擇升級、移出公開網路，或先放到 VPN 與 WAF 之後，這是 EOL 主機唯一還能做的事。\n第四，若無法立即修補，CERT-EU 建議先將對外服務與公開網路隔離。\n第五，監控 PHP 啟動的子行程，php-fpm、php-cgi、httpd、apache2 若拉起 shell、interpreter 或下載工具就設警示，Linux 主機若沒有 EDR，可改用 Florian Roth 的 process-watcher 記錄每個行程與其 command line。\n第六，一旦發現異常，先隔離主機並保存 web server 與 PHP log，接著檢查 web shell、web root 新增檔案、新的 cron job、排程工作與可疑帳號。\n發布後需要釐清的問題包括受影響版本範圍、涉及的 PHP 元件、是否需要特定執行模式、特定設定或登入權限。\n另外，社群流傳的「自 PHP 5 起全部受灣響」說法目前未經官方確認，watchTowr 自己的 FAQ 也明載影響範圍尚未由廠商 advisory 認定。\n在官方說法與實際範圍落差未釐清之前，保守假設最壞情境才是合理的。\n核心結論是，時間不多且曝險集中在 EOL 版本。\n今天就完成盤點與升級排程，EOL 主機先隔離，監控規則同步上架，不要等官方公布細節才開始動作。\n#如果你可以看到這裡\n#你應該要開始準備轉發這個重大消息給親友知道了\n#WordPress會是本次漏洞的重災區嗎",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T14:44:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-sin11-2.xx.fbcdn.net/emg1/v/t13/3000369142462799145?url=https%3A%2F%2Fblogger.googleusercontent.com%2Fimg%2Fb%2FR29vZ2xl%2FAVvXsEjcxq1wmaSTaMiFJnrulXjwGrIIkIHBR3Q9Yv6Lky3rAie6XPOnFmXOVckMgVzGn9yvodrbkt6kV623Ofg8Iw-1MTDRoCVzXPiikivnZ5R7OynIF5-QC0DAiwXq8q2MRS3PZaz9NpjhJUqa-QWi1AQJ2XnJ-nvUNEvG3f1E0UpU5slUwzguAI-cESkZ5Xc%2Fs1600%2Fphp2shell.jpg&fb_obo=1&utld=googleusercontent.com&_nc_sid=c63717&_nc_ht=external-sin11-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p900x469_q75_tt6&ccb=18-1&_nc_gid=j1fin3Sk9x5x7aFl1jTClA&_nc_zt=3&oh=06_Q3_EAZbD7FoAixbklUND3MTzZ4kSl1vqSJ6Ff96tZAh_FPOc&oe=6ADAB8E8",
+        "alt": "PHP2Shell 安全議題的原貼文連結預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文連結預覽"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0xyN3SZgcZCvziTezvB9piGg4mfiHoerS8h7jAHBAeaK7wQx4Vs7X8r1CSANwZ7zyl",
+          "published_at": "2026-10-21T14:44:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-96ed4a1c8bba95eee424fed2",
+      "title": "保哥從 TPU 生態系看 Google 的 AI 競爭力",
+      "summary": "保哥以 Google 的 AI 算力及 Anthropic、Meta 採用 TPU 的說法，主張評估其競爭力時，應同時關注運算資源與生態系。",
+      "original_text": "各位可能不知道，Google 一家公司掌握全球約 25% 的 AI 算力，現在連 Anthropic 與 Meta 都擁抱 TPU 了，且規模達數百億美元。不要光是用股價現值看一家公司啊！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T14:17:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid05FacZgdA6vVrLxHvMmicDD489Xs66PodDAroJo8FguGETSWZsWShr9CmNvaNv2acl",
+          "published_at": "2026-10-21T14:17:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-076ccbe607095618af65e21c",
+      "title": "保哥實測 minimax-m3.1-flash：可靠但耗時",
+      "summary": "保哥表示，全天測試 minimax-m3.1-flash 用掉約 10 億 tokens，模型常為細微瑕疵反覆處理數小時。他認為可靠度不錯，但需以提示工程改善執行時間。",
+      "original_text": "我昨天測試 minimax-m3.1-flash 測了一整天，燒了 10 億 tokens這個模型對於完美的追求，真的是非常執著，每個指令都可以跑幾個小時，只為了一些細微的瑕疵。整體來說是個還蠻可靠的模型，就是跑太久了，需要提示工程來改善！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T13:52:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02TmjRSNMXyFpQxfWiQhD7haRU456R2S87hP6BLMdHN3yDq4dQxAshsaQkDHxDGwWUl",
+          "published_at": "2026-10-21T13:52:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-b1d1b7917460cc6a54b8e188",
+      "title": "Nathan Chiu 主張品牌掌握電商系統與資料控制權",
+      "summary": "Nathan Chiu 從電商個資外洩談多租戶與內部權限風險，建議品牌爭取獨立部署、持有雲端帳號，並在合約界定系統與資料權利、外洩通知及個別授權。他強調入侵路徑尚未公布，不推測原因。",
+      "original_text": "寫給這次電商平台個資外洩的品牌們：把系統主控權握在手上\n這兩個禮拜，很多品牌老闆的週末是在回客服訊息裡度過的。\n詐騙信上寫「您的定期購方案設定錯誤」，信裡有消費者的真名、電話、地址，還有上個月買過的東西。消費者打電話來罵的是品牌，他不知道你的官網背後是哪一家系統商。根據媒體取得的系統商說明信，攻擊發生在10月3日上午11點，很多品牌卻到16日早上才接到通知，中間差了將近兩個禮拜。雙11的檔期排程都已經下去了，有品牌乾脆把檔期停掉，整個團隊改去回訊息、檢舉假冒的LINE客服帳號。\n先講一點我自己的事。\n我小時候很愛看駭客的書。那些故事裡最精彩的段落，很少是在寫程式，多半是翻垃圾桶，找到被亂丟的密碼單、作廢的系統文件、印著撥接號碼的報表。不然就是打一通電話給櫃台，假裝自己是總公司的工程師，就問到一組帳號。後來全世界最有名的駭客米特尼克，最拿手的也是這一套：打電話騙密碼。\n幾十年過去，工具全換了。現在的攻擊者可以請AI做研究，掃描漏洞、整理目標公司的組織和人員、寫一封看起來跟真的一樣的信。以前要準備好幾天的事，現在幾分鐘就做完。防守的一方也有AI，兩邊的AI打來打去，最後被突破的那個點，通常還是人：一組忘了關的測試帳號，一個權限開太大的工程師帳號，一台很久沒更新的主機，一個點錯連結的維運人員。\n這次的入侵路徑還沒公布，數發部10月19日才剛進場做行政檢查，細節我不猜。但不管最後查出來是哪一個環節，結構上的問題已經擺在桌上了。\n大型電商平台這幾年想要搞壟斷。官網、APP、會員、POS、金流、廣告、代營運，什麼都要整合，什麼市場都要進。簡報上的說法都很好聽：一站式、虛實融合、數據打通。\n我在網路和行銷這行快三十年，很熟悉另外一面。你想在自己的官網裝一個GA的Tag，或放一段廣告平台的追蹤碼，平台對第三方是什麼態度？要申請、要審核、要說明用途、要簽同意書，嚴格到讓人抓狂，理由永遠是資安。這次就有品牌在媒體上抱怨，平常連開個API都要收高額系統費，大家覺得不方便，但想說是為了安全，也就配合了。\n那對內部的團隊呢？\n外面的人什麼都碰不到，裡面的人什麼都碰得到。同一個資料庫裡放著幾十個、上百個品牌的訂單，開發是同一群人，維運也是同一群人。如果你連代營運都交給同一家，那幫你下廣告、拉名單、做會員行銷的，還是同一群人。每多一個角色、多一個能進到那個資料庫的帳號，風險就往上加一點。這種風險平常看不出來，報表上也沒有任何一格會顯示它。\n還有一筆很現實的帳。多租戶的SaaS把所有品牌的資料放在同一個池子裡，對平台來說成本最低，對攻擊者來說報酬最高，打下一家就等於打下幾十家。這次受影響的品牌橫跨服飾、美妝、生技、食品，就是這個結構造成的。\n如果你的品牌這次也在名單上，下次續約或是這次談判之前，請對你的廠商提出下面四個要求。\n第一，獨立運作。\n如果你一年付給平台的錢超過一百萬，你有資格要求獨立部署。你的系統放在一個獨立的雲端帳號裡，這個帳號裡只有你們一家的系統、你們一家的資料庫。別家出事，攻擊者拿到的鑰匙也打不開你的門。廠商一定會說這樣成本比較高。確實比較高，雲端費用多一筆，版本更新也比較麻煩。但一年超過百萬的服務費，本來就應該包含「別人家出事不會拖到我」這件事。\n第二，系統裝在自己家。\n程式可以是對方開發和營運的，但雲端帳號最好開在你的公司名下，雲端的帳單由你自己付。這就像請廠商來你家施工，房子是你的。誰有權限進來、進來做了什麼，存取紀錄都在你手上。下次再出事，你不用等廠商的重訊或公關稿，才知道自己家發生了什麼事。\n第三，所有權寫進合約。\n系統搬回自己家之後，合約要寫清楚：除了必要的維運以外，系統是你的，APP在App Store和Google Play上架用的開發者帳號是你的，資料也是你的。這些資料不能拿去跟其他品牌共同行銷，也不能拿去做平台自己的其他用途，包括「去識別化之後的整體分析」這種聽起來很無害的條款。\n第四，用歐盟GDPR的標準。\n台灣的個資相關法令訂得很簡陋，你不需要等法律進步，可以直接在合約裡要求平台業者遵守GDPR。GDPR把幫你處理資料的平台定位成「處理者」，品牌是「控制者」。處理者只能照控制者的書面指示處理資料，發現外洩必須立刻通知控制者，控制者則要在72小時內通報主管機關。違規的罰款最高可以到全球年營業額的4%。把這些直接寫進合約，而且數字要寫死：發現疑似外洩後幾小時內通知你、用什麼管道通知、通知裡要包含哪些內容。\n同時，把合約裡所有「自動同意」的條款拿掉。很多服務條款裡藏著一句話，大意是你同意平台為了優化服務、開發新產品、行銷合作而使用你的資料。這種授權不應該綁在主約裡。每一項授權都要獨立簽署，寫清楚用途、範圍和期限，期限到了就自動失效，要再用就再簽一次。GDPR對「同意」的要求本來就是這樣：具體、分開、隨時可以撤回。\n最後講一句比較冷的話。\n這次系統商的重訊寫的是「目前評估對公司營運無重大影響」。從系統商的財報來看，這句話可能是對的。對你的影響有多大，看你家客服這兩個禮拜接了多少通電話就知道。品牌把系統交出去是為了省事，但交出去的同時，控制權也一起交出去了。學費已經付了，這次談判或下次續約的時候，把控制權拿回來。\n如果你是收到詐騙信的消費者：任何跟扣款、定期購、重複訂單有關的訊息，一律不要點連結，也不要打信上的電話，自己上網查品牌的官方電話確認。另外，有律師指出，依個資法第29條，就算沒有真的被騙到錢，個資外洩本身就可以求償。詐騙信、簡訊、通話紀錄都先存起來。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T12:54:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/854880906_1050043608084749_3742671890311092319_n.png?stp=dst-jpg_tt6&cstp=mx1795x1206&ctp=s1795x1206&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OZyLrWilm3cQ7kNvwGBu5Lc&_nc_oc=AdotV0aPYSc9HIArEra3t42N3kEovxc4_SJ64OEU2CwnRS8Ki-i_DridZ23Y1DJvX5HW0yMcZrmEmj0Xwy4Uu5O_&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=q433wfnh4qOQwYhKt5bZSw&_nc_ss=7b2a8&oh=00_AQPci_lB9w98b_Lr08U0jRpfGpPK_RicgLsuz0OCXUkcOg&oe=6ADEAD67",
+        "alt": "電商個資與系統控制權議題的 Nathan Chiu 原貼文配圖",
+        "credit": "Nathan Chiu／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0H2FcUZUMLccF7Y88xvXYK28gk9wimCnV8ToRTNoUS7SMpmHwLuKVfFmMLBrXaZbCl",
+          "published_at": "2026-10-21T12:54:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c532e4e72cbfde12f2869a02",
+      "title": "保哥轉述 Google 在雲端營收與 AI 算力間的取捨",
+      "summary": "保哥轉述 Sundar Pichai 的說法，Google 為前沿 AI 開發分配運算資源，會犧牲部分短期雲端營收；資源限制也可能促使研究團隊改善演算法與記憶體效率。",
+      "original_text": "Google 執行長 Sundar Pichai 透露，Google Cloud 目前放棄短期營收，以釋放運算資源用於前沿 AI 開發！\n「我們大家都在做某種形式的這種事。我認為我們的雲端業務在任何給定時刻，都會放棄短期營收，因為我們正在進行運算權衡，以支持前沿 AI 開發。」\n「所以我認為你所說的已經是事實。但你必須深思熟慮。即使是我們的 AI 研究人員，你知道，有些限制其實也有好處。那正是激發創意的來源。」\n「你知道，那就是幫助你提出更有效率的演算法突破的東西，或許是使用更少的記憶體，諸如此類。所以，你知道，我們承諾投入必要的資源，以保持在前端，對吧？」\n#提供限制正是激發創意的來源 #很會嘛",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T12:39:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0jki49qSjQFBhhksyex3zBjf56crdG5eSve4KGykbH9J98VC3Eu2jqqhCquKJQPipl",
+          "published_at": "2026-10-21T12:39:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-2816e34f05e89a99fcacf1c1",
+      "title": "Champ Yen 分享 Windows 3.x 的 USB 驅動移植",
+      "summary": "Champ Yen 分享 USBNT 移植至 Windows 3.x 的 USBWIN 專案；貼文展示透過 USB 3.2 連接埠在 Windows 3.1 使用網路攝影機，並稱可支援多種通用 USB 裝置。",
+      "original_text": "有人將先前實作給 Windows NT 的 USB driver 再移植到 Windows 3.* 上\n相當有趣\n\nExcuse me? A webcam running in Windows 3.1, connected through a USB 3.2 port? You should’ve seen my face... \nLong story short: ages2001 ported his USBNT project to Windows 3.x. It’s called USBWIN, and it means Windows 3.x now supports generic USB devices (most of them). Because... why not?\nMore details soon. Turns out, USB is only part of the story...\n#USB #USB30 #windows31 #16bit #retrocomputing",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T11:24:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/858056118_1843169456690653_3449580311065758654_n.png?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p720x720&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=hE-E-2dKb-EQ7kNvwGy3yps&_nc_oc=AdqZ7MWYRtRymFQGHVqIcmNf8U4ZHOr6dbX1qc6QhIcaq7JpOwBujlGFr6dKjRZ1s3B6vLmZ-HG3-wYTG1E1nvRx&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=q433wfnh4qOQwYhKt5bZSw&_nc_ss=7b2a8&oh=00_AQMxIDOo00vdsxlkBuTH8gHVYWfw2AC0g7yLazQ7iQfCAw&oe=6ADEC63C",
+        "alt": "Windows 3.x USBWIN 驅動移植主題的原貼文配圖",
+        "credit": "Champ Yen／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Champ Yen",
+          "url": "https://www.facebook.com/champ.yen/posts/pfbid02PrnxXzNkypapCY6XwtLSvvv36WPqTDuNh1xduhapoJiuVWX5J8Cz5oGLBojTsvHUl",
+          "published_at": "2026-10-21T11:24:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-3f50b7c83719aa58af5a7d25",
+      "title": "保哥轉述 OpenAI 快取保留機制調整",
+      "summary": "保哥轉述 OpenAI 的快取更新，稱 API 快取延長至 12 小時，登入 Codex／Work 的使用者則可持續保留快取，減少工作中斷後重算上下文的情況。",
+      "original_text": "OpenAI 剛發布了一項關於快取機制的更新。現在透過 API 呼叫模型，快取保留時間拉長到了 12 小時。\n對於在 Codex 與 Work 環境中登入的使用者，快取則是永久保留。\n這解決了過去一個很實際的痛點。以前中斷工作幾個小時，或是回頭翻找舊對話接著聊，往往得重新計算上下文。\n現在不管隔了幾小時才繼續，或直接回到舊對話，都不會受到任何懲罰。系統保證會命中快取。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T09:52:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02LQwRSLrHuF5Y4TwnUzHtoYxqVsn8A4Y3MNHVDu5F23ZgsC9MEiKgxTAWoDkUymBPl",
+          "published_at": "2026-10-21T09:52:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-e319283ac4b3d89f1684c93c",
+      "title": "Eric 介紹 Build with Gemini 台北站實戰議程",
+      "summary": "Eric 預告 11 月 20 日於華南國際會議中心舉行的 Build with Gemini 台北站，聚焦企業與開發者的代理式 AI 應用；下午安排 GDE 分享 Gemini Platform 與 Antigravity 的實作經驗。",
+      "original_text": "Google Cloud Build with Gemini 全球巡迴台北站將在 11 月 20 日在華南國際會議中心舉行，誠邀 Business Builders、App Builders 以及 Platform Builders 來學習如何使用 Google Cloud 的 Gemini 企業解決方案迎接 Agentic Era 的典範轉移。\n活動下午有一整軌由 Google Developer Experts (GDE) 分享他們親身使用 Gemini Platform、Antigravity 的實戰經驗，是真．五虎將： Kevin Chiu Yu-Wei Liu Jimmy Liao Will Huang Denny Huang 連袂演出，該報名了吧： https://cloud.google.com/.../zh-tw/build-with-gemini-taiwan",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T08:24:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/859255137_1102580559034744_8647560904721793832_n.png?stp=dst-jpg_tt6&cstp=mx1200x1200&ctp=s1080x2048&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=l3ZsTGwnWeQQ7kNvwFAq2ka&_nc_oc=Adp6oZ3eiP-AiwftKCjjbN-k07i9ruQEBPizl3C7d0DBJljqUekhbHAJlRyQS2Lft0K27yYZ5VlSLH9PdUwn1H65&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=NgrQa7_IRQrut5iY916qnQ&_nc_ss=7b2a8&oh=00_AQMziwCHlnEw2nPAEgOUeLfJM1LPO3VVqtqf2sbFT9sz9g&oe=6ADECFEE",
+        "alt": "Build with Gemini 台北站的 Eric 原貼文活動配圖",
+        "credit": "Eric ShangKuan／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid02tLpDeyteGLa5BddvXk9BJn3HeE3Hfm1K84tn1NkPxsBzcvZsp1fPdPHpuJfUyJ5fl",
+          "published_at": "2026-10-21T08:24:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-569d71b91012a7e7d40ebf9a",
+      "title": "保哥介紹 Rust 版 TypeScript 編譯器 tsrs",
+      "summary": "保哥介紹 Cloudflare、VoidZero 等團隊合作的 tsrs，關注 Rust／Wasm 在型別檢查效能與記憶體上的取捨，以及透過 Agent 維持上游相容性的流程。貼文轉述最高八倍加速、約七成記憶體減量，並提醒仍有相容性差異。",
+      "original_text": "我覺得 Cloudflare 有點瘋瘋的，最近做的事情都不小，這次「感覺上」是直接給 TypeScript 團隊打臉，還有點腫腫的！ \n他們最新發表了一篇文章，標題是「Introducing tsrs: a Port of TypeScript to Rust」。\n簡單說，tsrs 是一個用 Rust 重寫的 TypeScript compiler。\nCloudflare 與 VoidZero 團隊，邀請了 Owner .com 的 Max Schwenk 一起參與這個專案。\n整個計畫是在 TypeScript 團隊的密切合作下進行，並且被放在 Oxc 這套 JavaScript compiler toolchain 裡面孵化。\n他們的目標很單純：讓開發者少花時間等 type check，多花時間真正寫程式。\n這次成績單相當漂亮。\n在相同 type check workers 數量的條件下，tsrs 比 TypeScript 7.0 快最多 8 倍，記憶體用量少約 70%。\n不過文章也特別說明，這些數字是和 TypeScript 團隊一起校準過的，確保比較的設定完全一致，而不是用更大的機器規格去壓榨出來的結果。\n順帶一提，下一版的 TypeScript 7.1 beta 本身也比 7.0 快最多 2.5 倍，其中部分最佳化就是從 tsrs 回饋上去的。\n那為什麼是 Rust，而不是繼續停在 Go？\n答案是 WebAssembly。\n把 Go 編譯成 Wasm，連 garbage collector 都要一起打包進去。\nRust 的記憶體管理模型則讓 Wasm guest 與 host 之間可以直接交換記憶體，這對記憶體效率的 WebAssembly 應用來說是關鍵優勢。\nCloudflare Workers 早就支援 Wasm，前幾週也剛宣布支援 native Rust，新增了 wasm-bindgen 的 Emscripten target。\n當整套 build 與 deployment 系統都在 Workers 上以緊密迴圈執行時，小巧的記憶體佔用量就會快速回報效益。\n這代表完整的開發環境可以跑在以前跑不起來的地方。\n搭配 Agent 來看，意義更大。\n整套 development toolchain (開發工具鏈) 現在可以在 Cloudflare 上以完全在沙盒的環境端到端執行。\n透過 Wasm，同樣的環境也能安全地跑在使用者的瀏覽器裡，或是嵌入式裝置與 IoT 應用上。\n那要怎麼維護，避免跟上游分歧？\n答案是使用 Agent 進行每日同步，這與他們維護 Vinext 對齊 Next.js 的做法相同。\n每天早上由 Agent 檢視變更、抓取 diff，並為可能受影響的部分開 tracking issue。\n每天晚上則重新產生相容性矩陣，實際跑 Next.js 測試套件來比對。\n當測試或 issue 顯示落差，Agent 就能跨兩個 codebase 找出變更、建立重現案例、移植相關測試，並提出修正。\n同一套流程會套用到 TypeScript，並且會盡可能把效能改善回饋給 TypeScript 的 Go codebase。\n他們也坦承目前與上游還有差異，例如 diagnostics 印出的順序，並承諾在發布穩定版之前把差異降到最低。\n現在就可以試試看。\nnpm install tsrs\nnpx tsrs\n接下來呢？\nCloudflare 已經是 Vite、Rolldown、Oxlint、Oxfmt 這些 JavaScript 生態系 Rust 工具的 hosting 之地，背後有超過一千萬名開發者。\n他們接下來要探索把 tsrs 更深地整合進自己的技術堆疊，例如在 Oxlint 中實作 type-aware lint rules。\n像 Vinext 一樣，他們的目標是讓 tsrs 成為一個維護良好的 open source 專案，同時不擋住 TypeScript 本身。\n整體看來，這不只是一個效能優化，而是一次語言實作層級的重新落地。\n對開發者來說，最實際的意義就是：等待 type check 的時間，可能會從「一杯咖啡」變成「一口氣」。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-21T08:07:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-sin11-2.xx.fbcdn.net/emg1/v/t13/16690011661368019080?url=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M5C82XAYSWX571T82A8AZRKS.png&fb_obo=1&utld=cloudflare.com&_nc_sid=c63717&_nc_ht=external-sin11-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=9r5akM4ZhZLS2V8Ox1aCjA&_nc_zt=3&oh=06_Q3_EAbX2r9_oRXCw76PhkDZDp4bb1_a9Bf4YlNUxGDBEkFO_&oe=6ADAD531",
+        "alt": "tsrs Rust 版 TypeScript 編譯器主題的原貼文連結預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文連結預覽"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid032WZvG9vyXnJUVU9DaJ3bdHHQe6qT14tiaCc95Zos3P7AdJDx3paxhqKARXQCq8ael",
+          "published_at": "2026-10-21T08:07:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-21T16:17:58.047Z",
+      "captured": 21,
+      "included": 17,
+      "excluded": 4,
+      "notes": []
+    }
+  }
+}
