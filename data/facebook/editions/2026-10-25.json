@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-25",
+  "generated_at": "2026-10-25T00:15:29+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-25 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 11 則，入選 8 則，排除 3 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-ab82e963888aed8aa8eff05a",
+      "title": "用四個區域理解常用 Git 指令的關係",
+      "summary": "保哥分享一支五分鐘教學影片，以工作區、暫存區、本機與遠端儲存庫為架構，將 19 個常用 Git 指令整理成關係圖。",
+      "original_text": "Git 指令那麼多，其實都只是在「四個地方」之間搬東西：工作區 → 暫存區 → 本機儲存庫 → 遠端儲存庫。\n我今天製作這支影片用 5 分鐘，把 19 個常用 Git 指令放進同一張地圖，讓你記住的不是指令清單，而是它們之間的關係。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-24T22:52:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t15.5256-10/866187819_1121569224180985_440609242765466209_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=m1PHM-6Bb68Q7kNvwGAQNfp&_nc_oc=Ado_x4q2kVCQQg90ogziEbkJHBd6N6f4so7TDEQcC-8pS9qDu-j1aH0Is5BvxDdv_e0Tx_wSRPMcadBrxNMJixOl&_nc_zt=23&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=z6HMtz36-GdJEtRZaKsYGA&_nc_ss=7b2a8&oh=00_AQMrQEdkopRRy_BScs2HVQlf542RLXZGXF7WRu6FOuJ3wA&oe=6AE2C1F6",
+        "alt": "Git 四個區域與常用指令教學的原貼文影片縮圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/reel/1435566895390099",
+          "published_at": "2026-10-24T22:52:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-fe11bd2190d54f52b7ac8a2f",
+      "title": "高見龍以「折返點」分析公車停留與班表",
+      "summary": "高見龍介紹「折返點」與 n-gear，以每十秒採集的公車開放資料，搭配 DuckDB 分析折返停留與班表。專案採 AI 與規格驅動開發，目前涵蓋三條路線；作者強調車輛停留不等於司機實際休息，資料仍有缺漏與樣本限制。",
+      "original_text": "https://kaochenlong.com/bus-turn-around\n半小時前的排練是正常的，但正式來的時候卻 GG 了，這就是 demo 魔咒（沒拜拜）\n不過沒關係，總之是在時間內把想做的小工具先做個 MVP 出來了，剩下的就是讓它繼續採集資料、整理資料，看看最後會變成什麼樣子，或是能幫上什麼忙",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-24T18:03:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/1295006147933372223?_nc_oc=AdrqX647kwus6vxKbLCQnLt6Ht2fMWN0cO_JTt_mBB_KEPuZSSISDyX8t7A6m2Byw5b7waMOVkA7weS4w3sUZw3v&url=https%3A%2F%2Fcdn.kaochenlong.com%2Frails%2Factive_storage%2Frepresentations%2Fproxy%2FeyJfcmFpbHMiOnsiZGF0YSI6NDU1NywicHVyIjoiYmxvYl9pZCJ9fQ%3D%3D--8b5cc9d2ccd7cf3d1c4bf559717b8a713dfd29e2%2FeyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2ZpbGwiOlsxMjAwLDYzMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0%3D--7918b5ec129f6cacdd1a8b0fa88a01eb6c87a867%2F2026-10-24_140627.png&fb_obo=1&utld=kaochenlong.com&_nc_sid=f93bbc&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=z6HMtz36-GdJEtRZaKsYGA&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAeXeqk1Xqb1sSPh7ZG7e3lbjJkYA_WUKaeP3CtDcjA9p&oe=6ADE9AFC",
+        "alt": "高見龍「公車司機的 10 分鐘」原貼文連結預覽配圖",
+        "credit": "高見龍／Facebook 原貼文連結預覽"
+      },
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid02jdwMFkfqvw6XNmhhKafACAd9YWjHhfBzXZKdm1EajXj98o3WoVYn6zD6tmaBG8V8l",
+          "published_at": "2026-10-24T18:03:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-48a4c8c28a2670b4f7d734c8",
+      "title": "保哥分享 Java 與 Rust 文書處理器的比較",
+      "summary": "保哥轉述 Codename One 將 Rust 文書處理器 Wordcraft 的功能以 Java 重作的測試，關注啟動、輸入延遲、記憶體、建置時間與 AI Token 成本。他認為應依實作與產品需求選擇語言，而非把語言標籤當成效能保證。",
+      "original_text": "「用 Rust 重寫一切！」這句口號在工程師圈子裡喊了好幾年。\n結果今天有人直接拿 Java 把 Rust 的臉打腫了。\n這不是嘴砲，這是真刀真槍的實測。\nCodename One 團隊找上了 GitHub 上超過一萬五千顆星的 Rust 開源文書處理器 Wordcraft。這個專案用 Rust 搭配 egui 寫成，功能有 487 項。\n他們做了一件很瘋狂的事。用 Java 把這 487 項功能一模一樣重寫了一遍，然後丟進同一個 GitHub Actions 環境正面對決。\n42 項桌面端指標，Java 贏了 38 項。\n你沒看錯。那個整天被嫌肥、被嫌慢、被笑有垃圾回收機制的 Java，在效能上把 Rust 按在地上磨擦。\n在 Mac 上，Java 版啟動速度比 Rust 快了一倍以上。\n打字延遲更誇張。Java 版打一個字到畫面顯示只要 8.9 毫秒，維持在一個影格內。Rust 版居然要 51.9 毫秒，整整卡了三個影格。\n那些整天喊垃圾回收很浪費記憶體的人，看到下一組數據大概會沉默。\n當文件放大到一萬個段落時，Rust 消耗的記憶體比 Java 多出 65% 到 95%。連編譯出來的執行檔，Java 都只有 Rust 的三分之二大。\n為什麼會這樣？\n因為在 Rust 裡面，工程師為了討好編譯器的所有權檢查，整天在那邊防禦性複製，或是套一堆 Arc 跟 Mutex，最後被迫選用妥協過的資料結構。\nJava 呢？靠著 ParparVM 預先編譯成 C 語言，把沒用到的類別全部砍掉。執行期根本沒有肥大的虛擬機器，垃圾回收還在獨立執行緒自己跑，工程師只要專心挑最高效的資料結構就好。\n到了 AI 時代，這場對決還有一個更痛的維度，叫做 Token 成本。\n同樣的功能，Java 的原始碼行數只有 Rust 的三分之二。AI 代理讀取整個專案，Java 只要 100 萬個 Token，Rust 要吞掉 164 萬個。\n寫過程式的都知道，AI 寫完 500 行，人類還是要審。審 Java 你只要看商業邏輯對不對，審 Rust 你還要幫它檢查生命週期跟借用規則有沒有埋雷。\n看一眼 CI 建置加跑完測試的時間。Java 只要 97 秒，Rust 要跑 961 秒。整整差了十倍。\n更諷刺的是使用體驗。Rust 版沒有原生頂部選單，複製文字到其他軟體只剩純文字，還不能拖曳。Java 版不僅有完整的 Mac 原生選單、支援帶格式複製拖曳，同一份原始碼還能直接編譯出 iPhone 跟 Android 的原生 App。\n甚至連大家最在意的安全性，Rust 專案的 Cargo.lock 拉了 534 個外部套件，這就是 534 個供應鏈攻擊面。Java 版只依賴框架本身。\n寫作業系統核心、寫驅動程式、寫資料庫引擎，去用 Rust 絕對沒問題。\n但如果是寫桌面或手機應用程式，別再盲目信仰用 Rust 重寫一切了。你花了更多錢、寫了更多原始碼、等了十倍的編譯時間，最後並沒有換來一個比較好的產品。\n不過話說回來，程式語言用什麼好像真的沒有什麼差別，重點是誰寫的？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-24T17:54:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0Cy8D3A5yvJNW2s6oyEnRGyfZuN7tb5G2vBfnvSoUzWaA8XtqJmiVS69jwrA8jaPMl",
+          "published_at": "2026-10-24T17:54:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ddbf1ccc8d9f39ae3ca0e5b7",
+      "title": "TWNIC 通知信案例：SPF 通過仍可能無法通過 DMARC",
+      "summary": "保哥分析一封 TWNIC 通知信：SPF 驗證的是代寄平台網域，未與畫面寄件者對齊，且沒有 DKIM 簽章，因而未通過 DMARC。他建議寄送端補上對齊的 DKIM 或 MAIL FROM，並區分來源驗證與郵件內容是否可信。",
+      "original_text": "真正硬核的文章來了",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-24T13:13:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/66751929068499269?_nc_oc=AdotfRq3NVFWoF6RxzzI5jOxFkYYg3Ja-5EQx-qM1JqafS7fQ8lgArGRfxqJ6affbY9WAXz9gZOhMGY7Qvd_B6j6&url=https%3A%2F%2Fstwillblogassets.blob.core.windows.net%2Ffiles%2Fimages%2F2026%2F10%2Foutlook-unverified-sender-dmarc%2Fbanner.webp&fb_obo=1&utld=windows.net&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=HArV0Jqpgg4wPZ8jdE9_GQ&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EASCG9z4ItMxy54_SnERATYNUSuPmebBERJ_6z_r0g6jt&oe=6ADED2D7",
+        "alt": "TWNIC 通知信與 DMARC 網域對齊主題的原貼文連結預覽配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文連結預覽"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0WyPhR4rxzEDqkPT2o9ZeFPwwuvs2bRDvBmoPdJtJNaJvJg4NpUSRmBxYmE63PJu5l",
+          "published_at": "2026-10-24T13:13:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-3d32d3a5fb41b4c0e533118b",
+      "title": "Huli 談 Brotli 解碼漏洞的跨語言風險",
+      "summary": "Huli 說明 Node2Shell／HTTP2Shell 所涉及的 Brotli 解碼元件，指出共用底層函式庫可能讓多種語言的伺服器受到影響。他強調記憶體漏洞不易利用不代表沒有風險，並關注修正與套件版本更新之間的落差。",
+      "original_text": "最近以偏底層為目標的漏洞越來越多了，前兩天爆出的 Node2Shell 出問題的是 Brotli decoder，如果你沒聽過 Brotli，不知道有沒有聽過 Gzip？總之都是一種壓縮格式，server 回傳 response 時可以壓縮，然後外面送請求進去 server 時也可以先壓縮，server 就負責解壓縮。\n而這個 Brotli decoder 有漏洞，所以 server 在解壓縮時會引起一些 memory 問題，進而「可能」導致 RCE。\n之所以特別括弧，是因為這種 memory bug 要 exploit 相對困難（跟 web 漏洞相比），比如說你如果有個 path traversal，就是傳個路徑拿到檔案，簡單明瞭。\n但是 memory 相關 bug 可能你要發多個請求才能拿到足夠的資訊去 exploit，或是不同的作業系統/部署方法有不同的攻擊方式等等，相對難度較高，但不代表就不用修了，而且風險還是在的。不容易打，不代表打不進去，只是時間問題。\n而且呢，既然 Node2Shell 出問題的不是 node 本身而是 Brotli，那其他也有用到 Brotli 的語言呢？嘿沒錯，也中招了。資安公司 aikido 把這稱為 HTTP2Shell，不只 Node，其他程式語言（如 Python）也有這問題。有漏洞的是 Google Brotli 這個 library，有用到的都會出事。\n只要你的 server 會解壓縮 Brotli（而且底層是 Google Brotli），都會被這個漏洞影響，然後有機會被打出 RCE。另外，這漏洞其實今年 2 月就被修了，但那時只被認為是個 bug，沒意識到是個可以打的漏洞，所以沒有發新的 release，這兩天意識到原來可以打才趕快發新版，然後各個程式語言或框架才跟著更新。\n像這種共用的底層元件被打通常是最嚴重的，像之前 webp, heif 的 image parser 被打就是，這一波 Brotli 亦然，不知道以後會不會看到 tcp2shell 之類的（Windows 以前出現過的 CVE-2024-38063 不知道算不算，IPv6 的解析出問題）。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-24T11:37:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Huli 隨意聊",
+          "url": "https://www.facebook.com/huli.blog/posts/pfbid09xwA2feML4eXt6w3hFvw38VLykgmjTYrF1S1GNXTTir3VahV6eKBxxaSPNpPNo37l",
+          "published_at": "2026-10-24T11:37:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-e94cadd75c25972634c92611",
+      "title": "Eric 分享 Antigravity CLI 季節主題開關",
+      "summary": "Eric 分享 Antigravity CLI 的萬聖節主題，並指出可在 /config 開啟 Seasonal Theme。",
+      "original_text": "萬聖節主題的 Antigravity CLI！\n只要 `/config` 裡把 Seasonal Theme 打開就有",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-24T09:54:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.99422-6/862956815_3391527097697174_6385405477204588761_n.png?stp=dst-jpg_tt6&cstp=mx1141x426&ctp=s1141x426&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=-WhXDFrXBlsQ7kNvwFJ6eif&_nc_oc=AdpEhhS7atVy4l-sbC5prKn6MF0JzWU1QszuanvTwZiIWvaMlLNiV-MK6-XZC-4oOVWJW_Y1QxkR05XFqBJMh4sz&_nc_zt=14&_nc_ht=scontent.ftpe7-4.fna&_nc_gid=HArV0Jqpgg4wPZ8jdE9_GQ&_nc_ss=7b2a8&oh=00_AQMKj_cMeSfPSZSrbSOwwptZQ_o5bTvwNnZtGpAGxG6Hyw&oe=6AE2A969",
+        "alt": "Antigravity CLI 萬聖節主題的 Eric 原貼文配圖",
+        "credit": "Eric ShangKuan／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid0JrWsghPU1BpUymcqA6ZCZrMYiecsE66DeA3UZyT1VFFdf6TiSqDkpQ4Rhy5JPU9cl",
+          "published_at": "2026-10-24T09:54:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-44b43117fc8774ef18eabfc6",
+      "title": "Eric 分享 Agy CLI 萬聖節主題展示",
+      "summary": "Eric 分享 Agy CLI 的萬聖節介面主題。",
+      "original_text": "Agy CLI 的萬聖節主題",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-24T08:58:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-3.fna.fbcdn.net/emg1/v/t13/12710135039499870568?_nc_oc=AdoywsKzJ8jFfyA7o-jH-K7H_6yxZmwekiy5sHdwOUkhbZ0CIvHN0XRdn2OzT1TmEdliZ2sJJWuwhltYiIvcGW5r&url=https%3A%2F%2Fjf.x.com%2Fimages%2Fpost%2F2113720808405426370.png&fb_obo=1&utld=x.com&_nc_sid=c63717&_nc_ht=external.ftpe7-3.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=D34FOkKI-8dbUPkn0C8NJA&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_EAaCrawsrb-qkP3bKMfYm1MZettcgKV8pU17S-TYqws0g&oe=6ADEB8EA",
+        "alt": "Agy CLI 萬聖節主題的原貼文連結預覽配圖",
+        "credit": "Shengzhe／Eric ShangKuan Facebook 原貼文連結預覽"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid02ky9cu3GWHcwqwWSDTGLKCsXNogwcWEZPLRH1z8ab9smnmtosesTeuTvAH1XMRuDdl",
+          "published_at": "2026-10-24T08:58:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-1770c6894d51399cc003854a",
+      "title": "保哥整理 Kimi K3.1 Pro 的模型與代理能力",
+      "summary": "保哥介紹 Kimi K3.1 Pro 的 MoE 架構、百萬 Token 上下文與 Highspeed 版本，並轉述 Coding、3D 與金融研究的評測表現。貼文稱模型已可透過 Kimi 服務使用，完整權重預計 11 月 4 日釋出，並提及降低攻擊性資安能力的取捨。",
+      "original_text": "Kimi K3.1 Pro 正式登場 \n它是 K3.1 系列的第一款模型。\n也是目前能力最強的 3T 級開源權重模型。\n2.8T 的參數，走 MoE 架構，實際只動用 104B！\nContext 視窗支援一百萬個 Token。\n價格還比 Kimi K3 便宜。\n官方表示，它在 Coding、3D 創作與金融研究等 Agentic 能力上，都有明顯進步。\n同步推出的還有 Kimi K3.1 Pro Highspeed。\n速度約為標準版的兩到三倍，互動反應更即時。\n兩款模型今天就能在 Kimi.ai、Kimi Work、Kimi Code 與 Kimi API 使用。\n完整模型權重預計在 11 月 4 日釋出。\n看 Benchmark 表現，在 Terminal-Bench 4.0 拿下 65.7%。\n超過 GPT-6 Astra 的 58.2%，僅微幅落後 Claude Opus 5.5 的 66.4%。\n在自家的 Kimi Code Bench 3.0 Long-horizon 則是 61.2%。\n高於 K3 的 55.95%。\n3D 方面，BenchCAD 搭配工具可達 92.7%。\n接近 Claude Opus 5.5 的 96.2% 與 GPT-6 Astra 的 95.9%。\n金融方面，OfficeQA Pro v2 取得 64.4。\n內部測試中，Financial Modeling 比 K3 進步 7.2 分。\nFinancial Research 進步 11.6 分。\nBusiness Operation 約為 K3 的 4.2 倍。\n事實準確度同樣有改善。\nKimi Hallu Bench Hard 的 claim-level 幻覺率，從 23.4% 降到 8.3%。\n安全方面，官方在訓練階段移除了資安相關資料。\n在 xdev-bench-hard 上，未做控管的版本 pass@3 為 90.5%。\n最終版本則降到 81.0%。\n官方說明，這是刻意壓低攻擊性資安能力，同時保留一般 Coding 實力。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-24T08:31:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.99422-6/861834144_4631520763758200_6469577101537230710_n.png?stp=dst-jpg_tt6&cstp=mx993x452&ctp=s993x452&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=sDvnFWDSpTAQ7kNvwFWwdpd&_nc_oc=AdpdG2d00nu1syFHYSw06K6E59CR9EYia3RKRPGjQ7wCgYsMpxFt2Qno0166et8XijPgZvFESMOp1WLqaFCl3EYY&_nc_zt=14&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=D34FOkKI-8dbUPkn0C8NJA&_nc_ss=7b2a8&oh=00_AQNNiCR2zvPcGOWf-LbcRAWGui2KNKUd-ohfGZHEqkQQlA&oe=6AE2A52B",
+        "alt": "Kimi K3.1 Pro 模型與評測主題的保哥原貼文配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0gTNdnU4tRFZV3pD8qESgXrWMjKg99b1KAEKNAieWcEosvUMWudq8o66UKH5buWcZl",
+          "published_at": "2026-10-24T08:31:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-24T16:15:27.615Z",
+      "captured": 11,
+      "included": 8,
+      "excluded": 3,
+      "notes": []
+    }
+  }
+}
