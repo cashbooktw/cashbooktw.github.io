@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "date": "2026-10-24",
-  "generated_at": "2026-10-24T01:34:25.711442+00:00",
+  "date": "2026-10-25",
+  "generated_at": "2026-10-25T01:09:02.934365+00:00",
   "quotes": {
     "tw": {
       "date": "2026-10-22",
@@ -19,8 +19,8 @@
     },
     "nasdaq": {
       "date": "2026-10-23",
-      "close": 25955.3418,
-      "change": -53.5176,
+      "close": 25955.3398,
+      "change": -53.5195,
       "change_pct": -0.2058,
       "source": "Yahoo Finance"
     },
@@ -35,11 +35,9 @@
   "fx": {
     "base": "USD",
     "quote": "TWD",
-    "date": "2026-10-22",
-    "rate": 32.493,
+    "date": "2026-10-25",
+    "rate": 32.539,
     "source": "Frankfurter"
   },
-  "errors": {
-    "fx": "ValueError: invalid FX rate or date"
-  }
+  "errors": {}
 }
