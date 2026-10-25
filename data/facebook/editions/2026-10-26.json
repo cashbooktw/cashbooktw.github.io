@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26T00:21:39+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-26 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 11 則，入選 10 則，排除 1 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-20097e9db0b6a4d8b0e0f5e7",
+      "title": "保哥談 TOML 正體中文翻譯貢獻遭拒",
+      "summary": "保哥表示，自己使用 AI 輔助並全文校對的 TOML 正體中文翻譯，因維護者要求人工翻譯而未獲接受，已另行發布到個人網站。貼文呈現他對開源專案限制 AI 輔助貢獻的看法。",
+      "original_text": "我過去貢獻過數百個 Repo 的正體中文資源，從來沒有像這次一樣因為用 AI 寫 PR 而被歧視，作者還說我用 AI 自動翻譯，還要求我只能用「人工翻譯」，真的是很荒謬。\n我很冤枉，我的正體中文翻譯一向高品質，不是隨便下兩句提示詞就能完成的，而且我都有全文校對過！\n我把翻譯的網站發佈到我自己的網站了，網址放留言處。對 TOML 有興趣可以去看看，我大概被作者列為黑名單，要貢獻到 upstream 大概是不可能了。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-25T23:25:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/860487218_1842796386859665_5775509895620592074_n.png?stp=dst-jpg_tt6&cstp=mx2048x1147&ctp=s2048x1147&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=JJUX0tJUf5UQ7kNvwF-U6n2&_nc_oc=AdqgTxXNUnrFbA9X0cDw1GIyo-4YwFZAnQbSg7QvB3Snpz7CdaDtXOUB3JlKWiT8v3JmlJBTdfvmW3lY8s5MM_Qh&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=cfWUUh9FZO5XRR-ERUdeSA&_nc_ss=7b2a8&oh=00_AQM2fOvJo3RaVNaVP7oUGLQ7lhBbdlj8A7TiuFmPsIQGkw&oe=6AE3F890",
+        "alt": "TOML 正體中文翻譯貢獻貼文的原始配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02o5aGTTxxqBE39QQVqua6z12dNafjYyRtDTWb2g424wg2pL8g27sDushU5WqYtWgml",
+          "published_at": "2026-10-25T23:25:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-9d978b738f8ca1189e4fa714",
+      "title": "保哥介紹 Nanbeige4.3-33B 的 Agent 定位與自評結果",
+      "summary": "保哥介紹 Nanbeige4.3-33B，以大型教師模型帶動後續小模型的 Agent 能力，並整理其開放權重、512K 上下文與工具呼叫設定。他提醒評測屬官方自評，部分項目未領先且測試條件特殊，部署仍須用自身任務驗證。",
+      "original_text": "最近有個 Nanbeige4.3-33B 開源，Nanbeige 團隊釋出了 Nanbeige4.3-33B，採用 Apache-2.0 授權，權重直接公開在 Hugging Face。\n他們主打 30B 級別的 Agent 能力，評測能力皆勝過 Qwen3.8-27B，本來想說終於有個純血的開源模型能打了，結果團隊來自中國求職招聘平台 BOSS直聘 (看準科技) 旗下的大型語言模型研究團隊，因此政府專案還是不能用！ \n它不是一個通用聊天模型，而是整個 Nanbeige4.3 系列的「旗艦教師模型」。\n官方說法：先做一個能力夠強的大模型，再把 Agent 能力蒸餾到之後的小模型上，例如 Nanbeige4.3-3B。\n換句話說，33B 是先鋒，後面的小模型才是量產主力。\n這個定位也決定了它的強項：複雜 coding 與專業協作任務。\n官方在約 30B 參數級別挑了三款對照模型，分別是 Qwen3.8-27B、Muse-Glimmer-30B 與 Gemma4-31B。\n所有模型都在最高 thinking effort 下評測，推論超參數與 harness 保持一致。\nAgentic Coding 是差距最明顯的一塊。\nTerminal-Bench 2.1 拿到 80.9，對照組分別是 73.0、61.8、47.2。\nDeepSWE 拿到 65.5，第二名是 42.5。\nSWE-Atlas-QnA 拿到 50.8，第二名是 41.9。\n不過 SWE-Bench Pro 這一項它不是第一，60.3 略低於 Qwen3.8-27B 的 61.7，官方也照實列出來。\nAgentic Cowork 的表現同樣突出。\nJobBench 44.8，第二名 34.5。\nAutomation Bench 54.2，第二名 38.3。\nYC-bench 的成績是 1,025,437 美元，第二名約 64 萬美元。\n官方補充，在 JobBench 涵蓋的 35 種職業裡，它在多數職業上都勝過 baseline。\n推理能力則是互有勝負。\nGPQA Diamond 89.5，小輸 Gemma4-31B 的 91.3。\nAIME 2026 95.2 與 AA-LCR 84.0 則是同級最高。\n工程面上，它支援最高 524,288 tokens 的 context，也就是 512K。\n推論框架方面，Transformers、SGLang、vLLM 都有官方範例。\nSGLang 與 vLLM 的啟動參數可以直接沿用 qwen3 的 reasoning parser 與 qwen3_coder 的 tool-call parser。\nChat template 有三個關鍵開關。\nenable_thinking 控制是否產生推理內容，預設開啟。\npreserve_thinking 控制多輪對話中是否保留前幾輪的推理，一般聊天建議關閉，多輪工具呼叫與 code agent 建議開啟。\n傳入 tools 就會啟用工具範本，官方建議 tool_call_format 用 xml，json 則保留相容性。\n推論參數官方也給了建議值。\nAgent 與工具任務用 temperature 1.0、top_p 0.95、max new tokens 65,536。\n推理與聊天任務用 temperature 0.6、top_p 0.95、max new tokens 262,144。\n需要留意的是，這些分數來自官方自評，且部分 benchmark 有特殊設定，例如 YC-bench 只保留最近 10 輪對話，Toolathlon-Verified 不限制單次請求的 max_tokens。\n實際部署前，建議先在自己的任務上跑一輪。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-25T23:15:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/864170750_2979979119010007_7368192652701634064_n.png?stp=dst-jpg_tt6&cstp=mx2800x1310&ctp=s2800x1310&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=GxHHrxEnkwYQ7kNvwGeMkmf&_nc_oc=AdoLWisLDdv7dCVHGIv0JZG4-W0HfLpSeBQrVtOvoBmYo9SjBwA_0bg4j0bzGZXxviHB0IaItpjUgQOljs-5OLIv&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=cfWUUh9FZO5XRR-ERUdeSA&_nc_ss=7b2a8&oh=00_AQMVWgTUiavqvg6d8n2iL07HTnF-bRiD3vNFcCzdTH9Tew&oe=6AE3F144",
+        "alt": "Nanbeige4.3-33B 介紹貼文的原始配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0dMccZM43zwWJ195tUER8CDEcNv6DozE9Dnvzr8cuoRvJTL8G3Eyaa5ZUXadYbWHPl",
+          "published_at": "2026-10-25T23:15:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-d6988cdb8a14286960c4ba7d",
+      "title": "Eric 預告四場 DevFest 分享 Agentic Era 開發者機會",
+      "summary": "Eric ShangKuan 預告以「開發者在 Agentic Era 的典範轉移與機會」為題，依序於 10/31 杭州、11/7 上海、11/14 高雄及 12/13 台北的 DevFest 與開發者交流。",
+      "original_text": "全球的 GDG 社群每年都會迎接年度開發者盛會, DevFest, 在大中華區也有約 30 場的 DevFest 遍地開花，今年我將在杭州、上海、高雄以及台北的 DevFest 與各位開發者交流『開發者在 Agentic Era 的典範轉移與機會』，我們見面聊！\n10/31 - 杭州: https://g.dev/events/devfest26-hangzhou\n11/7 - 上海: https://g.dev/events/devfest26-shanghai\n11/14 - 高雄: https://g.dev/events/devfest26-kaohsiung \n12/13 - 台北: https://g.dev/events/devfest26-taipei \n#GDG #DevFest #AgenticEra",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-25T21:50:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/859938109_4680565002212168_687380631050740110_n.png?stp=dst-jpg_tt6&cstp=mx960x540&ctp=s960x540&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aNpNfXztEM0Q7kNvwHsXfye&_nc_oc=AdpI6OSPpnLzwC89TRhiCD17OQ0K43YilQJba0kzP9wxp33M-Iluda-5fBz_gxzUmSjbKt9T8K7ZikBd2jsic5EP&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=cfWUUh9FZO5XRR-ERUdeSA&_nc_ss=7b2a8&oh=00_AQMgMx5e3PgeUlGiB2HRsuuvpyrXHKGRfY18Vs1XLtN6XQ&oe=6AE418AF",
+        "alt": "DevFest 演講預告貼文的原始配圖",
+        "credit": "Eric ShangKuan／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid02T2vYZ6hPFGQbs7kvP6b4Q2DfPz5c136MYX4eLcyaBdicNkgBSdZ2nZAM4Aam8vhTl",
+          "published_at": "2026-10-25T21:50:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-380ee486b7dacb6dcdb54e43",
+      "title": "AI 輔助貢獻遭拒後，保哥重新提出 Issue",
+      "summary": "保哥表示，先前使用 Claude Code 協助撰寫的 PR 遭關閉後，已重新提交經自己審閱的 AI 輔助 Issue。他主張應看內容品質，並質疑為何翻譯貢獻必須限定人工完成。",
+      "original_text": "我昨天發一個 PR 被人家拒絕了，原因是因為我用 Claude Code 幫忙寫內容，內容太 AI，導致對方看也不看，審也不審，直接關閉！\n今天我重發 Issue 了，一樣是用 AI 寫的，只是看起來比較像「人」寫得，我也都有審過，我看他會不會關我的 Issue \n我真的認為 AI 只是工具，為什麼要跟「工具」過不去，一定要人工翻譯的理由到底在哪裡？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-25T20:51:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/18069624264160010852?url=https%3A%2F%2Fopengraph.githubassets.com%2F28b6986751da8cda1e3bfda0b3f5f5b32f810cc506f2cb2e248b4ca21f6bf5c7%2Ftoml-lang%2Ftoml.io%2Fissues%2F99&fb_obo=1&utld=githubassets.com&_nc_sid=f93bbc&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=cfWUUh9FZO5XRR-ERUdeSA&_nc_zt=3&oh=06_Q3_EAS7MsCgNRC8ekMNArPELUIXJDjfoFpI-PpngAlahT_4C&oe=6AE0225C",
+        "alt": "AI 輔助翻譯貢獻 Issue 的連結預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文；連結預覽：toml-lang/toml.io（GitHub）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid036u2hNYfMqF4aKEmAc3tRCXEY3DSy8z4q5WUXmTPRy8wzmqZvJZ9r2tWKpd5gvuSEl",
+          "published_at": "2026-10-25T20:51:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-1bd41cc267688f098cc73489",
+      "title": "gpu-unlock：保哥整理 RTX 30 系列運算解鎖與限制",
+      "summary": "保哥介紹 Linux 開源專案 gpu-unlock，稱其在驅動載入前調整 Ampere 顯示卡的 FP16／BF16 運算限制，可加速矩陣運算密集的 LLM prefill 與圖片生成；遊戲和受記憶體頻寬限制的文字生成則不會同幅受益。貼文列舉的效能數字屬作者轉述，尚未獨立測試。",
+      "original_text": "最近看到一個很有意思的開源專案叫 gpu-unlock \n它可以把 RTX 30 系列顯示卡被 NVIDIA 鎖住一半的 AI 運算效能，完整解放出來。\n這不是超頻。\n也不是刷 BIOS。\n更不是修改驅動程式。\nNVIDIA 長期以來都有一個市場區隔的做法。\n同樣一顆晶片。\n賣給一般玩家的時候，就把 FP16 和 BF16 的運算速率鎖成一半。\n賣給專業用戶的時候，才給你完整的速度。\n硬體明明跑得到，只是韌體不讓你跑。\n這個專案找到的方法，是在顯示卡的開機韌體裡，利用一個已知的漏洞，先把保護暫存器的寫入限制打開。\n接著再把控制運算速率的設定，改成專業卡使用的全速模式。\n整個過程發生在 Linux 載入 NVIDIA 驅動程式之前。\n所以驅動程式本身完全不用修改。\n以後更新驅動，也不用重新打補丁。\n實測數字相當驚人。\nRTX 3090 Ti 的 BF16 運算，從 87 TFLOPS 提升到 157 TFLOPS。\n幾乎是翻倍的成長。\n受惠的主要是矩陣運算吃重的工作。\n像是本機跑大型語言模型的 prefill 階段。\n還有圖片生成這類擴散模型的運算。\n但也要老實說。\n打遊戲不會變快。\n跑 LLM 生成文字的時候，因為瓶頸在記憶體頻寬，速度也幾乎不會改變。\n目前這個專案只支援 Linux。\n也只支援 RTX 3060、3070、3080、3090 這一代的 Ampere 架構。\n我覺得還會漲價 \n我自己的 RTX 2070 是上一代的 Turing 架構。\n所以完全用不到。\n只能在旁邊看別人翻倍。\nTuring 這一代其實也有類似的鎖。\n社群已經有人提出支援請求。\n也有人做了獨立的嘗試。\n但目前還沒有穩定可用的成果。\n我們花錢買回家的硬體。\n效能上限竟然不是由晶片決定。\n而是由產品定位決定。\n同一顆晶片，貼上不同的名字，效能就可以差一倍。\n這次是開源社群把這道鎖打開了",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-25T17:40:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/5863633480381332996?url=https%3A%2F%2Fopengraph.githubassets.com%2F0958a8659fc6805bb790ec5d3eae50ce4784c211b1941527601591011045363b%2FZagitta%2Fgpu-unlock&fb_obo=1&utld=githubassets.com&_nc_sid=c63717&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=eKsCPX-y59SHtV3EGZ-ivw&_nc_zt=3&oh=06_Q3_EAciRGCj6rXBAg2i4sL8PtUM9nP8vDWwoUd1E02mlur9o&oe=6ADFF8B8",
+        "alt": "gpu-unlock GitHub 專案的連結預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文；連結預覽：Zagitta/gpu-unlock（GitHub）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0xxiAKXMUBnJGxGmq2v4od43wgt8kTkhFupUWJBoFf1RW9NoeF3Z6PbrGj9as8zjYl",
+          "published_at": "2026-10-25T17:40:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-bfe6b6b1f54add0dc6cc435c",
+      "title": "WebConf 2026 暖身小聚展開，講者與議程籌備中",
+      "summary": "高見龍分享 WebConf 2026 暖身小聚現況，展示今年的小燈箱禮物，並表示將近 40 位講者與議程仍在準備中，後續資訊見活動官網。",
+      "original_text": "WebConf 2026 暖身小聚正在進行中，今年的小禮物是可愛的小燈箱 \n將近 40 位講者 & 議程正在準備中，更多資訊請見 https://webconf.tw/",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-25T14:42:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t51.82787-15/867102225_18632791195029293_5288438335940344299_n.jpg?stp=dst-jpg_tt6&cstp=mx2160x2160&ctp=s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=l7lEkI-d4HkQ7kNvwGTWaWN&_nc_oc=AdokfKppUfiiA68xIxGFkoLQ3bRUrrniF8nAFSFY8gUdo3dGwaYunbOhPyzrQyzUGZ5ecwyPm8gyeohrZF1qpH9t&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=eKsCPX-y59SHtV3EGZ-ivw&_nc_ss=7b2a8&oh=00_AQOIKQipgcB-cdvDXsOSYuW4v1MDAxhrdxUv6-7Z1JkJ7A&oe=6AE40D33",
+        "alt": "WebConf 2026 暖身小聚貼文的原始照片",
+        "credit": "高見龍／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid0gEAFLR2MmDsqVAze8Pu8e9TWNqpjFSnWG1iGUpDa5w1sp6oHiVFQDpkqiGoNPQh8l",
+          "published_at": "2026-10-25T14:42:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-b30fc71ec1bc2f794ee3883d",
+      "title": "保哥談 HTTP2Shell：盤點 Brotli 解碼與內附副本",
+      "summary": "保哥整理其所稱 HTTP2Shell 的 Brotli 解碼漏洞，提醒風險取決於是否以受影響元件解碼外部可控資料。他特別指出 HTTP 客戶端的自動解壓縮、對外抓取功能及軟體內附解碼器容易漏查，建議連同容器與相依套件盤點。本文為其技術說明的摘要，漏洞細節與修補版本未另行查證。",
+      "original_text": "HTTP2Shell 來了。這次不是某個應用框架出錯，而是一顆藏在壓縮解碼器裡的未爆彈。\n這個漏洞編號是 CVE-2026-111497，屬於 Google Brotli 解碼器的越界寫入漏洞，CVSS 4.0 評分達 9.2 分。問題出在底層的 C 語言 libbrotli 函式庫，從 1.0.3 到 1.2.0 版全部中彈。\n只要你的程式會解壓縮外部可控的 Brotli 資料，就可能面臨程序崩潰、記憶體洩漏，甚至遠端程式碼執行的風險。\n這件事在 2026 年 10 月 21 日由 Node.js 官方修補並公開時，社群最初稱它為 Node2Shell。但研究人員追查後發現，問題根源在最底層的依賴裡。\n影響範圍跨及 Python、Bun、curl、.NET 與 PHP 等所有封裝或呼叫該版本 Brotli 並處理 HTTP 壓縮流量的生態系，因此改稱為 HTTP2Shell。\n瀏覽器、伺服器、HTTP client，只要看到 Content-Encoding: br 就會自動解碼，根本不用你寫任何一行程式。\n第一個被點名的是 Node.js。\n當然，Node.js 執行環境本身不會平白無故自動解壓縮 Brotli 資料，並非所有用戶都會直接受創。你的服務必須同時滿足「使用含漏洞的 Node.js 版本」以及「程式碼或相依套件接觸並解碼了外部傳入的 Brotli 資料」兩個條件才會觸發漏洞。\n目前 Node.js 22.23.4、24.22.1、26.12.1 已經修好，請直接升級。如果你還在用 Node.js 20 或更舊的版本，官方明確表示不提供修補，只能自己想辦法搬遷。\n至於 Bun 的使用者，請升到 1.4.4。Python 這邊，PyPI 上的 Brotli 要升到 1.2.1，brotlicffi 則是 1.2.1.0。\n這裡有三個很容易被忽略的盲點。\n第一個陷阱，是很多人以為自己沒用 Brotli，所以不干自己的事。\n但 Python 的 requests、urllib3、aiohttp、httpx，只要環境裡裝了 Brotli 套件，就會自動宣告支援並解碼。就算你的程式碼從頭到尾沒有 import 也一樣。\n第二個容易漏掉的，是對外的請求。\nNode.js 內建的 fetch() 會自動解開 Brotli 回應，Python 的 HTTP client 也是如此。這代表 WAF 完全看不到，因為流量是你自己發出去的。\n任何網址由外部決定的功能，都是潛在的投遞通道。Webhook、連結預覽、從網址匯入、爬蟲、圖片代理，還有會自己上網的 AI Agent，全部要重新檢視。\n第三個區塊，是那些自己帶了一份解碼器的專案。\n像是 .NET、PHP、Ruby、DuckDB、ClickHouse、Arrow、MuPDF、7-Zip 這些專案，當時仍被列為未修補。重點是，更新作業系統套件並不會修好它們，因為它們用的是自己包進去的那一份。盤點的時候不能只看系統版本，要一路追到 binary 裡。\n那要怎麼排處理的優先順序？\n第一步，盤點所有 Brotli 相關元件的版本，包含容器映像與 vendored 副本。\n第二步，找出所有會自動解壓縮的路徑，伺服器端的請求解析與客戶端的回應處理都要算進去。\n第三步，優先處理對外抓取與 SSRF 類的功能，因為那是防禦最薄的一層。\n目前還沒有確認的實際攻擊，也還沒進 CISA KEV。但研究團隊已經在實驗室裡，對官方 Node.js 版本成功執行任意程式碼。\n沒有災情，不代表沒有風險。現在開始盤點，還來得及。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-25T14:30:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/4485077849718299408?url=https%3A%2F%2Fstrobes.co%2Fapi%2Fmedia%2Ffile%2Fhttp2shell-brotli-rce-hero-isometric.webp%2F&fb_obo=1&utld=strobes.co&_nc_sid=c63717&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=eKsCPX-y59SHtV3EGZ-ivw&_nc_zt=3&oh=06_Q3_EAVgAXHKREw98RvvQKnd4gHYuPlcOXsGUK64ZEIQJAII2&oe=6ADFFA09",
+        "alt": "HTTP2Shell 技術文章的連結預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文；連結預覽：Strobes"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0uu2SVnQ9j7ZjhyHcYNVtFLkghuNW3pyPFfFyo7huL3pGpdTHz1azEpsQw2EbfHV5l",
+          "published_at": "2026-10-25T14:30:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-f9f664122560901fafbecbae",
+      "title": "保哥將郵件驗證文章改編為影音教學",
+      "summary": "保哥分享把前一日郵件驗證文章改成影音說明的嘗試，以 TWNIC 通知信與 Outlook「未驗證」提示為題，介紹 SPF、DKIM、DMARC 對齊的教學方向。",
+      "original_text": "用好懂的影音互動教學，把硬核的技術講到你覺得都懂了！\n(但其實還是不懂) \n大家看看我如何把昨天的硬核文章改成影片說明的感覺：\nOutlook 說「未驗證」是釣魚信嗎？用一封 TWNIC 通知信看懂 SPF、DKIM、DMARC 對齊",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-25T14:10:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t15.5256-10/866063869_1457340606487571_3946031667297524241_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=107&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=FXB4s6FqcyYQ7kNvwEHZ0M3&_nc_oc=Adr4tSWT3WNjcLJpiBU4djd__RsPt8p13mvnSBJZcDb2BXLBtZO3LAcXUSeTCMKT4JkNBFwt-GqyX3XWn4_qVVLq&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=eKsCPX-y59SHtV3EGZ-ivw&_nc_ss=7b2a8&oh=00_AQME4TJWZhacw8-IggQohIdrE85FA5Re40iAdlIMjSZ1DA&oe=6AE3F985",
+        "alt": "Outlook 郵件驗證影音教學的原始預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/reel/2160360084855070",
+          "published_at": "2026-10-25T14:10:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-347554de63078a92a48673ce",
+      "title": "用英打遊戲練鍵位：保哥分享自製教學工具",
+      "summary": "保哥為喜歡敲鍵盤的女兒設計英打遊戲，觀察她透過反覆練習記住按鍵位置，並主動追求更高正確率；貼文分享以遊戲提升打字學習動機的個人經驗。",
+      "original_text": "我的小三女最近迷上電腦打字，我叫他用 ZeroType 語音輸入，他就是不要，硬是要敲鍵盤，打得又慢！\n我昨天設計了一個英打遊戲給她，她愛死了，一個早上就把按鍵位置熟背。看她玩真的很有趣，最常聽到她說「煩捏，又錯了！」然後再練一次，練到正確率 100% 才罷手，然後握拳喊一句：「耶斯！」\n這真的是在遊戲中開心的學習成長，太讚了！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-25T12:48:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/860071557_3887327391418466_8135353860900281929_n.png?stp=dst-jpg_tt6&cstp=mx2048x1536&ctp=p960x960&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=For_KwLPmzkQ7kNvwGZzLFw&_nc_oc=AdoXR-Y0V8FhWAxDk4tdsjTLXjFgE5oi2KswNuv1y10aIMLcc-P183GibMRNnepnQlLF2AYXPXbEI3U5zJuOG0kR&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=eKsCPX-y59SHtV3EGZ-ivw&_nc_ss=7b2a8&oh=00_AQNkGh3t7J64MSL9vNXAdODVyrWdz8eLI3u7MxWnyhEF5w&oe=6AE41456",
+        "alt": "英打學習遊戲貼文的原始配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0xEtAhuHncv9WuGGbdqXiFUfSBSrGXnXUnLLRdJgYHYLvdFcq9snjz9oAYyUREfX4l",
+          "published_at": "2026-10-25T12:48:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-054b5d8123359e5b9dae4893",
+      "title": "Ondine 輕量繪圖：保哥分享 Mermaid 文件整合",
+      "summary": "保哥介紹以 Rust 實作、讀取 Mermaid 語法並輸出 SVG 的 Ondine，主打縮短圖表編譯時間、降低文件頁面的執行負擔。他也表示已將其整合進 Paste to Markdown；支援類型與速度數字仍屬貼文轉述的官方資料。",
+      "original_text": "Mermaid 這幾年幾乎成了團隊畫流程圖與架構圖的共同語言。\n它用純文字描述圖形，好寫、好改，也方便放進版本控制。\n但當專案裡的圖表越長越多，編譯速度和頁面體積就會慢慢變成負擔。\nOndine 就是針對這件事提出的解法。\n它是一個用 Rust 寫成的輕量繪圖引擎，直接讀取 Mermaid 語法。\n官方資料指出，目前支援 33 種圖表類型。\n多數圖表可以在 1 毫秒內完成編譯，快到幾乎感覺不到等待。\n更關鍵的是它的輸出方式。\n頁面只需要載入 SVG 和一段 210 bytes 的 runtime，不必在瀏覽器端重新計算圖形。\n對文件站、內容網站，或圖表數量龐大的專案來說，這個差別相當明顯。\n執行環境也很有彈性。\nVite、Node、命令列工具、瀏覽器，以及 Cloudflare Workers，都能執行。\n也就是說，同一份圖表原始碼，可以同時用在建置流程與即時渲染。\n如果你原本就在用 Mermaid，遷移成本其實不高。\n因為它讀的是同一份原始碼，既有的檔案多半可以直接沿用。\n對已經累積大量 .mmd 檔案的團隊而言，這一點特別實際。\n想先看看效果，官方網站有 Playground，貼上語法就能試。\n想正式導入，可以從 Getting Started 開始，先編譯第一張圖表。\n需要放進 README 或靜態頁面，也有對應的圖片輸出與外掛說明。\n圖表從來不只是輔助說明，它往往是最能降低溝通成本的那一部分。\n讓圖表變得更快、更輕，正是 Ondine 想解決的問題。\n而我的 Paste to Markdown 剛整合了這個工具，超帥的，真的快！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-25T08:16:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/589043103144525690?url=https%3A%2F%2Fondine.sh%2Fog.png&fb_obo=1&utld=ondine.sh&_nc_sid=c63717&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=vS6k3uxHKSfiTzQkQeZt0Q&_nc_zt=3&oh=06_Q3_EAdYXbNdHlrs6D5ZzkV0ySUBXTEo-FQdC434XjN8cJ4Yh&oe=6ADFFD4B",
+        "alt": "Ondine Mermaid 繪圖工具的連結預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文；連結預覽：Ondine"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid037hfPq5w8F5jwHRnonLQ5mGrjopCJGsWGucDgeTRTAwCEgShgBDpGPBnma1gNqCyDl",
+          "published_at": "2026-10-25T08:16:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-25T16:21:37.437Z",
+      "captured": 11,
+      "included": 10,
+      "excluded": 1,
+      "notes": []
+    }
+  }
+}
