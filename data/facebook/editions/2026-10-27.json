@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-27",
+  "generated_at": "2026-10-27T00:12:47+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-27 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 10 則，入選 7 則，排除 3 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-63e44e3ef25e1348ab34989e",
+      "title": "保哥談 AI 標籤與開源貢獻者的熱情",
+      "summary": "保哥回應 GitHub 內容被貼上 AI 生成標籤的評論，回顧自己在 AI 出現前的開源累積。他認為無償貢獻不必說服所有人，遇到不被理解的情況，調整心態或離開也能保護持續分享的熱情。",
+      "original_text": "今天看到一則留言，說我的 GitHub Profile 看起來全是 AI 生成的，難怪會被當成 Vibe Coder。\n我對少數網友的冷嘲熱諷沒什麼感覺，只是這兩天被 TOML 專案的維護者激到，心裡多少還是受了一點影響。\n這十幾二十年來，我在開源社群的貢獻不敢說很大。多半是在行有餘力、時間和金錢有餘裕的時候，隨手做點東西，公開出來給大家參考罷了。\n寫文章這件事，我已經持續寫了 19 年。\n至於 GitHub 上的開源專案，在還沒有 AI 的年代，我就已經累積了八、九百個。\n你可以說上面大部分都是垃圾，這點我也承認。但至少在寫出來的那個當下，它們都有一定程度的參考價值。就算現在回頭看覺得是垃圾，在當時也實實在在幫到了我。\n不認識我的人，或是只看 GitHub 表面就對我產生誤解，我完全可以體諒。\n別人怎麼看，我其實沒那麼在乎。我知道自己在做對的事，這就夠了。\n發這篇文不是來討拍的，大家不用在底下留言說什麼保哥加油，我不太需要這種鼓勵。想學東西，其實來報名我的課程就好！\n我反而想跟那些同樣對開源社群抱有熱情的朋友說幾句話。\n我們之所以願意做這些無償的貢獻，靠的是內心那股強大的驅動力。做這些事，本質上就不會期待追求回報，有時候還是會期待得到一丁點的尊重，如此而已。\n但是，你的好心，有時候不見得別人會領情。此時認清自己的定位，瞭解這個世界的多元性，不是每個人都跟你站在相同的維度思考事情，學會把心態放平，甚至直接轉身離開，反而是保護自己熱情的最好方式。\n我們沒有義務去說服所有人，更不需要拿別人的偏見來懲罰自己。\n我們可以把自己的生活過得很好，重點是做這些事的時候，我們自己開不開心。這比較重要。\n如果你在參與開源的路上，遇到了負面情緒或惡意攻擊，真的不用氣餒。\n只要你相信自己正在做對的事，那就夠了。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-26T21:09:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0MC3ecgHynjs19RVf6oL1BNG6b4FJcZQn25SKcYNNMYp5pshqJJGNsgpoCfyZ65cJl",
+          "published_at": "2026-10-26T21:09:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-da6a85b839fc58bbe17980e6",
+      "title": "以 winapp CLI 製作 WinUI 3 貪食蛇",
+      "summary": "保哥分享使用 winapp CLI 開發 WinUI 3 視窗程式的初體驗，完成 Windows 原生貪食蛇遊戲，並表示自包含部署的可執行檔大小為 36.6 MB，整體開發體驗良好。",
+      "original_text": "我今天在練習用 winapp CLI 開發 WinUI 3 視窗程式，第一個作品是一份 Windows 原生的「貪食蛇」遊戲。 \n整體開發體驗極佳，最終成品也相當不錯，整個應用程式用 SCD (自包含部署) 打包的可執行檔僅 36.6 MB 而已！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-26T20:56:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/14953054633607296793?url=https%3A%2F%2Fopengraph.githubassets.com%2Ff265268d7fbf5dce261ee4ab41c2dd4d643048e7da6545057aa72a04a4152a24%2Fdoggy8088%2FWinSnake&fb_obo=1&utld=githubassets.com&_nc_sid=f93bbc&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=lV2Ut3cOyrLd1RFeAsuFXg&_nc_zt=3&oh=06_Q3_EAd1Bm8zS6bJowigCsIwdSvQOBSWyoveKniexGbpWASrZ&oe=6AE1553F",
+        "alt": "WinSnake Windows 貪食蛇專案的連結預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文；連結預覽：doggy8088/WinSnake（GitHub）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0tAE33C4NXFs4sJMbrFYNLrVrGfp9dmdM7Jzvm8ADPJfokxbd4QFy4nopvf7MxVvfl",
+          "published_at": "2026-10-26T20:56:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-a21a5ea8c487ccb1d744d7f1",
+      "title": "卡斯伯分享 Claude Code 小遊戲開發流程",
+      "summary": "卡斯伯建議先具體描述玩法並用可檢查的原型對齊需求，再以 Git Worktree 隔離多個遊戲的平行開發。素材方面，他使用 ChatGPT 產圖，語音與音效則優先利用本機算力。",
+      "original_text": "最近申請什麼東西都不太順利 \n所以反而花了很多時間在做小遊戲。\n分享一下我最近開發小遊戲的幾個心得\n（以 Claude Code 為主）：\n 1. 先描述遊戲玩法，跟 AI 對齊認知\n比如說，我想做一個類似特斯拉飛天車的遊戲。\n我會先用列點的方式，\n盡可能描述遊戲的玩法、規則與細節，\n讓 AI 理解我想做什麼。\n接著請 AI 進一步研究，\n並產出一份 Artifact 讓我驗證。\n這份 Artifact 可能是設計稿、\n原始檔案，也可能是互動型的原型。\n重點是能夠讓我跟 AI 對齊認知，\n確認雙方理解的是同一件事。\n過程中 AI 也會提出一些疑問，\n我再根據需求逐一回覆。\n 2. 大量使用 Git Worktree 平行開發\n現在 AI 的開發速度，\n比以前快上非常多。\n所以我會建立大量的 Worktree，\n讓不同的開發工作可以同時進行。\n例如同時開發好幾款不同的小遊戲，\n每個遊戲都有自己的工作環境，\n彼此也不容易互相干擾。\n這種方式讓我可以一次推進多個專案，\n整體開發效率提升不少。\n 3. 用不同的 AI 工具產生遊戲素材（圖片、音檔）\n遊戲需要的圖片、語音與音效，\n現在大多可以透過 AI 產生。\n圖片方面，\n我會使用 ChatGPT 的圖片生成工具。\n至於語音檔、音效檔，\n我則會優先考慮使用本地端算力。\n其實許多單純的語音與音效生成，\n本地端的效能就已經很夠用了。\n相對於雲端服務來說，\n就基本上不需要額外費用\n.\n結果現在大部分的算力都燒給遊戲了，\n沒什麼在做正經事 \n> 圖片僅供參考...",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-26T19:05:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/863197926_1438006495132106_1002958127260678731_n.png?stp=dst-jpg_tt6&cstp=mx1536x1024&ctp=s1536x1024&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=h1gsgk6p5O0Q7kNvwEraHuq&_nc_oc=AdqFZYnSWNhnQskK0aof2PmWS05xP7zIo8sVvgZLVCXWGUlXeVNuG6SrrHPWNHiRnVdzMOKafcZWhFeJ0oqexJ7v&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=lV2Ut3cOyrLd1RFeAsuFXg&_nc_ss=7b2a8&oh=00_AQOsUzXaEi8utgn5yUOSp0wA5aAAA5ho7PukApPT1nPeHw&oe=6AE55076",
+        "alt": "Claude Code 小遊戲開發心得貼文的原始配圖",
+        "credit": "卡斯伯／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "卡斯伯",
+          "url": "https://www.facebook.com/WccCasper/posts/pfbid0262aPRNWkCMER3EoUDtpkEtvUBNXJZQD3SdHhMtnFVAdErLYFHy9eL5jvAEW8htKYl",
+          "published_at": "2026-10-26T19:05:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c43912dc1990ff306aa2a33f",
+      "title": "Windows GPU UNLOCK：實驗性 UEFI 解鎖與相容性限制",
+      "summary": "保哥分享 Windows GPU 解鎖專案。查閱其目前完整 README 後，可見這是透過 UEFI 解鎖並交接 Windows 的實驗性方案，成功紀錄限於特定顯示卡、主機板及設定組合；既有測量不能直接推論所有同型卡、遊戲效能或長期穩定性。",
+      "original_text": "Windows 版本的 GPU 解鎖漏洞也來報到了",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-26T16:23:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/3568504916482070079?url=https%3A%2F%2Fopengraph.githubassets.com%2F8e9fcf5c9e291995e219b0c8daa840f709b1802129a3ccc4a93bd4b65319f707%2Fimpacifist%2FWindows-GPU-UNLOCK&fb_obo=1&utld=githubassets.com&_nc_sid=c63717&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=zuG9lMQd8Mn8b8e9ji5GRA&_nc_zt=3&oh=06_Q3_EAYayArqzcN9QF3zkXnbhWJkPKhDibfiaMh1wxjczdw2r&oe=6AE166C6",
+        "alt": "Windows GPU UNLOCK GitHub 專案的連結預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文；連結預覽：impacifist/Windows-GPU-UNLOCK（GitHub）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0pwatPbaS6oGCMLQqsm474euiyyFmw1F1nehTciyoWBEKXnGTVdapQ8UQ71dcJYyDl",
+          "published_at": "2026-10-26T16:23:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-a06ede73b3f3de3bf6ba8139",
+      "title": "保哥試聽 Dessa：語音自然度的主觀觀察",
+      "summary": "保哥分享試聽 Dessa 對話錄音的感受，認為遲疑、停頓與細微情緒轉折讓語音更像真人，並建議以盲聽比較。文中自然度與跨越圖靈測試的判斷屬其個人看法。",
+      "original_text": "平常開車的時候，我習慣用語音和 AI 對話。\n雖然問答很順暢，但你心裡始終有一道明確的界線，知道對面是一台沒有情緒的機器。語氣再怎麼平順，聽久了還是那種標準的數位感。\n今天抽空去聽了 Jack Dorsey 剛發布的語音模型 Dessa，原本的認知有點被打破了。\n官網上沒有太多複雜的技術說明，擺出來的全是一段段人類和模型的真實對話錄音。如果不盯著畫面看，單純只聽聲音，你很難分辨出哪一邊才是 AI。\n真正讓人心裡發毛的不是發音準不準，而是對話裡那些微小的情緒轉折、說話時的遲疑與停頓。那種呼吸與語氣的流動感，太像真人了。\n當語音模型連人類說話時最細微的情緒反應都能還原，所謂的圖靈測試，其實已經在不知不覺中被跨過去了。\n有興趣的人可以去聽聽看，建議直接盲聽。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-26T12:13:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t15.5256-10/868406172_1140097438439731_2654089787659189845_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=111&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=PRAGu2217JwQ7kNvwF4arez&_nc_oc=AdqBvCLi36GLNf77_uNVSOm8nh20HKrAR_mAMcUtkcUD9omxligquXI7UXcCJ3wp8ZUk5TMUCw48tKTmUEdNPfR5&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=zuG9lMQd8Mn8b8e9ji5GRA&_nc_ss=7b2a8&oh=00_AQPuIDzXKtpuGa41vlwyAhBkgfKhbGvE8sdWFF1qVQp6Mw&oe=6AE537EB",
+        "alt": "Dessa 語音模型心得影片的原始預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/reel/1438318087658722",
+          "published_at": "2026-10-26T12:13:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-4ba814df0a72bfa985dfd0ce",
+      "title": "保哥介紹 Agensh 的去中心化多 Agent 協作",
+      "summary": "保哥介紹 Microsoft 的 Agensh，描述 Agent 自行認領任務、驗證結果並合併進度的協作方式。他整理研究中擴大團隊後通過率提高的結果，以及 Gitea 共享工作區、Mattermost 通訊等設計；數字與規模效果為貼文轉述，未另行重現。",
+      "original_text": "Microsoft 開源了一個叫 Agensh 的專案 \n簡單說，它是一個可以同時調度上千個 AI agent 一起工作的框架。\n最特別的地方是，它沒有中央指揮官！(這點很特別)\n每個 agent 自己找任務、自己認領、自己驗證結果，然後把進度合併回團隊。\n這種做法叫自組織，聽起來很抽象，但實驗數據蠻有說服力。\n他們在 ProgramBench 最難的五個任務上測試。\n只派 1 個 agent，平均測試通過率是 19.31%。\n派到 128 個 agent，通過率變成 28.78%，相對提升大約 49%。\n而且人多的團隊，達到同樣水準的速度也更快。\n單看 Pandoc 這個任務更明顯。\n1 個 agent 是 33.89%。\n128 個 agent 是 50.94%。\n1,024 個 agent 是 55.06%。\n時間預算都一樣，只有六小時，而且完全沒有網路。\n換成最新的 GPT-6.1-sol 之後，數字又往上跳。\nPandoc 從 1 個 agent 的 56.19%，拉到 32 個 agent 的 79.59%，相對提升 41.64%。\n研究團隊還觀察到一件有趣的事。\n當團隊變大，agent 之間會自己長出協調流程、整合機制，甚至出現專門分工的角色。\n沒有人規定它們要這樣做，是規模大到一個程度後自然浮現的。\n這其實比通過率本身更值得注意。\n因為它暗示了一件事：組織能力可能不是設計出來的，而是規模撐出來的。\n整個專案在 2026 年 10 月 24 日開源，採 MIT 授權。\n釋出的內容包含 harness 本體、實驗啟動腳本，以及完整重現指南。\n想自己跑一次的話，用 Docker Compose 就能架起單節點團隊，也有單一 agent 的對照組。\n技術底層的部分，Gitea 負責共享工作區，Mattermost 負責訊息往來，共享 context 機制則改編自 DeLM。\n真的好特別啊！我要好好研究一下！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-26T10:08:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/15693020003932798050?url=https%3A%2F%2Fopengraph.githubassets.com%2F5e5bca55d8bdd9c707154f099a8dc776de000bb4c3dd7b761a0c2d7858bc5c17%2Fmicrosoft%2FAgensh&fb_obo=1&utld=githubassets.com&_nc_sid=c63717&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=zuG9lMQd8Mn8b8e9ji5GRA&_nc_zt=3&oh=06_Q3_EAVgb3qs6hS6oX_TpeMSJGYTIuHfcWs52fTDwd504Qwim&oe=6AE161CF",
+        "alt": "Agensh 多 Agent 框架 GitHub 專案的連結預覽圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文；連結預覽：microsoft/Agensh（GitHub）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid031ZCdnp7qtG5LGw9vguaUF3D3dzfYReKx7EntxKBrVmTpqy61dwThsq2Uuwbayj7Pl",
+          "published_at": "2026-10-26T10:08:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-f44d95244febadb9a97c67dd",
+      "title": "Bend：保哥整理以法則與證明檢查 AI 程式的構想",
+      "summary": "保哥介紹 Bend 以 laws 描述要求、proofs 檢查程式，並由編譯器支援平行執行的構想，讓 AI 修改後能反覆驗證。他同時提醒專案仍年輕、可能有 bug；效能數字屬官網資料轉述，不能將這項構想當成所有程式錯誤都已解決。",
+      "original_text": "Bend 是一門新的程式語言，它只主打一件事：用數學證明擋下 AI 寫錯的程式。\nhttps://bend-lang.org/\n官網開頭講說，在 post-AGI 的經濟裡，人類終究會停止讀寫程式碼，但我們仍然需要一種沒有歧義的方式，告訴正在建造世界的 AI 我們要什麼。\nBend 的答案有三層。用 laws 把意圖寫得比自然語言精確，用 proofs 驗證 AI 是否真的照做，再用一個夠快的編譯器把它跑起來。\n 速度\nBend 會編譯成原生機器碼。單核執行幾乎和 C 一樣快，同一個執行檔換到十六核或 GPU 上，最高可以快上一百倍。\n官網用生命遊戲做基準測試，測試機是 Apple M4 Max。TypeScript 18.8 秒，Lean 13.8 秒，C 6.78 秒。\nBend 單核 7.80 秒，十六核 0.65 秒，GPU 0.06 秒。\n 編譯\nBend 的型別檢查器本質上就是證明檢查器，和 Lean、Rocq 是同一個思路。差別在時間尺度。\n同樣是 3,200 個泛型實例化，Isabelle 和 Agda 都超過五分鐘，Lean 19.2 秒，Rocq 6.04 秒，Bend 0.38 秒。\n這個差距的意義很實際。AI agent 可以在每一次修改之後都跑一次檢查，而不是等到最後才發現整份程式碼站不住腳。\n 平行\nBend 沒有 thread，沒有 lock，也不需要自己寫 kernel。把工作切成兩半，它會自動攤到所有找得到的核心上，再把它們接回來。\n官網的示範是讓 pow2 跑在 4096 個 GPU 核心上。\n 防錯 (這也是整個專案最核心的主張)\n你怎麼信任自己從沒讀過的程式碼？答案是要求一份證明。\nLAWS.bend 是你宣告法則的地方。從那一刻起，任何 AI 都無法送出一行違反法則的程式。\n官網用一個遊戲示範。法則寫著：不可能獲勝。\n接著使用者提出新需求，請 AI 讓棋盤可以穿越邊界。\n沒有 LAWS.bend 的版本，法則被破壞，錯誤合併上線。有 LAWS.bend 的版本，法則維持不變，錯誤被擋下。\nAI 只能重寫，直到它築起一道牆，並且證明法則成立。合併一個 bug 在數學上不可能，因為那已經是一個定理。\n官網把這件事總結成一句話：LAWS.bend 就是有證明背書的 AGENTS.md，「不要犯錯」從此是被型別檢查的。\n最後是怎麼開始。\n安裝只有一行指令，把官網的 install.sh 接上 shell 即可。\n然後在你的 AGENTS.md 裡加上幾條規則。用 bend guide 學語法，用 LAWS.bend 守住重要規則，提交前跑 bend PROOF.bend，可以平行的地方就平行。\n之後只要跟 agent 說一句「use Bend」。\n需要誠實補充的是，Bend 還很年輕。官網自己寫著，預期會有 bug，遇到問題請回報。目前它在後端、Linux 與 macOS 上表現最好，官網頁尾顯示的版本是 v2.0.39。\n如果你正用 AI 大量產生程式碼，卻幾乎不讀那些程式碼，Bend 想處理的正是這個問題。它不打算讓你讀得更快，而是讓錯誤根本進不來。\n#理想很豐滿 #現實很骨感",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-26T08:02:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02pBTqhjQRSo2YBP4f1nnhxWabVk6SqL2QcjxrWxTcMYy6XCsWPvUBf9Gtnkrv4QCyl",
+          "published_at": "2026-10-26T08:02:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-26T16:12:45.462Z",
+      "captured": 10,
+      "included": 7,
+      "excluded": 3,
+      "notes": []
+    }
+  }
+}
