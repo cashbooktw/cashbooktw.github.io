@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-30",
+  "generated_at": "2026-10-30T00:15:18+08:00",
+  "is_demo": false,
+  "edition_title": "2026-10-30 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 11 則，入選 7 則，排除 4 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-096eb18ad5343b7e88e43611",
+      "title": "Will 對 Mac Studio 頂規價格的反應",
+      "summary": "Will 關注 Mac Studio M5 Ultra 的頂規價格，對貼文所稱的 105 萬報價表達不滿。",
+      "original_text": "Mac Studio M5 Ultra\n頂規要價 105 萬\n 拳頭都硬了",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-29T23:10:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0JXqsqTAcHct86oMuj1qTcDS8ZUbPnmwScfoiBu5jyz1DGzfy9qz6jF35LDcSyqbQl",
+          "published_at": "2026-10-29T23:10:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-f3150af7ed786a1a9894ec4c",
+      "title": "duti 設定 macOS 預設開啟程式的識別碼陷阱",
+      "summary": "Will 分享 duti 可透過 bundle ID 指定 macOS 檔案的預設開啟程式，並提醒先用 osascript 查詢識別碼；傳入 CLI 路徑即使回報成功，也可能沒有完成預期設定。",
+      "original_text": "我覺得 macOS 的自動化技術真的做蠻好的，開始研究後才漸漸理解 macOS 的底層架構！\nduti 能用一行指令綁定 macOS 檔案預設開啟程式，但它只認 bundle ID，須先用 osascript 查出；傳入 CLI 路徑也會回傳成功，容易誤判。\n今天這篇文章就來介紹 duti 這套工具",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-29T22:17:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/8996862268950941423?_nc_oc=AdoAgqPHqcKe8xMZP4tTN50REUBwl8FQ1cE0Vn9hIwA4ZXZacCvtWkBphVV9AUjonM4Vb21cGDnWfn_pEgcH1Eex&url=https%3A%2F%2Fstwillblogassets.blob.core.windows.net%2Ffiles%2Fimages%2F2026%2F10%2Fduti-default-apps%2Fbanner.webp&fb_obo=1&utld=windows.net&_nc_sid=f93bbc&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=cNvko9muSlvLwU-HzpKD6w&_nc_zt=3&oh=06_Q3_EAWc9DOVxEVbcusi0vhO_y0hmpXakpwzwq0K3I70n5Tmz&oe=6AE56512",
+        "alt": "duti 預設開啟程式教學的原貼文配圖",
+        "credit": "The Will Will Web／Will 保哥的技術交流中心"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid028hf4BLSDgNTu3PkepoJ1gHQowSMq6Sbj8Zc42ihWpAKsg8B5cntjxY4zM3McGFmRl",
+          "published_at": "2026-10-29T22:17:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-07d73164d96c902d7194520b",
+      "title": "將 AI Agent 納入組織治理與主管責任",
+      "summary": "陶韻智主張把 AI Agent 視為可治理的虛擬員工，配置獨立身分、權限與人類主管，並由主管承擔責任、統籌人力與 token 預算。他認為管理者本身需要具備 AI 素養，不能只交由年輕員工學習。",
+      "original_text": "AI  Agent要給獨立工號，要有自己的權限，要有自己的直屬主管。誰負責？最終當然是他的直屬主管要負責，跟現行組織並無差異。token預算從哪兒出？考慮單位的成效交由主管配置 Human capital 與token capital的比例與總額。\n從這樣角度想，主管的AI fluency的要求是很高的，絕對不是交由種子或年輕人來學AI就能搞定的。\n這些必然是公司接下來使用AI的走向，\nAI在公司裡的預算思考，從 HR預算來考量比較好，而非IT預算，畢竟是產生知識工作的結果，跟人類員工做的事是一樣的。如果主管還是把AI Agent想成一個『工具』，高機會會用的不好。\n一年前我談這個，會被白眼。現在的趨勢越來越清楚了，大家跟上！ALL IN AI! 打造 AI Native的公司組織。\n----------\n實際案例1：\nSK Telecom 已把內部 AI Agent 從「工具」升級為可被治理的「虛擬員工」：10 月 26 日發布首份 AI Governance Report，為符合標準的 Agent 配發員工編號、指定人類主管，並以 Agent OS 記錄運行、權限與 token 用量。\n---------\n實際案例2:\n其實這也不稀奇，去年 紐約梅隆銀行已讓數十個 AI Agent 擁有公司登入權限與人類主管，並計畫讓它們擁有自己的 email，以便主動回報、升級問題或與同事溝通。\n---------\n圖片抓自： EXO網站",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-29T21:13:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/867110494_1023817724061427_3051134381869519221_n.png?stp=dst-jpg_tt6&cstp=mx800x533&ctp=s800x533&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WURBg5jdhjsQ7kNvwHtbuNU&_nc_oc=Adpkb1QfngBG29mPna-cA2uINPWj2E56NJNl6HTSjLxqOK1ssSQidnQhG1l-cJgDmGG3xdRjFWivyK1cqTZ8uony&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=rEUtIMSoz7flZeSkx7GG1Q&_nc_ss=7b2a8&oh=00_AQReF8ePT8oeMNa6HSL1CDtSejiIzNFz2xfI-XyT19HLfg&oe=6AE9589D",
+        "alt": "陶韻智討論 AI Agent 組織治理的原貼文配圖",
+        "credit": "原貼文註明 EXO 網站；Facebook 分享：陶韻智"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid0sEPMcytnMcT62J9TbCnSXDpznNNVAQYQcPZSVMacBqLNcmL8aPzv37oMm841vYmal",
+          "published_at": "2026-10-29T21:13:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-3326a8fb747e3289e59e1345",
+      "title": "Will 對 Gemini 4 Carbon 的主觀評價",
+      "summary": "Will 對 Gemini 4 Carbon 表達強烈肯定。這則貼文是模型表現的主觀評論，未提供評測方法或效能數據。",
+      "original_text": "Gemini 4 Carbon (卡蹦) 真的很強很強，連 Elon Musk 都跳出來說讚！ \n然後就看到 GOOG 昨晚打九折，這時機真的太巧了",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-29T14:14:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/866669666_1847340282934008_6125788154680590648_n.png?stp=dst-jpg_tt6&cstp=mx2048x1724&ctp=s2048x1724&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aJCN4eksthQQ7kNvwE7N0yn&_nc_oc=AdoVbFG0RkAp05sLMEK5s4T2JxB_RAB1a8cJkbYNamUwxNFYbkzxMz85sqIJM4IX2IHSIy0BUeP4IH4neM2N97KH&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=rEUtIMSoz7flZeSkx7GG1Q&_nc_ss=7b2a8&oh=00_AQSYpCex3ailgR6N_QD4PEFLXMaj06s8F31D5iq8FzSL3w&oe=6AE92EFF",
+        "alt": "Will 評論 Gemini 4 Carbon 的原貼文配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0xuDbFDQBg5oPmUbESWHxALcvUcpgg6xrg53PXS4CnjoT5iAvT9xCuJTvLzCic3wWl",
+          "published_at": "2026-10-29T14:14:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c5243bba0fbb291ebfb34fa2",
+      "title": "Gemini 4 Carbon：資安與長時間代理任務",
+      "summary": "Will 分享 Gemini 4 Carbon，主打漏洞偵測、驗證、修補及長時間代理任務。Google 先向部分資安防禦人員開放，再逐步擴大；提示注入測試的零成功率只適用該評測，不能視為全面免疫攻擊。",
+      "original_text": "可愛龍不再可愛了！\nGoogle 又發布新模型了。這次叫做 Gemini 4 Carbon。\n距離上一代 Argon 才過兩個禮拜。節奏快到有點誇張。\n官方說它是目前最強的前沿模型。主打的不是聊天，是資安和長時程任務。\nArtificial Analysis 智慧指數 v5.0，Carbon 拿 59 分，排第一。\n找漏洞這塊，SEC-bench Pro 拿到 88.2%。驗證漏洞能不能真的打進去，ExploitGym 是 54.8%。修補漏洞，CWE-bench 是 71.0%。三項都是 SOTA (目前最高水平)。\n寫程式也有進步。WebDev Arena 拿到 1769 分，排第四，一次跳了 89 分。\n最嚇人的是內部測試。Carbon 生成安全程式碼的成功率，是 Argon 的兩倍以上。\nChrome 團隊還出來說，Carbon 產出的高品質修補，比另一家實驗室的大型模型好十倍以上。\n另一個賣點是耐久。它可以在大型專案裡面跑好幾天。卡住了也不放棄，會自己換路繼續找問題。\n安全方面也下了功夫。資料顯示它在 Terminal-Bench 幾乎不作弊，遭遇 prompt injection 的攻擊成功率是零。\n內部團隊觀察到，嚴重偏差的警示少了將近八成。沒證據的時候，它會直接說不知道，而不是硬掰。\n這點其實蠻重要的。會承認不知道的模型，比什麼都答得出來的模型可靠。\n發布方式也很保守。先給一部分資安防禦人員試用，再透過 Fairwind Program 慢慢擴大。開發者和一般使用者要再等等。\n價格倒是沒漲。輸入每百萬 token 兩美元，輸出十美元。快取輸入再打 95% OFF (是 0.5折)。\n講白一點，Google 這次的訊息很清楚。他們想把最強的模型先交給防守方，而不是先丟到消費市場。\n對一般使用者來說，短期內大概還用不到。但這個方向值得注意。\n因為接下來比的已經不是誰會聊天，是誰能真的把事情做完。\n可愛龍不再可愛，是因為它開始認真工作了。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-29T09:40:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/16223304823330760321?_nc_oc=Adp1jQN3aVcsJKuJkxzPhSfz3rhd3m011NsR8dPSa-QLq8nKrOYbEVh4152PYyTR6xFizoPb1AHZQvOU7dHkLdBw&url=https%3A%2F%2Fstorage.googleapis.com%2Fgweb-uniblog-publish-prod%2Fimages%2Fgemini_carbon_102726_social_share.width-1300.png&fb_obo=1&utld=googleapis.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=rEUtIMSoz7flZeSkx7GG1Q&_nc_zt=3&oh=06_Q3_EASaARg28xkGuQgb3xU6FeQcUI6lVMVHJAwXpbYWCLHKx&oe=6AE55348",
+        "alt": "Gemini 4 Carbon 官方發布文章的原貼文配圖",
+        "credit": "Google；Facebook 分享：Will 保哥的技術交流中心"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid021XtnQYX7Y3hhK1BB5K98UDpdUH1yVbUasQbrAMbD8Q22V352BB9bhHyyJpvYeRgVl",
+          "published_at": "2026-10-29T09:40:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-96697af40222571725d05a02",
+      "title": "老舊 PHP 網站維護：清木馬之外還要補漏洞",
+      "summary": "Will 分享替長期代管的 PHP 網站清除木馬、修補 SQL 注入與後端授權檢查的經驗，並提到使用 AI 協助分析漏洞。故事也呈現網站前台持續運作、後台卻多年未維護的落差。",
+      "original_text": "十幾二十年前，我做過一門叫做「虛擬主機」或「網站代管」的生意。\n那門生意難賺，利潤微薄，要背負的責任卻很多。\n我們只負責主機與網站代管，程式都是客戶自己寫的。但只要他們的程式出問題或效能有狀況，我們就得派客服應付各種需求。\n做了一兩年，我覺得太難做，就把服務停掉了。\n服務雖然停了，但有些客戶家裡沒有半個技術人員。我們請他們搬走，他們打死不搬，還一次付清五年的款項，拜託我們把網站留下來。\n在這種情況下我們也不好多說什麼，網站就這樣在我們的機器上擺了十幾年。\n最近 PHP 爆出一個天大的漏洞。我昨天把所有客戶的網站重新掃描一遍，發現有五分之一的網站程式都有漏洞，而且多年前就被植入不少木馬。\n我好心幫他們把木馬清掉。但木馬清了，程式漏洞還在，繼續擺在機器上還是會被駭客植入更多木馬。\n於是我又幫他們把現有的 PHP 程式一口氣改好。像是 SQL injection、權限檢查，把 OWASP Top 10 的相關漏洞全修掉了。\n過程中還看到一些網站的後台，雖然有做登入頁，但登入後的所有後端程式完全沒做授權檢查。\n只要知道後台網址路徑，任何人都能直接管理整個網站的內容。看到這裡我相當驚訝，這種網站竟然能活十幾年都沒倒。\n深入研究後，我發現一個大秘密。\n他們的網站從搬進我們主機之後，後台就再也進不去了。那個登入畫面的帳號密碼功能早就死掉，這十幾年來他們一次都沒進過後台維護內容。他們是傳產，十幾年不維護網站內容，生意還是照做不誤，而且網站一直都有流量，一樣賺錢。 \n資料庫是好的，前台運作也正常，偏偏所有漏洞都在後台。還好當年程式早就壞了，不然現在網站不知道會變成什麼樣子。\n我也不知道自己哪根筋不對，想說是這麼老的客戶了，好人就做到底吧。\n我順手把他們的後台全部修好，現在後台可以用了。同時還用上最前沿的 AI 大模型分析網站所有潛在漏洞，一次補齊，讓整個網站安全無虞。\n只是，客戶會感謝我嗎？\n他們搞不好根本不需要我幫忙。或者，他們可能連這個網站有後台都不知道！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-29T08:00:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02CXnmNKvi9GxNFe2QkMf59gLRfw3NLv2of86LV81JrFRYPrrYjxkWJpAHRE1bFbv1l",
+          "published_at": "2026-10-29T08:00:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c94bb014f7aad48579590479",
+      "title": "從 Argon 到 Carbon：Eric 分享 Gemini 新模型",
+      "summary": "Eric 以元素名稱的接續，分享 Gemini 4 Carbon 消息。Google 說明 Carbon 建立在 Argon 之上，先開放部分資安防禦人員，再逐步擴大使用。",
+      "original_text": "氬 (Argon) 後緊接而來的是碳 (Carbon)",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-29T05:50:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/16223304823330760321?_nc_oc=Adp1jQN3aVcsJKuJkxzPhSfz3rhd3m011NsR8dPSa-QLq8nKrOYbEVh4152PYyTR6xFizoPb1AHZQvOU7dHkLdBw&url=https%3A%2F%2Fstorage.googleapis.com%2Fgweb-uniblog-publish-prod%2Fimages%2Fgemini_carbon_102726_social_share.width-1300.png&fb_obo=1&utld=googleapis.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=Enmxz2Uv4nintPwJypH51g&_nc_zt=3&oh=06_Q3_EAVqA-FgckD_ABaMjZ6g9x3nVfTV5WPtcHqo0mZR8y523&oe=6AE55348",
+        "alt": "Gemini 4 Carbon 官方發布文章的原貼文配圖",
+        "credit": "Google；Facebook 分享：Eric ShangKuan"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid02wiQzcK21NUR1WbZr21JAtTZvkgVuyMHkv4rASPfzVVYULrzbtqS6c5Y2pp2wmEwzl",
+          "published_at": "2026-10-29T05:50:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-29T16:15:16.214Z",
+      "captured": 11,
+      "included": 7,
+      "excluded": 4,
+      "notes": []
+    }
+  }
+}

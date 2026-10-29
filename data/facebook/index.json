@@ -1,8 +1,14 @@
 {
   "schema_version": 1,
-  "current": "2026-10-28",
-  "updated_at": "2026-10-28T00:20:40+08:00",
+  "current": "2026-10-30",
+  "updated_at": "2026-10-30T00:15:18+08:00",
   "editions": [
+    {
+      "date": "2026-10-30",
+      "path": "data/facebook/editions/2026-10-30.json",
+      "story_count": 7,
+      "is_demo": false
+    },
     {
       "date": "2026-10-28",
       "path": "data/facebook/editions/2026-10-28.json",
