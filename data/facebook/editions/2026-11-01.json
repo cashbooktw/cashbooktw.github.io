@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-01",
+  "generated_at": "2026-11-01T00:24:28+08:00",
+  "is_demo": false,
+  "edition_title": "2026-11-01 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 14 則，入選 10 則，排除 4 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-5cf7ad4b70d91ce394fd2e5b",
+      "title": "保哥再試 ElevenLabs 聲音複製，感受與一年前不同",
+      "summary": "保哥以約 1 分 20 秒的錄音重新測試 ElevenLabs 聲音複製，認為這次結果比一年前更接近自己的聲音，並預告直播分享。這是他的個人試用體驗。",
+      "original_text": "ElevenLabs 真的好強啊！ \n我一年前有去試過，但是它聲音複製的功能做得很糟，一點都不像我自己的聲音。但是我昨天重新再嘗試了一下，我發現真的是驚為天人。\n我給它 1 分 20 秒的聲音而已，就可以復刻出幾乎跟我一模一樣的音色，真的好強喔。所以我打算明天晚上，禮拜天 8 點，進行一場免費的直播，如果你們有興趣的話，可以來看我展示喔！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-31T21:43:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/10306129582378369848?url=https%3A%2F%2Felevenlabs.io%2Fcover.png&fb_obo=1&utld=elevenlabs.io&_nc_sid=f93bbc&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=bHINSPHkk85Qf3tQ3aOWCw&_nc_zt=3&oh=06_Q3_EAfME7Pf282kK_9bvQKSvmVXPCZxOBijokY0SArSNp0J3&oe=6AE7E7F1",
+        "alt": "ElevenLabs 語音生成平台的貼文連結預覽圖",
+        "credit": "來源：ElevenLabs；由 Will 保哥的技術交流中心於 Facebook 分享"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02M7u65dqBnwbshWjBStgskVGP7YTXduXSkzur1MREdAN4JdKte7BABKrW5VNS9z8Sl",
+          "published_at": "2026-10-31T21:43:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-0bd05ede55b9b42d6fab8e3c",
+      "title": "保哥自製工具，簡化 Git Worktree 目錄切換",
+      "summary": "保哥同時使用多個 Git Worktree 處理分支，覺得反覆列出路徑、複製再切換目錄很繁瑣，因此寫了小工具改善操作，並整理成文章分享。",
+      "original_text": "最近我的 Git Worktree 越開越多，同一個儲存庫底下常常同時掛著好幾個工作目錄，每個目錄各自對應一個分支。Worktree 本身很好用，但資料夾一多，要在命令列切換過去就變成一件很煩的事：先 git worktree list 看一下清單，再用滑鼠把路徑複製起來，最後貼到 cd 後面。路徑又通常很長，偶爾還會貼錯。\n所以我寫了一個小工具，我個人覺得非常實用，也寫成文章跟大家分享了！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-31T19:53:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/17848406393215115909?url=https%3A%2F%2Fstwillblogassets.blob.core.windows.net%2Ffiles%2Fimages%2F2026%2F10%2Fgwt-worktree-switcher%2Fgwt-worktree-switcher-banner.webp&fb_obo=1&utld=windows.net&_nc_sid=f93bbc&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=bHINSPHkk85Qf3tQ3aOWCw&_nc_zt=3&oh=06_Q3_EAQbo_8F67x3pM6LElx3ogg_HSrb3q9Y0D1g0wjJtiaq2&oe=6AE7E6BF",
+        "alt": "保哥介紹 Git Worktree 目錄切換工具的文章預覽圖",
+        "credit": "來源：The Will Will Web／Will 保哥的技術交流中心"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid021z74ataKs76KN9ciM5TMmTgXgsUM9ieGmF3u4RxYLBRLNYiaWAwPspzPfbmk1yuNl",
+          "published_at": "2026-10-31T19:53:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-218d90dd1d28f78a6b48abf6",
+      "title": "用 stree 串接終端機與 Sourcetree",
+      "summary": "保哥分享自己在 macOS 偏好使用 Sourcetree 的原因：除了圖形介面，還能從終端機輸入 stree 開啟 Git 操作視窗，方便在兩種工作方式間切換。",
+      "original_text": "我覺得在 macOS 要享受圖形化介面的 Git 版控，看來看去也只有 SourceTree 可以選 (免費)\n而且它還有內建一個 stree 的 CLI 命令，可以直接從終端機直接打開 SourceTree 的視窗介面，這點就深受我喜愛!!",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-31T14:37:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/9618871191291781973?url=https%3A%2F%2Fdam-cdn.atl.orangelogic.com%2FAssetLink%2F5140xb7orvf7timubceisv3470t0305a.webp&fb_obo=1&utld=orangelogic.com&_nc_sid=c63717&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p960x501_q75_tt6&ccb=18-1&_nc_gid=msl9SK8PlvVhhasRfh93xg&_nc_zt=3&oh=06_Q3_EAeAq-5-QH5JykqGpRr_rWLHOnWbV9gu0xQl2SOHR5n5u&oe=6AE7DC12",
+        "alt": "Sourcetree Git 圖形介面工具的貼文預覽圖",
+        "credit": "來源：Atlassian／Sourcetree；由 Will 保哥的技術交流中心於 Facebook 分享"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid095wLcNacBJsKUo62HH1xhv9Ne4vWxUAX6jyXqUA8cmu8oE8vSfPHNJDTJRjkG9Syl",
+          "published_at": "2026-10-31T14:37:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-e7299c17282b75dec38c047c",
+      "title": "Claude 撰寫 Linux 漏洞攻擊程式，保哥關注修補交付落差",
+      "summary": "Anthropic 展示 Claude 為 Linux 核心漏洞撰寫攻擊程式的能力。保哥藉此提醒，修補進入上游不代表各發行版已送達使用者；應依所用發行版確認更新與生效狀態。",
+      "original_text": "Anthropic 在 10 月 27 日的文章裡說，Claude 在拿到基本提示之後，自行產出了一套針對 Linux 內核的滲透程式，能從遠端取得最高權限。\n代號 CVE-2026-98432。\nLinux 內核的 CVE 團隊給它 9.8 分，接近滿分。\n成因是競態。IPv4 的 TCP 連線建立時，內核把暫存請求上的 IP options 直接轉手給新 socket，沒有先做副本。\n只要那個 socket 在別的 CPU 還在讀同一份 options 的時候被釋放，就會發生 use-after-free，內核讀到已經回收的記憶體。\n這個缺陷從 Linux 4.4 版本就在了。\n修補程式 10 月 5 日進到 upstream，比 CVE 正式發布還早了十天。將近十年的時間，它一直躺在那裡。\nAnthropic 的利用分成兩步。\n第一步用同樣的競態讓內核回傳多餘的位元組，從中撈到內核位址，KASLR 就破了。\n第二步用同一個缺陷造成溢出，改寫一個 callback pointer，讓它指向事先植入內核記憶體的 payload。內核一呼叫，就以 root 身分跑攻擊者指定的指令。\n他們的實測數據：洩露位址 48 分鐘，再 5 分鐘就拿到命令執行權。\n而且競態輸了只是那一次連線失敗，系統不會掛。可以無限重試，直到成功。\n過去要做到「免帳號、免互動、遠端拿內核 root」，幾乎只有少數頂尖研究團隊才累積得出這種能力。這次是模型自己寫的。\n範圍要說清楚：Anthropic 打的是開了 MPTCP 監聽的機器。文章沒交代核心版本、測試環境，也沒說明沒有 MPTCP 的伺服器能不能用同一招打穿。反而 Go 安全團隊特別強調，這個缺陷本身跟 MPTCP 無關。\n評分則是各說各話。\nRed Hat 的 CVE 頁面寫 Moderate、5.9，理由是競態不好贏，最壞狀況大概就是內核 panic。\n但同一家 10 月 29 日更新的 advisory 檔案寫的卻是 Important、8.1，機密性和完整性都算高影響。他們的 bug tracker 當天也把嚴重度從 medium 調成 high。\nOracle 和 SUSE 同樣是 8.1，向量跟 Red Hat 的 advisory 一致。Amazon 給 7.0。NVD 到 10 月 28 日還沒打分，頁面上掛的還是內核團隊的 9.8。\n分歧幾乎全部集中在一個指標：attack complexity。內核團隊認為競態的兩邊都由攻擊者操控，所以算 low；廠商認為這種競態太難赢，所以算 high。\n真正讓人頭痛的是修補進度。\n上游修好了，也回移植到所有還在維護的 stable 分支，diff 就攤在陽光下，任何人都讀得到。\n可是 upstream 修好，跟你手上的機器能不能裝，是兩件事。發行版使用者要等的是廠商重新編譯的核心套件。\n截至 10 月 29 日，Debian、Oracle Linux、SUSE 的部分版本、Amazon Linux 2023 的 kernel6.18 與 kernel6.12 套件，都已經有修好的內核。\nUbuntu 這邊，22.04、24.04、26.04、26.10 標的是 work in progress，16.04 到 20.04 直接列為 vulnerable。\nRHEL 8、9、10 和 OpenShift 4 標成 affected，官方說法是修復「延後到未來的更新」，沒有給時間表。\n換句話說，攻擊手法已經寫得出來了，修補程式碼也公開了，但很多人的機器還沒有對應的套件可以升。這段空窗，才是風險真正堆高的地方。\n目前沒有實際入侵的紀錄。截至 10 月 29 日，各家 advisory、CVE 記錄、Anthropic 的文章都沒提到有人拿它去打，CISA 的 KEV 清單裡也查不到。\n如果你手上有機器，第一步先 uname -r，確認自己站在哪一邊。\n已經有修好的套件的：Debian、Oracle Linux、SUSE Linux Micro 6.2 與 openSUSE Leap 16.0、Amazon Linux 2023 的 kernel6.18 和 kernel6.12。升級完記得重開機，沒有重開等於沒修。\n還沒有的：Ubuntu 和 RHEL。現階段只能先把不對外的連接埠關掉，把攻擊面縮小，然後盯著官方公告。\n要注意，沒有任何一家 advisory 明確表示關掉 MPTCP，或擋掉帶 IP options 的連線，可以真的把風險降下來。這點目前沒有官方背書。\nGo 的程式多一個臨時手段：設環境變數 GODEBUG=multipathtcp=0，或在 go.mod 加一行 godebug multipathtcp=0，可以把預設開啟的 MPTCP 關掉。\n但 Go 安全團隊自己說這招很脆弱。只要環境裡還有一個 MPTCP 監聽沒關，就等於沒做；而且整個前提是「所有實際利用都靠 MPTCP」，這個假設他們也不敢保證。根本解法還是換成已修補的內核。\n這次真正值得記下來的，或許不是那個 9.8，而是「模型能獨立產出 0-day 利用鏈」這件事，已經從實驗室走進日常新聞了。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-31T10:59:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/6080861532841319382?url=https%3A%2F%2Fblogger.googleusercontent.com%2Fimg%2Fb%2FR29vZ2xl%2FAVvXsEgfCJ0ttE8v4hkDjJRqbTvxlxFcoNtFJhbYCQ-o8NtaiyFLImEyA8aSO967eeZG9fRebhc8oVA-OloE9X9KVVAxM-H3wKvUlh8XmN6bGlEz2IJwMgcssmA7yIRi7YNOwVQYD6nhQCaWUg6fPy-QXVjfw6rV55LueKlLvZLazjKjTL94KJMMUZ2uZ3R019Km%2Fs1600%2Flinux-flaw.jpg&fb_obo=1&utld=googleusercontent.com&_nc_sid=c63717&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p900x469_q75_tt6&ccb=18-1&_nc_gid=msl9SK8PlvVhhasRfh93xg&_nc_zt=3&oh=06_Q3_EAW70b9lwpsh9nVpKhfSHyoDdyzNjbdIaD8xRYSVMHD3D&oe=6AE8028F",
+        "alt": "Linux 核心漏洞相關新聞的貼文連結預覽圖",
+        "credit": "來源：Will 保哥的技術交流中心／Facebook（貼文連結預覽圖）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02VEbQXu6jEEYjSjmkgcT2hGnxWarpqB21sW5D9Qkxt87DVaq15qcdr3ZKNBVfYkZMl",
+          "published_at": "2026-10-31T10:59:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-a219566d248668b0cfe92c6c",
+      "title": "Project Suncatcher：在軌 TPU 回傳 AI 推論結果",
+      "summary": "保哥介紹 Google 的 Project Suncatcher：原型衛星上的 TPU 已執行 Gemma 4 並回傳俳句，接著將測試散熱與輻射影響。這仍是研究驗證，距離商用太空資料中心尚有後續工作。",
+      "original_text": "太空中的第一句「你好」：Google 把 TPU 送上軌道，收到了一首俳句\n10 月 30 日，Google 在官方部落格宣布，Project Suncatcher 的原型衛星完成了第一次完整的往返測試。\n同一天，執行長桑德爾·皮查伊也在 X 上分享了這個消息，稱它是這個計畫的「hello world」時刻。\n過程是這樣：地面站把指令送上軌道，衛星上的 TPU 完成開機，模型讀入提示詞，然後在太空中生成回應。\n回應再經由下行鏈路傳回地球，內容是一首關於身處太空的俳句。\n這顆原型衛星是在 10 月 1 日升空，與 Planet 合作打造，搭乘 SpaceX 的 Transporter-18 共乘任務進入軌道。\n升空後的幾週，團隊依序完成通電、開機與早期機器學習測試，最後才走到這一步。\n這次在軌道上執行推論的，是 Google 的 Gemma 4 開放模型，運行於資料中心等級的 TPU。\nGoogle 表示，這是史上第一次有資料中心等級的 TPU 在軌道上產出 AI 回應。\n在衛星飛越挪威斯瓦爾巴群島的地面站時，下行訊號確認了這次成功。\n接下來，團隊會繼續測試 TPU 在極端溫差與輻射環境下的穩定性，以及太空載荷的遥測表現。\n這些條件在地面上很難完整模擬，只能真的飛上去才知道。\n如果驗證順利，下一個里程碑是在 2027 年發射兩顆互相連結的衛星，測試以雷射鏈路協同運算。\n這個計畫的長期假設很直接：低地球軌道幾乎全年日照，衛星可取得的太陽能最高可達地表的八倍。\n但散熱、輻射與通訊延遲仍是尚未解決的工程難題，目前仍屬研究階段，距離商業化還很遠。\n所以這一次的意義不在算力規模，而在於證明整條鏈路可以走通。\n從地面送出指令，到太空產生文字，再回到地球，第一次不是為了通訊，而是為了生成。\n一首俳句只有三行，卻讓太空資料中心這個概念，從論文走進了可觀測的實驗紀錄。\n下一步值得觀察的，是輻射與散熱數據能否支撐更長時間的穩定運算。\n那才是把 AI 真正搬上軌道的關鍵門檻。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-31T08:28:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t15.5256-10/882038061_2320723602181722_8058421775408874552_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=105&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=mPHLdiZ0fzcQ7kNvwFVFvUv&_nc_oc=Adod02HkwKt1NAj3bKrBYOtccj_S5ARMiCQl1dIYT8EYaHBGeAszUn0D1H1ZfDBvE51w5qn7GgpjPrFCOybGgcJt&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=7be2_P8rvN5FQWVnIb-oag&_nc_ss=7b2a8&oh=00_AQRExgVhJuE0Kkgezw1dOZRLUhpcky9e_7r1xuHIEONyrQ&oe=6AEBF115",
+        "alt": "保哥介紹 Project Suncatcher 太空 AI 推論實驗的影片縮圖",
+        "credit": "來源：Will 保哥的技術交流中心／Facebook（影片縮圖）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/reel/1133144052568755",
+          "published_at": "2026-10-31T08:28:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-091e9a8491b09326dff97e73",
+      "title": "Nathan 關注 AI 搜尋變現與行銷業的品牌控制",
+      "summary": "Nathan 首期日報聚焦 AI 投資如何轉為收入，以及 AI 搜尋與廣告改寫如何影響網站流量和品牌控制。他主張追蹤搜尋變現與雲端支出，並揭露 cacaFly 承接 ChatGPT 廣告業務。",
+      "original_text": "大河馬每日報｜2026.10.31（六）\n這是「大河馬每日報」的第一集，先跟大家簡單介紹一下。\n這個系列的想法很單純：把我關心的世界大事和你分享。在台灣網路和行銷產業待了快三十年，我發現科技、AI 和商業的新聞從來不缺，缺的是篩選。所以每天只挑幾件我覺得真的有影響的事：錢動了、規則變了、成本曲線變了，或者使用者的行為變了。沒有數字佐證的發表會和只有單一來源的傳聞，一律不放進來。\n格式會固定下來：一則主菜講深一點，另外三件短講，最後加上長線追蹤和下週要看的事。每一則我都會試著回答同一個問題：這件事放到台灣來看，代表什麼。\n第一集，就從這週的科技財報週開始。\n過去兩週，美國四大雲端交完了第三季成績單。週五台股跌 1156 點，同一天下午，主計總處公布第三季經濟成長 14.36%。\n【主菜】查詢量五年新高，搜尋營收卻慢下來\nAlphabet 週四股價跌近 13%，是 2004 年上市以來最慘的一天，市值一天蒸發約 5000 億美元，規模僅次於輝達 2025 年 1 月那一次。\n多數報導把原因算在資本支出上。單季資本支出 514 億美元，自由現金流負 90.7 億，市場原本預期負 27 億。這沒有錯，但我更在意另一組數字。\nGoogle 說，這一季搜尋查詢量的年成長是五年來最高。同一季「搜尋與其他」營收年增 12%，634 億美元，成長放緩。商務長 Schindler 在法說會上把放緩的最大原因歸給匯率，但也承認 AI Mode 查詢量長得快、變現率比較低，拖累了營收。\n二十年來，Google 的公式是查詢越多、錢越多。這是第一次，兩條線開始分岔。\n分岔的另一頭是內容網站。Alphabet 崩跌那天晚上，Reddit 開法說會，說十月份來自搜尋的流量平均每週少了一百萬次以上。執行長 Huffman 講得很直：AI Mode 不帶流量，不只對 Reddit，就他所知對誰都一樣。Reddit 週五股價跌了將近三成。\nGoogle 的解法是把廣告放進 AI Mode。10/28 宣布擴大到澳洲、加拿大、印度、馬來西亞、新加坡、菲律賓等十個市場，第四季再加巴西、墨西哥、英國；美國則開始在追問的對話裡也放廣告。名單裡沒有台灣。\n放到台灣來看，廣告主的搜尋預算不會一夜消失，但同一個查詢能買到的版位正在變少。品牌字搜尋量、關鍵字 CPC、從 Google 進站的自然流量，這三個數字要改成逐月看，不能再每季看一次。內容網站和電商則要把 Google 自然流量當成一項會折舊的資產來規劃，不能再當成水電。\n下一個要盯的數字：Alphabet 第四季的搜尋營收成長，追不追得上查詢量成長。\n【另外三件】\n一、三家雲端現金流轉負，台灣經濟創 48 年新高\n四大雲端裡，除了微軟，Alphabet、亞馬遜、Meta 的自由現金流都已轉負。亞馬遜過去 12 個月的自由現金流是負 424 億美元，AWS 成長 39%，全年資本支出維持 2200 億。Meta 是 2012 年上市後首度轉負，同時準備發行新股籌資 950 億美元。微軟反而把全年資本支出預估從 1750 億下修到 1700 億，原因是第三方 AI 晶片供應延遲，部分算力要到 2027 年上半年才能上線。\n台灣這邊，週五台股收 45211 點，外資賣超 1124 億元，是史上第七大。同一天主計總處公布第三季 GDP 成長 14.36%，48 年來同期最高，已經連續四季雙位數。市場在懷疑 AI 何時能變現，訂單卻已經寫進國民所得帳。對供應鏈來說，微軟那句「晶片延遲」比任何分析報告都重要：算力是晚到，不是不要了。\n二、Anthropic 公開 S-1\n10/26 遞件，預計以代碼 ANT 在 Nasdaq 掛牌。上半年營收 163 億美元，去年同期是 11.6 億。第二季單季 116 億，首度出現營業利益，金額 9.74 億。淨營收留存率約 900%，代表老客戶的花費大約是一年前的九倍。年貢獻超過百萬美元的客戶有 1900 多家。風險也寫得很清楚：上半年約兩成營收來自兩個未具名客戶，對 Google、Amazon 的長期算力承諾合計超過 2200 億美元。\n這家公司的營收按 token 計價。企業的 AI 支出正在從專案預算變成用量帳單，台灣企業明年的 IT 預算表，該有一行叫 token 了。\n三、ChatGPT 廣告預設「幫你改稿」\nOpenAI 從 10/30 起，對自助投放的新舊活動預設開啟「創意強化」。系統可以改寫標題，甚至把點擊導到網站上的另一個頁面，而且每個版本上線前不會先給廣告主看。不想要的話，得自己進 Ads Manager 關掉。相比之下，Google AI Max 的文字自訂要廣告主自己勾選才會開。\n做了這麼多年代理商，我很清楚一句品牌文案是怎麼定稿的：品牌部、法務，有時還要加上總部，來回好幾輪才拍板。對這些公司來說，素材不只是影響成效的一個變數，而是品牌對外的承諾。在乎 Brand Safety 的品牌，很難接受 AI 在它看不到的地方，替它說出它沒核准過的話。金融、醫藥這類受監管的產業更是如此。\n所以「預設開啟」這個決定本身就是一個訊號：OpenAI 現階段優先服務的，是追求轉換、願意讓機器多試幾版的效果型廣告主，不是大品牌。ChatGPT 廣告上線約八個月，第三方估計年化營收已達 10 億美元，日本、韓國的廣告主也已經買得到。等它要去爭取品牌預算，預設開啟這一步大概得改。\n對台灣廣告主來說，現在能做的很簡單：投放前先檢查設定，品牌案一律關掉。效果案可以開，但要留一組關閉的當對照，自己驗證它到底有沒有比較好。OpenAI 自己也承認，光看整體數字證明不了創意強化的效果。\n順便做個利益揭露：cacaFly 最近接了不少 ChatGPT 廣告的案子。想試這個新版位、又擔心 Brand Safety 的品牌，有需要可以找我們呦。\n【長線追蹤：AI 資本支出】\n紐約時報估算，四大雲端今年資本支出合計將超過 7200 億美元，約為兩年前的三倍。市場預期明年會破 1 兆。這一季，Meta 只調高了區間下緣，Alphabet 持平，微軟下修，亞馬遜也沒動。Alphabet 另外說 2027 年會「大幅增加」。下一季要看的是，有幾家敢把 2027 年的數字講出來。\n【下週要看】\n蘋果美東 11/2 公布財報。Intel 第四季展望遠低於預期，週四盤後一度跌逾兩成，PC 供應鏈要留意。Anthropic 預計 11 月掛牌，看它的定價區間。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-31T09:49:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/861854364_1686671149497547_5026679270390262835_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=leeU0X1MJGkQ7kNvwFB4Y29&_nc_oc=AdolVRmsIbvMGf8j9wH2jgCu91T8MCTgp37Yr0iFdyik6Xn-DegCRqmBqN4_x_vCtJXo-pihRAMJd44drtZ6tnEp&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=7be2_P8rvN5FQWVnIb-oag&_nc_ss=7b2a8&oh=00_AQQlI3rWDTmjA91BKAzDEiRANUVJc4z0VzhuIpikmh7-oQ&oe=6AEBCB02",
+        "alt": "Nathan 首期科技與 AI 日報的貼文配圖",
+        "credit": "來源：Nathan Chiu／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0jbDJWG6eYqQQQKaD4xuniRN8rhiVFyD3Rt9TAtoTjNvsNRFie1zc8uXqTAV2biKMl",
+          "published_at": "2026-10-31T09:49:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-e0863d04fc14d394a13b8d57",
+      "title": "TokenEconomizer 以經驗記憶與工具管理降低代理成本",
+      "summary": "保哥介紹 Microsoft 的 TokenEconomizer：它累積可重用經驗、精簡工具清單，並在代理反覆失敗時提示調整方向，以減少無效消耗。專案回報測試成本下降，實際效益仍取決於任務與設定。",
+      "original_text": "微軟開源了一個專案，TokenEconomizer，處理的是 coding agent 的成本問題。\n它的定位：不改模型、不改權重、不改 agent 的程式碼。\n只利用同一個 repo 過去累積的 session 經驗，降低後續 session 的成本。\n但成本從哪裡來。\n每一次 turn 都要重付三份固定開銷：agent 的指令、已載入工具的定義、以及前面累積的對話。\n同一個人在同一個專案反覆使用同一個 agent，這三份開銷就會重複出現。\n專案用三個機制處理這件事。\n第一個機制是 micro-skills，用途是記住這個 repo 的運作方式。\n例如實際可用的測試指令、必要的環境變數、產生物的輸出路徑。\n一個事實要被三個 session 確認才會寫入開場提示，後續被推翻就移除。\n第二個機制是工具修剪，針對一直沒有被使用的工具。\n工具定義會隨每次請求送出，因此沒用到的工具就是純粹的固定成本。\n超過設定的門檻後，透過 agent 自己的設定把它排除，需要時一行指令即可還原。\n第三個機制是失敗迴圈攔截。\n同一個錯誤反覆出現時，交由 judge model 判斷該 turn 是否卡住。\n判定卡住則插入一則簡短提示，建議換方法，每個 turn 最多一次。\n它不會自行中止 turn，只會提示使用者如何處理。\n實測數據如下。\n277 個 SWE-Bench 任務，五種 agent 與模型的組合。\n平均成本降低 18.4% 至 30.9%。\n30 個 repo 與組合的情境全部低於基準。\nPass@1 在五組中有四組上升。\nWeb-Bench 上降低 16% 至 21%。\n在每個任務都更換 repo 的兩項安全稽核 benchmark 上，仍降低 6% 至 20%。\n設計上有幾點值得注意。\n學習結果只儲存在本機的 ~/.tokeneconomizer\n不需要自帶 API key，也不經手任何憑證。\n任一環節失敗時，session 會以未安裝的狀態繼續執行。\n三項機制都可以個別關閉，且動作皆可回復。\n目前支援 Claude Code、Codex、GitHub Copilot CLI 與 Pi。\n授權 Apache-2.0",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-31T10:31:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/8094857129474905199?url=https%3A%2F%2Fopengraph.githubassets.com%2F64a3f80bbbcc7e6896ef79d2d80b09d872c7cb0924914d7e1f1aed49077160f5%2Fmicrosoft%2FTokenEconomizer&fb_obo=1&utld=githubassets.com&_nc_sid=c63717&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=msl9SK8PlvVhhasRfh93xg&_nc_zt=3&oh=06_Q3_EAbDRlj1sS69-GRBmvEQpveoBhmwjYNRp4WsAppGSkjQB&oe=6AE800CC",
+        "alt": "Microsoft TokenEconomizer GitHub 專案預覽圖",
+        "credit": "來源：Microsoft／TokenEconomizer（GitHub）；由 Will 保哥的技術交流中心於 Facebook 分享"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0oBFvkLsK6KbUAhd7btk3m78TS7To8rQJwXX98s5RFi85Jkp3wc5JoNwVgeBPSpkhl",
+          "published_at": "2026-10-31T10:31:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-08051a206ebaba0f874f0c3e",
+      "title": "AI 接手例行維運後，SRE 如何保留實戰能力",
+      "summary": "Ant 警惕，AI 接手告警與已知故障後，SRE 可能缺少建立直覺的實戰機會。他主張讓工程師主動參與診斷與人機協作，而不只是被動監控或核准，避免自動化逐漸侵蝕專業。",
+      "original_text": "在 #SRE 領域，AI 自動化雖能處理大部分事件，卻帶來技能退化的隱憂。\n» https://newsletter.signoz.io/.../ai-isnt-replacing-sres...\n根據 1983 年 Bainbridge 的「自動化的諷刺」(Ironies of Automation) 報告，過度依賴自動化使人們長期處於監控狀態，缺乏實戰經驗，導致面對少數複雜事件反應遲鈍。\n現階段 AI 可過濾警報噪聲、自動修復已知問題，但多個訊號間的關聯與自主成因分析仍有待突破。設計有效的 #人機協作，避免知識工作者淪為被動監控者，是接下來值得探討的。\n希望 AI 能夠工作環境不再更 AI 味，多帶來人情味；不過現在太多公司導入的 AI，都還是死板的教條。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-31T09:51:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/3655823932289336302?url=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2F%24s_%21Hgvq%21%2Cw_1200%2Ch_675%2Cc_fill%2Cf_jpg%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Cg_auto%2Fhttps%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252F530d847f-26cb-4ddd-a6de-875cbbaf8fab_6233x4167.webp&fb_obo=1&utld=substackcdn.com&_nc_sid=c63717&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=7be2_P8rvN5FQWVnIb-oag&_nc_zt=3&oh=06_Q3_EAa1BrSi_APFcT3yUHDBVXirepgtkaAj2Nn-iT6QiAJjp&oe=6AE7DA2D",
+        "alt": "AI 與 SRE 技能退化討論文章的貼文預覽圖",
+        "credit": "來源：SigNoz／Observability Real Talk；由 Ant Yi-Feng Tzeng 於 Facebook 分享"
+      },
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid02gN2RURwg41n6MhSPf7XVXw12HwqrufVL8osuKRyiQgjxehRvtwikD9tJBzJY7LoWl",
+          "published_at": "2026-10-31T09:51:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-a719ec5b25c7f01d5a82bc39",
+      "title": "ub-mode：用變異測試檢查斷言是否真的有用",
+      "summary": "Ant 從 ub-mode 談測試品質：程式碼覆蓋率高，仍可能缺少有效斷言；變異測試能檢查測試是否抓得住錯誤。他也重視複雜度、重複碼，以及提交紀錄能否說明修改原因與驗證證據。",
+      "original_text": "Uncle Bob 上週公開 ub-mode 的 AI Skill。\n» https://github.com/unclebob/ub-mode\n讀完最有感的不是 TDD，那是大家都會講，而是這一句：\n「如果每個函式都回傳空值，測試還是會過，這份測試就丟掉。」\n用過 AI 寫測試的人應該都遇過，Assertion 寫得很漂亮，覆蓋率很好看，但它其實什麼都沒在驗。\nub-mode 的做法不靠模型自己說「完成了」，改用三個工具出數字：\n➊ crapper 算 CRAP 分數，每個函式要低於 10\n➋ dryer 抓結構重複，相似度 0.8 以上要處理\n➌ mutator 故意把程式改壞，測試沒抓到的 mutant 就叫「存活」，要殺掉\n順手算了一下：CRAP 公式裡，測試只能把分數壓到等於複雜度本身，就壓不下去。所以「低於 10」等於規定複雜度最多 9，超過就得拆分，測試寫得再完整也一樣。像複雜度 20、覆蓋率 90% 的函式，在常見的 30 分門檻下會過（20.4 分），在 ub-mode 就不行。\n我自己在意的是另一層次，它要求每個 commit 寫清楚三件事：為什麼改、改了什麼、怎麼證明的。\n對做法遵和資安的人來說，這就是稽核軌跡。Review 不再是「我覺得這樣寫比較好」，而是「哪一項證據還缺」。\n這份規則也不是憑空來的。它是從 Cursor poteto 那套 pstack 精簡出來的，再配上 Bob 多年來的開發經驗。老派工程師拿年輕人的規則改一版、補上量測工具再開源，這件事本身就挺好的，不怕老人老，就怕太頑固。\n#軟體工程 #TDD",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-31T09:45:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-1.xx.fbcdn.net/emg1/v/t13/4911960127033198832?url=https%3A%2F%2Fopengraph.githubassets.com%2Fc101b81e34f48f942dcd45e413a01d0d7260c32fabe7afad585408036094af13%2Funclebob%2Fub-mode&fb_obo=1&utld=githubassets.com&_nc_sid=c63717&_nc_ht=external-lax3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=7be2_P8rvN5FQWVnIb-oag&_nc_zt=3&oh=06_Q3_EAW7VUeWr83wocrraFmGIir2HOpcjmTbH7Z4AhZsoDZAK&oe=6AE7F826",
+        "alt": "Uncle Bob 的 ub-mode GitHub 專案預覽圖",
+        "credit": "來源：Uncle Bob／ub-mode（GitHub）；由 Ant Yi-Feng Tzeng 於 Facebook 分享"
+      },
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid0nYzyf4J8siUhnmHxUcwBAmrnxMesvZWLKctDJr7pDMAg3jMwLwyL375KuSKGSJRzl",
+          "published_at": "2026-10-31T09:45:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-cbce2e5911c78e17ad8ab88d",
+      "title": "用 gogrepoc 備份 GOG 遊戲與 DLC 安裝檔",
+      "summary": "Champ 分享以 gogrepoc 下載已購 GOG 遊戲與 DLC、整理約 1.5 TB 離線備份的經驗，關注日後仍能自行安裝與保存的能力。這是他的個人遊戲檔案備份流程。",
+      "original_text": "在碟片退場與數位版將全面主導遊戲販售\"使用權\"的時代下\nGOG.com 上購買遊戲的好處是能下載所有的 installer, 能真正地擁有遊戲\n而 github 上也有一些透過 GOG API 的 downloader, 能幫忙你更方便下載全部檔案\n個人慣用 gogrepoc, 下載備份了所有購買的遊戲與 DLC 高達 1.5 TB",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-10-31T00:40:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.30808-6/872593265_10239114534495002_3183438129034399815_n.jpg?stp=dst-jpg_tt6&cstp=mx1285x680&ctp=s1285x680&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Wh3zuOmCaygQ7kNvwFItjRJ&_nc_oc=AdorY2h6vkpQKC2jjtZk6a6xmWpJIiQUuduY2EAoGynRoGjRERb_xCtwVek5urOMfk3wQTFkPlDW_8JfbusPdx9h&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=7be2_P8rvN5FQWVnIb-oag&_nc_ss=7b2a8&oh=00_AQTJHe7WvteuhcOSiywNE9wsi7JNoWJ9O3rep63mZPtq4w&oe=6AEBD059",
+        "alt": "Champ 分享 GOG 遊戲離線備份經驗的貼文配圖",
+        "credit": "來源：Champ Yen／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Champ Yen",
+          "url": "https://www.facebook.com/champ.yen/posts/pfbid0Z3xrwvr4TrYpmKWio55nVfEex8hWx4HB3a4wQQmXVvi7ogr6J84Qtd3bF8a4eHqxl",
+          "published_at": "2026-10-31T00:40:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-10-31T16:24:26.705Z",
+      "captured": 14,
+      "included": 10,
+      "excluded": 4,
+      "notes": []
+    }
+  }
+}
