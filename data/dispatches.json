@@ -1,42 +1,42 @@
 {
   "schema_version": 1,
-  "date": "2026-11-02",
-  "generated_at": "2026-11-02T02:29:10.746359+00:00",
+  "date": "2026-11-03",
+  "generated_at": "2026-11-03T03:55:10.787637+00:00",
   "quotes": {
     "tw": {
-      "date": "2026-10-30",
-      "close": 45211.83,
-      "change": -1156.5,
-      "change_pct": -2.4942,
+      "date": "2026-11-02",
+      "close": 44920.14,
+      "change": -291.69,
+      "change_pct": -0.6452,
       "source": "TWSE"
     },
     "sp500": {
-      "date": "2026-10-30",
-      "close": 7580.0698,
-      "change": -140.3203,
-      "change_pct": -1.8175,
+      "date": "2026-11-02",
+      "close": 7541.3999,
+      "change": -38.6699,
+      "change_pct": -0.5102,
       "source": "Yahoo Finance"
     },
     "nasdaq": {
-      "date": "2026-10-30",
-      "close": 25437.0,
-      "change": -747.7207,
-      "change_pct": -2.8556,
+      "date": "2026-11-02",
+      "close": 25164.3633,
+      "change": -272.6367,
+      "change_pct": -1.0718,
       "source": "Yahoo Finance"
     },
     "dow": {
-      "date": "2026-10-30",
-      "close": 51770.3086,
-      "change": -572.25,
-      "change_pct": -1.0933,
+      "date": "2026-11-02",
+      "close": 51983.9805,
+      "change": 213.6719,
+      "change_pct": 0.4127,
       "source": "Yahoo Finance"
     }
   },
   "fx": {
     "base": "USD",
     "quote": "TWD",
-    "date": "2026-11-01",
-    "rate": 32.553,
+    "date": "2026-11-03",
+    "rate": 32.566,
     "source": "Frankfurter"
   },
   "errors": {}
