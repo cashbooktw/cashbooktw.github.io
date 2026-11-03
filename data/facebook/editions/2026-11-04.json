@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T07:31:23+08:00",
+  "is_demo": false,
+  "edition_title": "2026-11-04 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 12 則，入選 10 則，排除 2 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-390cd0101e27911b0662da79",
+      "title": "柯仁傑觀察：AI 需求流程進步，測試自動化仍有落差",
+      "summary": "柯仁傑在企業授課時，看到 PM 已用代理流程整理需求、釐清問題並產出規格，RD 的自動化測試卻仍不足。他也指出，團隊普遍期待 AI 包辦需求與驗收，值得重新檢視工作方式。",
+      "original_text": "今天在這邊的華立公司上課：AI 協作的實例化需求\n讓我驚艷的是 PM 有套 agentic workflow, 可以自動整理需求, 產生出需要釐清的問題, 並且最後生出 spec.\n反而 RD 只是用 Ai 來寫寫程式, 沒有什麼測試自動化. 連 Unit Test 都是稀缺物.\n所以在 AI 時代, 不是你以前有多強, 而是你能不能把握機會, 好好地利用 AI 來幫忙自己\n此外, 不管哪個團隊, 都 希(幻) 望 (想) AI 可以找出需求的漏洞, 可以產生出完整需求, 可以生出所有驗收條件. .....\n或者是 BDD/ spec by example 的過程, 可以全程自動化，可以 agent 幫你重頭到尾搞定 .....",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-03T20:42:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.99422-6/886937006_1162968946675756_104860258334314490_n.png?stp=dst-jpg_tt6&cstp=mx1828x988&ctp=s1828x988&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qcA19zP3xrgQ7kNvwEqU5Cv&_nc_oc=AdpFAzqV_ki_FWoLIFFom6tP4kSRFcPCPQMujP_8nm5G5z4994S0WF2X6nfz0VQ254Ce_PM-Q_FH4vLZApOqGh3a&_nc_zt=14&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=onnaLcgDk6iu2CChhcssNA&_nc_ss=7b2a8&oh=00_AQTstmyBRltOFIThSIv1cSYGfQGa1FELi5Qu6UrKqOz0ng&oe=6AF02DBF",
+        "alt": "柯仁傑分享 AI 協作需求課程的貼文配圖",
+        "credit": "來源：柯仁傑／Facebook"
+      },
+      "sources": [
+        {
+          "name": "柯仁傑",
+          "url": "https://www.facebook.com/kojenchieh/posts/pfbid0L193rP6JDvXzCCi27gQYud5XRTVCLVDNrEUvMQ6FvpEETRZb4E6mgUW3yJnDcGial",
+          "published_at": "2026-11-03T20:42:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-79b727f50e0cb02e7963f917",
+      "title": "Huli：親自試用後，AI 代理的未來感變成了現在式",
+      "summary": "Huli 原本偏向相信親身經驗，試用 AI 滲透框架後卻發現能力超出預期。他因此把編碼與資安工作的未來，想像成人負責指揮、代理執行並累積經驗的協作方式。",
+      "original_text": "# 當 AI 成為現在\n當我聽到一個新的情報時，通常都先選擇懷疑。最可信的情報是自身經驗，我親身體驗過一個東西真的好用，我就會說他好用。第二可信的是值得信任的朋友，他說某個東西好用，我就相信他真的好用。\n其他所有的我都當參考，不能全信，尤其是網路上滿天飛的資訊。因為你不知道背後有沒有其他利益關係，讓他講了這些話。例如說公司的部落格，雖然看起來都很厲害很新穎，但在內部卻不一定如此，可能講了 90 分，實際上才 60 分，多了利益這個出發點，就會稍微加油添醋灌個水。\n這並不代表這些情報客觀上來說就是不可信的，只是我的個人頃向罷了。這種判斷方式可能會讓我稍微慢一步，但至少穩健，至少證據確鑿。\n當我還在用早期的 ChatGPT 時，判定他能幫我寫一些非常小的東西，但在工作上幫不上任何忙，我看到網路上已經有 AI 軟體工程師的新聞出來，我把那當作是未來，現在還不存在。\n當我用 AI 模型來做 PR review 順便找漏洞時，我發現效果好像還行，但沒這麼厲害。聽到網路上有人已經用 AI 做全自動 bug bounty 甚至是自動滲透測試，我也當那是未來。\n而如今，這些未來都成了現在。\n前陣子稍微試了一下入侵一堆網站的 AI 滲透框架 ARTEX，威力驚人，效果比我想像中還厲害。給一個 domain 就能自己 recon，然後根據 response 再去想怎麼打，怎麼串起來，從外部打到內部，從內部拿到 cluster admin，任務達成。\nGoogle 最近剛發了一篇《ARTEX and Friends: Enter Agentic Offensive Frameworks》，裡面把這種自動滲透框架分成七個階段，現在處於第五階段，AI 全自動打，但比較像是「大力出奇蹟」，雖然最後可能會成功，但是很容易被偵測到。\n而最後的第七階段，AI 完全自主執行，同時會想辦法隱匿自己的蹤跡，讓自己不這麼容易被發現。根據 Google 的預測，在 6 個月內就會進化到這個階段。\ncoding 也好，資安也好，AI 在這些領域的進化，讓我相信之後就是機器人大戰的世界了。小時候看過一個卡通叫做《徽章戰士》，每個角色都有一個機器人，平常打架就叫機器人出來對打。\n所以之後就是每人養一個 agent，平常教他做事教他思考，實際寫 code 或是做滲透都交給這個 agent，人就在旁邊指揮，不會自己跳下去做事。然後 agent 也會記住這些指導，變得越來越強，跟主人一起成長。\n懶得自己養的或是自己開發的，就買量販店賣的基本款（如 codex, claude code 這種），想投入更多精力的就自己做，總之最後就是比誰的 agent 比較強。\n今年一月我寫的 《AI 與鴨子，惰性與真實》就有提到「代理人的戰爭」，那時的我認為這是未來，而現在未來已經來了。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-03T19:35:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Huli 隨意聊",
+          "url": "https://www.facebook.com/huli.blog/posts/pfbid02Lc5vt1i1sKPBSEBMCBe1rPEKNvfqNZ4ztQUZsnjSrmsdXPHutk7hoYpTC9XRu7Ypl",
+          "published_at": "2026-11-03T19:35:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-cfa0116e4a9abe8bc49cd223",
+      "title": "Google「時之笛」搜尋彩蛋，切回 1998 年風格",
+      "summary": "Eric 分享 Google「時之笛」搜尋彩蛋：點擊大師之劍，介面便換成 1998 年的復古風格。",
+      "original_text": "在 Google Search 上搜尋「時之笛」真的右下角會有大師之劍，按下去秒回 1998 年的 Google Search （初版時之笛就是 1998 年發行）",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-03T13:59:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.99422-6/884425944_1114419657665371_2780975378912870927_n.png?stp=dst-jpg_tt6&cstp=mx1283x930&ctp=s1283x930&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IA0CbyrFtkcQ7kNvwGcoLva&_nc_oc=AdrOUKcJm3HwE1fRMzJ90kPbEevZIYlcEzRdsfFBzTy69TjRVe2xFNdpirktYBHtYO94OQZBxdnexNWKXjIpIqBr&_nc_zt=14&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=WIQ23l9Lp7LneHD1umKTfQ&_nc_ss=7b2a8&oh=00_AQSRW9YCztcg_Hhmo4bN4kDYuzVCqOVr4rJyjRFcIJDFTw&oe=6AF03E2B",
+        "alt": "Eric 分享 Google「時之笛」搜尋彩蛋的貼文配圖",
+        "credit": "來源：Eric ShangKuan／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid0TRRk6tkKzr9LNpo8ZLPf4TRMcteRQmKcE3iNo5yh3ikSbzexJacbBVdyZ9JXiLV1l",
+          "published_at": "2026-11-03T13:59:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ddef847de17a5921ce192190",
+      "title": "Ant：無聲語音介面應先看辨識品質",
+      "summary": "Ant 評析 Subvocal 無聲語音介面，認為關鍵在跨使用者、跨情境的辨識準確率與可用詞彙量；外型和輸入速度宣稱，仍需公開測試才能評估實際進步。",
+      "original_text": "無聲語音介面 (silent speech interface) 可以讓人不用開口，只靠說話肌肉的細微動作就對電腦下指令。\n» https://subvocal.company/\n這次是一家新創用「Subvocal」當品牌在推。Subvocal 只是品牌名，技術本身叫次發聲辨識 (subvocal recognition)，屬於無聲語音介面的一種，已經研究了好幾十年。\n我認為這類介面真正卡關的地方在辨識，能不能跨使用者、跨情境保持穩定，詞彙量又能不能放大。NASA Ames 早期的系統就已經用喉嚨和下巴的表面肌電 (EMG) 感測器讀取肌肉訊號，但只認得大約 6 個單字加 10 個數字，辨識率約 92%。它也不會讀心，使用者得刻意啟動說話肌肉，所以辨識效果會隨每個人的發音習慣而變。\n所以看到這類新產品，我會先問準確率。這家公司的硬體描述目前就互相矛盾：有來源說是戴在下巴下方、讀取下顎、舌頭和喉部訊號的裝置，也有來源說是用雷達感測的智慧眼鏡。\n它宣稱每分鐘能辨識 200 字以上，卻沒有公開任何準確率資料，也沒有獨立驗證。到 2026 年，以 EMG 為基礎的無聲語音大多還停在研究原型，例如 ETH 的 SilentWear 預印本，現有資料裡也查不到已上市的同類商品。\n在需要安靜的場合下指令，這個用途確實合理。可是在公開、獨立的準確率測試出來以前，下巴穿戴、眼鏡、雷達這些新外型，都看不出辨識到底有沒有進步。\n#無聲語音 #人機介面",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-03T12:15:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid056JdRTM2Tjc84Q48w7Kuk8ief6FgFq9T6jBCpFEehPiEpnK8926CF6KsK6A3c5k6l",
+          "published_at": "2026-11-03T12:15:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-4cc574a1daf982d095472ad5",
+      "title": "Ant：權重空間編程更像模型除錯",
+      "summary": "Ant 將權重空間編程視為模型除錯：直接編輯少量權重可緩解 Qwen 的推理迴圈，讓既有能力得以發揮；效果仍仰賴測試回饋，也不等於替模型學會新能力。",
+      "original_text": "讓 GPT-6 Astra 不經過訓練，直接讀寫另一個神經網路的權重。\n» https://rikiyat.github.io/blog/weight-space-programming/\n最受矚目的數字是，Qwen3.5-0.8B 只改了 0.016% 的權重，MATH-500 就從 7.9% 升到 48.1%。不過我認為這比較像除錯，而不是最佳化。\n原文自己就說，分數提升主要來自修好模型卡早就警告過的推理迴圈，讓模型把原本會解的題目答完，並沒有多出數學能力。同一個修正也讓 IFEval 提高到約 3 倍，表示它修的是一個橫跨多種任務的共通故障。另一個實驗裡，Astra 一次改動 3.5% 的權重，讓成功率 0% 的控制策略變成 100%，同樣是在修補失效。\n所以我覺得「權重空間編程」短期內最有價值的用途，是在權重裡找出並修補已知的失效模式，而不是取代梯度下降去教模型新能力。\n另外要注意，「不用梯度」不等於「不需要回饋」。Qwen 那次用了大約 50 次前向傳遞，還搭配練習題來檢查結果；如果只用 10 次，MATH-500 只到 12.3%。\n這項能力也不穩定，Gemma 3 270M 沒有明顯進步，光靠讀權重來判斷模型是否諂媚也失敗了。而且這些全是研究者自己報告的初步結果，目前還沒看到獨立複現。\n現在說它會改寫遊戲規則還太早。比較實際的期待是，它可以當成一種能讀懂權重的除錯工具。\n#權重空間編程 #GPT6Astra #QWen35 #Gemma3",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-03T12:01:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/3245988087047192217?_nc_oc=AdqVQG3RrXUCcy75VZTyEJ0DtRsBVhQrGCKZGI-b4uzd-GYaibFgxPUf03H1Q0hw8mhztna05F950hR_NXv4r86q&url=https%3A%2F%2Frikiyat.github.io%2Fimages%2Fblog%2Fweight-space-programming.png&fb_obo=1&utld=rikiyat.github.io&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=WIQ23l9Lp7LneHD1umKTfQ&_nc_zt=3&oh=06_Q3_EAcJKKIiz36I0KGaqwSzf11VaAwXRfAZZS54-OIOe-Jn9&oe=6AEC50B9",
+        "alt": "Weight-Space Programming 研究的貼文連結預覽圖",
+        "credit": "來源：Rikiya Takehi 等／MIT CSAIL；由 Ant Yi-Feng Tzeng 於 Facebook 分享"
+      },
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid02YM7v3rEbBQ5FofF6M7ZvDbhrf3Mr5zhzLxzvzbkDN6M1oXHbNTDZCJtrtRyGeiwQl",
+          "published_at": "2026-11-03T12:01:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-cdf94d16c9d1584e22065a7d",
+      "title": "NERV 防災新增 24 小時 YouTube 資訊直播",
+      "summary": "Eric 分享 NERV 防災的 24 小時 YouTube 直播，整合氣象、地震與海嘯資訊。官方定位為輔助資訊管道，並提醒直播可能延遲，須搭配其他警報來源。",
+      "original_text": "残酷な天使のように 少年よ 神話になれ\n\n不得不說這系統也已經是官方級的，真的是越來越強大了...\n▌日本政府認證「特務機關NERV防災」啟動24小時防災情報直播 隨時掌握日本各地相關資訊\n獲得日本政府認證，並與《新世紀福音戰士》合作提供「特務機關 NERV 防災」APP 及防災資訊服務的 Gehirn 公司宣布，自2026年11月2日起，在 YouTube 推出「特務機關NERV防災直播（綜合版）」，以24小時不間斷直播的方式，提供氣象資訊、地震、海嘯等各類防災資訊。\n也讓這個企劃更加全面，讓所有民眾都能夠過NERV防災情報來掌握各地資訊，推出後也獲得日本網友讚賞。\n#新世紀福音戰士 #防災 #特務機関nerv防災",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-03T09:26:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid0qP9MkcDoaGB9pBSP4BFCDPMf3bbzPXfds636Fbz4H8pEwfQPwd2wr3qRHfHTBBNvl",
+          "published_at": "2026-11-03T09:26:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-1703f0d39f699bac3e7a8e53",
+      "title": "保哥介紹權重直接編輯：修補迴圈，釋放既有能力",
+      "summary": "保哥介紹讓語言模型直接讀寫神經網路權重的研究：修補 Qwen 的推理迴圈後，數學與指令遵循表現提升；對另一模型的普通推理錯誤卻幫助有限，顯示除錯與新增能力仍有差別。",
+      "original_text": "這真的太扯了！\n傳統訓練神經網路的方式，像是把模型送進補習班。我們用梯度下降讓它做上億次練習，錯了就修正，直到內部的權重自己長對為止。\nMIT CSAIL 團隊最新發表的 Weight-Space Programming 研究，展示了一種完全不同的路徑：讓大型語言模型直接對其他神經網路進行開腦手術。\n在實驗中，研究人員把小型網路的原始權重直接交給 GPT-6 Astra。不靠任何環境回饋，它光是看那堆密密麻麻的浮點數，就能像神經外科醫生看核磁共振片一樣，準確判斷這個網路原本被訓練來玩打磚塊還是小精靈。\n甚至，它還能直接動手寫權重，徒手捏出一個會打電動跟下圍棋的神經網路，第一天上場就贏過苦練一億步的強化學習模型。\n這篇研究最受矚目的實驗，是讓 GPT-6 Astra 在沒有 GPU 與梯度資訊的情況下，改善 Qwen3.5-0.8B 的數學表現。\n結果 Astra 只修改了 0.016% 的權重，就讓 MATH-500 的成績從 7.9% 暴增到 48.1%。\n乍看之下像是把微積分直接灌進腦子裡，但檢視實驗紀錄會發現，這其實是一場專治強迫症的微創手術。\nQwen3.5-0.8B 原本就具備一定的算術能力，但它有嚴重的鬼打牆毛病。在練習題中，高達 93% 的回答都因為陷入無限思考迴圈，直接撞上 Token 長度上限而交白卷。\nAstra 診斷出這個問題後，精準定位出第 15 層與第 19 層 MLP 中負責把模型推向迴圈的特定方向，接著直接用減法把那 13 萬個權重數值切掉。\n切掉這條愛鑽牛角尖的神經迴路後，模型不再精神內耗，原本被掩蓋的數學能力自然釋放出來。甚至連完全沒針對性調整的指令遵循測試 (IFEval)，分數也跟著翻了三倍。\n不過這場開腦手術也有明確的醫療極限。\n當研究團隊把手術對象換成幾乎不會鬼打牆、但單純就是算錯數學的 Gemma 3 270M 時，Astra 切了半天，成績進步還不到 1%。面對要抓出哪個模型在微調後學會阿諛奉承，單看靜態權重也四次全數猜錯，最後還是得讓模型實際跑幾次前向傳播，觀察注意力權重 (Attention weights) 才抓到那個專門看人臉色的注意力頭。\n如作者在文末誠實的總結，目前的權重直接編輯技術，能幫模型切除阻礙發揮的腫瘤，但還沒有辦法把學渣直接切成學霸。即便如此，當語言模型開始能讀懂並修改神經網路權重，我們對模型最佳化與可解釋性的想像已經被徹底打開了。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-03T08:22:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/3245988087047192217?_nc_oc=AdqVQG3RrXUCcy75VZTyEJ0DtRsBVhQrGCKZGI-b4uzd-GYaibFgxPUf03H1Q0hw8mhztna05F950hR_NXv4r86q&url=https%3A%2F%2Frikiyat.github.io%2Fimages%2Fblog%2Fweight-space-programming.png&fb_obo=1&utld=rikiyat.github.io&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=WIQ23l9Lp7LneHD1umKTfQ&_nc_zt=3&oh=06_Q3_EAcJKKIiz36I0KGaqwSzf11VaAwXRfAZZS54-OIOe-Jn9&oe=6AEC50B9",
+        "alt": "Weight-Space Programming 研究的貼文連結預覽圖",
+        "credit": "來源：Rikiya Takehi 等／MIT CSAIL；由 Will 保哥的技術交流中心於 Facebook 分享"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid032meTV7xavLYVmDAL6tcMfxy6TsXoRGwjCGa1EceLDYfBuDrjLxp66YiPXtqhgx3yl",
+          "published_at": "2026-11-03T08:22:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-d3c6d21311020c49484e7154",
+      "title": "保哥製作 SRT、WebVTT 與 ASS 互動字幕教學",
+      "summary": "保哥用互動網頁比較 SRT、WebVTT 與 ASS，提供渲染預覽、語法對照、色碼與時間軸轉換，以及格式選擇情境，讓字幕功能差異更直觀。",
+      "original_text": "不同的字幕格式有很多好玩的地方，做了個互動網頁來介紹他",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-03T07:42:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/4580293784060911088?_nc_oc=AdoAl-oDI0sxVzadb_tyihFiQhnv4kN2DTv0kBOuKUkQYoWK_1ljGmI3KDyw5ZhlMtM_ldBh3KK6WDqJKCUsUy1X&url=https%3A%2F%2Fsubtitle-formats.gh.miniasp.com%2Fassets%2Fog-image.png&fb_obo=1&utld=miniasp.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=RTMU3wNbhzqTB0XQQQlOFQ&_nc_zt=3&oh=06_Q3_EAZp4IQOLupHNvwbK8IfxIe3F7-Swovqq0V0ARffcTy8t&oe=6AEC4131",
+        "alt": "SRT、WebVTT 與 ASS 互動字幕格式教學的預覽圖",
+        "credit": "來源：Will 保哥／字幕格式互動實驗室"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02i6cLDGFcHAfjrMgrN8WtevzBMqVHt1yRLWCGnpRdyPuGzEu7itG4UaoMatmzAfRRl",
+          "published_at": "2026-11-03T07:42:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-61375e9d4f8098d6d404f2b8",
+      "title": "Nathan 從光通訊與算力支出觀察 AI 供應鏈",
+      "summary": "Nathan 從光通訊整合、雲端籌資與算力承諾等產業消息，觀察 AI 投資如何牽動供應鏈。他關注資金來源、支出時程與採購變化，將重點放在企業投資如何轉成實際訂單。",
+      "original_text": "大河馬每日報｜2026.11.03（二）\n美股週一收盤很分裂：道瓊漲 0.42%，Nasdaq 跌 1.07%，S&P 500 早盤一度漲約 1%，最後收跌 0.51%。資金從科技股撤出的同一天，AI 產業做了兩件很花錢的事：一件是併購，一件是籌資。\n【主菜】Marvell 併 Lumentum：AI 改走光的路\nMarvell 週一正式宣布，以全股票方式收購光通訊廠 Lumentum。每股 Lumentum 換 4.5 股 Marvell，企業價值約 1,150 億美元，相當於每股約 1,132 美元，比 10 月 28 日未受消息影響的收盤價溢價約 23.9%。交易完成後，Marvell 原股東持有合併公司約 67%，Lumentum 股東約 33%。雙方說看得到每年超過 10 億美元的成本綜效，並把合併後的可服務市場算成 5,500 億美元。預計 2028 年上半年完成。\n市場的第一反應不客氣。Marvell 當天收跌 12.72%，Lumentum 跌 18.59%。全股票交易的麻煩就在這裡：買方股價一跌，賣方拿到的價值跟著縮水，以週一收盤計算，換股價值只剩每股約 771 美元。\n為什麼是現在？Marvell 執行長 Matt Murphy 在新聞稿裡講得很直接：AI 基礎建設正在往光連接做架構性的轉移。GPU 叢集越做越大，銅線在距離和功耗上撐不住，光模組、雷射、磷化銦這些上游元件就從配角變成瓶頸。Nvidia 今年稍早也投資了 Lumentum 20 億美元。大家搶的是同一段供應鏈。\n放到台灣來看，這筆交易牽動的是光通訊上游。市場報導指出，穩懋拿到 Google TPU 光路交換器供應鏈的光偵測器訂單，而 Lumentum 在這條鏈上供應雷射與光源模組，穩懋則表示不評論單一客戶。華星光是 Marvell 的長期合作夥伴，先前以 800G ZR 被動元件打進它的供應鏈。買方和賣方合成一家之後，採購是集中還是外包，對台灣這幾家公司的訂單節奏會有直接影響。我覺得這比股價漲跌更值得追。\n另外，從宣布到完成要一年半以上，期間要過股東會和各國監管審查，這段時間的不確定性本身就是成本。\n下一個要盯的數字：Lumentum 本週四（11/5）美東時間盤後公布財報。這是宣布被併後的第一次財報，看它的營收成長和產能規劃，就知道 Marvell 這個價錢買的是什麼。\n【另外三件】\n一、Oracle 一天要籌 200 億美元\nOracle 週一向 SEC 申報，同時發行 100 億美元普通股和 100 億美元無擔保公司債，債券分六個年期，最長到 2046 年。用途寫的是「一般公司用途」，包含資本支出。以上週五收盤價估算，新股約 7,650 萬股，股本增加約 2.5%。股價當天收跌約 8.7%，今年以來已跌超過三成。\n賣股票通常是最貴的資金來源。Oracle 選在股價低檔時增資，我的解讀是 AI 資料中心的帳單，已經不是現金流加舉債就能輕鬆支應。對台灣的伺服器供應鏈來說，雲端客戶的資金從哪裡來，就是訂單能見度從哪裡來。\n二、Ternus 接任後第一季，Apple 營收創九月季新高\nApple 9 月季營收 1,144.8 億美元，年增 12%，高於市場預估的 1,134.6 億美元。iPhone 營收 575.8 億美元，年增約 17.5%；服務營收 315.7 億美元，年增約 10%，基本上和預期持平。大中華區營收 175 億美元，成長 21%。這是 John Ternus 接任執行長後的第一份財報。\niPhone 季成長接近兩成，對台灣的晶圓代工、組裝和零組件供應鏈來說，是年底旺季最直接的支撐。\n三、印度 Affle 以 4.2 億美元收購 Perion\n廣告科技公司 Perion 宣布，與 Affle 3i 簽署合併協議，以每股 11.70 美元現金收購，股權價值約 4.2 億美元，比上週五收盤溢價 34.5%。Perion 同時撤回 2026 全年財測和 2028 年目標，暫停庫藏股，11 月 16 日公布第三季財報、不開法說會。\nPerion 就是 2023 年 12 月以最高約 1 億美元買下數位戶外程序化廣告平台 Hivestack 的那一家，業務涵蓋 CTV、數位戶外和零售媒體，都是台灣市場也在談的新版位。中型獨立廣告科技公司一家家被整併，代理商和廣告主能選的技術供應商會越來越少，議價結構也會跟著變。\n【長線追蹤：AI 企業 IPO】\nAnthropic 週一遞交修正版 S-1，補上第三季數字：單季營收約 170 億美元，前一年同期約 14 億美元。文件也揭露約 8,954 億美元的採購承諾，幾乎都用在算力和基礎設施，其中約 698 億美元在 12 個月內到期。股票代號 ANT，預計在 Nasdaq 掛牌，價格區間和發行股數都還是空白。我看這份文件的方式，和看 Oracle 那份增資申報差不多：營收成長很快，但承諾的算力支出更大，公開市場要判斷的是兩者的時間差。不管是哪一家 AI 公司上市，這個問題都一樣。\n【接下來要看】\nAMD、Arista 和 Astera Labs 今天（11/3）美東時間盤後公布財報；AppLovin、Magnite、Qualcomm 和 Arm 在 11/4 美東時間盤後；Lumentum 則是 11/5 美東時間盤後。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-03T07:30:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.99422-6/875115232_1089832500539716_7802273334408683529_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=B0F_R-yJmXAQ7kNvwEzc4k3&_nc_oc=AdrF4D4YiZhoK-T3-rT-diV_cgedRxNcQ5pNS221N1rljp5YTgNrWsDSNkBjO4TriwwLQxcKy53Izwcaqeq8RVlm&_nc_zt=14&_nc_ht=scontent.ftpe7-4.fna&_nc_gid=RTMU3wNbhzqTB0XQQQlOFQ&_nc_ss=7b2a8&oh=00_AQRJy8YQ_cDbUNaNP1MpQR4-2qWGBAPJv9XVK175DUQ4zQ&oe=6AF05645",
+        "alt": "Nathan 11 月 3 日科技與 AI 日報的貼文配圖",
+        "credit": "來源：Nathan Chiu／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0mEfUpLJ5JT9S7VTVRN9po4WoQiVpWBaBZrYoEgmCGGmvKwPXA7rmsjiwEvGqRL3fl",
+          "published_at": "2026-11-03T07:30:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-8317bacd1c91acaee6bee6ec",
+      "title": "Ant 質疑：淨室設計不能只靠一個模式開關",
+      "summary": "Ant 質疑把淨室與深度分析放在同一工具、隨時可切換的設計，難以留下可信的來源隔離證據。他主張分開觀察與實作的人員、環境及交接紀錄，並提醒專案仍是早期 alpha。",
+      "original_text": "有個新的逆向工具 craft-anything [1] 最近被說成比 rea (Reverse engineer anything) [2] 更厲害。\n[1] https://github.com/storytold/craft-anything\n[2] https://github.com/morluto/rea\n我覺得它真正值得討論的是一個設計選擇：#淨室設計 (Clean Room) 和深度設計做在同一個工具裡，點一下就能切換時，對主張淨室開發的人來說，很可能反遭質疑。\n先講清楚兩種設計差在哪。預設的淨室設計不讀原軟體的程式碼、檔案或網頁原始碼，只用公開的截圖、文字、版面、顏色、字型這些外部看得到的資料，當需要讀取內部的工具會直接被擋下。\n深度設計則會讀程式碼、檔案和網站的 JavaScript，官方把它限定在「for your private use」。但問題就出在這裡：切換只要點標題列、改設定，或在單次執行時加一個參數。同一個人、同一套環境隨時可以讀到原創內部，日後要證明開發時完全沒碰過，很難說服人。\n設定檔裡的開關是一種自我聲明，算不上隔離的證據。淨室的價值本來就在把人分開：觀察的人寫規格，動手做的人只看規格，兩邊從頭到尾不共用環境。再加上它的流程會把成品和原版逐項比對，網頁還會比三種螢幕寬度，一路修到夠像為止，產出的東西越像原版，越需要乾淨的來歷。\n所以真想做替代品的團隊，該拆成兩組人、兩套環境，交接時留下紀錄，不要把整件事交給一個模式開關。\n另外補充：專案自述還在 early alpha (早期階段)，網路轉貼的不少功能描述在官方說明裡找不到。它的負責任使用聲明也寫明只能檢查自己擁有或獲得授權的軟體，不繞過 DRM、登入機制或反作弊。\n#逆向工程 #淨室設計 #CleanRoom",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-03T02:24:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe7-2.fna.fbcdn.net/emg1/v/t13/17316338864984849124?_nc_oc=AdpDT-_o615h4JfMurAJ_1pVLuKgRFdeTGmjFHd7w5KTD-yLO_s8HLX38fdUqPXaUfUtknubCHDGp6MR-goKlPGX&url=https%3A%2F%2Frepository-images.githubusercontent.com%2F1209966933%2F1a3fef9a-be4b-41f4-8830-a94c0e8288cc&fb_obo=1&utld=githubusercontent.com&_nc_sid=c63717&_nc_ht=external.ftpe7-2.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=RTMU3wNbhzqTB0XQQQlOFQ&_nc_zt=3&oh=06_Q3_EAa0SlaGxGC3VdQp0tqY0JwbIKhjF9u9q8xk9UdxNLbr3&oe=6AEC38F3",
+        "alt": "Ant 比較討論中所連結的 REA GitHub 專案預覽圖",
+        "credit": "來源：morluto／REA（GitHub）；由 Ant Yi-Feng Tzeng 於 Facebook 分享"
+      },
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid025KX2hzQhCmUs4wEmtAMT1U8R7DCd7UU3WysQLpkwRF9vTn3NCJ7h9LkY7c9UhFpql",
+          "published_at": "2026-11-03T02:24:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-11-03T23:31:22.172Z",
+      "captured": 12,
+      "included": 10,
+      "excluded": 2,
+      "notes": []
+    }
+  }
+}
