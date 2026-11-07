@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "date": "2026-11-06",
-  "generated_at": "2026-11-06T03:25:51.565260+00:00",
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07T02:47:04.361515+00:00",
   "quotes": {
     "tw": {
       "date": "2026-11-05",
@@ -11,24 +11,24 @@
       "source": "TWSE"
     },
     "sp500": {
-      "date": "2026-11-05",
-      "close": 7353.73,
-      "change": -334.8901,
-      "change_pct": -4.3557,
+      "date": "2026-11-06",
+      "close": 7376.8599,
+      "change": 23.1299,
+      "change_pct": 0.3145,
       "source": "Yahoo Finance"
     },
     "nasdaq": {
-      "date": "2026-11-05",
-      "close": 24314.998,
-      "change": -1421.5117,
-      "change_pct": -5.5233,
+      "date": "2026-11-06",
+      "close": 24579.4238,
+      "change": 264.4238,
+      "change_pct": 1.0875,
       "source": "Yahoo Finance"
     },
     "dow": {
-      "date": "2026-11-05",
-      "close": 51523.0586,
-      "change": -1833.0625,
-      "change_pct": -3.4355,
+      "date": "2026-11-06",
+      "close": 51285.7305,
+      "change": -237.3281,
+      "change_pct": -0.4606,
       "source": "Yahoo Finance"
     }
   },
@@ -39,5 +39,8 @@
     "rate": 32.86,
     "source": "Frankfurter"
   },
-  "errors": {}
+  "errors": {
+    "tw": "TimeoutError: The read operation timed out",
+    "fx": "ValueError: invalid FX rate or date"
+  }
 }
