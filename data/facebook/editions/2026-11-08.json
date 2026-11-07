@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-08",
+  "generated_at": "2026-11-08T00:14:35+08:00",
+  "is_demo": false,
+  "edition_title": "2026-11-08 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 9 則，入選 5 則，排除 4 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-de3f3d8bfa9f49b4f1b7e7e2",
+      "title": "保哥用 DDR5 荒島求救梗談 AI 記憶體供應壓力",
+      "summary": "保哥介紹把荒島求救字樣改成「免費 DDR5 記憶體」的科技版漫畫，以幽默方式談 AI 擴產對記憶體供應的壓力。",
+      "original_text": "網路上有張流傳很廣的荒島求救漫畫 (Esther Verkest's Help Sign)，最近被改編成了科技業版本。\n原本主角在沙灘上用石頭排了 HELP，飛過去的飛機連看都不看一眼。後來她把字改成 FREE DDR5 RAM，馬上就有飛機直接衝上沙灘，甚至還有人跳傘下來搶。\nElon Musk 在 2026 年 2 月初上 Dwarkesh Patel 的 Podcast 訪談時，也拿這個概念開了個玩笑。\n當時他聊到 AI 晶片擴產最大的瓶頸在記憶體，價格漲得很誇張。他就接著說，如果你受困在荒島上，在沙灘寫救救我，不會有人理你，但如果你寫的是 DDR 記憶體，船隊馬上就會蜂擁而至。\n一張老漫畫加上那段訪談，把現在硬體供應鏈最缺什麼這件事，講得挺真實的。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-07T20:08:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/896662831_1155963177006546_3369008529702097331_n.png?stp=dst-jpg_tt6&cstp=mx806x1058&ctp=s806x1058&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=m5d5O5A6U5wQ7kNvwHe1bjO&_nc_oc=AdqaiM6_cpcprBJtOPhsaq6-f-1-UOx6Ds2SR4r_d_o20uhDt5IUtLs1Om6lVgWruTSj2Rhfepu486f5p2PxkSSs&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=LtUoJ8BhcWWVRdYbwdavNg&_nc_ss=7b2a8&oh=00_AQTa5SvfZetaa0Zieh4stBWOHfTe0Iy-w5Nu9sGkxWFBiw&oe=6AF529BD",
+        "alt": "保哥分享的 DDR5 記憶體荒島求救科技版漫畫",
+        "credit": "來源：Will 保哥的技術交流中心／Facebook；漫畫改編者未標示"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02fM4D7LnP8NbTWBHdeDwoqh6XsxkdGHEHZnWQYvZbBYN7nzRvkbbzUPV5QCeUcY86l",
+          "published_at": "2026-11-07T20:08:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c02907a0d944a64c62d3aedf",
+      "title": "保哥分享 Antigravity 語音編程展示",
+      "summary": "保哥分享 Antigravity 的語音模式展示，討論用口述指令寫程式的工作方式。",
+      "original_text": "以後寫程式真的就是出一張嘴了，不信你看看 Voice mode in Antigravity 的展示",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-07T18:39:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t15.5256-10/892990950_1113316488222939_8274738701291762932_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=103&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=y6JYshbWpusQ7kNvwFBTt0h&_nc_oc=AdojiykFpKf-8HPDbzhncBrIfj1e0ODCY3yWbeEBycZV6W-TLPefnbQnYUuFxOHq6aUKHriGiIETEmp4CspRXUxl&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=LtUoJ8BhcWWVRdYbwdavNg&_nc_ss=7b2a8&oh=00_AQRlfwq5u8GrFxj_0TU9IDq3fM2GWLuyC8Pxe49e-uslXw&oe=6AF51BFE",
+        "alt": "保哥分享 Antigravity 語音模式展示的影片預覽縮圖",
+        "credit": "來源：Will 保哥的技術交流中心／Facebook 影片縮圖"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/reel/1151750223845319",
+          "published_at": "2026-11-07T18:39:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-cee5a3976b9a976c4735f47a",
+      "title": "保哥分享台灣化生活指南，附 AI Agent 技能",
+      "summary": "保哥宣布將生活指南改寫為台灣情境，提供 PDF、EPUB 與 AI Agent 可用的 SKILL，並開放原始碼讓讀者共同修訂。",
+      "original_text": "我重寫了一份網路上廣為流傳的「高性價比人生指南」，原始專案擁有高達 74.1K 顆星。其內容真的很棒，只是有太多中國大陸的法規與生活習慣，我全部都改寫為台灣的資訊。內容非常值得任何人深思，請認真看，不要叫 AI 看，這樣才有助於你挽回已經走下坡的人生！\n如果你還沒開始你的人生 (例如學生)，那恭喜你，我打賭你看不下去，還會說這是 AI slop，我們可以等你走下坡再看，不遲！\n本書有 PDF、EPUB 等格式，甚至有 SKILL 可以給你的 AI Agent 用，我都有開放原始碼在我的 Repo，採 CC-BY-4.0 與 MIT 授權協議，歡迎大家到我的 GitHub Repo 提出修改意見，大家討論並投票後，覺得不錯我就補進去，一起為人生做出努力！ \n #Repo連結我放在留言處",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-07T17:23:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe8-4.fna.fbcdn.net/emg1/v/t13/9390648266471210681?_nc_oc=Ado6Qi1oIdM8uVeKuX_5a4WlBZQyh__mS5nP6D93oPwhlgs2NmPxD6KWKFzx2XhKBBxx6NQ_YKwmHc3EF_Rnga8H&url=https%3A%2F%2Fhow-to-live-better.gh.miniasp.com%2Fog.png&fb_obo=1&utld=miniasp.com&_nc_sid=f93bbc&_nc_ht=external.ftpe8-4.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=LtUoJ8BhcWWVRdYbwdavNg&_nc_zt=3&oh=06_Q3_FAYHe7IbZSCW_rAczBRwXvrVJfzi88dNSnWGaVGNcY9W6&oe=6AF137B0",
+        "alt": "保哥分享的高性價比人生指南專案預覽圖",
+        "credit": "來源：doggy8088／HowToLiveBetter；由 Will 保哥的技術交流中心於 Facebook 分享"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid033EBngYZKi7scmgxBxVswzPDi96DiZyxhwC3uWNkEUHxyDBMs1866ysRao6yjzXWpl",
+          "published_at": "2026-11-07T17:23:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-1eb801484514811d5e35d874",
+      "title": "Nathan 談 AI 算力採購：供電與交期影響供應鏈",
+      "summary": "Nathan 從雲端算力採購與資料中心規劃，討論供電、審批及交付時程對 AI 供應鏈的影響，並關注 AI 搜尋摘要對新聞網站流量的衝擊。",
+      "original_text": "大河馬每日報｜2026.11.07（六）\n美國期中選舉後，AI基礎建設這週被重新估價。週五美股小幅反彈，那斯達克收漲1.09%，但比股價更值得看的，是最大買家怎麼調整採購。\n【主菜】微軟開始挑選AI算力供應商\nBloomberg週五報導，微軟正在結束2023年向甲骨文租用AI算力的合約。這份合約當初用來支撐AI版Bing，硬體是較舊世代的Nvidia晶片，微軟沒有續約，近幾個月陸續關閉；甲骨文則回應需求依然強勁。\n這不是單一事件。Bloomberg前一天報導，微軟取消了與Nscale一筆約30億美元的英國資料中心合約，原因是電網供電延宕多年；另外也放棄在西維吉尼亞租用1.35GW容量的意向書。IREN德州廠區有布線問題與交期延後，Nebius的新澤西廠區則因無照使用發電機被罰100萬美元。\n為什麼是現在？微軟財務長Amy Hood在最近一次法說會上，已經是第三次提到第三方產能延誤打亂了支出計畫。過去一年，微軟新增超過2,000億美元的資料中心租賃承諾，錢沒有少花，但開始往自建資料中心集中。選舉之後，電力與地方審批的變數只會更大。\n放到台灣來看，伺服器和機櫃訂單的終端買家沒有消失，但交貨地點、時程和規格可能重新排列。對供應鏈來說，接下來要問的不是「有沒有單」，而是「單掛在誰的名下、哪一季出得去」。\n下一個要盯的數字：CoreWeave美東11月10日盤後財報的未交貨訂單，以及Nebius 11月12日盤前財報對交期的說法。\n【另外三件】\n一、Cloudflare營收成長39%\n同一週市場重手賣出跟資料中心建設有關的公司，Cloudflare卻交出第3季營收7.825億美元、年增39%，是近四年最快的成長，全年營收預估拉到29.63億至29.64億美元，週五股價漲近一成。執行長Prince說，他們已經建好「AI驅動網際網路的開發平台」。台灣做雲端與資安服務的業者可以留意這個分流：市場這週開始把「蓋AI」和「用AI收費」分開定價。\n二、Lam Research宣布250億美元庫藏股\n晶片設備商Lam Research董事會11月5日核准250億美元的股票買回授權，同時宣布季股利每股0.33美元。消息出在半導體類股重挫當晚，隔天股價漲8.23%。設備商敢在這個時間點拿出這麼大的買回額度，代表它對晶圓廠先進製程擴產的能見度有一定把握，這和台灣晶圓廠的資本支出節奏直接相關。\n三、Google在懷俄明州投入170億美元蓋資料中心\nBloomberg報導，Google計畫在懷俄明州投入170億美元興建資料中心，電力部分來自AEP規劃中的702百萬瓦燃料電池電廠，雙方簽的是20年購電合約。和微軟把外包產能收回來不同，Google的做法是連電一起自己綁定。對台灣來說，資料中心的瓶頸已經從晶片轉到電力，台灣自己的資料中心規劃也會碰到同樣的問題。\n【長線追蹤：AI搜尋與AI Mode變現】\nUSA Today Co.第3季營收5.192億美元，年減7.4%。執行長Mike Reed把數位營收下滑歸因於搜尋行為改變，也承認這對近幾季造成「過大的影響」：讀者在Google等平台看到AI摘要，就不點進來了。他同時說，受衝擊的是不到總業務5%的一小塊數位廣告。過去談AI摘要吃掉點擊，多半是流量統計；這次是上市媒體把它寫進財報說明。台灣新聞網站的流量同樣高度依賴搜尋，這條線接下來要看的是，平台端的AI廣告收入和內容端的流量損失，會不會在同一季的財報裡同時出現。\n【下週要看】\n美東11月9日（週一）盤後The Trade Desk公布財報，看程序化廣告預算在選後有沒有變化；11月10日盤後CoreWeave、11月12日盤前Nebius，看新雲端業者的交期與資本支出指引；11月12日盤後還有Cisco、應用材料與Cerebras。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-07T08:47:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/895709078_1168221249229982_8656428914481308439_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=MZsrOuu3ZD0Q7kNvwGxMsYT&_nc_oc=Adq6nlcuNeQi-zloHOzhrg_-Fv8o-R0cm6ANZ5Tas7DEzZ6EUjM_VB6P2HM_LJGoqqMx94ytfgV5niWTrRoa3WgB&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=JfWqpy-VCXzLpolrJv-Khg&_nc_ss=7b2a8&oh=00_AQQhhOY3tdKuQ9B6VSHdSa3G2B1DAIkQND3UP0S57meuGg&oe=6AF52CC3",
+        "alt": "Nathan 大河馬每日報 2026 年 11 月 7 日貼文配圖",
+        "credit": "來源：Nathan Chiu／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0yznPFzLE4ZBVcAfd2AF6MoLq9MHGwJpkRsYoqV6Yg8D9dLDanx6G6ngXUAicuKpQl",
+          "published_at": "2026-11-07T08:47:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-f3c983ff4fcc50635b5be59e",
+      "title": "保哥推薦以 HTML 呈現 AI 回答的技能",
+      "summary": "保哥使用 answer-me-with-html 一週後給予好評。專案讓 Agent 撰寫 Markdown，再由 CLI 產生含圖表、表格的 HTML 頁面，減少手寫版面所需的輸出。",
+      "original_text": "answer-me-with-html 這個技能我用一個星期了，從一開始的沒什麼，用到現在怎樣也離不開，不讚太難！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-07T08:34:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-lax3-2.xx.fbcdn.net/emg1/v/t13/7116263398700820719?url=https%3A%2F%2Fopengraph.githubassets.com%2Ff477fa9e1f957a8c9e1b8bc51afa4b11c0a0f28d4bf93702ed81d9cc499dff3a%2Fdoggy8088%2Fanswer-me-with-html&fb_obo=1&utld=githubassets.com&_nc_sid=c63717&_nc_ht=external-lax3-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=JfWqpy-VCXzLpolrJv-Khg&_nc_zt=3&oh=06_Q3_FAbKhfzYyZPkbmYmKhIPr8eKOouBCEU4llR4zKtUhbRVt&oe=6AF12866",
+        "alt": "保哥推薦的 answer-me-with-html GitHub 專案預覽圖",
+        "credit": "來源：doggy8088／answer-me-with-html（GitHub）；由 Will 保哥的技術交流中心於 Facebook 分享"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0hvZme1v1VmhwCLaxGJuRbQUcmUtLuhrTWBDWcj71Mkv7iocPYvskPbMJADZMSsiTl",
+          "published_at": "2026-11-07T08:34:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-11-07T16:14:33.454Z",
+      "captured": 9,
+      "included": 5,
+      "excluded": 4,
+      "notes": []
+    }
+  }
+}
