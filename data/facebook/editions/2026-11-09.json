@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-09",
+  "generated_at": "2026-11-09T02:27:26+08:00",
+  "is_demo": false,
+  "edition_title": "2026-11-09 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 4 則，入選 2 則，排除 2 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-35be22e9d5950bd4956957fc",
+      "title": "保哥回顧 Coze 的多代理實作經驗",
+      "summary": "保哥回顧用 Coze 開課、建立上百個 Agent 的經驗，感謝它讓自己提早接觸多代理協作，並認為模型能力提升正在衝擊這類平台。",
+      "original_text": "Coze 要收了，整個服務要停掉。想當年我還蠻喜歡它的，不但開了課，還做了上百個 Agent 在跑。不過因為模型變太強，所以這個服務也自然走到了盡頭，可謂是時代的眼淚！無論如何，感謝有你，讓我提早一年掌握多代理人的魅力！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-08T20:34:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0wKvXsqkuUSvjqDqRSHEgKYkEdL1YA18qMAtX3ZMEsRCPcTEUmsx8pDEFooEqEgEvl",
+          "published_at": "2026-11-08T20:34:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-352e47f78e8545eddc9d469c",
+      "title": "Nathan 從 GTA 6 與 AI 供應鏈觀察產業風險",
+      "summary": "Nathan 以大型遊戲發行的營收依賴為主軸，延伸討論 AI 對晶圓與封測產能的擠壓、晶片出口審查、廣告平台條款及新創籌資風險。",
+      "original_text": "大河馬每日報｜2026.11.08（日）\n上週美股被選舉和 AI 賣壓搞得很緊繃，整週那斯達克跌了 3.37%。週末換個輕鬆一點的題目：再過 11 天，有一款遊戲要上市，而一家上市公司的半年業績，幾乎就押在它身上。\n【主菜】GTA 6 倒數 11 天：一款遊戲撐起半年營收\n《俠盜獵車手 VI》（GTA 6）11/19 在 PS5 和 Xbox Series X|S 上市，各地都是當地午夜零點解鎖。美國標準版 79.99 美元、終極版 99.99 美元；台灣的數位標準版 2,320 元、終極版 2,900 元。Rockstar 公布的預載容量最高 212GB，11/10 起開放預載。換句話說，不少玩家得先刪掉幾款舊遊戲，才裝得下這一款。\n錢的部分更有看頭。Take-Two 這個財年（到 2027 年 3 月）的淨營業額目標是 80 億到 82 億美元，但第一季只做了 13.9 億美元，第二季財測是 16.2 億到 16.7 億美元。簡單相減，下半年得交出大約 50 億美元，比前兩季加起來還多，而這段期間最大的變數就是 GTA 6。一家市值上千億美元的公司，把半年業績的大部分壓在一款遊戲上，這種場面不常見。\n為什麼是現在？美東時間 11/9（一）Take-Two 公布第二季財報，這是上市前最後一次法說會，華爾街想聽的大概只有一件事：預購到底有多強。另外，79.99 美元這個價格本身就是在試水溫，看主機遊戲的定價天花板能拉到多高。如果 GTA 6 賣得好，其他大廠跟著漲價的理由就有了。\n放到台灣來看，台灣的預購比全球晚了將近三個月才開放（9/17，全球是 6/25）。上市那一週，大概會是今年底最搶遊戲玩家注意力的一週，想在那幾天跟玩家說話的品牌，得想清楚是要正面搶，還是乾脆避開。另外，兩百多 GB 的檔案在同一個晚上被大量下載，電信業者的網路也要撐得住才行。\n下一個要盯的數字：11/9 Take-Two 會不會調整 80 億到 82 億美元的全年目標，以及上市後第一次公布的銷售數字。\n【另外三件】\n一、AI 把工廠吃光了：Microchip 交期拉到 32 週\nMicrochip 九月季營收 16.22 億美元，年增 42.2%。執行長 Steve Sanghi 說，標準產品交期已經從 4 到 8 週拉長到 6 到 32 週，AI 公司「把整座工廠都包了」，受限的環節包括晶圓代工和委外封測，一月起供應商還要再漲價。十二月季財測偏保守，股價週五跌 10.02%。台灣這邊，經濟部 11/5 通過日月光半導體 1,237 億元的投資案，擴充高階封測產能；Sanghi 說客戶轉單或自製要花大約六個月，這段空窗就是台灣封測與成熟製程廠的議價權。\n二、H200 出口許可，審到空殼公司\n《紐約時報》11/7 報導，美國商務部今年核准約二十多家中國企業購買或處理 Nvidia H200，其中負責組裝 AI 伺服器的 New Matrix 成立才 17 個月，北京的登記地址是一間空殼辦公室，股東和 2024 年就被列入實體清單的智路資本有關。工業安全局回應說每份申請都經過國安審查。H200 由台積電代工，伺服器組裝又是台灣 ODM 的主場，審查一旦收緊，整條鏈都得回答「最終用戶是誰」。\n三、Meta 暫停爬取廣告主網站的新條款\nMeta 原本要在 11/20 讓新版商業條款生效，允許爬取 Meta Business 帳號用戶的網站內容，用在廣告與商業產品。挪威、巴西法院先後發出初步禁制令，英國 CMA 也正式調查 Meta 是否濫用市場支配地位，Meta 在 11/5 宣布無限期暫停，現行條款照舊。台灣多數廣告主的投放都綁在 Meta Business 帳號上，這套條款哪天換個形式回來，最好讓法務先讀過一遍。\n【長線追蹤：AI 企業 IPO】\nAnthropic 10/27 公開遞交 S-1，11/2 的修正版揭露第三季營收 169.6 億美元、算力採購承諾 8,954 億美元。上週的賣壓直接打到估值：Bloomberg 報導，部分潛在投資人討論的估值降到 1.2 兆至 1.3 兆美元，先前是 1.4 兆至 1.5 兆，十月初一度喊到 2 兆。預測市場上，12/1 前完成上市的機率從約八成掉到五成左右。OpenAI 這邊，《華爾街日報》報導這輪原本要募 300 億美元，目前只募到約 110 億美元，上市時間也推到 2027 年初。兩家的營收都還在長，但這一週，一級市場的定價權明顯回到買方手上。\n【下週要看】\n美東時間 11/9（一）Take-Two 公布財報；11/10（二）GTA 6 開放預載，美東上午 8:30 公布美國十月 CPI，同一天也是台灣上市櫃公司公布十月營收的期限。再下一週，Nvidia 在 11/17 美東下午 5 點公布財報，11/19 GTA 6 正式上市。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-08T11:05:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/897776945_1108226465385463_3560668119519150103_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-as4AUa4n0kQ7kNvwEaVlTt&_nc_oc=AdrcY9Fw6ylmC2_ml5GhjsiBjXhxp92uT9WL2xNEbGs3_ecAyvpJSARkM6b11wnme5KPFIh3XZxdf0tRYMLBVm_2&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=0e-MC3g2tUR9tS_2wcht3Q&_nc_ss=7b2a8&oh=00_AQR1xbI7EWf0PS2CxJPhM02HmCqJ6lbeu-QVLvJfqXNW8A&oe=6AF672AF",
+        "alt": "Nathan 大河馬每日報 2026 年 11 月 8 日貼文配圖",
+        "credit": "來源：Nathan Chiu／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid028sARhnmpX7wouLuqnrBmfQH9LQgjwbtmAnUfvMgccAzKYcEW7qXHfXrdpuU126sFl",
+          "published_at": "2026-11-08T11:05:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-11-08T18:27:25.005Z",
+      "captured": 4,
+      "included": 2,
+      "excluded": 2,
+      "notes": []
+    }
+  }
+}
