@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-10",
+  "generated_at": "2026-11-10T00:19:03+08:00",
+  "is_demo": false,
+  "edition_title": "2026-11-10 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 10 則，入選 7 則，排除 3 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-41815b9bc7c0b8da61e9074c",
+      "title": "安德魯談 Agent 時代的架構改造與共用測試環境",
+      "summary": "安德魯主張，Agent 降低改寫成本後，更要先定義架構目標。他以共用未變更服務、透過路由切換待測版本為例，說明 Agent 操作體驗、基礎設施調度與安全設計需一起規劃。",
+      "original_text": "週末我又重讀了一次 \"Cheap code, precious trust: Code modernization at scale\" (原文放第三則留言) 這篇文章, 這次我在思考: 如果已經有人證實由少數專家推動 \"code modernization at scale\" 真的可行的時候, 技術決策者該考量的是什麼?\n我會想:\n\"如果我已經有這能力了, 那我要拿它來做什麼?\"\n\"code modernization\"? 我能描繪 modernization 後的樣貌嗎?\n最近業界的幾個變化, 讓我覺得大型系統值得重新檢視｡ 重點是既有架構能否承接新的需求與變更頻率, 我會從這三個方向來看:\n1. AX, Agentic Experience\nAgent 能否理解系統提供的能力, 並依清楚的 API 契約、操作結果與回饋完成工作?\n2. Infra Orchestration\n部署、調度、驗證與交付, 能否承接更頻繁、更多團隊並行的變更?\n3. Security by design\n每次操作代表誰、允許做什麼, 以及影響範圍如何受到控制?\n這是個綜合議題, 不是只有 \"AI\" 的議題, AI 一下子把需求推進了一整個世代, 這是既有系統如何跟上的議題｡ 這三點從目的跟期待的不同, 有不同的時間線... AX 前陣子聊了不少, Security by design 也談過 API First 的認證與授權設計; Infra Orchestration 比較少聊, 這篇先用測試環境的案例來說明\n這些問題 ( API First, Microservice Orchestration, Security by design ), 都需要從架構層次規劃｡ 對累積多年的系統, 重新設計、遷移、驗證與上線需要大量的人力跟成本, 即使知道該怎麼做, 也不容易排進既有的交付計畫, 對基礎原理的掌握跟經驗的累積, 就能在這時看出區別｡\n現在 agent 正在降低大規模改寫的執行成本｡ Microsoft 這篇文章提供了少數專家搭配 agent 推動改造的案例, 雖然沒有足夠的成本與工時資料供我們直接套用, 但值得重新評估過去改不起的系統｡ 決策者需要同時掌握兩件事:\n1. \"at scale\": \n你需要掌握怎麼有效地用 agent 大規模改寫既有系統的執行技巧｡\n2. \"code modernization\":\n你需要清楚掌握要將架構改成什麼樣子, 以及這樣的改造能帶來什麼能力｡\n這是個學問, 你要找的不只是能善用 agent 大規模執行的專家, 同時要找能掌握領域問題、定義架構目標的專家才夠｡ 執行技巧是大家目前關注的焦點, 改造目標則很容易被忽略, 兩者並進, 這些 code modernization 的操作才有意義｡\n--\n今天我想具體談的是: 怎麼描繪改造後的架構能力｡ 半個月前我貼了篇文章 \"Design for Safe Testing\", 討論如何共用商品資料與交易流程, 保留測試訂單, 同時隔離扣款、出貨、庫存異動等真實商業效果 (連結我放第一則留言)｡\n五年前我談微服務的測試環境, 則是共用未變更的服務, 透過路由讓不同測試使用各自的待測版本｡ 對我來說, 兩者背後的觀念相通: 先決定哪些可以共用、哪些必須隔離, 再設計隔離的邊界與控制方式｡\nSafe Testing 著重交易結果與商業效果, 接下來的案例則著重服務版本與測試路徑｡ 我直接舉五年前公開演講的這兩頁簡報當例子 (連結我放第二則留言):\n五年前 ( DevOpsDays Taipei 2021 ) 我談的這題: 大型團隊落實 CI/CD 的挑戰, 簡報 P63 提到這個概念 (圖是書上翻拍下來的, 書名: \"持續交付 2.0\"), 我聊到一個情境:\n如果你的系統是由多個服務組合起來的 (典型的微服務架構), 你要驗證其中一個服務改版是否能正常運作, 典型的做法是蓋整座完整的環境, 然後只把有變更的服務換成新版來驗證... 試著思考, 當整個環境有 99% 都一樣的時候, 你需要為了那 1% 的差異維持整座驗證環境嗎? 如果有需要多座獨立的環境, 你是否要蓋 N 座?\n第一頁講的就是這個問題, 這類問題可以靠微服務的控制機制來簡化｡ 如果架構設計得當, 就可以透過主控, 依不同測試情境將 request 路由到指定的服務版本｡ 圖2則以標準測試環境為基礎, 搭配待測版本, 共用未變更的服務, 組合出不同的邏輯測試環境｡ 各組測試需要的資料與共享狀態隔離, 也必須納入設計｡\n這是很有威力的彈性, 實際上要做到位, 也很考驗 infrastructure 與微服務架構的設計能力｡ 試想你有 A、B、C 三個服務: A 團隊要驗證 A′、B、C, B 團隊要驗證 A、B′、C｡ 兩組測試都需要完整的服務協作, 但未變更的服務能否共用, 讓各團隊只部署自己的變更? 如果 agent 讓待驗證的版本增加, 環境準備與測試能力能否跟上?\n進一步來看環境準備的時間成本: 假設更新一整組測試環境需要一小時, 而只部署一個變更服務並調整路由需要一分鐘, 單是環境更新這個步驟, 等待時間就能縮短為原來的 1/60｡ 未變更的服務也能共用, 讓更多團隊同時驗證各自的版本｡\n這裡比較的是環境更新時間; 實際運行成本與整體交付速度, 則要分開評估, 也要把測試執行、資料準備與驗收所需的時間一起考慮｡ 試想: 如果 agent 大幅增加待驗證的變更, 基礎建設是否能在維持充分驗證的前提下, 承接更高的交付頻率? 缺乏這樣的控制能力, 交付流程就會成為瓶頸｡\n--\n回到開頭, 我認為既有系統值得重新檢視的, 是三種需要一起規劃的能力｡\nAX 關心的是, 系統能否讓 agent 理解並完成操作｡ API 的契約、操作結果與回饋, 都需要讓 agent 有清楚的依據｡\nInfra Orchestration 關心的是, 當變更更頻繁、更多團隊同時工作, 部署、調度、驗證與交付能否跟上｡ 前面的共用測試環境, 就是其中一個具體例子｡\nSecurity by design 關心的是, 當操作被更多自動化流程接手, 身分、授權、隔離與追蹤是否已經納入設計, 讓每個操作都在清楚的責任與權限邊界內進行｡\n這三個方向, 共同描繪了系統改造後應該具備的能力｡ Agent 正在降低部分改寫的執行成本, 讓過去做不起的改造值得重新評估; 技術決策者更需要先說清楚, 這次要補上什麼能力, 以及如何驗收｡\n\"at scale\" 需要的是大規模執行的本事; \"code modernization\" 需要的是清楚的架構目標｡ 讓領域專家與善用 agent 的專家一起工作, 才能把改寫能力轉成系統持續演進的能力｡",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-09T19:36:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/898934351_2135903970631042_7486751970132489931_n.png?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p720x720&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=W2SZMp7VnrcQ7kNvwEw2IDj&_nc_oc=AdrzTBZqHQV7cVXQ_MC04-gyHicAIHcFjdjgeF7cw1lxpRFc_E328wKsEOsTOlMxFih5nnWRztMQfHZgxk4K_olE&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=6SKSoleYLjLSgCP3UwTfGg&_nc_ss=7b2a8&oh=00_AQR7pn1cQnKvGX0dtly5zFnY4HmjXXuusqqt-V9JK1uhyw&oe=6AF7D998",
+        "alt": "安德魯討論微服務測試環境的貼文配圖",
+        "credit": "來源：安德魯的部落格／Facebook"
+      },
+      "sources": [
+        {
+          "name": "安德魯的部落格",
+          "url": "https://www.facebook.com/andrew.blog.0928/posts/pfbid0Qeg26Stt9syBrsND9FoGcMaxtdeP6prRjcUS7jj1dEPwDw6Bof9JUmVtV8TnWpQUl",
+          "published_at": "2026-11-09T19:36:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-9c1694bffeefa3636f63ae04",
+      "title": "Eric 分享上海 DevFest 的 Agent 協作開發觀點",
+      "summary": "Eric 分享在上海 Build with Gemini x DevFest 2026 演講的經驗，認為軟體須讓 AI Agent 能理解與操作，多 Agent 協作也將成為開發者的重要能力。",
+      "original_text": "週末飛了一趟上海參加 Build with Gemini x DevFest 2026，很榮幸能在近 2,000 位開發者面前，聊聊開發者與 Builders 如何迎向 Agentic Era！\n當未來的工作逐漸交由 AI Agents 完成，我們寫的軟體也得「為 Agent 而生」——如何讓多個 Agents 協同運作，絕對是新時代開發者的必修課。\n真的很佩服當地 GDG 上海社群夥伴的用心籌辦，每年都把活動體驗推向新高度！現場除了滿滿的技術乾貨、Hands-on 工作坊，還有機器人逛展跟超酷的 Gemini Omni 魔鏡互動。當然，最棒的還是面對面的實體交流，能和這麼多熱愛技術的朋友當面聊 AI，收穫滿滿！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-09T16:58:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/900352908_1828610905124899_3724042879789937272_n.png?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=p960x960&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jurvEkILaPoQ7kNvwFRarN-&_nc_oc=Adohorik5nnDqhUF0UiD3R1Q8ngQO9dj0tPVPA6y9uKnQA0eJgQICpHw4ocSISYf2qU5SYypgh6PeqmjF8SCu1xY&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=6SKSoleYLjLSgCP3UwTfGg&_nc_ss=7b2a8&oh=00_AQQwjlfZzEzrq0fkDNqC-AjrravxFtWEBqnTZDaAjfrh5A&oe=6AF7B1B2",
+        "alt": "Eric ShangKuan 分享上海 DevFest 活動的貼文配圖",
+        "credit": "來源：Eric ShangKuan／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid0Y915WTUaHEmYTmzipBmX2bB4NgZadX6bgZvUbufksmCsQigPSGrtU1F4TrZbM5v1l",
+          "published_at": "2026-11-09T16:58:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-93b37df36a83544d95ad85d8",
+      "title": "保哥指出銀行防詐公告的無障礙與視窗設計問題",
+      "summary": "保哥反映永豐銀行防詐公告以整張圖片呈現、標題遭裁切，且關閉按鈕在較矮螢幕上超出可操作範圍。他指出這些設計影響視障使用者與一般操作體驗。",
+      "original_text": "真的不是我愛找碴，是真的影響到我的使用體驗了！\n永豐銀行的「防詐公告」整面都是圖，到底是在防誰？做成文字很難嗎？說好的「無障礙」網頁呢？視障同胞不是人嗎？\n另一點，是這份「防詐公告」標題只顯示 1/3，要靠人眼高強度視覺理解才能解譯標題，還好我的視覺能力還行，我猜最需要看的那群人可能無法解譯。\n還有一點，就是這個防詐公告完全無法關閉，點擊網頁任何位置都沒有辦法關閉。原因是因為我的筆電螢幕高度不夠，關閉按鈕在這篇「防詐公告」的右上角，剛好被這張圖給撐大了，大到我完全點不到，畫面沒有辦法向下捲動，也沒有辦法向上捲動，整個網頁是卡死的，唯一的方法就是把整個網頁的比例縮小，我才有辦法按到關閉按鈕。\n先說，這不是什麼公審，UI / UX 本來就是一個可以公開討論的議題，好嗎？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-09T15:26:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/899383878_1919292355898032_7870559324281512473_n.png?stp=dst-jpg_tt6&cstp=mx2048x1094&ctp=s2048x1094&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KI2fRy6YXBUQ7kNvwHUAOGp&_nc_oc=Adp982bt-emxZVSqsC24vjDFr_BxSOOZks0OzwbvAaiummgDwE7d-UwK9rO0c5KbP8YnKgN_JyNvfYRduEQOvEqe&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=6SKSoleYLjLSgCP3UwTfGg&_nc_ss=7b2a8&oh=00_AQRfASj71wwz2QmP_isKnUAdx2Ipgs3pkA-0ipvVy4EBow&oe=6AF7B9F5",
+        "alt": "保哥討論銀行防詐公告介面問題的貼文配圖",
+        "credit": "來源：Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid021J93hY22A1yFnLb25DRWvoxJsdA63stXkRca2XGbrxf3Q9VJLqQiviwXa91Ghtewl",
+          "published_at": "2026-11-09T15:26:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-9b41e08a473147ec4bb03744",
+      "title": "保哥談遠銀 App 登出按鈕與關閉操作的距離",
+      "summary": "保哥反映遠銀 App 2.0 多個頁面把登出按鈕放在常用的關閉或退出按鈕附近，認為按鈕配置對手指較粗的使用者不友善。",
+      "original_text": "遠銀的 APP 2.0 我裝好之後，我發現他們真的很希望我趕快登出！\n除了首頁之外，進去的每一頁最常按的那個關閉或退出按鈕旁邊或下面就是登出，這個對於胖手指的人非常不友善耶。\n第一次看到有 APP 把登出做的這麼明顯",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-09T14:44:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.30808-6/898714544_1593307436156673_8036567748998485920_n.jpg?stp=dst-jpg_tt6&cstp=mx1125x880&ctp=s1125x880&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=B_prOhvkH4wQ7kNvwHviIj6&_nc_oc=Adr_Jt8h0gtTzMibOEX_tJuBQfaZBQqjYySHWj_ubBQVd4mx5__DO6zt-9Q79S_p8ggqBySEA5A_551D0eE7qVUo&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=DZ2uDYVo9LCY1uM6MH5boQ&_nc_ss=7b2a8&oh=00_AQSvfVa9GoWPnckbeOtn34chPyvxrW4ZjbMKStM-S4CJ2g&oe=6AF7A841",
+        "alt": "保哥討論遠銀 App 按鈕配置的貼文配圖",
+        "credit": "來源：Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02sctWY34hm2jGJMK7186eZn9ezpaoUY3usViy9ftSecvzSmyKgbp5Q94iiQUSS2kal",
+          "published_at": "2026-11-09T14:44:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ddfed3c3648f5ed04cf85b8e",
+      "title": "高見龍預告 Sherly 終端機群組功能",
+      "summary": "高見龍預告自製的 Sherly 終端機將加入群組功能，並分享中文與日文介面各自採用注音及片假名作為預設群組名稱。",
+      "original_text": "我自己做的 Sherly 終端機再等一、二天就會有群組功能了\n群組名稱預設是ㄅㄆㄇㄈ，如果日文語系是 アイウエ",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-09T08:58:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/899789217_1872708657224166_234049390901692510_n.png?stp=dst-jpg_tt6&cstp=mx2048x1278&ctp=s2048x1278&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8tLISiKsk4AQ7kNvwHDV82O&_nc_oc=Adph5L5Zt4E_A8sV9tMKdKfJMklWcxgfsXHGIeRVs5Id6cHCMiwa25TwFIoCXFGV49C90E7PghSQf3Ym9_o9Uuga&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=DZ2uDYVo9LCY1uM6MH5boQ&_nc_ss=7b2a8&oh=00_AQQemQKRy2O5A3ulloh1d4g4uyLe9vNl8-WAmpI5z8vMMA&oe=6AF7DCFD",
+        "alt": "高見龍分享 Sherly 終端機群組功能的貼文配圖",
+        "credit": "來源：高見龍／Facebook"
+      },
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid02uz4FLb1dnvNLbZT66oFFwPukqjzXE3PMk8RgPRNn9w5S7hgjdSoCMYoWc37AraRgl",
+          "published_at": "2026-11-09T08:58:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ba1f91d716a33b50f41e8824",
+      "title": "保哥關注 NVIDIA 董事會獨立調查與晶片出口政策",
+      "summary": "保哥關注 NVIDIA 董事會調查與對中 AI 晶片出口政策的交集。董事會稱，目前沒有理由認為國安或公司機密已受損，將由獨立董事與外部律師進行調查。",
+      "original_text": "好大的瓜～ 黃仁勳 (Jensen Huang) 致信員工承認出軌！\nNVIDIA 董事會成立獨立委員會調查他是否成了間諜行動的目標，這可能是今年度最震驚科技頭條，沒有之一。 \nNVIDIA CEO Jensen Huang 親口承認了一段緋聞。\n對象還被指控是疑似中國間諜。\n董事會週日直接宣布，要啟動獨立調查。\n速度比我搶 5090 還快。\n更離譜的是，他前陣子還在大力遊說，要放寬對中國賣高階 AI 晶片的限制。\n現在國安單位在看，董事會在看，全球股民也在看。\n老黃這次大方承認，直接把緋聞升級成國安事件。\n這劇情連 007 編劇都不敢寫。\n科技圈的瓜，算力果然是碾壓級的。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-09T07:21:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external.ftpe8-4.fna.fbcdn.net/emg1/v/t13/7877519153277576950?_nc_oc=AdqNtZArGp8NVKuW3Reahpk623Ig-gPgygTGtgKW3HucSNF-4qxY-Oj_2iadYSr7Io5Wg8cFrvLWTToKs85R9vf_&url=https%3A%2F%2Fimages.axios.com%2FBCqCGrgA_WrjE9qALZgvDDhV2SA%3D%2F0x0%3A3488x1962%2F1366x768%2F2026%2F11%2F08%2F1794167280601.jpeg&fb_obo=1&utld=axios.com&_nc_sid=c63717&_nc_ht=external.ftpe8-4.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=DZ2uDYVo9LCY1uM6MH5boQ&_nc_zt=3&oh=06_Q3_FAbmCRGU7sODj7JrJlrWK-KHXUrck0HQsdFcBdSvgXOPU&oe=6AF3C0C3",
+        "alt": "NVIDIA 相關新聞連結預覽配圖",
+        "credit": "攝影：PATRICK T. FALLON／AFP via Getty Images；來源：Axios／Will 保哥的技術交流中心（Facebook 分享）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0xWqTJCGtx9tm6sk3QMsgi8Zmhnq8UdJv33X7YKtEqyyuUFivzbA2FZQRaLK9thHfl",
+          "published_at": "2026-11-09T07:21:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-7e27ca461871c22a9c9992b9",
+      "title": "Nathan 從科技治理與 AI 投資觀察台灣供應鏈風險",
+      "summary": "Nathan 從公司治理、串流平台整併、AI 募資與散熱需求，觀察台灣供應鏈的訂單與合規風險；並關注資料中心貸款交易如何反映資金成本。",
+      "original_text": "大河馬每日報｜2026.11.09（一）\n週末最大的科技新聞不是財報，也不是新模型，而是全球最重要的晶片公司，董事會決定調查自己的執行長。週一開盤前，先把事情的骨架理清楚。\n【主菜】輝達董事會啟動獨立調查黃仁勳\n美東時間 11 月 8 日，輝達董事會宣布由獨立董事委員會與外部律師，對執行長黃仁勳展開獨立調查。起因是紐約時報與金融時報的報導：美國官員認為，新加坡資料中心公司 Megaspeed 前主管黃樂替中國國安部工作，目的是讓黃仁勳向美方遊說放寬晶片出口。紐約時報指出，Megaspeed 過去兩年向輝達買了超過 48 億美元的晶片。黃仁勳同一天寫信給員工，承認對婚姻不忠並道歉，但信中沒有點名對象，兩人曾交往的說法來自金融時報與紐約時報的報導。他表示會配合調查、繼續帶領公司；董事會說沒有理由相信機密或國安受損；中國否認間諜指控。\n為什麼是現在？期中選舉後民主黨拿下參眾兩院，三位共和黨眾院委員會主席已要求黃仁勳 11 月 18 日出席閉門會議。這件事從私德問題，變成兩黨都能使力的出口管制議題。對中出貨本來就卡著，路透上週報導約 60 萬顆 H200 因北京未批准大量進口而滯留香港，H200 對中銷售也不到輝達資料中心營收的 1%。短期營收衝擊不大，變數是華府以後還聽不聽輝達的意見。\n放到台灣來看，伺服器、散熱、電源廠的訂單主要來自美國雲端與 AI 公司的資本支出，目前看不到被打斷的跡象。但若新國會收緊對東南亞客戶的出貨審查，在當地有出貨據點的廠商，合規和交期都會多一層。\n下一個要盯的，是美東時間 11 月 17 日下午 5 點的輝達財報，除了資料中心營收指引，也要聽管理層怎麼說明調查。\n【另外三件】\n一、Fox 完成 220 億美元收購 Roku\nFox 在 11 月 6 日完成以約 220 億美元企業價值收購 Roku，比原先預估的 2027 年上半年提前不少。Roku 在全球有超過 1 億個串流家戶，Fox 手上原本就有免費串流平台 Tubi，合併後以收視占比計算是美國第三大的電視集團。這筆錢買的是電視機上的入口和廣告系統。台灣的電視和串流廣告多半還是分開談、分開買，美國已經把內容、作業系統和廣告投放放進同一家公司。\n二、OpenAI 首批 110 億美元到位\n彭博 6 日報導，OpenAI 完成新一輪募資的第一批 110 億美元，這一輪對公司的估值是 1.25 兆美元。投資人名單和整輪規模，目前都沒有官方說法。這些錢最後大多會變成算力合約，對台灣的伺服器代工和零組件廠而言，OpenAI 的募資進度幾乎就是明年訂單能見度的前導指標。\n三、奇鋐 10 月營收年增 34%\n散熱廠奇鋐 10 月營收新台幣 221.02 億元，年增 34.35%，連續第三個月創新高；前 10 月累計 1,793.51 億元，已超過去年全年的 1,396.39 億元。公司先前在法說會提到，液冷需求不只來自 GPU，ASIC 客戶的訂單也在增加。輝達的新聞再多，資料中心的熱還是得有人散，這是台灣供應鏈這週最實在的一個數字。\n【長線追蹤：AI 資本支出】\n彭博報導，ING 正以競標方式出售 12 筆、合計約 5 億美元的資料中心貸款，最低出價 1,000 萬美元，11 月 19 日截標，其中約 2,500 萬美元與新墨西哥州一座開發中的大型 AI 資料中心有關。5 億美元放在整個產業的資本支出裡很小，銀行調整曝險也是日常，但時間點就落在期中選舉後幾天。我在意的是最後的成交價：如果折價明顯，資金成本會往上傳，最後反映在雲端租金和 AI 服務的價格上。\n【接下來要看】\n美東時間 11 月 10 日 CoreWeave、11 月 12 日 Cisco 與 Applied Materials 公布財報，12 日也是 OpenAI 提議停止對 Cursor 供應模型的日期；11 月 17 日下午 5 點輝達財報，18 日眾院閉門會議，19 日 ING 資料中心貸款截標。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-09T07:13:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/896054827_1653600449501545_1180364855477254581_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lT88cKxYmmkQ7kNvwGjr7u6&_nc_oc=AdprH2RXjoomjYTwZOLU3ZRPfqqtQtJjP-1b5Dq3a2dNYqvgV9-qPwvT1jlwj8D-o89y95a6vCo7mEmrPfgFZGYe&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=t0zCJUr5Lpgh20W8v1_Ztw&_nc_ss=7b2a8&oh=00_AQQ7nuuAkmdpJP5WxTSNDx3q6gEZCugLRJjXFWQt2ocnHw&oe=6AF7CD5B",
+        "alt": "Nathan 大河馬每日報 2026 年 11 月 9 日貼文配圖",
+        "credit": "來源：Nathan Chiu／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0d1RHSZDm3VKECtP5ZpxVAGBNeTmyRFvBzhQNYs7a7hsGcs4ZetwfN9YGzMqT94N4l",
+          "published_at": "2026-11-09T07:13:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-11-09T16:19:01.455Z",
+      "captured": 10,
+      "included": 7,
+      "excluded": 3,
+      "notes": []
+    }
+  }
+}
