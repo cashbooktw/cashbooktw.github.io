@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T00:11:14+08:00",
+  "is_demo": false,
+  "edition_title": "2026-11-12 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 15 則，入選 8 則，排除 7 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-6244fe40b46138d9813fd268",
+      "title": "保哥分享以 PowerShell 製作的 WinTop 資源監控工具",
+      "summary": "保哥分享自製的 WinTop，讓 Windows 使用者透過 PowerShell 的 top 命令查看資源用量，並提供依不同 PowerShell 版本安裝模組的方式。",
+      "original_text": "我用 PowerShell 寫了一個可以在 Windows 監控資源用量的 CLI 工具 \n先安裝或載入模組（已上架 PSGallery 可直接安裝）\n# PowerShell 7.4+ (PSResourceGet)\nInstall-PSResource -Name WinTop -TrustRepository\n# Windows PowerShell 5.1 / PowerShell 7 (PowerShellGet)\nInstall-Module -Name WinTop -Scope CurrentUser\n再呼叫 top 命令即可！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-11T19:49:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/903439598_1772814180494762_4950802117007388097_n.png?stp=dst-jpg_tt6&cstp=mx2048x1152&ctp=s2048x1152&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=RtpqA_yQXpoQ7kNvwGJVG1U&_nc_oc=AdrVJZCMlXLIkim2ui_lMupFbopQaJNLJiS84mKt-FrHhweu5SVuyTS7ks9PJ7CAT6rdNr5wLzGn4ryWx26LpGVi&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=h7uUjwaoAO1GWEzGoLC0IA&_nc_ss=7b2a8&oh=00_AQQiCcoOytjQ7YDUXyJ37l7OkH3rd_n9ds2FgyGIea3New&oe=6AFA4AFD",
+        "alt": "保哥分享 WinTop 資源監控工具的貼文配圖",
+        "credit": "來源：Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02uqyZt4SWmp1EfgFc6ELnMKSf9WzSnwsCseLgXJ7jKTxUHTdn9DJW9uRVvqE9UPSol",
+          "published_at": "2026-11-11T19:49:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ead3c03bec9934a0d0e7f98c",
+      "title": "ZeroType 手機版進入 iPhone 與 Android 封閉測試",
+      "summary": "保哥表示，ZeroType 的 iPhone 與 Android 版本正在封閉測試，並預告正式推出後會調高相關課程費用。",
+      "original_text": "我的 ZeroType 最近推出了 iPhone 與 Android 版本，目前還在封測階段，好評如潮！\n等推出之後，我的課程就要來漲價了，目前預計漲到 NT$ 4,200 元，希望大家把握機會報名喔。因為 ZeroType 手機版真的很炸裂，我覺得應該能超越市面上所有語音輸入軟體！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-11T18:05:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe1-1.xx.fbcdn.net/emg1/v/t13/11792998356430069704?url=https%3A%2F%2Fstduotifylearnfilesjpe.blob.core.windows.net%2Fuploads%2Fimages%2F71b291964736b03bd3a416386f197c1198bfe26dd836b4c3e43b562258e600a9.webp&fb_obo=1&utld=windows.net&_nc_sid=c63717&_nc_ht=external-tpe1-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=BqzJBGs-_0BchkX74e1Y7Q&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_FAbbwYqzYmzpnqmD-5tZs6WkIDGFSWt1lyUnQKCsz6QlT&oe=6AF65D2F",
+        "alt": "保哥分享 ZeroType 手機版與課程的貼文配圖",
+        "credit": "來源：Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02NQpfLitta4FdPpWAt6nyeFG1SRmxyUkHYKK1Nccz1vKY7ikEFhLY83L3BzQxk9ZXl",
+          "published_at": "2026-11-11T18:05:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-93f00764f5058569aea7f69b",
+      "title": "保哥遇到 Git 連線的 OpenSSH 後量子金鑰交換警告",
+      "summary": "保哥分享 Git 連線時出現的後量子金鑰交換警告。OpenSSH 原文說明，這表示連線未採用後量子方案，存在通訊先被保存、未來再遭解密的風險，應檢查伺服器版本與演算法設定。",
+      "original_text": "Git 開始警告用戶要用「後量子金鑰交換演算法」來連線了！\n** 警告：連線未使用後量子金鑰交換演算法。\n** 此工作階段可能容易受到「先儲存，後解密」攻擊的影響。\n** 伺服器可能需要升級。請參閱 https://openssh.com/pq.html",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-11T17:52:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/904096018_1144749061378184_4914615420412310421_n.png?stp=dst-jpg_tt6&cstp=mx1846x320&ctp=s1846x320&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ksmVrvnnhIYQ7kNvwFmhaBr&_nc_oc=AdrJAsuATTeKN57WzE2yI7ew8c2fgTfts2_LQ4oZj4SLLHgdMWSF9JqZWbMSKmRSTtCehTbdU_J0qth_Nr4YQRER&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=BqzJBGs-_0BchkX74e1Y7Q&_nc_ss=7b2a8&oh=00_AQTnjsZJqZpCArFY43KIqptZY92UA-QOH9P4CY_bipoy7A&oe=6AFA80EA",
+        "alt": "保哥分享 OpenSSH 後量子連線警告的貼文配圖",
+        "credit": "來源：Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02V5D38zncyxfzMbMne2XF1rnXrRkL5DBvY8mm6jSHurPKqRtAdweezQkuPHshraTzl",
+          "published_at": "2026-11-11T17:52:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-fd47bdfd986b0e63c6c95bd4",
+      "title": "保哥分享 Anthropic 付費方案的一次性重置消息",
+      "summary": "保哥分享 Anthropic 為多個付費方案提供一次性重置的消息，並肯定其跟進 OpenAI 的做法。",
+      "original_text": "Anthropic 終於從善如流，學一次 OpenAI 了！\n在 2026/12/10 之前提供 Pro, Max, Ultra 跟 Team 的客戶擁有一次的儲存重置機會",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-11T13:22:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-sin6-1.xx.fbcdn.net/v/t39.99422-6/896692382_4669340713385145_1154303845660465254_n.png?stp=dst-jpg_tt6&cstp=mx1125x1590&ctp=s1080x2048&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OWE3OUR_MAwQ7kNvwGcuL7b&_nc_oc=AdpjczRlP8ePcKx5mAAJAU6z5gGGGOUgRc21fj2RR5nXxZjnmbUS_Q_39Ek_6beu0WvtaBCHkKy3QgNHkPUSeWJZ&_nc_zt=14&_nc_ht=scontent-sin6-1.xx&_nc_gid=BqzJBGs-_0BchkX74e1Y7Q&_nc_ss=7b2a8&oh=00_AQRb3KIcRFyG1W9ZYi02Yg4TpY7QKDhxOaPuLXxFPRmTzA&oe=6AFA76B9",
+        "alt": "保哥分享 Anthropic 付費方案重置消息的貼文配圖",
+        "credit": "來源：Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02gqZ1U2jPbS26FoZGVibNQo2R9eontZv7ivZBY7g2oBG8Ae92qHZDnJgPJE8YDVZ6l",
+          "published_at": "2026-11-11T13:22:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-2a1ac7c90d4300cd555f7996",
+      "title": "Nathan 從 AI 募資與平台服務觀察台灣供應鏈",
+      "summary": "Nathan 以 Anthropic 募資為主軸，討論 AI 資本支出如何連結台灣晶圓、封裝與伺服器供應鏈，並關注光通訊管制及 ChatGPT 商家服務對產業與品牌行銷的影響。",
+      "original_text": "大河馬每日報｜2026.11.11（三）\n美國 10 月 CPI 月增 0.4%，比預期熱，那斯達克收跌 0.74%，輝達單日跌了 5.5%。不過昨天真正讓我停下來看的，是 Anthropic 把 IPO 的價格攤開了。\n【主菜】Anthropic 定價，一兆美元的考卷\nAnthropic 昨天啟動 IPO 路演，發行 8.25 億股，每股區間 70 到 78 美元，公開發行最高募資約 644 億美元。另有 260 億美元私募以 IPO 價格認購，名單是 AMD、博通、Google、美光、微軟、輝達、台積電，合計上看 904 億美元。預計美東時間 11 月 18 日定價，19 日在那斯達克掛牌。\n估值看算法，只算流通股約 1 兆美元，算進稀釋股份是 1.3 到 1.4 兆美元，比 5 月私募的 9,650 億美元高不了多少。\n為什麼是現在？第三季營收約 170 億美元，去年同期才 14 億；10 月底年化營收約 810 億美元，一個月多了約 100 億。另一邊，招股文件列出的算力與基礎建設承諾接近 9,000 億美元。\n放到台灣來看，這些錢的終點有相當比例在台灣的晶圓廠和伺服器產線。台積電董事會昨天通過，最高 5 億美元以 IPO 價格認購 Anthropic 普通股，同時最高 5 億美元認購 OpenAI 特別股。兩邊金額一樣，我的解讀是台積電不押誰勝出，押的是誰勝出都得用它的產能。\n下一個要盯的是 11 月 18 日的最終定價。訂在上緣或上調，代表市場願意為這條營收曲線買單；往下修的話，考的就不只是 Anthropic，而是整個 AI 資本支出的故事。\n【另外三件】\n一、台積電 10 月營收年增 59.7%\n台積電 10 月營收 5,868.9 億元，月增 14.7%，年增 59.7%；前十月累計 4.49 兆元，年增 43.3%。同一場董事會也核准約 409 億美元的資本預算，涵蓋先進製程、先進封裝、廠房與 2027 年研發。上面那筆 IPO 募資最後會變成誰的營收，這張月報已經先回答了一半。\n二、微軟反對禁中國光收發模組\nReuters 報導，美國政府正透過 FCC 推動禁止進口中國新款光收發模組，微軟 9 月與白宮科技政策辦公室、國安會官員會面，主張禁令會拖慢 AI 資料中心建置。依 Cleanview 統計，微軟在美國有 35 座資料中心在建、134 座規劃中。對台灣做光通訊元件和模組的廠商，禁令表面上是轉單機會，但最大的買家公開反對，這扇窗開不開得成，還很難說。\n三、輝達董事會請外部律師調查\n輝達獨立董事委託 Wachtell 律師事務所與前紐約南區代理聯邦檢察官 Joon H. Kim，調查有關黃仁勳成為外國情報工作目標的報導，目前沒有公布任何調查發現。股價週二跌約 5.5%，收在 168.8 美元附近，成交量超過三個月均量的三倍。離 11 月 17 日財報只剩一週，台灣伺服器供應鏈真正要看的，還是財報裡的資料中心營收和下一季指引。\n【長線追蹤：AI 平台廣告】\nOpenAI 昨天推出 Businesses in ChatGPT 測試版。企業可以認領自己的商家檔案，更新商品價格與庫存，並在 Business Hub 看到 ChatGPT 提到自己幾次、帶來多少點擊、使用者常聊哪些話題。美國符合資格的電商和線上服務業者，還能上架自己的 Business Agent，對話會標示，和 ChatGPT 自己的回答分開。這等於把過去 GEO 新創賣給品牌的「AI 能見度」報表，收編成平台自己的後台。報導也指出，品牌可以把 Agent 設成 ChatGPT 廣告的落地頁，OpenAI 則說付費不影響推薦頻率。ChatGPT 廣告 9 月 23 日已在台灣上線，OpenAI 說累計超過 10 萬家廣告主投放過。Google 商家檔案花了好幾年才變成在地行銷的基本功，這一版如果開放到台灣，品牌整理商品資料的功課可能要比想像中早做。\n【接下來要看】\n美東時間 11 月 17 日輝達財報；11 月 18 日 Anthropic 定價，19 日在那斯達克掛牌。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-11T11:32:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-sin2-2.xx.fbcdn.net/v/t39.99422-6/902044723_1807835000538134_8987443534177016132_n.png?stp=dst-jpg_tt6&cstp=mx980x1225&ctp=s980x1225&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zIYYbRH-GIcQ7kNvwEnGhHn&_nc_oc=AdqPYeqehVVfc5BJhvQe8xtyGYfUtiAavhbMdG2DG33XhJW7pgVDl7HM9S29UIKZJ7CNTP4Ksc5G_yHHEF02MEy4&_nc_zt=14&_nc_ht=scontent-sin2-2.xx&_nc_gid=gWmSiL8vvqnrXWsL6U3uyQ&_nc_ss=7b2a8&oh=00_AQTofsU_9-GtwY_XByBxWOmo5Y7blMw-H2OPWxYAWUqmXQ&oe=6AFA520A",
+        "alt": "Nathan 大河馬每日報 2026 年 11 月 11 日貼文配圖",
+        "credit": "來源：Nathan Chiu／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid02ua97Ng1CA4iNpNNGAmFK3FisgVRVfDf4k2RpAkSRBfyAFbxMws1Vexx8YfdQs2cRl",
+          "published_at": "2026-11-11T11:32:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-431ae3ef064ed76d2fb4f08b",
+      "title": "保哥分享 Antigravity 的模型與多代理更新",
+      "summary": "保哥介紹 Antigravity 更新，重點是 Gemini 4 Carbon 模型與 /swarm 多代理協作功能。",
+      "original_text": "Google Antigravity 推出 Gemini 4 Carbon 模型 \n還有 /swarm 多代理協作功能！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-11T00:49:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/895000536_3000776913606809_652483767852795471_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=b0etVUjXbuEQ7kNvwE3kVkH&_nc_oc=AdprgOwDOxTr9fWbQDAQgaD6OyLiNP1Qwu1hcRz7bQJheqTAN5h73KLMq5b8vn1I8pM_oQK_NL62cNeszq_7ts_u&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=ThoqdeuH2wL7Xhyikdzang&_nc_ss=7b2a8&oh=00_AQQylmFe0LKtMEW842kglGZszket_efJRWK9quOszzxbZQ&oe=6AFA60AC",
+        "alt": "保哥分享 Antigravity 模型與多代理功能的影片預覽配圖",
+        "credit": "來源：Will 保哥的技術交流中心／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/reel/1659171989040682",
+          "published_at": "2026-11-11T00:49:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-2fcf8f7193b9dadca8fa42eb",
+      "title": "保哥談協作專案中 AI 程式碼的接手成本",
+      "summary": "保哥觀察到，協作專案中有客戶交付自己也看不懂的 AI 程式碼，後續理解與接手工作落到工程師身上。",
+      "original_text": "我們少部分案子會跟客戶一起協作開發，但最近聽到越來越多客戶叫 AI 寫的 Code 他們自己都看不懂的情況，然後這些 Code 都會落到我們工程師身上！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-11T11:05:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02JbnGYXK3YprNXKFYHSmTDausZQBNZRER8g4nJGwXaEj5Bp8dhAb6nV1AfiAicXySl",
+          "published_at": "2026-11-11T11:05:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-4c5e90e177d1ddfb77a6431b",
+      "title": "Nathan 談 AI 晶片供應鏈與遠端算力的合規風險",
+      "summary": "Nathan 主張，台灣應從晶片供應鏈與遠端算力服務檢視風險，重視終端用戶查核、轉運與出口管制，並將個人崇拜與產業管理分開，維護供應鏈信任。",
+      "original_text": "從 Jensen 風暴中看台灣\n11月8日，黃仁勳寫了一封內部信，承認對妻子不忠，向家人和員工道歉，輝達董事會同一天宣布獨立調查。之後兩個交易日，輝達市值蒸發超過4,700億美元，股東在加州提起集體訴訟，三位共和黨眾議院委員會主席要他11月18日到國會閉門說明，FBI也在查他是不是外國情報行動的目標。\n事實先擺清楚。黃仁勳承認的是婚外情，沒有承認洩密。輝達董事會說，目前沒有理由相信國安或公司機密受損。對象黃樂（Alice Huang）曾任新加坡資料中心業者 Megaspeed 高層，美方情報認為她受中國國安部吸收，北京否認。到今天，兩人都沒有被起訴。\n這幾天台灣的反應大概兩種。一種是心疼，他在台北的理髮師說每天為他祈禱。一種是八卦，哪家威士忌酒吧、哪家豬腳店、太太和她是不是同一趟都在台北。\n這些都可以聊，但都不是台灣該花力氣的地方。台灣該看的是國家安全、地緣政治、國際局勢，以及對科技經濟的實際影響。說得更直白，是台灣有沒有在這件事裡當了破口。\n先看國安。黃樂至少兩度在台北被拍到，一次是2024年6月的 Computex，一次是2025年5月黃仁勳訪台。紐約時報報導，她持香港護照入境，台灣在2024年依美方建議，開始監控她的訪台行程。外交部說入境都符合規定，身分不便透露；內政部長說國安單位在查。\nComputex 那一週，是全球 AI 產業密度最高的一群人聚在台北的一週。晚宴、after party、飯店酒吧，同一張桌子坐的可能是晶片原廠、伺服器廠、雲端業者、投資人，也可能是你說不出背景的「客戶」。如果美方情資屬實，這是很老的手法，新的地方在目標。不是軍官，不是官員，是決定全世界最稀缺戰略物資怎麼分配的那個人。\n政府那邊，該監控的有在監控。可是國安不只是政府的事。那幾張桌子邊坐過的台灣主管，有多少人記得自己跟誰喝了酒、聊過哪一批貨的出貨時程？\n再看鏈。The Information 引述兩位認識黃樂的人士報導，她和丈夫、妹妹以上海世紀利通為核心，串起新加坡的 Megaspeed 和馬來西亞子公司 Speedmatrix，2023年以來協助約24萬顆輝達晶片進入中國，主要是 H100、H200，總值至少75億美元。世紀利通2023年6月才成立，10月就拿到輝達優先雲端夥伴的資格。\n這條線在新加坡和馬來西亞。台灣自己也有一條，而且已經走到法院。\n基隆地檢署今年5月從一宗毒品走私案往下追，追出搭載輝達 B300 的美超微伺服器被賣到中國，8月起訴8人，名單上有輝達台灣分公司資深經理、美超微台灣子公司資深協理、一家上櫃公司總經理。照檢方的描述，流程是這樣走的：中國買家透過台灣窗口找貨，由一家符合白名單資格的台灣公司出面採購；伺服器運進一家上櫃電信業者的機房，號稱在台代管；原廠來查核時，機櫃裡亮燈的是低階主機，真貨原箱未拆；查核過了，再報關出口，繞道日本、香港、印尼進中國。130台伺服器，不法獲利6.7億元。被起訴的輝達經理在法庭上喊冤，說他只管前段，能不能成交要經過總部法遵。誰有罪，交給法院。\n再往前，今年3月美國司法部起訴美超微共同創辦人等三人，涉嫌把25億美元的伺服器賣給東南亞公司，其中至少5.1億美元轉進中國。三名被告，兩位是台灣人。\n把這些放在一起，看到的不是一個壞人，是一條產業鏈。下單、採購、原廠業務、組裝、機房、報關、物流、第三地洗產地，每一段都是台灣最熟的正常生意，每一個參與者都可以說，我只是做了我那一段。這就是一條鞭。出事的不是某一家公司，是整條線，而這條線在台灣可以一站買齊。\n為什麼能一站買齊？鏡週刊算過：在美國走私管制晶片，最重20年；在台灣沒有對應的專法，多半只能用背信、偽造文書起訴，最重5年。也有原本做毒品的幫派轉開科技公司做晶片。基隆案從毒品案查出來，不是巧合。高報酬低刑度，黑道比誰都會算。\n法律的破口不只刑度。現行貿易法下，中國雖在輸出管制地區名單上，被管的卻只有12類晶圓製造設備，高階 AI 晶片和伺服器不在裡面。立法院經濟委員會11月2日才開公聽會，提案增訂貿易法第13條之2和第27條之3，把特定積體電路、關鍵材料與零組件入法，最重10年，另加反繞道條款與不法利得強制沒入。清大林勤富教授在會上點出另外兩個洞：台灣的管制清單沒有美國管 AI 晶片用的 3A090，無形技術、軟體與服務也還管不到。\n這兩個洞，接下來會變成國際問題。\n華府這次是兩黨一起動。明年1月新國會上任前，已經有議員喊暫停對中國出貨先進 AI 晶片，也有法案要企業追蹤晶片流向。華府怎麼收，台灣都在第一線，晶片在這裡做，伺服器在這裡組，機房和報關行也在這裡。新加坡、馬來西亞已經被點名過，新加坡當局也約談過黃樂。台灣這些年在美中之間被當成可信任的供應鏈，這個身分是一點一點攢來的。如果在華府的地圖上，台灣從製造基地被改標成轉運站，之後的位置驗證、終端用戶稽核、出口許可，全部會加在守法的台灣廠商身上，不會加在走私集團身上。\n科技經濟的部分。金仁寶許勝雄在李國鼎獎會場說，台灣供應鏈韌性很好，請大家放心。就訂單來說，我同意，AI 需求不會因為一個人的私生活停下來，到現在也看不到訂單被取消的證據。真正的成本會出在規則上，更嚴的法遵、更長的審核、更多的稽核，一路傳到 ODM、經銷商、機房和報關行。\n另一個成本比較難算。這幾年台灣把一家美國公司的執行長當成國民偶像，蜜餞店掛著他的照片，理髮師手機裡存著合照。喜歡一個人沒有問題，但一個產業的情緒、一部分股市的信心都繫在同一個人身上，本身就是集中風險。風暴裡，台灣不必替他辯護，也不必落井下石，該做的是把對一個人的情感，跟對一條供應鏈的管理，分開。\n最後是我最在意的一塊，算力。Megaspeed 的手法不只運機器出去，也在東南亞資料中心租算力給中國客戶。晶片不必出境，人連得上就能用。台灣現在到處在蓋 AI 資料中心，談主權 AI，做 GPU 雲、做 Token 轉售，而服務正好是現行法規管不到的那一段。下一個破口可能根本不需要貨櫃，一組 API 金鑰、一個遠端帳號就夠了。做雲端和算力生意的同業，你的終端用戶是誰，要比合約上的客戶名稱再往下挖一層。\n回到開頭那句話。這波風暴裡，台灣最要避免的，是成為破口，更不能被國際認為是違法產業一條鞭的一環。\n幾個很實際的檢查點。成立不到一年的公司下上億元的單，先問錢從哪裡來。客戶說機器放在台灣某個機房代管，去看那個機房的電、機櫃和頻寬撐不撐得起，基隆案的機房條件撐不起那批機器，照樣過了實地查核。事先約好時間的稽核，只是排練。業務獎金和一張起訴書，自己算。下班後的飯局，誰介紹的、誰買單、誰問了出貨時程，記下來。\n上下游生態系所有企業與個人，慎之。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-11T11:19:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/900798110_1174574005000799_4963079334555866011_n.png?stp=dst-jpg_tt6&cstp=mx1536x1024&ctp=s1536x1024&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_aid=0&_nc_ohc=bUODYvFKnQ4Q7kNvwG8Rew_&_nc_oc=AdoWYXwX12C7wZToWeB4iePD9O4EyXJwN77NBRqIZ2B3XFLLD6eMNrn6QUS8hNuOKuaT3sKWhDfpFrR8Y2OYlvA8&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=gWmSiL8vvqnrXWsL6U3uyQ&_nc_ss=7b2a8&oh=00_AQSW5-5e6mz4XSiGuTrYseLo9M04e_oBBqEYSZRokArlQQ&oe=6AFA5CAD",
+        "alt": "Nathan 討論台灣 AI 供應鏈風險的貼文配圖",
+        "credit": "來源：Nathan Chiu／Facebook"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid02rHtxXdFnwVU2D2a1ZpfFr9PB1eBBS9LXMGAEowGF58j5sKWztMte7GWh4zoPTe2Dl",
+          "published_at": "2026-11-11T11:19:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-11-11T16:11:12.879Z",
+      "captured": 15,
+      "included": 8,
+      "excluded": 7,
+      "notes": []
+    }
+  }
+}
