@@ -1,0 +1,362 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13T00:17:37+08:00",
+  "is_demo": false,
+  "edition_title": "2026-11-13 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 25 則，入選 17 則，排除 8 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-ef6d3a308b1c4d2bec0db91a",
+      "title": "Will 保哥關注 NVIDIA 執行長交接",
+      "summary": "Will 保哥分享黃仁勳請辭、NVIDIA 啟動執行長交接的消息。",
+      "original_text": "NVIDIA 黃仁勳 (Jensen Huang) 請辭，公司宣布執行長交接。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T22:15:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/903955955_4542256312655583_7406136240172508318_n.png?stp=dst-jpg_tt6&cstp=mx400x400&ctp=s400x400&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=nowLBRvT2r0Q7kNvwGkkhe4&_nc_oc=Adq0Z_bBzqCJgT9RWWSnt8wFTdsUfJW7xWkaBZCfBRcSYmxjHgeQXkihHm1stfR2p2TF9ntQ60UyZ8FiQ5Svpqwg&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=UQ1LZF9xv2gixlXWxBBDnQ&_nc_ss=7b2a8&oh=00_AQRKhCT2p_I5sd64V-UeuZq01QMUz8_YaW8DMhZEzVi4eg&oe=6AFBC5E9",
+        "alt": "Will 保哥分享的 NVIDIA 執行長交接消息配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid029MZSQfCj6VxfnzttzsyejuUJM2hXMwYuTHpQCPv2gJcogZTuV8H4ps5sJgkUZ9oul",
+          "published_at": "2026-11-12T22:15:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-5085c164dd4517e1408056d5",
+      "title": "Meta 開源 Astryx，讓前端與 AI 共用設計系統",
+      "summary": "Astryx 提供逾 150 個 React 元件、主題與深色模式，讓人與 AI 助理使用相同文件和工具。Will 保哥關注其可自訂、不綁定既有 CSS 方案的設計；目前為 Beta，支援 React 19 以上。",
+      "original_text": "Meta 低調開源了一套設計系統，叫做 Astryx。\n你知道嗎？這套東西其實在 Meta 內部已經用了八年。\n從 Facebook 到 Instagram，一萬三千多個 App 都是靠它撐起來的。\n現在，它正式開源了。\n簡單說，設計系統就是一整套現成的 UI 元件。\n按鈕、表單、表格、彈出視窗，全部都幫你做好了。\n工程師直接拿來用，不用每次從零開始刻。\nAstryx 有一百五十多個元件。\n還內建深色模式、七種主題、完整的 TypeScript 支援。\nReact 19 以上就能跑。\n最特別的是，它是為 AI 時代設計的。\n文件、API、CLI 都是同一套邏輯。\n人看得懂，AI 也讀得懂。\n你和 AI 助理寫出來的程式碼，會長得一模一樣。\n而且它完全不綁架你。\n你想用 Tailwind 就用 Tailwind。\n想用 CSS Modules 就用 CSS Modules。\n想改元件原始碼，一個指令就能把程式碼搬進你的專案。\n目前是 Beta 版本。\nGitHub 上已經有兩萬六千顆星了。\nMIT 授權，完全免費。\n如果你正在學 React，或是在做前端專案。\n這套真的值得收藏起來。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T22:06:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe5-1.xx.fbcdn.net/emg1/v/t13/2548739520767163245?url=https%3A%2F%2Fopengraph.githubassets.com%2F4e6847205aec52de925ec679ceb174ce492f13fd7e6a5d5e207413a22d9b3794%2Fmeta%2Fastryx&fb_obo=1&utld=githubassets.com&_nc_sid=f93bbc&_nc_ht=external-tpe5-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=UQ1LZF9xv2gixlXWxBBDnQ&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_FASm1QghZNpw9_ZuVkRLiCTSWF5qVnUaff0_uYIjDZeco&oe=6AF7A8C5",
+        "alt": "Meta Astryx 開源設計系統的 GitHub 專案預覽",
+        "credit": "Meta／Astryx GitHub；轉貼：Will 保哥的技術交流中心（Facebook）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0322WkVtWpHjM2djwaZDfX2XiRPy6PYJey6QBs7zEphFdwcjrSxgHwuTfGUmVu8ugal",
+          "published_at": "2026-11-12T22:06:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ef58dd2fdc76e5f32e167718",
+      "title": "Will 保哥推薦 SRE Prodcast，關注十年來的變化",
+      "summary": "Will 保哥藉《網站可靠性工程》第二版，推薦已進入第七季的 SRE Prodcast，並關注 SRE 十年間的轉變。",
+      "original_text": "《網站可靠性工程》第 2 版 \nSRE Prodcast 已經演到第 7 季了，SRE 在這 10 年來已有了很大的改變，最新一集真的很精彩！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T21:38:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02vunmREu9uhbtiM9jUcQxDofxVsCGj3J79e6XKFQYJ8DgMUGcNKoZDNyBQm43JZTkl",
+          "published_at": "2026-11-12T21:38:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-7f450b21474f6c5a910a2618",
+      "title": "Ant 分享騰訊「鵝次元」遊戲陪玩 AI",
+      "summary": "Ant 分享「鵝次元」遊戲陪玩 AI，貼文指出它能辨識遊戲畫面，並即時給玩家意見。",
+      "original_text": "騰訊推出「鵝次元」遊戲陪玩 AI\n» https://eciyuan.qq.com/\n辨識遊戲畫面即時給意見。\n可問題是，根本沒時間玩呀 ~",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T21:33:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid02AmU6wttoDKB4m3id6L8eVQcEiDg5V4euarGBrtvSBV2JQEYu68aM3DstN7xxFhURl",
+          "published_at": "2026-11-12T21:33:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-0d9f7a7a640720ec427c856c",
+      "title": "Will 保哥整理 Google 本週 AI 發布動態",
+      "summary": "Will 保哥整理 Google 本週的發布清單，從 TPU 8TX／8i max，到 Gemini Robotics 2.5、AlphaProof Code、Gemini 4 Carbon、Gemini Decision 1 與 AlphaGenome 2，並期待後續消息。",
+      "original_text": "Google 這禮拜大概是史上發布最狂的一週：\n11 月 09 日 — TPU 8TX 和 8i max\n11 月 10 日 — Gemini Robotics 2.5\n11 月 10 日 — AlphaProof Code\n11 月 10 日 — Gemini 4 Carbon\n11 月 11 日 — Gemini Decision 1\n11 月 11 日 — AlphaGenome 2\n大家覺得今晚會有甚麼驚喜呢？",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T21:30:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0N78dfaomHakcxGRba5nutBAuDBvdAoHXSoAqcpyKCTwUtLPWSm9WHQSUXZ5ZXqVYl",
+          "published_at": "2026-11-12T21:30:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-7d3bb0222b634e2e10bc8c74",
+      "title": "Eric 預告 11 月 19 日 GDG 的 AI 攻防活動",
+      "summary": "Eric 預告由 Google Cloud 開發推廣工程師 Edward 與 Prashanth 分享 AI 攻防的活動，並提醒 11 月 19 日地點在 Google 士林劍潭辦公室。",
+      "original_text": "下週四（11 月 19 日），來 Google 士林劍潭辦公室向我們的 Google Cloud 開發推廣工程師 Edward & Prashanth 如何用 AI 速度打敗 AI 攻擊！\n不要跑到 101 喔  \n#GDG",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T20:33:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid0TtBtg8hDgZobg7Q4myuP89A71NqRD7qf2KtDScx9Px6eny3YEECKfFcwuqLBdH2el",
+          "published_at": "2026-11-12T20:33:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-d21389288b9bbaf5c2364684",
+      "title": "Agent 加速開發後，安德魯改用里程碑追蹤交付",
+      "summary": "安德魯認為敏捷與看板仍有價值，但 agent 加速實作後，逐項追 task 容易淹沒協作。他改以有完成定義的里程碑掌握交付，讓人專注規格、設計判斷、驗收與跨團隊阻礙。",
+      "original_text": "在 X 上面看到一篇討論: What if your codex/claude code has a kanban board?\n看到這串以及延伸討論, 讓我想到經常聽到的「敏捷已死」...  這種速成的結論略過太多過程, 只留下武斷聳動的結論, 少聽為妙, 我的思考方式是: 這些方法原本想解決什麼問題? AI 進來之後, 改變了什麼? 需要做什麼調整跟改變?\n敏捷強調: 小增量、多迭代、快速修正、持續交付, 我覺得都有用｡ 我現在跟 agent 合作, 也是用這樣的方法, 而且做得很順利｡ 精神沒變, 做事的方法跟節奏卻差很多了｡\n看板對我來說是個看見 \"現況\" 的好工具, 可以一眼就知道事情走到哪裡、哪裡可能卡住 (例如某一關的進行中工作, work in progress / WIP, 開始堆積)、接下來要不要調整｡ 把工作攤開來, 是為了讓協作更順利｡\n過去我熟悉的團隊節奏, 大致上就是每兩週一個 sprint, 會有對應的 refinement, planning, retro 會議; 每天則是早上站立會議快速同步一下所有成員的狀況｡ 透過看板上的 story / task, 就能跟得上大家討論與做事的節奏｡\n但是 agent 進來之後, 我開始碰到一個有趣的落差: 不用等到隔天站立會議, 有些任務就已經從發現到解決都做完了 XDD... 在我的使用經驗裡, 有些 story 一兩個小時就能處理完, 中間的 task 還會隨著發現的新問題重新拆解、調整｡\n由於節奏改變了, 如果我還是每天追同一層級的細節 ( tasks, stories ), 在這顆粒度上, 一天內可能已經跑完好幾輪, 站立會議就淪為工作清單報告了｡ 如果還照原本的方式逐項同步, 等輪到我檢視時, 資訊可能已經過時, 也很難幫我決定下一步｡\n從這角度來看, 我覺得至少有兩個調整方向｡ 一個是維持每天檢視的節奏, 把視角拉高; 另一個是維持原本 story / task 的細節, 就得看得更頻繁｡ 如果維持細節, 難道以後每小時都要站立一次嗎? 光想到就累了 XDD\n我的選擇是拉高視角｡ Agent 的執行速度變快, 我的注意力可沒有跟著變成好幾倍｡ 比起過多的細節, 我更想知道這段工作交付了什麼, 以及結果會不會改變我接下來的判斷｡\n拿我正在做的一個重構專案當例子, 從某個顆粒度很大的服務中, 拆出特定功能成獨立執行與部署的服務｡ 要拆解的包含 storage、database、admin API, 也要維持既有 CLI 的相容性... 我用 M1 ~ M5 定義執行過程的幾個里程碑 (M 是指 Milestone) 來掌握交付的節奏, 眼前的工作先展開, 後面的細節隨著結果繼續調整｡附圖是這次重構的進度摘要｡ 而每個 Milestone 背後都有 DoD (definition of done), 也有對應的做法設計與規格定義, 這些就擺在對應的文件內, 如果你願意, Agent 還是能按照規格拆解出 tasks 並且逐項更新, 只是這些資訊可能不再是溝通的重點了 ( 如果你自己都不 review, 幹嘛還在會議上列出來給別人看? ), 讓他保留在 context / memory 內就夠了｡\n展開 milestone 的進度, 能讓我看出改造走到哪裡 (對我來說, 這就是調整過的看板)｡ Task 變動得快, 我就把追蹤層次拉到 milestone, 看清楚交付進度｡ Milestone 內的進度, 就由負責執行的人來掌控就好, 需要跨團隊溝通的層級控制在 Milestone... \n不過, 需要多人協作、跨團隊配合的任務, 還需要看清楚卡在哪一關、在等誰｡ 這時候, 看板依然是很有用的溝通工具｡ 只是要控制得當, 一昧的維持過去的習慣, 只會讓看板被過多的資訊沖垮而已｡\n以前面對這類改造, 細節還沒展開, 我很難放心估計後面要花多久｡ 現在, 在我熟悉、規格也抓得準的範圍內, 很多實作可以壓到幾個小時到幾天, 我才更敢把後面的細節留到接近時再展開｡ 瓶頸逐漸移到我釐清規格、做出設計判斷與驗收成果的速度, 當然也要看 token 能不能周轉得過來 XDD｡\n所以, 我仍然在做小增量、多迭代｡ 只是我親自關注的顆粒度提高了, 每交付一段成果, 我就確認是否符合預期, 再調整下一步｡\n回到原來的問題, agent 時代, 看板跟敏捷還有用嗎? 我覺得有｡ 理解進度、發現問題、取得回饋的需要都還在｡ 先弄清楚自己為什麼需要它們, 再調整工具、流程與追蹤的層次, 才能跟上新的節奏｡",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T19:45:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/904563941_1438600624554289_7634274445297314821_n.png?stp=dst-jpg_tt6&cstp=mx758x837&ctp=s758x837&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7BYLu_pNeOoQ7kNvwGwCg9u&_nc_oc=AdomGEkdeaZR4zs2mStijhalE-hlJ3WyfXw_UklmTbGmdSKu965G6cc8IgIfsaXKoHFwIM1oDD9d7nEtW1nBSHqU&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=HJq-VpzEobAO7IxwCUhqvQ&_nc_ss=7b2a8&oh=00_AQShaFd8Y2y5iBosKlCD_w8KdBByH0kOQTct96AQDDPUyA&oe=6AFBBCA6",
+        "alt": "安德魯分享的重構專案里程碑進度摘要",
+        "credit": "安德魯的部落格／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "安德魯的部落格",
+          "url": "https://www.facebook.com/andrew.blog.0928/posts/pfbid037kd1cCfTThfs3wzcz2hXcc6MVQU8xAs9rv79s2KfSWYTT2JSTyvBFHRiQekUtyvHl",
+          "published_at": "2026-11-12T19:45:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-c9e211fe7df1177e47300e58",
+      "title": "陶韻智訪談 Katie Chen，談出版業面對 AI 的姿態",
+      "summary": "陶韻智主持的第三集 podcast 邀請《數位時代》社長 Katie Chen，主題聚焦 AI 對出版業的衝擊與業者如何因應。",
+      "original_text": "我主持的第三集podcast\nAI時代下 出版業該用怎樣的姿態面對AI的衝擊，專訪數位時代社長 Katie Chen\n這是很難得的機會，因為社長幾乎沒在上podcast, 這集可以聽到第一手的看法喔！\n收聽永久連結：https://reurl.cc/Z8KLlV\n◆ i 聽聽 FB (i聽聽-臺灣第一綜合性有聲內容平台)：https://reurl.cc/6KmN0r\n◆ i 聽聽 IG (ilisten.tw)：https://reurl.cc/Gn6eXx",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T19:29:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/900477884_2013555696698444_1688787013834165969_n.png?stp=dst-jpg_tt6&cstp=mx1400x1400&ctp=s1400x1400&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qTmzqAarvYUQ7kNvwExccB3&_nc_oc=AdrjnR0bZ1uWu3JhhgPQxrfzYOViMubTDzvoWdkp8vD7B04ntQ_GYufhRDydDCMiuAvzpr0ijPX3KjMiGAhY4krg&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=uGrG5exVX1Cxpi8htXqrJg&_nc_ss=7b2a8&oh=00_AQQmmp4D3QzWS3hAUqKjgQZaa8WiJy5mVHyJe9Brc6XN7Q&oe=6AFBA150",
+        "alt": "陶韻智與 Katie Chen 談 AI 和出版業的節目配圖",
+        "credit": "陶韻智／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid08HK37bYTCSXNa3mPeeKNNidhSaJY42aYmSeKLzrcJkADCvLkCKGAn6m6hxFpRxSKl",
+          "published_at": "2026-11-12T19:29:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-3ae347bd84d61085e6015c52",
+      "title": "卡斯伯用三種 AI 交叉檢視商業思路",
+      "summary": "卡斯伯分享個人使用感受：ChatGPT 適合多種任務，Claude 偏向嚴謹開發，Gemini 則常帶來不同的商業推演。他會把前兩者的報告交給 Gemini 再延伸思考，也提醒 AI 建議仍需查證。",
+      "original_text": "最近我對 Gemini 有了很不一樣的看法。\n 如果用職場人設來比喻：\nChatGPT 就像一個 30 歲上下的全能型夥伴。\n不管你叫它做設計、寫程式、查資料，甚至陪你語音聊天，基本上都能處理得很好。給我的感覺就是能力全面、專業，而且什麼事情都能聊上幾句。\n Claude 則像是一個 35～40 歲的資深工程師。\n做事非常認真、嚴謹，尤其是軟體開發。只要把需求交代清楚，它就能很有條理地幫你完成。\n但如果跳出開發領域，就...，它就沒有 ChatGPT 那麼萬能了 \n。\n不過，在介紹 Gemini 之前，我想先聊聊 ChatGPT 跟 Claude 一個讓我覺得很可惜的地方。\n它們實在太正經、太有道德感了。\n尤其當你開始討論一些比較現實的商業問題時，常常會發現它們的回答比較保守，習慣依循既有規範、文件或最佳實務來提供建議。\n這些建議當然沒什麼不好，但有時候做生意需要的，偏偏就是那些更靈活、更貼近現實的思考方式。\n 但 Gemini 不一樣，\n它更像是公司裡深藏不露的「老江湖」 \n。\n平常你嫌棄它幾句，它也不太會跟你計較，可能就笑笑地回應你。\n但當你真的開始跟它討論商業專案，它卻能突然切入非常精準的商業模式。\n甚至有時候講得像它以前真的做過這門生意一樣。\n從市場切入、獲利模式，到可能遇到的競爭、成功與失敗案例，它都能跟你侃侃而談。\n所以我最近會這麼做：\n先把 ChatGPT 或 Claude 產出的報告丟給 Gemini，它就能結合 Google 強大的搜尋生態系，延伸推導出前兩者完全給不出來的「商業邏輯」。\n如果你也想體驗看看，推薦把 Gemini 切換成 Argon，拿幾個偏商業實戰的問題去問它，馬上就能感受到它跟另外兩家的差異。\n當然，AI 的建議不見得百分之百正確，但具有一定參考價值。我特別喜歡 Gemini 的一點是：它不會直接對你說教、告訴你「這樣做很危險」或「這方法不好」，而是會在提醒完幾個風險之後，默默補上一句：「除了注意前面那幾點，你還可以這樣做，會更有賺頭 \n」",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T19:17:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "卡斯伯",
+          "url": "https://www.facebook.com/WccCasper/posts/pfbid02713huKnSdbM1PTHT9Sqgcb6WUYRoYPK6JGoqTo6cHvFZLGtKpDaw2AUgMwqLm6eZl",
+          "published_at": "2026-11-12T19:17:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-09897633bfabdef7ddc8b321",
+      "title": "柯仁傑分享 AI 時代測試迷思的演講主題",
+      "summary": "柯仁傑回顧 Hello World Dev Conference 2026 的分享，聚焦測試全亮綠燈卻未必改善品質的問題，討論 AI 時代對測試的不同思考。",
+      "original_text": "看起來減肥是持續要做的事 ...\nHello World Dev Conference 2026\nAI 時代下測試的迷思——為什麼綠燈越多，品質卻沒有變好\n感謝大家捧場, 測試在 AI 時代 真的和你想的不同...",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T18:31:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/903613795_1158027756877308_3102269312057259595_n.png?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=p960x960&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OFqj9ZRpEzsQ7kNvwFxvfOJ&_nc_oc=Ado95V8Tt6cYI_25fZgJ6w8hxfw2uwsMYFxNpb16v_icJ9iNpdPx4ykn8SREguRyTJFniJnBjs4ZjDYOSNs9R2pD&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=uGrG5exVX1Cxpi8htXqrJg&_nc_ss=7b2a8&oh=00_AQTpwgLbC8FR9aMcRjIgMkfI6Acr8fx0PUEvrvbt3AoSeA&oe=6AFBD338",
+        "alt": "柯仁傑分享 AI 時代測試迷思演講的配圖",
+        "credit": "柯仁傑／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "柯仁傑",
+          "url": "https://www.facebook.com/kojenchieh/posts/pfbid0baCi3q2o9SNJSoLuzQw5HdEKVK7EejxPRs5hr7U7qnFYy1Fm9PVuaAkB3rFGNfdel",
+          "published_at": "2026-11-12T18:31:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-b71b7d7b24372e455b4bcaab",
+      "title": "Ray 做了可自動安排特休的網站",
+      "summary": "Ray 分享自己開發的排假網站：填入特休天數即可自動安排，也能手動調整，並納入出國目的地的需求。",
+      "original_text": "讓系統幫我排休假！讓我放好放滿～\n前陣子和朋友討論怎麼安排連假好，所以就...就乾脆做了一個自動排假的網站\n只要把特休天數填上去，系統就會自己幫你排了～～\n當然你也可以自己調整就是惹\n那如果是出國到特定國家呢？也可以～～\n如果有跟我有相同類似需求的人或許可以參考看看",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T14:51:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/905938208_1550448833772110_8532315123302608706_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=p960x960&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=BYVKwuy1xM4Q7kNvwG5Hhgd&_nc_oc=Adomja-3RZA4PQuVnHByvbzwP9IX5e359uI4O7lBbPARh2TbOnTXN4Dciilg6SLnuZBNitehkLrB4pfWOXZ7QQuN&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=JdFYcC3wLEA6xW_EqVc7tQ&_nc_ss=7b2a8&oh=00_AQQtMipqMgiPX1qE9t35ZoFxmCn05TRIq7lDaJSy20AfRA&oe=6AFBC7E2",
+        "alt": "Ray 分享的自動排假網站介紹配圖",
+        "credit": "是 Ray 不是 Array／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "是 Ray 不是 Array",
+          "url": "https://www.facebook.com/israynotarray/posts/pfbid024E595pwk47THoqhv3FwyhuiimeZ7oWD5DAE73WEFiWqH5AJtPkxrKWXGWnLptAQ9l",
+          "published_at": "2026-11-12T14:51:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-5d085df235bcaff1723cb8b6",
+      "title": "Will 保哥：Vibe coding 的關鍵是說清楚需求",
+      "summary": "Will 保哥認為企業導入 vibe coding 的難點在需求表達；能精準說明的人較易用好工具，描述失準則可能放大實作風險。",
+      "original_text": "企業不可能開放全員 vibe coding說實話，公司裡能「好好說話」的人本來就沒幾個。vibe coding 拼的不是手速，而是精準描述需求。會表達的人用起來又快又準；交給連需求都講歪的人，如同放一隻拿開山刀的猴子在辦公室亂逛，可怕！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T12:39:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0YqrARCJgrH2B86BgSRXEwkrttFviP3toGWKfSvkF6mgV2Z1aUsDyFccoEnjXmoLnl",
+          "published_at": "2026-11-12T12:39:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-15ccdff0add41e5214e0c73f",
+      "title": "Will 保哥談 AI 如何改變單元測試的工作重點",
+      "summary": "Will 保哥認為有了 AI，單元測試的重點轉向掌握觀念，並以自己過去較少親手實作測試的經驗表達這個看法。",
+      "original_text": "我發現我有一件事非常慶幸，那就是我一直都沒有花太多時間寫單元測試，觀念我都懂，只是之前一直都沒花時間落實在每個專案。還好沒有，因為現在有了 AI 幾乎是有觀念就好了！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T10:11:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0ZwqzjxacsdjaxUCBGZoSeFxGWs197baBYZdtvNpUZZu9TJMbQ4zSyyAS6tH4sbjWl",
+          "published_at": "2026-11-12T10:11:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-6c2ebb742dea6666e488a162",
+      "title": "高見龍規劃用固定 IP 與 Proxmox 架設實驗環境",
+      "summary": "高見龍發現自己原有五個固定 IP，打算找機器架設 Proxmox，嘗試更多服務；同時感嘆記憶體價格偏高。",
+      "original_text": "撿到 5 個固定 IP 可以用（其實本來就有，只是跟摸到放在口袋裡的 200 塊的驚喜），來找台機器架個 Proxmox 切一切應該又有不少東西可以玩了 \n但 RAM 好貴啊...",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T08:29:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid0MRbf6DbMDTZNhTbccftD1zisFbhBgHM8a2XYFwUDZ78BorKBSErRwftS2m6z2mxFl",
+          "published_at": "2026-11-12T08:29:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-51d74a169f051c1f6d2f3b5f",
+      "title": "Nathan Chiu 關注 ChatGPT 商家入口與品牌內容的新戰場",
+      "summary": "Nathan Chiu 將商家檔案、Business Hub 與 Business Agent 視為 ChatGPT 廣告與商務的新入口，認為品牌需追蹤 AI 如何描述自己，調整內容與搜尋預算；同篇也關注 AI 公司募資及供應鏈合規。",
+      "original_text": "大河馬每日報｜2026.11.12（四）\n這兩天 AI 圈的錢流得很急：Anthropic 開始 IPO 路演，台積電董事會拍板入股，CoreWeave 財報把美股 AI 股又拉了回來。不過今天我想先講一件比較安靜、但對廣告業影響更直接的事。\n【主菜】ChatGPT 開放商家認領檔案，廣告閉環成形\nOpenAI 在美國時間 11 月 10 日推出 Businesses in ChatGPT 測試版。商家可以在 ChatGPT 裡認領自己的商家檔案、修正資料、上傳含價格與庫存的商品資料。後台叫 Business Hub，會顯示 ChatGPT 提到你幾次、檔案被看了幾次、網站被點了幾次，以及使用者是在哪些「發現主題」下遇到你。符合資格的美國電商與線上服務業者，還可以建立自己的 Business Agent，也就是放在 ChatGPT 裡的品牌對話助理。\n關鍵在最後一塊：商家可以花錢贊助自己的 Business Agent，把它當成 ChatGPT 廣告的落地頁，贊助版位會標示。OpenAI 10 月 21 日公布，ChatGPT 廣告已上線 89 個國家，投放過的廣告主超過 10 萬家，廣告只出現在免費版與 Go 方案。被提及、被點擊、被導進品牌 agent、再用廣告放大，這條路現在全部在 ChatGPT 裡面走完。\n為什麼是現在？同一時間，多家媒體引述 OpenAI 給投資人的資料，OpenAI 第三季營收約 100 億美元，比第二季的 67 億美元成長將近五成，但調整後營業利益率仍是負 109%，只是比第二季的負 150% 好一些。訂閱撐不起這種燒錢速度，廣告和商務是必須打開的第二條收入線。\n放到台灣來看。ChatGPT 廣告已經在台灣上線，台灣商家理論上也能申請認領檔案，但 Business Agent 目前只開放美國業者，海外申請有被排進候補的案例。數據也要冷靜看：OpenAI 自己的說明寫明，點擊不代表確認造訪或轉換；早期有美國商家公開的真實後台，28 天被提及 690 次，點擊只有 24 次，大約 3.5%。過去十幾年台灣品牌習慣看 Google 的搜尋字詞報表，現在多了一張「AI 怎麼描述我」的報表，這筆 SEO 與內容預算會開始被重新分配。\n下一個要盯的數字：Business Hub 什麼時候開放到美國以外，以及 OpenAI 下一次公布的廣告主數字，能不能從 10 萬往上跳一個級距。\n【另外三件】\n一、台積電最多拿 10 億美元押注兩家 AI 實驗室\n台積電董事會核准最多 5 億美元，以 IPO 價格認購 Anthropic 普通股，另外最多 5 億美元買 OpenAI 特別股，再加最多 5 億美元成立一家投資半導體生態系的公司。同一場董事會也通過約 409.3 億美元資本預算；另外公布的 10 月營收 5,868.9 億元，年增 59.7%，創單月新高。晶片供應商反過來入股 AI 需求最上游的模型公司，台積電和 AI 模型公司的關係，從接單變成同一條船。\n二、CoreWeave 交出年增 168% 的財報，AI 股回魂\nCoreWeave 第三季營收 36.6 億美元，年增 168%，未交付訂單 1,325 億美元。全年營收財測上調到 130 億至 133 億美元，資本支出 370 億至 390 億美元。週三股價大漲 24.71%，那斯達克漲 1.60%。台股在 11 日就先反應，加權指數大漲 1,545.23 點收 44,257.15 點，是史上第 6 大收盤漲點，但外資已連續 10 個交易日賣超。\n三、輝達風暴，燒到出口管制\n黃仁勳的私人風波延燒到國會。輝達週二股價下跌 5.47%，週三才反彈 2.87%。Politico 報導，這起事件讓國會透過國防授權法加嚴晶片出口限制的機率升高；路透也報導，一所與中國軍方有關的大學仍取得 H200 晶片。對台灣伺服器與零組件供應鏈來說，接下來客戶背景審查只會更嚴，這是成本，也是保護自己的必要動作。\n【長線追蹤：AI 企業 IPO】\nAnthropic 的公開說明書把數字攤開了：發行 8.25 億股 A 股，每股 70 到 78 美元，預計在那斯達克以 ANT 掛牌。含既有股東出售部分，最多募得約 644 億美元，另有基石投資人承諾 260 億美元；以完全稀釋股數計，估值上限約 1.405 兆美元。七位共同創辦人將出售約 17.5 億美元股票，輝達計畫在 IPO 後投資約 100 億美元。金融時報報導，承銷商因需求強勁，正在考慮調高價格。掛牌之後，Anthropic 的價值每天由公開市場定價，OpenAI 的私募估值也會被拿來對照。\n【接下來要看】\n思科 11 月 12 日（美東時間）盤後公布財報；輝達 11 月 17 日下午 5 點（美東時間）公布第三季財報；Anthropic 的最終定價與掛牌日。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T07:33:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/904121878_1400229531896082_8289791016851701911_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TVFIWkaOi34Q7kNvwGYNkMA&_nc_oc=AdrdNlwv3q6wAKjgp3j0rbg6VV7HbBJqWSR-YZIOVrQQA73sdINvZKPstaZxD0UU7PLk-u8cyBSFrgrEQgKJNcc4&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=0aFtjND4uSlW2WnnhNoA9Q&_nc_ss=7b2a8&oh=00_AQTWmME-wecgoErJigIAvp8lQFXEgaGxtiml5h7dorwtmQ&oe=6AFBAE57",
+        "alt": "Nathan Chiu 2026 年 11 月 12 日 AI 每日報配圖",
+        "credit": "Nathan Chiu／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0HNFTiEVvjwJeP4PNfbYEGfhbqhy51kYC2mniDnWkJ93cpmP8hM1MEbfVjA4u9wvSl",
+          "published_at": "2026-11-12T07:33:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-99ed9f4b10003837ccf20bad",
+      "title": "Will 保哥介紹以機率回應的 Gemini Decision 1",
+      "summary": "Will 保哥介紹 Gemini Decision 1：以選項機率與信心分數取代生成文字，供代理程式直接做路由與審核判斷；同一份輸入可供多題評估，並免計輸出 token 費用。",
+      "original_text": "Google 在 Gemini API 中推出了全新的前沿決策模型 Gemini Decision 1 \n過去用生成式模型做判斷，系統得一個字一個字吐出回應，最後還要自己寫程式解析文字。Gemini Decision 1 改變了這個做法。它不產生文字，而是直接在單次前向傳遞中對候選選項進行評分，回傳校準後的機率與信心分數，端到端延遲落在 150 到 250 毫秒之間。\n計費結構也跟著簡化。每 100 萬個輸入 token 收費 0.10 美元，因為沒有輸出 token，所以完全不收輸出費用，也沒有額外的隱藏成本。\n這個模型具備 256K 的上下文視窗，原生支援文字、圖片、音訊、影片與 PDF。\n在同一個共享輸入下，單次請求最多可以同時評估 1,000 個問題 (包含是非題、多選題與量表評分)，而且共享輸入的 token 只會計算一次。這對需要大量分支判斷、路由選擇、內容審核或工具調用的代理系統來說，省下了不少等待時間與運算開銷。\n目前 Gemini Decision 1 已經在 API 中提供免費額度，開發者可以直接接入測試。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T07:24:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/901546251_3361623450693166_5265081158902537293_n.png?stp=dst-jpg_tt6&cstp=mx2048x1152&ctp=s2048x1152&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Y7AQLgw_jWEQ7kNvwEvRel_&_nc_oc=AdofDSctqMwlCfPSaKef0YHJmkOGksHsIN-tTPXzr9-EujU_azbHercslMoAGY7Ut8yzZl1oH2MbhDtPLuRetoGU&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=0aFtjND4uSlW2WnnhNoA9Q&_nc_ss=7b2a8&oh=00_AQRcK-J1zA0uh1oQbIVYRbmzDx6Np15B9KVSqFOnwrUDCA&oe=6AFBD1D9",
+        "alt": "Will 保哥介紹 Gemini Decision 1 的貼文配圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02VAT5Wj1oYQpgmmmo4t1cfbBDccHFUUKAJGuEGewC9YASGHKoYGerXs6uLxVrzT3bl",
+          "published_at": "2026-11-12T07:24:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-a343b4765b523d0240ea83f8",
+      "title": "Eric 分享 Gemini Decision 1 的 Decisions API 文件",
+      "summary": "Eric 分享 Gemini Decision 1 的 API 入口。官方文件說明可對共同輸入提出是非、選擇或評分問題，回傳機率與信心分數，供程式直接判斷。",
+      "original_text": "Gemini Decision 1 模型，目前透過 API 存取\nhttps://aistudio.google.com/docs/decisions-api",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-12T05:27:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/904220307_1795114065072802_7185574524129818489_n.png?stp=dst-jpg_tt6&cstp=mx2048x1152&ctp=s2048x1152&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lOCPECRBeeAQ7kNvwEjcs_h&_nc_oc=AdpEPhnKrLCxQn4M4af7XAEYwsgtWMNbwcWjGfgIh2cMMliABRxJG0mbkH0EYBrt-iU5o-HD6ljW5WDiOEkQvdje&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=0aFtjND4uSlW2WnnhNoA9Q&_nc_ss=7b2a8&oh=00_AQSuxwAruhxWVeVsQWOipOihBO7-uSlOOipsYOYSvZAvyw&oe=6AFBA1E2",
+        "alt": "Eric 分享 Gemini Decision 1 API 文件的貼文配圖",
+        "credit": "Eric ShangKuan／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid04oGmVReHsZPo1ZoiH7BgVAjn9gcsF2jzWKQd9naLej89iXCYrKQaW6y5XtQCZdUcl",
+          "published_at": "2026-11-12T05:27:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-11-12T16:17:33.555Z",
+      "captured": 25,
+      "included": 17,
+      "excluded": 8,
+      "notes": []
+    }
+  }
+}
