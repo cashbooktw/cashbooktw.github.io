@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "generated_at": "2026-11-16T00:11:57+08:00",
+  "is_demo": false,
+  "edition_title": "2026-11-16 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 11 則，入選 8 則，排除 3 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-77405568c2a7ad5fc7b3576a",
+      "title": "Will 以 Muse Bot 完成多版本 Angular 正體中文文件",
+      "summary": "Will 保哥分享，透過 Muse Bot 與反覆修正 GitHub Actions，完成 Angular v2 到 v22 文件的正體中文翻譯，讓仍維護舊版的團隊也能查閱。",
+      "original_text": "我有些客戶甚至還在用 Angular v4！ \n我這幾天派 Muse Bot 連續跑了七天七夜，消耗了數十億 Tokens，終於把 Angular 從 v2 ~ v22 的「所有版本」全部都翻譯成「正體中文」版，無論你公司目前還在用哪個版本，都可以找到最權威、最完整的 Angular 中文文件。 \n我跑一半原本要放棄，問題太多了，但是 Muse Bot 比我有信心多了，我的 GitHub Actions 不知道重跑了上百次，把所有問題修好，也都全部成功翻譯並發佈。我真的覺得 Muse Bot 不只是堪用，是非常好用！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-15T20:15:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/907386509_1058270427273784_5326842391481059284_n.png?stp=dst-jpg_tt6&cstp=mx2048x1094&ctp=s2048x1094&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rPXcUpdE-I0Q7kNvwFg2BYQ&_nc_oc=AdpJtr6YANIykZdnx42AFmmyZLZFz1-MDvcPAR6i3_Vp2MTZwskErFfZ2Se1gvvYu2KxZB0LQQDEvYYM4EH7o86n&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=GEPZokBQGq9OKdXyqoGBUw&_nc_ss=7b2a8&oh=00_AQSmYY45EQoRMKcs48ucWsEoeLKR2dnwkRiR2X2kfNOmuA&oe=6AFFC0BA",
+        "alt": "Will 分享 Angular 正體中文文件翻譯成果的貼文配圖",
+        "credit": "圖片來源：Will 保哥的技術交流中心 的 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid022c3Uo336FH9Nod7Eo3jhgip1YN6D93xiJzHD6exrAMuk7UD4uAMjvC14s13sJT3pl",
+          "published_at": "2026-11-15T20:15:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-905f2eb402dabefc84dec5ce",
+      "title": "Will 用 Detour 觀察連線繞路與延遲",
+      "summary": "Will 分享自己用 Detour 測到連線繞經美國的結果，並討論台灣電信業者與 Cloudflare 互連位置對延遲的影響，鼓勵使用者測量並回報路由問題。",
+      "original_text": "你的網路出國了嗎？\n我剛用 detour.tw 測了一下。\n結果我的連線跑到美國聖荷西。\n來回多了 132 毫秒。\n整整繞了 10,385 公里。\n其實很多台灣人的網路都這樣。\n全世界快 30% 的網站是透過 Cloudflare 提供服務。\nCloudflare 在台北和高雄都有機房。\n照理說，在台灣就能拿到回應。\n問題出在接線。\n你的網路業者跟 Cloudflare 在哪裡接線。\n流量就只能在哪裡落地。\n沒有在台灣互連，請求就得先飛去美國。\n網站明明在台灣。\n請求卻要過兩次太平洋。\n美國人拿台灣網站，還比你快。\n這聽起來很荒謬，但每天都在發生。\n尖峰時段更慘。\n大家一起擠同一條海底電纜。\n一塞車就掉封包。\n看影片卡頓、降畫質，就是這個原因。\n小公司也吃虧。\n要拿到好的路由，得付很貴的方案。\n大公司付得起。\n新創、小店家、個人網站只能繞路。\n你可以做一件事。\n去 detour.tw 測測看你的連線落在哪裡。\n再把結果反映給你的電信公司。\n也寫信給 NCC、數位發展部。\n網站上連範本都幫你寫好了。\n複製、貼上、寄出去，只要一分鐘。\n台灣的網路，不應該繞地球一圈才回家。\n一起來問問：我的網路，出國了嗎？\n這個專案是開放原始碼的，可以自行部署！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-15T19:39:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe1-1.xx.fbcdn.net/emg1/v/t13/10535872643414221270?url=https%3A%2F%2Fdetour.tw%2Fog-default.png&fb_obo=1&utld=detour.tw&_nc_sid=f93bbc&_nc_ht=external-tpe1-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=GEPZokBQGq9OKdXyqoGBUw&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_FASjAET6zrET7cnroVLOdgPzL9mAL4DJ5THJO7gnkwKM_&oe=6AFBA7FD",
+        "alt": "Detour 網路連線測試專案連結預覽",
+        "credit": "Detour；轉貼：Will 保哥的技術交流中心（Facebook）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02j8uCUu6pAzqypj1u4ZYqhaHdMtoJtyW6tiEJMip3pLGtfqzoACK3UJZxn9tfVjcPl",
+          "published_at": "2026-11-15T19:39:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-2e7187dd99190df660426f82",
+      "title": "《30 天精通 Git 版本控管》新增社群貢獻波斯語版",
+      "summary": "Will 保哥表示，已將社群貢獻的波斯語版本合併進免費電子書《30 天精通 Git 版本控管》，讓教材新增從右到左閱讀的語言版本。",
+      "original_text": "我在 2013 年寫的 30 天精通 Git 版本控管免費電子書，最近有國外網友來貢獻波斯語 (Persian) 版本，我昨天合併了，文字是從右寫到左，超酷的！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-15T17:54:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-sin11-2.xx.fbcdn.net/v/t39.99422-6/909524056_1516587403632335_5621833593536518234_n.png?stp=dst-jpg_tt6&cstp=mx2048x1094&ctp=s2048x1094&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9PzBqA9_5BcQ7kNvwG7ACSP&_nc_oc=AdpdlGzIl9zUUefQc1MfHLNKYrQX_KBfizoJw5sMyBp0-_KOAIu71ksLPk56i7WISYP46rbGyEqVO4XeXYG2ZGAM&_nc_zt=14&_nc_ht=scontent-sin11-2.xx&_nc_gid=n6a7iMQMfjfr164kUgy7Yw&_nc_ss=7b2a8&oh=00_AQRAgAPlCaNB_IQJbP-0uEuauUK5aVfLLbj4PVxHE9kShA&oe=6AFFB87E",
+        "alt": "Will 分享 Git 電子書波斯語版本的貼文配圖",
+        "credit": "圖片來源：Will 保哥的技術交流中心 的 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0Sawm6ft1EZroqMpqVJee1tb8WVgSKX93LhEr4vpS1nAnTkETfRk4Jbot2ix29Svfl",
+          "published_at": "2026-11-15T17:54:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-970ec2be95efdc487a02e2da",
+      "title": "高見龍談 Claude Design 消息與 Artifacts 設計體驗",
+      "summary": "高見龍引用 Claude Design 將停止服務的消息，分享自己已改用 Artifacts 做設計且感到滿意，認為兩者功能重疊，整合或收起原服務也合理。",
+      "original_text": "> Claude Design at claude. ai/design closes on December 14, 2026.\nClaude Design 要關了\n的確我後來也都用 artifacts 來做設計，效果滿好的。原本的 Claude Design 的角色就變得有點尷尬，收起來或是併到 artifacts 裡好像也不錯",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-15T15:11:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid0cdUHYTzmKYy9RmvF4fHZyEWE1wrXULD3CzvFdY1josNeXYx3MxnemJmdwKAgtUpgl",
+          "published_at": "2026-11-15T15:11:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-fb1e7920d54af700e8ec8e38",
+      "title": "Nathan 談台積電定價與機構減持消息",
+      "summary": "Nathan 針對摩根大通減持台積電的消息表達不滿，主張台積電應提高價格，呈現他對晶圓代工定價策略的立場。",
+      "original_text": "就是你！\nJensen走之後，台積電應該要全面漲價，不要讓這些人在那裡吃乾抹盡！\n\nBREAKING: JPMorgan sold $2.78 BILLION worth of Taiwan Semiconductor Manufacturing Company (TSM) shares in Q3.\nAccording to its latest 13F filing, JPMorgan offloaded 6,100,820 TSMC shares during the third quarter, valued at $2.78 billion as of Sept. 30.\nTSMC stock has plunged more than 13% since the end of Q3.",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-15T15:02:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-sin2-3.xx.fbcdn.net/v/t39.99422-6/907778900_1782615312820249_4450248151218637875_n.png?stp=dst-jpg_tt6&cstp=mx2048x1152&ctp=s2048x1152&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=rkYGfMbVvigQ7kNvwF6gYX_&_nc_oc=AdrT54Ow26cFz9ZnBHS3Qv6DVdprA75wuu-BKuQOJglCkXi5w7I0lbaUrddf6ur0LoADMHNk99qtlb58wRcNGRa2&_nc_zt=14&_nc_ht=scontent-sin2-3.xx&_nc_gid=n6a7iMQMfjfr164kUgy7Yw&_nc_ss=7b2a8&oh=00_AQQY6bqVp_JLhqtv7rljunwTRYY81opB8be_K9Ytty10kQ&oe=6AFFBF83",
+        "alt": "Nathan 討論台積電定價與持股消息的貼文配圖",
+        "credit": "圖片來源：Nathan Chiu 的 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid02GFNzbZr3DTTcGr1pSn1amNXgBa6R9N7kEeNUsAsPsiwTHggVJ8QJ79bXvZdSSSbLl",
+          "published_at": "2026-11-15T15:02:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-7399afd6b193ca978f3e0eec",
+      "title": "Nathan 觀察 AI 電商付款與供應鏈變化",
+      "summary": "Nathan 從 ChatGPT 串接商品資料、廣告與付款的消息，提醒電商品牌整理價格、庫存與網站存取條件；另追蹤晶片、網通及散熱供應鏈的變化。",
+      "original_text": "大河馬每日報｜2026.11.15（日）\n這一週科技圈的頭條幾乎都被輝達換帥占走，但我覺得週五 OpenAI 那則發表，對做廣告和電商的人影響可能更長。\n【主菜】ChatGPT 學會付錢，從推薦走到結帳\nOpenAI 在美東時間 11 月 13 日推出 ChatGPT Wallet，讓它的代理功能 dots 可以直接替使用者下單付款。第一階段只開放給美國 18 歲以上的 ChatGPT Pro 訂閱者，卡片必須是美國發行的 Visa、Mastercard 或 American Express。付款時用的是代碼化的憑證，代理和商家都拿不到真正的卡號，每一筆交易都要使用者再做一次安全確認。OpenAI 說上線初期不從交易中抽成。\n三天前，11 月 10 日，OpenAI 先推出 Businesses in ChatGPT 測試版：商家可以認領並驗證自己在 ChatGPT 裡的檔案，上傳含價格與庫存的商品資料，看自己被提到幾次、帶來多少點擊。美國的電商與線上服務業者還能建自己的 Business Agent 回答消費者提問，而且這個 agent 可以付費贊助，當成 ChatGPT 廣告的落地頁。OpenAI 同時給了一個數字：每週有 12 億人使用 ChatGPT。\n為什麼是現在？因為上一次沒成功。OpenAI 在 2025 年 9 月推出 Instant Checkout，向商家收交易手續費，今年 3 月就收掉，回頭專心做商品探索。這次的順序反過來：先讓商家交出結構化的商品資料，再把廣告接到商家的 agent 上，付款這一段先不收錢。換句話說，錢先從廣告賺，交易抽成之後再說。同一時間，Google 也在 AI Mode 裡開放追問時出現的多輪廣告，兩家都在搶「對話中的購買意圖」這塊。\n放到台灣來看，這兩項功能目前都只開放美國，台灣品牌短期內碰不到。但準備工作可以先做：商品資料是否乾淨、價格庫存是否即時、網站會不會擋掉 AI 代理。過去十幾年我們習慣為搜尋引擎整理商品資料，接下來同一份資料要餵給的對象，會多出幾個 AI 平台。\n下一個要盯的數字，是 OpenAI 什麼時候開始對 Wallet 交易抽成、抽多少，以及 Business Agent 的廣告採用什麼計價方式。\n【另外三件】\n一、黃仁勳請辭，輝達週線六連跌\n輝達 11 月 12 日宣布黃仁勳辭去總裁、執行長與董事職務，即刻生效，由財務長 Colette Kress 兼任代理執行長，Harvey Jones 出任公司史上第一位董事長。股價當天收跌 4.3%，週五再跌 2.01%，市值跌破 4 兆美元，是 2025 年 7 月以來第一次，整週跌 12.75%，寫下 2012 年以來最長的六週連跌。週二的財報是轉折點：營收能否達到公司自己給的約 1,080 億美元財測，以及 Vera Rubin 的出貨節奏。台灣的伺服器與零組件供應鏈，會比華爾街更在意後者。\n二、思科財報超標，訂單成長放緩\n思科上季營收 185.2 億美元，年增 24%，也把本財年對超大型雲端客戶的 AI 營收目標從 75 億美元上調到 90 億美元。但產品訂單年增 21%，前一季是 35%；排除超大型雲端客戶只剩 14%。公司還宣布不再單獨揭露這類 AI 訂單，股價週五跌超過 6%。數字好、股價跌，市場看的是領先指標。台灣做網通與交換器代工的廠商，值得留意這個訂單斜率。\n三、三星洽購散熱廠 Modine\nBloomberg 報導三星電子正在洽談收購美國散熱設備商 Modine，雙方都還沒證實，也沒有公布價格。Modine 上一季資料中心營收年增 95%，來到 4.397 億美元，消息傳出後盤後大漲約 29%。三星去年才以 15 億歐元買下德國的 FläktGroup。AI 機櫃的散熱正從風冷走向液冷，台灣的散熱模組廠在這條路上一直是主力供應商，現在多了一個帶著併購預算進場的大型對手。\n【長線追蹤：AI 企業 IPO】\nAnthropic 預計 11 月 18 日定價，19 日在 Nasdaq 以代號 ANT 掛牌，發行 8.25 億股，每股 70 到 78 美元，最高募資 644 億美元，另有約 260 億美元的私募同步以 IPO 價格認購，認購者包括 Alphabet、輝達、微軟、AMD 與台積電。台積電董事會 11 月 10 日核准，最多各投資 5 億美元在 Anthropic 普通股與 OpenAI 特別股。Bloomberg 報導這次認購約超額六倍，目前仍是消息人士說法，最後定價會落在哪裡，下週三就知道。晶片供應商反過來持有模型公司的股權，這種資金循環值得持續觀察。\n【下週要看】\n輝達美東時間 11 月 17 日（週二）下午 4:20 公布第三季財報，台北是 18 日清晨；Anthropic 預計 18 日（週三）定價、19 日（週四）掛牌交易。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-15T10:54:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-sin6-3.xx.fbcdn.net/v/t39.99422-6/911108552_1169847059060549_3187159657045513876_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ADPTmoX7SXIQ7kNvwGTDqhJ&_nc_oc=AdoKZr_4urCfRgmifKzTw1N91Bfgf9xvq7mUIBfIOT6Ogj-oHEpZZ-4C37ad28FjTIwr61tYadscRDNJhojtzmvY&_nc_zt=14&_nc_ht=scontent-sin6-3.xx&_nc_gid=n6a7iMQMfjfr164kUgy7Yw&_nc_ss=7b2a8&oh=00_AQQAdCXpKneRmXcZlR1rrmBf0j8F1flGqP80QPNCZ6R7AQ&oe=6AFF9415",
+        "alt": "Nathan 科技產業日報的貼文配圖",
+        "credit": "圖片來源：Nathan Chiu 的 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid02qK7L5edbDzWgCojjMpACvguC7GWJvCFFPxJWncudtF6c5FpmNnha3bSHW6GMPBaal",
+          "published_at": "2026-11-15T10:54:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-426952b6bd19c441dc934d15",
+      "title": "高見龍用風格描述讓 AI 設計終端機圖示",
+      "summary": "高見龍以「超級賽亞人爆氣感」描述終端機防休眠功能的圖示需求，分享用 AI 製作介面素材的嘗試，並表示滿意。",
+      "original_text": "我跟 AI 說我在終端機裡「不要進入休眠」的功能的 icon 要有超級賽亞人的爆氣感，它畫的滿好的耶，喜歡",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-15T10:11:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/912625358_1696431642036865_5363959313431945126_n.png?stp=dst-jpg_tt6&cstp=mx2048x1141&ctp=s2048x1141&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=BWSGjfteX8IQ7kNvwHrxHQm&_nc_oc=AdqUQWTRaUQD418YZ9ZpzCq9izuUYtpwRdl2zNyCVb3YH95b3AbixBQ38HeT9GUJkIDithydEX0PkF0EQaM6Tk0y&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=ckjDUOEJi4waiVLcnWAdqQ&_nc_ss=7b2a8&oh=00_AQQk_lmd5qi_zxUdfFtfAn6s-iOvSDWRbZsJFM0kuNdpCA&oe=6AFFB4AB",
+        "alt": "高見龍分享 AI 圖示設計經驗的貼文配圖",
+        "credit": "圖片來源：高見龍 的 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "高見龍",
+          "url": "https://www.facebook.com/eddiekao/posts/pfbid0fskRVsADpvbE98TF1ULieM3ChbNwpULke3SbjsEunComvVQgkqoU1oB5XtZpiHLgl",
+          "published_at": "2026-11-15T10:11:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-7044582e406a40b1369e6706",
+      "title": "Will 分享 WinTop 0.2.0 的 GPU 與 VRAM 資訊功能",
+      "summary": "Will 保哥分享 WinTop 0.2.0 發布消息，新增 GPU 與 VRAM 資訊顯示，並表示已上架 PowerShell Gallery。",
+      "original_text": "WinTop 0.2.0 發佈，支援 GPU / VRAM 資訊 \n已上架 PSGallery 囉：\nInstall-Module -Name WinTop\ntop",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-15T08:39:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/904869208_1688322999388597_369812125513141177_n.png?stp=dst-jpg_tt6&cstp=mx2048x1032&ctp=s2048x1032&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Ux4po11LR6sQ7kNvwH_21kW&_nc_oc=AdooMm__jBs_-LJCpbzY0iNFO_wP_NTLmVMF1FyihNG0PE21l8eXQdCH-8Uo8VlK13Mg0j05_KXimDlnyaqoIlSb&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=ckjDUOEJi4waiVLcnWAdqQ&_nc_ss=7b2a8&oh=00_AQTtTo5FmoiLHJCbWaDEErz9Je0Oxj9Ov4FVnh6OW4pYrQ&oe=6AFFA48F",
+        "alt": "Will 分享 WinTop 0.2.0 更新的貼文配圖",
+        "credit": "圖片來源：Will 保哥的技術交流中心 的 Facebook 貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0udK1ZBdRYuwYQndCAf4VXAZK9yWWTc4FAoRAZXJYyRueoWGNgH3HvHQiM95hhzM9l",
+          "published_at": "2026-11-15T08:39:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-11-15T16:11:55.615Z",
+      "captured": 11,
+      "included": 8,
+      "excluded": 3,
+      "notes": []
+    }
+  }
+}
