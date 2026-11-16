@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "date": "2026-11-15",
-  "generated_at": "2026-11-15T02:38:11.444765+00:00",
+  "date": "2026-11-16",
+  "generated_at": "2026-11-16T02:43:12.246760+00:00",
   "quotes": {
     "tw": {
       "date": "2026-11-13",
@@ -35,8 +35,8 @@
   "fx": {
     "base": "USD",
     "quote": "TWD",
-    "date": "2026-11-14",
-    "rate": 32.95,
+    "date": "2026-11-15",
+    "rate": 32.935,
     "source": "Frankfurter"
   },
   "errors": {}
