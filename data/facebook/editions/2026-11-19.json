@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "generated_at": "2026-11-19T00:21:57+08:00",
+  "is_demo": false,
+  "edition_title": "2026-11-19 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 22 則，入選 16 則，排除 6 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-1d890d9a56ffe66f07a8884f",
+      "title": "Muse Bot 登入 Azure：先在本機換取短效 token",
+      "summary": "保哥指出 Muse Bot 只在 HTTP 標頭替換機密，Azure 登入若把 Secret 放在本文就會失敗；可先在本機換取短效 token，再交由平台執行。",
+      "original_text": "為了防止機密外洩，Muse Bot 平台只會在 HTTP 標頭替換真實憑證 (Secret)，導致把 Client Secret 放在 Request Body 的 Azure 服務主體登入永遠只會送出假代碼而失敗。解法是先在本機把 Secret 換成短效 token 再交給 Muse Bot 接力執行！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T21:57:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0b7842gcbTzmgEefFE6Pjz5oThjpUCyLzQFNHEDjuUt61RYfHNMZ1jbGnKtHUfPWgl",
+          "published_at": "2026-11-18T21:57:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-9f0933fb9be734e602dae814",
+      "title": "從近期當機事件提醒維運風險",
+      "summary": "Ant Yi-Feng Tzeng 列舉 Microsoft、FAA、Chase 等近期當機事件，提醒維運人員留意服務穩定性。",
+      "original_text": "近期重大當機事件，願大家負責的維運安然無恙\nMicrosoft, FAA, Chase, Apple, NSA, ...",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T18:31:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/912328271_1495935272675153_270889089561473923_n.png?stp=dst-jpg_tt6&cstp=mx870x1000&ctp=s870x1000&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=sER3bJtrJXEQ7kNvwGTj7uh&_nc_oc=AdpceURMfFfhrRgGT51fm88dweuVVA1pvEJtKU24IWaRp5zhjJrIBwGH-753TGZDT_KCVtsvj5IXjClmnhn5pvk8&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=ziDL-LjHrtsPL_0q6N9CPA&_nc_ss=7b2a8&oh=00_AQRUBUiI2efcUQ8F1sJBKvfXsPXL7b28KVZ7dbZM_LZRIA&oe=6B038713",
+        "alt": "Ant Yi-Feng Tzeng的 Facebook 原文配圖",
+        "credit": "來源：Ant Yi-Feng Tzeng（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid02Ehq5sZAM9c2f7mAUNHxLFCcCsvorAQ5XMNA6Wz9r33XbyyE1HbwuiGTQTe6Dd3hvl",
+          "published_at": "2026-11-18T18:31:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ce1703c5e65772b1a082f196",
+      "title": "Antigravity 滿週年，保哥分享重置消息",
+      "summary": "保哥分享 Antigravity 滿週年及重置消息，並提到 Google DeepMind 的 Varun Mohan。",
+      "original_text": "Antigravity 滿週歲了，所有人都得到了一次重置！ \n歡迎新的賽博義父，來自 Google DeepMind 的 Varun Mohan",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T18:12:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/912661878_4718295195160384_1753813356750471202_n.png?stp=dst-jpg_tt6&cstp=mx1024x1536&ctp=s1024x1536&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vJif6SqTaGMQ7kNvwHHSMIr&_nc_oc=AdrOu9IctUzj1Kc58tVSRVE4MWFk_xV45klmdNz7iJb9QTgo6X82p8YCNkPhZ9WjRjwKgOjgIwKrOmiC6DmNxRsF&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=ziDL-LjHrtsPL_0q6N9CPA&_nc_ss=7b2a8&oh=00_AQR-u1RCQhtpXUyyISs8we06x36eAq_2UlZsTs2k6ZJvqQ&oe=6B03BE0B",
+        "alt": "Will 保哥的技術交流中心的 Facebook 原文配圖",
+        "credit": "來源：Will 保哥的技術交流中心（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0ErMBmMHq9yrbMxU5uqTPKHn3LRCNKmZQngCyaomoxbfvoVMe3nu9n8ePyENYTbZKl",
+          "published_at": "2026-11-18T18:12:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-d3755ab717bb8ecca334386b",
+      "title": "保哥分享 AI 開發訂閱的分工",
+      "summary": "保哥將 GitHub Copilot 用於程式碼審查，開發則分配給 Claude Code、Antigravity CLI、Minimax Code 與 Codex CLI；ChatGPT 降至 Plus 後主要用於生圖。",
+      "original_text": "我的 GitHub Copilot Max 訂閱，光是跑 Code Review 就飽了，但是確實 Review 的很好！ \n所以我的開發主力都用其他家的訂閱，排名如下：\n Claude Team Premium: Claude Code ( Opus 5.5 )\n Gemini AI Ultra: Antigravity CLI ( Gemini 4 Carbon )\n Ollama Cloud Max: Minimax Code ( BYOK )\n ChatGPT Plus: Codex CLI ( GPT-6.1-Sol )\n衝太快，回頭一看怎麼這麼多訂閱，原本最愛的 ChatGPT 訂閱已經不再迷戀，只有生圖會靠他，所以降到 Plus 訂閱，最近 Reset 次數也確實變少了！\n大家可以分享目前的訂閱喔～",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T18:03:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/912981542_1172043738497524_7018018250669682781_n.png?stp=dst-jpg_tt6&cstp=mx1894x1376&ctp=s1894x1376&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=I0Z6-VhwAXEQ7kNvwFQF_yU&_nc_oc=AdrI_FhXxTTYjuw7MurznCyYNmqdPF-mYLBGURDkJnAyjm1RVBwVM3AsJAJz90Q14OlKYe3bMd7FL5lprbVnkE9F&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=ziDL-LjHrtsPL_0q6N9CPA&_nc_ss=7b2a8&oh=00_AQRNYjkJd-i8k58PEZ24jafEIOwQBmoNuDoz1fh5MKVxtQ&oe=6B039F44",
+        "alt": "Will 保哥的技術交流中心的 Facebook 原文配圖",
+        "credit": "來源：Will 保哥的技術交流中心（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02U1BSczrYE1UnYqsMt7hok9kpwpPA7j37E5EqpAQpBUY4ZZ2ZvdKR9sgoJxPpTmkUl",
+          "published_at": "2026-11-18T18:03:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-2e8605a00c3da3ca3160bfbc",
+      "title": "保哥看好 Meta MCP 改善後台操作",
+      "summary": "保哥認為 Meta Social Technologies MCP 能減少面對 Meta 管理後台操作不便與錯誤的困擾。",
+      "original_text": "Meta Social Technologies MCP 終於讓我不用再面對超級難用又無敵多 Bug 的 Meta 管理後台！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T14:34:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-sea5-1.xx.fbcdn.net/v/t15.5256-10/732125469_1561126992038705_6793103211095656027_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=PCFcTBDcq5oQ7kNvwHUz5ZS&_nc_oc=AdoiAjeYQ6mjcWBJHLhd5n6YWBa6kl0YUhqFyUnw8k9jHzpg07F9uTh43oU-97LhyYu7zzfeOClQ9iszfbk9Nhlm&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=nW8SvI7Fr7eRk-WTKgrDNw&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ur=b07905&_nc_sid=c63717&oh=00_AQQRN54ISPN0NGhvIjkEML1danmOic6F9FHukcFOBZAj8Q&oe=6B032041",
+        "alt": "Meta Social Technologies MCP | Meta for Developers",
+        "credit": "來源：Will 保哥的技術交流中心（Meta for Developers 連結預覽）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0AXvtzdgcQLGgqVTm7rFWU9H63VDszUL7LMxHU1w93caQbZNNGpVWFYneQJgB1eHCl",
+          "published_at": "2026-11-18T14:34:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-8b1a92f1b66745ab970a0840",
+      "title": "Spec Kit 從開發起點走向完整工作流程",
+      "summary": "保哥回顧 Spec Kit 從 Specify、Plan、Tasks、Implement 四步發展為含擴充、預設集與工作流程的框架，並表示已完成正體中文官網改版與翻譯。",
+      "original_text": "你知道 GitHub 的 Spec Kit 是怎麼開始的嗎？\n2025 年 8 月 21 日，第一個 commit 出現了。\n那時候它只是一個很單純的想法：讓規格變成開發的起點。\nSpecify → Plan → Tasks → Implement\n這四步，到今天都沒變。\n一開始是 Den Delimarsky 和 John Lam 兩個人在帶。\n他們做出了 Specify CLI、專案憲章，還有給各種 coding agent 用的鷹架。\n重點是，它從第一天就不綁任何單一模型。\n換工具、換 agent，流程照樣跑。\n後來，Den Delimarsky 離職了，竟然跳槽去 Anthropic 上班，然後 Spec Kit 就斷更了數月！\n2026 年 1 月，Manfred Riem 接手首席維護者。\n方向也跟著轉了。\n以前是打造可組合的模型。\n現在是用這個模型，把完整的流程做出來。\n中間發生了很多事。\n2 月，社群貢獻的擴充功能系統進來了。\n3 月，可插拔的 preset 出現。\n4 月，workflow engine 上線。\n現在的 Spec Kit，有五個核心元件：\n整合、擴充功能、預設集、工作流程、工作流程步驟。\n從一個小工具，變成一個框架。\n而且還在長。\n開源專案最有意思的地方就是這樣。\n不是一個人寫完的，是一群人一起堆出來的。\n我昨天把 Spec Kit 正體中文官網改版了，現在的 Spec Kit 跟一年前，差別很大，全站都翻譯好了，以興趣的人可以自己看。\n我最近光是追 AI 技術發展就沒時間開課了，不然最近真的是學了很多東西，希望接下來有時間可以開課分享知識。大家想學什麼？也可以留言跟我說！ \n#連結我放在留言處",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T14:18:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/914308752_1927928618186388_2082683224634298778_n.png?stp=dst-jpg_tt6&cstp=mx2048x1094&ctp=s2048x1094&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=pZ6DHpcYTnsQ7kNvwGXdMFI&_nc_oc=AdpWNy2BkUR7Rt7ym4NO_ZMm6ob8oiWL3-e8nJPXDNEJgRxeOCdjU_Yqk8i8inAln2x5QdVA9NQbOeFPBcwOuQm_&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=3kdFuC9drjqcFZHOr7w7IA&_nc_ss=7b2a8&oh=00_AQQRnF3jz1erV-CgoyJUKLl6nIOULVb5zkhrqrwT0WCkmQ&oe=6B038691",
+        "alt": "Will 保哥的技術交流中心的 Facebook 原文配圖",
+        "credit": "來源：Will 保哥的技術交流中心（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02oukTdbutwtPKiKogTAcPMHGr9QhEuPq2FFqRjj42YzJFf89dprwc4TX1DEZqndSql",
+          "published_at": "2026-11-18T14:18:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-922ee560c5226454e7495a00",
+      "title": "README Guide 用範本與 Lint 協助 AI 寫好文件",
+      "summary": "Ray 更新 README 範本並推出 README Guide，讓使用者把首頁提示詞交給 AI 產生文件，再以 Lint 檢查格式，減少因說明缺漏而反覆翻查專案設定。",
+      "original_text": "早期我有出一個專案叫 README Template 的 README 範本，當初這個目的是給學生一個參考方向了解該怎麼寫 README，不然每次我在改作業時 README 真的是花樣百出，屬實對眼睛很傷。\n而進入 AI Agent 時代後，基本上 README 也都還是給 AI 撰寫，但問題是...AI 寫的 README 還是會少寫我認為應該要有欄位？！\n時常看到 AI 拉一份專案下來後，因為 README 沒寫清楚導致它要先去翻各種相關檔案，像是 package.json、.env.example、.nvmrc 等等。\n「如果一開始 AI 可以透過 README 就搞懂這些東西是不是更好？」\n抱著這想法，就...趁這個機會把 README Template 改版並買一個網域放（https://readme-guide.com）吧？！\n使用方式也很簡單，只需要將首頁的 Prompt 貼給 AI 就可以了，寫完後也會幫你跑 Lint 檢查，確保 README 的格式是符合規定的（裡面也有包含 SKILL 了）。\n當然範本我還在慢慢弄跟思考，但就先分享出來再說吧？\n如果有任何建議也都可以直接發 Issues 或 Pull requests 給我，我都會跟你討論看怎麼調整會更好。\n最後的最後，如果你覺得有幫助，也可以考慮給專案一個 Star 當作鼓勵也行，讓我知道這個分享對你有幫助，對我來講會是一個莫大的推進動力。\n英文版：https://readme-guide.com/\n中文版：https://readme-guide.com/zh-tw/\n專案儲存庫：https://github.com/hsiangfeng/readme-guide",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T13:42:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.30808-6/914693607_1557195316430795_5857106808891384251_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1116&ctp=s1440x1116&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kR5UYhptTc0Q7kNvwFd4TST&_nc_oc=AdrqXGUyvX4qd79QCxlvChGUHDFLrj_9NfwMyQOEH8orZUOmAN9m14AvV5tSEPhLZBkE6y05Z8Mj8cadv2uTKg4a&_nc_zt=23&_nc_ht=scontent-tpe5-1.xx&_nc_gid=3kdFuC9drjqcFZHOr7w7IA&_nc_ss=7b2a8&oh=00_AQRcwmh5hAASdzXfZw6A10xmpDjJ2MZH9QCgdytNSoG8rA&oe=6B0386AA",
+        "alt": "是 Ray 不是 Array的 Facebook 原文配圖",
+        "credit": "來源：是 Ray 不是 Array（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "是 Ray 不是 Array",
+          "url": "https://www.facebook.com/israynotarray/posts/pfbid0bGjTiX2mATYgx3b8BQq3WrD2xPSKUAZVts9Fdym4Uez6ZYYR2HUfzXC31BKK23a2l",
+          "published_at": "2026-11-18T13:42:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-db9e7164bf94b659bc739226",
+      "title": "陶韻智分享 live 互動平台一年的成果",
+      "summary": "陶韻智表示，藉 AI 打造的免費互動問答平台 live 已有逾十萬月活躍用戶，並加入趣味賽馬與交換名片功能，也被使用者拿來製作教學影片及研究。",
+      "original_text": "AI給的時代機會，去年八月做了一個即時互動問答平台 live。\n自己使用，也給全世界用戶免費使用。\n到現在過一年了，月活躍用戶數超過十萬了。也加了很多功能，例如現在也可以大家一起賭馬 for fun，也可以在商務場合中交換名片。\n昨天還發現了兩個事：\n1. 有位外國人做了YT影片介紹live的使用方式\n2. 有位馬里蘭大學的同學做了教學相關研究，用了 stingtao 這個系統\n能服務用戶的感覺真不錯\n大家都應該ALL in AI，做自己先前想做但做不到的事！\n-------\n網址我放在留言，歡迎大家儘量使用，聖誕節 尾牙要到了，就儘量用吧！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T13:31:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/912910290_1709359664243811_2772966867189382960_n.png?stp=dst-jpg_tt6&cstp=mx2048x1414&ctp=p960x960&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aHpN2QC8RfgQ7kNvwF85aR_&_nc_oc=Adqer7ezSzVcY1tKqFO42iixPCw_hFp-upQ05UdqLic9fjH7toFwJEXMWFjmno3hAq1DuXimaO3fEZfow-kts-jF&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=3kdFuC9drjqcFZHOr7w7IA&_nc_ss=7b2a8&oh=00_AQTpqH6wxfsp0kn9TLOGE7a5FmNGPkrDr12eQ4akFnzpdw&oe=6B03A991",
+        "alt": "陶韻智的 Facebook 原文配圖",
+        "credit": "來源：陶韻智（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid0bgDHarfCvNotZ2QHp6cyYgLYn4Qg79NhfFabjqKAvR119gfwAhDDwvTUNvHZY4dRl",
+          "published_at": "2026-11-18T13:31:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-328617293d3317d5a51c275e",
+      "title": "保哥質疑 harness 功能重複投入",
+      "summary": "保哥觀察多家 harness 的功能逐漸雷同，對各廠商重複開發相近能力提出疑慮。",
+      "original_text": "幾乎所有 harness 都在做相同的功能\n每家廠商都在重複發明輪子\n感覺不妙！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T12:14:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid03789bEPhY6qYCY8e4naDbKT4HHUKRZgqNaPdrjksnPKsfcJWYiESXjp1QFqtG13t7l",
+          "published_at": "2026-11-18T12:14:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-07d910c2a74e60049bd41742",
+      "title": "保哥整理 GPT-6.2 Astra 與 Sol 的定位",
+      "summary": "保哥將 GPT-6.2 Astra 定位為處理高難度專業任務的模型，Sol 則面向日常工作；貼文重點是程式開發與文件產出的能力、成本及 token 效率。",
+      "original_text": "OpenAI 這次一次發表兩款：GPT-6.2 Astra 和 GPT-6.2 Sol\n簡單說：Astra 給你最難的任務，Sol 給你每天的工作。\n Astra\n它專門處理超難的專業工作。\n做簡報、試算表、文件，看起來比較不像 AI 產的。\n它會照你的模板走，也會符合你那個行業的寫法。\n寫程式碼更乾淨，做出來的網頁也更好看。\n數據也很猛。\n在測多步驟專業工作的 Agents' Last Exam 上，它比上一代 GPT-6 Astra 高了 5.2 分。\n重點是，成本只有三分之一。\n跟 Claude Fable 5.2 比，分數高 5.5 分，但成本只有 5%。\n科學領域更誇張。\n官方直接說它是全世界最強的科學家模型。\n在 Terminal-Bench-Science 上比上一代高了 9 個百分點，成本照樣不到三分之一。\n法律也很強。\n在 Harvey LAB-AA 法律測驗上，通過率是 Claude Fable 5.2 的兩倍以上，成本只要六分之一。\n Sol\nSol 是給一般人每天用的。\n比上一代 GPT-6.1 Sol 更聰明、更省，同一個付費方案可以做更多事。\n寫程式只比 Astra 差 0.5 分，但成本只要五分之一。\n拿來處理生活大小事也很好用。\n搬家找幼稚園、算房貸通勤、幫家人規劃飲食，這種事它都行。\n價格部分。\nAstra 的 API 價格比上一代便宜 20%。\n快取輸入還有 60% 折扣。\nSol 則是維持上一代的價格不變。\n簡單說，這次的重點就是：更強、更便宜、更省 Token。\n如果你常拿 AI 做簡報、寫報告、寫程式，這代值得升級看看。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T10:02:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe5-1.xx.fbcdn.net/emg1/v/t13/8827186065751391928?url=https%3A%2F%2Fcdn.openai.com%2Fmdx-assets%2Fe193aefe-5e58-431c-8cd2-adadac0c1496%2F44573edd-9653-49b3-ba07-7b3643545ef9.d3072be3.png&fb_obo=1&utld=openai.com&_nc_sid=c63717&_nc_ht=external-tpe5-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=tX67sSLUyEMKkAMEFKaouQ&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_FAY3dZSGixtxRlN_vsLA9XTAoitdRFEldmaHIyZPQND6E&oe=6AFF9A88",
+        "alt": "Introducing GPT-6.2 Astra and Sol",
+        "credit": "來源：Will 保哥的技術交流中心（OpenAI 連結預覽）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02byghN4Wz2ivzB9eLJrovnLEbtVvAVgJsSmb56kXY7Y1QzXB62q8nZmFToHYKkQ9yl",
+          "published_at": "2026-11-18T10:02:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-be6c310c87c5c05117034635",
+      "title": "GPT-6.2 Astra：保哥關注產出品質與使用分歧",
+      "summary": "保哥關注 GPT-6.2 Astra 的程式碼、前端與 3D 產出，以及工具和 token 使用效率，同時提醒社群中也有負面使用評價。",
+      "original_text": "GPT-6.2 Astra 是 OpenAI 全新的旗艦模型，能力更上一層樓，能產生更乾淨的程式碼、更出色的前端與 3D 模型，並以更高效率使用工具。 \n官方說 GPT-6.2 Astra 與 Sol 在高難度任務上，能以更少的輸出 token 取得更佳成果。不過 X 也有人說這個模型糟糕透頂！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T09:57:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/895290891_1273517351648327_8322981098258587433_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=w0slChhHIRwQ7kNvwGh9u6J&_nc_oc=AdoyjGbQrdpx9KSmHRsVblGN6ErxUwzKvR5maLFSAOVYZoQoPH6T2oceEiq7PYD7UnBqnJ4Lc40Ir_s__lojgsIS&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=tX67sSLUyEMKkAMEFKaouQ&_nc_ss=7b2a8&oh=00_AQQ8-Wt6Eq87ihL2SQp2Z-tYfLflHGQ1RZ3liiNR1W_7Ag&oe=6B03BC8F",
+        "alt": "Will 保哥的技術交流中心的 Facebook 原文配圖",
+        "credit": "來源：Will 保哥的技術交流中心（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/reel/1860561728366650",
+          "published_at": "2026-11-18T09:57:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-39e0cc72b2717849c74051ea",
+      "title": "Champ Yen 關注 Anthropic IPO 後的大股東影響",
+      "summary": "Champ Yen 關注 Anthropic IPO 後 Amazon 與 Google 的持股，認為這兩家科技巨頭仍占有重要地位。",
+      "original_text": "即便 Anthropic IPO\nAmazon 與 Google 兩大巨頭現今佔有三成以上股份",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T09:46:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe5-1.xx.fbcdn.net/emg1/v/t13/10954990178071377496?url=https%3A%2F%2Ftechcrunch.com%2Fwp-content%2Fuploads%2F2022%2F09%2FGettyImages-1415078085.jpg%3Fresize%3D1200%2C721&fb_obo=1&utld=techcrunch.com&_nc_sid=c63717&_nc_ht=external-tpe5-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=tX67sSLUyEMKkAMEFKaouQ&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_FARVYoOSzNm_IWNAjbUeWRVDhhdLJgzat1S6ODiY2DehF&oe=6AFFBF9A",
+        "alt": "Amazon and Google will together own nearly 30% of Anthropic after its IPO | TechCrunch",
+        "credit": "來源：Champ Yen（TechCrunch 連結預覽）"
+      },
+      "sources": [
+        {
+          "name": "Champ Yen",
+          "url": "https://www.facebook.com/champ.yen/posts/pfbid0fh3oABPp3YfvJ7vpZVp8HLNbN5z19oVfhLHvyoqgUQfqZALTQq7z431EG373DzzYl",
+          "published_at": "2026-11-18T09:46:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-270e855d9532937d99813f4d",
+      "title": "Champ Yen：微軟將以 Copilot 串起工作軟體",
+      "summary": "Champ Yen 認為微軟正把 Copilot 放在產品策略中心，從系統到 Office 軟體都將圍繞它發展。",
+      "original_text": "微軟開始將未來押注在 Copilot 上\n接下來從系統到 Office 軟體都將以其為中心",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T09:43:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe1-1.xx.fbcdn.net/emg1/v/t13/9950104443657101999?url=https%3A%2F%2Fcdn.arstechnica.net%2Fwp-content%2Fuploads%2F2026%2F11%2FMS_Ignite_Perception.png&fb_obo=1&utld=arstechnica.net&_nc_sid=c63717&_nc_ht=external-tpe1-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p584x304_q75_tt6&ccb=18-1&_nc_gid=tX67sSLUyEMKkAMEFKaouQ&_nc_map=urlgen_bucketless&_nc_zt=3&_nc_enc=UjFSSGRdZR9pbYsZFqxenB0H3fykDzQHmvztrxvYRoKZQyAVMZdI-sCBdi6mSF7gbda3CIy3HfqvIYnn&oh=06_Q3_FAX0PXIbbyTsqIx917X0kTTYcvq8sb6kaRZEzy20aaMCI&oe=6AFFB99B",
+        "alt": "Copilot is \"the new OS for work,\" and now Office runs inside of it",
+        "credit": "來源：Champ Yen（Ars Technica 連結預覽）"
+      },
+      "sources": [
+        {
+          "name": "Champ Yen",
+          "url": "https://www.facebook.com/champ.yen/posts/pfbid028U1uCt5ud26BfaL8WHBhej8t7N7UTdeqV1USBw8ToqEJF9jQ65NjtfgProdeL81Tl",
+          "published_at": "2026-11-18T09:43:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-b443810eed2d53c1c01a2fa7",
+      "title": "保哥看好 MAI Code 2 的企業成本吸引力",
+      "summary": "保哥認為 MAI Code 2 即使不追求最前沿能力，仍可能以價格優勢吸引企業採用。",
+      "original_text": "MAI Code 2 是一個不錯的模型，即便不是 AI 最前沿，但看在他便宜的份上，企業會買單的！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T09:15:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe1-1.xx.fbcdn.net/emg1/v/t13/9459799645244223098?url=https%3A%2F%2Fmicrosoft.ai%2Fwp-content%2Fuploads%2F2026%2F11%2FMAI-Code-2-WithHeader-16x9-1.jpg&fb_obo=1&utld=microsoft.ai&_nc_sid=c63717&_nc_ht=external-tpe1-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=LdPJb1B7hs6ucToABk8x1w&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_FAZ0hx3nI0bwqKBE5Jgakxwz34vBUwwhN6CumyO45Tj1q&oe=6AFFC5E9",
+        "alt": "MAI Code 2 and Code 2 Flash: Everyday coding at scalable prices | Microsoft AI",
+        "credit": "來源：Will 保哥的技術交流中心（Microsoft AI 連結預覽）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0HTw4XtW7a9t6qNyg3CTBG1EXwiLWZyrJeWZWPgkJiBxG4JK9MCzkaJgu2wRYnAYtl",
+          "published_at": "2026-11-18T09:15:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-b611af7db0a1d4c9c6c857bd",
+      "title": "Nathan 日報追蹤 AI 晶片、資本支出與供應鏈",
+      "summary": "Nathan 整理輝達財報與管理層動向、AI 晶片及遠端算力管制、Anthropic 上市和台股變化；關注重點是台灣供應鏈的訂單節奏，以及模型公司的營收能否支撐算力承諾。",
+      "original_text": "大河馬每日報｜2026.11.18（三）\n輝達在創辦人離開後交出第一份財報，數字一樣驚人，但這次大家聽電話會議，耳朵有一半在聽董事會怎麼說。同一時間，美國對AI晶片的轉運與遠端算力補上新的管制，台股則連跌兩天。\n【主菜】輝達營收年增翻倍，執行長位子仍空著\n輝達第三季（截至10月25日）營收1,158億美元，年增103%，季增20%。資料中心1,076億美元，年增110%，幾乎就是整家公司。非GAAP毛利率74.9%，每股盈餘2.68美元，市場原本預期營收約1,088億美元、每股2.47美元。第四季財測1,300億美元，上下3%，而且財測裡完全沒有放中國資料中心運算的營收。股價盤後一度上漲約3.5%。\n為什麼這份財報特別？因為它是在黃仁勳去職、暫代執行長由財務長Colette Kress接手的情況下公布的。董事會主席Harvey Jones在電話會議上直接說，董事會無意讓黃仁勳回任，已經找顧問協助物色正式執行長。Kress則說Vera Rubin「開局爆發」，需求仍大於供給。換句話說，管理層要用數字告訴市場：人事風暴歸人事風暴，訂單沒有跟著走。\n放到台灣來看，這張財報的含義很直接。資料中心這一千多億美元，背後是台積電的先進製程與封裝、廣達緯創這些伺服器代工的產線。Rubin的爬坡速度，基本上就是台灣供應鏈明年上半年的節奏。前兩天台股因為AI雜音重挫，今天開盤會是第一次用實際財報去消化這些情緒。\n我會盯的下一個數字是毛利率。第四季毛利率財測是71%到72%，比這一季的74.9%低了將近三個百分點。這一季多了一週，又是新平台放量期，毛利往下可以理解，但如果之後兩季回不到74%附近，市場就會開始問，Rubin這一代的議價力是不是跟Blackwell一樣強。\n【另外三件】\n一、美國晶片新規，把五個國家與「遠端算力」一起納管\n美國商務部工業暨安全局16日公布臨時最終規則，預計19日生效。出口先進晶片到新加坡、馬來西亞、泰國、印尼、巴西，都要先申請許可；資料中心如果把算力租給中國等受管制國家的客戶，也要許可。門檻是總運算效能超過1,200萬TPP，TechCrunch估算約等於750顆H100或H200。已經在提供這類服務的業者，生效後有90天時間取得許可。經濟部說，台廠是依客戶訂單代工，涉及新規時由下單的美國客戶申請許可；廣達、緯創都表示不受影響，廣達的泰國廠只做表面黏著，成品在美國組裝出貨。\n二、Anthropic本週定價，台積電也在認購名單裡\nAnthropic預計美東時間18日定價，19日在那斯達克掛牌，代號ANT。原訂價格區間70到78美元，發行8.25億股，以上緣計算的完全稀釋估值約1.404兆美元。Bloomberg引述知情人士說，認購量接近可售股數的7倍，定價可能落在區間上緣或更高。另外有260億美元的私募同步認購，名單包括Google、輝達、微軟、AMD、博通、美光，以及台積電。台灣的晶圓代工龍頭直接成為AI模型公司的股東，這個關係值得記下來。\n三、台股兩天跌3,583點，守住4萬點\n台股週一跌6.03%，週二再跌2.31%、收盤下跌947.97點，兩天合計少了3,583.01點，跌幅居亞洲主要股市之末。金管會公布，週二成交量約9,617.95億元，截至週一的信用交易整戶擔保維持率165.98%，仍高於130%的追繳線。今天輝達財報出爐後，權值股會不會止跌，是第一個測試點。\n【長線追蹤：AI資本支出】\nAnthropic更新的公開說明書裡有一個數字我一直記著：運算與基礎設施承諾高達9,009億美元，同一份文件揭露前九個月營收332億美元、淨損1,040億美元。對照輝達Kress說需求仍大於供給，Amazon執行長Andy Jassy也在CNBC上說看不到不跟輝達合作的一天，AI資本支出這條線目前沒有放緩的跡象，真正的變數是模型公司能不能用營收撐住這些承諾。Anthropic掛牌之後，這些數字會每一季攤在公開市場檢驗。\n【接下來要看】\n美東時間18日Anthropic定價、19日掛牌；美國晶片新規19日生效，同一天川普與習近平在深圳APEC場邊會談；微軟Ignite大會進行到20日；12月1日黃仁勳將赴美國眾議院三個委員會接受約談。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T09:13:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/911318332_1579419930592544_6200591222703653942_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WCEnzK6J3tIQ7kNvwE24v18&_nc_oc=AdqmPNIZYbcnXZmnWZV6Y803YP77GAoQ6XY35P2Eua9A7Ftqn7-i0pVdXMrv6k208nxv6GHdO2EqJmT61e2YSyOW&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=6gLkVbqZJJAoI_BSo7sFCg&_nc_ss=7b2a8&oh=00_AQTzMcvwpBnYC8XLtJNbMoH50_ZBpuKZtWQT-8RD9impBQ&oe=6B03931B",
+        "alt": "Nathan Chiu的 Facebook 原文配圖",
+        "credit": "來源：Nathan Chiu（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0uHDcrqKJ66n8FcfENQsGYkZWRnKNEm7cDeji4rniNfaV863spm846osRxdBoaoggl",
+          "published_at": "2026-11-18T09:13:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-bbb4450ebd9811561fb057f3",
+      "title": "保哥整理 Ignite MAI 的成本與企業部署路線",
+      "summary": "保哥整理 Microsoft Ignite 的 MAI 重點，涵蓋程式、資安、圖像與語音模型，並強調價格效能及企業規模化使用；Licensed Weights 則讓企業在自己的 Azure 環境客製及運行模型。",
+      "original_text": "Microsoft Ignite 2026 MAI 重點整理 \n微軟 MAI 這次的 Keynote 資訊量超大\n我幫大家整理成一篇懶人包\n一段一段看，三分鐘就懂 \n 首先，MAI 的使命很簡單\n就是要打造全世界最強的模型\n讓每個開發者和企業都站在能力的最前緣\n 但很多 CIO 和 CFO 都在抱怨\n現在 Token 花費真的太高了\n以前沿模型的價格，根本撐不久\n 所以 MAI 承諾一件事\n給你市場上最好的價格效能比\n讓你的 Agent 可以真正規模化\n 而且他們不是只拚模型能力\n而是把「品質」和「價格」一起優化\nShip、learn、improve、repeat\n一直循環，一直進步\n 來看程式碼模型有多猛\nMAI Code 2 在四個常見企業 coding 基準測試上\n平均拿到 GPT 6.1 Sol 的 98% 效能 \n但成本只要 40%\n對上 Opus 5.5 更誇張\n成本只有 5%\nCode 2 Flash 也很能打\n日常任務上追平 6 Luna 和 Haiku 5.5\n價格分別只要 65% 和 20%\n 還有 Decision 1.1\n直接把 model routing 內建進你的應用\n在 AA Decision Index 上贏過 Jev、Google 和 OpenAI\n 不過 MAI 也很誠實\n這些模型優先優化的是企業每天在做的 coding 工作\n還沒有針對基礎科學研究\n或超長時間的 agentic 任務做調校\n 為什麼這樣做\n因為如果同一個模型要兼顧科學前沿\n你做個簡單 bug fix 也要付那筆錢\nMAI 說，這種利基能力他們不會硬追\n不會讓你為用不到的能力買單\n 真實案例登場\nAT&T 客製版的 Code 2 Flash\n在標準 5G 網路分析上贏過 6.1 Sol\n成本卻便宜了 50 倍\n 再來是資安\n最近幾個月就像一場警告\n攻擊和漏洞變得更便宜、更容易、更普及\n 所以 2027 年之後最重要的事\n就是 agent security、alignment 和 containment\n MAI Cyber 2 Flash 就是答案\n在 Cyber Gym 端到端測試上領先 GPT 6 Astra\n每個任務成本不到 2%\n不只找出漏洞，還會建議怎麼修\n靠的是微軟幾十年的專有資料\n和世界級的資安專業\n 多模態也很強\nMAI 的圖片生成是全球第二\nMAI-Image-2.7 更是全球第一的圖片編輯模型\n成本只有對手的五分之一\nAdobe、Sports Illustrated、Manus 都在用\n說它能給出專業級品質\n而且編輯又精準又即時\n 語音方面\nMAI Transcribe 是全世界最快、最準的轉錄模型\n 醫療是最重要也最高風險的領域\nMAI Transcribe 已經部署到 Dragon Copilot\n每個月服務 1,000 萬次病患就診\n錯誤率直接砍半\n MAI 的承諾是\n給你前沿效能，但價格讓你可以 24 小時不停機\n 接下來是大家最關心的\n你的 IP、你的工作流程、你的商業資料\n這些才是你在這次平台轉移中的核心資產\n也就是你的 IQ\n 但很多主管都說同一句話\n沒有人想把自己的 IQ 倒進別人的模型裡\n 那如果用開源權重呢\n你真的能信任它的來源嗎\n拿它當你最珍貴 IP 和資料的基礎\n它會怎麼運作，你說得準嗎\n MAI 聽到了\n他們從 Custom Models 開始\nAlaska、AT&T、Docusign、Rakuten\n還有 Woven by Toyota 都是案例\n針對你的使用情境，更快更好\n 今天更進一步\nMAI Licensed Weights 登場\n真正由你掌控的模型\n 怎麼用很簡單\n拿一個前沿 MAI 模型\n想的話就用你的專有資料去客製\n然後在你自己的 Azure 環境裡安全運行\n 存取權你決定\n資料和調校成果都屬於你\n還能透過 Frontier Company\n把客製模型嵌進你自己的產品和 Agent\n 最後總結一下 MAI 全家桶\n全球最強轉錄模型\n只要 2% 成本的前沿資安防護\n價格可以規模化的世界級 coding 模型\n還有 MAI-Image-2.7 這種圖片編輯神器",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-18T08:20:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/912151257_2093373601363243_5245582489167907746_n.png?stp=dst-jpg_tt6&cstp=mx2048x1149&ctp=s2048x1149&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eBU1R8cJgOcQ7kNvwHgduli&_nc_oc=Adq3PlzktY2xYiMKA__5bNsSfPYSAAhuJvmrvuQBTcQI3S-T3cojYQ6ch7iOdu2Gm-6hblADPC2BGZNHTH0gJcmU&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=6gLkVbqZJJAoI_BSo7sFCg&_nc_ss=7b2a8&oh=00_AQQ9rJlC-6m69YA6zJOB844PCE_bSfKMFlB6yE7JE9xchQ&oe=6B0393F9",
+        "alt": "Will 保哥的技術交流中心的 Facebook 原文配圖",
+        "credit": "來源：Will 保哥的技術交流中心（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0o6TpM51ePoxKw7RQjE59QFQe3JDKpnbxUCz4gkN7MLdQUAZekgSu1GeVzeVnj1fml",
+          "published_at": "2026-11-18T08:20:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-11-18T16:21:55.234Z",
+      "captured": 22,
+      "included": 16,
+      "excluded": 6,
+      "notes": []
+    }
+  }
+}
