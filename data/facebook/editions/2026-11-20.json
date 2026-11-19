@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-20",
+  "generated_at": "2026-11-20T00:16:37+08:00",
+  "is_demo": false,
+  "edition_title": "2026-11-20 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 15 則，入選 10 則，排除 5 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-f78b4ecca4b220876a89c674",
+      "title": "資安更新卡關：容器映像也有供應鏈時間差",
+      "summary": "Ant Yi-Feng Tzeng 分享 PHP 更新受容器映像尚未上架而卡住的經驗，提醒安全修補還得等映像與相依套件銜接，不能只看語言版本是否發布。",
+      "original_text": "#PHP 之後甲骨文 #Java 也爆重大漏洞\n» https://ec.ltn.com.tw/article/breakingnews/5646109\n以 PHP 8.4.28 為例，這版本修復了 14 個 CVE 安全問題。\n今天 AI Agent 跟我回報時，提到其中一家客戶卡住無法更新，原因是『官方映像 php:8.4.28-fpm-bookworm 還沒上架』。\n▐ 我們以為的：\nPHP 更新 → 我們產品更新\n▐但實際上，軟體 #供應鏈 是：\nPHP 更新 → 容器映像更新 → (其它相依) → 我們產品更新\n- - -\n每一個環節都有『時間差』，都有不確定性。\n(最後當然是我跟 AI 講可以怎麼修復先上，不然在等官方上架這期間，若客戶這邊出了相關資安問題，我也不好交待，況且此時含嚴重資安問題)\n#軟體供應鏈 #資安",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-19T23:14:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe1-1.xx.fbcdn.net/emg1/v/t13/17034950388923497581?url=https%3A%2F%2Fimg.ltn.com.tw%2FUpload%2Fbusiness%2Fpage%2F800%2F2026%2F11%2F19%2F5646109_1.jpg&fb_obo=1&utld=ltn.com.tw&_nc_sid=f93bbc&_nc_ht=external-tpe1-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p800x417_q75_tt6&ccb=18-1&_nc_gid=cHxHi5YOffNNiBvFm8FKBw&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_FAZ0bt9RQ6sA56I3Ke76dRrjayPbGcYJw59ZtwZxKbPbB&oe=6B01099A",
+        "alt": "PHP之後甲骨文Java也爆重大漏洞 資安署籲機關企業加速更新 - 自由財經",
+        "credit": "來源：Ant Yi-Feng Tzeng（自由財經 連結預覽）"
+      },
+      "sources": [
+        {
+          "name": "Ant Yi-Feng Tzeng",
+          "url": "https://www.facebook.com/yftzeng.tw/posts/pfbid02XHyHpJ1uvXj9xhjZALW8wNbGzGTNEDGxAJaL3RNYWLgNobm2a4GCCkhd5xf6CqDwl",
+          "published_at": "2026-11-19T23:14:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-dcaa1c0140c748baee24df85",
+      "title": "BullshitBench 測 AI 能否識破錯誤前提",
+      "summary": "保哥介紹 BullshitBench：以看似專業、實則捏造前提的問題，觀察 AI 會反駁、保留疑問還是順著編造答案；他認為質疑問題與承認不知道，比一味作答更重要。",
+      "original_text": "各位觀眾～ 讓我們歡迎最新的評測項目 BullshitBench \nBullshit 是胡扯\nBenchmark 是基準測試\n合起來就是「胡扯基準測試」\n它不是在測 AI 答得多好\n而是在測 AI 敢不敢說「你這個問題本身就不對」\n題目設計很有趣\n每一題都用真實的專業術語\n看起來很有學問\n但前提根本是刻意捏造的\n比方說問一個不存在的技術規格\n或者把兩件不相干的事情硬湊在一起\n看 AI 會不會識破\n評分分成三種\n第一種是明確反駁，指出問題前提有誤\n第二種是半信半疑，點出疑點但還是照答\n第三種最慘，把鬼話當真，還自信滿滿寫一大篇\n實測結果蠻震撼的\n各模型的反駁率從 2% 到 91% 都有\n也就是說大部分的 AI 都會一本正經地胡說八道\n還有一個反直覺的發現\n開啟推理模式反而可能更糟\n因為思考的預算都被拿去「把答案寫好看」\n而不是用來質疑問題\n所以這個 Benchmark 真正在意的是\nAI 有沒有辦法承認「我不知道」\n或者勇敢地說「你講的這個前提不成立」\n我覺得這比答對幾題更重要\n畢竟我們每天都在跟 AI 對話\n如果它只會順著你講\n那比不回答還危險",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-19T22:41:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/920197031_977983418326877_5836761761005468541_n.png?stp=dst-jpg_tt6&cstp=mx2048x1105&ctp=s2048x1105&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=GTcpkJuyPeEQ7kNvwEofUwq&_nc_oc=AdqG_O74QVC50A43oevER76jF8RINacYt64rkgeMinq95EaqrGfQYAzqfqskAJeaeqbctP1HrseF0qcakYO38H1e&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=cHxHi5YOffNNiBvFm8FKBw&_nc_ss=7b2a8&oh=00_AQQAQe1J4KYdtrjAnwiOElip19Yw0QFoSZX4oHsa0omACg&oe=6B04D977",
+        "alt": "Will 保哥的技術交流中心的 Facebook 原文配圖",
+        "credit": "來源：Will 保哥的技術交流中心（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0DBv9cs935r8m2gXaJBRrYMiosYrm1Q4NobeTbJWVCqaKs79HifRkA75K3RxCNFCXl",
+          "published_at": "2026-11-19T22:41:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-9a835fb5738a0e719900b1f7",
+      "title": "Antigravity 遠端控制可選託管或自己的機器",
+      "summary": "Eric 介紹 Antigravity Remote Control：可透過網頁使用託管環境，或以 /remote-control 連接自己的電腦，依是否需要本機資源選擇執行位置。",
+      "original_text": "大家用過 Antigravity (AGY) 的 **Remote Control** 功能嗎？就是你可以透過網頁存取 https://antigravity.google.com/ ，然後：\n- AGY 預設會給你一個管理的環境（Remote Conversations）來跑 Antigravity\n- 或是你在自己的機器（例如家中不關機的 Mac Mini）上的 Antigravity 裡用 `/remote-control` 指令把它接上\n如此一來，你可以選擇用受管理的環境或是自己的機器上來跑 Antigravity，取決於你需不需要存取你自己機器上的資源",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-19T21:09:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/913591283_1689687605931374_6187772939209183514_n.png?stp=dst-jpg_tt6&cstp=mx1012x1790&ctp=s1012x1790&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7ogIgI-e1K8Q7kNvwHWMow2&_nc_oc=AdqmqVv2OtFD7L0gvMQIOkVJMTr2dHejyexZCsueuouL9qA19g0AC_Fn7nj7BAu9ZYMevZQ4SQAH8EALRyK2zTfe&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=cHxHi5YOffNNiBvFm8FKBw&_nc_ss=7b2a8&oh=00_AQRyz8UvBM2jQTc7PSqqrEOcuBdxBJd952Lsd6ncsIJOPw&oe=6B0507EC",
+        "alt": "Eric ShangKuan的 Facebook 原文配圖",
+        "credit": "來源：Eric ShangKuan（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid0VtHNwvNewHWcoJKe2ekiak6ncb38Dnd1GP2E1CjM5LWk5TaXXUPjoz7yeA93xyqyl",
+          "published_at": "2026-11-19T21:09:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-6818971dd4f42eb22799cd8b",
+      "title": "用企業門禁比喻介紹雲端 IAM",
+      "summary": "李健榮分享雲端 IAM 文章的切入方式：把公司從小辦公室成長為跨國集團的門禁管理，作為理解身分與存取管理的比喻。",
+      "original_text": "寫興趣的....\n這次一樣貼 LinkedIn 連結\n可能再貼個一兩篇就不這樣貼了，感覺沒什麼意思。\n現在粉絲專頁曝光率變很低，可能沒認真經營也有關係～\n不過，就是寫興趣、寫自嗨的，其他都不重要。\n\n這篇聊雲端服務的 Identity and Access Management。我們來玩個角色扮演遊戲。假設我們經營一家公司，從一間小辦公室開始，一路成長為辦公大樓遍布世界各地的國際集團。我們即將搖身一變成為「門禁管理大師」，搞定這家公司最基本的管理問題。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-19T20:38:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe1-1.xx.fbcdn.net/emg1/v/t13/12710031216474720513?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fsync%2Fv2%2FD5627AQHpbgt8YiHr_w%2Farticleshare-shrink_1280_800%2FB56aHzsQ22IsAk-%2F0%2F1795089830677%3Fe%3D2147483647%26v%3Dbeta%26t%3Dlq86MpDU-6uNk0uyTmRUEKg-2B8n27PbY9YKfacUrkQ&fb_obo=1&utld=licdn.com&_nc_sid=f93bbc&_nc_ht=external-tpe1-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=cHxHi5YOffNNiBvFm8FKBw&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_FAWLf_p_FH5dJJp8u0K1zET8vcAAHumkP-GY12sXO5wOB&oe=6B0116DD",
+        "alt": "猜猜我是誰 - Identity 與 Access 管理 | Simen Li",
+        "credit": "來源：李健榮（Simen Li／LinkedIn 連結預覽）"
+      },
+      "sources": [
+        {
+          "name": "李健榮",
+          "url": "https://www.facebook.com/chienjung.li.7/posts/pfbid0xQwhr5CGtrCSLRR23fLtjiWpK1TYjmNh6fBa6UK3YXGR3DjkgperNKSgSB7tpXU1l",
+          "published_at": "2026-11-19T20:38:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-3684a67f9439be7e70a28171",
+      "title": "保哥完成 Google AI Studio 正體中文翻譯",
+      "summary": "保哥宣布完成 Google AI Studio 網站的正體中文翻譯，表示原內容超過 80 萬字。",
+      "original_text": "我把整個 Google AI Studio 網站，全文超過 80 萬字，全部翻成了正體中文版！\n#是真愛",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-19T18:58:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe1-1.xx.fbcdn.net/emg1/v/t13/15605476808002417333?url=https%3A%2F%2Faistudio.gh.miniasp.com%2Fassets%2Fog-image.png&fb_obo=1&utld=miniasp.com&_nc_sid=c63717&_nc_ht=external-tpe1-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=B_ZBzGDMkdPW5aCxsacnAQ&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_FAcif1ft9BfsepAHV1s84-loR45c_WyjWwCT1Ah46YETl&oe=6B00F60A",
+        "alt": "歡迎使用 Gemini API｜Google AI Studio 文件｜繁體中文版",
+        "credit": "來源：Will 保哥的技術交流中心（Google AI Studio 正體中文翻譯站 連結預覽）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02yqBK4hFWNBPr8M1FqsZSpUtFmSTnNwNKjyf5KapdCaGUeGTo4yiu9nUXMbMWNFFBl",
+          "published_at": "2026-11-19T18:58:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-85068d018f4c26f58e9bc2b9",
+      "title": "Ray 整理帳號保護與防詐的日常做法",
+      "summary": "Ray 從人的風險整理防詐與帳號保護做法，包括裝置綁定、登入與交易通知、獨立密碼及不交出 OTP；也提醒生物辨識登入與 App 商店上架都不等於完整安全保證。",
+      "original_text": "很多時候，資安最大的破口還是「人」。\n系統漏洞普通使用者很難防範，但日常可以嘗試以下幾件事，這能大幅降低一定風險：\n1. 金流 App 盡量開啟「裝置綁定」，避免帳號在他處被登入（Face ID／指紋只是本機快速登入，不代表只能用這支手機登入）。\n2. 開啟登入與交易通知，並設定轉帳限額（如單日一萬）。\n3. 帳號密碼避開個資（身分證、生日、紀念日等），不同服務不共用密碼，可善用密碼管理器，怕就傳統技藝手寫。\n4. 不安裝不明來源 App，盡量只從 Google Play 或 App Store 下載（但上架也不代表絕對安全）。\n5. 政府網址結尾為 .gov.tw，釣魚網站常拼錯字或偽裝網域，不隨便點簡訊或訊息裡的連結。\n6. 驗證碼（OTP）不管對方是誰，都絕對不要給。\n7. 可安裝來電辨識工具（如 Whoscall）輔助過濾詐騙與騷擾電話。\n8. 無法判斷的資訊，直接打 165 反詐騙專線，或查「台灣事實查核中心」、「MyGoPen」。\n9. 只要牽扯到「錢」、「轉帳」或「要求立刻處理」，就要提高警覺。\n雖然無法百分之百防範，但多一分警覺，就是保護自己最好的開始。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-19T14:51:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/913656810_1558254522991541_2098295296461748979_n.jpg?stp=dst-jpg_tt6&cstp=mx1254x1254&ctp=s1254x1254&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cpV412H21MYQ7kNvwGXzJLQ&_nc_oc=AdqRg7C4qW7TI7AvUY5-KVZswnHpSXP7AvwJQxWVv6DrR-D87LO0QCp0qPHJ1WAPTT6bIBfCExTT-x2dnfP91FUM&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=B_ZBzGDMkdPW5aCxsacnAQ&_nc_ss=7b2a8&oh=00_AQQ-maQNduBnJizvfIzbmaFUWxcDJWTth4bmHPHNxSgfww&oe=6B0507F1",
+        "alt": "是 Ray 不是 Array的 Facebook 原文配圖",
+        "credit": "來源：是 Ray 不是 Array（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "是 Ray 不是 Array",
+          "url": "https://www.facebook.com/israynotarray/posts/pfbid0tkXjj7sj4LEj9cDfhNaWjWP4izk8VaxrgTMETupDTNubrdGxdfSqAjWNqWXPZaYzl",
+          "published_at": "2026-11-19T14:51:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-909e9a7c0947f82f08ec2541",
+      "title": "保哥分享 Gemini 4 Neon 的速度與成本取向",
+      "summary": "保哥表示 Gemini 4 Neon 相較 Carbon 更快、更便宜且更穩定，並分享 Antigravity 付費方案可試用的消息。",
+      "original_text": "你能想像嗎？ 才短短幾週，Gemini 4 Argon 就要準備下台了！ \n新模型 Gemini 4 Neon (膩ㄤ) 比 Gemini 4 Carbon (卡蹦) 更便宜、更快，而且表現更穩定。它在大多數基準測試中擊敗 Opus 5.5 和 Sol 6.2，在 AA 上排名第三。 \nGoogle 說他們內部使用起來非常順手，今天就能在 Antigravity 的所有付費方案上試用！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-19T12:00:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/912709761_1706830167662359_2259097264921501528_n.png?stp=dst-jpg_tt6&cstp=mx1920x1671&ctp=s1920x1671&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vGBDmMrlowEQ7kNvwFFIdoL&_nc_oc=Ador3HOcStMp5Tk7mUwO5qNM6SmlhqaSVkQPkjBlzgaa1PfLnSV1fGUXMQfP8hseMUYRTrQvNH_bhaPhMxrq3nUd&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=po4GKXR3CzDHUack4yyUYQ&_nc_ss=7b2a8&oh=00_AQTqrhWLGxDmc56oskYxahtyu6UBAy2_ecicD1BJQKjOfg&oe=6B05062B",
+        "alt": "Will 保哥的技術交流中心的 Facebook 原文配圖",
+        "credit": "來源：Will 保哥的技術交流中心（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid06HzMnhJMPiczt7LYvGiPdgYp9GQXTQpLKprP7HXMehPzRAoDe6XpJT7ihxgSCUzcl",
+          "published_at": "2026-11-19T12:00:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-4da476b5db8f1b6b0af2e218",
+      "title": "保哥整理 Microsoft Copilot SDK 2.0 的變化",
+      "summary": "保哥介紹更名後的 Microsoft Copilot SDK 2.0，重點是以 Rust 重寫核心、降低 session 啟動負擔，並加入使用者身分隔離、工具控制及跨行程與機器恢復能力。",
+      "original_text": "GitHub Copilot SDK 被改名成 Microsoft Copilot SDK 了！ \n微軟在 Ignite 發表了全新的 Microsoft Copilot SDK 2.0。\n它讓你可以用程式直接呼叫微軟的 Copilot harness。\n重點是效能大爆發。\n以前每個 session 都要開一個 container。\n第一輪對話得等基礎環境啟動，成本也壓不下來。\n2.0 改用 Rust 重寫核心。\n建立一個 session 從 5.25 秒，降到 55.3 毫秒。\n記憶體用量從 1,383 MB 降到 126 MB。\n吞吐量從每秒 7.5 個 session，拉到 120 個。\n等於快了快 100 倍。\n安全性也補齊了。\n現在每個 session 可以用不同使用者的身分執行。\n工具要開放哪些，由你這邊決定。\nsession 還能跨行程、跨機器恢復。\n關掉網頁，任務照樣跑。\n支援 TypeScript、Python、Go、.NET、Java、Rust。\n想做 Agent 的朋友，這套值得看看。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-19T10:36:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://external-tpe1-1.xx.fbcdn.net/emg1/v/t13/10790054354053487247?url=https%3A%2F%2Fcommandline.microsoft.com%2Fwp-content%2Fuploads%2F2026%2F11%2F1x1-Social-1-1.png&fb_obo=1&utld=microsoft.com&_nc_sid=c63717&_nc_ht=external-tpe1-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&ccb=18-1&_nc_gid=po4GKXR3CzDHUack4yyUYQ&_nc_map=urlgen_bucketless&_nc_zt=3&oh=06_Q3_FAcV2veTL25LAWHENiVZmy4gK5VpQchMIX487JPbkOQNH&oe=6B010617",
+        "alt": "Introducing the Microsoft Copilot SDK 2.0",
+        "credit": "來源：Will 保哥的技術交流中心（Microsoft 連結預覽）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0r67B1K3JW849QL3EeymQpt9dKwDws5RNt5q2Vfi3izLsWx25BTn5TUpKeRhQzR74l",
+          "published_at": "2026-11-19T10:36:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-3e04af342da3e65f1a1b3380",
+      "title": "Mistral Vibe 試用：保哥看好摘要用途，也點出限制",
+      "summary": "保哥分享 Mistral Vibe 桌面版的試用經驗，認為模型、CLI 與連接器仍有不足，但整理 Gmail 摘要及深入研究等用途尚可。",
+      "original_text": "歐洲 AI 新創 Mistral 公司推出 Mistral Vibe 桌面版應用程式，還贈送三個月免費 Pro 訂閱給去在歐洲人試用，一個月可以讓你使用 €25.50 歐元！結果上線 58 分鐘就被搶光，現在又補了，我剛有搶到一組！\n免費註冊網址 \n https://bit.ly/VibeProLimitedOffer\n但我跟你保證這個額度一定用不完，因為可用的模型不聰明、工具非常陽春、CLI 幾乎不能用、連接器一堆 Bug，我都測過了。總之，幫你整理 Gmail 摘要或是做一些深入研究，其實還不錯啦。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-19T07:42:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe5-1.xx.fbcdn.net/v/t39.99422-6/912822126_1701112094863244_7275692953894526106_n.png?stp=dst-jpg_tt6&cstp=mx2516x1134&ctp=s2516x1134&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4fNrbrM2D88Q7kNvwHxxX-b&_nc_oc=AdrD_nCZIJvvU0WWHK8X-JeXiwdpm2UqNvrTT3PLbuFGFyJ958vkR1tWHPPKqUcmNUeU5DAbR1jSNs-9yVWirtGP&_nc_zt=14&_nc_ht=scontent-tpe5-1.xx&_nc_gid=po4GKXR3CzDHUack4yyUYQ&_nc_ss=7b2a8&oh=00_AQRnrnTxZ6nycemYecxkwr0vr_ginpL4Gxi4eNdRzEtpsg&oe=6B04F3BE",
+        "alt": "Will 保哥的技術交流中心的 Facebook 原文配圖",
+        "credit": "來源：Will 保哥的技術交流中心（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid029kcCXmrBNpFTDiw1ryfrXrP5QtfuG2LDivfQKSWubXySQue6dX3nvYvDNdqDGMFdl",
+          "published_at": "2026-11-19T07:42:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-d27f6a82478f0091de943faf",
+      "title": "Eric 分享 Gemini 4 Neon 向 Pro／Ultra 訂戶開放",
+      "summary": "Eric 表示 Gemini 4 Neon 已提供給 AI Pro／Ultra 訂戶，並認為它兼顧能力與速度。",
+      "original_text": "轉吧七彩霓虹燈！ Gemini 4 Neon 現已提供給 AI Pro/Ultra 訂閱用戶，能力強且速度更快的選擇",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-19T07:21:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/913966181_1152818780588520_8062163291007619618_n.png?stp=dst-jpg_tt6&cstp=mx839x737&ctp=s839x737&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=pDM7DkSqNB0Q7kNvwGW3bld&_nc_oc=Adqi3N0ug_o4YOq897hhosNJY9_SoP5A9fVKfDC6acrRCBtrj8hzrIeybWphcMOrsClSzVXphjX6zY1crspqarVQ&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=dL5UvfnvEAdoz9gcp6z_1A&_nc_ss=7b2a8&oh=00_AQSvtGnFQHaxsU4K4khH7FQvly_cFTC5y4TT3U8K7zXjlw&oe=6B04DF70",
+        "alt": "Eric ShangKuan的 Facebook 原文配圖",
+        "credit": "來源：Eric ShangKuan（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid02uv8YDMA4HZKP9QwV6phHJaVcjqSLQehc2dzFYGnT4Yxjpb2JmuBAoXRyB6aHuJ1Xl",
+          "published_at": "2026-11-19T07:21:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-11-19T16:16:34.875Z",
+      "captured": 15,
+      "included": 10,
+      "excluded": 5,
+      "notes": []
+    }
+  }
+}
