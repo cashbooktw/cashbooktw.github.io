@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-23",
+  "generated_at": "2026-11-23T07:46:39+08:00",
+  "is_demo": false,
+  "edition_title": "2026-11-23 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 7 則，入選 6 則，排除 1 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-ae75d44c962020428208a10d",
+      "title": "卡斯伯用 GSC 流量波動整理 SEO 觀察工具",
+      "summary": "卡斯伯分享與 Gemini 討論搜尋流量後，將 GSC 波動整理為演算法測試、使用者反應、關鍵字擴張與版位競爭等情境，並製作線圖工具協助對照。",
+      "original_text": "最近比較認真在研究關鍵字。發現排名剛開始往上爬的時候，Google Search Console (GSC) 裡的數據並不會一直往上升，而是會不定期地上上下下。\n看到數據往下掉，很容易會開始懷疑自己是不是哪裡沒做好。後來跟 Gemini 討論才搞懂，這種波動很多時候不是出問題，而是 Google 演算法正在「測試」你的網站。\n剛進來的頁面通常不會直接排到前幾名，系統會先讓排名上下變動，順便觀察使用者的點擊狀況。\n在 GSC 裡，不同的流量變化其實對應著不同原因，主要可以分成四種狀態：\n 演算法測試：Google 還在確認這個頁面適合排在哪裡\n 行為不滿意：使用者點進去覺得不符預期，導致排名掉回去\n 關鍵字擴張：頁面開始配對到更多新關鍵字，連帶影響到整體曲線\n 版位擠壓：搜尋頁面出現其他版位，或被競爭對手擠下去了\n所以如果在測試的過程中，你的點擊率還是持續往上走，那就恭喜你，代表目前屬於正向發展，不用太擔心。\n我順手生成了一個小工具，你可以拿自己關鍵字的流量變化，直接對照看看跟這些線圖的概念一不一樣。\n工具連結我放在留言區，有興趣的話可以試試看",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-22T19:43:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.99422-6/917007267_1090340604026193_2429646469660536071_n.png?stp=dst-jpg_tt6&cstp=mx1394x1664&ctp=s1080x2048&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=l1Pgf6FSAMkQ7kNvwFxsGdy&_nc_oc=AdqK19tPGybva18-TZf7Je1hE7j21xdAdPxFL2dvF6YFHDVyCXHt7SkWsoXVtnmkshxj2uwk3QO_RqndrxtToKBP&_nc_zt=14&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=r8djZTeae3PgzPBTkVpYzw&_nc_ss=7b2a8&oh=00_AQQGe7tXJFBFqm0DZrREsb241nRt3ZHKkW8zVfM1iCozsw&oe=6B093F4B",
+        "alt": "卡斯伯的 Facebook 原文配圖",
+        "credit": "來源：卡斯伯（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "卡斯伯",
+          "url": "https://www.facebook.com/WccCasper/posts/pfbid034caGZyLKphsrDRwLUraEW7TDMuBczRoAq1TLHg3761sy7Z6xfSoKrBKCvWi8hGK9l",
+          "published_at": "2026-11-22T19:43:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-936b34d96237b81594088837",
+      "title": "保哥談忙碌成為學習 AI 的阻力",
+      "summary": "保哥分享願意免費到校教老師使用 AI，卻因對方忙碌而延至寒假的經驗，質疑為何協助省時的學習也要等忙完才開始。",
+      "original_text": "我老婆聽到老師抱怨教育局的系統超難用，我聽到後就大氣的說：「沒問題啊，我免費去學校教老師怎樣用 AI，我時間都可以配合。」\n然後她回來跟我說：「老師說他現在忙得要死，等寒假再說吧！」我心想：「你不是現在很忙嗎？要等忙完才願意學可以讓你不忙的技巧是吧！」",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-22T18:46:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid06H7nULgKXZfECg3R3bmox9addCRKg6D1GPGMB4deCHWumVgiEwkbs2ThwRnzndhJl",
+          "published_at": "2026-11-22T18:46:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-329ad433d5cf12d4ebca102f",
+      "title": "保哥翻譯 Gemma 互動教學，從分詞理解 LLM",
+      "summary": "保哥宣布完成 Gemma 互動教學的正體中文翻譯，介紹可在瀏覽器操作、免安裝與 API 呼叫的分詞器，讓讀者觀察文字如何切成 token，並計畫持續翻譯後續教材。",
+      "original_text": "Google Gemma 在 gemma.ai 上推出第一個互動式教學，主題是 LLM 到底怎麼運作。\n我把這份教學翻譯成正體中文了 \n \n想先看懂內容再看原文的人，這次可以直接讀中文版。\n這個教學最特別的地方，是把 Gemma 的分詞器直接搬到瀏覽器裡跑。\n你不用安裝任何東西，也不用呼叫 API，打開網頁就能看到一段文字怎麼被切成 Token。\n分詞是 LLM 流程裡最抽象、也最常被當成術語帶過的一步。\n這次它變成可以親手玩的東西。\n官方也說了，這只是系列的起點。\n接下來 gemma.ai 會陸續補上視覺化指南、互動指南和動手實作指南。\n重點是，我會持續推出正體中文翻譯，幫助華文圈的技術伙伴學習！\n目標是把內容做給所有人看，不只寫給工程師。\n從留言的熱度來看，社群期待的方向很清楚。\n有人想要 Gemma 5，有人想看 context engineering 的版本，也有人希望看到內部運算在 JAX 裡怎麼跑。\n如果你待過團隊導入 AI 的現場，應該懂這類教材真正的價值。\n先把期待值對齊，大家知道模型擅長什麼、不擅長什麼，後面的討論才不會全部變成幻想與失望。\n建議先玩分詞器那一段，五分鐘就會有感覺。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-22T13:42:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.99422-6/916991672_1645301423752520_7552281835012641884_n.png?stp=dst-jpg_tt6&cstp=mx2048x1216&ctp=s2048x1216&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=V5SvcO34gS4Q7kNvwG6GzqS&_nc_oc=AdpuYD8wzHiSadG7R010b9GvdrTLalL-lE7HvnVE0gNJXyu-KyiLTJ14ljWCb3_6ejUSxjW3lxvW201UOqBqnDzY&_nc_zt=14&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=r8djZTeae3PgzPBTkVpYzw&_nc_ss=7b2a8&oh=00_AQQaQ1iXhnwPU2tN2DFN51fbEyDnHZ2mOc6bOPeWbXJwug&oe=6B094ACA",
+        "alt": "Will 保哥的技術交流中心的 Facebook 原文配圖",
+        "credit": "來源：Will 保哥的技術交流中心（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid02jTubSqgNJiUqcszhhGTHNVWNUer9176w8d7iMnZujbraZ4n1voTje8iYdoEsFwQCl",
+          "published_at": "2026-11-22T13:42:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-1d53580d95880490e3099f41",
+      "title": "陶韻智用 Google AI Studio 製作空中撥弦玩具",
+      "summary": "陶韻智表示，看過空中撥弦的展示後，便用 Google AI Studio 製作類似玩具，並對 Gemini 4 的創作能力表示肯定。",
+      "original_text": "剛看到有人臉書上 po的 空中撥弦的影片展示，馬上用Google AI Studio來做一個。\nAI真的讓人想像力無限，且看到Gemini 4的能力回歸~\n-------\n話說AI都解開黎曼猜想了? 做這點小玩具算什麼.....",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-22T12:55:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t15.5256-10/896518986_2220111415519267_3195952903425184093_n.jpg?stp=dst-jpg_tt6&cstp=mx1784x1160&ctp=p960x960&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=kUXjZ7vDQ88Q7kNvwEhf7je&_nc_oc=Adr-6V-QzMQXAKE9eE9D3HWbILEkxzWensFF2EeV9AlkA6kXA0lFQkRkuCPnODj3ExVp_WCIpiZC9Z19lBxNFFgj&_nc_zt=23&_nc_ht=scontent.ftpe7-4.fna&_nc_gid=r8djZTeae3PgzPBTkVpYzw&_nc_ss=7b2a8&oh=00_AQRgdiNpBR2O7fSaqQrbNrpvvarDEhqgLzemeteV7S8ENA&oe=6B095EEB",
+        "alt": "陶韻智的 Facebook 原文配圖",
+        "credit": "來源：陶韻智（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/reel/1186174827406217",
+          "published_at": "2026-11-22T12:55:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-6f859ec6b8fd74960ae9ea3c",
+      "title": "Nathan 關注 Tesla FSD V15 的 Reality View 與驗證限制",
+      "summary": "Nathan 介紹 Tesla FSD V15 的 Reality View 路況視覺化、AI 導航與硬體支援差異；他也提醒廠商宣稱的危急情況處理提升，尚缺公開測試方法與比較基準。",
+      "original_text": "馬斯克把 GTA 做到 Tesla 上了。\nFSD V15 美國時間 11 月 21 日開始推送給第一批車主，12 月會跟著 Holiday Update 擴大推送。這次最搶眼的是 Reality View：用車頂上方的虛擬鏡頭即時畫出路況，連車子下一步要怎麼開都畫給你看。手指在螢幕上點一下，車子就開過去。馬斯克自己也拿它跟 GTA 比，剛好 GTA VI 也是同一週上市。\nV15 的模型比 V14 大了十倍。特斯拉說處理危急狀況的能力好了 25 倍，不過這是特斯拉自己算的介入率，測試方法和比較基準都沒公布，聽聽就好。導航和找車位也開始改用自家的 AI。另外，只有 HW4 的車拿得到，HW3 車主只能留在 V14 Lite。\n我兒子看完問我：什麼時候可以在台灣用？為什麼晶片都是台灣做的，我們都不能用？\n我回答：天曉得。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-22T12:01:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t15.5256-10/906047203_1150176580818882_6117489350718350120_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=TZxg57aP79gQ7kNvwFEjSgP&_nc_oc=Adq05-1G6e8tDO4NIXw0GO0HBQaZV_TbABNnyxZO_3mdz9Jjph-6NceTzdy8hezOf3-QHwmolz1iVCGVtnfhgj3o&_nc_zt=23&_nc_ht=scontent.ftpe7-4.fna&_nc_gid=jx19lkCbVdjQwHS0WdoxUg&_nc_ss=7b2a8&oh=00_AQTzCPaa8QM6QyouU9orDVYXDKI6Dd7xHVtbGuf5oWz-pA&oe=6B095FA7",
+        "alt": "Nathan Chiu的 Facebook 原文配圖",
+        "credit": "來源：Nathan Chiu（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/reel/1863823445040748",
+          "published_at": "2026-11-22T12:01:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-dbfc4a2dbff3bd7cc07f5ffc",
+      "title": "用 Gemini agent 定期回顧雲端數位資料",
+      "summary": "陶韻智分享訪談後的實作：讓 Gemini 每天早上回顧雲端儲存的資料，包含照片，提供反思線索，協助他重新整理過去無暇回看的數位記憶。",
+      "original_text": "週五錄 『科技現在式 podcast』， 訪問了台智雲CEO Peter Wu，又學到一招，馬上來用，讓我的Gemini每天早上幫我看我過去所有儲存在雲端的資料，給我一個反思思考的驚喜。\n一直都想回顧我過去的數位資料，包括大量的照片，鑑往知來，但總是沒空，現在透過agent，可以開始回顧了~~\n------\n歡迎大家可以透過apple podcast來訂閱收聽，可以知道各行各業頂尖人士怎麼使用AI喔！",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-22T10:35:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.99422-6/921755124_1848805216251234_2971776976149462793_n.png?stp=dst-jpg_tt6&cstp=mx2048x1255&ctp=s2048x1255&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qmcaIDht4SkQ7kNvwEtbq-U&_nc_oc=Adrq6HF2rfVAGQtIVo4JmVYwQAqRduajfV9q3wWibV6xq3VfxiAl3Gl-qThW1UgOIBqya0eIAzi3Q-0pyRIUnlCQ&_nc_zt=14&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=jx19lkCbVdjQwHS0WdoxUg&_nc_ss=7b2a8&oh=00_AQQU2RciYVHp15GKBqDPp2sQc9KcgudKASn1Z5kOIlR_7g&oe=6B093987",
+        "alt": "陶韻智的 Facebook 原文配圖",
+        "credit": "來源：陶韻智（Facebook 原文配圖）"
+      },
+      "sources": [
+        {
+          "name": "陶韻智",
+          "url": "https://www.facebook.com/stingtao/posts/pfbid027v8U3SQ5n9CU799TivegWa5t1d8jGUAcmwcajkB8DNFLiMXY9yC6Fd9EBik86Z6Tl",
+          "published_at": "2026-11-22T10:35:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-11-22T23:46:38.014Z",
+      "captured": 7,
+      "included": 6,
+      "excluded": 1,
+      "notes": []
+    }
+  }
+}
