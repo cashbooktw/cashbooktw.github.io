@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T00:14:13+08:00",
+  "is_demo": false,
+  "edition_title": "2026-11-26 Facebook Favorites",
+  "edition_summary": "Facebook：本次處理完成，檢查 9 則，入選 5 則，排除 4 則。\n設定來源：尚無執行紀錄。",
+  "stories": [
+    {
+      "id": "facebook-fc6aaa934c871cbbbedb61de",
+      "title": "Eric 觀察公共場所常見的對話式介面",
+      "summary": "Eric 觀察咖啡廳與速食店的電腦畫面，多採對話列表搭配互動區的介面。",
+      "original_text": "現在在咖啡廳或速食店遠遠看到大家電腦的畫面（非偷窺）幾乎都是左側對話記錄列表、右側一大塊互動區",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-25T20:11:00.000+08:00",
+      "tags": [],
+      "image": null,
+      "sources": [
+        {
+          "name": "Eric ShangKuan",
+          "url": "https://www.facebook.com/ericsk0313/posts/pfbid031y5CG34x8mucf9iE8vZpAjPycCLyy9AxgdjAy6bjNfEy9tcgPK27prkbM6AFC5cl",
+          "published_at": "2026-11-25T20:11:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-3db91969375e6e4197758f63",
+      "title": "企業導入 AI，卡斯伯談主管實作與流程改造",
+      "summary": "卡斯伯認為，只鼓勵員工使用 AI 或提供額度，難以推動企業轉型；主管需先親自實作並檢視流程。他也分享公司正透過內部工作坊，協助同事改善工作效率。",
+      "original_text": "最近聽說不少公司想加速同仁轉型 AI，\n有的偏向口頭上鼓勵大家多用，\n也有公司會適當給一些工具額度\n剛好看到「AI懶人報」整理了一支影片，\n是李開復接受 Forbes 專訪的內容\n我自己看完蠻有共鳴的是「推動的方式」\n不管是靠口頭或只靠發額度讓基層自己摸索，\n通常很難真的看到什麼大改變\n影片建議從老闆跟中階主管先多用 AI，\n先自己親身用過，\n才比較能想像整個企業的流程，\n很多時候卡住的根本不是工具本身，\n而是卡在原本繁雜的流程上 \n要怎麼配合 AI 一起做流程轉型\n不只是叫大家把原本的事做快一點\n我們公司目前也在探索中，除了發放額度之外，\n我們也會辦理一些內部工作坊，\n希望能夠真正地引導同事們透過 AI 來改善工作效率\n而李開復的影片我附在留言，\n有興趣可以看看",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-25T19:05:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/923185180_30400996636169976_1603671429310735603_n.png?stp=dst-jpg_tt6&cstp=mx1312x756&ctp=s1312x756&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ki7_buU2qe4Q7kNvwHlgzUB&_nc_oc=AdooupgE0bnMvuEtMGcVvIvB7dTiAo6BQo66nZStPypmRFd9urHUUprJxC7ARov_j1e8xe_EwXRf405fdDek-1S0&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=RRRs6cVss7pPF28M58-V9w&_nc_ss=7b3a8&oh=00_AQQJ-gyaI77jHrV0BzFHpYWI00FuM78nlFd3Jami8SHSkw&oe=6B0CD8BA",
+        "alt": "卡斯伯 此則 Facebook 貼文附圖",
+        "credit": "卡斯伯／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "卡斯伯",
+          "url": "https://www.facebook.com/WccCasper/posts/pfbid02L5QiVyPvhr7geJJvzrvbM6zYSoAvA7B8QcN7uV3cwVBsgPzyuSMjrbKgF4b4zJMHl",
+          "published_at": "2026-11-25T19:05:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-8cff201683ff8e75a0fcf629",
+      "title": "保哥介紹 Lauren Tan 的自學程式與工程師經歷",
+      "summary": "保哥介紹 Lauren Tan（poteto）從財務背景自學程式、透過寫作進入技術圈的經歷，並提到她在 Cursor 與 Grok Bot 團隊的工作。",
+      "original_text": "土豆姊 (Lauren Tan) 是 Grok Bot 團隊擔任首席工程師，竟然在 Elon Musk 的眼皮下說出這麼大逆不道的話！ \n背景與職位：前 Cursor 核心工程師，現於 SpaceXAI 的 Grok Bot 團隊擔任首席工程師 ( 網路暱稱為 poteto )。她原為財務背景，透過自學寫程式與寫作進入技術圈。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-25T17:22:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/924396072_2328749557967342_6453785710016811652_n.png?stp=dst-jpg_tt6&cstp=mx1186x434&ctp=s1186x434&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8GLo1qmpgNwQ7kNvwE9gi2w&_nc_oc=AdoCBHCP3VDnA5SNShR7ToBNThqFtlfYSNPCCq1NYt42I5hB6dkRztb2TmuFDCNQuBxjOOY75HISkOv93bGqY_rc&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=NuxDr4I9BAGdZg2uncLdcQ&_nc_ss=7b3a8&oh=00_AQQ-nSN5RiEDIzEPTOHHGIz5-Dcfi9EG17yke7VXwY0TwQ&oe=6B0CBFE9",
+        "alt": "Will 保哥的技術交流中心 此則 Facebook 貼文附圖",
+        "credit": "Will 保哥的技術交流中心／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Will 保哥的技術交流中心",
+          "url": "https://www.facebook.com/will.fans/posts/pfbid0XauM78siAtpvBKZXRpFfpDoc4jHu2JGzizY2c8HPpwpw2BUeTZUtPR37HeTZJuiZl",
+          "published_at": "2026-11-25T17:22:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-fa336b220f121331c1b77846",
+      "title": "Muki 分享年度常用 Mac 軟體整理網站",
+      "summary": "Muki 分享今年常用的 Mac 軟體整理網站，供讀者瀏覽。",
+      "original_text": "盤點今年常用的 Mac 軟體\n可以到這邊玩 \n https://software.muki.tw/",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-25T15:24:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/924706291_10168865512403916_7221215436325056063_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=s1920x1080&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=U02qAnCnuKoQ7kNvwE-HPkl&_nc_oc=AdpJgbcQNg4hwxH8RT0R9cRAeaGIpxI0kxlRIhsQ1sHXu-JSiJu-CboCp5MTMvECQ5vU9TDsGGeRjDOPfJpQRrRN&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=NuxDr4I9BAGdZg2uncLdcQ&_nc_ss=7b3a8&oh=00_AQT_UBs-RLszyC5e2CpAwdrLu9ihOlna04C9LshJ-oo9Vg&oe=6B0CEC7C",
+        "alt": "Muki Wu 此則 Facebook 貼文附圖",
+        "credit": "Muki Wu／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Muki Wu",
+          "url": "https://www.facebook.com/muki.wu/posts/pfbid0mBqWVD5ciU8bm7nQy1RDBB4ata8tSrCFctcWW6J3JCrQqaRGSkQxif7TUZFaJU5Al",
+          "published_at": "2026-11-25T15:24:00.000+08:00"
+        }
+      ]
+    },
+    {
+      "id": "facebook-352d348c4ffda3078ec12e3f",
+      "title": "Nathan 談 AI 伺服器訂單、交付瓶頸與成本壓力",
+      "summary": "Nathan 以戴爾與 HPE 的 AI 訂單與財報為主軸，認為需求仍強，但機房電力、交付能力與零組件成本牽動營收和利潤；另整理 Google Wallet 串接 AI Mode、亞馬遜取得 Decart 最佳化技術等動態。",
+      "original_text": "大河馬每日報｜2026.11.25（三）\n輝達讓黃仁勳回任那天，美股和台股都噴了一大段，隔天美國晶片股又吐回去不少。在這種情緒來回甩的時候，我更想看的是真正落在帳上的訂單。台北時間今天清晨，戴爾的財報剛好給了一份。\n【主菜】戴爾 AI 積壓訂單衝上 1,323 億美元\n戴爾公布截至 10 月 30 日的第三季財報：營收 549 億美元，年增 103%；AI 伺服器營收 220 億美元，年增 291%。這一季新接 602 億美元的 AI 訂單，季底積壓訂單來到 1,323 億美元，上一季底是 950 億。全年營收財測從約 1,920 億美元上調到 2,020 億美元，非 GAAP 每股盈餘 9.45 美元，市場預期大約 6.5 美元。\n為什麼是現在。過去一個月市場一直在問 AI 投資是不是過熱，戴爾給的回答是：下單的人沒有停。營運長 Jeff Clarke 特別說，每筆訂單都審過客戶的資金、土地和電力條件。這句話本身就說明了現在的瓶頸在哪裡，不是有沒有人要買，而是買了之後有沒有電、有沒有機房可以放。\n另一個背景是價格。金融時報上週報導，戴爾、HPE、聯想、美超微這幾家伺服器廠，在簽約幾個月後、出貨前向客戶追加 25% 到 45% 的價格，主因是記憶體成本。摩根大通的研究指出，這項成本自 2024 年初以來已經漲了超過 400%。所以戴爾營收翻倍，有一部分是量，也有一部分是價。\n放到台灣來看，1,323 億美元的積壓訂單，最後會變成一櫃一櫃組好、測好的機架出貨，這條路上幾乎每一站都有台灣廠商。不過我會提醒自己兩件事。第一，積壓訂單不是營收，出貨要看客戶的資金和機房什麼時候到位。第二，戴爾的存貨已經到 294 億美元，比年初多了 182%，備料的錢是先付出去的。\n下一個要盯的數字：戴爾把全年 AI 伺服器營收目標上調到 780 億美元，前三季已認列約 546 億，等於第四季要交出約 234 億，只比第三季多 6% 左右。積壓訂單漲了三百多億，出貨卻只預估小幅成長，代表卡住的不是需求，是交貨能力。下一季財報，就看這個數字有沒有超標。\n【另外三件】\n一、Google AI Mode 開始讀你的錢包\nGoogle 11 月 23 日宣布，搜尋裡的 AI Mode 可以選擇連結 Google Wallet，讀取消費與付款資料，Drive 和 Gemini app 會在接下來幾週跟上。在這之前，AI Mode 已經能接 Gmail、日曆和相簿。官方強調是唯讀，不能動用或管理使用者的錢，也全部採 opt-in。我注意到的是，這篇公告完全沒提廣告。對做搜尋廣告的人來說，消費紀錄是最強的意圖訊號，Google 什麼時候、用什麼方式把它接到廣告上，會是台灣廣告主明年要一直問的問題。\n二、亞馬遜 75 億美元買下 Decart 的晶片最佳化技術\n亞馬遜 11 月 23 日宣布，取得以色列新創 Decart 的 AI 最佳化軟體 Decart Optimization Stack，並把三位創辦人和研發團隊收進來，彭博報導價格約 75 億美元。Decart 今年 5 月的估值大約 40 億美元，9 月時 Anthropic 評估過以約 60 億美元收購，做完盡職調查後沒有成交。亞馬遜要的是讓模型在自家 Trainium 晶片上跑得更有效率，Decart 的世界模型不在交易範圍內。雲端大廠自研晶片最大的門檻一直是軟體生態，這筆錢花在補這一塊，對台灣做 ASIC 設計服務和先進製程的供應鏈，等於需求面多了一層保險。\n三、黃仁勳回任，台股單日漲 8.99%\n輝達董事會 11 月 23 日一致決議讓黃仁勳回任執行長，當天輝達股價漲 31.5%。台股 24 日跟著大漲 3,310.46 點，收 40,122.35 點，漲幅 8.99%，成交金額 4,194.05 億元，收復 11 月 12 日他請辭以來一半以上的跌點。但美股週二馬上反轉，輝達跌 5.86%，半導體 ETF SOXX 跌 8.27%。情緒面的修復很快，基本面要回到像戴爾這樣的財報上去驗證。\n【長線追蹤：AI 資本支出】\nHPE 也在這週一交出第四季財報，數字和戴爾是同一個方向：營收 145 億美元，年增 50%；AI 系統訂單 45 億美元，年增超過 130%；AI 相關積壓訂單 105 億美元。2027 財年營收財測拉到 594 億到 631 億美元。值得記下的有兩點。HPE 說自 2023 財年以來累計的 AI 訂單，有 57% 來自主權 AI 和企業客戶，不是雲端大廠，代表需求開始往外擴散。但它同時預告雲端與 AI 部門的營業利益率，會從第四季的 18.4% 降到 2027 財年的約 14%，零組件短缺至少延續到 2028 年下半年。財報超標、財測上調，股價盤前還是跌了 11.1%。市場現在要的已經不是營收成長，而是成長之後還剩多少利潤。\n【接下來要看】\n今天（11/25）美東時間上午 8:30，也就是台北時間晚上 9:30，美國會同時公布 10 月 PCE 物價與第三季 GDP 修正值，這是 12 月 9 日聯準會會議前最後幾個重要數據之一。美股 11/26 感恩節休市，11/27 提早在美東下午 1 點收盤，量縮的盤，數據的影響容易被放大。",
+      "section": "Facebook",
+      "source_kind": "facebook",
+      "published_at": "2026-11-25T15:02:00.000+08:00",
+      "tags": [],
+      "image": {
+        "url": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.99422-6/930148325_28839020159109058_989499526308587255_n.png?stp=dst-jpg_tt6&cstp=mx980x1225&ctp=s980x1225&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KrjX6UzdImYQ7kNvwFzpNnZ&_nc_oc=AdrQoN33slLcG4-EGef6pyOjC79AtV0AzhGP6q1EEVbQLg5OQbjCk2sds2jDRyC4bmW_Awz8WHrGcWoJNahNyVN2&_nc_zt=14&_nc_ht=scontent-tpe1-1.xx&_nc_gid=NuxDr4I9BAGdZg2uncLdcQ&_nc_ss=7b3a8&oh=00_AQTRewCCdGGvpvMYIKuvm5Y_mmg2oI34WvJmP4cMDFPa_Q&oe=6B0CE8A3",
+        "alt": "Nathan Chiu 此則 Facebook 貼文附圖",
+        "credit": "Nathan Chiu／Facebook 原貼文"
+      },
+      "sources": [
+        {
+          "name": "Nathan Chiu",
+          "url": "https://www.facebook.com/chihuangchiu/posts/pfbid0yGdywjDQ4dnFmXS9umwDFhpQFVJ9KWHMnat1e4ZPDpSLw4uHRJiV3am7N1VFsHfdl",
+          "published_at": "2026-11-25T15:02:00.000+08:00"
+        }
+      ]
+    }
+  ],
+  "source_reports": {
+    "facebook": {
+      "status": "complete",
+      "completed_at": "2026-11-25T16:14:10.175Z",
+      "captured": 9,
+      "included": 5,
+      "excluded": 4,
+      "notes": []
+    }
+  }
+}
