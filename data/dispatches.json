@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "date": "2026-11-26",
-  "generated_at": "2026-11-26T05:01:07.085727+00:00",
+  "date": "2026-11-27",
+  "generated_at": "2026-11-27T05:01:19.040361+00:00",
   "quotes": {
     "tw": {
-      "date": "2026-11-25",
-      "close": 38195.43,
-      "change": -1926.92,
-      "change_pct": -4.8026,
+      "date": "2026-11-26",
+      "close": 39151.81,
+      "change": 956.38,
+      "change_pct": 2.5039,
       "source": "TWSE"
     },
     "sp500": {
@@ -35,8 +35,8 @@
   "fx": {
     "base": "USD",
     "quote": "TWD",
-    "date": "2026-11-26",
-    "rate": 33.06,
+    "date": "2026-11-27",
+    "rate": 32.978,
     "source": "Frankfurter"
   },
   "errors": {}
